@@ -1,0 +1,25 @@
+baseURL = "http://bryan-kaperick.me/"
+theme = "zen"
+contact = "bryan.kaperick@gmail.com"
+mainSections = ["About Me"]
+defaultContentLanguage = 'fr'
+[Languages]
+  [Languages.en]
+    weight = 2
+    title = "Bryan Kaperick's Website"
+    LanguageBoringName = 'English'
+    LanguageName = 'Uh, in English please...?'
+    [Languages.en.params]
+      LanguageCode = 'en'
+      linkedin = 'https://www.linkedin.com/in/bryankaperick/'
+
+
+  [Languages.fr]
+    title = 'Le Site Web de Bryan Kaperick'
+    weight = 1
+    LanguageBoringName = 'Français'
+    LanguageName = '''Euh, il n'y a pas un version Français, hein ?'''
+    [Languages.fr.params]
+      LanguageCode = 'fr'
+      linkedin = 'https://www.linkedin.com/in/bryankaperick/?locale=fr_FR'
+      title = "Le Site Web de Bryan Kaperick"

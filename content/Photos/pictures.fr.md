@@ -1,0 +1,23 @@
+---
+title: "Pictures"
+date: 2021-10-24T01:37:04+02:00
+draft: true
+---
+
+Des photos de moi et mes amis, trié dans l'ordre chronologique inverse.
+
+{{< figure src="/images/oOo.jpg" caption="Moi, actuellement." >}}
+{{< figure src="/images/bryan-colin_cape-perpetua.jpg" caption="Me and Colin at Cape Perpetua, OR ~ 2021" >}}
+{{< figure src="/images/michael-julie-bryan-tyler-dunkerque.jpg" caption="Michael, Julie, me, and Tyler in Dunkerque ~ 2021" >}}
+{{< figure src="/images/julien-bryan-nadir-yanomi-skate-blabla.jpg" caption="Julien, Me, Nadir, and Yanomi at Blabla ~ 2021" >}}
+{{< figure src="/images/bryan-blabla-skate.jpg" caption="Just me on a skateboard at Blabla ~ 2021" >}}
+{{< figure src="/images/bryan-julie-etienne-cici-william-yanomi-grenoble.jpg" caption="Half of me, Julie, Etienne, Cici, William, and Yanomi at Fort de la Bastille, Grénoble ~ 2021" >}}
+{{< figure src="/images/bryan-jeremy.png" caption="Me, Jeremy, and Mathieu on French TV ~ 2021" >}}
+{{< figure src="/images/Anton-william-bryan-la-seine.jpg" caption="Anton, William and me at Jardin Tino Rossi ~ 2020" >}}
+{{< figure src="/images/bryan-julie-dune.jpg" caption="Me and Julie at Dune du Pilat ~ 2020" >}}
+{{< figure src="/images/oOo.jpg" caption="Me ~ 2020" >}}
+{{< figure src="/images/michael-bryan-lorenzo-edinburgh.jpg" caption="Michael, me, and Lorenzo in Edinburgh ~ 2019" >}}
+{{< figure src="/images/chunglab.jpeg" caption="Chung Lab ~ 2019" >}}
+{{< figure src="/images/tyler-lorenzo-remy-bryan-blabla2018.jpg" caption="Tyler, me, Lorenzo, and Rémy ~ 2018" >}}
+{{< figure src="/images/billpatbryan.jpg" caption="Moi, Patrick, et Bill ~ circa 2018" >}}
+{{< figure src="/images/me_and_bill_on_a_mountain_with_a_dog.jpg" caption="Me and Bill and a dog on a mountain ~ 2017" >}}
