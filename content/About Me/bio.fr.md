@@ -1,7 +1,7 @@
 ---
 title: "Bio"
 date: 2021-10-24T00:13:52+02:00
-draft: true
+draft: false
 ---
 
 Salut, je m'appelle Bryan et je suis un mec de 25 ans qui habite à Lille et qui travaille à Paris.  Je m'amuse

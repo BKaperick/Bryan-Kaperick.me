@@ -1,7 +1,7 @@
 ---
 title: "Bio"
 date: 2021-10-24T00:05:45+02:00
-draft: true
+draft: false
 ---
 
 Hello, I'm Bryan - a 25 year old guy living in Lille, and working in Paris.  I enjoy working on
