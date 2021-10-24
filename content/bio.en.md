@@ -8,4 +8,4 @@ Hello, I'm Bryan - a 25 year old guy living in Lille, and working in Paris.  I e
 problems in computational mathematics, data engineering, and numerical analysis.  Here in
 France, I enjoy walking around parks and cities, practicing my French with strangers in bars, and rock climbing.
 
-{{ .image ./images/oOo.jpg }}
+{{< figure src="/images/oOo.jpg">}}

@@ -18,7 +18,7 @@ defaultContentLanguage = 'fr'
     title = 'Le Site Web de Bryan Kaperick'
     weight = 1
     LanguageBoringName = 'Français'
-    LanguageName = '''Euh, il n'y a pas un version Français, hein ?'''
+    LanguageName = '''Euh, il n'y a pas une version Français, hein ?'''
     [Languages.fr.params]
       LanguageCode = 'fr'
       linkedin = 'https://www.linkedin.com/in/bryankaperick/?locale=fr_FR'
