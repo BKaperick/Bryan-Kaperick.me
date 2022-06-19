@@ -1,4 +1,4 @@
-baseURL = "http://bryan-kaperick.me/"
+baseURL = "https://bryan-kaperick.me/"
 theme = "zen"
 contact = "bryan.kaperick@gmail.com"
 mainSections = ["About Me"]
