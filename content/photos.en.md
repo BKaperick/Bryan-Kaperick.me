@@ -6,6 +6,8 @@ draft: false
 
 Some photos of me and my friends, in reverse chronological order.
 
+{{< figure src="/images/picnic_anton.jpeg" caption="A bunch of people including Anton et a picnic in Paris ~ 2022" >}}
+{{< figure src="/images/swap-hai-bryan-nice.jpg" caption="Swap, Hai and me in Nice ~ 2022" >}}
 {{< figure src="/images/bryan-michael-tyler-anvers.jpg" caption="Me, Michael, and Tyler in Antwerp ~ 2021" >}}
 {{< figure src="/images/bryan-colin_cape-perpetua.jpg" caption="Me and Colin at Cape Perpetua, OR ~ 2021" >}}
 michael-tyler-bryan-dunkerque
