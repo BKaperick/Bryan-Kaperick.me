@@ -5,12 +5,33 @@ draft: false
 ---
 
 ## Me
-Hello, I'm Bryan - a 25 year old guy living in Lille, and working in Paris.  I enjoy working on
+Hello, I'm Bryan - a 26 year old guy living in Lille, and working in Paris.  I enjoy working on
 problems in computational mathematics, data engineering, and numerical analysis.  Here in
 France, I enjoy walking around parks and cities, practicing my French with strangers in bars, and rock climbing.
 
 {{< figure src="/images/oOo.jpg">}}
 
+
+## Books I'd like to read soon
+* *Transformer: The Deep Chemistry of Life and Death* -- Nick Lane
+
+I've heard several people recommend Dr. Lane's books, and he was recently a guest on Sean Carroll's Mindscape podcast, where they had a nice discussion about this new work on the Kreb's Cycle, and the origins of eukaryotic life.
+* *Days of Rage: America's Radical Underground, the FBI, and the Forgotten Age of Revolutionary Violence* -- Bryan Burrough
+
+I'm interested in learning more about recent American counter-cultural/protest history to help put today's movements in context.
+
+* *Dune Messiah* -- Frank Herbert
+
+I have to get to this before the next movie comes out.
+
+## Books I'm currently reading
+* *The Dark Forest* -- Cixin Liu
+
+The second of The Three Body Problem trilogy.  Though I'm reading it in French, so it's taking me some time to finish.
+
+* *Le Mythe de Sysiphe* -- Albert Camus
+
+I only made it a few chapters in for now.  I'll try to finish, but I think I'm lacking enough of a foundation in philosophy to get much out of it.
 
 ## Books I've read recently
 * *Down and Out in Paris and London* -- George Orwell
@@ -26,6 +47,7 @@ France, I enjoy walking around parks and cities, practicing my French with stran
 * *Cat's Cradle* -- Kurt Vonnegut 
 * *I, Claudius* -- Robert Graves
 * *Fear and Loathing in Las Vegas* -- Hunter S. Thompson
+* *The Man Who Mistook His Wife for a Hat* -- Oliver Sacks
 * *L'Élegance du Hérisson* -- Muriel Barbery
 * *Zen and the Art of Motorcycle Maintenance* -- Robert M. Persig
 * *Sapiens* -- Yuval Noah Harari

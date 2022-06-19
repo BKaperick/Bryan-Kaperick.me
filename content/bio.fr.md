@@ -4,10 +4,31 @@ date: 2021-10-24T00:13:52+02:00
 draft: false
 ---
 
-Salut, je suis Bryan et je suis un mec de 25 ans qui habite à Lille et travaille à Paris.  J'aime bien travailler sur des problèmes liées au mathematique computationnelles, data engineering, et l'analyse numérique.  Ici en France, j'aime bien me promener autour des parques et villes, pratiquer mon français avec des inconnus dans des bars, et faire de l'escalade.
+Salut, je suis Bryan et je suis un mec de 26 ans qui habite à Lille et travaille à Paris.  J'aime bien travailler sur des problèmes liées au mathematique computationnelles, data engineering, et l'analyse numérique.  Ici en France, j'aime bien me promener autour des parques et villes, pratiquer mon français avec des inconnus dans des bars, et faire de l'escalade.
 
 {{< figure src="/images/oOo.jpg">}}
 
+## Voici des livres que j'aimerais bien bientôt 
+* *Transformer: The Deep Chemistry of Life and Death* -- Nick Lane
+
+J'ai déjà entendu plusieurs personnes qui recommendent les oeuvres de Dr. Lane, et recemment j'ai pu l'ecouter discuter ce livre sur le podcast Sean Carroll's Mindscape, où ils ont parler du cycle de Krebs et des origines de la vie eukaryote.
+
+* *Days of Rage: America's Radical Underground, the FBI, and the Forgotten Age of Revolutionary Violence* -- Bryan Burrough
+
+Ca m'intèresse d'apprendre plus sur l'histoire récente du contre-culture et manifestations Américains pour m'aider à ajouter de la contexte aux evenements actuels.
+
+* *Dune Messiah* -- Frank Herbert
+
+Je dois le lire avant la sortie du prochain film.
+
+## Voici des livres que je suis en train de lire
+* *The Dark Forest* -- Cixin Liu
+
+La dexuième de la trilogie *Le Problème à Trois Corps*.  Mais je le lis en francais, donc ca me prends du temps à terminer.
+
+* *Le Mythe de Sysiphe* -- Albert Camus
+
+Pour l'instant, j'ai lu que quelques chapitres.  Je vais essayer de le finir, mais je suis pas sur d'avoir suffisament de connaissance dans la philosophie pour bien comprendre ce qu'il a à dire.
 
 ## Voici des livres que j'ai récemment lu
 * *Down and Out in Paris and London* -- George Orwell
@@ -23,6 +44,7 @@ Salut, je suis Bryan et je suis un mec de 25 ans qui habite à Lille et travaill
 * *Milarepa* -- Eric Emmanuel-Schmitt
 * *I, Claudius* -- Robert Graves
 * *Fear and Loathing in Las Vegas* -- Hunter S. Thompson
+* *The Man Who Mistook His Wife for a Hat* -- Oliver Sacks
 * *L'Élegance du Hérisson* -- Muriel Barbery
 * *Zen and the Art of Motorcycle Maintenance* -- Robert M. Persig
 * *Sapiens* -- Yuval Noah Harari
@@ -32,7 +54,7 @@ Salut, je suis Bryan et je suis un mec de 25 ans qui habite à Lille et travaill
 * *Dune* -- Frank Herbert 
 * *L'Étranger* -- Albert Camus
 * *A Clockwork Orange* -- Anthony Burgess
-* *Surely You’re Joking, Mr. Feynman!*, Richard Feynman
+* *Surely You’re Joking, Mr. Feynman!* -- Richard Feynman
 
 ## Voici quelques poèmes que j'apprécie
 
