@@ -13,6 +13,8 @@ France, I enjoy walking around parks and cities, practicing my French with stran
 
 
 ## Books I've read recently
+* *Down and Out in Paris and London* -- George Orwell
+* *The Epic of Gilgamesh* -- Sin-Leqi-Unninni(?)
 * *The Three Body Problem* -- Cixin Liu
 * *Pale Fire* -- Vladimir Nabokov
 * *Le Marin de Gilbraltar* -- Marguerite Duras
@@ -21,6 +23,7 @@ France, I enjoy walking around parks and cities, practicing my French with stran
 * *Lolita* -- Vladimir Nabokov
 * *Au Bonheur des Ogres* -- Daniel Pennac
 * *Milarepa* -- Eric Emmanuel-Schmitt
+* *Cat's Cradle* -- Kurt Vonnegut 
 * *I, Claudius* -- Robert Graves
 * *Fear and Loathing in Las Vegas* -- Hunter S. Thompson
 * *L'Élegance du Hérisson* -- Muriel Barbery

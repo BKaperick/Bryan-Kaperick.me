@@ -10,6 +10,8 @@ Salut, je suis Bryan et je suis un mec de 25 ans qui habite à Lille et travaill
 
 
 ## Voici des livres que j'ai récemment lu
+* *Down and Out in Paris and London* -- George Orwell
+* *The Epic of Gilgamesh* -- Sin-Leqi-Unninni(?)
 * *The Three Body Problem* -- Cixin Liu
 * *Pale Fire* -- Vladimir Nabokov
 * *Le Marin de Gilbraltar* -- Marguerite Duras
@@ -17,6 +19,7 @@ Salut, je suis Bryan et je suis un mec de 25 ans qui habite à Lille et travaill
 * *Bluebeard* -- Kurt Vonnegut
 * *Lolita* -- Vladimir Nabokov
 * *Au Bonheur des Ogres* -- Daniel Pennac
+* *Cat's Cradle* -- Kurt Vonnegut 
 * *Milarepa* -- Eric Emmanuel-Schmitt
 * *I, Claudius* -- Robert Graves
 * *Fear and Loathing in Las Vegas* -- Hunter S. Thompson
