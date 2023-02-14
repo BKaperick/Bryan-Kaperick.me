@@ -10,7 +10,7 @@ En plus, la plupart de mes poémes seront sans doute en anglais, et je vais pas 
 
 Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, et *cringe*.  Bien sur, je reste ouvert à tout genre de retour.
 
-# Surrender (2022--02)
+# Surrender (2023--02)
 >She'd already been walking for awhile  
 >when I stopped by and smiled.  
 >She used me like I always knew  

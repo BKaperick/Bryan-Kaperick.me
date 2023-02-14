@@ -8,7 +8,7 @@ This page can get rather personal, as poetry tends to be, so proceed at your own
 
 I would categorize my personal style as somewhere between *derivative* and *cringe*.  Of course, I'm open to all sorts of feedback.
 
-# Surrender (2022--02)
+# Surrender (2023--02)
 >She'd already been walking for awhile  
 >when I stopped by and smiled.  
 >She used me like I always knew  
