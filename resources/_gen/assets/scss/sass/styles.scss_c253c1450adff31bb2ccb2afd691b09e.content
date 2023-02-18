@@ -893,4 +893,10 @@ figure.podcast audio {
   .anchor-header:focus .anchor-link:focus, .anchor-header:focus .anchor-link:hover, .anchor-header:hover .anchor-link:focus, .anchor-header:hover .anchor-link:hover {
     opacity: 1; }
 
+details summary {
+  cursor: pointer; }
+
+details summary > * {
+  display: inline; }
+
 /*# sourceMappingURL=styles.css.map */

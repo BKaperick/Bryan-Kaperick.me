@@ -8,7 +8,11 @@ This page can get rather personal, as poetry tends to be, so proceed at your own
 
 I would categorize my personal style as somewhere between *derivative* and *cringe*.  Of course, I'm open to all sorts of feedback.
 
-# Surrender (2023--02)
+{{< details "# Works that inspire me" >}}
+{{< /details >}}
+{{< details "My works" >}}
+
+## Surrender (2023--02)
 >She'd already been walking for awhile  
 >when I stopped by and smiled.  
 >She used me like I always knew  
@@ -31,7 +35,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >on the horizon.  It's you.  
 >You'll give me shelter, if I surrender.  
 
-# Kansas Sky (2022--07)
+## Kansas Sky (2022--07)
 >This morning I watched a cloud fall to earth.  
 >Once suspended in the Kansas sky  
 >&nbsp;&nbsp;&nbsp;now turned to vapor in my eye.   
@@ -40,7 +44,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >And here I gaze at Julie next to me    
 >&nbsp;&nbsp;&nbsp;She takes my cloud and twinkle and goes to sleep  
 
-# Untitled (2022--05--23)
+## Untitled (2022--05--23)
 
 >Jackal toes and bloody lips  
 >On the wall trickles and drips  
@@ -51,8 +55,13 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >Cousins found in burnt-up embers  
 >Whether or not they come around  
 >That hound still shrieks. 
+>  
+>A festering paste birthed in mildew
+>Rancid pustules - a noxious brew
+>We the few who slurp that liqueor
+>While that whore moans and waits.
  
-# Fierce creature (2020--01--13)
+## Fierce creature (2020--01--13)
 
 >Fierce creature.  
 >Her warm-armed currents  
@@ -61,4 +70,6 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >Spewing caustic, emptying  
 >Into basins which steam future desire,  
 >Filled to quench days spent apart.  
+
+{{< /details >}}
 
