@@ -106,25 +106,26 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 *Surrender* -- February 2023
 
 >She'd already been walking for awhile  
->when I stopped by and smiled.  
+>when I stopped by and smiled  
 >She used me like I always knew  
 >&nbsp;&nbsp;&nbsp;I wanted to be used.  
->That night I lived my mirrored words.  I knew  
->She'd give me shelter, if I surrendered.  
->
+>That night I lived my mirrored words.  
+>I knew she'd give me shelter, so I abided.  
+> 
 >Mutually discarded,  
->we walked some more   
+>we walked some more  
 >with four eyes fixed  
->on the berth of forest lying in the distance.  
->"That'll give us shelter, if we surrender."  
+>on the crest of forest in the distance.   
+>"That'll give us shelter," I assured her.  
 >
->But then we split, dawn took us in  
->and we realized a sickly thought--  
+>And so we split  
+>dawn took us in.  
+>It seeped in us a sickly thought  
 >Our pleasure dome was hollow leaves,   
->&nbsp;&nbsp;&nbsp;but built so beautifully.   
+>&nbsp;&nbsp;&nbsp;but built so beautifully.  
 >I need not look beyond that figure,   
->lingering deaf and blind   
->on the horizon.  It's you.  
+>lingering deaf and blind,   
+>on the horizon.  It's you.    
 >You'll give me shelter, if I surrender.  
 
 *Kansas Sky* -- July 2022
