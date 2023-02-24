@@ -103,30 +103,33 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
-*Surrender* -- February 2023
+*Untitled night* -- February 2023
 
->She'd already been walking for awhile  
->when I stopped by and smiled  
->She used me like I always knew  
->&nbsp;&nbsp;&nbsp;I wanted to be used.  
->That night I lived my mirrored words.  
->I knew she'd give me shelter, so I abided.  
-> 
->Mutually discarded,  
->we walked some more  
->with four eyes fixed  
->on the crest of forest in the distance.   
->"That'll give us shelter," I assured her.  
->
->And so we split  
->dawn took us in.  
->It seeped in us a sickly thought  
->Our pleasure dome was hollow leaves,   
->&nbsp;&nbsp;&nbsp;but built so beautifully.  
->I need not look beyond that figure,   
->lingering deaf and blind,   
->on the horizon.  It's you.    
->You'll give me shelter, if I surrender.  
+>Her animal lay wild,  
+>hunched, and prowling in its cage  
+>with iron bars made brittle by  
+>the advance of our seduction.  
+>Then one day she pounced and bared  
+>&mdash; Breathing with her whole body like an organ.  
+>An affront to what I used to know as "passion".  
+>  
+>At once the wilderness subsided  
+>and we both froze then melted.  
+>She stepped fully into me,  
+>hesitation revealed to be  
+>footprints parting in the sand  
+>as evening tide approaches.  
+>&mdash; Call it a kind of destiny  
+>we'd read between the waves.  
+>  
+>So I gave myself relentlessly,  
+>inspired by that ferocity  
+>eager claws know well to be  
+>lurking beneath the dirt.  
+>And finally, when she drew blood,  
+>evinced our last temptation  
+>&mdash; We shared her gristle-ridden lair  
+>fused together, cast in crimson.  
 
 *Kansas Sky* -- July 2022
 
@@ -153,7 +156,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >Festered paste birthed in mildew  
 >Rancid stir of pustules brew  
 >We the few who slurp that liqueur  
->While that whore moans.  
+>While that dusty whore moans.  
  
 *Fierce creature* -- January 2020
 
