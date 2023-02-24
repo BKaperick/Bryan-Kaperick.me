@@ -133,7 +133,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >&mdash; We shared her gristle-ridden lair  
 >fused together, cast in crimson.  
 
-*Kansas Sky* -- July 2022
+*Kansas Sky* -- Juillet 2022
 
 >This morning I watched a cloud fall to earth.  
 >Once suspended in the Kansas sky  
