@@ -156,7 +156,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >Festered paste birthed in mildew  
 >Rancid stir of pustules brew  
 >We the few who slurp that liqueur  
->While that dusty whore moans.  
+>While her dusty lips moan.  
  
 *Fierce creature* -- January 2020
 

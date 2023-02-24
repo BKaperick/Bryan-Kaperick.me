@@ -158,7 +158,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >Festered paste birthed in mildew  
 >Rancid stir of pustules brew  
 >We the few who slurp that liqueur  
->While that dusty whore moans.  
+>While her dusty lips moan.  
  
 *Fierce creature* -- Janvier 2020
 
