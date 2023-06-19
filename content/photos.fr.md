@@ -22,7 +22,7 @@ Des photos de moi et mes amis, en ordre chronologique inverse.
 {{< figure src="/images/julien-bryan-nadir-yanomi-skate-blabla.jpg" caption="Julien, moi, Nadir, et Yanomi à Blabla ~ 2021" >}}
 {{< figure src="/images/bryan-blabla-skate.jpg" caption="Que moi sur un skate à Blabla ~ 2021" >}}
 {{< figure src="/images/bryan-julie-etienne-cici-william-yanomi-grenoble.jpg" caption="La moitié de moi, Julie, Etienne, Cici, William, et Yanomi à Fort de la Bastille, Grénoble ~ 2021" >}}
-{{< figure src="/images/bryan-jeremy.png" caption="Me, Jeremy, et Mathieu on French TV ~ 2021" >}}
+{{< figure src="/images/bryan-jeremy.png" caption="Me, Jeremy, et Mathieu au télévision Francais ~ 2021" >}}
 {{< figure src="/images/michael-bryan-lecart.jpg" caption="Moi et Michael à L'Écart ~ 2020" >}}
 {{< figure src="/images/alex-bryan-paris.jpg" caption="Alex et moi à Le Viaduc ~ 2020" >}}
 {{< figure src="/images/Anton-william-bryan-la-seine.jpg" caption="Anton, William et moi à Jardin Tino Rossi ~ 2020" >}}
