@@ -24,6 +24,7 @@ michael-tyler-bryan-dunkerque
 {{< figure src="/images/bryan-blabla-skate.jpg" caption="Just me on a skateboard at Blabla ~ 2021" >}}
 {{< figure src="/images/bryan-julie-etienne-cici-william-yanomi-grenoble.jpg" caption="Half of me, Julie, Etienne, Cici, William, and Yanomi at Fort de la Bastille, Grénoble ~ 2021" >}}
 {{< figure src="/images/bryan-jeremy.png" caption="Me, Jeremy, and Mathieu on French TV ~ 2021" >}}
+{{< figure src="/images/michael-bryan-lecart.jpg" caption="Me and Michael at L'Écart ~ 2020" >}}
 {{< figure src="/images/michael-bryan-julie.jpg" caption="Michael, me, and Julie in Wazemmes ~ 2020" >}}
 {{< figure src="/images/alex-bryan-paris.jpg" caption="Alex and Bryan at Le Viaduc ~ 2020" >}}
 {{< figure src="/images/Anton-william-bryan-la-seine.jpg" caption="Anton, William and me at Jardin Tino Rossi ~ 2020" >}}
