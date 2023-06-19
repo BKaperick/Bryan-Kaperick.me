@@ -136,6 +136,17 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >find ourselves like that Tarkovsky flick,  
 >till no warm-blooded carcass persists.  
 
+* Untitled * -- Mai 2023
+
+>Accro à la banalité  
+>A la recherche d'une bière  
+>Tellement de temps bu  
+>Sans rien faire  
+>Chasseurs des pique-niques  
+>Cuites au soleil  
+>Brillants sommes nous  
+>Les lapins d'été  
+
 *Those oozing stacks grow* -- Avril 2023
 
 >I want to tell of carcasses stacked tall  

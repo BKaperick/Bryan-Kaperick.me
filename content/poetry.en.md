@@ -134,6 +134,17 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >find ourselves like that Tarkovsky flick,  
 >till no warm-blooded carcass persists.  
 
+* Untitled * -- May 2023
+
+>Accro à la banalité  
+>A la recherche d'une bière  
+>Tellement de temps bu  
+>Sans rien faire  
+>Chasseurs des pique-niques  
+>Cuites au soleil  
+>Brillants sommes nous  
+>Les lapins d'été  
+
 *Those oozing stacks grow* -- April 2023
 
 >I want to tell of carcasses stacked tall  
