@@ -105,7 +105,78 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
-*Untitled night* -- Fevrier 2023
+*Whalebone branches* -- Juin 2023
+
+>Whalebone branches  
+>they bellow and spill  
+>leaves torn from their bindings  
+>onto all the stand-buyers  
+>in the widening gyre.  
+>  
+>Those urchins from Ur  
+>with their babbling burns  
+>each scar submits a solution  
+>"Not a 5-over-1, it's just so overdone."  
+>A sober flight takes thought  
+>with a rabid Star Fox  
+>whose atavistic impulses  
+>barrel-roll to steal the old  
+>from the Niagara Cafe.  
+>  
+>And maybe in its depths  
+>he'll ask directions  
+>from the Maidens of Mist.  
+>They'll turn tablets to clay  
+>declare "La vie est une scie"  
+>buy a round for all  
+>the hypocrites of twenty twenty-three.  
+>  
+>Silver tongues will take a lick,  
+>restore our faith in Moby Dick,  
+>find ourselves like that Tarkovsky flick,  
+>till no warm-blooded carcass persists.  
+
+*Those oozing stacks grow* -- Avril 2023
+
+>I want to tell of carcasses stacked tall  
+>Of honey dried out at crusty summer's fall  
+>That bridge appeared and beckoned passers-by  
+>To give the yonder ravine's edge a try.  
+>  
+>So you and her, cutting through the weeds &mdash;  
+>Trudged, creaking, above the misty deeps  
+>In search of fire to warm your tender skin  
+>or adventure's strike to bake you from within.  
+>But an hour's passed and still ye edge along  
+>uncertain heartbeats pound a booming song.  
+>  
+>All while we howl and screech out for you  
+>"Oh lovelies, you've never seen splendors more true  
+>than that which awaits all who cross the border  
+>and abides by our master's all-knowing order"  
+>Put candidly, just once, for the hatchlings to our realm  
+>Take a dive, be immersed, as a feather to inkwell.  
+>  
+>You smirked and wrote verse, your spirits were high  
+>Eager for the taverns where they'll chant your hero's cry  
+>And so ye arrive, dock on our shores  
+>waves hit with sting, mixing afters and befores  
+>Drowning on the cliff, you hold each other tight  
+>Swords drawn, side by side, ready for the fight...  
+>  
+>...Excuse me, dear listener,  
+>I'll divulge nothing more.  
+>Our master  
+>would rather  
+>cast shadows  
+>than lore.  
+>  
+>I promised sick tales of flesh piled high  
+>but suffice it to know  
+>those oozing stacks grow  
+>with each ripe passerby.  
+
+*Untitled night* -- Février 2023
 
 >Her animal lay wild,  
 >hunched, and prowling in its cage  
