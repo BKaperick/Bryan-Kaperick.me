@@ -6,6 +6,13 @@ draft: false
 
 Some photos of me and my friends, in reverse chronological order.
 
+{{< figure src="/images/atomium.jpg" caption="Me, Michael, and Tyler at the Atomium in Brussels ~ 2023" >}}
+{{< figure src="/images/egouts.jpg" caption="Me in the Sewers of Brussels ~ 2023" >}}
+{{< figure src="/images/parents-lille.jpg" caption="Me, my parents, Laura, Aubrée, and Tyler in my courtyard ~ 2023" >}}
+{{< figure src="/images/aux-enfants-terribles.jpg" caption="Aubrée, Sunny, Me, and Tyler at *Aux Enfants Terribles* ~ 2023" >}}
+{{< figure src="/images/colocs-court.jpg" caption="Me and my roommates in our courtyard ~ 2023" >}}
+{{< figure src="/images/flo-anniv.jpg" caption="Me, Flo, and Constance at a restaurant in Lille ~ 2023" >}}
+{{< figure src="/images/jason-alcohol.jpg" caption="Me, Jason, and some others in Pittsburgh one night ~ 2023" >}}
 {{< figure src="/images/picnic_anton.jpeg" caption="A bunch of people including Anton et a picnic in Paris ~ 2022" >}}
 {{< figure src="/images/swap-hai-bryan-nice.jpg" caption="Swap, Hai and me in Nice ~ 2022" >}}
 {{< figure src="/images/bryan-michael-tyler-anvers.jpg" caption="Me, Michael, and Tyler in Antwerp ~ 2021" >}}
