@@ -1,25 +1,10 @@
+# -*- coding: utf-8 -*-
 from owid import catalog
 import pandas as pd
 import random
 import re
-results = catalog.find('')
-result = results.sample().load()
-metadata = result.metadata
-data = metadata.dataset
-title = metadata.title
-description = metadata.dataset.description
-if title == None:
-    title = metadata.dataset.title
 
-#series_desc = result.seriesdescription[0]
-print(title)
-print(description)
-#print(result)
-
-#df = pd.DataFrame(result)
-#for _,row in df.iterrows():
-#    print(row)
-
+yesno = re.compile(" \(1 = yes(;|,) 0 = no\)")
 
 def prepare_data(table):
     # Create a dataframe with a dummy index from the table.
@@ -41,7 +26,6 @@ def format_year(year):
     if year < 0:
         return str(-year) + ' BC'
     return str(year)
-yesno = re.compile(" \(1 = yes(;|,) 0 = no\)")
 def clean_desc_with_value(raw_desc, value, year):
     clean_desc = raw_desc[::]
     print(raw_desc)
@@ -54,9 +38,14 @@ def clean_desc_with_value(raw_desc, value, year):
         clean_desc = yesno.sub(clean_desc)
         value_str = 'yes' if str(value) == '1' else 'no'
     else:
-        value_str = format(value, ',d') if not '.' in str(value) else str(value)
+        print(type(value))
+        if isinstance(value, int):
+            value_str = format(value, ',d')
+        else:
+            value_str = str(value)
+        
     clean_desc = clean_desc.replace(' (ratio)', '')
-    clean_desc = '*' + clean_desc.lower() + '*'
+    clean_desc = '*' + clean_desc[0].lower() + clean_desc[1:] + '*'
     verb = 'is' if year == 2023 else 'was'
     return clean_desc, verb, value_str
 
@@ -84,39 +73,52 @@ country_overview_translations = {
         'deaths__interpersonal_violence__sex__both__age__all_ages__rate': 'rate of death due to interpersonal violence across all ages and sexes'
        }
 
-df= prepare_data(result)
-row = df.sample(1)
-
 datasets_to_skip = {
 'Additional variables',
 'Equaldex dataset'
         }
 
-if any([d in title for d in datasets_to_skip]):
-    print('skipping')
-elif 'Country Profile Overview' in title:
-    print(df)
-    column = random.choice(list(country_overview_translations.keys()))
-    desc = country_overview_translations[column]
-    value = row[column].iloc[0]
+if __name__ == "__main__":
+    results = catalog.find('')
+    result = results.sample().load()
+    metadata = result.metadata
+    data = metadata.dataset
+    title = metadata.title
+    description = metadata.dataset.description
+    if title == None:
+        title = metadata.dataset.title
 
-elif 'seriesdescription' not in row.columns:
-    column = random.choice([c for c in row.columns if c not in {'country', 'year'} and not pd.isna(row[c].iloc[0])])
-    desc = metadata.dataset[column].title + '(' + metadata.dataset[column].description + ')'
-    value = row[column].iloc[0]
+    print(title)
+    print(description)
 
-else:
-    desc = row.seriesdescription.iloc[0]
-    value = row.value.iloc[0]
+    df= prepare_data(result)
+    row = df.sample(1)
 
-country = row.country.iloc[0]
-year = row.year.iloc[0]
-(clean_desc,verb,value_str) = clean_desc_with_value(desc, value, year)
-clean_year = format_year(year)
-clean_country = format_country(country)
+    if any([d in title for d in datasets_to_skip]):
+        print('skipping')
+    elif 'Country Profile Overview' in title:
+        print(df)
+        column = random.choice([c for c in country_overview_translations.keys().intersect(row.columns) if not pd.isna(row[c].iloc[0])])
+        desc = country_overview_translations[column]
+        value = row[column].iloc[0]
 
-output = get_output(clean_country, clean_year, clean_desc, verb, value_str)
-print(output)
-with open ('../content/datapoint.txt', 'w') as f:
-    f.write(output)
+    elif 'seriesdescription' not in row.columns:
+        column = random.choice([c for c in row.columns if c not in {'country', 'year'} and not pd.isna(row[c].iloc[0])])
+        print(metadata.dataset)
+        desc = metadata.dataset[column].title + '(' + metadata.dataset[column].description + ')'
+        value = row[column].iloc[0]
 
+    else:
+        desc = row.seriesdescription.iloc[0]
+        value = row.value.iloc[0]
+
+    country = row.country.iloc[0]
+    year = row.year.iloc[0]
+    (clean_desc,verb,value_str) = clean_desc_with_value(desc, value, year)
+    clean_year = format_year(year)
+    clean_country = format_country(country)
+
+    output = get_output(clean_country, clean_year, clean_desc, verb, value_str)
+    print(output)
+    with open ('../content/datapoint.txt', 'w') as f:
+        f.write(output)
