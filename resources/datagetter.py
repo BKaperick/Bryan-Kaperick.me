@@ -3,8 +3,9 @@ from owid import catalog
 import pandas as pd
 import random
 import re
+import numpy as np
 
-yesno = re.compile(" \(1 = yes(;|,) 0 = no\)")
+yesno = re.compile(" \(1 = yes(;|,) 0 = no\)", re.IGNORECASE)
 
 def prepare_data(table):
     # Create a dataframe with a dummy index from the table.
@@ -39,8 +40,10 @@ def clean_desc_with_value(raw_desc, value, year):
         value_str = 'yes' if str(value) == '1' else 'no'
     else:
         print(type(value))
-        if isinstance(value, int):
+        if isinstance(value, np.uint32):
             value_str = format(value, ',d')
+        elif isinstance(value, np.float32):
+            value_str = str(round(value, 2))
         else:
             value_str = str(value)
         
@@ -78,34 +81,40 @@ datasets_to_skip = {
 'Equaldex dataset'
         }
 
-if __name__ == "__main__":
-    results = catalog.find('')
-    result = results.sample().load()
-    metadata = result.metadata
-    data = metadata.dataset
-    title = metadata.title
-    description = metadata.dataset.description
-    if title == None:
-        title = metadata.dataset.title
+def get_random_data():
+    title = None
+    while any([(title == None) or (d in title) for d in datasets_to_skip]):
+        results = catalog.find('')
+        result = results.sample().load()
+        metadata = result.metadata
+        data = metadata.dataset
+        title = metadata.title
+        description = metadata.dataset.description
+        if title == None:
+            title = metadata.dataset.title
 
-    print(title)
-    print(description)
+        print(title)
+        print(description)
 
-    df= prepare_data(result)
+        df= prepare_data(result)
+
+    return result,df,metadata
+
+def get_output_string_from_df(result, df, metadata):
+    title = metadata.dataset.title
     row = df.sample(1)
 
-    if any([d in title for d in datasets_to_skip]):
-        print('skipping')
-    elif 'Country Profile Overview' in title:
-        print(df)
-        column = random.choice([c for c in country_overview_translations.keys().intersect(row.columns) if not pd.isna(row[c].iloc[0])])
+
+    if 'Country Profile Overview' in title:
+        column = random.choice([c for c in set(country_overview_translations.keys()).intersection(row.columns) if not pd.isna(row[c].iloc[0])])
         desc = country_overview_translations[column]
         value = row[column].iloc[0]
 
     elif 'seriesdescription' not in row.columns:
         column = random.choice([c for c in row.columns if c not in {'country', 'year'} and not pd.isna(row[c].iloc[0])])
-        print(metadata.dataset)
-        desc = metadata.dataset[column].title + '(' + metadata.dataset[column].description + ')'
+        desc = result[column].metadata.title
+        if result[column].metadata.description:
+            desc += ' (' + result[column].metadata.description + ')'
         value = row[column].iloc[0]
 
     else:
@@ -118,7 +127,17 @@ if __name__ == "__main__":
     clean_year = format_year(year)
     clean_country = format_country(country)
 
-    output = get_output(clean_country, clean_year, clean_desc, verb, value_str)
-    print(output)
-    with open ('../content/datapoint.txt', 'w') as f:
-        f.write(output)
+    return get_output(clean_country, clean_year, clean_desc, verb, value_str)
+
+if __name__ == "__main__":
+    data_sent = False
+    while not data_sent:
+        try:
+            result,df,metadata = get_random_data()
+            output = get_output_string_from_df(result,df,metadata)
+            print(output)
+            with open ('../content/datapoint.txt', 'w') as f:
+                f.write(output)
+            data_sent = True
+        except Exception as e:
+            print(e)
