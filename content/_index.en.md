@@ -9,4 +9,4 @@ draft: false
 
 {{< readfile file="content/datapoint.txt" markdown="true" >}}.
 
-<p><FONT COLOR="Grey">Thanks to the open API available by [Our World in Data](https://ourworldindata.org/).</p>
+Thanks to the open API available by [Our World in Data](https://ourworldindata.org/).
