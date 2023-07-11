@@ -12,7 +12,8 @@ defaultContentLanguage = 'fr'
     [Languages.en.params]
       LanguageCode = 'en'
       linkedin = 'https://www.linkedin.com/in/bryankaperick/'
-
+[markup.goldmark.renderer]
+    unsafe = true
 
   [Languages.fr]
     title = 'Le Site Web de Bryan Kaperick'

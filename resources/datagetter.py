@@ -4,6 +4,9 @@ import pandas as pd
 import random
 import re
 import numpy as np
+import sys
+
+content_path = sys.argv[1]
 
 yesno = re.compile(" \(1 = yes(;|,) 0 = no\)", re.IGNORECASE)
 
@@ -136,7 +139,7 @@ if __name__ == "__main__":
             result,df,metadata = get_random_data()
             output = get_output_string_from_df(result,df,metadata)
             print(output)
-            with open ('../content/datapoint.txt', 'w') as f:
+            with open (content_path, 'w') as f:
                 f.write(output)
             data_sent = True
         except Exception as e:
