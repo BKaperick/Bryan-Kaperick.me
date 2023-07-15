@@ -105,6 +105,26 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
+*Untitled* Juillet 2023
+
+>If ever a lonely night  
+>Should you wake in a sharp tremor  
+>From a passing specter's strike  
+>Whose trailing vapors leak a sweet scene  
+>That only you and I could recognize...  
+>  
+>Écrase-le !  
+>Et moi je vais faire pareil  
+>Il n'est rien qu'un moustique qui vit de l'obscurité  
+>Un porte-souvenir des nuits si chauds  
+>Et ses piqûres guériront par l'aube du lendemain  
+>  
+>Même si l'odeur persiste toujours  
+>Cet odeur dont l'existence le matin  
+>révèle que ce rêve  
+>Ne vivait pas que dans ta tête  
+>Ni que pendant la nuit  
+
 *Whalebone branches* -- Juin 2023
 
 >Whalebone branches  

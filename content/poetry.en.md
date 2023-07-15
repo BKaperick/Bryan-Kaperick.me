@@ -103,6 +103,26 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
+*Untitled* July 2023
+
+>If ever a lonely night  
+>Should you wake in a sharp tremor  
+>From a passing specter's strike  
+>Whose trailing vapors leak a sweet scene  
+>That only you and I could recognize...  
+>  
+>Écrase-le !  
+>Et moi je vais faire pareil  
+>Il n'est rien qu'un moustique qui vit de l'obscurité  
+>Un porte-souvenir des nuits si chauds  
+>Et ses piqûres guériront par l'aube du lendemain  
+>  
+>Même si l'odeur persiste toujours  
+>Cet odeur dont l'existence le matin  
+>révèle que ce rêve  
+>Ne vivait pas que dans ta tête  
+>Ni que pendant la nuit  
+
 *Whalebone branches* -- June 2023
 
 >Whalebone branches  
