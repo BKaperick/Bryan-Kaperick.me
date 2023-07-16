@@ -103,7 +103,17 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
-*Untitled* July 2023
+*Untitled pt. 2* -- July 2023
+
+>and the end it was so brief half an hour in the park and we didnt even break open the pulco and sparkling water 
+>
+>she was calm as was i there was maybe a single moment where a tear was held back 
+>
+>oh isnt it complicated to close the book of belle hectic mornings and pale razorburnt legs out in the world lovely lovely and probably crying brutally alone in her bed as i write this 
+>
+>sleep will come easier as i read it back each night knowing with each recitation ill fade further onto her horizon.
+
+*Untitled* -- July 2023
 
 >If ever a lonely night  
 >Should you wake in a sharp tremor  
@@ -154,7 +164,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >find ourselves like that Tarkovsky flick,  
 >till no warm-blooded carcass persists.  
 
-* Untitled * -- May 2023
+*Untitled* -- May 2023
 
 >Accro à la banalité  
 >A la recherche d'une bière  

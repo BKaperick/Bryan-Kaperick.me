@@ -105,6 +105,17 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
+*Untitled pt. 2* July 2023
+
+>and the end it was so brief half an hour in the park and we didnt even break open the pulco and sparkling water 
+>
+>she was calm as was i there was maybe a single moment where a tear was held back 
+>
+>oh isnt it complicated to close the book of belle hectic mornings and pale razorburnt legs out in the world lovely lovely and probably crying brutally alone in her bed as i write this 
+>
+>sleep will come easier as i read it back each night knowing with each recitation ill fade further onto her horizon.
+
+
 *Untitled* Juillet 2023
 
 >If ever a lonely night  
@@ -156,7 +167,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >find ourselves like that Tarkovsky flick,  
 >till no warm-blooded carcass persists.  
 
-* Untitled * -- Mai 2023
+*Untitled* -- Mai 2023
 
 >Accro à la banalité  
 >A la recherche d'une bière  
