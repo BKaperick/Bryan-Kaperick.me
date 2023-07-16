@@ -3,10 +3,12 @@ theme = "zen"
 contact = "bryan.kaperick@gmail.com"
 mainSections = ["About Me"]
 defaultContentLanguage = 'fr'
+enableGitInfo = true
 [Languages]
   [Languages.en]
     weight = 2
     title = "Bryan Kaperick's Website"
+    LastUpdateDate = "Date here"
     LanguageBoringName = 'English'
     LanguageName = 'Uh, in English please...?'
     [Languages.en.params]

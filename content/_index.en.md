@@ -10,3 +10,5 @@ draft: false
 {{< readfile file="content/datapoint.txt" markdown="true" >}}.
 
 Thanks to the open API available by [Our World in Data](https://ourworldindata.org/).
+
+Site last updated {{< readfile file="content/last_update_date.txt" markdown="false" >}}.
