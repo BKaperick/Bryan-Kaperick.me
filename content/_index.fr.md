@@ -11,3 +11,9 @@ draft: false
 {{< readfile file="content/datapoint.txt" markdown="true" >}}.
 
 Grace à l'API ouvert proposé par [Our World in Data](https://ourworldindata.org/).
+
+# L'Argot quotidien
+
+{{< readfile file="content/argot.txt" markdown="true" >}}.
+
+Site mise à jour le {{< readfile file="content/last_update_date.txt" markdown="false" >}}.

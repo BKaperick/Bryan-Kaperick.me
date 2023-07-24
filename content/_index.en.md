@@ -11,4 +11,8 @@ draft: false
 
 Thanks to the open API available by [Our World in Data](https://ourworldindata.org/).
 
+# Daily French slang
+
+{{< readfile file="content/argot.txt" markdown="true" >}}.
+
 Site last updated {{< readfile file="content/last_update_date.txt" markdown="false" >}}.
