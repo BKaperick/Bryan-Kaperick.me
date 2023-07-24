@@ -6,7 +6,7 @@ import scrapy
 '''
 Run with `$scrapy runspider argoscraper.py`
 '''
-class QuotesSpider(scrapy.Spider):
+class ArgoSpider(scrapy.Spider):
     name = "argo"
     date_str = datetime.today().strftime('%Y%m%d_%H%M%S')
 
