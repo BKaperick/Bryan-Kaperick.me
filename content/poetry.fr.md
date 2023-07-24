@@ -218,6 +218,13 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >those oozing stacks grow  
 >with each ripe passerby.  
 
+*Bruges Pluie Blues* -- Mars 2023
+
+>Il plu dans cette vielle ville  
+>Pendant ces vacances débiles  
+>Où j'accompagne mes parents  
+>Qui connaissent Bruges d'un film  
+
 *Empanadas and Coffee* -- Février 2023  
     *(traduit par moi de l'anglais original)*
 

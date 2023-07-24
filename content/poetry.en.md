@@ -215,6 +215,13 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >those oozing stacks grow  
 >with each ripe passerby.  
 
+*Bruges Pluie Blues* -- March 2023
+
+>Il plu dans cette vielle ville  
+>Pendant ces vacances débiles  
+>Où j'accompagne mes parents  
+>Qui connaissent Bruges d'un film  
+
 *Empanadas and Coffee* -- February 2023
 
 >So there we were  
