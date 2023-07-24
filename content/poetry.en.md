@@ -118,7 +118,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >If ever a lonely night  
 >Should you wake in a sharp tremor  
 >From a passing specter's strike  
->Whose trailing vapors leak a sweet scene  
+>Whose trailing vapors leak a sweet scent  
 >That only you and I could recognize...  
 >  
 >Écrase-le !  
