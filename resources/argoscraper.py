@@ -2,6 +2,10 @@ from pathlib import Path
 from datetime import datetime
 import scrapy
 
+
+'''
+Run with `$scrapy runspider argoscraper.py`
+'''
 class QuotesSpider(scrapy.Spider):
     name = "argo"
     date_str = datetime.today().strftime('%Y%m%d_%H%M%S')
