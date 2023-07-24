@@ -215,6 +215,54 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >those oozing stacks grow  
 >with each ripe passerby.  
 
+*Empanadas and Coffee* -- February 2023
+
+>So there we were  
+>in the Halles of Wazemmes at noon on a Sunday  
+>eating empanadas and drinking coffee.  
+>It felt right.  
+>Smelled right.  
+>Tasted right.  
+>We could've just as easily been  
+>in the "halles" of Ukrop's  
+>7:30 on a Tuesday morning  
+>eating biscuits and drinking chocolate milk  
+>me, Kevin, and Mom.  
+>It resonated.  
+>  
+>It was just a few days later  
+>after a long moment  
+>squirming and panting,  
+>she tells me  
+>"I think I'm falling in love."  
+>I didn't say anything back.  
+>Instead I let that hollow static  
+>build up between us  
+>My fingertips charged it,  
+>brushing up and down her spine.  
+>I can leave her there, knowing  
+>we just shared each other,  
+>So coherent, so resonant,  
+>And yet maybe nothing more will come of it.  
+>  
+>But take birds &mdash; their songs come proud and natural  
+>one to another.  
+>But us humans, lonely savages staggering about,  
+>grasping blindly in the dark.  
+>Diffident beasts afraid to flick on the lights.  
+>At this rate we'll never sip that milk and honey.  
+>Those empanadas and coffee, even,  
+>so often evaporate to  
+>odours lingering and then eroding  
+>in a harsh wind  
+>that'll clear out by dusk  
+>  
+>And by night's fall, we're back in our caves.  
+>Exhausted.  
+>Just trying to strike a fire.  
+>This time,  
+>one that'll last beyond morning.  
+
 *Untitled night* -- February 2023
 
 >Her animal lay wild,  

@@ -6,7 +6,7 @@ draft: false
 ---
 {{< figure src="/images/logo_man_strikes.jpg">}}
 
-# Donnée Quotidien
+# Point de Donnée Quotidien
 
 {{< readfile file="content/datapoint.txt" markdown="true" >}}.
 

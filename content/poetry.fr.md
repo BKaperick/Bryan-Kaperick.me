@@ -218,6 +218,59 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >those oozing stacks grow  
 >with each ripe passerby.  
 
+*Empanadas and Coffee* -- Février 2023  
+    *(traduit par moi de l'anglais original)*
+
+>Voilà, on était là  
+>dans les halles de Wazemmes, à midi le dimanche  
+>en mangeant des empanadas avec du café  
+>C'était le bon.  
+>Ca sentait bon  
+>Le gout était bon.  
+>On aurait pu été  
+>dans les halles de Ukrop's  
+>A 7h30 le mardi matin  
+>en mangeant des biscuits avec du lait au chocolat  
+>Moi, Kevin, et maman.  
+>Ca résonnait.  
+>  
+>Quelques jours plus tard,  
+>après un long moment  
+>de gigoter et haleter  
+>elle me dit  
+>"I think I'm falling in love"  
+>J'ai rien dit en réponse.  
+>Plutôt, j'ai laissé le statique creux  
+>s'accumuler entre nous.  
+>Les bouts de mes doigts  
+>l'ont chargé en effleurant sa colonne vertébrale  
+>d'un bout à l'autre  
+>  
+>Je pourrais la laisser là, sachant  
+>qu'on s'est partagé, elle et moi,  
+>et c'était tellement cohèrent, résonnant.  
+>Cependant, c'est possible que rien de plus  
+>arrivera entre nous  
+>  
+>Entre-temps, prends des oiseaux par exemple  
+>&mdash; leurs chants sortent, fier et natural  
+>de l'un à l'autre  
+>Alors que nous, les être humains,  
+>les sauvages seuls qui titubent dans leurs propres ombres  
+>Des bêtes réticents qu'ont trop peur d'allumer la pièce  
+>pour voir l'autre, mais s'exposer en meme temps  
+>A ce rhythme, on va jamais gouter le lait et le miel  
+>Ces empanadas et ce café, même,  
+>deviennent-ils toujours des odeurs  
+>qui s'évaporent dès que le vent commence à durcir  
+>et par crepuscule, complètement disparus.  
+>  
+>Par la nuit, on est en retour dans nos grottes  
+>Crevés.  
+>En essayant tout simplement d'allumer un feu.  
+>Cette fois,  
+>Un qui survivra au-delà du matin.  
+
 *Untitled night* -- Février 2023
 
 >Her animal lay wild,  
