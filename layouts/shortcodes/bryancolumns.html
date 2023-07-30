@@ -1,0 +1,32 @@
+{{ $title := .Get "title" }}
+<style>
+
+.bryan-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+  max-width: 10000px;
+  width: 900px;
+}
+
+.bryancolumn {
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 2em;
+  text-indent: -2em;
+}
+.long {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+</style>
+    <div class="bryan-grid">
+                {{- range split .Inner "<--->" }}
+            <div class="bryancolumn">
+                {{ . | $.Page.RenderString -}} 
+            </div>
+                {{- end }}
+    </div>
