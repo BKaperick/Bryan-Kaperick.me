@@ -28,8 +28,8 @@ class ArgoSpider(scrapy.Spider):
         filename = f"{page}-{self.date_str}.txt"
         with open(filename, 'w') as f:
             for term,defn in zip(terms, definitions):
-                clean_term = term.replace("?","").strip()
-                clean_defn = defn.replace("?","").strip()
-                f.write(f"{clean_term} -- {clean_defn}\n")
+                clean_term = term.replace("?","").replace("■ ","").strip()
+                clean_defn = defn.replace("?","").replace("■ ","").strip()
+                f.write(f"*{clean_term}* -- {clean_defn}\n")
 
         self.log(f"Saved file {filename}")
