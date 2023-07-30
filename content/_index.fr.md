@@ -15,5 +15,3 @@ Grace à l'API ouvert proposé par [Our World in Data](https://ourworldindata.or
 # L'Argot quotidien
 
 {{< readfile file="content/argot.txt" markdown="true" >}}.
-
-Site mise à jour le {{< readfile file="content/last_update_date.txt" markdown="false" >}}.

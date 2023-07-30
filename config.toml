@@ -8,12 +8,12 @@ enableGitInfo = true
   [Languages.en]
     weight = 2
     title = "Bryan Kaperick's Website"
-    LastUpdateDate = "Date here"
     LanguageBoringName = 'English'
     LanguageName = 'Uh, in English please...?'
     [Languages.en.params]
       LanguageCode = 'en'
       linkedin = 'https://www.linkedin.com/in/bryankaperick/'
+      lastUpdateDate = "Site last updated "
 [markup.goldmark.renderer]
     unsafe = true
 
@@ -26,3 +26,4 @@ enableGitInfo = true
       LanguageCode = 'fr'
       linkedin = 'https://www.linkedin.com/in/bryankaperick/?locale=fr_FR'
       title = "Le Site Web de Bryan Kaperick"
+      lastUpdateDate = "Site mise à jour le "
