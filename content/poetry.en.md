@@ -103,6 +103,29 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
+*Crossing your path* -- July 2023
+
+>I'd like to cross your path from time to time  
+>To say 'Hello' and then 'Goodbye'  
+>And leave a little tune behind  
+>&mdash; That once we knew by heart  
+>Now worn with time &mdash;  
+>To hum that song of ours.  
+>  
+>Oh, hum that song of ours  
+>Remind me how it goes, I've lost the rhyme.  
+>While some day soon or far  
+>You'll sing a song I've never heard before  
+>It'll drive me mad, convinced I know the words  
+>And how it ends, from hook to final verse.  
+>  
+>But if that soon or far appears  
+>Tomorrow or Today  
+>Not sure how read'ly I'd admit  
+>Your verse with him struck something new  
+>And better than the one we wrote  
+>Just for me and you.  
+
 *Untitled pt. 2* -- July 2023
 
 >and the end it was so brief half an hour in the park and we didnt even break open the pulco and sparkling water 
@@ -308,7 +331,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >And here I gaze at Julie next to me    
 >&nbsp;&nbsp;&nbsp;She takes my cloud and twinkle and goes to sleep  
 
-*Untitled* -- May 2022
+*Like jackals, lips slippery* -- May 2022
 
 >Jackal toes and bloody lips  
 >On the wall trickles and drips  
