@@ -10,8 +10,10 @@ draft: false
 
 {{< readfile file="content/datapoint.txt" markdown="true" >}}.
 
-Grace à l'API ouvert proposé par [Our World in Data](https://ourworldindata.org/).
+{{< colour ">Grace à l'API ouvert proposé par [Our World in Data](https://ourworldindata.org/)." >}}
 
 # L'Argot quotidien
 
 {{< readfile file="content/argot.txt" markdown="true" >}}.
+
+{{< colour ">Grace à [Bob: Dictionnaire de l'argot](https://www.languefrancaise.net/Bob/Random)." >}}

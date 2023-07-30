@@ -9,8 +9,10 @@ draft: false
 
 {{< readfile file="content/datapoint.txt" markdown="true" >}}.
 
-Thanks to the open API available by [Our World in Data](https://ourworldindata.org/).
+{{< colour ">Thanks to the open API available by [Our World in Data](https://ourworldindata.org/)." >}}
 
 # Daily French slang
 
 {{< readfile file="content/argot.txt" markdown="true" >}}.
+
+{{< colour ">Thanks to [Bob: Dictionnaire de l'argot](https://www.languefrancaise.net/Bob/Random)." >}}
