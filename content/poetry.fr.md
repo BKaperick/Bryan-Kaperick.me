@@ -128,7 +128,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >And better than the one we wrote  
 >Just for me and you.  
 
-*Untitled pt. 2* Juillet 2023
+*Untitled pt. 2* -- Juillet 2023
 
 >and the end it was so brief half an hour in the park and we didnt even break open the pulco and sparkling water 
 >
@@ -139,7 +139,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >sleep will come easier as i read it back each night knowing with each recitation ill fade further onto her horizon.
 
 
-*Untitled* Juillet 2023
+*Untitled* -- Juillet 2023
 
 >If ever a lonely night  
 >Should you wake in a sharp tremor  
