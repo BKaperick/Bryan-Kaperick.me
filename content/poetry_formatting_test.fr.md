@@ -1,7 +1,7 @@
 ---
 title: "Poésie"
 date: 2023-02-14T22:51:44+02:00
-draft: false
+draft: true
 ---
 
 Cette page-là pourrait devenir assez personalle, comme s'est normal pour la poésie, donc entrez-vous avec cette précaution en tete.
@@ -10,7 +10,8 @@ En plus, la plupart de mes poémes seront sans doute en anglais, et je vais pas 
 
 Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, et *cringe*.  Bien sur, je reste ouvert à tout genre de retour.
 
-{{< details "# Les oeuvres qui m'inspirent" >}}
+# Les oeuvres qui m'inspirent
+{{< bryancolumns >}}
 *Kubla Khan* -- Samuel Taylor Coleridge  
    *Or, a vision in a dream.  A Fragment.*
 
@@ -71,6 +72,8 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >For he on honey-dew hath fed,  
 >And drunk the milk of Paradise.  
 
+<---> 
+
 *Compliment* -- John Updike
 
 >We were both of two minds about adultery  
@@ -101,9 +104,10 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >she breathed the single smiling word "Terrific."  
 
 
+{{< /bryancolumns >}}
+# Mes oeuvres
+{{< bryancolumns >}}
 
-{{< /details >}}
-{{< details "# Mes oeuvres" >}}
 
 *Crossing your path* -- July 2023
 
@@ -128,6 +132,8 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >And better than the one we wrote  
 >Just for me and you.  
 
+<--->
+
 *Untitled pt. 2* -- Juillet 2023
 
 >and the end it was so brief half an hour in the park and we didnt even break open the pulco and sparkling water 
@@ -138,6 +144,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >
 >sleep will come easier as i read it back each night knowing with each recitation ill fade further onto her horizon.
 
+<--->
 
 *Untitled* -- Juillet 2023
 
@@ -158,6 +165,8 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >révèle que ce rêve  
 >Ne vivait pas que dans ta tête  
 >Ni que pendant la nuit  
+
+<--->
 
 *Whalebone branches* -- Juin 2023
 
@@ -190,6 +199,8 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >find ourselves like that Tarkovsky flick,  
 >till no warm-blooded carcass persists.  
 
+<--->
+
 *Untitled* -- Mai 2023
 
 >Accro à la banalité  
@@ -200,6 +211,8 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >Cuites au soleil  
 >Brillants sommes nous  
 >Les lapins d'été  
+
+<--->
 
 *Those oozing stacks grow* -- Avril 2023
 
@@ -241,12 +254,16 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >those oozing stacks grow  
 >with each ripe passerby.  
 
+<--->
+
 *Bruges Pluie Blues* -- Mars 2023
 
 >Il plu dans cette vielle ville  
 >Pendant ces vacances débiles  
 >Où j'accompagne mes parents  
 >Qui connaissent Bruges d'un film  
+
+<--->
 
 *Empanadas and Coffee* -- Février 2023  
     *(traduit par moi de l'anglais original)*
@@ -301,6 +318,8 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >Cette fois,  
 >Un qui survivra au-delà du matin.  
 
+<--->
+
 *Untitled night* -- Février 2023
 
 >Her animal lay wild,  
@@ -329,6 +348,8 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >&mdash; We shared her gristle-ridden lair  
 >fused together, cast in crimson.  
 
+<--->
+
 *Kansas Sky* -- Juillet 2022
 
 >This morning I watched a cloud fall to earth.  
@@ -338,6 +359,8 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >Not from a star, but a lightning strike.  
 >And here I gaze at Julie next to me    
 >&nbsp;&nbsp;&nbsp;She takes my cloud and twinkle and goes to sleep  
+
+<--->
 
 *Like jackals, lips slippery* -- Mai 2022
 
@@ -355,7 +378,9 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >Rancid stir of pustules brew  
 >We the few who slurp that liqueur  
 >While her dusty lips moan.  
- 
+
+<--->
+
 *Fierce creature* -- Janvier 2020
 
 >Fierce creature.  
@@ -366,5 +391,4 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >Into basins which steam future desire,  
 >Filled to quench days spent apart.  
 
-{{< /details >}}
-
+{{< /bryancolumns >}}

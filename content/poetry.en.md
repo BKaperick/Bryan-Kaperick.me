@@ -103,6 +103,59 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
+*Crossing your path* -- July 2023
+
+>I'd like to cross your path from time to time  
+>To say 'Hello' and then 'Goodbye'  
+>And leave a little tune behind  
+>&mdash; That once we knew by heart  
+>Now worn with time &mdash;  
+>To hum that song of ours.  
+>  
+>Oh, hum that song of ours  
+>Remind me how it goes, I've lost the rhyme.  
+>While some day soon or far  
+>You'll sing a song I've never heard before  
+>It'll drive me mad, convinced I know the words  
+>And how it ends, from hook to final verse.  
+>  
+>But if that soon or far appears  
+>Tomorrow or Today  
+>Not sure how read'ly I'd admit  
+>Your verse with him struck something new  
+>And better than the one we wrote  
+>Just for me and you.  
+
+*Untitled pt. 2* -- July 2023
+
+>and the end it was so brief half an hour in the park and we didnt even break open the pulco and sparkling water 
+>
+>she was calm as was i there was maybe a single moment where a tear was held back 
+>
+>oh isnt it complicated to close the book of belle hectic mornings and pale razorburnt legs out in the world lovely lovely and probably crying brutally alone in her bed as i write this 
+>
+>sleep will come easier as i read it back each night knowing with each recitation ill fade further onto her horizon.
+
+*Untitled* -- July 2023
+
+>If ever a lonely night  
+>Should you wake in a sharp tremor  
+>From a passing specter's strike  
+>Whose trailing vapors leak a sweet scent  
+>That only you and I could recognize...  
+>  
+>Écrase-le !  
+>Et moi je vais faire pareil  
+>Il n'est rien qu'un moustique qui vit de l'obscurité  
+>Un porte-souvenir des nuits si chauds  
+>Et ses piqûres guériront par l'aube du lendemain  
+>  
+>Même si l'odeur persiste toujours  
+>Cet odeur dont l'existence le matin  
+>révèle que ce rêve  
+>Ne vivait pas que dans ta tête  
+>Ni que pendant la nuit  
+
 *Whalebone branches* -- June 2023
 
 >Whalebone branches  
@@ -134,7 +187,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >find ourselves like that Tarkovsky flick,  
 >till no warm-blooded carcass persists.  
 
-* Untitled * -- May 2023
+*Untitled* -- May 2023
 
 >Accro à la banalité  
 >A la recherche d'une bière  
@@ -185,6 +238,61 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >those oozing stacks grow  
 >with each ripe passerby.  
 
+*Bruges Pluie Blues* -- March 2023
+
+>Il plu dans cette vielle ville  
+>Pendant ces vacances débiles  
+>Où j'accompagne mes parents  
+>Qui connaissent Bruges d'un film  
+
+*Empanadas and Coffee* -- February 2023
+
+>So there we were  
+>in the Halles of Wazemmes at noon on a Sunday  
+>eating empanadas and drinking coffee.  
+>It felt right.  
+>Smelled right.  
+>Tasted right.  
+>We could've just as easily been  
+>in the "halles" of Ukrop's  
+>7:30 on a Tuesday morning  
+>eating biscuits and drinking chocolate milk  
+>me, Kevin, and Mom.  
+>It resonated.  
+>  
+>It was just a few days later  
+>after a long moment  
+>squirming and panting,  
+>she tells me  
+>"I think I'm falling in love."  
+>I didn't say anything back.  
+>Instead I let that hollow static  
+>build up between us  
+>My fingertips charged it,  
+>brushing up and down her spine.  
+>I can leave her there, knowing  
+>we just shared each other,  
+>So coherent, so resonant,  
+>And yet maybe nothing more will come of it.  
+>  
+>But take birds &mdash; their songs come proud and natural  
+>one to another.  
+>But us humans, lonely savages staggering about,  
+>grasping blindly in the dark.  
+>Diffident beasts afraid to flick on the lights.  
+>At this rate we'll never sip that milk and honey.  
+>Those empanadas and coffee, even,  
+>so often evaporate to  
+>odours lingering and then eroding  
+>in a harsh wind  
+>that'll clear out by dusk  
+>  
+>And by night's fall, we're back in our caves.  
+>Exhausted.  
+>Just trying to strike a fire.  
+>This time,  
+>one that'll last beyond morning.  
+
 *Untitled night* -- February 2023
 
 >Her animal lay wild,  
@@ -223,7 +331,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >And here I gaze at Julie next to me    
 >&nbsp;&nbsp;&nbsp;She takes my cloud and twinkle and goes to sleep  
 
-*Untitled* -- May 2022
+*Like jackals, lips slippery* -- May 2022
 
 >Jackal toes and bloody lips  
 >On the wall trickles and drips  

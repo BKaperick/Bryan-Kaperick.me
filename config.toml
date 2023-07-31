@@ -3,6 +3,7 @@ theme = "zen"
 contact = "bryan.kaperick@gmail.com"
 mainSections = ["About Me"]
 defaultContentLanguage = 'fr'
+enableGitInfo = true
 [Languages]
   [Languages.en]
     weight = 2
@@ -12,6 +13,7 @@ defaultContentLanguage = 'fr'
     [Languages.en.params]
       LanguageCode = 'en'
       linkedin = 'https://www.linkedin.com/in/bryankaperick/'
+      lastUpdateDate = "Site last updated "
 [markup.goldmark.renderer]
     unsafe = true
 
@@ -24,3 +26,4 @@ defaultContentLanguage = 'fr'
       LanguageCode = 'fr'
       linkedin = 'https://www.linkedin.com/in/bryankaperick/?locale=fr_FR'
       title = "Le Site Web de Bryan Kaperick"
+      lastUpdateDate = "Site mise à jour le "
