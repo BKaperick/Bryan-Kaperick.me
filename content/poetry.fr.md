@@ -105,6 +105,37 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
+*Untitled* -- Aout 2023
+
+>A giant in the shoes of a man  
+>A god wrapped in a mortal's pelt  
+>A beggar assuming a rich man's svelte  
+>A one-trick pony who wows again.  
+>  
+>All those they rose under a cool twilight eve  
+>With friends and unknowns alike  
+>A savory potluck among salty waves reaching  
+>Ever closer, 'neath the call of soft moonlight.  
+>  
+>But from the water's flesh, soggy cripples emerged  
+>Each more grotesque than the last  
+>Until the bastard crew's final lizard  
+>Crawled out, terrorizing the virgin grass.  
+>  
+>&nbsp;&nbsp;&nbsp;« *Oh !  How he howled like a pig  
+>&nbsp;&nbsp;&nbsp;all mixed up in his own blood  
+>&nbsp;&nbsp;&nbsp;and his own foul slime!* »  
+>  
+>The giant, at this he slouched  
+>The god took years on his shoulders  
+>The beggar sat and wept, his appetite lost  
+>The lame pony spooked off, driven mad by the odours.  
+>  
+>Those hogs slabbered with haste, as if at the trough  
+>Sweet death had complied with their final demand  
+>All noble spirits on the shore had crumpled  
+>For heavy are the souls of the damned.  
+
 *Crossing your path* -- July 2023
 
 >I'd like to cross your path from time to time  
