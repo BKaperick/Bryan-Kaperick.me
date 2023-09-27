@@ -103,6 +103,24 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
+*September Slump* -- September 2023
+
+>Obsessively revising  
+>Self-consuming second guessing  
+>Seeking sense in something  
+>set aflame by sorry selfish me.  
+>  
+>Hiving scared hungover  
+>from a hopeless couple months  
+>of perfect idleness I passed beneath  
+>your gentle glowing grange.  
+>  
+>And once again I wash in vain  
+>to free my will from moping  
+>Meaning while I wait I'm anxiously aware  
+>that every waking moment means  
+>the more and more you drift away from me.  
+
 *Hm, apparently Pompeii isn't in Greece* -- September 2023
   
 >It's New Year's Eve on Mount Vesuvius  
