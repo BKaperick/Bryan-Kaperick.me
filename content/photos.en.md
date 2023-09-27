@@ -6,6 +6,15 @@ draft: false
 
 Some photos of me and my friends, in reverse chronological order.
 
+{{< figure src="/images/bryan-julie-namur.jpg" caption="Julie and Me at on Le Centenaire at Beez ~ 2023" >}}
+{{< figure src="/images/alex-nadir-me-sachin-julien-morzine.jpg" caption="Alex, Nadir, Me, Sachin, and Julien at Thom's wedding in Morzine ~ 2023" >}}
+{{< figure src="/images/eatin-rishik-chicken.jpg" caption="Me eating Rishik's chicken for Indian Independence Day ~ 2023" >}}
+{{< figure src="/images/rishik-quentin-me-fete.jpg" caption="Rishik, Quentin, and Me after a long night ~ 2023" >}}
+{{< figure src="/images/me-michael-st-charles.jpg" caption="Me and Michael on St. Charles Bridge in Prague ~ 2023" >}}
+{{< figure src="/images/sachin-me-edi-martijn.jpg" caption="Sachin, Me, Edi, and Martijn at Thom's bachelor party in Paris ~ 2023" >}}
+{{< figure src="/images/me-silvio-tyler-colin-tok.jpg" caption="Me, Silvio, Tyler, and Colin at Tok-ici (With Pierre on the Bass) ~ 2023" >}}
+{{< figure src="/images/Silvio-rishik-me-colin-sarrazins.jpg" caption="Silvio, Rishik, Me, and Colin at Place des Sarrazins ~ 2023" >}}
+{{< figure src="/images/adri-moi-flo-sami-banana.jpg" caption="Adri, Me, Flo, and Sami en route towards Hypercourt for Banana Boom ~ 2023" >}}
 {{< figure src="/images/atomium.jpg" caption="Me, Michael, and Tyler at the Atomium in Brussels ~ 2023" >}}
 {{< figure src="/images/egouts.jpg" caption="Me in the Sewers of Brussels ~ 2023" >}}
 {{< figure src="/images/parents-lille.jpg" caption="Me, my parents, Laura, Aubrée, and Tyler in my courtyard ~ 2023" >}}
@@ -31,7 +40,7 @@ michael-tyler-bryan-dunkerque
 {{< figure src="/images/bryan-julie-dune.jpg" caption="Me and Julie at Dune du Pilat ~ 2020" >}}
 {{< figure src="/images/a-bunch-of-people-chez-moi-ivry.jpg" caption="A bunch of people in Ivry-sur-Seine ~ 2019" >}}
 {{< figure src="/images/michael-bryan-lorenzo-edinburgh.jpg" caption="Michael, me, and Lorenzo in Edinburgh ~ 2019" >}}
-{{< figure src="/images/chunglab.jpeg" caption="Chung Lab ~ 2019" >}}
+{{< figure src="/images/chunglab.jpg" caption="Chung Lab ~ 2019" >}}
 {{< figure src="/images/tyler-lorenzo-remy-bryan-blabla2018.jpg" caption="Tyler, me, Lorenzo, and Rémy ~ 2018" >}}
 {{< figure src="/images/billpatbryan.jpg" caption="Me, Patrick, and Bill ~ 2018" >}}
 {{< figure src="/images/me_and_bill_on_a_mountain_with_a_dog.jpg" caption="Me and Bill and a dog on a mountain ~ 2017" >}}
