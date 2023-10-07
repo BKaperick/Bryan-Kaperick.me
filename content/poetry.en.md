@@ -103,7 +103,19 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
-*September Slump* -- September 2023
+*A raven's lust* -- October 2023
+
+>A pressing matter of morning walks,  
+>A pressure on the heart.  
+>She marches, tramples, stomps, and stalks  
+>My mind while we're apart.  
+>  
+>Both insist on total distance,  
+>But hunger grows like wolf to sheep  
+>Whose prey was stoled by thorn-ed fence.  
+>A raven's lust at bay to keep.  
+
+*September slump* -- September 2023
 
 >Obsessively revising  
 >Self-consuming second guessing  
