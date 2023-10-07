@@ -9,6 +9,24 @@ This page can get rather personal, as poetry tends to be, so proceed at your own
 I would categorize my personal style as somewhere between *derivative* and *cringe*.  Of course, I'm open to all sorts of feedback.
 
 {{< details "# Works that inspire me" >}}
+
+*On First Looking into Chapman's Homer* -- John Keats
+
+>Much have I travell'd in the realms of gold,  
+>And many goodly states and kingdoms seen;  
+>Round many western islands have I been  
+>Which bards in fealty to Apollo hold.  
+>Oft of one wide expanse had I been told  
+>That deep-brow'd Homer ruled as his demesne;  
+>Yet did I never breathe its pure serene  
+>Till I heard Chapman speak out loud and bold:  
+>Then felt I like some watcher of the skies  
+>When a new planet swims into his ken;  
+>Or like stout Cortez when with eagle eyes  
+>He star'd at the Pacific—and all his men  
+>Look'd at each other with a wild surmise—  
+>Silent, upon a peak in Darien.  
+
 *Kubla Khan* -- Samuel Taylor Coleridge  
    *Or, a vision in a dream.  A Fragment.*
 
