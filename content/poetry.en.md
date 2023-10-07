@@ -128,9 +128,9 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >She marches, tramples, stomps, and stalks  
 >My mind while we're apart.  
 >  
->Both insist on total distance,  
+>We both agree to guard our distance,  
 >But hunger grows like wolf to sheep  
->Whose prey was stoled by thorn-ed fence.  
+>Whose prey is stoled by thorn-ed fence.  
 >A raven's lust at bay to keep.  
 
 *September slump* -- September 2023

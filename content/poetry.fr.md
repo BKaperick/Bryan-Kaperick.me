@@ -130,9 +130,9 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >She marches, tramples, stomps, and stalks  
 >My mind while we're apart.  
 >  
->Both insist on total distance,  
+>We both agree to guard our distance,  
 >But hunger grows like wolf to sheep  
->Whose prey was stoled by thorn-ed fence.  
+>Whose prey is stoled by thorn-ed fence.  
 >A raven's lust at bay to keep.  
 
 *September slump* -- Septembre 2023
