@@ -9,6 +9,24 @@ This page can get rather personal, as poetry tends to be, so proceed at your own
 I would categorize my personal style as somewhere between *derivative* and *cringe*.  Of course, I'm open to all sorts of feedback.
 
 {{< details "# Works that inspire me" >}}
+
+*On First Looking into Chapman's Homer* -- John Keats
+
+>Much have I travell'd in the realms of gold,  
+>And many goodly states and kingdoms seen;  
+>Round many western islands have I been  
+>Which bards in fealty to Apollo hold.  
+>Oft of one wide expanse had I been told  
+>That deep-brow'd Homer ruled as his demesne;  
+>Yet did I never breathe its pure serene  
+>Till I heard Chapman speak out loud and bold:  
+>Then felt I like some watcher of the skies  
+>When a new planet swims into his ken;  
+>Or like stout Cortez when with eagle eyes  
+>He star'd at the Pacific—and all his men  
+>Look'd at each other with a wild surmise—  
+>Silent, upon a peak in Darien.  
+
 *Kubla Khan* -- Samuel Taylor Coleridge  
    *Or, a vision in a dream.  A Fragment.*
 
@@ -102,6 +120,88 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 
 {{< /details >}}
 {{< details "# My works" >}}
+
+*A raven's lust* -- October 2023
+
+>A pressing matter of morning walks,  
+>A pressure on the heart.  
+>She marches, tramples, stomps, and stalks  
+>My mind while we're apart.  
+>  
+>We both agree to guard our distance,  
+>But hunger grows like wolf to sheep  
+>Whose prey is stoled by thorn-ed fence.  
+>A raven's lust at bay to keep.  
+
+*September slump* -- September 2023
+
+>Obsessively revising  
+>Self-consuming second guessing  
+>Seeking sense in something  
+>set aflame by sorry selfish me.  
+>  
+>Hiving scared hungover  
+>from a hopeless couple months  
+>of perfect idleness I passed beneath  
+>your gentle glowing grange.  
+>  
+>And once again I wash in vain  
+>to free my will from moping  
+>Meaning while I wait I'm anxiously aware  
+>that every waking moment means  
+>the more and more you drift away from me.  
+
+*Hm, apparently Pompeii isn't in Greece* -- September 2023
+  
+>It's New Year's Eve on Mount Vesuvius  
+>Eruption warnings are dubious  
+>Togas loose, libations plenty  
+>The dance floor rumbles our favorite melody  
+>We brink dance to Old Hades' cry  
+>Who beckons us to chase our high  
+>His cavelings squirm through cracks to join us  
+>Sweet smoke consumes our rowdy chorus  
+>And so we played as spirits fused  
+>Unified, with stamina imbued  
+>We'll party on 'til liquid rock arrives  
+>'Til ash and friends should come alive...  
+>  
+>...With might was dawn's great geyser freed  
+>At that, our wine-dark punch bowl emptied  
+>Thus could raise one goblet all  
+>So that our tombstones may stand tall.  
+
+
+*Untitled* -- August 2023
+
+>A giant in the shoes of a man  
+>A god wrapped in a mortal's pelt  
+>A beggar assuming a rich man's svelte  
+>A one-trick pony who wows again.  
+>  
+>All those they rose under a cool twilight eve  
+>With friends and unknowns alike  
+>A savory potluck among salty waves reaching  
+>Ever closer, 'neath the call of soft moonlight.  
+>  
+>But from the water's flesh, soggy cripples emerged  
+>Each more grotesque than the last  
+>Until the bastard crew's final lizard  
+>Crawled out, terrorizing the virgin grass.  
+>  
+>&nbsp;&nbsp;&nbsp;« *Oh!  How he howled like a pig  
+>&nbsp;&nbsp;&nbsp;all mixed up in his own blood  
+>&nbsp;&nbsp;&nbsp;and his own foul slime!* »  
+>  
+>The giant, at this he slouched  
+>The god took years on his shoulders  
+>The beggar sat and wept, his appetite lost  
+>The lame pony spooked off, driven mad by the odours.  
+>  
+>Those hogs slabbered with haste, as if at the trough  
+>Sweet death had complied with their final demand  
+>All noble spirits on the shore had crumpled  
+>For heavy are the souls of the damned.  
 
 *Crossing your path* -- July 2023
 
