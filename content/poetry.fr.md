@@ -148,7 +148,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >As I ran by I saw you lying  
 >limp along the sidewalk  
 >Unforced serendipity  
->I didn't even watch the clock  
+>I didn't watch the clock  
 >  
 >You seemed as well as one could seem  
 >prostrate on the floor  

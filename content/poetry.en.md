@@ -146,7 +146,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >As I ran by I saw you lying  
 >limp along the sidewalk  
 >Unforced serendipity  
->I didn't even watch the clock  
+>I didn't watch the clock  
 >  
 >You seemed as well as one could seem  
 >prostrate on the floor  
