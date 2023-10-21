@@ -10,6 +10,29 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 
 {{< details "# Works that inspire me" >}}
 
+*People at Night* -- Rainer Maria Rilke
+
+>Nights were not made for the crowds, and they sever  
+>You from your neighbor, so you shall never  
+>Seek him, defiantly, at night.  
+>But if you make your dark house light,  
+>To look on strangers in your room,  
+>You must reflect&mdash;on whom.  
+>  
+>False lights that on men's faces play  
+>Distort them gruesomely.  
+>You look upon a disarray,  
+>A world that seems to reel and sway,  
+>A waving, glittering sea.  
+>On their foreheads gleams a yellow shine  
+>Where thoughts are chased away.  
+>Their glances flicker mad from wine,  
+>And to the words they say  
+>Strange heavy gestures make reply,  
+>That struggle in the buzzing room;  
+>And they say always, "I" and "I";  
+>And mean&mdash;they know not whom.  
+
 *On First Looking into Chapman's Homer* -- John Keats
 
 >Much have I travell'd in the realms of gold,  
