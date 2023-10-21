@@ -121,6 +121,48 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
+*Untitled couplets* -- October 2023
+
+>Somewhere inside, a voice he wimpers on,  
+>"Bring back the soft of touch that long has gone..."  
+>  
+>What waste of blood to keep that louse around  
+>&mdash; I'll take my heart to ready fertile ground.  
+>  
+>I peer upstream to tempt the river's way  
+>When new soleil he shines and brings the day.  
+>  
+>My thrill it shimmers on the sandy cusp  
+>Of virgin plain untouched by Sodom's rust.  
+>  
+>I'll feign defense of pangs that thrust me out  
+>Beyond the surface dissipating shroud.  
+>  
+>With that, I rise above the tar that blinds  
+>Before I've found the words for th'other side.  
+
+*Limp* -- October 2023
+
+>As I ran by I saw you lying  
+>limp along the sidewalk  
+>Unforced serendipity  
+>I didn't even watch the clock  
+>  
+>You seemed as well as one could seem  
+>prostrate on the floor  
+>Peaceful even, drowned amidst  
+>the waves of foreign shore  
+>  
+>I wondered how you landed here  
+>your wings a crumpled mess  
+>A fall from sunlight's brazen stare  
+>onto my path ingressed  
+>  
+>I lay my hand to light first flame  
+>since summer's hibernation  
+>But you've cooled your gaze to stone  
+>and cast it in the ocean  
+
 *A raven's lust* -- October 2023
 
 >A pressing matter of morning walks,  
