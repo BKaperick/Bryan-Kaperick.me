@@ -146,22 +146,22 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 
 *Untitled couplets* -- October 2023
 
->Somewhere inside, a voice he wimpers on,  
+>Bound up inside, a voice he wimpers on,  
 >"Bring back the soft of touch that long has gone..."  
 >  
 >What waste of blood to keep that louse around  
->&mdash; I'll take my heart to ready fertile ground.  
+>&mdash; I'll take my heart to firm or fertile ground.  
 >  
 >I peer upstream to tempt the river's way  
->When new soleil he shines and brings the day.  
+>When new soleil he shines and dawns the day.  
 >  
 >My thrill it shimmers on the sandy cusp  
 >Of virgin plain untouched by Sodom's rust.  
 >  
->I'll feign defense of pangs that thrust me out  
+>I'll feign defense to pangs that thrust me out  
 >Beyond the surface dissipating shroud.  
 >  
->With that, I rise above the tar that blinds  
+>With that I'll rise above the tar that blinds  
 >Before I've found the words for th'other side.  
 
 *Limp* -- October 2023
