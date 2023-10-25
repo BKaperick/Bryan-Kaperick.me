@@ -144,6 +144,13 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
+*Chicory root* -- October 2023
+
+>Chicory root in the afternoon  
+>My heart hollers and hoots  
+>Sans caffeine so it must have to do  
+>With Aubrée's bangs, surtout  
+
 *Untitled couplets* -- October 2023
 
 >Bound up inside, a voice he wimpers on,  
