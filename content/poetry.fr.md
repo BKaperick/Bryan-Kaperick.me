@@ -149,7 +149,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 *Chicory root* -- October 2023
 
 >Chicory root in the afternoon  
->My heart hollers and hoots  
+>My heart respires in holler and hoot  
 >Sans caffeine so it must have to do  
 >With Aubrée's bangs, surtout  
 
