@@ -146,7 +146,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
-*Chicory root* -- October 2023
+*Chicory root* -- Octobre 2023
 
 >Chicory root in the afternoon  
 >My heart respires in holler and hoot  

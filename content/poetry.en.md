@@ -146,10 +146,10 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 
 *Chicory root* -- October 2023
 
->Chicory root in the afternoon  
->My heart respires in holler and hoot  
->Sans caffeine so it must have to do  
->With Aubrée's bangs, surtout  
+>An afternoon with chicory root  
+>My heart respires a holler and hoot  
+>Sans caffeine so must be due  
+>À la frange d'Aubrée, surtout  
 
 *Untitled couplets* -- October 2023
 
