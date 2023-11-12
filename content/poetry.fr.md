@@ -146,6 +146,24 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
+*An Ode to Sami* -- Novembre 2023
+
+>Our man's evaporated &mdash; gone  
+>After the party rises dawn  
+>A quiet, calmer house he leaves  
+>Infused with that which he believes.  
+>Now off to scrub ancestral mire  
+>From the grounds of Imane's spire  
+>For shines a hope in progeny  
+>That's only grazed by coloc-amis.  
+>  
+>As he ascends to the fourth floor  
+>We're sewing stitches evermore  
+>His scalpel sketched the lessons learned  
+>Into our cheeks the stories burn  
+>Red-raw from cold or rush of blood  
+>At Sami's wisdom understood.  
+
 *Chicory root* -- Octobre 2023
 
 >An afternoon with chicory root  
