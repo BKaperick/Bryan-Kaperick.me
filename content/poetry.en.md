@@ -146,7 +146,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 
 *An Ode to Sami* -- November 2023
 
->Our man's evaporated &mdash; gone  
+>Our man's evaporated &mdash; gone.  
 >After the party rises dawn  
 >A quiet, calmer house he leaves  
 >Infused with that which he believes.  

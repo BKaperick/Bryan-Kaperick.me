@@ -148,7 +148,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 
 *An Ode to Sami* -- Novembre 2023
 
->Our man's evaporated &mdash; gone  
+>Our man's evaporated &mdash; gone.  
 >After the party rises dawn  
 >A quiet, calmer house he leaves  
 >Infused with that which he believes.  
