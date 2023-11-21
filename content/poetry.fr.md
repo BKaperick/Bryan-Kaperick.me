@@ -169,7 +169,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >Now off to scrub ancestral mire  
 >From the grounds of Imane's spire  
 >For shines a hope in progeny  
->That's only grazed by coloc-amis.  
+>That's barely grazed by coloc-amis.  
 >  
 >As he ascends to the fourth floor  
 >We're sewing stitches evermore  
