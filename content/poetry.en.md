@@ -144,7 +144,21 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
-*An Ode to Sami* -- November 2023
+*Monorhyme sketch #2* -- Novembre 2023
+
+>Play back the track slow with all ears clear  
+>Sycophants'll scatter off or cower with fear  
+>Honest men'll settle in, lonesomely austere  
+>Chimney fire cackling to toss another beer.  
+
+*Monorhyme sketch #1* -- Novembre 2023
+
+>Alcohol is entropy, and entropy is time  
+>Hungover before I transitively unwind.  
+>Wilted flowers wither while I dine on rotten wine  
+>And ever wet the whistle of a lover once mine.  
+
+*Ode to Sami* -- November 2023
 
 >Our man's evaporated &mdash; gone.  
 >After the party rises dawn  
@@ -153,7 +167,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >Now off to scrub ancestral mire  
 >From the grounds of Imane's spire  
 >For shines a hope in progeny  
->That's only grazed by coloc-amis.  
+>That's barely grazed by coloc-amis.  
 >  
 >As he ascends to the fourth floor  
 >We're sewing stitches evermore  

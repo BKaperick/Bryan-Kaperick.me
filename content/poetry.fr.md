@@ -146,7 +146,21 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
-*An Ode to Sami* -- Novembre 2023
+*Monorhyme sketch #2* -- Novembre 2023
+
+>Play back the track slow with all ears clear  
+>Sycophants'll scatter off or cower with fear  
+>Honest men'll settle in, lonesomely austere  
+>Chimney fire cackling to toss another beer.  
+
+*Monorhyme sketch #1* -- Novembre 2023
+
+>Alcohol is entropy, and entropy is time  
+>Hungover before I transitively unwind.  
+>Wilted flowers wither while I dine on rotten wine  
+>And ever wet the whistle of a lover once mine.  
+
+*Ode to Sami* -- Novembre 2023
 
 >Our man's evaporated &mdash; gone.  
 >After the party rises dawn  
