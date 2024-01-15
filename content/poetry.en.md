@@ -144,14 +144,71 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
-*Monorhyme sketch #2* -- Novembre 2023
+*In the dark* -- January 2024
+
+>Pinned to dusk and strung like wire  
+>Tower the branches' fractal spires  
+>  
+>Order drools from source up there  
+>And mire trickles down to disarray  
+>Seeping into webs of waxen stare  
+>The brass bell rings with each wind's sway  
+>  
+>Never crack nor rust nor grime  
+>Hours, ages pierce without remark  
+>The lonesome architect's got time  
+>To manufacture beauty in the dark  
+>  
+>These streaks will soon be printed on the dawn  
+>Their fractal spires linger on and on...  
+
+*A cool, dry place* -- January 2023
+
+>Sitting pristine in her sleeve  
+>plastic shrink wrapped unscratched  
+>unplayed her ways unheard  
+>wait to be  
+>instead left  
+>bought and forgot  
+>In a cool, dry place.  
+>  
+>Could she ever do what others do ?  
+>Be used as lovers use ?  
+>  
+>Cut up and torn off  
+>clicked nicked greased up and down  
+>soaked and dried  
+>out spun around and flexed  
+>And also  
+>one day forgotten  
+>  
+>Then they'll do what others do,  
+>And leave as lovers leave.  
+>  
+>Set to dust collecting  
+>spores or moss tossed  
+>under another  
+>overplayed eventually clichéd  
+>wedged among the others  
+>In a cool, dry place.  
+
+{{< details "### 2023 (20 poems)" >}}
+
+*Monorhyme sketch #3* -- December 2023
+
+>Goldilocks was feeling bold,  
+>For each bear was poured a bowl.  
+>Her belly roiled with each spoonful:  
+>Cold, more cold, and much more cold.  
+
+*Monorhyme sketch #2* -- November 2023
 
 >Play back the track slow with all ears clear  
 >Sycophants'll scatter off or cower with fear  
 >Honest men'll settle in, lonesomely austere  
 >Chimney fire cackling to toss another beer.  
 
-*Monorhyme sketch #1* -- Novembre 2023
+*Monorhyme sketch #1* -- November 2023
 
 >Alcohol is entropy, and entropy is time  
 >Hungover before I transitively unwind.  
@@ -525,6 +582,9 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >&mdash; We shared her gristle-ridden lair  
 >fused together, cast in crimson.  
 
+{{< /details >}}
+{{< details "### 2020 - 2022 (3 poems)" >}}
+
 *Kansas Sky* -- July 2022
 
 >This morning I watched a cloud fall to earth.  
@@ -562,5 +622,6 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >Into basins which steam future desire,  
 >Filled to quench days spent apart.  
 
+{{< /details >}}
 {{< /details >}}
 

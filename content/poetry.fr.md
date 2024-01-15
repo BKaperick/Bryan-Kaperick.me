@@ -146,6 +146,63 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
+*In the dark* -- Janvier 2024
+
+>Pinned to dusk and strung like wire  
+>Tower the branches' fractal spires  
+>  
+>Order drools from source up there  
+>And mire trickles down to disarray  
+>Seeping into webs of waxen stare  
+>The brass bell rings with each wind's sway  
+>  
+>Never crack nor rust nor grime  
+>Hours, ages pierce without remark  
+>The lonesome architect's got time  
+>To manufacture beauty in the dark  
+>  
+>These streaks will soon be printed on the dawn  
+>Their fractal spires linger on and on...  
+
+*A cool, dry place* -- Janvier 2024
+
+>Sitting pristine in her sleeve  
+>plastic shrink wrapped unscratched  
+>unplayed her ways unheard  
+>wait to be  
+>instead left  
+>bought and forgot  
+>In a cool, dry place.  
+>  
+>Could she ever do what others do ?  
+>Be used as lovers use ?  
+>  
+>Cut up and torn off  
+>clicked nicked greased up and down  
+>soaked and dried  
+>out spun around and flexed  
+>And also  
+>one day forgotten  
+>  
+>Then they'll do what others do,  
+>And leave as lovers leave.  
+>  
+>Set to dust collecting  
+>spores or moss tossed  
+>under another  
+>overplayed eventually clichéd  
+>wedged among the others  
+>In a cool, dry place.  
+
+{{< details "### 2023 (20 poèmes)" >}}
+
+*Monorhyme sketch #3* -- Décembre 2023
+
+>Goldilocks was feeling bold,  
+>For each bear was poured a bowl.  
+>Her belly roiled with each spoonful:  
+>Cold, more cold, and much more cold.  
+
 *Monorhyme sketch #2* -- Novembre 2023
 
 >Play back the track slow with all ears clear  
@@ -534,6 +591,9 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >&mdash; We shared her gristle-ridden lair  
 >fused together, cast in crimson.  
 
+{{< /details >}}
+{{< details "### 2020 - 2022 (3 poèmes)" >}}
+
 *Kansas Sky* -- Juillet 2022
 
 >This morning I watched a cloud fall to earth.  
@@ -571,5 +631,6 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >Into basins which steam future desire,  
 >Filled to quench days spent apart.  
 
+{{< /details >}}
 {{< /details >}}
 
