@@ -149,18 +149,18 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >Pinned to dusk and strung like wire  
 >Tower the branches' fractal spires  
 >  
->Order drools from source up there  
->And mire trickles down to disarray  
->Seeping into webs of waxen stare  
->The brass bell rings with each wind's sway  
+>A brass bell drones with windy pull  
+>Dull reverberations chill the air  
+>Birdlings dream and spiders' drool  
+>Seeps into webs of waxen stare  
 >  
->Never crack nor rust nor grime  
->Hours, ages pierce without remark  
+>Never a crack nor rust nor grime  
+>Hours to ages pierce without remark  
 >The lonesome architect's got time  
 >To manufacture beauty in the dark  
 >  
 >These streaks will soon be printed on the dawn  
->Their fractal spires linger on and on...  
+>Where fractal spires linger on and on...  
 
 *A cool, dry place* -- January 2023
 
