@@ -144,6 +144,39 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
+*The tower* -- February 2024
+
+>His eyes and hers align to keep  
+>panopic, periodic rhyme at sea  
+>and frothy mermen arms outreached  
+>for prey who slips away beneath  
+>the tower's twin-turn stare.  
+>  
+>Frustrated shadows lurk below  
+>for sheer is water as it flows  
+>firmly caught within the tow  
+>of Their revolving omniglow  
+>where washed-up mysteries lay bare.  
+>  
+>Then one night the twin pair winked &mdash;  
+>Her brother fell from tower's brink.  
+>Straight he dove and straight he'll sink.  
+>Sister waterlogged by weeps,  
+>She cast her duty off without a care.  
+>  
+>Storms arise when rhythm's lost,  
+>sirens shriek like albatross,  
+>long-drowned urchins shed their moss,  
+>nocturne barges glide across  
+>the purview of a watch in disrepair.  
+>  
+>By dawn her misery ossified.  
+>A corroded heart beats in half-time  
+>all while shadows grow twice as wide.  
+>Her mood now high and low like tide  
+>ever bound to the pull de la mer.  
+
+
 *In the dark* -- January 2024
 
 >Pinned to dusk and strung like wire  
@@ -291,7 +324,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >  
 >We both agree to guard our distance,  
 >But hunger grows like wolf to sheep  
->Whose prey is stoled by thorn-ed fence.  
+>Whose prey is stoled by thornèd fence.  
 >A raven's lust at bay to keep.  
 
 *September slump* -- September 2023
