@@ -146,7 +146,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 
 *The tower* -- February 2024
 
->His eyes and hers align to keep  
+>His eyes and Hers align to keep  
 >panopic, periodic rhyme at sea  
 >and frothy mermen arms outreached  
 >for prey who slips away beneath  

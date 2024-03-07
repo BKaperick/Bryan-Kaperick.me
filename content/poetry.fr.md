@@ -148,7 +148,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 
 *The tower* -- Février 2024
 
->His eyes and hers align to keep  
+>His eyes and Hers align to keep  
 >panopic, periodic rhyme at sea  
 >and frothy mermen arms outreached  
 >for prey who slips away beneath  
