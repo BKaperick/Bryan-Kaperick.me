@@ -152,7 +152,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >sous la pluie  
 >d'un mardi soir.  
 >Trempé, il se déchire tout seul  
->quand il essaie de ramasser  
+>quand on essaie de ramasser  
 >ce qui en reste de la table  
 >après qu'elle parte.  
 

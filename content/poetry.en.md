@@ -150,7 +150,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >sous la pluie  
 >d'un mardi soir.  
 >Trempé, il se déchire tout seul  
->quand il essaie de ramasser  
+>quand on essaie de ramasser  
 >ce qui en reste de la table  
 >après qu'elle parte.  
 
