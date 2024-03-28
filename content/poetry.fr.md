@@ -174,7 +174,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >Her brother fell from tower's brink.  
 >Straight he dove and straight he'll sink.  
 >Sister waterlogged by weeps,  
->She cast her duty off without a care.  
+>She cast Her duty off without a care.  
 >  
 >Storms arise when rhythm's lost,  
 >sirens shriek like albatross,  
@@ -182,7 +182,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >nocturne barges glide across  
 >the purview of a watch in disrepair.  
 >  
->By dawn her misery ossified.  
+>By dawn Her misery ossified.  
 >A corroded heart beats in half-time  
 >all while shadows grow twice as wide.  
 >Her mood now high and low like tide  
@@ -204,7 +204,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >To manufacture beauty in the dark  
 >  
 >These streaks will soon be printed on the dawn  
->Where fractal spires linger on and on...  
+>Where fractal spires linger on and on.  
 
 *A cool, dry place* -- Janvier 2024
 
@@ -284,7 +284,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >Sans caffeine so must be due  
 >À la frange d'Aubrée, surtout  
 
-*Untitled couplets* -- Octobre 2023
+*Untitled couples* -- Octobre 2023
 
 >Bound up inside, a voice he wimpers on,  
 >"Bring back the soft of touch that long has gone..."  
