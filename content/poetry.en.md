@@ -144,6 +144,16 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
+*Un mardi soir* -- March 2024
+
+>Du temps perdu  
+>sous la pluie  
+>d'un mardi soir.  
+>Trempé, il se déchire tout seul  
+>quand il essaie de ramasser  
+>ce qui en reste de la table  
+>après qu'elle parte.  
+
 *The tower* -- February 2024
 
 >His eyes and Hers align to keep  
@@ -174,7 +184,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >A corroded heart beats in half-time  
 >all while shadows grow twice as wide.  
 >Her mood now high and low like tide  
->ever bound to the pull de la mer.  
+>ever bound to the pull of the mer.  
 
 
 *In the dark* -- January 2024

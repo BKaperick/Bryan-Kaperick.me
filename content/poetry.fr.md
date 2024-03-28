@@ -146,6 +146,16 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
+*Un mardi soir* -- Mars 2024
+
+>Du temps perdu  
+>sous la pluie  
+>d'un mardi soir.  
+>Trempé, il se déchire tout seul  
+>quand il essaie de ramasser  
+>ce qui en reste de la table  
+>après qu'elle parte.  
+
 *The tower* -- Février 2024
 
 >His eyes and Hers align to keep  
@@ -176,7 +186,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >A corroded heart beats in half-time  
 >all while shadows grow twice as wide.  
 >Her mood now high and low like tide  
->ever bound to the pull de la mer.  
+>ever bound to the pull of the mer.  
 
 *In the dark* -- Janvier 2024
 
