@@ -186,7 +186,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >A corroded heart beats in half-time  
 >all while shadows grow twice as wide.  
 >Her mood now high and low like tide  
->ever bound to the pull of *out there*.  
+>ever bound to the pull of out there.  
 
 *In the dark* -- Janvier 2024
 
