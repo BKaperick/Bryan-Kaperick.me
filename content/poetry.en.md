@@ -184,7 +184,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >A corroded heart beats in half-time  
 >all while shadows grow twice as wide.  
 >Her mood now high and low like tide  
->ever bound to the pull of the mer.  
+>ever bound to the pull of *out there*.  
 
 
 *In the dark* -- January 2024
