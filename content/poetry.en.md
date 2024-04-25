@@ -144,6 +144,18 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
+*Untitled* -- April 2024
+
+>Puddles stain the pavement  
+>under sun's afternoon  
+>trampled by the tourists'  
+>dampened leather shoes.  
+>  
+>Slouching on a concrete bench  
+>sidelining the plaza,  
+>this man's chewing homesick  
+>while his heart's beating the blues.  
+
 *Un mardi soir* -- March 2024
 
 >Du temps perdu  
