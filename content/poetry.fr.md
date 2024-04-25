@@ -155,8 +155,8 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >  
 >Slouching on a concrete bench  
 >sidelining the plaza,  
->he's chewing on some homesick
->and his heart's beating blue.
+>he's chewing on some homesick  
+>and his heart's beating blue.  
 
 *Un mardi soir* -- Mars 2024
 
