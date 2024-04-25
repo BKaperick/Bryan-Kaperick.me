@@ -153,8 +153,8 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >  
 >Slouching on a concrete bench  
 >sidelining the plaza,  
->this man's chewing homesick  
->while his heart's beating the blues.  
+>he's chewing on some homesick
+>and his heart's beating blue.
 
 *Un mardi soir* -- March 2024
 

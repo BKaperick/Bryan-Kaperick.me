@@ -146,7 +146,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
-*Untitled* -- April 2024
+*Untitled* -- Avril 2024
 
 >Puddles stain the pavement  
 >under sun's afternoon  
@@ -155,8 +155,8 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >  
 >Slouching on a concrete bench  
 >sidelining the plaza,  
->this man's chewing homesick  
->while his heart's beating the blues.  
+>he's chewing on some homesick
+>and his heart's beating blue.
 
 *Un mardi soir* -- Mars 2024
 
