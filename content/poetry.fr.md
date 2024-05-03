@@ -146,6 +146,18 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
+*Watch* -- May 2024
+
+>Watch through the window  
+>the mug that wobbles unprompted  
+>wait wait and watch  
+>the shards that settle among the crumbs  
+>wait outside an hour  
+>after the shatter settles  
+>and the lowly he rises  
+>to lick the spill off the tile  
+>like a dog  
+
 *Untitled* -- Avril 2024
 
 >Puddles stain the pavement  
@@ -157,6 +169,24 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >sidelining the plaza,  
 >he's chewing on some homesick  
 >and his heart's beating blue.  
+
+*The Doghouse* -- Avril 2024
+
+>Awakened in a troubling grime,  
+>the morning crawls out of the doghouse  
+>to confront its own ragged, plastic self.  
+>It whinges, squeaks, shudders  
+>and slumps back inside,  
+>packed in with the other.  
+>  
+>Their mammalian hides  
+>side by side - crystalline.  
+>In heavy wimpers  
+>one expands while the other contracts.  
+>Both frightened  
+>by the heightened sense that lasts  
+>dew-dampened before the fall  
+>of noon's eventual descent.  
 
 *Un mardi soir* -- Mars 2024
 
@@ -184,7 +214,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >  
 >Then one night the twin pair winked &mdash;  
 >Her brother fell from tower's brink.  
->Straight he dove and straight he'll sink.  
+>Straight He dove and straight He'll sink.  
 >Sister waterlogged by weeps,  
 >She cast Her duty off without a care.  
 >  

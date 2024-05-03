@@ -144,6 +144,18 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
+*Watch* -- May 2024
+
+>Watch through the window  
+>the mug that wobbles unprompted  
+>wait wait and watch  
+>the shards that settle among the crumbs  
+>wait outside an hour  
+>after the shatter settles  
+>and the lowly he rises  
+>to lick the spill off the tile  
+>like a dog  
+
 *Untitled* -- April 2024
 
 >Puddles stain the pavement  
@@ -155,6 +167,24 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >sidelining the plaza,  
 >he's chewing on some homesick  
 >and his heart's beating blue.  
+
+*The Doghouse* -- April 2024
+
+>Awakened in a troubling grime,  
+>the morning crawls out of the doghouse  
+>to confront its own ragged, plastic self.  
+>It whinges, squeaks, shudders  
+>and slumps back inside,  
+>packed in with the other.  
+>  
+>Their mammalian hides  
+>side by side - crystalline.  
+>In heavy wimpers  
+>one expands while the other contracts.  
+>Both frightened  
+>by the heightened sense that lasts  
+>dew-dampened before the fall  
+>of noon's eventual descent.  
 
 *Un mardi soir* -- March 2024
 
@@ -182,7 +212,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >  
 >Then one night the twin pair winked &mdash;  
 >Her brother fell from tower's brink.  
->Straight he dove and straight he'll sink.  
+>Straight He dove and straight He'll sink.  
 >Sister waterlogged by weeps,  
 >She cast Her duty off without a care.  
 >  
