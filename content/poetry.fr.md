@@ -146,7 +146,24 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
-*Watch* -- May 2024
+*Moroccan mist* -- Mai 2024
+
+>Moroccan mist evaporates away  
+>From all the dusty hash that filled our lungs  
+>An offer Flo a coffee kind of day  
+>Afloat but crooked, far from ferry's strait.  
+  
+>We'd rather stop for cars and caravans  
+>We waited wafting in the evening gas  
+>To every city vite-fait brined in wine  
+>For Tim and Flo who kept the rhythm's beat.  
+  
+>Till Basque I surfed to take the solo lead  
+>Far from the hold of Silvio's belay  
+>Without a name I rolled that game of chance  
+>And downed those drunken sips of Leah's sweet.  
+
+*Watch* -- Mai 2024
 
 >Watch through the window  
 >the mug that wobbles unprompted  
@@ -170,7 +187,7 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 >he's chewing on some homesick  
 >and his heart's beating blue.  
 
-*The Doghouse* -- Avril 2024
+*The doghouse* -- Avril 2024
 
 >Awakened in a troubling grime,  
 >the morning crawls out of the doghouse  
