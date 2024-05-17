@@ -144,6 +144,23 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
+*Moroccan mist* -- May 2024
+
+>Moroccan mist evaporates away  
+>From all the dusty hash that filled our lungs  
+>An offer Flo a coffee kind of day  
+>Afloat but crooked, far from ferry's strait.  
+  
+>We'd rather stop for cars and caravans  
+>We waited wafting in the evening gas  
+>To every city vite-fait brined in wine  
+>For Tim and Flo who kept the rhythm's beat.  
+  
+>Till Basque I surfed to take the solo lead  
+>Far from the hold of Silvio's belay  
+>Without a name I rolled that game of chance  
+>And downed those drunken sips of Leah's sweet.  
+
 *Watch* -- May 2024
 
 >Watch through the window  
