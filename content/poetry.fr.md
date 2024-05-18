@@ -146,18 +146,40 @@ Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, 
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
+*Reluctant sheet* -- Mai 2024
+
+>Break my bones  
+>&nbsp;&nbsp;if you want to  
+>&nbsp;&nbsp;&nbsp;&nbsp;I'll wait  
+>  
+>For them to heal before  
+>&nbsp;&nbsp;I call you  
+>&nbsp;&nbsp;&nbsp;&nbsp;again  
+>  
+>And when I do 
+>&nbsp;&nbsp; I'll come to you  
+>&nbsp;&nbsp;&nbsp;&nbsp;and crack yours too  
+>  
+>The fractures'll fill  
+>&nbsp;&nbsp;us one  
+>&nbsp;&nbsp;&nbsp;&nbsp;with the other  
+>  
+>The reluctant sheet  
+>&nbsp;&nbsp;can fall  
+>&nbsp;&nbsp;&nbsp;&nbsp;between our feet  
+
 *Moroccan mist* -- Mai 2024
 
 >Moroccan mist evaporates away  
 >From all the dusty hash that filled our lungs  
 >An offer Flo a coffee kind of day  
 >Afloat but crooked, far from ferry's strait.  
-  
+>  
 >We'd rather stop for cars and caravans  
 >We waited wafting in the evening gas  
 >To every city vite-fait brined in wine  
 >For Tim and Flo who kept the rhythm's beat.  
-  
+>  
 >Till Basque I surfed to take the solo lead  
 >Far from the hold of Silvio's belay  
 >Without a name I rolled that game of chance  
