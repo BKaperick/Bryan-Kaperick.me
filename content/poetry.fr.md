@@ -4,11 +4,11 @@ date: 2023-02-14T22:51:44+02:00
 draft: false
 ---
 
-Cette page-là pourrait devenir assez personalle, comme s'est normal pour la poésie, donc entrez-vous avec cette précaution en tete.
+Certaines des passages dans cette page-ci sont assez intime, comme c'est normal avec la poésie, donc poursuivez la lecture avec cet avertissement en tete.
 
-En plus, la plupart de mes poémes seront sans doute en anglais, et je vais pas les traduire pour eviter de m'embarrasser encore plus que je m'embarrasse en partageant mes poémes sur mon site web publique.
+En plus, la plupart de mes poémes sont écrites en anglais, et je vais pas les traduire pour eviter de m'embarrasser encore plus que je m'embarrasse en partageant mes poémes sur mon site web publique.
 
-Je classifierai mon style d'etre quelque-part sur la spectre entre *dérivée*, et *cringe*.  Bien sur, je reste ouvert à tout genre de retour.
+Je dirais que mon style d'écriture tombe quelque-part sur le spectre entre *dérivée*, et *cringe*.  Bien sur que je reste ouvert à tout genre de retour.
 
 {{< details "# Les oeuvres qui m'inspirent" >}}
 
