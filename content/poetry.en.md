@@ -147,7 +147,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 *While in decline* -- May 2024
 
 >The sun still shines while in decline  
->And bees slave all their life  
+>And bees slave all their lives  
 >Sea waves collapse in foamy smacks  
 >And trees in hollow snaps.  
 >  
