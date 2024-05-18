@@ -149,7 +149,7 @@ Je dirais que mon style d'écriture tombe quelque-part sur le spectre entre *dé
 *While in decline* -- Mai 2024
 
 >The sun still shines while in decline  
->And bees slave all their life  
+>And bees slave all their lives  
 >Sea waves collapse in foamy smacks  
 >And trees in hollow snaps.  
 >  
