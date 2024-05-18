@@ -4,23 +4,28 @@ date: 2021-10-24T00:13:52+02:00
 draft: false
 ---
 
-Salut, je suis Bryan et je suis un mec de 26 ans qui habite à Lille et travaille à Paris.  J'aime bien travailler sur des problèmes liées au mathematique computationnelles, data engineering, et l'analyse numérique.  Ici en France, j'aime bien me promener autour des parques et villes, pratiquer mon français avec des inconnus dans des bars, et faire de l'escalade.
+Salut, je suis Bryan.  Je suis un homme de 27 ans qui habite à Lille et qui travaille à Paris.  J'aime bien travailler sur des problèmes liées au mathematique computationnelles, data engineering, et l'analyse numérique.  Ici en France, j'aime bien me promener autour des parques et villes, pratiquer mon français avec des inconnus dans des bars, et faire de l'escalade.
 
 {{< figure src="/images/oOo.jpg">}}
 
-## Voici des livres que j'aimerais bien bientôt 
+## Voici des livres que j'aimerais bien lire bientôt 
 * *Dune Messiah* -- Frank Herbert
 
 Je dois le lire avant la sortie du prochain film.
 
 ## Voici des livres que je suis en train de lire
 
-La troisieme de la trilogie *Le Problème à Trois Corps*.  Mais je le lis en francais, donc ca me prends du temps à terminer.
 
 * *Days of Rage: America's Radical Underground, the FBI, and the Forgotten Age of Revolutionary Violence* -- Bryan Burrough
 
 
-## Voici des livres que j'ai récemment lu
+## Voici une liste de livres que j'ai lu depuis quelques années
+* *The Sun Also Rises* -- Ernest Hemingway
+* *The Forty Rules of Love* -- Elif Shufak
+* *Do Androids Dream of Electric Sheep?* -- Philip K. Dick
+* *Soumission* -- Michel Houellebecq
+* *King Kong Théorie* -- Virginie Despentes
+* *Death's End* -- Cixin Liu
 * *Transformer: The Deep Chemistry of Life and Death* -- Nick Lane
 * *The Dark Forest* -- Cixin Liu
 * *Down and Out in Paris and London* -- George Orwell
