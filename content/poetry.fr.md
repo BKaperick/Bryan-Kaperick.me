@@ -146,6 +146,18 @@ Je dirais que mon style d'écriture tombe quelque-part sur le spectre entre *dé
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
+*While in decline* -- Mai 2024
+
+>The sun still shines while in decline  
+>And bees slave all their life  
+>Sea waves collapse in foamy smacks  
+>And trees in hollow snaps.  
+>  
+>A man may choose to honey bathe  
+>Or surf the lightning's strike,  
+>But he like all must heed the call  
+>Of sunset on his back.  
+
 *Untitled triad* -- Mai 2024
 
 >Break my bones  
