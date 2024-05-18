@@ -144,6 +144,18 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
+*While in decline* -- May 2024
+
+>The sun still shines while in decline  
+>And bees slave all their life  
+>Sea waves collapse in foamy smacks  
+>And trees in hollow snaps.  
+>  
+>A man may choose to honey bathe  
+>Or surf the lightning's strike,  
+>But he like all must heed the call  
+>Of sunset on his back.  
+
 *Untitled triad* -- May 2024
 
 >Break my bones  
