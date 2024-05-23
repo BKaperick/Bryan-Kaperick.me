@@ -154,7 +154,7 @@ Je dirais que mon style d'écriture tombe quelque-part sur le spectre entre *dé
 >And trees in hollow snaps.  
 >  
 >A man may choose to honey bathe  
->Or surf the lightning's strike,  
+>Or surf the lightning's strike  
 >But he like all must heed the call  
 >Of sunset on his back.  
 
@@ -190,11 +190,11 @@ Je dirais que mon style d'écriture tombe quelque-part sur le spectre entre *dé
 >We'd rather stop for cars and caravans  
 >We waited wafting in the evening gas  
 >To every city vite-fait brined in wine  
->For Tim and Flo who kept the rhythm's beat.  
+>For Tim as well who kept the rhythm's beat.  
 >  
 >Till Basque I surfed to take the solo lead  
 >Far from the hold of Silvio's belay  
->Without a name I rolled that game of chance  
+>Without a name I spun that game of chance  
 >And downed those drunken sips of Leah's sweet.  
 
 *Watch* -- Mai 2024
@@ -252,7 +252,7 @@ Je dirais que mon style d'écriture tombe quelque-part sur le spectre entre *dé
 *The tower* -- Février 2024
 
 >His eyes and Hers align to keep  
->panopic, periodic rhyme at sea  
+>panoptic, periodic rhyme at sea  
 >and frothy mermen arms outreached  
 >for prey who slips away beneath  
 >the tower's twin-turn stare.  
