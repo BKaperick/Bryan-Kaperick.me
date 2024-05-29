@@ -146,6 +146,18 @@ Je dirais que mon style d'écriture tombe quelque-part sur le spectre entre *dé
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
+*Free to float* -- Mai 2024
+
+>If he could float from tree to tree,  
+>on what clichés he'd perch?  
+>Barefoot on her knife's edge,  
+>or rocking the cradle to ease  
+>Babe  
+>back to sleep.  
+>Back to dream states  
+>where men, like birds,  
+>are free to float from tree to tree.  
+
 *While in decline* -- Mai 2024
 
 >The sun still shines while in decline  
