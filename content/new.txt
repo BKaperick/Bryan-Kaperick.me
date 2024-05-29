@@ -1,0 +1,15 @@
+{{< figure src="/images/newyear2024.jpg" caption=" ~ 2024" >}}
+{{< figure src="/images/tim-bryan-horses.jpg" caption=" ~ 2024" >}}
+{{< figure src="/images/bryan-tim-stokes.jpg" caption=" ~ 2024" >}}
+{{< figure src="/images/flo-tim-spain.jpg" caption=" ~ 2024" >}}
+{{< figure src="/images/tangiers-coffee.jpg" caption=" ~ 2024" >}}
+{{< figure src="/images/maroc-hike-cat.jpg" caption=" ~ 2024" >}}
+{{< figure src="/images/maroc-hike-hole.jpg" caption=" ~ 2024" >}}
+{{< figure src="/images/asilah-beach.jpg" caption=" ~ 2024" >}}
+{{< figure src="/images/couscous.jpg" caption=" ~ 2024" >}}
+{{< figure src="/images/sila-bday-balcony.jpg" caption=" ~ 2024" >}}
+{{< figure src="/images/sila-bday-beach.jpg" caption=" ~ 2024" >}}
+{{< figure src="/images/cassy-antoine-party.jpg" caption=" ~ 2024" >}}
+{{< figure src="/images/roommates_sami.jpg" caption=" ~ 2024" >}}
+{{< figure src="/images/tylerbday2024.jpg" caption=" ~ 2024" >}}
+{{< figure src="/images/newyear2024.jpg" caption=" ~ 2024" >}}

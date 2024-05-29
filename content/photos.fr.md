@@ -6,6 +6,20 @@ draft: false
 
 Des photos de moi et mes amis, en ordre chronologique inverse.
 
+{{< figure src="/images/tylerbday2024.jpg" caption="Le 29e anniversaire de Tyler avec Moi, Tyler, Rishik, et Sunny ~ 2024" >}}
+{{< figure src="/images/tim-bryan-horses.jpg" caption="Moi et Tim à une ferme des chevaux en pays Basque ~ 2024" >}}
+{{< figure src="/images/bryan-tim-stokes.jpg" caption="Moi et Tim à un auberge de surf vers Zarautz ~ 2024" >}}
+{{< figure src="/images/flo-tim-spain.jpg" caption="Flo, Tim, et Moi à Algeciras ~ 2024" >}}
+{{< figure src="/images/tangiers-coffee.jpg" caption="Moi et Tim à un café à Tanger ~ 2024" >}}
+{{< figure src="/images/maroc-hike-cat.jpg" caption="De l'escalade vers Tetouan avec Tim, Moi, et un chat du village ~ 2024" >}}
+{{< figure src="/images/maroc-hike-hole.jpg" caption="Un randonnée vers Tetouan avec Sami, Tim, Moi, et Flo ~ 2024" >}}
+{{< figure src="/images/asilah-beach.jpg" caption="Sur la plage vers Asilah avec Margaux, Moi, Tim, Constance, Clemence, et Sami ~ 2024" >}}
+{{< figure src="/images/couscous.jpg" caption="Diner d'un couscous preparé par la mère de Sami avec Alex, Moi, Sami, et Tim ~ 2024" >}}
+{{< figure src="/images/sila-bday-balcony.jpg" caption="Le 30e anniversaire de Sila à Nempont-Saint-Firmin ~ 2024" >}}
+{{< figure src="/images/sila-bday-beach.jpg" caption="Le 30e anniversaire de Sila à Berck ~ 2024" >}}
+{{< figure src="/images/cassy-antoine-party.jpg" caption="Une fete à la maison avec Cassandra, Antoine, et Moi ~ 2024" >}}
+{{< figure src="/images/newyear2024.jpg" caption="La fete du nouvel an avec Grazilla, Cécile, Tyler, Sunny, et Moi ~ 2024" >}}
+{{< figure src="/images/roommates_sami.jpg" caption="La fete du départ de Sami avec all the roommates ~ 2023" >}}
 {{< figure src="/images/bryan-julie-namur.jpg" caption="Julie et Moi sur Le Centenaire à Beez ~ 2023" >}}
 {{< figure src="/images/alex-nadir-me-sachin-julien-morzine.jpg" caption="Alex, Nadir, Moi, Sachin, et Julien àu mariage de Thom à Morzine ~ 2023" >}}
 {{< figure src="/images/eatin-rishik-chicken.jpg" caption="Moi et du poulet cuit par Rishik pour La Fete Nationale d'Inde ~ 2023" >}}

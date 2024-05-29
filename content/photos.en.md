@@ -6,6 +6,20 @@ draft: false
 
 Some photos of me and my friends, in reverse chronological order.
 
+{{< figure src="/images/tylerbday2024.jpg" caption="Tyler's 29th birthday with Me, Tyler, Rishik, and Sunny ~ 2024" >}}
+{{< figure src="/images/tim-bryan-horses.jpg" caption="Me and Tim at a horse farm in Basque country ~ 2024" >}}
+{{< figure src="/images/bryan-tim-stokes.jpg" caption="Me and Tim at a surf hostel near Zarautz ~ 2024" >}}
+{{< figure src="/images/flo-tim-spain.jpg" caption="Flo, Tim, and Me in Algeciras ~ 2024" >}}
+{{< figure src="/images/tangiers-coffee.jpg" caption="Me and Tim at a café in Tangiers ~ 2024" >}}
+{{< figure src="/images/maroc-hike-cat.jpg" caption="Climbing near Tetouan with Tim, Me, and a village cat ~ 2024" >}}
+{{< figure src="/images/maroc-hike-hole.jpg" caption="Hiking near Tetouan with Sami, Tim, Me, and Flo ~ 2024" >}}
+{{< figure src="/images/asilah-beach.jpg" caption="On the beach near Asilah with Margaux, Me, Tim, Constance, Clemence, and Sami ~ 2024" >}}
+{{< figure src="/images/couscous.jpg" caption="Eating Sami's mother's couscous with Alex, Me, Sami, and Tim ~ 2024" >}}
+{{< figure src="/images/sila-bday-balcony.jpg" caption="Sila's 30th birthday in Nempont-Saint-Firmin ~ 2024" >}}
+{{< figure src="/images/sila-bday-beach.jpg" caption="Sila's 30th birthday in Berck ~ 2024" >}}
+{{< figure src="/images/cassy-antoine-party.jpg" caption="House party with Cassandra, Antoine, and Me ~ 2024" >}}
+{{< figure src="/images/newyear2024.jpg" caption="New year's with Grazilla, Cécile, Tyler, Sunny, and Me ~ 2024" >}}
+{{< figure src="/images/roommates_sami.jpg" caption="Sami's farewell party with all the roommates ~ 2023" >}}
 {{< figure src="/images/bryan-julie-namur.jpg" caption="Julie and Me at on Le Centenaire at Beez ~ 2023" >}}
 {{< figure src="/images/alex-nadir-me-sachin-julien-morzine.jpg" caption="Alex, Nadir, Me, Sachin, and Julien at Thom's wedding in Morzine ~ 2023" >}}
 {{< figure src="/images/eatin-rishik-chicken.jpg" caption="Me eating Rishik's chicken for Indian Independence Day ~ 2023" >}}
