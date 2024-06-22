@@ -20,6 +20,9 @@ Some photos of me and my friends, in reverse chronological order.
 {{< figure src="/images/cassy-antoine-party.jpg" caption="House party with Cassandra, Antoine, and Me ~ 2024" >}}
 {{< figure src="/images/newyear2024.jpg" caption="New year's with Grazilla, Cécile, Tyler, Sunny, and Me ~ 2024" >}}
 {{< figure src="/images/roommates_sami.jpg" caption="Sami's farewell party with all the roommates ~ 2023" >}}
+{{< figure src="/images/bryan-jason-citadelle.jpg" caption="Me and Jason at La Citadelle de Lille ~ 2023" >}}
+{{< figure src="/images/adam-bryan-jason-ghent.jpg" caption="Adam, Me, and Jason on the edge of a canal in Ghent ~ 2023" >}}
+{{< figure src="/images/bryan-piscine.jpg" caption="Me at La Piscine ~ 2023" >}}
 {{< figure src="/images/bryan-julie-namur.jpg" caption="Julie and Me at on Le Centenaire at Beez ~ 2023" >}}
 {{< figure src="/images/alex-nadir-me-sachin-julien-morzine.jpg" caption="Alex, Nadir, Me, Sachin, and Julien at Thom's wedding in Morzine ~ 2023" >}}
 {{< figure src="/images/eatin-rishik-chicken.jpg" caption="Me eating Rishik's chicken for Indian Independence Day ~ 2023" >}}

@@ -6,6 +6,7 @@ draft: false
 
 Des photos de moi et mes amis, en ordre chronologique inverse.
 
+
 {{< figure src="/images/tylerbday2024.jpg" caption="Le 29e anniversaire de Tyler avec Moi, Tyler, Rishik, et Sunny ~ 2024" >}}
 {{< figure src="/images/tim-bryan-horses.jpg" caption="Moi et Tim à une ferme des chevaux en pays Basque ~ 2024" >}}
 {{< figure src="/images/bryan-tim-stokes.jpg" caption="Moi et Tim à un auberge de surf vers Zarautz ~ 2024" >}}
@@ -20,6 +21,9 @@ Des photos de moi et mes amis, en ordre chronologique inverse.
 {{< figure src="/images/cassy-antoine-party.jpg" caption="Une fete à la maison avec Cassandra, Antoine, et Moi ~ 2024" >}}
 {{< figure src="/images/newyear2024.jpg" caption="La fete du nouvel an avec Grazilla, Cécile, Tyler, Sunny, et Moi ~ 2024" >}}
 {{< figure src="/images/roommates_sami.jpg" caption="La fete du départ de Sami avec all the roommates ~ 2023" >}}
+{{< figure src="/images/bryan-jason-citadelle.jpg" caption="Moi et Jason à La Citadelle de Lille ~ 2023" >}}
+{{< figure src="/images/adam-bryan-jason-ghent.jpg" caption="Adam, Moi, et Jason au bord d'un canal à Gand ~ 2023" >}}
+{{< figure src="/images/bryan-piscine.jpg" caption="Moi à La Piscine ~ 2023" >}}
 {{< figure src="/images/bryan-julie-namur.jpg" caption="Julie et Moi sur Le Centenaire à Beez ~ 2023" >}}
 {{< figure src="/images/alex-nadir-me-sachin-julien-morzine.jpg" caption="Alex, Nadir, Moi, Sachin, et Julien àu mariage de Thom à Morzine ~ 2023" >}}
 {{< figure src="/images/eatin-rishik-chicken.jpg" caption="Moi et du poulet cuit par Rishik pour La Fete Nationale d'Inde ~ 2023" >}}
