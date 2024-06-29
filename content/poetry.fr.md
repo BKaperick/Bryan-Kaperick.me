@@ -146,6 +146,16 @@ Je dirais que mon style d'écriture tombe quelque-part sur le spectre entre *dé
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
+*Untitled* -- Juin 2024
+
+>Morning growls  
+>While the di-named lioness  
+>In exhaling betrays  
+>Her thoughts hidden still  
+>On that hillside crest  
+>Where our fallen arms defined us  
+>As the grass defined the meadow  
+
 *Free to float* -- Mai 2024
 
 >If he could float from tree to tree,  

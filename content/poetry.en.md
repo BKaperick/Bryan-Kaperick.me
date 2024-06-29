@@ -144,6 +144,16 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
+*Untitled* -- June 2024
+
+>Morning growls  
+>While the di-named lioness  
+>In exhaling betrays  
+>Her thoughts hidden still  
+>On that hillside crest  
+>Where our fallen arms defined us  
+>As the grass defined the meadow  
+
 *Free to float* -- May 2024
 
 >If he could float from tree to tree,  
