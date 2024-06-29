@@ -6,6 +6,9 @@ draft: false
 
 Some photos of me and my friends, in reverse chronological order.
 
+{{< figure src="/images/the-boyz.jpg" caption="Out with The Boys ~ 2024" >}}
+{{< figure src="/images/avi-rishik-moi-amsterdam.jpg" caption="Aviraj, Rishik, and Me in Amsterdam ~ 2024" >}}
+{{< figure src="/images/tylerbday2024.jpg" caption="Tyler's 29th birthday with Me, Tyler, Rishik, and Sunny ~ 2024" >}}
 {{< figure src="/images/tylerbday2024.jpg" caption="Tyler's 29th birthday with Me, Tyler, Rishik, and Sunny ~ 2024" >}}
 {{< figure src="/images/tim-bryan-horses.jpg" caption="Me and Tim at a horse farm in Basque country ~ 2024" >}}
 {{< figure src="/images/bryan-tim-stokes.jpg" caption="Me and Tim at a surf hostel near Zarautz ~ 2024" >}}
