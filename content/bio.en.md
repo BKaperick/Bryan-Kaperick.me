@@ -5,7 +5,7 @@ draft: false
 ---
 
 ## Me
-Hello, I'm Bryan - a 26 year old guy living in Lille, and working in Paris.  I enjoy working on
+Hello, I'm Bryan - a 28 year old guy living in Lille, and working in Paris.  I enjoy working on
 problems in computational mathematics, data engineering, and numerical analysis.  Here in
 France, I enjoy walking around parks and cities, practicing my French with strangers in bars, and rock climbing.
 

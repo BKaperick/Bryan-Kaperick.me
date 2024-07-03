@@ -4,11 +4,11 @@ date: 2024-05-18T16:51:44+02:00
 draft: false
 ---
 
-Certaines des passages dans cette page-ci sont assez intime, comme c'est normal avec la poésie, donc poursuivez la lecture avec cet avertissement en tete.
+Certaines des passages sur cette page sont assez intime, comme c'est normal avec la poésie, donc poursuivez la lecture avec cet avertissement en tête.
 
-En plus, la plupart de mes poémes sont écrites en anglais, et je vais pas les traduire pour eviter de m'embarrasser encore plus que je m'embarrasse en partageant mes poémes sur mon site web publique.
+En plus, la plupart de mes poèmes sont écrits en anglais, et je vais pas les traduire pour éviter de me ridiculiser encore plus que je me ridiculise en partageant mes poèmes sur mon site web publique.
 
-Je dirais que mon style d'écriture tombe quelque-part sur le spectre entre *dérivée*, et *cringe*.  Bien sur que je reste ouvert à tout genre de retour.
+Je dirais que mon style d'écriture tombe quelque part sur le spectre entre *dérivée*, et *cringe*.  Bien sur que je reste ouvert à tout genre de retour.
 
 {{< details "# Les oeuvres qui m'inspirent" >}}
 
