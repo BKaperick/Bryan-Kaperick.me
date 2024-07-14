@@ -146,6 +146,32 @@ Je dirais que mon style d'écriture tombe quelque part sur le spectre entre *dé
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
+*Daisy* -- Juillet 2024
+
+>Sunlight stained your bedroom walls.  
+>Eyes shut, we searched  
+>and found each other's skin  
+>still damp from the night.  
+>We took turns sinking back into sleep,  
+>fleeing our obligations to The Greats  
+>who paved the city streets.  
+>When at last we emerged  
+>to face the day:  
+>our groggy eyes opened,  
+>your dimples glistened.  
+>  
+>We feasted  
+>on beauty eternal, carved into stone  
+>and on beauty as fleeting as  
+>your tender lips wrapped around  
+>a burning cigarette.  
+>Just after your last drag,  
+>embers died, while  
+>a daisy was born  
+>only to wilt,  
+>and I tried   
+>to catch each petal as it fell.  
+
 *Untitled* -- Juin 2024
 
 >Morning growls  
