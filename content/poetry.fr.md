@@ -162,15 +162,14 @@ Je dirais que mon style d'écriture tombe quelque part sur le spectre entre *dé
 >our groggy eyes opened;  
 >your dimples glistened.  
 >We feasted  
->on beauty eternal,  
->carved into stone  
->and on beauty fleeting,  
->your tender lips wrapped around  
->a burning cigarette.  
+>on beauty eternal, carved into stone  
+>and on beauty fleeting, your tender lips  
+>wrapped around a burning cigarette.  
 >  
 >Just after your last drag,  
 >embers died, while  
->a daisy was born only to wilt.  
+>a daisy was born  
+>meant only to wilt.  
 >And I tried  
 >to catch each petal as it fell.  
 
