@@ -144,30 +144,31 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 {{< /details >}}
 {{< details "# My works" >}}
 
-*Daisy* -- July 2024
+*Da isy* -- July 2024
 
 >Sunlight stained your bedroom walls.  
+>You and I hid baking in the sheets.  
 >Eyes shut, we searched  
 >and found each other's skin  
 >still damp from the night.  
 >We took turns sinking back into sleep,  
 >fleeing our obligations to The Greats  
 >who paved the city streets.  
->When at last we emerged  
->to face the day:  
->our groggy eyes opened,  
->your dimples glistened.  
 >  
+>After noon we emerged  
+>to face the day:  
+>our groggy eyes opened;  
+>your dimples glistened.  
 >We feasted  
 >on beauty eternal, carved into stone  
->and on beauty as fleeting as  
->your tender lips wrapped around  
->a burning cigarette.  
->Just after your last drag,  
->embers died, while  
->a daisy was born  
->only to wilt,  
->and I tried   
+>and on beauty fleeting, your tender lips  
+>wrapped around a burning cigarette.  
+>  
+>You took your last drag,  
+>and from the ashes,  
+>a daisy was born, but  
+>meant only to wilt.  
+>And so I tried  
 >to catch each petal as it fell.  
 
 *Untitled* -- June 2024
