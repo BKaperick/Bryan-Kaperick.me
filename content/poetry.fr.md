@@ -146,31 +146,32 @@ Je dirais que mon style d'écriture tombe quelque part sur le spectre entre *dé
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
-*Daisy* -- Juillet 2024
+*Da-isy* -- Juillet 2024
 
 >Sunlight stained your bedroom walls.  
+>You and I hid baking in the sheets.  
 >Eyes shut, we searched  
 >and found each other's skin  
 >still damp from the night.  
 >We took turns sinking back into sleep,  
 >fleeing our obligations to The Greats  
 >who paved the city streets.  
->When at last we emerged  
+>After noon we emerged  
 >to face the day:  
->our groggy eyes opened,  
+>our groggy eyes opened;  
 >your dimples glistened.  
 >  
 >We feasted  
 >on beauty eternal, carved into stone  
->and on beauty as fleeting as  
+>and on beauty fleeting, as  
 >your tender lips wrapped around  
 >a burning cigarette.  
 >Just after your last drag,  
 >embers died, while  
 >a daisy was born  
->only to wilt,  
->and I tried   
->to catch each petal as it fell.  
+>only to wilt.  
+>And I tried to catch   
+>each petal as it fell.  
 
 *Untitled* -- Juin 2024
 
@@ -180,7 +181,7 @@ Je dirais que mon style d'écriture tombe quelque part sur le spectre entre *dé
 >Her thoughts hidden still  
 >On that hillside crest  
 >Where our fallen arms defined us  
->As the grass defined the meadow  
+>As the grass defined the meadow.  
 
 *Free to float* -- Mai 2024
 
