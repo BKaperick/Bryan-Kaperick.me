@@ -156,22 +156,23 @@ Je dirais que mon style d'écriture tombe quelque part sur le spectre entre *dé
 >We took turns sinking back into sleep,  
 >fleeing our obligations to The Greats  
 >who paved the city streets.  
+>  
 >After noon we emerged  
 >to face the day:  
 >our groggy eyes opened;  
 >your dimples glistened.  
->  
 >We feasted  
->on beauty eternal, carved into stone  
->and on beauty fleeting, as  
+>on beauty eternal,  
+>carved into stone  
+>and on beauty fleeting,  
 >your tender lips wrapped around  
 >a burning cigarette.  
+>  
 >Just after your last drag,  
 >embers died, while  
->a daisy was born  
->only to wilt.  
->And I tried to catch   
->each petal as it fell.  
+>a daisy was born only to wilt.  
+>And I tried  
+>to catch each petal as it fell.  
 
 *Untitled* -- Juin 2024
 
