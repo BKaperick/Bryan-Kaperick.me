@@ -166,11 +166,11 @@ Je dirais que mon style d'écriture tombe quelque part sur le spectre entre *dé
 >and on beauty fleeting, your tender lips  
 >wrapped around a burning cigarette.  
 >  
->Just after your last drag,  
->embers died, while  
->a daisy was born  
+>You took your last drag,  
+>and from the ashes,  
+>a daisy was born, but  
 >meant only to wilt.  
->And I tried  
+>And so I tried  
 >to catch each petal as it fell.  
 
 *Untitled* -- Juin 2024
