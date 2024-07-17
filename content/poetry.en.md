@@ -179,7 +179,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >Her thoughts hidden still  
 >On that hillside crest  
 >Where our fallen arms defined us  
->As the grass defined the meadow  
+>As the grass defined the meadow.  
 
 *Free to float* -- May 2024
 

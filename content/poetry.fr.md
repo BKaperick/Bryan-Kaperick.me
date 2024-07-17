@@ -146,7 +146,7 @@ Je dirais que mon style d'écriture tombe quelque part sur le spectre entre *dé
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
-*Da-isy* -- Juillet 2024
+*Da isy* -- Juillet 2024
 
 >Sunlight stained your bedroom walls.  
 >You and I hid baking in the sheets.  
