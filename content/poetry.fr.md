@@ -146,7 +146,7 @@ Je dirais que mon style d'écriture tombe quelque part sur le spectre entre *dé
 {{< /details >}}
 {{< details "# Mes oeuvres" >}}
 
-*She's a mystery* -- Juillet 2024
+*As if.* -- Juillet 2024
 
 >She's a mystery.   
 >It's one way to say that  
@@ -156,7 +156,8 @@ I never asked or
 >
 >As if we owed each other more than that.  
 >As if I wanted to know.  
->As if I wanted to cling onto the drapes of her   insecurities.  
+>As if I wanted to cling on to the drapes  
+>of her insecurities.  
 >As if I'd want to reveal a clouded sky.  
 >As if she'd want to do the same.  
 >As if I didn't mull  
