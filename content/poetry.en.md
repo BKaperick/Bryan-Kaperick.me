@@ -174,10 +174,10 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 *As if.* -- July 2024
 
 >She's a mystery.     
->As if I wanted to know.  
 >As if I wanted to cling on to her drapes  
 >to reveal a clouded sky.  
->As if she'd want to do the same.  
+>As if I wanted to know.  
+>As if she wanted the same.  
 >As if I didn't mull  
 >for some time before she woke  
 >over whether my fingers  
@@ -189,8 +189,8 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >gliding around inside  
 >for an eternity already.  
 >  
->As if I couldn't see when you were lying.  
->I lied back as if  
+>As if I couldn't see when you were  
+>Lying. I lied back as if  
 >you couldn't do the same.  As if  
 >I didn't see how you two said  
 >goodbye.  Him all red and smiling as if  
