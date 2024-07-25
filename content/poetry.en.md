@@ -173,40 +173,32 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 
 *As if.* -- July 2024
 
->She's a mystery.   
->It's one way to say that  
-I never asked or  
->She never answered.  
->She didn't tell or I didn't listen,  
->
->As if we owed each other more than that.  
+>She's a mystery.     
 >As if I wanted to know.  
->As if I wanted to cling on to the drapes  
->of her insecurities.  
->As if I'd want to reveal a clouded sky.  
+>As if I wanted to cling on to her drapes  
+>to reveal a clouded sky.  
 >As if she'd want to do the same.  
 >As if I didn't mull  
->For some time before you woke  
->Over whether my tired fingers  
->Could be or could not be  
->Laced into yours and now it's  
->As if the thought never entered my mind, but  
->It hasn't left either,  
->As if it's been  
->Gliding around inside me  
->For an eternity already.  
+>for some time before she woke  
+>over whether my fingers  
+>could lace into hers. Now it's  
+>as if the thought never entered  
+>my mind, but  
+>it hasn't left either,  
+>as if it's been  
+>gliding around inside  
+>for an eternity already.  
 >  
->As if  
->I couldn't tell when you were lying.  
->I lied back, as if  
->You couldn't do the same.  As if  
+>As if I couldn't see when you were lying.  
+>I lied back as if  
+>you couldn't do the same.  As if  
 >I didn't see how you two said  
->Goodbye.  Him all red and smiling as if  
->He were drunk.  As if  
+>goodbye.  Him all red and smiling as if  
+>he were drunk.  As if  
 >I didn't look down to  
->See his red, drunk, smiling hand  
->Brush your waist as he turned  
->To walk away, as if  
+>see his red, drunk, smiling hand  
+>brush your waist as he turned  
+>to walk away, as if  
 >I weren't there, as if  
 >I didn't care. As if  
 >I cared.  
@@ -214,9 +206,8 @@ I never asked or
 >As if sex were a commitment.  
 >As if it didn't exist only in the instant.  
 >As if thoughts of your sex had been  
->Gliding around inside me  
->For an eternity already.  
->As if.  
+>gliding around inside  
+>for an eternity already.  
 
 *Untitled* -- June 2024
 
