@@ -178,29 +178,29 @@ Je dirais que mon style d'écriture tombe quelque part sur le spectre entre *dé
 >She's a mystery.     
 >As if I wanted to know.  
 >As if I wanted to cling on to her drapes  
->To reveal a clouded sky.  
+>to reveal a clouded sky.  
 >As if she'd want to do the same.  
 >As if I didn't mull  
->For some time before she woke  
->Over whether my fingers  
->Could lace into hers. Now it's  
->As if the thought never entered  
->My mind, but  
->It hasn't left either,  
->As if it's been  
->Gliding around inside  
->For an eternity already.  
+>for some time before she woke  
+>over whether my fingers  
+>could lace into hers. Now it's  
+>as if the thought never entered  
+>my mind, but  
+>it hasn't left either,  
+>as if it's been  
+>gliding around inside  
+>for an eternity already.  
 >  
 >As if I couldn't see when you were lying.  
 >I lied back as if  
->You couldn't do the same.  As if  
+>you couldn't do the same.  As if  
 >I didn't see how you two said  
->Goodbye.  Him all red and smiling as if  
->He were drunk.  As if  
+>goodbye.  Him all red and smiling as if  
+>he were drunk.  As if  
 >I didn't look down to  
->See his red, drunk, smiling hand  
->Brush your waist as he turned  
->To walk away, as if  
+>see his red, drunk, smiling hand  
+>brush your waist as he turned  
+>to walk away, as if  
 >I weren't there, as if  
 >I didn't care. As if  
 >I cared.  
@@ -208,8 +208,8 @@ Je dirais que mon style d'écriture tombe quelque part sur le spectre entre *dé
 >As if sex were a commitment.  
 >As if it didn't exist only in the instant.  
 >As if thoughts of your sex had been  
->Gliding around inside  
->For an eternity already.  
+>gliding around inside  
+>for an eternity already.  
 
 *Untitled* -- Juin 2024
 
