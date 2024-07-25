@@ -166,9 +166,9 @@ Je dirais que mon style d'écriture tombe quelque part sur le spectre entre *dé
 >and on beauty fleeting, your tender lips  
 >wrapped around a burning cigarette.  
 >  
->You took your last drag,  
->and from the ashes,  
->a daisy was born, but  
+>You took your last drag.  
+>And from the ashes,  
+>a daisy was born,  
 >meant only to wilt.  
 >And so I tried  
 >to catch each petal as it fell.  
@@ -176,10 +176,10 @@ Je dirais que mon style d'écriture tombe quelque part sur le spectre entre *dé
 *As if.* -- Juillet 2024
 
 >She's a mystery.     
->As if I wanted to know.  
 >As if I wanted to cling on to her drapes  
 >to reveal a clouded sky.  
->As if she'd want to do the same.  
+>As if I wanted to know.  
+>As if she wanted the same.  
 >As if I didn't mull  
 >for some time before she woke  
 >over whether my fingers  
@@ -191,8 +191,8 @@ Je dirais que mon style d'écriture tombe quelque part sur le spectre entre *dé
 >gliding around inside  
 >for an eternity already.  
 >  
->As if I couldn't see when you were lying.  
->I lied back as if  
+>As if I couldn't see when you were  
+>lying. I lied back as if  
 >you couldn't do the same.  As if  
 >I didn't see how you two said  
 >goodbye.  Him all red and smiling as if  
