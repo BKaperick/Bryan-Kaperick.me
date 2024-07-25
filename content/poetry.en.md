@@ -164,9 +164,9 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >and on beauty fleeting, your tender lips  
 >wrapped around a burning cigarette.  
 >  
->You took your last drag,  
->and from the ashes,  
->a daisy was born, but  
+>You took your last drag.  
+>And from the ashes,  
+>a daisy was born,  
 >meant only to wilt.  
 >And so I tried  
 >to catch each petal as it fell.  
@@ -190,7 +190,7 @@ I would categorize my personal style as somewhere between *derivative* and *crin
 >for an eternity already.  
 >  
 >As if I couldn't see when you were  
->Lying. I lied back as if  
+>lying. I lied back as if  
 >you couldn't do the same.  As if  
 >I didn't see how you two said  
 >goodbye.  Him all red and smiling as if  
