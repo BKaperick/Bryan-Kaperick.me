@@ -175,32 +175,24 @@ Je dirais que mon style d'écriture tombe quelque part sur le spectre entre *dé
 
 *As if.* -- Juillet 2024
 
->She's a mystery.   
->It's one way to say that  
-I never asked or  
->She never answered.  
->She didn't tell or I didn't listen,  
->
->As if we owed each other more than that.  
+>She's a mystery.     
 >As if I wanted to know.  
->As if I wanted to cling on to the drapes  
->of her insecurities.  
->As if I'd want to reveal a clouded sky.  
+>As if I wanted to cling on to her drapes  
+>To reveal a clouded sky.  
 >As if she'd want to do the same.  
 >As if I didn't mull  
->For some time before you woke  
->Over whether my tired fingers  
->Could be or could not be  
->Laced into yours and now it's  
->As if the thought never entered my mind, but  
+>For some time before she woke  
+>Over whether my fingers  
+>Could lace into hers. Now it's  
+>As if the thought never entered  
+>My mind, but  
 >It hasn't left either,  
 >As if it's been  
->Gliding around inside me  
+>Gliding around inside  
 >For an eternity already.  
 >  
->As if  
->I couldn't tell when you were lying.  
->I lied back, as if  
+>As if I couldn't see when you were lying.  
+>I lied back as if  
 >You couldn't do the same.  As if  
 >I didn't see how you two said  
 >Goodbye.  Him all red and smiling as if  
@@ -216,9 +208,8 @@ I never asked or
 >As if sex were a commitment.  
 >As if it didn't exist only in the instant.  
 >As if thoughts of your sex had been  
->Gliding around inside me  
+>Gliding around inside  
 >For an eternity already.  
->As if.  
 
 *Untitled* -- Juin 2024
 
