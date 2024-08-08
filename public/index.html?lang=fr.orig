@@ -77,10 +77,10 @@
 
 <li><a href="/" class="active" aria-current="page">Accueil</a></li>
 <li><a href="/content/fr/poetry/poetry.php">Poésie</a></li>
-<li><a href="/content/contact.php?lang=fr">Contacter</a></li>
-<li><a href="/content/photos.php?lang=fr">Photos</a></li>
-<li><a href="/content/bio.php?lang=fr">Bio</a></li>
-<li><a href="/content/blog-post.php?lang=fr">Blog Posts</a></li>
+<li><a href="/content/fr/contact/contact.php">Contacter</a></li>
+<li><a href="/content/fr/photos/photos.php">Photos</a></li>
+<li><a href="/content/fr/bio/bio.php">Bio</a></li>
+<li><a href="/content/fr/blog-post/blog-post.php">Blog Posts</a></li>
 </ul>
 
 </nav>

@@ -1,0 +1,554 @@
+<html>
+
+<link rel="stylesheet" href="../../../style.css">
+
+<html lang="fr">
+<html class="nojs" lang=$lang dir="ltr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<head>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://bryan-kaperick.me/en/index.xml">
+<meta name="created" content="2021-10-24T18:44:04+0200">
+<meta name="modified" content="2023-07-30T15:34:43+0200">
+
+
+<meta property="og:site_name" content="Bryan Kaperick&#39;s Website">
+<meta property="og:title" content="Welcome">
+<meta property="og:url" content="https://bryan-kaperick.me/en/">
+<meta property="og:type" content="website">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://bryan-kaperick.me/en/">
+
+<link rel="alternate" hreflang="fr" href="content/fr/mainpage.html">
+<link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+<link rel="apple-touch-icon" href="/static/favicon.ico">
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "url" : "https://bryan-kaperick.me/en/",
+    "name": "Welcome",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://bryan-kaperick.me/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bryan Kaperick's Website",
+      "url": "https://bryan-kaperick.me/"
+    }
+  }
+</script>
+
+</head>
+
+<body class="list-page front">
+<div class="page layout__page layout__sidebar-second">
+<header class="header layout__header">
+<a href="/" title="Home" rel="home" class="header__logo"><img src="/static/logo.png" alt="Home" class="header__logo-image"></a>
+<h1 class="header__site-name">
+<a href="/" title="Home" class="header__site-link" rel="home"><span>Le Site Web de Bryan Kaperick</span></a>
+</h1>
+<div class="region header__region">
+<h2 class="visually-hidden">Language selector</h2>
+<nav class="language-selector layout__language-selector">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" class="language-icon" width="24" height="24" viewBox="0 0 961 1113">
+<path d="M848 3a17654 17654 0 00-349 118l-39 13-6 2-171-60-173-62c-2 0-2 6-2 118v119l-50 16-53 19c-5 3-5-19-5 343 0 335 0 336 2 339l6 5a92499 92499 0 00459-150l12-4 10 3 467 148 4 2V302l-45-15-45-14-1-132c0-124-1-132-2-134-4-7-9-8-19-5zm-4 145l-1 117-178-57-178-57L843 30l1 118zM458 481l-1 319-216 72-216 72V305l215-72 217-72 1 320zm262-131c17 4 30 9 30 9 1 0 20 67 42 149l57 203 15 56-64-19a2060 2060 0 01-24-84 2094 2094 0 00-130-40l-15 33-14 34-64-18 22-55 55-136 46-112c10-24 13-30 14-30l31 10z"/>
+<path d="M257 360l-35 9c-23 7-25 7-34 7a72 72 0 01-20-3c-1 1 2 11 5 18 4 8 13 17 23 21 6 3 7 3 18 3 19 0 37-6 52-17 12-8 16-18 15-29-2-11-8-13-24-9zM335 413l-35 16c-13 7-23 12-28 13l-38 12a1636 1636 0 01-106 32c-19 3-17 2-17 9l2 8c2 4 9 10 14 12 12 6 42 3 51-6 2-2 3-3 3-7v-6l31-10 40-11a515 515 0 0148-13l-48 96c-10 19-23 40-45 71l-52 71-55 64-7 8h4c7 0 17-2 20-4a929 929 0 00149-179l23 17c26 20 30 23 51 35 25 14 39 21 56 27 8 2 12 3 13 1 1-4-6-30-9-33l-26-12-47-20-40-17-16-7 10-17c22-35 34-56 53-95l20-40 1-10v-11h-3l-17 6zM716 451l-23 56-23 55 86 26a4814 4814 0 00-40-137zM680 972a460 460 0 0026 44 422 422 0 01-319 66 517 517 0 01-175-66c-7-3-14-2-17 4-2 3-2 9 0 12s24 16 46 27a536 536 0 00222 53c36 1 39 0 68-4a480 480 0 00181-65l8-5 12 21 13 19 7-19 17-48 10-32-99-7z"/>
+</svg>
+<ul class="navbar">
+
+<li><a rel="alternate" lang="en" hreflang="en" href="?lang=en">Uh, in English please...?</a></li>
+
+</ul>
+</nav>
+</div>
+</header>
+
+<nav class="main-menu layout__navigation">
+<h2 class="visually-hidden">Main menu</h2>
+<ul class="navbar">
+
+<li><a href="/" class="active" aria-current="page">Accueil</a></li>
+<li><a href="/content/fr/poetry/poetry.php">Poésie</a></li>
+<li><a href="/content/fr/contact/contact.php">Contacter</a></li>
+<li><a href="/content/fr/photos/photos.php">Photos</a></li>
+<li><a href="/content/fr/bio/bio.php">Bio</a></li>
+<li><a href="/content/fr/blog-post/blog-post.php">Blog Posts</a></li>
+</ul>
+
+</nav>
+<!DOCTYPE html>
+<html class="nojs" lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Photos – Le Site Web de Bryan Kaperick</title>
+<meta name="description" content="Des photos de moi et mes amis, en ordre chronologique inverse.   Julie et Moi sur Le Centenaire à Beez ~ 2023   Alex, Nadir, Moi, Sachin, et Julien àu mariage de Thom à …">
+<meta name="created" content="2021-10-24T01:37:04+0200">
+<meta name="modified" content="2023-09-27T23:51:28+0200">
+
+
+<meta property="og:site_name" content="Le Site Web de Bryan Kaperick">
+<meta property="og:title" content="Photos">
+<meta property="og:url" content="https://bryan-kaperick.me/photos/">
+<meta property="og:type" content="article">
+
+<link rel="canonical" href="https://bryan-kaperick.me/photos/">
+
+<link rel="alternate" hreflang="en" href="../../en/photos/">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "headline": "Photos",
+    "datePublished": "2021-10-24T01:37:04+02:00",
+    "dateModified": "2023-09-27T23:51:28+02:00",
+    "url" : "https://bryan-kaperick.me/photos/",
+    "description": "Des photos de moi et mes amis, en ordre chronologique inverse.   Julie et Moi sur Le Centenaire à Beez ~ 2023   Alex, Nadir, Moi, Sachin, et Julien àu mariage de Thom à …",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://bryan-kaperick.me/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Le Site Web de Bryan Kaperick",
+      "url": "https://bryan-kaperick.me/"
+    }
+  }
+</script>
+
+</head>
+
+<body class="single-page">
+<div class="page layout__page layout__sidebar-second">
+
+
+<main class="main layout__main">
+<article class="single-view">
+<header>
+<h1 class="title ">Photos</h1>
+</header>
+<div class="content">
+<p>Des photos de moi et mes amis, en ordre chronologique inverse.</p>
+<p>
+<figure class="image">
+    <img src=/content/./photos/raw/bryan-gross-tete-julie.jpg>
+    <figcaption>
+ ~ 2024    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/the-boyz.jpg>
+    <figcaption>
+Out with The Boys ~ 2024    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/avi-rishik-moi-amsterdam.jpg>
+    <figcaption>
+Aviraj, Rishik, and Me in Amsterdam ~ 2024    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/tylerbday2024.jpg>
+    <figcaption>
+Tyler&rsquo;s 29th birthday with Me, Tyler, Rishik, and Sunny ~ 2024    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/tim-bryan-horses.jpg>
+    <figcaption>
+Me and Tim at a horse farm in Basque country ~ 2024    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/bryan-tim-stokes.jpg>
+    <figcaption>
+Me and Tim at a surf hostel near Zarautz ~ 2024    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/flo-tim-spain.jpg>
+    <figcaption>
+Flo, Tim, and Me in Algeciras ~ 2024    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/tangiers-coffee.jpg>
+    <figcaption>
+Me and Tim at a café in Tangiers ~ 2024    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/maroc-hike-cat.jpg>
+    <figcaption>
+Climbing near Tetouan with Tim, Me, and a village cat ~ 2024    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/maroc-hike-hole.jpg>
+    <figcaption>
+Hiking near Tetouan with Sami, Tim, Me, and Flo ~ 2024    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/asilah-beach.jpg>
+    <figcaption>
+On the beach near Asilah with Margaux, Me, Tim, Constance, Clemence, and Sami ~ 2024    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/couscous.jpg>
+    <figcaption>
+Eating Sami&rsquo;s mother&rsquo;s couscous with Alex, Me, Sami, and Tim ~ 2024    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/sila-bday-balcony.jpg>
+    <figcaption>
+Sila&rsquo;s 30th birthday in Nempont-Saint-Firmin ~ 2024    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/sila-bday-beach.jpg>
+    <figcaption>
+Sila&rsquo;s 30th birthday in Berck ~ 2024    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/cassy-antoine-party.jpg>
+    <figcaption>
+House party with Cassandra, Antoine, and Me ~ 2024    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/newyear2024.jpg>
+    <figcaption>
+New year&rsquo;s with Grazilla, Cécile, Tyler, Sunny, and Me ~ 2024    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/roommates_sami.jpg>
+    <figcaption>
+Sami&rsquo;s farewell party with all the roommates ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/bryan-jason-citadelle.jpg>
+    <figcaption>
+Me and Jason at La Citadelle de Lille ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/adam-bryan-jason-ghent.jpg>
+    <figcaption>
+Adam, Me, and Jason on the edge of a canal in Ghent ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/bryan-piscine.jpg>
+    <figcaption>
+Me at La Piscine ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/bryan-julie-namur.jpg>
+    <figcaption>
+Julie and Me at on Le Centenaire at Beez ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/alex-nadir-me-sachin-julien-morzine.jpg>
+    <figcaption>
+Alex, Nadir, Me, Sachin, and Julien at Thom&rsquo;s wedding in Morzine ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/eatin-rishik-chicken.jpg>
+    <figcaption>
+Me eating Rishik&rsquo;s chicken for Indian Independence Day ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/rishik-quentin-me-fete.jpg>
+    <figcaption>
+Rishik, Quentin, and Me after a long night ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/me-michael-st-charles.jpg>
+    <figcaption>
+Me and Michael on St. Charles Bridge in Prague ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/sachin-me-edi-martijn.jpg>
+    <figcaption>
+Sachin, Me, Edi, and Martijn at Thom&rsquo;s bachelor party in Paris ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/me-silvio-tyler-colin-tok.jpg>
+    <figcaption>
+Me, Silvio, Tyler, and Colin at Tok-ici (With Pierre on the Bass) ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/Silvio-rishik-me-colin-sarrazins.jpg>
+    <figcaption>
+Silvio, Rishik, Me, and Colin at Place des Sarrazins ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/adri-moi-flo-sami-banana.jpg>
+    <figcaption>
+Adri, Me, Flo, and Sami en route towards Hypercourt for Banana Boom ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/atomium.jpg>
+    <figcaption>
+Me, Michael, and Tyler at the Atomium in Brussels ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/egouts.jpg>
+    <figcaption>
+Me in the Sewers of Brussels ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/parents-lille.jpg>
+    <figcaption>
+Me, my parents, Laura, Aubrée, and Tyler in my courtyard ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/aux-enfants-terribles.jpg>
+    <figcaption>
+Aubrée, Sunny, Me, and Tyler at <em>Aux Enfants Terribles</em> ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/colocs-court.jpg>
+    <figcaption>
+Me and my roommates in our courtyard ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/flo-anniv.jpg>
+    <figcaption>
+Me, Flo, and Constance at a restaurant in Lille ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/jason-alcohol.jpg>
+    <figcaption>
+Me, Jason, and some others in Pittsburgh one night ~ 2023    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/picnic_anton.jpeg>
+    <figcaption>
+A bunch of people including Anton et a picnic in Paris ~ 2022    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/swap-hai-bryan-nice.jpg>
+    <figcaption>
+Swap, Hai and me in Nice ~ 2022    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/bryan-michael-tyler-anvers.jpg>
+    <figcaption>
+Me, Michael, and Tyler in Antwerp ~ 2021    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/bryan-colin_cape-perpetua.jpg>
+    <figcaption>
+Me and Colin at Cape Perpetua, OR ~ 2021    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/michael-tyler-bryan-dunkerque.jpg>
+    <figcaption>
+Michael, Tyler, and me in Dunkerque ~ 2021    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/michael-julie-bryan-tyler-dunkerque.jpg>
+    <figcaption>
+Michael, Julie, me, and Tyler in Dunkerque ~ 2021    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/julien-bryan-nadir-yanomi-skate-blabla.jpg>
+    <figcaption>
+Julien, Me, Nadir, and Yanomi at Blabla ~ 2021    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/bryan-blabla-skate.jpg>
+    <figcaption>
+Just me on a skateboard at Blabla ~ 2021    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/bryan-julie-etienne-cici-william-yanomi-grenoble.jpg>
+    <figcaption>
+Half of me, Julie, Etienne, Cici, William, and Yanomi at Fort de la Bastille, Grénoble ~ 2021    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/bryan-jeremy.png>
+    <figcaption>
+Me, Jeremy, and Mathieu on French TV ~ 2021    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/michael-bryan-lecart.jpg>
+    <figcaption>
+Me and Michael at L&rsquo;Écart ~ 2020    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/michael-bryan-julie.jpg>
+    <figcaption>
+Michael, me, and Julie in Wazemmes ~ 2020    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/alex-bryan-paris.jpg>
+    <figcaption>
+Alex and Bryan at Le Viaduc ~ 2020    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/Anton-william-bryan-la-seine.jpg>
+    <figcaption>
+Anton, William and me at Jardin Tino Rossi ~ 2020    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/bryan-julie-dune.jpg>
+    <figcaption>
+Me and Julie at Dune du Pilat ~ 2020    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/a-bunch-of-people-chez-moi-ivry.jpg>
+    <figcaption>
+A bunch of people in Ivry-sur-Seine ~ 2019    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/michael-bryan-lorenzo-edinburgh.jpg>
+    <figcaption>
+Michael, me, and Lorenzo in Edinburgh ~ 2019    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/chunglab.jpg>
+    <figcaption>
+Chung Lab ~ 2019    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/tyler-lorenzo-remy-bryan-blabla2018.jpg>
+    <figcaption>
+Tyler, me, Lorenzo, and Rémy ~ 2018    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/billpatbryan.jpg>
+    <figcaption>
+Me, Patrick, and Bill ~ 2018    </figcaption>
+</figure>
+
+
+<figure class="image">
+    <img src=/content/./photos/raw/me_and_bill_on_a_mountain_with_a_dog.jpg>
+    <figcaption>
+Me and Bill and a dog on a mountain ~ 2017    </figcaption>
+</figure>
+
+</p>
+
+
+</div>
+</article>
+</main>
+</body>
+</html>
+<footer class="footer layout__footer">
+<p><span>© Bryan Kaperick&#39;s Website </span> <span style="color:grey"> -- Site last updated  2023-09-27 22:31:57
+</span></p>
+
+
+</footer>
