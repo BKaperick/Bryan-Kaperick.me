@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+<title>Pictures – Bryan Kaperick&#39;s Website</title>
+<meta name="description" content="Some photos of me and my friends, in reverse chronological order.   Julie and Me at on Le Centenaire at Beez ~ 2023   Alex, Nadir, Me, Sachin, and Julien at Thom&amp;amp;rsquo;s …">
+<meta name="created" content="2021-10-24T01:37:04+0200">
+<meta name="modified" content="2023-09-27T23:51:28+0200">
+
+<meta property="og:title" content="Pictures">
+<meta property="og:url" content="https://bryan-kaperick.me/en/photos/">
+<meta property="og:type" content="article">
+
+<link rel="canonical" href="https://bryan-kaperick.me/en/photos/">
+
+<link rel="alternate" hreflang="fr" href="../fr/photos/photos.html">
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "headline": "Pictures",
+    "datePublished": "2021-10-24T01:37:04+02:00",
+    "dateModified": "2023-09-27T23:51:28+02:00",
+    "url" : "https://bryan-kaperick.me/en/photos/",
+    "description": "Some photos of me and my friends, in reverse chronological order.   Julie and Me at on Le Centenaire at Beez ~ 2023   Alex, Nadir, Me, Sachin, and Julien at Thom\u0026amp;rsquo;s …",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://bryan-kaperick.me/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bryan Kaperick's Website",
+      "url": "https://bryan-kaperick.me/"
+    }
+  }
+</script>
+</head>
+
+<body class="single-page">
+<main class="main layout__main">
+<article class="single-view">
+<header>
+<h1 class="title ">Pictures</h1>
+</header>
+<div class="content">
+<p>Some photos of me and my friends, in reverse chronological order.</p>
+<p>
+<?php
+include($_SERVER['DOCUMENT_ROOT']."/content/photos/photos.html");
+?>
+</p>
+
+
+</div>
+</article>
+</main>
+</body>
+</html>
