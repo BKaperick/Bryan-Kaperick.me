@@ -76,7 +76,7 @@
 <ul class="navbar">
 
 <li><a href="/" class="active" aria-current="page">Accueil</a></li>
-<li><a href="/content/poetry.php?lang=fr">Poésie</a></li>
+<li><a href="/content/fr/poetry/poetry.php">Poésie</a></li>
 <li><a href="/content/contact.php?lang=fr">Contacter</a></li>
 <li><a href="/content/photos.php?lang=fr">Photos</a></li>
 <li><a href="/content/bio.php?lang=fr">Bio</a></li>

@@ -76,7 +76,7 @@
 <ul class="navbar">
 
 <li><a href="/" class="active" aria-current="page">Home</a></li>
-<li><a href="/content/poetry.php?lang=en">Poetry</a></li>
+<li><a href="/content/en/poetry/poetry.php">Poetry</a></li>
 <li><a href="/content/contact.php?lang=en">Contact</a></li>
 <li><a href="/content/photos.php?lang=en">Photos</a></li>
 <li><a href="/content/bio.php?lang=en">Bio</a></li>

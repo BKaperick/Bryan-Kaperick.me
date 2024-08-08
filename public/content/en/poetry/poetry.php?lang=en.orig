@@ -1,8 +1,8 @@
 <html>
 
-<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../../../style.css">
 
-<html lang="fr">
+<html lang="en">
 <html class="nojs" lang=$lang dir="ltr">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
@@ -21,10 +21,10 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://bryan-kaperick.me/en/">
 
-<link rel="alternate" hreflang="fr" href="http://localhost:8000/content/content/fr/mainpage.html">
-<link rel="shortcut icon" type="image/x-icon" href="../static/favicon.ico">
-<link rel="icon" type="image/x-icon" href="../static/favicon.ico">
-<link rel="apple-touch-icon" href="../static/favicon.ico">
+<link rel="alternate" hreflang="fr" href="content/fr/mainpage.html">
+<link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+<link rel="apple-touch-icon" href="/static/favicon.ico">
 
 
 
@@ -51,9 +51,9 @@
 <body class="list-page front">
 <div class="page layout__page layout__sidebar-second">
 <header class="header layout__header">
-<a href="../index.html" title="Home" rel="home" class="header__logo"><img src="../static/logo.png" alt="Home" class="header__logo-image"></a>
+<a href="/" title="Home" rel="home" class="header__logo"><img src="/static/logo.png" alt="Home" class="header__logo-image"></a>
 <h1 class="header__site-name">
-<a href="../index.html" title="Home" class="header__site-link" rel="home"><span>Le Site Web de Bryan Kaperick</span></a>
+<a href="/" title="Home" class="header__site-link" rel="home"><span>Bryan Kaperick&#39;s Website</span></a>
 </h1>
 <div class="region header__region">
 <h2 class="visually-hidden">Language selector</h2>
@@ -64,7 +64,7 @@
 </svg>
 <ul class="navbar">
 
-<li><a rel="alternate" lang="en" hreflang="en" href="poetry.php%3Flang=en.html">Uh, in English please...?</a></li>
+<li><a rel="alternate" lang="fr" hreflang="fr" href="?lang=fr">Euh, il n&#39;y a pas une version Français, hein ?</a></li>
 
 </ul>
 </nav>
@@ -75,66 +75,61 @@
 <h2 class="visually-hidden">Main menu</h2>
 <ul class="navbar">
 
-<li><a href="../index.html" class="active" aria-current="page">Accueil</a></li>
-<li><a href="poetry.php%3Flang=fr.html">Poésie</a></li>
-<li><a href="contact.php%3Flang=fr.html">Contacter</a></li>
-<li><a href="photos.php%3Flang=fr.html">Photos</a></li>
-<li><a href="bio.php%3Flang=fr.html">Bio</a></li>
-<li><a href="blog-post.php%3Flang=fr.html">Blog Posts</a></li>
+<li><a href="/" class="active" aria-current="page">Home</a></li>
+<li><a href="/content/en/poetry/poetry.php">Poetry</a></li>
+<li><a href="/content/contact.php?lang=en">Contact</a></li>
+<li><a href="/content/photos.php?lang=en">Photos</a></li>
+<li><a href="/content/bio.php?lang=en">Bio</a></li>
+<li><a href="/content/blog-post.php?lang=en">Blog Posts</a></li>
 </ul>
 
 </nav>
 <!DOCTYPE html>
-<html class="nojs" lang="fr" dir="ltr">
+<html class="nojs" lang="en" dir="ltr">
 <head>
-<title>Poésie – Le Site Web de Bryan Kaperick</title>
-<meta name="description" content="Cette page-là pourrait devenir assez personalle, comme s&amp;amp;rsquo;est normal pour la poésie, donc entrez-vous avec cette précaution en tete. En plus, la plupart de mes …">
+<title>Poetry – Bryan Kaperick&#39;s Website</title>
+<meta name="description" content="This page can get rather personal, as poetry tends to be, so proceed at your own risk. I would categorize my personal style as somewhere between derivative and cringe. Of …">
 <meta name="created" content="2023-02-14T22:51:44+0200">
-<meta name="modified" content="2023-07-30T13:44:18+0200">
+<meta name="modified" content="2023-10-07T15:22:48+0200">
+<meta property="og:title" content="Poetry">
+<meta property="og:url" content="https://bryan-kaperick.me/en/poetry/">
 
-<meta property="og:site_name" content="Le Site Web de Bryan Kaperick">
-<meta property="og:title" content="Poésie">
-<meta property="og:url" content="https://bryan-kaperick.me/poetry/">
-<meta property="og:type" content="article">
-
-<link rel="canonical" href="https://bryan-kaperick.me/poetry/">
-<link rel="alternate" hreflang="en" href="../en/poetry/index.html">
+<link rel="canonical" href="https://bryan-kaperick.me/en/poetry/">
+<link rel="alternate" hreflang="fr" href="../../fr/poetry/poetry.html">
 
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "headline": "Poésie",
+    "@type": "webpage",
+    "headline": "Poetry",
     "datePublished": "2023-02-14T22:51:44+02:00",
-    "dateModified": "2023-07-30T13:44:18+02:00",
-    "url" : "https://bryan-kaperick.me/poetry/",
-    "description": "Cette page-là pourrait devenir assez personalle, comme s\u0026amp;rsquo;est normal pour la poésie, donc entrez-vous avec cette précaution en tete. En plus, la plupart de mes …",
+    "dateModified": "2023-10-07T15:22:48+02:00",
+    "url" : "https://bryan-kaperick.me/en/poetry/",
+    "description": "This page can get rather personal, as poetry tends to be, so proceed at your own risk. I would categorize my personal style as somewhere between derivative and cringe. Of …",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://bryan-kaperick.me/"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Le Site Web de Bryan Kaperick",
+      "name": "Bryan Kaperick's Website",
       "url": "https://bryan-kaperick.me/"
     }
   }
 </script>
-</head>
 
 <main class="main layout__main">
 <article class="single-view">
 <header>
-<h1 class="title ">Poésie</h1>
+<h1 class="title ">Poetry</h1>
 </header>
 <div class="content">
-<p>Certaines des passages sur cette page sont assez intime, comme c&rsquo;est normal avec la poésie, donc poursuivez la lecture avec cet avertissement en tête.</p>
-<p>En plus, la plupart de mes poèmes sont écrits en anglais, et je vais pas les traduire pour éviter de me ridiculiser encore plus que je me ridiculise en partageant mes poèmes sur mon site web publique.</p>
-<p>Je dirais que mon style d&rsquo;écriture tombe quelque part sur le spectre entre <em>dérivée</em>, et <em>cringe</em>.  Bien sur que je reste ouvert à tout genre de retour.</p>
+<p>This page can get rather personal, as poetry tends to be, so proceed at your own risk.</p>
+<p>I would categorize my personal style as somewhere between <em>derivative</em> and <em>cringe</em>.  Of course, I&rsquo;m open to all sorts of feedback.</p>
 
 <p><details>
   <summary><h1 id="les-oeuvres-qui-minspirent">
-  Les oeuvres qui m'inspirent</h1>
+  Works that inspire me</h1>
 </summary>
 
 <p><em>On First Looking into Chapman&rsquo;s Homer</em> &ndash; Rainer Maria Rilke</p>
@@ -280,10 +275,14 @@ A raven’s lust at bay to keep.</p>    </blockquote></details>
 
 <details>
   <summary><h1 id="my-works">
-  Mes oeuvres</h1>
+  My works</h1>
 </summary>
 
-<p><em>Da isy</em> &ndash; Juillet 2024</p>
+<p><em></em> &ndash;  </p>
+    <blockquote>
+        </blockquote>
+
+<p><em>Da isy</em> &ndash; July 2024</p>
     <blockquote>
     <p>Sunlight stained your bedroom walls.<br>
 You and I hid baking in the sheets.<br>
@@ -308,7 +307,7 @@ meant only to wilt.<br>
 And so I tried<br>
 to catch each petal as it fell.</p>    </blockquote>
 
-<p><em>As if.</em> &ndash; Juillet 2024</p>
+<p><em>As if.</em> &ndash; July 2024</p>
     <blockquote>
     <p>She’s a mystery.<br>
 As if I wanted to cling on to her drapes<br>
@@ -344,7 +343,7 @@ As if thoughts of your sex had been<br>
 gliding around inside<br>
 for an eternity already.</p>    </blockquote>
 
-<p><em>Untitled</em> &ndash; Juin 2024</p>
+<p><em>Untitled</em> &ndash; June 2024</p>
     <blockquote>
     <p>Morning growls<br>
 While the di-named lioness<br>
@@ -354,7 +353,7 @@ On that hillside crest<br>
 Where our fallen arms defined us<br>
 As the grass defined the meadow.</p>    </blockquote>
 
-<p><em>Free to float</em> &ndash; Mai 2024</p>
+<p><em>Free to float</em> &ndash; May 2024</p>
     <blockquote>
     <p>If he could float from tree to tree,<br>
 on which clichés he’d perch?<br>
@@ -366,7 +365,7 @@ Back to dream states<br>
 where men, like birds,<br>
 are free to float from tree to tree.</p>    </blockquote>
 
-<p><em>While in decline</em> &ndash; Mai 2024</p>
+<p><em>While in decline</em> &ndash; May 2024</p>
     <blockquote>
     <p>The sun still shines while in decline<br>
 And bees slave all their lives<br>
@@ -377,7 +376,7 @@ Or surf the lightning’s strike<br>
 But he like all must heed the call<br>
 Of sunset on his back.</p>    </blockquote>
 
-<p><em>Untitled triad</em> &ndash; Mai 2024</p>
+<p><em>Untitled triad</em> &ndash; May 2024</p>
     <blockquote>
     <p>Break my bones<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if you want to<br>
@@ -395,7 +394,7 @@ Of sunset on his back.</p>    </blockquote>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;can fall<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;between our feet</p>    </blockquote>
 
-<p><em>Moroccan mist</em> &ndash; Mai 2024</p>
+<p><em>Moroccan mist</em> &ndash; May 2024</p>
     <blockquote>
     <p>Moroccan mist evaporates away<br>
 From all the dusty hash that filled our lungs<br>
@@ -410,7 +409,7 @@ Far from the hold of Silvio’s belay<br>
 Without a name I spun that game of chance<br>
 And downed those drunken sips of Leah’s sweet.</p>    </blockquote>
 
-<p><em>Watch</em> &ndash; Mai 2024</p>
+<p><em>Watch</em> &ndash; May 2024</p>
     <blockquote>
     <p>Watch through the window<br>
 the mug that wobbles unprompted<br>
@@ -422,7 +421,7 @@ and the lowly he rises<br>
 to lick the spill off the tile<br>
 like a dog</p>    </blockquote>
 
-<p><em>Untitled</em> &ndash; Avril 2024</p>
+<p><em>Untitled</em> &ndash; April 2024</p>
     <blockquote>
     <p>Puddles stain the pavement<br>
 under sun’s afternoon<br>
@@ -433,7 +432,7 @@ sidelining the plaza,<br>
 he’s chewing on some homesick<br>
 and his heart’s beating blue.</p>    </blockquote>
 
-<p><em>The doghouse</em> &ndash; Avril 2024</p>
+<p><em>The doghouse</em> &ndash; April 2024</p>
     <blockquote>
     <p>Awakened in a troubling grime,<br>
 the morning crawls out of the doghouse<br>
@@ -450,7 +449,7 @@ by the heightened sense that lasts<br>
 dew-dampened before the fall<br>
 of noon’s eventual descent.</p>    </blockquote>
 
-<p><em>Un mardi soir</em> &ndash; Mars 2024</p>
+<p><em>Un mardi soir</em> &ndash; March 2024</p>
     <blockquote>
     <p>Du temps perdu<br>
 sous la pluie<br>
@@ -460,7 +459,7 @@ quand on essaie de ramasser<br>
 ce qui en reste de la table<br>
 après qu’elle parte.</p>    </blockquote>
 
-<p><em>The tower</em> &ndash; Février 2024</p>
+<p><em>The tower</em> &ndash; February 2024</p>
     <blockquote>
     <p>His eyes and Hers align to keep<br>
 panoptic, periodic rhyme at sea<br>
@@ -488,7 +487,7 @@ all while shadows grow twice as wide.<br>
 Her mood now high and low like tide<br>
 ever bound to the pull of out there.</p>    </blockquote>
 
-<p><em>In the dark</em> &ndash; Janvier 2024</p>
+<p><em>In the dark</em> &ndash; January 2024</p>
     <blockquote>
     <p>Pinned to dusk and strung like wire<br>
 Tower the branches' fractal spires</p>
@@ -503,7 +502,7 @@ To manufacture beauty in the dark</p>
 <p>These streaks will soon be printed on the dawn<br>
 Where fractal spires linger on and on.</p>    </blockquote>
 
-<p><em>A cool, dry place</em> &ndash; Janvier 2024</p>
+<p><em>A cool, dry place</em> &ndash; January 2024</p>
     <blockquote>
     <p>Sitting pristine in her sleeve<br>
 plastic shrink wrapped unscratched<br>
@@ -528,33 +527,32 @@ under another<br>
 overplayed eventually clichéd<br>
 wedged among the others<br>
 In a cool, dry place.</p>    </blockquote>
-
     <details>
-      <summary><h3 id="2023-20-poèmes">2023 (20 poèmes)</h3>
+      <summary><h3 id="2023-20-poèmes">2023 (20 poems)</h3>
     </summary>
 
-    <p><em>Monorhyme sketch #3</em> &ndash; Decembre 2023</p>
+    <p><em>Monorhyme sketch #3</em> &ndash; December 2023</p>
     <blockquote>
     <p>Goldilocks was feeling bold,<br>
 For each bear was poured a bowl.<br>
 Her belly roiled with each spoonful:<br>
 Cold, more cold, and much more cold.</p>    </blockquote>
 
-<p><em>Monorhyme sketch #2</em> &ndash; Novembre 2023</p>
+<p><em>Monorhyme sketch #2</em> &ndash; November 2023</p>
     <blockquote>
     <p>Play back the track slow with all ears clear<br>
 Sycophants’ll scatter off or cower with fear<br>
 Honest men’ll settle in, lonesomely austere<br>
 Chimney fire cackling to toss another beer.</p>    </blockquote>
 
-<p><em>Monorhyme sketch #1</em> &ndash; Novembre 2023</p>
+<p><em>Monorhyme sketch #1</em> &ndash; November 2023</p>
     <blockquote>
     <p>Alcohol is entropy, and entropy is time<br>
 Hungover before I transitively unwind.<br>
 Wilted flowers wither while I dine on rotten wine<br>
 And ever wet the whistle of a lover once mine.</p>    </blockquote>
 
-<p><em>Ode to Sami</em> &ndash; Novembre 2023</p>
+<p><em>Ode to Sami</em> &ndash; November 2023</p>
     <blockquote>
     <p>Our man’s evaporated — gone.<br>
 After the party rises dawn<br>
@@ -571,14 +569,14 @@ Into our cheeks the stories burn<br>
 Red-raw from cold or rush of blood<br>
 At Sami’s wisdom understood.</p>    </blockquote>
 
-<p><em>Chicory root</em> &ndash; Octobre 2023</p>
+<p><em>Chicory root</em> &ndash; October 2023</p>
     <blockquote>
     <p>An afternoon with chicory root<br>
 My heart respires a holler and hoot<br>
 Sans caffeine so must be due<br>
 À la frange d’Aubrée, surtout</p>    </blockquote>
 
-<p><em>Untitled couples</em> &ndash; Octobre 2023</p>
+<p><em>Untitled couples</em> &ndash; October 2023</p>
     <blockquote>
     <p>Bound up inside, a voice he wimpers on,<br>
 “Bring back the soft of touch that long has gone…”</p>
@@ -593,7 +591,7 @@ Beyond the surface dissipating shroud.</p>
 <p>With that I’ll rise above the tar that blinds<br>
 Before I’ve found the words for th’other side.</p>    </blockquote>
 
-<p><em>Limp</em> &ndash; Octobre 2023</p>
+<p><em>Limp</em> &ndash; October 2023</p>
     <blockquote>
     <p>As I ran by I saw you lying<br>
 limp along the sidewalk<br>
@@ -612,7 +610,7 @@ since summer’s hibernation<br>
 But you’ve cooled your gaze to stone<br>
 and cast it in the ocean</p>    </blockquote>
 
-<p><em>September slump</em> &ndash; Septembre 2023</p>
+<p><em>September slump</em> &ndash; September 2023</p>
     <blockquote>
     <p>Obsessively revising<br>
 Self-consuming second guessing<br>
@@ -628,7 +626,7 @@ Meaning while I wait I’m anxiously aware<br>
 that every waking moment means<br>
 the more and more you drift away from me.</p>    </blockquote>
 
-<p><em>Hm, apparently Pompeii isn't in Greece</em> &ndash; Septembre 2023</p>
+<p><em>Hm, apparently Pompeii isn't in Greece</em> &ndash; September 2023</p>
     <blockquote>
     <p>It’s New Year’s Eve on Mount Vesuvius<br>
 Eruption warnings are dubious<br>
@@ -647,7 +645,7 @@ At that, our wine-dark punch bowl emptied<br>
 Thus could raise one goblet all<br>
 So that our tombstones may stand tall.</p>    </blockquote>
 
-<p><em>Untitled</em> &ndash; Aout 2023</p>
+<p><em>Untitled</em> &ndash; August 2023</p>
     <blockquote>
     <p>A giant in the shoes of a man<br>
 A god wrapped in a mortal’s pelt<br>
@@ -673,7 +671,7 @@ Sweet death had complied with their final demand<br>
 All noble spirits on the shore had crumpled<br>
 For heavy are the souls of the damned.</p>    </blockquote>
 
-<p><em>Crossing your path</em> &ndash; Juillet 2023</p>
+<p><em>Crossing your path</em> &ndash; July 2023</p>
     <blockquote>
     <p>I’d like to cross your path from time to time<br>
 To say ‘Hello’ and then ‘Goodbye’<br>
@@ -694,14 +692,14 @@ Your verse with him struck something new<br>
 And better than the one we wrote<br>
 Just for me and you.</p>    </blockquote>
 
-<p><em>Untitled pt. 2</em> &ndash; Juillet 2023</p>
+<p><em>Untitled pt. 2</em> &ndash; July 2023</p>
     <blockquote>
     <p>and the end it was so brief half an hour in the park and we didnt even break open the pulco and sparkling water</p>
 <p>she was calm as was i there was maybe a single moment where a tear was held back</p>
 <p>oh isnt it complicated to close the book of belle hectic mornings and pale razorburnt legs out in the world lovely lovely and probably crying brutally alone in her bed as i write this</p>
 <p>sleep will come easier as i read it back each night knowing with each recitation ill fade further onto her horizon.</p>    </blockquote>
 
-<p><em>Untitled</em> &ndash; Juillet 2023</p>
+<p><em>Untitled</em> &ndash; July 2023</p>
     <blockquote>
     <p>If ever a lonely night<br>
 Should you wake in a sharp tremor<br>
@@ -719,7 +717,7 @@ révèle que ce rêve<br>
 Ne vivait pas que dans ta tête<br>
 Ni que pendant la nuit</p>    </blockquote>
 
-<p><em>Whalebone branches</em> &ndash; Juin 2023</p>
+<p><em>Whalebone branches</em> &ndash; June 2023</p>
     <blockquote>
     <p>Whalebone branches<br>
 they bellow and spill<br>
@@ -747,7 +745,7 @@ restore our faith in Moby Dick,<br>
 find ourselves like that Tarkovsky flick,<br>
 till no warm-blooded carcass persists.</p>    </blockquote>
 
-<p><em>Untitled</em> &ndash; Mai 2023</p>
+<p><em>Untitled</em> &ndash; May 2023</p>
     <blockquote>
     <p>Accro à la banalité<br>
 A la recherche d’une bière<br>
@@ -758,7 +756,7 @@ Cuites au soleil<br>
 Brillants sommes nous<br>
 Les lapins d’été</p>    </blockquote>
 
-<p><em>Those oozing stacks grow</em> &ndash; Avril 2023</p>
+<p><em>Those oozing stacks grow</em> &ndash; April 2023</p>
     <blockquote>
     <p>I want to tell of carcasses stacked tall<br>
 Of honey dried out at crusty summer’s fall<br>
@@ -793,14 +791,14 @@ but suffice it to know<br>
 those oozing stacks grow<br>
 with each ripe passerby.</p>    </blockquote>
 
-<p><em>Bruges pluie blues</em> &ndash; Mars 2023</p>
+<p><em>Bruges pluie blues</em> &ndash; March 2023</p>
     <blockquote>
     <p>Il plu dans cette vielle ville<br>
 Pendant ces vacances débiles<br>
 Où j’accompagne mes parents<br>
 Qui connaissent Bruges d’un film</p>    </blockquote>
 
-<p><em>Untitled night</em> &ndash; Février 2023</p>
+<p><em>Untitled night</em> &ndash; February 2023</p>
     <blockquote>
     <p>Her animal lay wild,<br>
 hunched, and prowling in its cage<br>
@@ -827,10 +825,10 @@ evinced our last temptation<br>
 fused together, cast in crimson.</p>    </blockquote>    </details>
 
     <details>
-        <summary><h3 id="2020---2022-3-poèmes">2020 - 2022 (3 poèmes)</h3>
+        <summary><h3 id="2020---2022-3-poèmes">2020 - 2022 (3 poems)</h3>
     </summary>
 
-    <p><em>Kansas sky</em> &ndash; Juillet 2022</p>
+    <p><em>Kansas sky</em> &ndash; July 2022</p>
     <blockquote>
     <p>This morning I watched a cloud fall to earth.<br>
 Once suspended in the Kansas sky<br>
@@ -840,7 +838,7 @@ Not from a star, but a lightning strike.<br>
 And here I gaze at Julie next to me<br>
 &nbsp;&nbsp;&nbsp;She takes my cloud and twinkle and goes to sleep</p>    </blockquote>
 
-<p><em>Like jackals, lips slippery</em> &ndash; Mai 2022</p>
+<p><em>Like jackals, lips slippery</em> &ndash; May 2022</p>
     <blockquote>
     <p>Jackal toes and bloody lips<br>
 On the wall trickles and drips<br>
@@ -855,7 +853,7 @@ Rancid stir of pustules brew<br>
 We the few who slurp that liqueur<br>
 While her dusty lips moan.</p>    </blockquote>
 
-<p><em>Fierce creature</em> &ndash; Janvier 2020</p>
+<p><em>Fierce creature</em> &ndash; January 2020</p>
     <blockquote>
     <p>Fierce creature.<br>
 Her warm-armed currents<br>
@@ -864,6 +862,7 @@ Pulsing violent,<br>
 Spewing caustic, emptying<br>
 Into basins which steam future desire,<br>
 Filled to quench days spent apart.</p>    </blockquote>    </details>
+
 </details>
 
 </div>
