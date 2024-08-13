@@ -23,7 +23,7 @@
     }
     @else {
       @if $base-unit == rem or $base-unit == em {
-        // In the html element, rem means relative to browser default font size; em means relative to html's font size.
+        // In the.html element, rem means relative to browser default font size; em means relative to.html's font size.
         line-height: calculate-em-px($line-height, $size);
       }
       @if $base-unit == px {

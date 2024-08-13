@@ -55,7 +55,7 @@ u.prototype.addClass = function () {
 
 // [INTERNAL USE ONLY]
 // Add text in the specified position. It is used by other functions
-u.prototype.adjacent = function (html, data, callback) {
+u.prototype.adjacent = function .html, data, callback) {
   if (typeof data === 'number') {
     if (data === 0) {
       data = [];
@@ -72,7 +72,7 @@ u.prototype.adjacent = function (html, data, callback) {
     // Allow for data to be falsy and still loop once
     u(data || {}).map(function (el, i) {
       // Allow for callbacks that accept some data
-      var part = (typeof html === 'function') ? html.call(this, el, i, node, j) : html;
+      var part = (typeof.html === 'function') ?.html.call(this, el, i, node, j) :.html;
 
       if (typeof part === 'string') {
         return this.generate(part);
@@ -89,17 +89,17 @@ u.prototype.adjacent = function (html, data, callback) {
   });
 };
 
-// Add some html as a sibling after each of the matched elements.
-u.prototype.after = function (html, data) {
-  return this.adjacent(html, data, function (node, fragment) {
+// Add some.html as a sibling after each of the matched elements.
+u.prototype.after = function .html, data) {
+  return this.adjacent.html, data, function (node, fragment) {
     node.parentNode.insertBefore(fragment, node.nextSibling);
   });
 };
 
 
-// Add some html as a child at the end of each of the matched elements.
-u.prototype.append = function (html, data) {
-  return this.adjacent(html, data, function (node, fragment) {
+// Add some.html as a child at the end of each of the matched elements.
+u.prototype.append = function .html, data) {
+  return this.adjacent.html, data, function (node, fragment) {
     node.appendChild(fragment);
   });
 };
@@ -162,9 +162,9 @@ u.prototype.attr = function (name, value, data) {
 };
 
 
-// Add some html before each of the matched elements.
-u.prototype.before = function (html, data) {
-  return this.adjacent(html, data, function (node, fragment) {
+// Add some.html before each of the matched elements.
+u.prototype.before = function .html, data) {
+  return this.adjacent.html, data, function (node, fragment) {
     node.parentNode.insertBefore(fragment, node);
   });
 };
@@ -350,16 +350,16 @@ u.prototype.first = function () {
 
 // [INTERNAL USE ONLY]
 // Generate a fragment of HTML. This irons out the inconsistences
-u.prototype.generate = function (html) {
+u.prototype.generate = function .html) {
   // Table elements need to be child of <table> for some f***ed up reason
-  if (/^\s*<tr[> ]/.test(html)) {
-    return u(document.createElement('table')).html(html).children().children().nodes;
-  } else if (/^\s*<t(h|d)[> ]/.test(html)) {
-    return u(document.createElement('table')).html(html).children().children().children().nodes;
-  } else if (/^\s*</.test(html)) {
-    return u(document.createElement('div')).html(html).children().nodes;
+  if (/^\s*<tr[> ]/.test.html)) {
+    return u(document.createElement('table')).html.html).children().children().nodes;
+  } else if (/^\s*<t(h|d)[> ]/.test.html)) {
+    return u(document.createElement('table')).html.html).children().children().children().nodes;
+  } else if (/^\s*</.test.html)) {
+    return u(document.createElement('div')).html.html).children().nodes;
   } else {
-    return document.createTextNode(html);
+    return document.createTextNode.html);
   }
 };
 
@@ -386,7 +386,7 @@ u.prototype.hasClass = function () {
 };
 
 
-// Set or retrieve the html from the matched node(s)
+// Set or retrieve the.html from the matched node(s)
 u.prototype.html = function (text) {
   // Needs to check undefined as it might be ""
   if (text === undefined) {
@@ -396,7 +396,7 @@ u.prototype.html = function (text) {
   // If we're attempting to set some text
   // Loop through all the nodes
   return this.each(function (node) {
-    // Set the inner html to the node
+    // Set the inner.html to the node
     node.innerHTML = text;
   });
 };
@@ -554,8 +554,8 @@ u.prototype.parent = function (selector) {
 
 
 // Add nodes at the beginning of each node
-u.prototype.prepend = function (html, data) {
-  return this.adjacent(html, data, function (node, fragment) {
+u.prototype.prepend = function .html, data) {
+  return this.adjacent.html, data, function (node, fragment) {
     node.insertBefore(fragment, node.firstChild);
   });
 };
@@ -584,9 +584,9 @@ u.prototype.removeClass = function () {
 
 
 // Replace the matched elements with the passed argument.
-u.prototype.replace = function (html, data) {
+u.prototype.replace = function .html, data) {
   var nodes = [];
-  this.adjacent(html, data, function (node, fragment) {
+  this.adjacent.html, data, function (node, fragment) {
     nodes = nodes.concat(this.slice(fragment.children));
     node.parentNode.replaceChild(fragment, node);
   });
