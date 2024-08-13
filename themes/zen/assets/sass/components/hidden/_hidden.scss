@@ -16,14 +16,14 @@
 
 .js-hidden,
 %js-hidden {
-  html.js & {
+ .html.js & {
     @extend %hidden;
   }
 }
 
 .nojs-hidden,
 %nojs-hidden {
-  html.nojs & {
+ .html.nojs & {
     @extend %hidden;
   }
 }
