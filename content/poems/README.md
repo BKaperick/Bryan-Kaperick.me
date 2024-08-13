@@ -1,6 +1,6 @@
 # Subdirectory structure
 
-`poems.json` contains the poems and associated metadata.  This is what gets ingested to create php/html with `create_html.py` but is not read directly when loading the page.
+`poems.json` contains the poems and associated metadata.  This is what gets ingested to create.html with `create_html.py` but is not read directly when loading the page.
 
 `./new/` stores new poems in plain-text.  The name of each file is the title with underscores instead of spaces, and no special characters or capitalization.
 
@@ -14,7 +14,7 @@
     `python format_poem.py all-poems` - overwrites body key-value for every poem containing a `rawpath` key (otherwise we have nothing to write).
     `python format_poem.py [poems]` - pass an explicit space-separated list of poem keys to overwrite in addition to any missing a `body` key.
 
-`create_html.py` reads `poems.json` and creates the php/html blocks needed to embed them in a page in reverse-chronological order.
+`create_html.py` reads `poems.json` and creates the.html blocks needed to embed them in a page in reverse-chronological order.
 
 # Usage
 
