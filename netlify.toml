@@ -1,7 +1,7 @@
 [context.production]
   base = "/"
   publish = "public"
-  command = "hugo"
+  command = ""
 [context.deploy-preview]
   base = "/"
   publish = "public"
