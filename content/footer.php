@@ -1,5 +1,5 @@
 <footer class="footer layout__footer">
-<p><span>© Bryan Kaperick&#39;s Website </span> <span style="color:grey"> -- Site last updated  2023-09-27 22:31:57
+<p><span>© Bryan Kaperick&#39;s Website </span> <span style="color:grey"> -- Site last updated  2024-08-13 17:54:57
 </span></p>
 
 
