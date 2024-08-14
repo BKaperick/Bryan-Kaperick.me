@@ -30,7 +30,7 @@ jobs:
 
     - name: Build static site
       run: |
-        sudo pkill -f php
+        sudo kill $( lsof -i:6379 -t )
         (php -S localhost:6379) &
         rm -r public
         mkdir public
