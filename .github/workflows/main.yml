@@ -1,8 +1,14 @@
 on:
   push
 jobs:
+
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest    
+    services:
+      php:
+        image: php
+        ports:
+        - 8000:8000
     steps:
     - uses: shivammathur/setup-php@verbose
       with:
