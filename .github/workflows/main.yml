@@ -3,12 +3,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    services:
-      redis:
-        image: redis
-        ports:
-          - 6379:6379
     steps:
+    - uses: shivammathur/setup-php@verbose
+      with:
+        php-version: '7.4'
     - uses: actions/checkout@v4
 
     - name: Setup git
@@ -30,12 +28,9 @@ jobs:
 
     - name: Build static site
       run: |
-        sudo fuser -k 6379/tcp
-        (php -S localhost:6379) &
-        rm -r public
-        mkdir public
+        php -S localhost:8000 -t public/ > phpd.log 2>&1 &
         cd public
-        wget -k -K  -E -r -l 10 -p -N -F -nH https://localhost:6379
+        wget -k -K  -E -r -l 10 -p -N -F -nH https://localhost:8000
         
     - name: Post-processing and cleanup
       run: ./clean_up.sh
