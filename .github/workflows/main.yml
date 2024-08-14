@@ -8,7 +8,6 @@ jobs:
         image: php:7.4.33-apache-bullseye
         ports:
         - 8000:8000
-        - 8001:8001
     steps:
     - uses: actions/checkout@v4
 
