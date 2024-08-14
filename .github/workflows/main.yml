@@ -4,10 +4,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     services:
-      php:
-        image: php:7.4.33-apache-bullseye
+      redis:
+        image: redis
         ports:
-        - 8000:8000
+          - 6379:6379
     steps:
     - uses: actions/checkout@v4
 
@@ -30,12 +30,11 @@ jobs:
 
     - name: Build static site
       run: |
-        (php -S localhost:8000) &
+        (php -S localhost:6379) &
         rm -r public
         mkdir public
         cd public
-        ps -ef | grep php
-        wget -k -K  -E -r -l 10 -p -N -F -nH https://localhost:8000
+        wget -k -K  -E -r -l 10 -p -N -F -nH https://localhost:6379
         
     - name: Post-processing and cleanup
       run: ./clean_up.sh
