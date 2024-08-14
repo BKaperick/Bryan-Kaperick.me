@@ -30,7 +30,7 @@ jobs:
 
     - name: Build static site
       run: |
-        sudo kill $( lsof -i:6379 -t )
+        sudo fuser -k 6379
         (php -S localhost:6379) &
         rm -r public
         mkdir public
