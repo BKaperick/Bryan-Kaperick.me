@@ -3,6 +3,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    services:
+      redis:
+        image: redis
+        ports:
+          - 8000:8000
     container: ubuntu
     steps:
     - uses: actions/checkout@v4
