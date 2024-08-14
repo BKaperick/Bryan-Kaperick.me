@@ -8,6 +8,7 @@ jobs:
         image: php:7.4.33-apache-bullseye
         ports:
         - 8000:8000
+        - 8001:8001
     steps:
     - uses: actions/checkout@v4
 
@@ -30,11 +31,11 @@ jobs:
 
     - name: Build static site
       run: |
-        (php -S localhost:8000) &
+        (php -S localhost:8001) &
         rm -r public
         mkdir public
         cd public
-        wget -k -K  -E -r -l 10 -p -N -F -nH https://localhost:8000
+        wget -k -K  -E -r -l 10 -p -N -F -nH https://localhost:8001
         
     - name: Post-processing and cleanup
       run: ./clean_up.sh
