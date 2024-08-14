@@ -1,0 +1,30 @@
+on:
+  push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Ingest new content
+      run: |
+        ./pre_build.sh
+
+    - name: Build static site
+      run: |
+        (php -S localhost:8000) &
+        rm -r public
+        mkdir public
+        cd public
+        wget -k -K  -E -r -l 10 -p -N -F -nH http://localhost:8000
+        
+    - name: Post-processing and cleanup
+      run: ./clean_up.sh
+      
+    - name: Push changes
+      run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "generated"
+          git push
