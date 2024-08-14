@@ -7,6 +7,19 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Setup git
+        run: |
+          apt-get update; apt-get install -y git
+
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      - name: Install pip
+        run: |
+          apt-get install -y python3-pip
+          apt-get install -y wget
+
     - name: Ingest new content
       run: |
         ./pre_build.sh
