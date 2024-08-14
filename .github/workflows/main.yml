@@ -6,8 +6,6 @@ jobs:
     services:
       redis:
         image: redis
-        ports:
-          - 6379:6379
     steps:
     - uses: actions/checkout@v4
 
@@ -30,11 +28,11 @@ jobs:
 
     - name: Build static site
       run: |
-        (php -S localhost:6379) &
+        (php -S redis:6379) &
         rm -r public
         mkdir public
         cd public
-        wget -k -K  -E -r -l 10 -p -N -F -nH https://localhost:6379
+        wget -k -K  -E -r -l 10 -p -N -F -nH https://redis:6379
         
     - name: Post-processing and cleanup
       run: ./clean_up.sh
