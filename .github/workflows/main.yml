@@ -4,15 +4,8 @@ jobs:
 
   build:
     runs-on: ubuntu-latest    
-    services:
-      php:
-        image: php
-        ports:
-        - 8000:8000
+    container: ubuntu
     steps:
-    - uses: shivammathur/setup-php@verbose
-      with:
-        php-version: '7.4'
     - uses: actions/checkout@v4
 
     - name: Setup git
