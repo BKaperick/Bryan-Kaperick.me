@@ -31,7 +31,7 @@ jobs:
 
     - name: Build static site
       run: |
-        (php -S localhost:8000) &
+        (php -S redis:8000) &
         rm -r public
         mkdir public
         cd public
