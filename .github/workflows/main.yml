@@ -30,11 +30,12 @@ jobs:
 
     - name: Build static site
       run: |
-        (php -S localhost:8001) &
+        (php -S localhost:8000) &
         rm -r public
         mkdir public
         cd public
-        wget -k -K  -E -r -l 10 -p -N -F -nH https://localhost:8001
+        ps -ef | grep php
+        wget -k -K  -E -r -l 10 -p -N -F -nH https://localhost:8000
         
     - name: Post-processing and cleanup
       run: ./clean_up.sh
