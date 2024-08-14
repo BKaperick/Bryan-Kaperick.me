@@ -4,11 +4,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     services:
-      redis:
-        image: redis
+      php:
+        image: php:7.4.33-apache-bullseye
         ports:
-          - 8000:8000
-    container: ubuntu
+        - 8000:8000
     steps:
     - uses: actions/checkout@v4
 
