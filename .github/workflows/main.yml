@@ -22,7 +22,7 @@ jobs:
 
     - name: Install wget
       run: |
-        apt-get install -y wget
+        sudo apt-get install -y wget
 
     - name: Ingest new content
       run: |
