@@ -30,7 +30,7 @@ jobs:
 
     - name: Build static site
       run: |
-        sudo fuser -k 6379
+        sudo fuser -k 6379/http
         (php -S localhost:6379) &
         rm -r public
         mkdir public
