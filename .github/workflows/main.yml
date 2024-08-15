@@ -5,7 +5,6 @@ jobs:
   build:
     runs-on: ubuntu-latest    
     container: ubuntu
-      ports:8000:8000
     steps:
     - uses: actions/checkout@v4
 
