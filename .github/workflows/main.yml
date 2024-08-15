@@ -6,6 +6,10 @@ jobs:
     runs-on: ubuntu-latest    
     container: ubuntu
     steps:
+    - uses: shivammathur/setup-php@verbose
+      with:
+        php-version: '7.4'
+
     - uses: actions/checkout@v4
 
     - name: Build static site
