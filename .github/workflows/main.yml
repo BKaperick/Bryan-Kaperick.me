@@ -14,6 +14,10 @@ jobs:
 
     - name: Build static site
       run: php -S localhost:8000 -t public/ &
+      
+    - name: Install wget
+      run: |
+        sudo apt-get install -y wget
 
 
     - name: Wget static site
