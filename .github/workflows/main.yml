@@ -5,39 +5,15 @@ jobs:
   build:
     runs-on: ubuntu-latest    
     container: ubuntu
+      ports:8000:8000
     steps:
     - uses: actions/checkout@v4
 
-    - name: Setup git
-      run: |
-        sudo apt-get install -y git
-
-    - name: Setup python
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.9
-
-    - name: Install wget
-      run: |
-        sudo apt-get install -y wget
-
-    - name: Ingest new content
-      run: |
-        ./pre_build.sh
-
     - name: Build static site
+      run: php -S localhost:8000 -t public/ > phpd.log 2>&1
+
+
+    - name: Wget static site
       run: |
-        php -S localhost:8000 -t public/ > phpd.log 2>&1 &
         cd public
         wget -k -K  -E -r -l 10 -p -N -F -nH https://localhost:8000
-        
-    - name: Post-processing and cleanup
-      run: ./clean_up.sh
-      
-    - name: Push changes
-      run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "generated"
-          git push
