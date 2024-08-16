@@ -19,7 +19,6 @@ jobs:
         sudo apt-get install -y wget
         sudo apt-get install -y git
         sudo apt-get install -y rename
-        alias perl-rename="rename"
 
     - name: Wget static site
       continue-on-error: true
@@ -32,8 +31,7 @@ jobs:
             
     - name: Post-processing and cleanup
       run: |
-        ls -lt
-        ls -lt public
+        alias perl-rename="rename"
         ./cleanup.sh
       
     - name: Push changes
