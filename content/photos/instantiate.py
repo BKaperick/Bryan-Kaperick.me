@@ -9,6 +9,8 @@ count = 1
 with open("photos.json", "r+") as fw:
     photos = json.load(fw)
     for file in os.listdir("./new/"):
+        if file == '__empty__.txt':
+            continue
         print(file)
         name_words = [clean_key(w) for w in file.replace(".txt", "").replace(".jpg", "").split("_")]
         longest_word = max(name_words, key=len)
