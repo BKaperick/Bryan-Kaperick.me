@@ -32,7 +32,7 @@ jobs:
     - name: Post-processing and cleanup
       run: |
         alias perl-rename="rename"
-        ./cleanup.sh
+        ./cleanup_ubuntu.sh
       
     - name: Push changes
       run: |
