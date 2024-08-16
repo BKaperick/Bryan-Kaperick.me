@@ -25,4 +25,4 @@ jobs:
     - name: Wget static site
       run: |
         cd public
-        wget -k -K  -E -r -l 10 -p -N -F -nH https://localhost:8000
+        wget -k -K  -E -r -l 10 -p -N -F -nH localhost:8000
