@@ -18,16 +18,18 @@ jobs:
         sudo apt-get install -y git
         sudo apt-get install -y rename
         git --version
-
-    - uses: actions/checkout@v3
-      with:
-        token: ${{ secrets.access_token }}
+    
+    - name: Clone repo
+      run: |
+        git clone https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
+        
 
     - name: Wget static site
       continue-on-error: true
       run: |
         (php -S localhost:8000) &
         sleep 10s
+        cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me
         rm -rf public
         mkdir public
         cd public
