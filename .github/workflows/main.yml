@@ -25,6 +25,7 @@ jobs:
       continue-on-error: true
       run: |
         (php -S localhost:8000) &
+        sleep 10s
         cd public
         ls -lt
         wget -k -K  -E -r -l 10 -p -N -F -nH localhost:8000
