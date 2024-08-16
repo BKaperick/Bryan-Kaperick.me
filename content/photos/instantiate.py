@@ -5,6 +5,14 @@ import sys
 sys.path.append(os.path.abspath("../../"))
 from helper import *
 
+en_trad = ""
+fr_trad = ""
+
+# When called from a github action, we pass the PR body comment to this script,
+# the first line being the english translation, and the second line being the french one.
+if len(sys.argv) > 1 and sys.argv[1]:
+    en_trad,fr_trad = sys.argv[1].split("\n")
+
 count = 1
 with open("photos.json", "r+") as fw:
     photos = json.load(fw)
@@ -28,8 +36,8 @@ with open("photos.json", "r+") as fw:
             "month": str(datetime.datetime.now().strftime("%B"))[:3],
             "year": datetime.datetime.now().year,
             "order_in_year": count,
-            "en": "",
-            "fr": "",
+            "en": en_trad,
+            "fr": fr_trad,
             "people": ["bryan"],
             }
         nickname = longest_word + '_' + str(count) if longest_word in photos.keys() else longest_word
