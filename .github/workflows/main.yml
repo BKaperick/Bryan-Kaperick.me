@@ -15,12 +15,12 @@ jobs:
     - name: Build static site
       run: php -S localhost:8000 -t public/ &
       
-    - name: Install wget
+    - name: Install wget and git
       run: |
         sudo apt update
         sudo apt upgrade -y
         sudo apt-get install -y wget
-
+        sudo apt-get install -y git
 
     - name: Wget static site
       continue-on-error: true
@@ -29,7 +29,10 @@ jobs:
         wget -k -K  -E -r -l 10 -p -N -F -nH localhost:8000
             
     - name: Post-processing and cleanup
-      run: ./cleanup.sh
+      run: |
+        ls -lt
+        ls -lt public
+        ./cleanup.sh
       
     - name: Push changes
       run: |
