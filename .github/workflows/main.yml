@@ -25,7 +25,7 @@ jobs:
         git clone --depth=1 https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
         sleep 10s
         cd Bryan-Kaperick.me
-        git checkout ${{ github.ref_name }}
+        git checkout ${{ github.head_ref }}
         ls -lt
         pwd
         
