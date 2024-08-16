@@ -27,7 +27,13 @@ find . -type f -wholename "./content/fr/*" -exec sed -i -E "s/index.html/index_f
 find . -type f -name "index_fr.html" -exec sed -i -E 's/<a href="index.html" title="Home"/<a href="index_fr.html" title="Home"/g' {} \;
 
 # At the end, rename everything to use `.html` rather than the uglier `.php.html`. 
-find . -type f -exec perl-rename 's/.php.html/.html/' {} +
+for file in .; do
+  if [ -e "$file" ]; then
+    newname=`echo "$file" | sed 's/\.php\.html/.html/'`
+    mv "$file" "$newname"
+  fi
+done
+#find . -type f -exec perl-rename 's/.php.html/.html/' {} +
 find . -type f -wholename "*" -exec sed -i -E "s/.php.html/.html/g" {} \;
 
 # HACK TODO fix blog post urls, `header.php` creates language toggle but doesnt have access to current path
