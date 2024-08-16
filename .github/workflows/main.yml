@@ -26,7 +26,7 @@ jobs:
       run: |
         (php -S localhost:8000) &
         sleep 10s
-        rm -r public
+        rm -rf public
         mkdir public
         cd public
         ls -lt
@@ -36,7 +36,7 @@ jobs:
       run: |
         pwd
         ls -lt
-        ./cleanup_ubuntu.sh
+        sudo ./cleanup_ubuntu.sh
       
     - name: Push changes
       run: |
