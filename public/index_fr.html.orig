@@ -160,10 +160,10 @@ class="active" aria-current="page">Accueil</a></li>
 </html>
 <footer class="footer layout__footer">
 <<<<<<< HEAD
-<p><span>© Le Site Web de Bryan Kaperick</span> <span style="color:grey"> -- Mis à jour  2024-08-16 23:58:00
-=======
 <p><span>© Le Site Web de Bryan Kaperick</span> <span style="color:grey"> -- Mis à jour  2024-08-16 23:19:36
->>>>>>> parent of 4c693f5 ([skip ci] built)
+=======
+<p><span>© Le Site Web de Bryan Kaperick</span> <span style="color:grey"> -- Mis à jour  2024-08-17 00:06:36
+>>>>>>> c21500c116b5210417ad5fc46f28c7dabbe64654
 </span></p>
 
 
