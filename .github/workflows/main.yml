@@ -11,9 +11,6 @@ jobs:
         php-version: '7.4'
 
     - uses: actions/checkout@v4
-
-    - name: Build static site
-      run: (php -S localhost:8000) &
       
     - name: Install wget, git, and friends
       run: |
@@ -27,6 +24,7 @@ jobs:
     - name: Wget static site
       continue-on-error: true
       run: |
+        (php -S localhost:8000) &
         cd public
         ls -lt
         wget -k -K  -E -r -l 10 -p -N -F -nH localhost:8000
