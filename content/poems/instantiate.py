@@ -8,6 +8,8 @@ with open("poems.json", "r+") as fw:
     poems = json.load(fw)
 
     for file in os.listdir("./new/"):
+        if file == '__empty__.txt':
+            continue
         print(file)
         name_words = file.replace(".txt", "").split("_")
         longest_word = max(name_words, key=len)
