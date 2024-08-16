@@ -31,8 +31,8 @@ jobs:
             
     - name: Post-processing and cleanup
       run: |
-        ls -lt
-        ls -lt public
+        rm -r public
+        mkdir public
         ./cleanup_ubuntu.sh
       
     - name: Push changes
