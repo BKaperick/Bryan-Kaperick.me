@@ -703,5 +703,16 @@
             "sunny",
             "tyler"
         ]
+    },
+    "102847355MP": {
+        "rawpath": "./photos/raw/PXL_20240810_102847355.MP.jpg",
+        "month": "Aug",
+        "year": 2024,
+        "order_in_year": 16,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ]
     }
 }
