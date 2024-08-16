@@ -20,8 +20,8 @@ jobs:
         git --version
 
     - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.access_token }}
+      with:
+        token: ${{ secrets.access_token }}
 
     - name: Wget static site
       continue-on-error: true
