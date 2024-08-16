@@ -7,7 +7,12 @@ mv 'index.html?lang=fr.html' index_fr.html
 cd content/fr
 ls -lt photos
 # Create canonical french-language files
-find . -type f -exec rename -f 's/\?lang=fr//' {} +
+for f in $(find . -maxdepth 10 -type f -name '*\?lang=fr*'); do
+    newname=`echo "$f" | sed 's/\?lang=fr//'`
+    echo "current file is $f -> $newname"
+    mv "$f" "$newname"
+done
+#find . -type f -exec rename -f 's/\?lang=fr//' {} +
 cd ../..
 
 # Remove excess files
