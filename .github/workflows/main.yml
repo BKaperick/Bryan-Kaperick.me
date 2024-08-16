@@ -17,7 +17,7 @@ jobs:
         sudo apt-get install -y wget
         sudo apt-get install -y git
         sudo apt-get install -y rename
-        sudo apt-get install -y python
+        sudo apt-get install -y python3.11
         git --version
     
     - name: Clone repo
