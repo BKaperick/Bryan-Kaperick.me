@@ -31,10 +31,10 @@ jobs:
     - name: Wget static site
       continue-on-error: true
       run: |
+        cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me/Bryan-Kaperick.me
         (php -S localhost:8000) &
         sleep 10s
         pwd
-        cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me
         rm -rf public
         mkdir public
         cd public
@@ -44,15 +44,16 @@ jobs:
     - name: Post-processing and cleanup
       run: |
         pwd
+        cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me/Bryan-Kaperick.me
         ls -lt
         sudo ./cleanup_ubuntu.sh
       
     - name: Push changes
       run: |
           pwd
+          cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me/Bryan-Kaperick.me
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me
           git add .
           git commit -m "generated"
           git push
