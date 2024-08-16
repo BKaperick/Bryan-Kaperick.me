@@ -40,9 +40,9 @@ jobs:
       
     - name: Push changes
       run: |
+          pwd
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          pwd
           cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me
           git add .
           git commit -m "generated"
