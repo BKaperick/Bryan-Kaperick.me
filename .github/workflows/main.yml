@@ -31,7 +31,8 @@ jobs:
             
     - name: Post-processing and cleanup
       run: |
-        alias perl-rename="rename"
+        ls -lt
+        ls -lt public
         ./cleanup_ubuntu.sh
       
     - name: Push changes
