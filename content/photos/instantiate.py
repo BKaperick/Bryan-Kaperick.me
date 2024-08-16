@@ -18,6 +18,7 @@ if len(sys.argv) > 1 and sys.argv[1]:
 count = 1
 with open("photos.json", "r+") as fw:
     photos = json.load(fw)
+    print("{0} photo keys present at start".format(len(photos.keys())))
     for file in os.listdir("./new/"):
         if file == '__empty__.txt':
             continue
@@ -46,6 +47,7 @@ with open("photos.json", "r+") as fw:
     
         photos[nickname] = d
         count += 1
+        print("{0} photo keys present".format(len(photos.keys())))
         
         os.rename("./new/" + file, "./raw/" + file)
 
