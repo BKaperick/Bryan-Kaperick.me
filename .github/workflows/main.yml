@@ -34,8 +34,8 @@ jobs:
             
     - name: Post-processing and cleanup
       run: |
-        cd ..
         pwd
+        ls -lt
         ./cleanup_ubuntu.sh
       
     - name: Push changes
