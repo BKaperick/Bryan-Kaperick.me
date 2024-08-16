@@ -30,6 +30,7 @@ jobs:
       run: |
         (php -S localhost:8000) &
         sleep 10s
+        pwd
         cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me
         rm -rf public
         mkdir public
