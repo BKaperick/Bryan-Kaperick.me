@@ -1,8 +1,8 @@
 cd ./content/poems
-python instantiate.py
-python format_poem.py
-python create_html.py
+python3 instantiate.py
+python3 format_poem.py
+python3 create_html.py
 cd ../photos
-python instantiate.py
-python create_html.py > photos.html
+python3 instantiate.py
+python3 create_html.py > photos.html
 cd ../..
