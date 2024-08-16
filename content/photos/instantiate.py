@@ -13,7 +13,7 @@ fr_trad = ""
 if len(sys.argv) > 1 and sys.argv[1]:
     print(sys.argv)
     print(sys.argv[1])
-    en_trad,fr_trad = sys.argv[1].split("\n")
+    en_trad,fr_trad = sys.argv[1].split("\r\n")
 
 count = 1
 with open("photos.json", "r+") as fw:
@@ -21,7 +21,7 @@ with open("photos.json", "r+") as fw:
     for file in os.listdir("./new/"):
         if file == '__empty__.txt':
             continue
-        print(file)
+        print("file: " + file)
         name_words = [clean_key(w) for w in file.replace(".txt", "").replace(".jpg", "").split("_")]
         longest_word = max(name_words, key=len)
         name_guess = " ".join(name_words)
