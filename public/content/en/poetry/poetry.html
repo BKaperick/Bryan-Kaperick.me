@@ -1,0 +1,81 @@
+<!DOCTYPE.html>
+.html class="nojs" lang="en" dir="ltr">
+<head>
+<title>Poetry – Bryan Kaperick&#39;s Website</title>
+<meta name="description" content="This page can get rather personal, as poetry tends to be, so proceed at your own risk. I would categorize my personal style as somewhere between derivative and cringe. Of …">
+<meta name="created" content="2023-02-14T22:51:44+0200">
+<meta name="modified" content="2023-10-07T15:22:48+0200">
+<meta property="og:title" content="Poetry">
+<meta property="og:url" content="https://bryan-kaperick.me/content/en/poetry/poetry.html">
+
+<link rel="canonical" hreflang="en" href="poetry.html">
+<link rel="alternate" hreflang="fr" href="../../fr/poetry/poetry.html">
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "webpage",
+    "headline": "Poetry",
+    "datePublished": "2023-02-14T22:51:44+02:00",
+    "dateModified": "2023-10-07T15:22:48+02:00",
+    "url" : "https://bryan-kaperick.me/content/en/poetry/poetry.html",
+    "description": "This page can get rather personal, as poetry tends to be, so proceed at your own risk. I would categorize my personal style as somewhere between derivative and cringe. Of …",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://bryan-kaperick.me/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bryan Kaperick's Website",
+      "url": "https://bryan-kaperick.me/"
+    }
+  }
+</script>
+
+<main class="main layout__main">
+<article class="single-view">
+<header>
+<h1 class="title ">Poetry</h1>
+</header>
+<div class="content">
+<p>This page can get rather personal, as poetry tends to be, so proceed at your own risk.</p>
+<p>I would categorize my personal style as somewhere between <em>derivative</em> and <em>cringe</em>.  Of course, I&rsquo;m open to all sorts of feedback.</p>
+
+<p><details>
+  <summary><h1 id="les-oeuvres-qui-minspirent">
+  <?=$language['Works that inspire me'];?>
+</h1>
+</summary>
+
+<?php include($_SERVER['DOCUMENT_ROOT']."/content/poems/poems_inspiration.html");?>
+</details>
+
+<details>
+  <summary><h1 id="my-works">
+  <?=$language['My works'];?>
+</h1>
+</summary>
+
+<?php include($_SERVER['DOCUMENT_ROOT']."/content/poems/poems2024.html"); ?>
+
+    <details>
+      <summary><h3 id="2023-20-poèmes">2023 (20 <?=$language['poem'];?>s)</h3>
+    </summary>
+
+    <?php include($_SERVER['DOCUMENT_ROOT']."/content/poems/poems2023.html"); ?>
+    </details>
+
+    <details>
+        <summary><h3 id="2020---2022-3-poèmes">2020 - 2022 (3 <?=$language['poem'];?>s)</h3>
+    </summary>
+
+    <?php include($_SERVER['DOCUMENT_ROOT']."/content/poems/poems2022.html"); ?>
+    </details>
+
+</details>
+
+</div>
+</article>
+</main>
+</body>
+<.html>
