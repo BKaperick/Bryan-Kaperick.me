@@ -5,7 +5,7 @@ cd public
 # in ./public/ named `index_fr.html`.  A bit ugly, but it works.
 mv 'index.html?lang=fr.html' index_fr.html
 cd content/fr
-
+ls -lt photos
 # Create canonical french-language files
 find . -type f -exec rename 's/\?lang=fr//' {} +
 cd ../..
