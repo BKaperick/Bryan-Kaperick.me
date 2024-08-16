@@ -25,14 +25,14 @@ jobs:
       run: |
         (php -S localhost:8000) &
         sleep 10s
+        rm -r public
+        mkdir public
         cd public
         ls -lt
         wget -k -K  -E -r -l 10 -p -N -F -nH localhost:8000
             
     - name: Post-processing and cleanup
       run: |
-        rm -r public
-        mkdir public
         ./cleanup_ubuntu.sh
       
     - name: Push changes
