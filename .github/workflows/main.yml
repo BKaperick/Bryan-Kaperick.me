@@ -34,12 +34,15 @@ jobs:
             
     - name: Post-processing and cleanup
       run: |
+        cd ..
+        pwd
         ./cleanup_ubuntu.sh
       
     - name: Push changes
       run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          pwd
           cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me
           git add .
           git commit -m "generated"
