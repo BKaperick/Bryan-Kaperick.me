@@ -30,6 +30,8 @@ jobs:
     - name: Ingest new data
       run: |
         cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me/Bryan-Kaperick.me
+
+        git log -n 1 --pretty=%cd --date=format:'%Y-%m-%d %H:%M:%S' >| ./content/widgets/last_update_date.txt
         sudo ./pre_build.sh
 
     - name: Wget static site
