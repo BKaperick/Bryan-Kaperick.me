@@ -347,5 +347,14 @@
         "month": "Jan",
         "year": "2020",
         "body": "<p>Fierce creature.<br>\nHer warm-armed currents<br>\nRace beneath hazy burgundy skies.<br>\nPulsing violent,<br>\nSpewing caustic, emptying<br>\nInto basins which steam future desire,<br>\nFilled to quench days spent apart.</p>"
+    },
+    "test": {
+        "title": "I is a test poem",
+        "author": "Bryan Kaperick",
+        "month": "Aug",
+        "year": "2024",
+        "rawpath": "./raw/i_is_a_test_poem.txt",
+        "order_in_month": 1,
+        "body": "<p>I is but a test poem,<br>\nforged with careless spattered pen.<br>\nHow shall I myself defend,<br>\nagainst the greats of where and when<br>\namong them I'm now denizen.</p>"
     }
 }
