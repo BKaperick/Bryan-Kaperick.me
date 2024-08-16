@@ -703,5 +703,16 @@
             "sunny",
             "tyler"
         ]
+    },
+    "PXL": {
+        "rawpath": "./photos/raw/PXL_20240810_102847355.MP.jpg",
+        "month": "Aug",
+        "year": 2024,
+        "order_in_year": 16,
+        "en": "Me hiking in the Ardennes forest",
+        "fr": "Moi pendant un trek dans les Ardennes",
+        "people": [
+            "bryan"
+        ]
     }
 }
