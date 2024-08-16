@@ -1,0 +1,43 @@
+on:
+  push
+jobs:
+
+  build:
+    runs-on: ubuntu-latest    
+    container: ubuntu
+    steps:
+    - uses: shivammathur/setup-php@verbose
+      with:
+        php-version: '8.0'
+
+    - uses: actions/checkout@v4
+      
+    - name: Install wget, git, and friends
+      run: |
+        sudo apt update
+        sudo apt upgrade -y
+        sudo apt-get install -y wget
+        sudo apt-get install -y git
+        sudo apt-get install -y rename
+
+    - name: Wget static site
+      continue-on-error: true
+      run: |
+        (php -S localhost:8000) &
+        sleep 10s
+        cd public
+        ls -lt
+        wget -k -K  -E -r -l 10 -p -N -F -nH localhost:8000
+            
+    - name: Post-processing and cleanup
+      run: |
+        alias perl-rename="rename"
+        ./cleanup.sh
+      
+    - name: Push changes
+      run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "generated"
+          git push
