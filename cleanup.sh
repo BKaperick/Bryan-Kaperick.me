@@ -7,7 +7,11 @@ mv 'index.html?lang=fr.html' index_fr.html
 cd content/fr
 
 # Create canonical french-language files
-find . -type f -exec perl-rename 's/\?lang=fr//' {} +
+for f in $(find . -maxdepth 10 -type f -name '*\?lang=fr*'); do
+    newname=`echo "$f" | sed 's/\?lang=fr//'`
+    echo "current file is $f -> $newname"
+    mv "$f" "$newname"
+done
 cd ../..
 
 # Remove excess files
@@ -27,9 +31,12 @@ find . -type f -wholename "./content/fr/*" -exec sed -i -E "s/index.html/index_f
 find . -type f -name "index_fr.html" -exec sed -i -E 's/<a href="index.html" title="Home"/<a href="index_fr.html" title="Home"/g' {} \;
 
 # At the end, rename everything to use `.html` rather than the uglier `.php.html`. 
-find . -type f -exec perl-rename 's/.php.html/.html/' {} +
+for f in $(find . -maxdepth 10 -type f -name '*php.html'); do
+    newname=`echo "$f" | sed 's/.php.html/.html/'`
+    echo "current file is $f -> $newname"
+    mv "$f" "$newname"
+done
 find . -type f -wholename "*" -exec sed -i -E "s/.php.html/.html/g" {} \;
 
 # HACK TODO fix blog post urls, `header.php` creates language toggle but doesnt have access to current path
-# find . -type f -wholename "./content/fr/blog-post/(?!blog-post.html)" -exec sed -i -E "s/\/content\/(\w\w)\/(.*)\/(.*).html/\/content\/\1\/blog-post\/\3.html/g" {} \;
 find . -type f -wholename "./content/*/blog-post/*" -exec sed -i -E "s/\/content\/(\w\w)\/(.*)\/(.*).html/\/content\/\1\/blog-post\/\3.html/g" {} \;
