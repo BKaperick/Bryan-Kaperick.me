@@ -16,7 +16,7 @@ with open("photos.json", "r") as fw:
         block = """<figure class="image">
     <img src=<?="/content/" . $p->{0}->rawpath;?>>
     <figcaption>
-<?=$p->{0}->$language;?> ~ <?=$p->{0}->year;?>
+<?=$p->{0}->$lang;?> ~ <?=$p->{0}->year;?>
     </figcaption>
 </figure>
 """.format(key)
