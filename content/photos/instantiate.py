@@ -35,7 +35,7 @@ with open("photos.json", "r+") as fw:
                 count = order_in_year 
 
         d = {
-            "rawpath": "./photos/raw/" + file,
+            "name": file,
             "month": str(datetime.datetime.now().strftime("%B"))[:3],
             "year": datetime.datetime.now().year,
             "order_in_year": count,
