@@ -1,16 +1,19 @@
-<a href="<?="/content/photos/raw/" . $p->bryantylerrishikbikingjpeg->name;?>">
-    <figure class="image">
-    <img src=<?="/content/photos/lowres/" . $p->bryantylerrishikbikingjpeg->name;?>>
+<<<<<<< HEAD
+<figure class="image">
+    <img src=<?="/content/" . $p->bryantylerrishikbikingjpeg->rawpath;?>>
     <figcaption>
 <?=$p->bryantylerrishikbikingjpeg->$lang;?> ~ <?=$p->bryantylerrishikbikingjpeg->year;?>
     </figcaption>
-    </figure>
-</a>
+</figure>
 
 
+<figure class="image">
+    <img src=<?="/content/" . $p->PXL->rawpath;?>>
+=======
 <a href="<?="/content/photos/raw/" . $p->PXL->name;?>">
     <figure class="image">
     <img src=<?="/content/photos/lowres/" . $p->PXL->name;?>>
+>>>>>>> origin/master
     <figcaption>
 <?=$p->PXL->$lang;?> ~ <?=$p->PXL->year;?>
     </figcaption>
