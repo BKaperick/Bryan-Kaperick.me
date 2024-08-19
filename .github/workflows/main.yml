@@ -17,6 +17,7 @@ jobs:
         sudo apt-get install -y wget
         sudo apt-get install -y git
         sudo apt-get install -y python3
+        sudo apt-get install -y magick
         git --version
     
     - name: Clone repo
