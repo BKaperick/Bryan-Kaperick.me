@@ -1,4 +1,4 @@
 <?php
 $lang = "en";
-include($_SERVER['DOCUMENT_ROOT']."/content/photos.php");
+include($_SERVER['DOCUMENT_ROOT']."/photos.php");
 ?>
