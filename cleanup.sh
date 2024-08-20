@@ -19,7 +19,7 @@ find . -type f -name '*\?*' -delete
 find . -type f -name '*.orig' -delete
 
 # Change all urls from using ?lang= php vars to the proper `/en/` or `/fr/` subdirectory.
-find . -type f -wholename "./content/*" -exec sed -i -E "s/href=\"(.*).php%3Flang=(\w\w)/href=\"\/content\/\2\/\1\/\1.php/g" {} \;
+find . -type f -wholename "./content/*" -exec sed -i -E "s/href=\"(.*).php%3Flang=(\w\w)/href=\"\/\2\/\1\/\1.php/g" {} \;
 #find . -type f -wholename "./content/*" -exec sed -i -E "s/href=\"(.*).php%3Flang=(\w\w)/href=\".\/\1.php/g" {} \;
 
 find . -type f -name "index_fr.html" -exec sed -i -E "s/index.html%3Flang=en.html/index.html/g" {} \;
@@ -39,4 +39,4 @@ done
 find . -type f -wholename "*" -exec sed -i -E "s/.php.html/.html/g" {} \;
 
 # HACK TODO fix blog post urls, `header.php` creates language toggle but doesnt have access to current path
-find . -type f -wholename "./content/*/blog-post/*" -exec sed -i -E "s/\/content\/(\w\w)\/(.*)\/(.*).html/\/content\/\1\/blog-post\/\3.html/g" {} \;
+find . -type f -wholename "./content/*/blog-post/*" -exec sed -i -E "s/\/(\w\w)\/(.*)\/(.*).html/\/\1\/blog-post\/\3.html/g" {} \;
