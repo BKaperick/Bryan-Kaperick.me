@@ -1,0 +1,66 @@
+on:
+  pull_request
+jobs:
+
+  build:
+    runs-on: ubuntu-latest    
+    container: ubuntu
+    steps:
+    - uses: shivammathur/setup-php@verbose
+      with:
+        php-version: '8.0'
+      
+    - name: Install wget, git, and friends
+      run: |
+        sudo apt update
+        sudo apt upgrade -y
+        sudo apt-get install -y wget
+        sudo apt-get install -y git
+        sudo apt-get install -y python3
+        sudo apt-get install -y imagemagick
+        git --version
+    
+    - name: Clone repo
+      run: |
+        git clone -b ${{ github.head_ref }} --depth=1 https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
+        sleep 10s
+        cd Bryan-Kaperick.me
+        ls -lt
+        pwd
+        
+    - name: Ingest new data
+      run: |
+        cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me/Bryan-Kaperick.me
+
+        git log -n 1 --pretty=%cd --date=format:'%Y-%m-%d %H:%M:%S' >| ./content/widgets/last_update_date.txt
+        sudo ./pre_build.sh "${{ github.event.pull_request.body }}"
+
+    - name: Wget static site
+      continue-on-error: true
+      run: |
+        cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me/Bryan-Kaperick.me
+        (php -S localhost:8000) &
+        sleep 10s
+        pwd
+        rm -rf public
+        mkdir public
+        cd public
+        ls -lt
+        wget -k -K  -E -r -l 10 -p -N -F -nH localhost:8000
+            
+    - name: Post-processing and cleanup
+      run: |
+        pwd
+        cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me/Bryan-Kaperick.me
+        ls -lt
+        sudo ./cleanup.sh
+      
+    - name: Push changes
+      run: |
+          pwd
+          cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me/Bryan-Kaperick.me
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "[skip actions] built" --allow-empty
+          git push origin ${{ github.head_ref }}

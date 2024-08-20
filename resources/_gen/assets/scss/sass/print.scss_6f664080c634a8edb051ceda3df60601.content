@@ -7,7 +7,7 @@
     display: none; } }
 
 @media print {
-  html {
+ .html {
     font-size: 12pt; }
   body,
   .page {
