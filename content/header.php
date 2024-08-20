@@ -85,6 +85,13 @@ $language_toggle = array(
 : "" ?>><?=$language['Home'];
 ?>
 </a></li>
+<li><a href="/content/<?=$lang?>/now/now.php"
+<?=
+(str_contains($_SERVER['SCRIPT_FILENAME'], "now")) 
+? "class=\"active\" aria-current=\"page\"" 
+: "" ?>><?=$language['Now'];
+?>
+</a></li>
 <li><a href="/content/<?=$lang?>/poetry/poetry.php" 
 <?=
 (str_contains(basename($_SERVER['SCRIPT_FILENAME']), "poetry")) 
