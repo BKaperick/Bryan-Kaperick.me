@@ -1,9 +1,9 @@
 {
-    "firstnow": {
-        "name": "",
-        "location": "",
-        "date": "2024-08-01",
-        "photo": "test.jpg",
-        "en": "",
-        "fr": ""
-    },
+    "pointing": {
+        "location": "Marseilles",
+        "month": "2024-08-20",
+        "en": "First",
+        "fr": "Premier",
+        "photo": "rishik_pointing.jpg"
+    }
+}
