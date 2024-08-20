@@ -15,9 +15,10 @@ with open("now.json", "r") as fw:
     for key,now in nows.items():
         block = """<a href="<?="/content/nows/raw/" . $p->{0}->photo;?>">
     <figure class="image">
-    <img src=<?="/content/nows/raw/" . $p->{0}->photo;?>>
+    <img src=<?="/content/nows/lowres/" . $p->{0}->photo;?>>
     <figcaption>
-<?=$p->{0}->$lang;?> ~ <?=$p->{0}->date;?>
+<b><?=$p->{0}->date;?></b>
+<?=$p->{0}->$lang;?>
     </figcaption>
     </figure>
 </a>

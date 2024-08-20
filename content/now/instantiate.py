@@ -11,10 +11,10 @@ fr_trad = ""
 # When called from a github action, we pass the PR body comment to this script,
 # the first line being the english translation, and the second line being the french one.
 if len(sys.argv) > 1 and sys.argv[1]:
-    print(sys.argv)
-    print(sys.argv[1])
-    print(sys.argv[1].split(r"\r\n"))
-    location,en_trad,fr_trad = sys.argv[1].split(r"\r\n")
+    if len(sys.argv[1].split("\r\n")) >= 3:
+        location,en_trad,fr_trad = sys.argv[1].split("\r\n")[:3]
+    else:
+        location,en_trad,fr_trad = sys.argv[1].split(r"\r\n")[:3]
 
 count = 1
 with open("now.json", "r+") as fw:

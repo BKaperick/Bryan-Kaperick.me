@@ -13,7 +13,10 @@ fr_trad = ""
 if len(sys.argv) > 1 and sys.argv[1]:
     print(sys.argv)
     print(sys.argv[1])
-    en_trad,fr_trad = sys.argv[1].split("\r\n")
+    if len(sys.argv[1].split("\r\n")) >= 2:
+        en_trad,fr_trad = sys.argv[1].split("\r\n")[:2]
+    else:
+        en_trad,fr_trad = sys.argv[1].split(r"\r\n")[:2]
 
 count = 1
 with open("photos.json", "r+") as fw:
