@@ -40,7 +40,7 @@ with open("now.json", "r+") as fw:
     count += 1
     print("{0} now keys present".format(len(nows.keys())))
     
-    #os.rename("./new/" + file, "./raw/" + file)
+    os.rename("./new/" + file, "./raw/" + file)
 
     fw.seek(0)
     json.dump(nows, fw, indent=4)
