@@ -4,7 +4,7 @@ cd public
 # directory, so we have the default one (english) and the alternate (french) one
 # in ./public/ named `index_fr.html`.  A bit ugly, but it works.
 mv 'index.html?lang=fr.html' index_fr.html
-cd content/fr
+cd fr
 
 # Create canonical french-language files
 for f in $(find . -maxdepth 10 -type f -name '*\?lang=fr*'); do
@@ -12,7 +12,7 @@ for f in $(find . -maxdepth 10 -type f -name '*\?lang=fr*'); do
     echo "current file is $f -> $newname"
     mv "$f" "$newname"
 done
-cd ../..
+cd ..
 
 # Remove excess files
 find . -type f -name '*\?*' -delete
