@@ -26,6 +26,7 @@ $language = array(
     'Contact'=>'Contact',
     'Photos'=>'Photos',
     'Bio'=>'Bio',
-    'Blog Posts'=>'Blog Posts'
+    'Blog Posts'=>'Blog Posts',
+    'Now'=>'Now'
 );
 ?>
