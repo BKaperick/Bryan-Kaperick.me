@@ -13,9 +13,9 @@ now_blocks = []
 with open("now.json", "r") as fw:
     nows = json.load(fw)
     for key,now in nows.items():
-        block = """<a href="<?="/content/nows/raw/" . $p->{0}->photo;?>">
+        block = """<a href="<?="/content/now/raw/" . $p->{0}->photo;?>">
     <figure class="image">
-    <img src=<?="/content/nows/lowres/" . $p->{0}->photo;?>>
+    <img src=<?="/content/now/lowres/" . $p->{0}->photo;?>>
     <figcaption>
 <b><?=$p->{0}->date;?></b>
 <?=$p->{0}->$lang;?>
