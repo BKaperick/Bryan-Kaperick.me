@@ -29,7 +29,7 @@ with open("now.json", "r+") as fw:
 
     d = {
         "location": location,
-        "month": str(datetime.datetime.now().strftime("%Y-%m-%d")),
+        "date": str(datetime.datetime.now().strftime("%Y-%m-%d")),
         "en": en_trad,
         "fr": fr_trad,
         "photo": file

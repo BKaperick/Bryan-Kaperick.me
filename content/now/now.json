@@ -1,9 +1,10 @@
 {
     "pointing": {
         "location": "Marseilles",
-        "month": "2024-08-20",
-        "en": "First",
-        "fr": "Premier",
+        "date": "2024-08-20",
+        "en_old": "First",
+        "en": "Premier jour, on arrive à Marseilles et je m'assois avec un grand café pour écrire une grande texte dans ce table",
+        "fr": "Premier jour, on arrive à Marseilles et je m'assois avec un grand café pour écrire une grande texte dans ce table",
         "photo": "rishik_pointing.jpg"
     }
 }
