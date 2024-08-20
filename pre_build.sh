@@ -7,7 +7,7 @@ cd ../now
 echo "starting now ingestion"
 python3 instantiate.py "$1"
 ../../compress.sh
-python3 create_html.py > nows.html
+python3 create_html.py > now.html
 cd ../photos
 echo "starting photo ingestion"
 python3 instantiate.py "$1"
