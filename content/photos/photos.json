@@ -747,5 +747,16 @@
         "people": [
             "bryan"
         ]
+    },
+    "IMGWA_20": {
+        "name": "IMG-20240820-WA0010.jpg",
+        "month": "Aug",
+        "year": 2024,
+        "order_in_year": 20,
+        "en": "Adrien and me at Cours Julien in Marseille",
+        "fr": "Adrien et moi au Cours Julien \u00e0 Marseille",
+        "people": [
+            "bryan"
+        ]
     }
 }
