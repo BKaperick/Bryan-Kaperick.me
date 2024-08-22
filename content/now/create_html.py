@@ -59,7 +59,7 @@ with open("now.json", "r") as fw:
         
         now_blocks.append((block, now))
 sorted_blocks = sorted(now_blocks, key=lambda x : x[1]['date'], reverse=True)
-date = str(sorted_blocks[0]['date']) + "</p>\n\n"
+date = str(sorted_blocks[0][1]['date']) + "</p>\n\n"
 print(date + header + "\n\n".join([x[0] for x in sorted_blocks]) + footer)
 
 
