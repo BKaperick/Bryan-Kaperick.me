@@ -14,20 +14,20 @@ def format_poem(poem):
     for line in poem:
         out.append(format_line(line))
     for i,l in enumerate(out):
-        if i > 0 and l == "</p>\n<p>":
+        if i > 0 and l == "</p>\n<p><span class=\"line\">":
             out[i-1] = out[i-1].replace("<br>", "").replace("\n","")
-    out[-1] = out[-1].replace("<br>\n", "")
-    poem_body = "<p>" + "".join(out) + r"</p>"
+    out[-1] = out[-1].replace("</span><br>\n", "")
+    poem_body = "<div class=\"poem\"><p>" + "".join(out) + r"</p></div>"
     return poem_body
 
 
 def format_line(line):
     line = line.rstrip()
     if not line:
-        return "</p>\n<p>"
+        return "</p></div>\n<div class=\"poem\"><p>"
     line = line.replace("    ", "&nbsp;&nbsp;&nbsp;")
     line = line.replace("--", "&mdash;")
-    return line + "<br>\n"
+    return "<span class=\"line\">" + line + "</span><br>\n"
 
 with open("poems.json", 'r+') as fwrite:
     poems = json.load(fwrite)
