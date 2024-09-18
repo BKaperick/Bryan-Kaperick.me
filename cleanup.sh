@@ -1,4 +1,5 @@
 cd public
+cp '../.htaccess' .htaccess
 
 # index.html is a special case since it can't be in a language-specific 
 # directory, so we have the default one (english) and the alternate (french) one
