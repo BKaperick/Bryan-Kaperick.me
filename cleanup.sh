@@ -40,4 +40,4 @@ find . -type f -wholename "*" -exec sed -i -E "s/.php.html/.html/g" {} \;
 
 
 # HACK TODO fix blog post urls, `header.php` creates language toggle but doesnt have access to current path
-find . -type f -wholename "./*/blog-post/*" -exec sed -i -E "s/\/(\w\w)\/(.*)\/(.*)\.html/\/\1\/blog-post\/\3.html/g" {} \;
+find . -type f -wholename "*/blog-post/*" -exec sed -i -E "s/\/(\w\w)\/(.*)\/(.*)\.html/\/\1\/blog-post\/\3.html/g" {} \;
