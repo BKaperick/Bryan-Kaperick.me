@@ -6,7 +6,7 @@ $language_toggle = array(
     'fr'=>'en');
 ?>
 
-<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="/style.css">
 
 <html lang="<?php echo $lang; ?>">
 <html class="nojs" lang=$lang dir="ltr">

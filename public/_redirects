@@ -1,18 +1,18 @@
-/content/en/bio/bio* /en/bio/bio 404
-/content/en/blog-post/beatnik* /en/blog-post/beatnik 404
-/content/en/blog-post/blog-post* /en/blog-post/blog-post 404
-/content/en/contact/contact* /en/contact/contact 404
-/content/en/now/now* /en/now/now 404
-/content/en/photos/photos* /en/photos/photos 404
-/content/en/poetry/poetry* /en/poetry/poetry 404
+/content/en/bio/bio* /en/bio/bio 301
+/content/en/blog-post/beatnik* /en/blog-post/beatnik 301
+/content/en/blog-post/blog-post* /en/blog-post/blog-post 301
+/content/en/contact/contact* /en/contact/contact 301
+/content/en/now/now* /en/now/now 301
+/content/en/photos/photos* /en/photos/photos 301
+/content/en/poetry/poetry* /en/poetry/poetry 301
 
-/content/fr/bio/bio* /fr/bio/bio 404
-/content/fr/blog-post/beatnik* /fr/blog-post/beatnik 404
-/content/fr/blog-post/blog-post* /fr/blog-post/blog-post 404
-/content/fr/contact/contact* /fr/contact/contact 404
-/content/fr/now/now* /fr/now/now 404
-/content/fr/photos/photos* /fr/photos/photos 404
-/content/fr/poetry/poetry* /fr/poetry/poetry 404
+/content/fr/bio/bio* /fr/bio/bio 301
+/content/fr/blog-post/beatnik* /fr/blog-post/beatnik 301
+/content/fr/blog-post/blog-post* /fr/blog-post/blog-post 301
+/content/fr/contact/contact* /fr/contact/contact 301
+/content/fr/now/now* /fr/now/now 301
+/content/fr/photos/photos* /fr/photos/photos 301
+/content/fr/poetry/poetry* /fr/poetry/poetry 301
 
 /en/* / 404
 /fr/* /index_fr.html 404
