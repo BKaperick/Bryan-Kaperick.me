@@ -26,7 +26,7 @@ find . -type f -name "index_fr.html" -exec sed -i -E "s/index.html%3Flang=en.htm
 find . -type f -name "index.html" -exec sed -i -E "s/index.html%3Flang=fr.html/index_fr.html/g" {} \;
 
 # All links on french pages back to index.html need to point to index_fr.html instead.
-find . -type f -wholename "./content/fr/*" -exec sed -i -E "s/index.html/index_fr.html/g" {} \;
+find . -type f -wholename "./fr/*" -exec sed -i -E "s/index.html/index_fr.html/g" {} \;
 # All links to `index.html` in `index_fr.html` except the language toggle need to point to `index_fr.html`
 find . -type f -name "index_fr.html" -exec sed -i -E 's/<a href="index.html" title="Home"/<a href="index_fr.html" title="Home"/g' {} \;
 
@@ -40,4 +40,4 @@ find . -type f -wholename "*" -exec sed -i -E "s/.php.html/.html/g" {} \;
 
 
 # HACK TODO fix blog post urls, `header.php` creates language toggle but doesnt have access to current path
-find . -type f -wholename "./content/*/blog-post/*" -exec sed -i -E "s/\/(\w\w)\/(.*)\/(.*)\.html/\/\1\/blog-post\/\3.html/g" {} \;
+find . -type f -wholename "./*/blog-post/*" -exec sed -i -E "s/\/(\w\w)\/(.*)\/(.*)\.html/\/\1\/blog-post\/\3.html/g" {} \;
