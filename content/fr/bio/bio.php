@@ -1,6 +1,5 @@
 <?php
 $lang = "fr";
 global $language;
-require_once("../../../view/Language/lang.".$lang.".php");
 include($_SERVER['DOCUMENT_ROOT']."/bio.php");
 ?>
