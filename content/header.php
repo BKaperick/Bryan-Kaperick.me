@@ -1,4 +1,4 @@
-.html>
+<html>
 <?php 
 $lang = $_GET["lang"] ?? "en";
 $language_toggle = array(
@@ -8,8 +8,8 @@ $language_toggle = array(
 
 <link rel="stylesheet" href="../../../style.css">
 
-.html lang="<?php echo $lang; ?>">
-.html class="nojs" lang=$lang dir="ltr">
+<html lang="<?php echo $lang; ?>">
+<html class="nojs" lang=$lang dir="ltr">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <head>
