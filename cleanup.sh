@@ -30,13 +30,5 @@ find . -type f -wholename "./content/fr/*" -exec sed -i -E "s/index.html/index_f
 # All links to `index.html` in `index_fr.html` except the language toggle need to point to `index_fr.html`
 find . -type f -name "index_fr.html" -exec sed -i -E 's/<a href="index.html" title="Home"/<a href="index_fr.html" title="Home"/g' {} \;
 
-# At the end, rename everything to use `.html` rather than the uglier `.html`. 
-for f in $(find . -maxdepth 10 -type f -name '.html'); do
-    newname=`echo "$f" | sed 's/.html/.html/'`
-    echo "current file is $f -> $newname"
-    mv "$f" "$newname"
-done
-find . -type f -wholename "*" -exec sed -i -E "s/\.html/.html/g" {} \;
-
 # HACK TODO fix blog post urls, `header.php` creates language toggle but doesnt have access to current path
 find . -type f -wholename "./content/*/blog-post/*" -exec sed -i -E "s/\/(\w\w)\/(.*)\/(.*)\.html/\/\1\/blog-post\/\3.html/g" {} \;
