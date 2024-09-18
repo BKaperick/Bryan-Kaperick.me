@@ -36,7 +36,7 @@ for f in $(find . -maxdepth 10 -type f -name '.html'); do
     echo "current file is $f -> $newname"
     mv "$f" "$newname"
 done
-find . -type f -wholename "*" -exec sed -i -E "s/.html/.html/g" {} \;
+find . -type f -wholename "*" -exec sed -i -E "s/\.html/.html/g" {} \;
 
 # HACK TODO fix blog post urls, `header.php` creates language toggle but doesnt have access to current path
-find . -type f -wholename "./content/*/blog-post/*" -exec sed -i -E "s/\/(\w\w)\/(.*)\/(.*).html/\/\1\/blog-post\/\3.html/g" {} \;
+find . -type f -wholename "./content/*/blog-post/*" -exec sed -i -E "s/\/(\w\w)\/(.*)\/(.*)\.html/\/\1\/blog-post\/\3.html/g" {} \;
