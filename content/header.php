@@ -6,7 +6,7 @@ $language_toggle = array(
     'fr'=>'en');
 ?>
 
-<link rel="stylesheet" href="../../../style.css">
+<link rel="stylesheet" href="/style.css">
 
 <html lang="<?php echo $lang; ?>">
 <html class="nojs" lang=$lang dir="ltr">
@@ -55,7 +55,8 @@ $language_toggle = array(
 <body class="list-page front">
 <div class="page layout__page layout__sidebar-second">
 <header class="header layout__header">
-<a href="/" title="Home" rel="home" class="header__logo"><img src="/static/logo.png" alt="Home" class="header__logo-image"></a>
+<img src=>
+<a href="/" title="Home" rel="home" class="header__logo"><img src="https://www.bryan-kaperick.me/static/logo.png" alt="Home" class="header__logo-image"></a>
 <h1 class="header__site-name">
 <a href="/" title="Home" class="header__site-link" rel="home"><span><?php echo $language['SITE_TITLE'] ?></span></a>
 </h1>
@@ -85,42 +86,42 @@ $language_toggle = array(
 : "" ?>><?=$language['Home'];
 ?>
 </a></li>
-<li><a href="/content/<?=$lang?>/now/now.php"
+<li><a href="/<?=$lang?>/now/now.php"
 <?=
 (str_contains($_SERVER['SCRIPT_FILENAME'], "now")) 
 ? "class=\"active\" aria-current=\"page\"" 
 : "" ?>><?=$language['Now'];
 ?>
 </a></li>
-<li><a href="/content/<?=$lang?>/poetry/poetry.php" 
+<li><a href="/<?=$lang?>/poetry/poetry.php" 
 <?=
 (str_contains(basename($_SERVER['SCRIPT_FILENAME']), "poetry")) 
 ? "class=\"active\" aria-current=\"page\"" 
 : "" ?>><?=$language['Poetry'];
 ?>
 </a></li>
-<li><a href="/content/<?=$lang?>/contact/contact.php"
+<li><a href="/<?=$lang?>/contact/contact.php"
 <?=
 (str_contains(basename($_SERVER['SCRIPT_FILENAME']), "contact")) 
 ? "class=\"active\" aria-current=\"page\"" 
 : "" ?>><?=$language['Contact'];
 ?>
 </a></li>
-<li><a href="/content/<?=$lang?>/photos/photos.php"
+<li><a href="/<?=$lang?>/photos/photos.php"
 <?=
 (str_contains(basename($_SERVER['SCRIPT_FILENAME']), "photos")) 
 ? "class=\"active\" aria-current=\"page\"" 
 : "" ?>><?=$language['Photos'];
 ?>
 </a></li>
-<li><a href="/content/<?=$lang?>/bio/bio.php"
+<li><a href="/<?=$lang?>/bio/bio.php"
 <?=
 (str_contains(basename($_SERVER['SCRIPT_FILENAME']), "bio")) 
 ? "class=\"active\" aria-current=\"page\"" 
 : "" ?>><?=$language['Bio'];
 ?>
 </a></li>
-<li><a href="/content/<?=$lang?>/blog-post/blog-post.php"
+<li><a href="/<?=$lang?>/blog-post/blog-post.php"
 <?=
 (str_contains($_SERVER['SCRIPT_FILENAME'], "blog-post")) 
 ? "class=\"active\" aria-current=\"page\"" 

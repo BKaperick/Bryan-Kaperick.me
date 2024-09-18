@@ -52,8 +52,8 @@ with open("now.json", "r") as fw:
     <td><?=$p->{0}->location;?></td>
     <td class="border1" style="min-width:100px"><?=$p->{0}->date;?></td>
     <td class="border1"><?=$p->{0}->$lang;?></td>
-    <td class="border1"><a href="<?="/content/now/raw/" . $p->{0}->photo;?>">
-        <img src="<?="/content/now/lowres/" . $p->{0}->photo;?>" style="max-width:60px;width:100%"></a></td>
+    <td class="border1"><a href="<?="/now/raw/" . $p->{0}->photo;?>">
+        <img src="<?="/now/lowres/" . $p->{0}->photo;?>" style="max-width:60px;width:100%"></a></td>
 </tr>
 """.format(key)
         

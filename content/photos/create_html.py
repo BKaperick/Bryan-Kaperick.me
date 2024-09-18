@@ -13,9 +13,9 @@ photo_blocks = []
 with open("photos.json", "r") as fw:
     photos = json.load(fw)
     for key,photo in photos.items():
-        block = """<a href="<?="/content/photos/raw/" . $p->{0}->name;?>">
+        block = """<a href="<?="/photos/raw/" . $p->{0}->name;?>">
     <figure class="image">
-    <img src=<?="/content/photos/lowres/" . $p->{0}->name;?>>
+    <img src=<?="/photos/lowres/" . $p->{0}->name;?>>
     <figcaption>
 <?=$p->{0}->$lang;?> ~ <?=$p->{0}->year;?>
     </figcaption>
