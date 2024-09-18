@@ -1,5 +1,4 @@
 cd public
-cp '../.htaccess' .htaccess
 cp '../_redirects' _redirects
 
 # index.html is a special case since it can't be in a language-specific 
