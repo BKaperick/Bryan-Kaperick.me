@@ -27,7 +27,7 @@ with open("poems.json", "r") as fr:
     poems = json.load(fr)
     for key,poem in poems.items():
         if poem['author'] == 'Bryan Kaperick':
-            block_path = poem['rawpath'].replace(".txt", ".php").replace("./raw/", "./blocks/")
+            block_path = poem['rawpath'].replace(".txt", ".php").replace("./raw/", "")
             block = get_bryan_block(key, block_path)
         else:
             block_path = None
@@ -53,7 +53,7 @@ with open("poems2022.html", "w") as f22:
 for block,poem,php_path in poem_blocks:
     print("Writing {0}".format(poem['title']))
     if 'rawpath' in poem:
-        html_path = php_path.replace(".php", ".html")
+        html_path = "./blocks/" + php_path.replace(".php", ".html")
         print("Writing {0} to {1}".format(poem['title'], php_path))
         with open(html_path, "w") as f:
             f.write(block)
