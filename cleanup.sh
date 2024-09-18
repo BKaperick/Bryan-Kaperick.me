@@ -1,5 +1,6 @@
 cd public
 cp '../.htaccess' .htaccess
+cp '../__redirect' __redirect
 
 # index.html is a special case since it can't be in a language-specific 
 # directory, so we have the default one (english) and the alternate (french) one
