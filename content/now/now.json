@@ -5,5 +5,68 @@
         "en": "Arrived at 17h45 with Rishik, will be staying with Myriam. ",
         "fr": "On est arriv\u00e9 \u00e0 17h45 avec Rishik, on va dormir chez Myriam.",
         "photo": "100_0020.JPG"
+    },
+    "PXL": {
+        "location": "Marseille",
+        "date": "2024-08-21",
+        "en": "Me and Rishik are biking along the coast in Marseille ",
+        "fr": "Moi et Rishik fait un tour en v\u00e9lo sur le c\u00f4te \u00e0 Marseille",
+        "photo": "PXL_20240821_112938629.jpg"
+    },
+    "PXL_1": {
+        "location": "Banyuls-sur-Mer",
+        "date": "2024-08-22",
+        "en": "I arrived on the train this afternoon to nice, sunny weather.  I did my groceries and now starting on the trail. ",
+        "fr": "Je suis arriv\u00e9 en train cet apr\u00e8s-midi, il fait beau et il y a plein de soleil.  J'ai fait des courses et l\u00e0 je commence sur le chemin.",
+        "photo": "PXL_20240822_142812523.jpg"
+    },
+    "PXL_2": {
+        "location": "Perthus",
+        "date": "2024-08-24",
+        "en": "Stopped here with Roberto to grab a coffee and get more food  ",
+        "fr": "Arr\u00eat\u00e9 ici avec Roberto pour prendre un caf\u00e9 et restocker de la bouffe",
+        "photo": "PXL_20240824_084854950.MP.jpg"
+    },
+    "arles": {
+        "location": "Arles-sur-Tech",
+        "date": "2024-08-26",
+        "en": "Arrived here just after noon.  Le Tech is the name of the river that runs along the village.  No major physical problems so far with my current pace. ",
+        "fr": "Arriv\u00e9 l\u00e0 juste apr\u00e8s midi.  Le Tech est le nom de la rivi\u00e8re qui passe par le village.  Pas de soucis majeurs physiques jusqu'ici avec mon rythme actuel.",
+        "photo": "arles_sur_tech.jpg"
+    },
+    "mentat": {
+        "location": "Mantet",
+        "date": "2024-08-29",
+        "en": "Passing through Mantet this afternoon.  I took a detour to summit Peak de Canigou yesterday with a small group of Germans and Spaniards. ",
+        "fr": "Je passe par Mantet cet apr\u00e8s-midi.  Hier j'ai fait un d\u00e9tour pour monter au sommet du Pic de Canigou avec une petite bande d'allemands et d'espagnols.",
+        "photo": "mentat_jeudi_upload.jpg"
+    },
+    "cabanasse": {
+        "location": "La Cabanasse",
+        "date": "2024-08-31",
+        "en": "I'm getting better at optimizing my food and there is more water available in this region, so my pack is overall lighter. ",
+        "fr": "J'am\u00e9liore l'optimisation de ma gestion de bouffe et il y a plus de sources dans cette r\u00e9gion qu'au d\u00e9but donc mon sac est plus l\u00e9ger.",
+        "photo": "cabanasse.jpg"
+    },
+    "merens": {
+        "location": "M\u00e9rens-les-Vals",
+        "date": "2024-09-02",
+        "en": "It rained yesterday, so that was a bummer.  On the bright side, this section has some nice, clear-watered lakes to swim in on hot afternoons. ",
+        "fr": "Il a plu hier, \u00e7a c'\u00e9tait dommage.  Au bon c\u00f4t\u00e9 des choses, cette tron\u00e7on \u00e0 pas mal des lacs remplits de l'eau transparente dont j'en profite pour me baigner les apr\u00e8s-midis quand il fait chaud.",
+        "photo": "merens_bas.jpg"
+    },
+    "siguer": {
+        "location": "Siguer",
+        "date": "2024-09-05",
+        "en": "A lot of rain recently has slowed progress and rendered everything damp and dirty. ",
+        "fr": "Beaucoup de pluie r\u00e9cemment a fait que j'avance moins vite et tous mes affaires sont mouill\u00e9s et sales.",
+        "photo": "siguer_15.jpg"
+    },
+    "niaux": {
+        "location": "La Grotte de Niaux",
+        "date": "2024-09-07",
+        "en": "Took a shortcut since weather looked dodgy and didn't want to risk missing my train from Toulouse (or the Braderie).  Concluded my hike of ~300km with a tour of some Magdalenian cave drawings! ",
+        "fr": "J'ai fait un raccourci \u00e0 la fin \u00e0 cause des mauvaise pr\u00e9visions de la m\u00e9t\u00e9o pour ne pas risquer rater mon train de Toulouse (et la braderie).  Donc j'ai mis \u00e0 fin mon trek de ~300km avec un tour des fresques Magdal\u00e9niens!",
+        "photo": "niaux.jpg"
     }
 }
