@@ -76,16 +76,6 @@ $language_toggle = array(
 </div>
 </header>
 
-<style>
-.verse {
-  margin-left: 2em;
-}
-
-.line {
-  margin-left: -2em;
-}
-</style>
-
 <nav class="main-menu layout__navigation">
 <h2 class="visually-hidden">Main menu</h2>
 <ul class="navbar">

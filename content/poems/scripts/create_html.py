@@ -6,7 +6,11 @@ import json
 poem_blocks = []
 
 def get_bryan_block(key, block_path):
-    return """<link rel="stylesheet" href="/style.css">
+    return """
+<link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+<link rel="apple-touch-icon" href="/static/favicon.ico">
+<link rel="stylesheet" href="/style.css">
 <p><em><?=$p->{0}->title;?></em> &ndash; <?=$language[$p->{0}->month];?> <?=$p->{0}->year;?></p>
     <blockquote>
     <?=$p->{0}->body;?>
@@ -52,10 +56,8 @@ with open("poems2022.html", "w") as f22:
     f22.write("\n\n".join([x[0] for x in sorted(poems22, key=ordering)]))
 
 for block,poem,php_path in poem_blocks:
-    print("Writing {0}".format(poem['title']))
     if 'rawpath' in poem:
         html_path = "./blocks/" + php_path.replace(".php", ".html")
-        print("Writing {0} to {1}".format(poem['title'], php_path))
         with open(html_path, "w") as f:
             f.write(block)
         with open(php_path, "w") as f:
