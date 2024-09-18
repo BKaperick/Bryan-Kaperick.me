@@ -6,7 +6,8 @@ import json
 poem_blocks = []
 
 def get_bryan_block(key, block_path):
-    return """<p><em><?=$p->{0}->title;?></em> &ndash; <?=$language[$p->{0}->month];?> <?=$p->{0}->year;?></p>
+    return """<link rel="stylesheet" href="/style.css">
+<p><em><?=$p->{0}->title;?></em> &ndash; <?=$language[$p->{0}->month];?> <?=$p->{0}->year;?></p>
     <blockquote>
     <?=$p->{0}->body;?>
     </blockquote>""".format(key, block_path)
