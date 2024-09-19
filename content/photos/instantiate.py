@@ -22,11 +22,18 @@ count = 1
 with open("photos.json", "r+") as fw:
     photos = json.load(fw)
     print("{0} photo keys present at start".format(len(photos.keys())))
-    for file in os.listdir("./new/"):
+    basepath = "./new/"
+    for file in os.listdir(basepath):
         if file == '__empty__.txt':
             continue
+
+        path = os.path.join(basepath, file)
+        if os.path.isdir(path):
+            # skip directories
+            continue
+
         print("file: " + file)
-        name_words = [clean_key(w) for w in file.replace(".txt", "").replace(".jpg", "").split("_")]
+        name_words = [clean_key(w) for w in file.replace(".txt", "").replace(".jpeg", "").replace(".jpg", "").split("_")]
         longest_word = max(name_words, key=len)
         name_guess = " ".join(name_words)
         name_guess = name_guess[0].capitalize() + name_guess[1:]
