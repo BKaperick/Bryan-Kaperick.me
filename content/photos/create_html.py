@@ -13,9 +13,8 @@ photo_blocks = []
 with open("photos.json", "r") as fw:
     photos = json.load(fw)
     for key,photo in photos.items():
-        
         # ignore albums for now
-        if "is_album" in photo and photo["is_album"] == True:
+        if key == "is_album" or  ("is_album" in photo and photo["is_album"] == True):
             continue
 
         block = """<a href="<?="/photos/raw/" . $p->{0}->name;?>">

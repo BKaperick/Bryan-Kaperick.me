@@ -58,7 +58,7 @@ def instantiate_dir(photos, basepath, is_album = False):
 
         os.rename(basepath + "/" + file, basepath.replace("/new/","/raw/") + file)
 
-    d["is_album"] = is_album
+    photos["is_album"] = is_album
     return photos
 
 with open("photos.json", "r+") as fw:
