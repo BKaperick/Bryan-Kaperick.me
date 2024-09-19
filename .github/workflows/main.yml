@@ -15,8 +15,6 @@ jobs:
       
     - name: Install wget, git, and friends
       run: |
-        sudo apt update
-        sudo apt upgrade -y
         sudo apt-get install -qq -o=Dpkg::Use-Pty=0 wget git python3 imagemagick
         git --version
     
