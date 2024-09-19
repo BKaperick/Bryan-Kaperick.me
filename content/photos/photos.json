@@ -786,5 +786,51 @@
             "sabia",
             "martin"
         ]
+    },
+    "GR10": {
+        "greatlighting": {
+            "name": "100_0185_greatlighting.JPG",
+            "month": "Sep",
+            "year": 2024,
+            "order_in_year": 1,
+            "en": "",
+            "fr": "",
+            "people": [
+                "bryan"
+            ]
+        },
+        "majesticcow": {
+            "name": "100_0318_majesticcow.JPG",
+            "month": "Sep",
+            "year": 2024,
+            "order_in_year": 2,
+            "en": "",
+            "fr": "",
+            "people": [
+                "bryan"
+            ]
+        },
+        "openroad": {
+            "name": "100_0406_openroad.JPG",
+            "month": "Sep",
+            "year": 2024,
+            "order_in_year": 3,
+            "en": "",
+            "fr": "",
+            "people": [
+                "bryan"
+            ]
+        },
+        "ontop": {
+            "name": "100_0391_ontop.JPG",
+            "month": "Sep",
+            "year": 2024,
+            "order_in_year": 4,
+            "en": "",
+            "fr": "",
+            "people": [
+                "bryan"
+            ]
+        }
     }
 }
