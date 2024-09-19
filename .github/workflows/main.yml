@@ -21,7 +21,7 @@ jobs:
     - name: Clone repo
       run: |
         git clone -b ${{ github.head_ref || github.ref_name }} --depth=1 https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
-        sleep 5s
+        sleep 3s
         cd Bryan-Kaperick.me
         ls -lt
         pwd
@@ -39,14 +39,14 @@ jobs:
         cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me/Bryan-Kaperick.me
         cd content
         (php -S localhost:8000) &
-        sleep 5s
+        sleep 3s
         cd ..
         pwd
         rm -rf public
         mkdir public
         cd public
         ls -lt
-        wget -k -K  -E -r -l 10 -p -N -F -nH localhost:8000
+        wget -q -k -K  -E -r -l 10 -p -N -F -nH localhost:8000
             
     - name: Post-processing and cleanup
       run: |
