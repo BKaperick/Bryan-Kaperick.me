@@ -19,6 +19,7 @@ if len(sys.argv) > 1 and sys.argv[1]:
         en_trad,fr_trad = sys.argv[1].split(r"\r\n")[:2]
 
 def instantiate_album(photos, basepath):
+    count = 1
     for file in os.listdir(basepath):
         if file == '__empty__.txt':
             continue
@@ -34,7 +35,7 @@ def instantiate_album(photos, basepath):
         name_guess = " ".join(name_words)
         name_guess = name_guess[0].capitalize() + name_guess[1:]
         year = datetime.datetime.now().year
-        if count == 1:
+        if count == 1 and photos:
             last_photo = max([(k,v) for k,v in photos.items() if v['year'] == year], key=lambda x : x[1]['order_in_year'])
             if last_photo:
                 order_in_year = last_photo[1]['order_in_year'] + 1
@@ -55,10 +56,9 @@ def instantiate_album(photos, basepath):
         count += 1
         print("{0} photo keys present".format(len(photos.keys())))
 
-        os.rename(basepath + file, basepath.replace("/new/","/raw/") + file)
-        return photos
+        os.rename(basepath + "/" + file, basepath.replace("/new/","/raw/") + file)
+    return photos
 
-count = 1
 with open("photos.json", "r+") as fw:
     photos = json.load(fw)
     print("{0} photo keys present at start".format(len(photos.keys())))
@@ -68,12 +68,14 @@ with open("photos.json", "r+") as fw:
     for file in os.listdir(basepath):
         path = os.path.join(basepath, file)
         if os.path.isdir(path):
-            albums += (file,path)
+            albums.append((file,path))
     
     # First handle any individual photos added
     photos = instantiate_album(photos, basepath)
 
     for name,path in albums:
+        print(name, path)
+        print(photos)
         photos[name] = instantiate_album({}, path)
         
     
