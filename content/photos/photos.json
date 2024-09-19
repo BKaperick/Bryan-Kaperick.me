@@ -723,18 +723,36 @@
         "en": "Me, Tyler, and Rishik biking in the Scarpe-Escaut Park",
         "fr": "Moi, Tyler, et Rishik en v\u00e9lo au Parc naturel r\u00e9gional Scarpe-Escaut",
         "people": [
-            "bryan"
+            "bryan",
+            "tyler",
+            "rishik"
+        ]
+    },
+    "biketripjpeg": {
+        "name": "biketrip.jpeg",
+        "month": "Aug",
+        "year": 2024,
+        "order_in_year": 18,
+        "en": "Another pic from our weekend bike trip",
+        "fr": "Encore un photo de nous sur notre weekend v\u00e9lo",
+        "people": [
+            "bryan",
+            "rishik",
+            "tyler"
         ]
     },
     "quentin": {
         "name": "tyler_sunny_quentin_new_apt.JPG",
         "month": "Aug",
         "year": 2024,
-        "order_in_year": 18,
+        "order_in_year": 19,
         "en": "Tyler, Sunny, Me, and Quentin in a new apartment with a new camera ",
         "fr": "Tyler, Sunny, Moi, et Quentin dans un nouvel appartement avec une nouvelle cam\u00e9ra",
         "people": [
-            "bryan"
+            "bryan",
+            "tyler",
+            "sunny",
+            "quentin"
         ]
     },
     "IMGWA_20": {
@@ -745,7 +763,28 @@
         "en": "Adrien and me at Cours Julien in Marseille",
         "fr": "Adrien et moi au Cours Julien \u00e0 Marseille",
         "people": [
-            "bryan"
+            "bryan",
+            "adrien"
+        ]
+    },
+    "labraderiejpeg": {
+        "name": "labraderie.jpeg",
+        "month": "Sep",
+        "year": 2024,
+        "order_in_year": 21,
+        "en": "A bunch of us at La Braderie in Lille",
+        "fr": "Pas mal de mes amis à La Braderie de Lille",
+        "people": [
+            "bryan",
+            "cecile",
+            "ruchira",
+            "moneer",
+            "sunny",
+            "quentin",
+            "rishik",
+            "zambuka",
+            "sabia",
+            "martin"
         ]
     }
 }
