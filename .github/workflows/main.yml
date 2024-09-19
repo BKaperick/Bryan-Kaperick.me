@@ -17,16 +17,13 @@ jobs:
       run: |
         sudo apt update
         sudo apt upgrade -y
-        sudo apt-get install -y wget
-        sudo apt-get install -y git
-        sudo apt-get install -y python3
-        sudo apt-get install -y imagemagick
+        sudo apt-get install -qq -o=Dpkg::Use-Pty=0 wget git python3 imagemagick
         git --version
     
     - name: Clone repo
       run: |
         git clone -b ${{ github.head_ref || github.ref_name }} --depth=1 https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
-        sleep 10s
+        sleep 5s
         cd Bryan-Kaperick.me
         ls -lt
         pwd
@@ -44,7 +41,7 @@ jobs:
         cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me/Bryan-Kaperick.me
         cd content
         (php -S localhost:8000) &
-        sleep 10s
+        sleep 5s
         cd ..
         pwd
         rm -rf public
