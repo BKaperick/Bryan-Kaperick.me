@@ -28,7 +28,7 @@ jobs:
         
     - name: Ingest new data
       run: |
-        cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me/Bryan-Kaperick.me
+        cd Bryan-Kaperick.me
 
         git log -n 1 --pretty=%cd --date=format:'%Y-%m-%d %H:%M:%S' >| ./content/widgets/last_update_date.txt
         sudo ./pre_build.sh "${{ github.event.pull_request.body }}"
@@ -36,12 +36,11 @@ jobs:
     - name: Wget static site
       continue-on-error: true
       run: |
-        cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me/Bryan-Kaperick.me
+        cd Bryan-Kaperick.me
         cd content
         (php -S localhost:8000) &
         sleep 3s
         cd ..
-        pwd
         rm -rf public
         mkdir public
         cd public
@@ -50,15 +49,13 @@ jobs:
             
     - name: Post-processing and cleanup
       run: |
-        pwd
-        cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me/Bryan-Kaperick.me
+        cd Bryan-Kaperick.me
         ls -lt
         sudo ./cleanup.sh
       
     - name: Push changes
       run: |
-          pwd
-          cd /__w/Bryan-Kaperick.me/Bryan-Kaperick.me/Bryan-Kaperick.me
+          cd Bryan-Kaperick.me
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .
