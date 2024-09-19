@@ -18,11 +18,7 @@ if len(sys.argv) > 1 and sys.argv[1]:
     else:
         en_trad,fr_trad = sys.argv[1].split(r"\r\n")[:2]
 
-count = 1
-with open("photos.json", "r+") as fw:
-    photos = json.load(fw)
-    print("{0} photo keys present at start".format(len(photos.keys())))
-    basepath = "./new/"
+def instantiate_album(photos, basepath):
     for file in os.listdir(basepath):
         if file == '__empty__.txt':
             continue
@@ -58,9 +54,29 @@ with open("photos.json", "r+") as fw:
         photos[nickname] = d
         count += 1
         print("{0} photo keys present".format(len(photos.keys())))
-        
-        os.rename("./new/" + file, "./raw/" + file)
 
+        os.rename(basepath + file, basepath.replace("/new/","/raw/") + file)
+        return photos
+
+count = 1
+with open("photos.json", "r+") as fw:
+    photos = json.load(fw)
+    print("{0} photo keys present at start".format(len(photos.keys())))
+    basepath = "./new/"
+    
+    albums = []
+    for file in os.listdir(basepath):
+        path = os.path.join(basepath, file)
+        if os.path.isdir(path):
+            albums += (file,path)
+    
+    # First handle any individual photos added
+    photos = instantiate_album(photos, basepath)
+
+    for name,path in albums:
+        photos[name] = instantiate_album({}, path)
+        
+    
     fw.seek(0)
     json.dump(photos, fw, indent=4)
     fw.truncate()
