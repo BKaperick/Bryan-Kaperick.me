@@ -30,7 +30,7 @@ def instantiate_album(photos, basepath):
             continue
 
         print("file: " + file)
-        name_words = [clean_key(w) for w in file.lowercase().replace(".txt", "").replace(".jpeg", "").replace(".jpg", "").split("_")]
+        name_words = [clean_key(w) for w in file.lower().replace(".txt", "").replace(".jpeg", "").replace(".jpg", "").split("_")]
         longest_word = max(name_words, key=len)
         name_guess = " ".join(name_words)
         name_guess = name_guess[0].capitalize() + name_guess[1:]
