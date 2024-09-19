@@ -31,7 +31,7 @@
         "order_in_month": 2,
         "month": "Jul",
         "year": "2024",
-        "body": "<p>Sunlight stained your bedroom walls.<br>\nYou and I hid baking in the sheets.<br>\nEyes shut, we searched<br>\nand found each other\u2019s skin<br>\nstill damp from the night.<br>\nWe took turns sinking back into sleep,<br>\nfleeing our obligations to The Greats<br>\nwho paved the city streets.</p>\n<p>After noon we emerged<br>\nto face the day:<br>\nour groggy eyes opened;<br>\nyour dimples glistened.<br>\nWe feasted<br>\non beauty eternal, carved into stone<br>\nand on beauty fleeting, your tender lips<br>\nwrapped around a burning cigarette.</p>\n<p>You took your last drag.<br>\nAnd from the ashes,<br>\na daisy was born,<br>\nmeant only to wilt.<br>\nAnd so I tried<br>\nto catch each petal as it fell.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Sunlight stained your bedroom walls.</span><br>\n<span class=\"line\">You and I hid baking in the sheets.</span><br>\n<span class=\"line\">Eyes shut, we searched</span><br>\n<span class=\"line\">and found each other\u2019s skin</span><br>\n<span class=\"line\">still damp from the night.</span><br>\n<span class=\"line\">We took turns sinking back into sleep,</span><br>\n<span class=\"line\">fleeing our obligations to The Greats</span><br>\n<span class=\"line\">who paved the city streets.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">After noon we emerged</span><br>\n<span class=\"line\">to face the day:</span><br>\n<span class=\"line\">our groggy eyes opened;</span><br>\n<span class=\"line\">your dimples glistened.</span><br>\n<span class=\"line\">We feasted</span><br>\n<span class=\"line\">on beauty eternal, carved into stone</span><br>\n<span class=\"line\">and on beauty fleeting, your tender lips</span><br>\n<span class=\"line\">wrapped around a burning cigarette.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">You took your last drag.</span><br>\n<span class=\"line\">And from the ashes,</span><br>\n<span class=\"line\">a daisy was born,</span><br>\n<span class=\"line\">meant only to wilt.</span><br>\n<span class=\"line\">And so I tried</span><br>\n<span class=\"line\">to catch each petal as it fell.</p></div>"
     },
     "asif": {
         "rawpath": "./raw/as_if.txt",
@@ -40,7 +40,7 @@
         "order_in_month": 1,
         "month": "Jul",
         "year": "2024",
-        "body": "<p>She\u2019s a mystery.<br>\nAs if I wanted to cling on to her drapes<br>\nto reveal a clouded sky.<br>\nAs if I wanted to know.<br>\nAs if she wanted the same.<br>\nAs if I didn\u2019t mull<br>\nfor some time before she woke<br>\nover whether my fingers<br>\ncould lace into hers. Now it\u2019s<br>\nas if the thought never entered<br>\nmy mind, but<br>\nit hasn\u2019t left either,<br>\nas if it\u2019s been<br>\ngliding around inside<br>\nfor an eternity already.</p>\n<p>As if I couldn\u2019t see when you were<br>\nlying. I lied back as if<br>\nyou couldn\u2019t do the same. As if<br>\nI didn\u2019t see how you two said<br>\ngoodbye. Him all red and smiling as if<br>\nhe were drunk. As if<br>\nI didn\u2019t look down to<br>\nsee his red, drunk, smiling hand<br>\nbrush your waist as he turned<br>\nto walk away, as if<br>\nI weren\u2019t there, as if<br>\nI didn\u2019t care. As if<br>\nI cared.</p>\n<p>As if sex were a commitment.<br>\nAs if it didn\u2019t exist only in the instant.<br>\nAs if thoughts of your sex had been<br>\ngliding around inside<br>\nfor an eternity already.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">She\u2019s a mystery.</span><br>\n<span class=\"line\">As if I wanted to cling on to her drapes</span><br>\n<span class=\"line\">to reveal a clouded sky.</span><br>\n<span class=\"line\">As if I wanted to know.</span><br>\n<span class=\"line\">As if she wanted the same.</span><br>\n<span class=\"line\">As if I didn\u2019t mull</span><br>\n<span class=\"line\">for some time before she woke</span><br>\n<span class=\"line\">over whether my fingers</span><br>\n<span class=\"line\">could lace into hers. Now it\u2019s</span><br>\n<span class=\"line\">as if the thought never entered</span><br>\n<span class=\"line\">my mind, but</span><br>\n<span class=\"line\">it hasn\u2019t left either,</span><br>\n<span class=\"line\">as if it\u2019s been</span><br>\n<span class=\"line\">gliding around inside</span><br>\n<span class=\"line\">for an eternity already.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">As if I couldn\u2019t see when you were</span><br>\n<span class=\"line\">lying. I lied back as if</span><br>\n<span class=\"line\">you couldn\u2019t do the same. As if</span><br>\n<span class=\"line\">I didn\u2019t see how you two said</span><br>\n<span class=\"line\">goodbye. Him all red and smiling as if</span><br>\n<span class=\"line\">he were drunk. As if</span><br>\n<span class=\"line\">I didn\u2019t look down to</span><br>\n<span class=\"line\">see his red, drunk, smiling hand</span><br>\n<span class=\"line\">brush your waist as he turned</span><br>\n<span class=\"line\">to walk away, as if</span><br>\n<span class=\"line\">I weren\u2019t there, as if</span><br>\n<span class=\"line\">I didn\u2019t care. As if</span><br>\n<span class=\"line\">I cared.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">As if sex were a commitment.</span><br>\n<span class=\"line\">As if it didn\u2019t exist only in the instant.</span><br>\n<span class=\"line\">As if thoughts of your sex had been</span><br>\n<span class=\"line\">gliding around inside</span><br>\n<span class=\"line\">for an eternity already.</p></div>"
     },
     "untitled_jun24": {
         "rawpath": "./raw/untitled_jun2024.txt",
@@ -49,7 +49,7 @@
         "order_in_month": 1,
         "month": "Jun",
         "year": "2024",
-        "body": "<p>Morning growls<br>\nWhile the di-named lioness<br>\nIn exhaling betrays<br>\nHer thoughts hidden still<br>\nOn that hillside crest<br>\nWhere our fallen arms defined us<br>\nAs the grass defined the meadow.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Morning growls</span><br>\n<span class=\"line\">While the di-named lioness</span><br>\n<span class=\"line\">In exhaling betrays</span><br>\n<span class=\"line\">Her thoughts hidden still</span><br>\n<span class=\"line\">On that hillside crest</span><br>\n<span class=\"line\">Where our fallen arms defined us</span><br>\n<span class=\"line\">As the grass defined the meadow.</p></div>"
     },
     "float": {
         "rawpath": "./raw/free_to_float.txt",
@@ -58,7 +58,7 @@
         "order_in_month": 5,
         "month": "May",
         "year": "2024",
-        "body": "<p>If he could float from tree to tree,<br>\non which clich\u00e9s he\u2019d perch?<br>\nBarefoot on her knife\u2019s edge,<br>\nor rocking the cradle to ease<br>\nBabe<br>\nback to sleep.<br>\nBack to dream states<br>\nwhere men, like birds,<br>\nare free to float from tree to tree.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">If he could float from tree to tree,</span><br>\n<span class=\"line\">on which clich\u00e9s he\u2019d perch?</span><br>\n<span class=\"line\">Barefoot on her knife\u2019s edge,</span><br>\n<span class=\"line\">or rocking the cradle to ease</span><br>\n<span class=\"line\">Babe</span><br>\n<span class=\"line\">back to sleep.</span><br>\n<span class=\"line\">Back to dream states</span><br>\n<span class=\"line\">where men, like birds,</span><br>\n<span class=\"line\">are free to float from tree to tree.</p></div>"
     },
     "decline": {
         "rawpath": "./raw/while_in_decline.txt",
@@ -67,7 +67,7 @@
         "order_in_month": 4,
         "month": "May",
         "year": "2024",
-        "body": "<p>The sun still shines while in decline<br>\nAnd bees slave all their lives<br>\nSea waves collapse in foamy smacks<br>\nAnd trees in hollow snaps.</p>\n<p>A man may choose to honey bathe<br>\nOr surf the lightning\u2019s strike<br>\nBut he like all must heed the call<br>\nOf sunset on his back.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">The sun still shines while in decline</span><br>\n<span class=\"line\">And bees slave all their lives</span><br>\n<span class=\"line\">Sea waves collapse in foamy smacks</span><br>\n<span class=\"line\">And trees in hollow snaps.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">A man may choose to honey bathe</span><br>\n<span class=\"line\">Or surf the lightning\u2019s strike</span><br>\n<span class=\"line\">But he like all must heed the call</span><br>\n<span class=\"line\">Of sunset on his back.</p></div>"
     },
     "triad": {
         "rawpath": "./raw/untitled_triad.txt",
@@ -76,7 +76,7 @@
         "order_in_month": 3,
         "month": "May",
         "year": "2024",
-        "body": "<p>Break my bones<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if you want to<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I\u2019ll wait</p>\n<p>For them to heal before<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I call you<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;again</p>\n<p>And when I do<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I\u2019ll come to you<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and crack yours too</p>\n<p>The fractures\u2019ll fill<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;us one<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with the other</p>\n<p>The reluctant sheet<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;can fall<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;between our feet</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Break my bones</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if you want to</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I\u2019ll wait</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">For them to heal before</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I call you</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;again</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">And when I do</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I\u2019ll come to you</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and crack yours too</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">The fractures\u2019ll fill</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;us one</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with the other</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">The reluctant sheet</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;can fall</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;between our feet</p></div>"
     },
     "moroccan": {
         "rawpath": "./raw/moroccan_mist.txt",
@@ -85,7 +85,7 @@
         "order_in_month": 2,
         "month": "May",
         "year": "2024",
-        "body": "<p>Moroccan mist evaporates away<br>\nFrom all the dusty hash that filled our lungs<br>\nAn offer Flo a coffee kind of day<br>\nAfloat but crooked, far from ferry\u2019s strait.</p>\n<p>We\u2019d rather stop for cars and caravans<br>\nWe waited wafting in the evening gas<br>\nTo every city vite-fait brined in wine<br>\nFor Tim as well who kept the rhythm\u2019s beat.</p>\n<p>Till Basque I surfed to take the solo lead<br>\nFar from the hold of Silvio\u2019s belay<br>\nWithout a name I spun that game of chance<br>\nAnd downed those drunken sips of Leah\u2019s sweet.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Moroccan mist evaporates away</span><br>\n<span class=\"line\">From all the dusty hash that filled our lungs</span><br>\n<span class=\"line\">An offer Flo a coffee kind of day</span><br>\n<span class=\"line\">Afloat but crooked, far from ferry\u2019s strait.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">We\u2019d rather stop for cars and caravans</span><br>\n<span class=\"line\">We waited wafting in the evening gas</span><br>\n<span class=\"line\">To every city vite-fait brined in wine</span><br>\n<span class=\"line\">For Tim as well who kept the rhythm\u2019s beat.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Till Basque I surfed to take the solo lead</span><br>\n<span class=\"line\">Far from the hold of Silvio\u2019s belay</span><br>\n<span class=\"line\">Without a name I spun that game of chance</span><br>\n<span class=\"line\">And downed those drunken sips of Leah\u2019s sweet.</p></div>"
     },
     "watch": {
         "rawpath": "./raw/watch.txt",
@@ -94,7 +94,7 @@
         "order_in_month": 1,
         "month": "May",
         "year": "2024",
-        "body": "<p>Watch through the window<br>\nthe mug that wobbles unprompted<br>\nwait wait and watch<br>\nthe shards that settle among the crumbs<br>\nwait outside an hour<br>\nafter the shatter settles<br>\nand the lowly he rises<br>\nto lick the spill off the tile<br>\nlike a dog</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Watch through the window</span><br>\n<span class=\"line\">the mug that wobbles unprompted</span><br>\n<span class=\"line\">wait wait and watch</span><br>\n<span class=\"line\">the shards that settle among the crumbs</span><br>\n<span class=\"line\">wait outside an hour</span><br>\n<span class=\"line\">after the shatter settles</span><br>\n<span class=\"line\">and the lowly he rises</span><br>\n<span class=\"line\">to lick the spill off the tile</span><br>\n<span class=\"line\">like a dog</p></div>"
     },
     "untitled_apr24": {
         "rawpath": "./raw/untitled_apr2024.txt",
@@ -103,7 +103,7 @@
         "order_in_month": 2,
         "month": "Apr",
         "year": "2024",
-        "body": "<p>Puddles stain the pavement<br>\nunder sun\u2019s afternoon<br>\ntrampled by the tourists'<br>\ndampened leather shoes.</p>\n<p>Slouching on a concrete bench<br>\nsidelining the plaza,<br>\nhe\u2019s chewing on some homesick<br>\nand his heart\u2019s beating blue.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Puddles stain the pavement</span><br>\n<span class=\"line\">under sun\u2019s afternoon</span><br>\n<span class=\"line\">trampled by the tourists'</span><br>\n<span class=\"line\">dampened leather shoes.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Slouching on a concrete bench</span><br>\n<span class=\"line\">sidelining the plaza,</span><br>\n<span class=\"line\">he\u2019s chewing on some homesick</span><br>\n<span class=\"line\">and his heart\u2019s beating blue.</p></div>"
     },
     "doghouse": {
         "rawpath": "./raw/the_doghouse.txt",
@@ -112,7 +112,7 @@
         "order_in_month": 1,
         "month": "Apr",
         "year": "2024",
-        "body": "<p>Awakened in a troubling grime,<br>\nthe morning crawls out of the doghouse<br>\nto confront its own ragged, plastic self.<br>\nIt whinges, squeaks, shudders<br>\nand slumps back inside,<br>\npacked in with the other.</p>\n<p>Their mammalian hides<br>\nside by side - crystalline.<br>\nIn heavy wimpers<br>\none expands while the other contracts.<br>\nBoth frightened<br>\nby the heightened sense that lasts<br>\ndew-dampened before the fall<br>\nof noon\u2019s eventual descent.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Awakened in a troubling grime,</span><br>\n<span class=\"line\">the morning crawls out of the doghouse</span><br>\n<span class=\"line\">to confront its own ragged, plastic self.</span><br>\n<span class=\"line\">It whinges, squeaks, shudders</span><br>\n<span class=\"line\">and slumps back inside,</span><br>\n<span class=\"line\">packed in with the other.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Their mammalian hides</span><br>\n<span class=\"line\">side by side - crystalline.</span><br>\n<span class=\"line\">In heavy wimpers</span><br>\n<span class=\"line\">one expands while the other contracts.</span><br>\n<span class=\"line\">Both frightened</span><br>\n<span class=\"line\">by the heightened sense that lasts</span><br>\n<span class=\"line\">dew-dampened before the fall</span><br>\n<span class=\"line\">of noon\u2019s eventual descent.</p></div>"
     },
     "mardi": {
         "rawpath": "./raw/un_mardi_soir.txt",
@@ -121,7 +121,7 @@
         "order_in_month": 1,
         "month": "Mar",
         "year": "2024",
-        "body": "<p>Du temps perdu<br>\nsous la pluie<br>\nd\u2019un mardi soir.<br>\nTremp\u00e9, il se d\u00e9chire tout seul<br>\nquand on essaie de ramasser<br>\nce qui en reste de la table<br>\napr\u00e8s qu\u2019elle parte.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Du temps perdu</span><br>\n<span class=\"line\">sous la pluie</span><br>\n<span class=\"line\">d\u2019un mardi soir.</span><br>\n<span class=\"line\">Tremp\u00e9, il se d\u00e9chire tout seul</span><br>\n<span class=\"line\">quand on essaie de ramasser</span><br>\n<span class=\"line\">ce qui en reste de la table</span><br>\n<span class=\"line\">apr\u00e8s qu\u2019elle parte.</p></div>"
     },
     "tower": {
         "rawpath": "./raw/the_tower.txt",
@@ -130,7 +130,7 @@
         "order_in_month": 1,
         "month": "Feb",
         "year": "2024",
-        "body": "<p>His eyes and Hers align to keep<br>\npanoptic, periodic rhyme at sea<br>\nand frothy mermen arms outreached<br>\nfor prey who slips away beneath<br>\nthe tower\u2019s twin-turn stare.</p>\n<p>Frustrated shadows lurk below<br>\nfor sheer is water as it flows<br>\nfirmly caught within the tow<br>\nof Their revolving omniglow<br>\nwhere washed-up mysteries lay bare.</p>\n<p>Then one night the twin pair winked \u2014<br>\nHer brother fell from tower\u2019s brink.<br>\nStraight He dove and straight He\u2019ll sink.<br>\nSister waterlogged by weeps,<br>\nShe cast Her duty off without a care.</p>\n<p>Storms arise when rhythm\u2019s lost,<br>\nsirens shriek like albatross,<br>\nlong-drowned urchins shed their moss,<br>\nnocturne barges glide across<br>\nthe purview of a watch in disrepair.</p>\n<p>By dawn Her misery ossified.<br>\nA corroded heart beats in half-time<br>\nall while shadows grow twice as wide.<br>\nHer mood now high and low like tide<br>\never bound to the pull of out there.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">His eyes and Hers align to keep</span><br>\n<span class=\"line\">panoptic, periodic rhyme at sea</span><br>\n<span class=\"line\">and frothy mermen arms outreached</span><br>\n<span class=\"line\">for prey who slips away beneath</span><br>\n<span class=\"line\">the tower\u2019s twin-turn stare.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Frustrated shadows lurk below</span><br>\n<span class=\"line\">for sheer is water as it flows</span><br>\n<span class=\"line\">firmly caught within the tow</span><br>\n<span class=\"line\">of Their revolving omniglow</span><br>\n<span class=\"line\">where washed-up mysteries lay bare.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Then one night the twin pair winked \u2014</span><br>\n<span class=\"line\">Her brother fell from tower\u2019s brink.</span><br>\n<span class=\"line\">Straight He dove and straight He\u2019ll sink.</span><br>\n<span class=\"line\">Sister waterlogged by weeps,</span><br>\n<span class=\"line\">She cast Her duty off without a care.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Storms arise when rhythm\u2019s lost,</span><br>\n<span class=\"line\">sirens shriek like albatross,</span><br>\n<span class=\"line\">long-drowned urchins shed their moss,</span><br>\n<span class=\"line\">nocturne barges glide across</span><br>\n<span class=\"line\">the purview of a watch in disrepair.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">By dawn Her misery ossified.</span><br>\n<span class=\"line\">A corroded heart beats in half-time</span><br>\n<span class=\"line\">all while shadows grow twice as wide.</span><br>\n<span class=\"line\">Her mood now high and low like tide</span><br>\n<span class=\"line\">ever bound to the pull of out there.</p></div>"
     },
     "place": {
         "rawpath": "./raw/a_cool_dry_place.txt",
@@ -139,7 +139,7 @@
         "order_in_month": 1,
         "month": "Jan",
         "year": "2024",
-        "body": "<p>Sitting pristine in her sleeve<br>\nplastic shrink wrapped unscratched<br>\nunplayed her ways unheard<br>\nwait to be<br>\ninstead left<br>\nbought and forgot<br>\nIn a cool, dry place.</p>\n<p>Could she ever do what others do ?<br>\nBe used as lovers use ?</p>\n<p>Cut up and torn off<br>\nclicked nicked greased up and down<br>\nsoaked and dried<br>\nout spun around and flexed<br>\nAnd also<br>\none day forgotten</p>\n<p>Then they\u2019ll do what others do,<br>\nAnd leave as lovers leave.</p>\n<p>Set to dust collecting<br>\nspores or moss tossed<br>\nunder another<br>\noverplayed eventually clich\u00e9d<br>\nwedged among the others<br>\nIn a cool, dry place.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Sitting pristine in her sleeve</span><br>\n<span class=\"line\">plastic shrink wrapped unscratched</span><br>\n<span class=\"line\">unplayed her ways unheard</span><br>\n<span class=\"line\">wait to be</span><br>\n<span class=\"line\">instead left</span><br>\n<span class=\"line\">bought and forgot</span><br>\n<span class=\"line\">In a cool, dry place.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Could she ever do what others do ?</span><br>\n<span class=\"line\">Be used as lovers use ?</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Cut up and torn off</span><br>\n<span class=\"line\">clicked nicked greased up and down</span><br>\n<span class=\"line\">soaked and dried</span><br>\n<span class=\"line\">out spun around and flexed</span><br>\n<span class=\"line\">And also</span><br>\n<span class=\"line\">one day forgotten</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Then they\u2019ll do what others do,</span><br>\n<span class=\"line\">And leave as lovers leave.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Set to dust collecting</span><br>\n<span class=\"line\">spores or moss tossed</span><br>\n<span class=\"line\">under another</span><br>\n<span class=\"line\">overplayed eventually clich\u00e9d</span><br>\n<span class=\"line\">wedged among the others</span><br>\n<span class=\"line\">In a cool, dry place.</p></div>"
     },
     "dark": {
         "rawpath": "./raw/in_the_dark.txt",
@@ -148,7 +148,7 @@
         "order_in_month": 2,
         "month": "Jan",
         "year": "2024",
-        "body": "<p>Pinned to dusk and strung like wire<br>\nTower the branches' fractal spires</p>\n<p>A brass bell drones with windy pull<br>\nDull reverberations chill the air<br>\nBirdlings dream and spiders' drool<br>\nSeeps into webs of waxen stare</p>\n<p>Never a crack nor rust nor grime<br>\nHours to ages pierce without remark<br>\nThe lonesome architect\u2019s got time<br>\nTo manufacture beauty in the dark</p>\n<p>These streaks will soon be printed on the dawn<br>\nWhere fractal spires linger on and on.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Pinned to dusk and strung like wire</span><br>\n<span class=\"line\">Tower the branches' fractal spires</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">A brass bell drones with windy pull</span><br>\n<span class=\"line\">Dull reverberations chill the air</span><br>\n<span class=\"line\">Birdlings dream and spiders' drool</span><br>\n<span class=\"line\">Seeps into webs of waxen stare</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Never a crack nor rust nor grime</span><br>\n<span class=\"line\">Hours to ages pierce without remark</span><br>\n<span class=\"line\">The lonesome architect\u2019s got time</span><br>\n<span class=\"line\">To manufacture beauty in the dark</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">These streaks will soon be printed on the dawn</span><br>\n<span class=\"line\">Where fractal spires linger on and on.</p></div>"
     },
     "monorhyme3": {
         "rawpath": "./raw/monorhyme_sketch_3.txt",
@@ -157,7 +157,7 @@
         "order_in_month": 1,
         "month": "Dec",
         "year": "2023",
-        "body": "<p>Goldilocks was feeling bold,<br>\nFor each bear was poured a bowl.<br>\nHer belly roiled with each spoonful:<br>\nCold, more cold, and much more cold.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Goldilocks was feeling bold,</span><br>\n<span class=\"line\">For each bear was poured a bowl.</span><br>\n<span class=\"line\">Her belly roiled with each spoonful:</span><br>\n<span class=\"line\">Cold, more cold, and much more cold.</p></div>"
     },
     "monorhyme2": {
         "rawpath": "./raw/monorhyme_sketch_2.txt",
@@ -166,7 +166,7 @@
         "order_in_month": 3,
         "month": "Nov",
         "year": "2023",
-        "body": "<p>Play back the track slow with all ears clear<br>\nSycophants\u2019ll scatter off or cower with fear<br>\nHonest men\u2019ll settle in, lonesomely austere<br>\nChimney fire cackling to toss another beer.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Play back the track slow with all ears clear</span><br>\n<span class=\"line\">Sycophants\u2019ll scatter off or cower with fear</span><br>\n<span class=\"line\">Honest men\u2019ll settle in, lonesomely austere</span><br>\n<span class=\"line\">Chimney fire cackling to toss another beer.</p></div>"
     },
     "monorhyme1": {
         "rawpath": "./raw/monorhyme_sketch_1.txt",
@@ -175,7 +175,7 @@
         "order_in_month": 2,
         "month": "Nov",
         "year": "2023",
-        "body": "<p>Alcohol is entropy, and entropy is time<br>\nHungover before I transitively unwind.<br>\nWilted flowers wither while I dine on rotten wine<br>\nAnd ever wet the whistle of a lover once mine.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Alcohol is entropy, and entropy is time</span><br>\n<span class=\"line\">Hungover before I transitively unwind.</span><br>\n<span class=\"line\">Wilted flowers wither while I dine on rotten wine</span><br>\n<span class=\"line\">And ever wet the whistle of a lover once mine.</p></div>"
     },
     "sami": {
         "rawpath": "./raw/ode_to_sami.txt",
@@ -184,7 +184,7 @@
         "order_in_month": 1,
         "month": "Nov",
         "year": "2023",
-        "body": "<p>Our man\u2019s evaporated \u2014 gone.<br>\nAfter the party rises dawn<br>\nA quiet, calmer house he leaves<br>\nInfused with that which he believes.<br>\nNow off to scrub ancestral mire<br>\nFrom the grounds of Imane\u2019s spire<br>\nFor shines a hope in progeny<br>\nThat\u2019s barely grazed by coloc-amis.</p>\n<p>As he ascends to the fourth floor<br>\nWe\u2019re sewing stitches evermore<br>\nHis scalpel sketched the lessons learned<br>\nInto our cheeks the stories burn<br>\nRed-raw from cold or rush of blood<br>\nAt Sami\u2019s wisdom understood.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Our man\u2019s evaporated \u2014 gone.</span><br>\n<span class=\"line\">After the party rises dawn</span><br>\n<span class=\"line\">A quiet, calmer house he leaves</span><br>\n<span class=\"line\">Infused with that which he believes.</span><br>\n<span class=\"line\">Now off to scrub ancestral mire</span><br>\n<span class=\"line\">From the grounds of Imane\u2019s spire</span><br>\n<span class=\"line\">For shines a hope in progeny</span><br>\n<span class=\"line\">That\u2019s barely grazed by coloc-amis.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">As he ascends to the fourth floor</span><br>\n<span class=\"line\">We\u2019re sewing stitches evermore</span><br>\n<span class=\"line\">His scalpel sketched the lessons learned</span><br>\n<span class=\"line\">Into our cheeks the stories burn</span><br>\n<span class=\"line\">Red-raw from cold or rush of blood</span><br>\n<span class=\"line\">At Sami\u2019s wisdom understood.</p></div>"
     },
     "chicory": {
         "rawpath": "./raw/chicory_root.txt",
@@ -193,7 +193,7 @@
         "order_in_month": 4,
         "month": "Oct",
         "year": "2023",
-        "body": "<p>An afternoon with chicory root<br>\nMy heart respires a holler and hoot<br>\nSans caffeine so must be due<br>\n\u00c0 la frange d\u2019Aubr\u00e9e, surtout</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">An afternoon with chicory root</span><br>\n<span class=\"line\">My heart respires a holler and hoot</span><br>\n<span class=\"line\">Sans caffeine so must be due</span><br>\n<span class=\"line\">\u00c0 la frange d\u2019Aubr\u00e9e, surtout</p></div>"
     },
     "couples": {
         "rawpath": "./raw/untitled_couples.txt",
@@ -202,7 +202,7 @@
         "order_in_month": 3,
         "month": "Oct",
         "year": "2023",
-        "body": "<p>Bound up inside, a voice he wimpers on,<br>\n\u201cBring back the soft of touch that long has gone\u2026\u201d</p>\n<p>What waste of blood to keep that louse around<br>\n\u2014 I\u2019ll take my heart to firm or fertile ground.</p>\n<p>I peer upstream to tempt the river\u2019s way<br>\nWhen new soleil he shines and dawns the day.</p>\n<p>My thrill it shimmers on the sandy cusp<br>\nOf virgin plain untouched by Sodom\u2019s rust.</p>\n<p>I\u2019ll feign defense to pangs that thrust me out<br>\nBeyond the surface dissipating shroud.</p>\n<p>With that I\u2019ll rise above the tar that blinds<br>\nBefore I\u2019ve found the words for th\u2019other side.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Bound up inside, a voice he wimpers on,</span><br>\n<span class=\"line\">\u201cBring back the soft of touch that long has gone\u2026\u201d</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">What waste of blood to keep that louse around</span><br>\n<span class=\"line\">\u2014 I\u2019ll take my heart to firm or fertile ground.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">I peer upstream to tempt the river\u2019s way</span><br>\n<span class=\"line\">When new soleil he shines and dawns the day.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">My thrill it shimmers on the sandy cusp</span><br>\n<span class=\"line\">Of virgin plain untouched by Sodom\u2019s rust.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">I\u2019ll feign defense to pangs that thrust me out</span><br>\n<span class=\"line\">Beyond the surface dissipating shroud.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">With that I\u2019ll rise above the tar that blinds</span><br>\n<span class=\"line\">Before I\u2019ve found the words for th\u2019other side.</p></div>"
     },
     "limp": {
         "rawpath": "./raw/limp.txt",
@@ -211,7 +211,7 @@
         "order_in_month": 2,
         "month": "Oct",
         "year": "2023",
-        "body": "<p>As I ran by I saw you lying<br>\nlimp along the sidewalk<br>\nUnforced serendipity<br>\nI didn\u2019t watch the clock</p>\n<p>You seemed as well as one could seem<br>\nprostrate on the floor<br>\nPeaceful even, drowned amidst<br>\nthe waves of foreign shore</p>\n<p>I wondered how you landed here<br>\nyour wings a crumpled mess<br>\nA fall from sunlight\u2019s brazen stare<br>\nonto my path ingressed</p>\n<p>I lay my hand to light first flame<br>\nsince summer\u2019s hibernation<br>\nBut you\u2019ve cooled your gaze to stone<br>\nand cast it in the ocean</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">As I ran by I saw you lying</span><br>\n<span class=\"line\">limp along the sidewalk</span><br>\n<span class=\"line\">Unforced serendipity</span><br>\n<span class=\"line\">I didn\u2019t watch the clock</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">You seemed as well as one could seem</span><br>\n<span class=\"line\">prostrate on the floor</span><br>\n<span class=\"line\">Peaceful even, drowned amidst</span><br>\n<span class=\"line\">the waves of foreign shore</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">I wondered how you landed here</span><br>\n<span class=\"line\">your wings a crumpled mess</span><br>\n<span class=\"line\">A fall from sunlight\u2019s brazen stare</span><br>\n<span class=\"line\">onto my path ingressed</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">I lay my hand to light first flame</span><br>\n<span class=\"line\">since summer\u2019s hibernation</span><br>\n<span class=\"line\">But you\u2019ve cooled your gaze to stone</span><br>\n<span class=\"line\">and cast it in the ocean</p></div>"
     },
     "raven": {
         "rawpath": "./raw/a_ravens_lust.txt",
@@ -220,7 +220,7 @@
         "order_in_month": 1,
         "month": "Oct",
         "year": "2023",
-        "body": "<p>A pressing matter of morning walks,<br>\nA pressure on the heart.<br>\nShe marches, tramples, stomps, and stalks<br>\nMy mind while we\u2019re apart.</p>\n<p>We both agree to guard our distance,<br>\nBut hunger grows like wolf to sheep<br>\nWhose prey is stoled by thorn\u00e8d fence.<br>\nA raven\u2019s lust at bay to keep.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">A pressing matter of morning walks,</span><br>\n<span class=\"line\">A pressure on the heart.</span><br>\n<span class=\"line\">She marches, tramples, stomps, and stalks</span><br>\n<span class=\"line\">My mind while we\u2019re apart.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">We both agree to guard our distance,</span><br>\n<span class=\"line\">But hunger grows like wolf to sheep</span><br>\n<span class=\"line\">Whose prey is stoled by thorn\u00e8d fence.</span><br>\n<span class=\"line\">A raven\u2019s lust at bay to keep.</p></div>"
     },
     "september": {
         "rawpath": "./raw/september_slump.txt",
@@ -229,7 +229,7 @@
         "order_in_month": 2,
         "month": "Sep",
         "year": "2023",
-        "body": "<p>Obsessively revising<br>\nSelf-consuming second guessing<br>\nSeeking sense in something<br>\nset aflame by sorry selfish me.</p>\n<p>Hiving scared hungover<br>\nfrom a hopeless couple months<br>\nof perfect idleness I passed beneath<br>\nyour gentle glowing grange.</p>\n<p>And once again I wash in vain<br>\nto free my will from moping<br>\nMeaning while I wait I\u2019m anxiously aware<br>\nthat every waking moment means<br>\nthe more and more you drift away from me.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Obsessively revising</span><br>\n<span class=\"line\">Self-consuming second guessing</span><br>\n<span class=\"line\">Seeking sense in something</span><br>\n<span class=\"line\">set aflame by sorry selfish me.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Hiving scared hungover</span><br>\n<span class=\"line\">from a hopeless couple months</span><br>\n<span class=\"line\">of perfect idleness I passed beneath</span><br>\n<span class=\"line\">your gentle glowing grange.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">And once again I wash in vain</span><br>\n<span class=\"line\">to free my will from moping</span><br>\n<span class=\"line\">Meaning while I wait I\u2019m anxiously aware</span><br>\n<span class=\"line\">that every waking moment means</span><br>\n<span class=\"line\">the more and more you drift away from me.</p></div>"
     },
     "apparently": {
         "rawpath": "./raw/hm_apparently_pompeii_isnt_in_greece.txt",
@@ -238,7 +238,7 @@
         "order_in_month": 1,
         "month": "Sep",
         "year": "2023",
-        "body": "<p>It\u2019s New Year\u2019s Eve on Mount Vesuvius<br>\nEruption warnings are dubious<br>\nTogas loose, libations plenty<br>\nThe dance floor rumbles our favorite melody<br>\nWe brink dance to Old Hades' cry<br>\nWho beckons us to chase our high<br>\nHis cavelings squirm through cracks to join us<br>\nSweet smoke consumes our rowdy chorus<br>\nAnd so we played as spirits fused<br>\nUnified, with stamina imbued<br>\nWe\u2019ll party on \u2018til liquid rock arrives<br>\n\u2018Til ash and friends should come alive\u2026</p>\n<p>\u2026With might was dawn\u2019s great geyser freed<br>\nAt that, our wine-dark punch bowl emptied<br>\nThus could raise one goblet all<br>\nSo that our tombstones may stand tall.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">It\u2019s New Year\u2019s Eve on Mount Vesuvius</span><br>\n<span class=\"line\">Eruption warnings are dubious</span><br>\n<span class=\"line\">Togas loose, libations plenty</span><br>\n<span class=\"line\">The dance floor rumbles our favorite melody</span><br>\n<span class=\"line\">We brink dance to Old Hades' cry</span><br>\n<span class=\"line\">Who beckons us to chase our high</span><br>\n<span class=\"line\">His cavelings squirm through cracks to join us</span><br>\n<span class=\"line\">Sweet smoke consumes our rowdy chorus</span><br>\n<span class=\"line\">And so we played as spirits fused</span><br>\n<span class=\"line\">Unified, with stamina imbued</span><br>\n<span class=\"line\">We\u2019ll party on \u2018til liquid rock arrives</span><br>\n<span class=\"line\">\u2018Til ash and friends should come alive\u2026</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">\u2026With might was dawn\u2019s great geyser freed</span><br>\n<span class=\"line\">At that, our wine-dark punch bowl emptied</span><br>\n<span class=\"line\">Thus could raise one goblet all</span><br>\n<span class=\"line\">So that our tombstones may stand tall.</p></div>"
     },
     "cripples": {
         "rawpath": "./raw/untitled_aug2023.txt",
@@ -247,7 +247,7 @@
         "order_in_month": 1,
         "month": "Aug",
         "year": "2023",
-        "body": "<p>A giant in the shoes of a man<br>\nA god wrapped in a mortal\u2019s pelt<br>\nA beggar assuming a rich man\u2019s svelte<br>\nA one-trick pony who wows again.</p>\n<p>All those they rose under a cool twilight eve<br>\nWith friends and unknowns alike<br>\nA savory potluck among salty waves reaching<br>\nEver closer, \u2018neath the call of soft moonlight.</p>\n<p>But from the water\u2019s flesh, soggy cripples emerged<br>\nEach more grotesque than the last<br>\nUntil the bastard crew\u2019s final lizard<br>\nCrawled out, terrorizing the virgin grass.</p>\n<p>&nbsp;&nbsp;&nbsp;<em>\u00ab Oh ! How he howled like a pig<br>\n&nbsp;&nbsp;&nbsp;all mixed up in his own blood<br>\n&nbsp;&nbsp;&nbsp;and his own foul slime! \u00bb</em></p>\n<p>The giant, at this he slouched<br>\nThe god took years on his shoulders<br>\nThe beggar sat and wept, his appetite lost<br>\nThe lame pony spooked off, driven mad by the odours.</p>\n<p>Those hogs slabbered with haste, as if at the trough<br>\nSweet death had complied with their final demand<br>\nAll noble spirits on the shore had crumpled<br>\nFor heavy are the souls of the damned.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">A giant in the shoes of a man</span><br>\n<span class=\"line\">A god wrapped in a mortal\u2019s pelt</span><br>\n<span class=\"line\">A beggar assuming a rich man\u2019s svelte</span><br>\n<span class=\"line\">A one-trick pony who wows again.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">All those they rose under a cool twilight eve</span><br>\n<span class=\"line\">With friends and unknowns alike</span><br>\n<span class=\"line\">A savory potluck among salty waves reaching</span><br>\n<span class=\"line\">Ever closer, \u2018neath the call of soft moonlight.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">But from the water\u2019s flesh, soggy cripples emerged</span><br>\n<span class=\"line\">Each more grotesque than the last</span><br>\n<span class=\"line\">Until the bastard crew\u2019s final lizard</span><br>\n<span class=\"line\">Crawled out, terrorizing the virgin grass.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">&nbsp;&nbsp;&nbsp;<em>\u00ab Oh ! How he howled like a pig</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;all mixed up in his own blood</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;and his own foul slime! \u00bb</em></span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">The giant, at this he slouched</span><br>\n<span class=\"line\">The god took years on his shoulders</span><br>\n<span class=\"line\">The beggar sat and wept, his appetite lost</span><br>\n<span class=\"line\">The lame pony spooked off, driven mad by the odours.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Those hogs slabbered with haste, as if at the trough</span><br>\n<span class=\"line\">Sweet death had complied with their final demand</span><br>\n<span class=\"line\">All noble spirits on the shore had crumpled</span><br>\n<span class=\"line\">For heavy are the souls of the damned.</p></div>"
     },
     "sharptremor": {
         "rawpath": "./raw/untitled_jul2023.txt",
@@ -256,7 +256,7 @@
         "order_in_month": 1,
         "month": "Jul",
         "year": "2023",
-        "body": "<p>If ever a lonely night<br>\nShould you wake in a sharp tremor<br>\nFrom a passing specter\u2019s strike<br>\nWhose trailing vapors leak a sweet scent<br>\nThat only you and I could recognize\u2026</p>\n<p>\u00c9crase-le !<br>\nEt moi je vais faire pareil<br>\nIl n\u2019est rien qu\u2019un moustique qui vit de l\u2019obscurit\u00e9<br>\nUn porte-souvenir des nuits si chauds<br>\nEt ses piq\u00fbres gu\u00e9riront par l\u2019aube du lendemain</p>\n<p>M\u00eame si l\u2019odeur persiste toujours<br>\nCet odeur dont l\u2019existence le matin<br>\nr\u00e9v\u00e8le que ce r\u00eave<br>\nNe vivait pas que dans ta t\u00eate<br>\nNi que pendant la nuit</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">If ever a lonely night</span><br>\n<span class=\"line\">Should you wake in a sharp tremor</span><br>\n<span class=\"line\">From a passing specter\u2019s strike</span><br>\n<span class=\"line\">Whose trailing vapors leak a sweet scent</span><br>\n<span class=\"line\">That only you and I could recognize\u2026</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">\u00c9crase-le !</span><br>\n<span class=\"line\">Et moi je vais faire pareil</span><br>\n<span class=\"line\">Il n\u2019est rien qu\u2019un moustique qui vit de l\u2019obscurit\u00e9</span><br>\n<span class=\"line\">Un porte-souvenir des nuits si chauds</span><br>\n<span class=\"line\">Et ses piq\u00fbres gu\u00e9riront par l\u2019aube du lendemain</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">M\u00eame si l\u2019odeur persiste toujours</span><br>\n<span class=\"line\">Cet odeur dont l\u2019existence le matin</span><br>\n<span class=\"line\">r\u00e9v\u00e8le que ce r\u00eave</span><br>\n<span class=\"line\">Ne vivait pas que dans ta t\u00eate</span><br>\n<span class=\"line\">Ni que pendant la nuit</p></div>"
     },
     "untitled_night": {
         "rawpath": "./raw/untitled_night.txt",
@@ -265,7 +265,7 @@
         "order_in_month": 1,
         "month": "Feb",
         "year": "2023",
-        "body": "<p>Her animal lay wild,<br>\nhunched, and prowling in its cage<br>\nwith iron bars made brittle by<br>\nthe advance of our seduction.<br>\nThen one day she pounced and bared<br>\n\u2014 Breathing with her whole body like an organ.<br>\nAn affront to what I used to know as \u201cpassion\u201d.</p>\n<p>At once the wilderness subsided<br>\nand we both froze then melted.<br>\nShe stepped fully into me,<br>\nhesitation revealed to be<br>\nfootprints parting in the sand<br>\nas evening tide approaches.<br>\n\u2014 Call it a kind of destiny<br>\nwe\u2019d read between the waves.</p>\n<p>So I gave myself relentlessly,<br>\ninspired by that ferocity<br>\neager claws know well to be<br>\nlurking beneath the dirt.<br>\nAnd finally, when she drew blood,<br>\nevinced our last temptation<br>\n\u2014 We shared her gristle-ridden lair<br>\nfused together, cast in crimson.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Her animal lay wild,</span><br>\n<span class=\"line\">hunched, and prowling in its cage</span><br>\n<span class=\"line\">with iron bars made brittle by</span><br>\n<span class=\"line\">the advance of our seduction.</span><br>\n<span class=\"line\">Then one day she pounced and bared</span><br>\n<span class=\"line\">\u2014 Breathing with her whole body like an organ.</span><br>\n<span class=\"line\">An affront to what I used to know as \u201cpassion\u201d.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">At once the wilderness subsided</span><br>\n<span class=\"line\">and we both froze then melted.</span><br>\n<span class=\"line\">She stepped fully into me,</span><br>\n<span class=\"line\">hesitation revealed to be</span><br>\n<span class=\"line\">footprints parting in the sand</span><br>\n<span class=\"line\">as evening tide approaches.</span><br>\n<span class=\"line\">\u2014 Call it a kind of destiny</span><br>\n<span class=\"line\">we\u2019d read between the waves.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">So I gave myself relentlessly,</span><br>\n<span class=\"line\">inspired by that ferocity</span><br>\n<span class=\"line\">eager claws know well to be</span><br>\n<span class=\"line\">lurking beneath the dirt.</span><br>\n<span class=\"line\">And finally, when she drew blood,</span><br>\n<span class=\"line\">evinced our last temptation</span><br>\n<span class=\"line\">\u2014 We shared her gristle-ridden lair</span><br>\n<span class=\"line\">fused together, cast in crimson.</p></div>"
     },
     "crossing": {
         "rawpath": "./raw/crossing_your_path.txt",
@@ -274,7 +274,7 @@
         "order_in_month": 3,
         "month": "Jul",
         "year": "2023",
-        "body": "<p>I\u2019d like to cross your path from time to time<br>\nTo say \u2018Hello\u2019 and then \u2018Goodbye\u2019<br>\nAnd leave a little tune behind<br>\n\u2014 That once we knew by heart<br>\nNow worn with time \u2014<br>\nTo hum that song of ours.</p>\n<p>Oh, hum that song of ours<br>\nRemind me how it goes, I\u2019ve lost the rhyme.<br>\nWhile some day soon or far<br>\nYou\u2019ll sing a song I\u2019ve never heard before<br>\nIt\u2019ll drive me mad, convinced I know the words<br>\nAnd how it ends, from hook to final verse.</p>\n<p>But if that soon or far appears<br>\nTomorrow or Today<br>\nNot sure how read\u2019ly I\u2019d admit<br>\nYour verse with him struck something new<br>\nAnd better than the one we wrote<br>\nJust for me and you.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">I\u2019d like to cross your path from time to time</span><br>\n<span class=\"line\">To say \u2018Hello\u2019 and then \u2018Goodbye\u2019</span><br>\n<span class=\"line\">And leave a little tune behind</span><br>\n<span class=\"line\">\u2014 That once we knew by heart</span><br>\n<span class=\"line\">Now worn with time \u2014</span><br>\n<span class=\"line\">To hum that song of ours.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Oh, hum that song of ours</span><br>\n<span class=\"line\">Remind me how it goes, I\u2019ve lost the rhyme.</span><br>\n<span class=\"line\">While some day soon or far</span><br>\n<span class=\"line\">You\u2019ll sing a song I\u2019ve never heard before</span><br>\n<span class=\"line\">It\u2019ll drive me mad, convinced I know the words</span><br>\n<span class=\"line\">And how it ends, from hook to final verse.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">But if that soon or far appears</span><br>\n<span class=\"line\">Tomorrow or Today</span><br>\n<span class=\"line\">Not sure how read\u2019ly I\u2019d admit</span><br>\n<span class=\"line\">Your verse with him struck something new</span><br>\n<span class=\"line\">And better than the one we wrote</span><br>\n<span class=\"line\">Just for me and you.</p></div>"
     },
     "untitledpt2": {
         "rawpath": "./raw/untitled_pt_2.txt",
@@ -283,7 +283,7 @@
         "order_in_month": 2,
         "month": "Jul",
         "year": "2023",
-        "body": "<p>and the end it was so brief half an hour in the park and we didnt even break open the pulco and sparkling water</p>\n<p>she was calm as was i there was maybe a single moment where a tear was held back</p>\n<p>oh isnt it complicated to close the book of belle hectic mornings and pale razorburnt legs out in the world lovely lovely and probably crying brutally alone in her bed as i write this</p>\n<p>sleep will come easier as i read it back each night knowing with each recitation ill fade further onto her horizon.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">and the end it was so brief half an hour in the park and we didnt even break open the pulco and sparkling water</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">she was calm as was i there was maybe a single moment where a tear was held back</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">oh isnt it complicated to close the book of belle hectic mornings and pale razorburnt legs out in the world lovely lovely and probably crying brutally alone in her bed as i write this</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">sleep will come easier as i read it back each night knowing with each recitation ill fade further onto her horizon.</p></div>"
     },
     "whalebone": {
         "rawpath": "./raw/whalebone_branches.txt",
@@ -292,7 +292,7 @@
         "order_in_month": 1,
         "month": "Jun",
         "year": "2023",
-        "body": "<p>Whalebone branches<br>\nthey bellow and spill<br>\nleaves torn from their bindings<br>\nonto all the stand-buyers<br>\nin the widening gyre.</p>\n<p>Those urchins from Ur<br>\nwith their babbling burns<br>\neach scar submits a solution<br>\n\u201cNot a 5-over-1, it\u2019s just so overdone.\u201d<br>\nA sober flight takes thought<br>\nwith a rabid Star Fox<br>\nwhose atavistic impulses<br>\nbarrel-roll to steal the old<br>\nfrom the Niagara Cafe.</p>\n<p>And maybe in its depths<br>\nhe\u2019ll ask directions<br>\nfrom the Maidens of Mist.<br>\nThey\u2019ll turn tablets to clay<br>\ndeclare \u201cLa vie est une scie\u201d<br>\nbuy a round for all<br>\nthe hypocrites of twenty twenty-three.</p>\n<p>Silver tongues will take a lick,<br>\nrestore our faith in Moby Dick,<br>\nfind ourselves like that Tarkovsky flick,<br>\ntill no warm-blooded carcass persists.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Whalebone branches</span><br>\n<span class=\"line\">they bellow and spill</span><br>\n<span class=\"line\">leaves torn from their bindings</span><br>\n<span class=\"line\">onto all the stand-buyers</span><br>\n<span class=\"line\">in the widening gyre.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Those urchins from Ur</span><br>\n<span class=\"line\">with their babbling burns</span><br>\n<span class=\"line\">each scar submits a solution</span><br>\n<span class=\"line\">\u201cNot a 5-over-1, it\u2019s just so overdone.\u201d</span><br>\n<span class=\"line\">A sober flight takes thought</span><br>\n<span class=\"line\">with a rabid Star Fox</span><br>\n<span class=\"line\">whose atavistic impulses</span><br>\n<span class=\"line\">barrel-roll to steal the old</span><br>\n<span class=\"line\">from the Niagara Cafe.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">And maybe in its depths</span><br>\n<span class=\"line\">he\u2019ll ask directions</span><br>\n<span class=\"line\">from the Maidens of Mist.</span><br>\n<span class=\"line\">They\u2019ll turn tablets to clay</span><br>\n<span class=\"line\">declare \u201cLa vie est une scie\u201d</span><br>\n<span class=\"line\">buy a round for all</span><br>\n<span class=\"line\">the hypocrites of twenty twenty-three.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Silver tongues will take a lick,</span><br>\n<span class=\"line\">restore our faith in Moby Dick,</span><br>\n<span class=\"line\">find ourselves like that Tarkovsky flick,</span><br>\n<span class=\"line\">till no warm-blooded carcass persists.</p></div>"
     },
     "lapins": {
         "rawpath": "./raw/untitled_may2023.txt",
@@ -301,7 +301,7 @@
         "order_in_month": 1,
         "month": "May",
         "year": "2023",
-        "body": "<p>Accro \u00e0 la banalit\u00e9<br>\nA la recherche d\u2019une bi\u00e8re<br>\nTellement de temps bu<br>\nSans rien faire<br>\nChasseurs des pique-niques<br>\nCuites au soleil<br>\nBrillants sommes nous<br>\nLes lapins d\u2019\u00e9t\u00e9</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Accro \u00e0 la banalit\u00e9</span><br>\n<span class=\"line\">A la recherche d\u2019une bi\u00e8re</span><br>\n<span class=\"line\">Tellement de temps bu</span><br>\n<span class=\"line\">Sans rien faire</span><br>\n<span class=\"line\">Chasseurs des pique-niques</span><br>\n<span class=\"line\">Cuites au soleil</span><br>\n<span class=\"line\">Brillants sommes nous</span><br>\n<span class=\"line\">Les lapins d\u2019\u00e9t\u00e9</p></div>"
     },
     "oozing": {
         "rawpath": "./raw/those_oozing_stacks_grow.txt",
@@ -310,7 +310,7 @@
         "order_in_month": 1,
         "month": "Apr",
         "year": "2023",
-        "body": "<p>I want to tell of carcasses stacked tall<br>\nOf honey dried out at crusty summer\u2019s fall<br>\nThat bridge appeared and beckoned passers-by<br>\nTo give the yonder ravine\u2019s edge a try.</p>\n<p>So you and her, cutting through the weeds \u2014<br>\nTrudged, creaking, above the misty deeps<br>\nIn search of fire to warm your tender skin<br>\nor adventure\u2019s strike to bake you from within.<br>\nBut an hour\u2019s passed and still ye edge along<br>\nuncertain heartbeats pound a booming song.</p>\n<p>All while we howl and screech out for you<br>\n\u201cOh lovelies, you\u2019ve never seen splendors more true<br>\nthan that which awaits all who cross the border<br>\nand abides by our master\u2019s all-knowing order\u201d<br>\nPut candidly, just once, for the hatchlings to our realm<br>\nTake a dive, be immersed, as a feather to inkwell.</p>\n<p>You smirked and wrote verse, your spirits were high<br>\nEager for the taverns where they\u2019ll chant your hero\u2019s cry<br>\nAnd so ye arrive, dock on our shores<br>\nwaves hit with sting, mixing afters and befores<br>\nDrowning on the cliff, you hold each other tight<br>\nSwords drawn, side by side, ready for the fight\u2026</p>\n<p>\u2026Excuse me, dear listener,<br>\nI\u2019ll divulge nothing more.<br>\nOur master<br>\nwould rather<br>\ncast shadows<br>\nthan lore.</p>\n<p>I promised sick tales of flesh piled high<br>\nbut suffice it to know<br>\nthose oozing stacks grow<br>\nwith each ripe passerby.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">I want to tell of carcasses stacked tall</span><br>\n<span class=\"line\">Of honey dried out at crusty summer\u2019s fall</span><br>\n<span class=\"line\">That bridge appeared and beckoned passers-by</span><br>\n<span class=\"line\">To give the yonder ravine\u2019s edge a try.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">So you and her, cutting through the weeds \u2014</span><br>\n<span class=\"line\">Trudged, creaking, above the misty deeps</span><br>\n<span class=\"line\">In search of fire to warm your tender skin</span><br>\n<span class=\"line\">or adventure\u2019s strike to bake you from within.</span><br>\n<span class=\"line\">But an hour\u2019s passed and still ye edge along</span><br>\n<span class=\"line\">uncertain heartbeats pound a booming song.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">All while we howl and screech out for you</span><br>\n<span class=\"line\">\u201cOh lovelies, you\u2019ve never seen splendors more true</span><br>\n<span class=\"line\">than that which awaits all who cross the border</span><br>\n<span class=\"line\">and abides by our master\u2019s all-knowing order\u201d</span><br>\n<span class=\"line\">Put candidly, just once, for the hatchlings to our realm</span><br>\n<span class=\"line\">Take a dive, be immersed, as a feather to inkwell.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">You smirked and wrote verse, your spirits were high</span><br>\n<span class=\"line\">Eager for the taverns where they\u2019ll chant your hero\u2019s cry</span><br>\n<span class=\"line\">And so ye arrive, dock on our shores</span><br>\n<span class=\"line\">waves hit with sting, mixing afters and befores</span><br>\n<span class=\"line\">Drowning on the cliff, you hold each other tight</span><br>\n<span class=\"line\">Swords drawn, side by side, ready for the fight\u2026</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">\u2026Excuse me, dear listener,</span><br>\n<span class=\"line\">I\u2019ll divulge nothing more.</span><br>\n<span class=\"line\">Our master</span><br>\n<span class=\"line\">would rather</span><br>\n<span class=\"line\">cast shadows</span><br>\n<span class=\"line\">than lore.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">I promised sick tales of flesh piled high</span><br>\n<span class=\"line\">but suffice it to know</span><br>\n<span class=\"line\">those oozing stacks grow</span><br>\n<span class=\"line\">with each ripe passerby.</p></div>"
     },
     "bruges": {
         "rawpath": "./raw/bruges_pluie_blues.txt",
@@ -319,7 +319,7 @@
         "order_in_month": 1,
         "month": "Mar",
         "year": "2023",
-        "body": "<p>Il plu dans cette vielle ville<br>\nPendant ces vacances d\u00e9biles<br>\nO\u00f9 j\u2019accompagne mes parents<br>\nQui connaissent Bruges d\u2019un film</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Il plu dans cette vielle ville</span><br>\n<span class=\"line\">Pendant ces vacances d\u00e9biles</span><br>\n<span class=\"line\">O\u00f9 j\u2019accompagne mes parents</span><br>\n<span class=\"line\">Qui connaissent Bruges d\u2019un film</p></div>"
     },
     "kansas_4": {
         "rawpath": "./raw/kansas_sky.txt",
@@ -328,7 +328,7 @@
         "order_in_month": 1,
         "month": "Jul",
         "year": "2022",
-        "body": "<p>This morning I watched a cloud fall to earth.<br>\nOnce suspended in the Kansas sky<br>\n&nbsp;&nbsp;&nbsp;now turned to vapor in my eye.<br>\nThe eye which held a twinkle last night<br>\nNot from a star, but a lightning strike.<br>\nAnd here I gaze at Julie next to me<br>\n&nbsp;&nbsp;&nbsp;She takes my cloud and twinkle and goes to sleep</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">This morning I watched a cloud fall to earth.</span><br>\n<span class=\"line\">Once suspended in the Kansas sky</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;now turned to vapor in my eye.</span><br>\n<span class=\"line\">The eye which held a twinkle last night</span><br>\n<span class=\"line\">Not from a star, but a lightning strike.</span><br>\n<span class=\"line\">And here I gaze at Julie next to me</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;She takes my cloud and twinkle and goes to sleep</p></div>"
     },
     "slippery_1": {
         "rawpath": "./raw/like_jackals_lips_slippery.txt",
@@ -337,7 +337,7 @@
         "order_in_month": 1,
         "month": "May",
         "year": "2022",
-        "body": "<p>Jackal toes and bloody lips<br>\nOn the wall trickles and drips<br>\nSlips then slows to a crawl<br>\nLet it all congeal.</p>\n<p>The rabbit\u2019s jellied members<br>\nCousins found in burnt-up embers<br>\nWhether or not they come around<br>\nThat hound still shrieks.</p>\n<p>Festered paste birthed in mildew<br>\nRancid stir of pustules brew<br>\nWe the few who slurp that liqueur<br>\nWhile her dusty lips moan.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Jackal toes and bloody lips</span><br>\n<span class=\"line\">On the wall trickles and drips</span><br>\n<span class=\"line\">Slips then slows to a crawl</span><br>\n<span class=\"line\">Let it all congeal.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">The rabbit\u2019s jellied members</span><br>\n<span class=\"line\">Cousins found in burnt-up embers</span><br>\n<span class=\"line\">Whether or not they come around</span><br>\n<span class=\"line\">That hound still shrieks.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Festered paste birthed in mildew</span><br>\n<span class=\"line\">Rancid stir of pustules brew</span><br>\n<span class=\"line\">We the few who slurp that liqueur</span><br>\n<span class=\"line\">While her dusty lips moan.</p></div>"
     },
     "fierce": {
         "rawpath": "./raw/fierce_creature.txt",
@@ -346,7 +346,7 @@
         "order_in_month": 1,
         "month": "Jan",
         "year": "2020",
-        "body": "<p>Fierce creature.<br>\nHer warm-armed currents<br>\nRace beneath hazy burgundy skies.<br>\nPulsing violent,<br>\nSpewing caustic, emptying<br>\nInto basins which steam future desire,<br>\nFilled to quench days spent apart.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Fierce creature.</span><br>\n<span class=\"line\">Her warm-armed currents</span><br>\n<span class=\"line\">Race beneath hazy burgundy skies.</span><br>\n<span class=\"line\">Pulsing violent,</span><br>\n<span class=\"line\">Spewing caustic, emptying</span><br>\n<span class=\"line\">Into basins which steam future desire,</span><br>\n<span class=\"line\">Filled to quench days spent apart.</p></div>"
     },
     "gr10": {
         "title": "Ode (with love) to the gr10",
@@ -355,7 +355,7 @@
         "year": "2024",
         "rawpath": "./raw/ode_to_the_gr10.txt",
         "order_in_month": 1,
-        "body": "<p>All 'round the mountains, the walkers wake.<br>\nBeneath the drizzle, their coffees bake.<br>\nHigh up where shadows drift on clouds' wake,<br>\nwhole legions eager to this quest undertake.</p>\n<p>The stone remains stoic, as always, it seems.<br>\nEven now when with all of these leeches it teems.<br>\nBundles in coats beyond Joseph's dreams,<br>\neven the pack's cost counted in reams</p>\n<p>of fabric exceeds all that for a king.<br>\nIf counting the contents, add that of his offspring.<br>\nHannibal's slaves would've killed for such things!<br>\nOr herders of sheep on this trail they were blazing.</p>\n<p>No planting or sowing, they're just passers-by,<br>\nequipped with aluminum sticks they fly.<br>\nOh! How the Catalan cattle bells cry<br>\nat wannabe Magellans and Sisyphi.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">All 'round the mountains, the walkers wake.</span><br>\n<span class=\"line\">Beneath the drizzle, their coffees bake.</span><br>\n<span class=\"line\">High up where shadows drift on clouds' wake,</span><br>\n<span class=\"line\">whole legions eager to this quest undertake.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">The stone remains stoic, as always, it seems.</span><br>\n<span class=\"line\">Even now when with all of these leeches it teems.</span><br>\n<span class=\"line\">Bundles in coats beyond Joseph's dreams,</span><br>\n<span class=\"line\">even the pack's cost counted in reams</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">of fabric exceeds all that for a king.</span><br>\n<span class=\"line\">If counting the contents, add that of his offspring.</span><br>\n<span class=\"line\">Hannibal's slaves would've killed for such things!</span><br>\n<span class=\"line\">Or herders of sheep on this trail they were blazing.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">No planting or sowing, they're just passers-by,</span><br>\n<span class=\"line\">equipped with aluminum sticks they fly.</span><br>\n<span class=\"line\">Oh! How the Catalan cattle bells cry</span><br>\n<span class=\"line\">at wannabe Magellans and Sisyphi.</p></div>"
     },
     "lake": {
         "title": "The lake",
@@ -364,6 +364,6 @@
         "year": "2024",
         "rawpath": "./raw/the_lake.txt",
         "order_in_month": 1,
-        "body": "<p>Dusk called you on a quest for your reflection.<br>\nComment dire le fait de \"se remettre en question\" ?<br>\nLounging at the lake brim,<br>\nthe water showed an unfamiliar apparition.</p>\n<p>You looked, in search of a placid reassurance.<br>\nHe stared back with a rippling insolence,<br>\ngripping in its wickedness,<br>\nquick to erode the fangs of your innocence.</p>\n<p>So you're swimming in the mire of your contrapart<br>\nwith anguish shining cleaner than its grime depart.<br>\nDawn wakes you with a start,<br>\nfor the spirit of the lake has replaced your heart.</p>"
+        "body": "<div class=\"poem\"><p><span class=\"line\">Dusk called you on a quest for your reflection.</span><br>\n<span class=\"line\">Comment dire le fait de \"se remettre en question\"?</span><br>\n<span class=\"line\">Lounging at the lake brim,</span><br>\n<span class=\"line\">the water showed an unfamiliar apparition.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">You looked, in search of a placid reassurance.</span><br>\n<span class=\"line\">He stared back with a rippling insolence,</span><br>\n<span class=\"line\">gripping in its wickedness,</span><br>\n<span class=\"line\">quick to erode the fangs of your innocence.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">So you're swimming in the mire of your contrapart</span><br>\n<span class=\"line\">with anguish shining cleaner than its grime depart.</span><br>\n<span class=\"line\">Dawn wakes you with a start,</span><br>\n<span class=\"line\">for the spirit of the lake has replaced your heart.</p></div>"
     }
 }
