@@ -10,14 +10,25 @@ photo_blocks = []
 
 
 
-with open("photos.json", "r") as fw:
-    photos = json.load(fw)
-    for key,photo in photos.items():
-        # ignore albums for now
-        if key == "is_album" or  ("is_album" in photo and photo["is_album"] == True):
-            continue
+def get_album_block(album, photo_blocks):
+    pre = """<a href="<?="/photos/raw/" . $p->{0}->name;?>">
+    <figure class="image">""".format(album)
+    
+    images_elem = "\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)])
+    #for image in keys:
+    #    images_elem += """<img src=<?="/photos/lowres/" . $p->{0}->name;?>>""".format(image)
 
-        block = """<a href="<?="/photos/raw/" . $p->{0}->name;?>">
+    post = """<figcaption>
+<?=$p->{0}->$lang;?> ~ <?=$p->{0}->year;?>
+    </figcaption>
+    </figure>
+</a>
+""".format(album)
+
+    return pre + images_elem + post
+
+def get_photo_block(key):
+    return """<a href="<?="/photos/raw/" . $p->{0}->name;?>">
     <figure class="image">
     <img src=<?="/photos/lowres/" . $p->{0}->name;?>>
     <figcaption>
@@ -26,8 +37,24 @@ with open("photos.json", "r") as fw:
     </figure>
 </a>
 """.format(key)
-        
-        photo_blocks.append((block, photo))
+
+with open("photos.json", "r") as fw:
+    photos = json.load(fw)
+    for key,photo in photos.items():
+        # ignore albums for now
+        if key == "is_album":
+            continue
+        if "is_album" in photo and photo["is_album"] == True:
+            album_blocks = []
+            for subkey, subphoto in photo.items():
+                block = get_photo_block(subkey)
+                album_blocks.append(block)
+            
+            block = get_album_block(key, album_blocks)
+            photo_blocks.append((block, photo))
+        else:
+            block = get_photo_block(key)
+            photo_blocks.append((block, photo))
 
 print("\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
 

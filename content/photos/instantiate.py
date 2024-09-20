@@ -18,7 +18,7 @@ if len(sys.argv) > 1 and sys.argv[1]:
     else:
         en_trad,fr_trad = sys.argv[1].split(r"\r\n")[:2]
 
-def instantiate_dir(photos, basepath, is_album = False):
+def instantiate_dir(photos, basepath, name = "", is_album = False):
     count = 1
     for file in os.listdir(basepath):
         if file == '__empty__.txt':
@@ -42,7 +42,7 @@ def instantiate_dir(photos, basepath, is_album = False):
                 count = order_in_year 
 
         d = {
-            "name": file,
+            "name": name + file,
             "month": str(datetime.datetime.now().strftime("%B"))[:3],
             "year": datetime.datetime.now().year,
             "order_in_year": count,
@@ -55,8 +55,11 @@ def instantiate_dir(photos, basepath, is_album = False):
         photos[nickname] = d
         count += 1
         print("{0} photo keys present".format(len(photos.keys())))
-
-        os.rename(basepath + "/" + file, basepath.replace("/new/","/raw/") + file)
+        
+        directory = basepath.replace("/new/","/raw/") + "/"
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+        os.rename(basepath + "/" + file, directory + file)
 
     photos["is_album"] = is_album
     return photos
@@ -76,7 +79,7 @@ with open("photos.json", "r+") as fw:
     photos = instantiate_dir(photos, basepath)
 
     for name,path in albums:
-        photos[name] = instantiate_dir({}, path, True)
+        photos[name] = instantiate_dir({}, path, name + "/", True)
         
     
     fw.seek(0)
