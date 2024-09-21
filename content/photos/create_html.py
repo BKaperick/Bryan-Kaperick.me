@@ -44,20 +44,21 @@ with open("photos.json", "r") as fw:
             continue
         if "is_album" in photo and photo["is_album"] == True:
             album_blocks = []
-            for subkey, subphoto in photo.items():
-                if subkey == "is_album":
-                    continue
+            for subdict in photo["photos"]:
+                subkey, subphoto = list(subdict.items())[0]
+                # if subkey == "is_album":
+                #     continue
                 block = get_photo_block(subkey)
                 album_blocks.append((block, subphoto))
             block = get_album_block(key, album_blocks)
             photo_blocks.append((block, photo))
-            print(block)
+            #print(block)
         else:
             block = get_photo_block(key)
             photo_blocks.append((block, photo))
         
 
-#print("\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
+print("\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
 
 
     

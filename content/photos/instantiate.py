@@ -80,14 +80,14 @@ def instantiate_album(photos, basepath, name):
             continue
         
         nickname, d = instantiate_image(photos.keys(), file, count)
-
-        album_d["photos"].append({nickname: d})
+        photos[nickname] = d
+        album_d["photos"].append(nickname)
         move_photo_file(basepath, file)
         count += 1
     return album_d
 
-    print("{0} photo keys present".format(len(photos.keys())))
-    return photos
+    #print("{0} photo keys present".format(len(photos.keys())))
+    #return photos
     
 def instantiate_dir(photos, basepath, name = ""):
     count = set_initial_count(photos)
