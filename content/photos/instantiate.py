@@ -55,7 +55,9 @@ def instantiate_image(photo_keys, file, count):
     return nickname, d 
 
 def move_photo_file(basepath, file):
-    directory = basepath.replace("/new/","/raw/") + "/"
+    directory = "./raw/"
+    #directory = basepath.replace("/new/","/raw/")
+    #directory = basepath.replace("/new/","/raw/") + "/"
     if not os.path.exists(directory):
         os.makedirs(directory)
     os.rename(basepath + "/" + file, directory + file)
@@ -123,7 +125,7 @@ with open("photos.json", "r+") as fw:
     photos = instantiate_dir(photos, basepath)
 
     for name,path in albums:
-        photos[name] = instantiate_album(photos, path, name + "/")
+        photos[name] = instantiate_album(photos, path, name)
         
     
     fw.seek(0)
