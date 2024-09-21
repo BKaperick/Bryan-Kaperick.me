@@ -31,7 +31,14 @@ def set_initial_count(photos):
             count = order_in_year 
     return count
 
-def instantiate_image(photos, file, count):
+def get_nickname(photo_keys, file):
+    name_words = [clean_key(w) for w in file.lower().replace(".txt", "").replace(".jpeg", "").replace(".jpg", "").split("_")]
+    longest_word = max(name_words, key=len)
+    nickname = longest_word + '_' + str(count) if longest_word in photo_keys else longest_word
+    return nickname
+
+
+def instantiate_image(photo_keys, file, count):
     print("file: " + file)
 
     d = {
@@ -42,10 +49,9 @@ def instantiate_image(photos, file, count):
         "en": en_trad,
         "fr": fr_trad,
         "people": ["bryan"],
-        "is_album" = False
+        "is_album": False
         }
-
-    nickname = longest_word + '_' + str(count) if longest_word in photos.keys() else longest_word
+    nickname = get_nickname(photo_keys, file)
     return nickname, d 
 
 def move_photo_file(basepath, file):
@@ -54,18 +60,18 @@ def move_photo_file(basepath, file):
         os.makedirs(directory)
     os.rename(basepath + "/" + file, directory + file)
 
-def instantiate_album(basepath, name):
-    d = {
+def instantiate_album(photos, basepath, name):
+    count = set_initial_count(photos)
+    album_d = {
         "name": name,
         "month": str(datetime.datetime.now().strftime("%B"))[:3],
         "year": datetime.datetime.now().year,
         "order_in_year": count,
         "en": en_trad,
         "fr": fr_trad,
-        "is_album" = True,
+        "is_album": True,
         "photos": []
         }
-    count = 1
     for file in os.listdir(basepath):
         
         # skip directories and __empty__ placeholder file
@@ -73,17 +79,18 @@ def instantiate_album(basepath, name):
         if (file == '__empty__.txt') or os.path.isdir(path):
             continue
         
-        nickname, d = instantiate_image(photos, file, count)
+        nickname, d = instantiate_image(photos.keys(), file, count)
 
-        photos.append({nickname: d})
+        album_d["photos"].append({nickname: d})
         move_photo_file(basepath, file)
         count += 1
+    return album_d
 
     print("{0} photo keys present".format(len(photos.keys())))
     return photos
     
 def instantiate_dir(photos, basepath, name = ""):
-    count = 1
+    count = set_initial_count(photos)
     for file in os.listdir(basepath):
         
         # skip directories and __empty__ placeholder file
@@ -91,7 +98,7 @@ def instantiate_dir(photos, basepath, name = ""):
         if (file == '__empty__.txt') or os.path.isdir(path):
             continue
         
-        nickname, d = instantiate_image(photos, file, count)
+        nickname, d = instantiate_image(photos.keys(), file, count)
 
         photos[nickname] = d
         move_photo_file(basepath, file)
@@ -116,7 +123,7 @@ with open("photos.json", "r+") as fw:
     photos = instantiate_dir(photos, basepath)
 
     for name,path in albums:
-        photos[name] = instantiate_album(path, name + "/")
+        photos[name] = instantiate_album(photos, path, name + "/")
         
     
     fw.seek(0)
