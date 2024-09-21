@@ -38,6 +38,11 @@ def get_photo_block(key):
 
 with open("photos.json", "r") as fw:
     photos = json.load(fw)
+    album_photos = []
+    for key,photo in photos.items():
+        # ignore albums for now
+        if "is_album" in photo and photo["is_album"]:
+            album_photos += photo["photos"]
     for key,photo in photos.items():
         # ignore albums for now
         if key == "is_album":
@@ -53,7 +58,7 @@ with open("photos.json", "r") as fw:
             block = get_album_block(key, album_blocks)
             photo_blocks.append((block, photo))
             #print(block)
-        else:
+        elif key not in album_photos:
             block = get_photo_block(key)
             photo_blocks.append((block, photo))
         
