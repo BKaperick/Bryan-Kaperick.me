@@ -134,6 +134,61 @@ class="active" aria-current="page">Photos</a></li>
 </header>
 <div class="content">
 <p>Some photos of me and my friends, in reverse chronological order.  Click on the photos to see their full-resolution version.</p>
+
+<style>
+.row {
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.albumimage {
+    width: 300px;
+    height: auto;
+}
+.album {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.column {
+    width: 300px;
+    display: flex;
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+</style>
+
+<div class="album">
+    <a href="http://localhost:8000/en/photos/GR10.html">
+    <figure>
+        <div class="row">
+          <div class="column">
+
+    <img class="albumimage" src="../../photos/lowres/GR10100_0406_openroad.JPG">
+
+    <img class="albumimage" src="../../photos/lowres/GR10100_0318_majesticcow.JPG">
+
+    </div>
+    <div class="column">
+    <img class="albumimage" src="../../photos/lowres/GR10100_0391_ontop.JPG">
+
+    <img class="albumimage" src="../../photos/lowres/GR10100_0185_greatlighting.JPG">
+
+    
+        </div>    
+    </div>
+</div>
+    <figcaption>
+Through-hike in the Pyrenees on the GR10 trail ~ 2024    </figcaption>
+    </figure>
+</a>
+
+
 <a href="../../photos/raw/labraderie.jpeg">
     <figure class="image">
     <img src="../../photos/lowres/labraderie.jpeg">
@@ -699,7 +754,7 @@ Me and Bill and a dog on a mountain ~ 2017    </figcaption>
 </body>
 </html>
 <footer class="footer layout__footer">
-<p><span>© Bryan Kaperick&#39;s Website</span> <span style="color:grey"> -- Last updated  2024-09-19 17:02:09
+<p><span>© Bryan Kaperick&#39;s Website</span> <span style="color:grey"> -- Last updated  2024-09-21 15:19:58
 </span></p>
 
 

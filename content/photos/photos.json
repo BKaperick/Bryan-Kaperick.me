@@ -786,5 +786,68 @@
             "sabia",
             "martin"
         ]
+    },
+    "greatlighting": {
+        "name": "GR10100_0185_greatlighting.JPG",
+        "month": "Sep",
+        "year": 2024,
+        "order_in_year": 22,
+        "en": "Through-hike in the Pyrenees on the GR10 trail",
+        "fr": "Trekking dans les Pyr\u00e9n\u00e9es sur le GR10",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "ontop": {
+        "name": "GR10100_0391_ontop.JPG",
+        "month": "Sep",
+        "year": 2024,
+        "order_in_year": 23,
+        "en": "Through-hike in the Pyrenees on the GR10 trail",
+        "fr": "Trekking dans les Pyr\u00e9n\u00e9es sur le GR10",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "majesticcow": {
+        "name": "GR10100_0318_majesticcow.JPG",
+        "month": "Sep",
+        "year": 2024,
+        "order_in_year": 24,
+        "en": "Through-hike in the Pyrenees on the GR10 trail",
+        "fr": "Trekking dans les Pyr\u00e9n\u00e9es sur le GR10",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "openroad": {
+        "name": "GR10100_0406_openroad.JPG",
+        "month": "Sep",
+        "year": 2024,
+        "order_in_year": 25,
+        "en": "Through-hike in the Pyrenees on the GR10 trail",
+        "fr": "Trekking dans les Pyr\u00e9n\u00e9es sur le GR10",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "GR10": {
+        "name": "GR10",
+        "month": "Sep",
+        "year": 2024,
+        "order_in_year": 22,
+        "en": "Through-hike in the Pyrenees on the GR10 trail",
+        "fr": "Trekking dans les Pyr\u00e9n\u00e9es sur le GR10",
+        "is_album": true,
+        "photos": [
+            "greatlighting",
+            "ontop",
+            "majesticcow",
+            "openroad"
+        ]
     }
 }
