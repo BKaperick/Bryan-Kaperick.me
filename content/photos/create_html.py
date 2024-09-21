@@ -51,12 +51,13 @@ with open("photos.json", "r") as fw:
                 album_blocks.append((block, subphoto))
             block = get_album_block(key, album_blocks)
             photo_blocks.append((block, photo))
+            print(block)
         else:
             block = get_photo_block(key)
             photo_blocks.append((block, photo))
         
 
-print("\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
+#print("\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
 
 
     
