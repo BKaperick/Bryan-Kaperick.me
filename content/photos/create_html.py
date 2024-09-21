@@ -44,8 +44,8 @@ with open("photos.json", "r") as fw:
             continue
         if "is_album" in photo and photo["is_album"] == True:
             album_blocks = []
-            for subdict in photo["photos"]:
-                subkey, subphoto = list(subdict.items())[0]
+            for subkey in photo["photos"]:
+                subphoto = photos[subkey]
                 # if subkey == "is_album":
                 #     continue
                 block = get_photo_block(subkey)

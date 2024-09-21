@@ -42,7 +42,7 @@ def instantiate_image(photo_keys, file, count):
     print("file: " + file)
 
     d = {
-        "name": name + file,
+        "name": file,
         "month": str(datetime.datetime.now().strftime("%B"))[:3],
         "year": datetime.datetime.now().year,
         "order_in_year": count,
