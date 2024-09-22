@@ -134,8 +134,63 @@ class="active" aria-current="page">Photos</a></li>
 </header>
 <div class="content">
 <p>Some photos of me and my friends, in reverse chronological order.  Click on the photos to see their full-resolution version.</p>
+
+<style>
+
+/* Create two equal columns that sits next to each other */
+.albumimage {
+    width: auto;
+    height: auto;
+}
+.album {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.row {
+    display: flex;
+    flex: 50%;
+}
+.column {
+  padding: 1em;
+}
+</style>
+
+<div class="album">
+    <figure>
+<div class="row">
+<div class="column"> 
+<a href="../../photos/raw/GR10100_0406_openroad.JPG">
+<img class="albumimage" src="../../photos/lowres/GR10100_0406_openroad.JPG">
+</a>
+ </div>
+<div class="column"> 
+<a href="../../photos/raw/GR10100_0318_majesticcow.JPG">
+<img class="albumimage" src="../../photos/lowres/GR10100_0318_majesticcow.JPG">
+</a>
+ </div>
+</div>
+<div class="row">
+<div class="column"> 
+<a href="../../photos/raw/GR10100_0391_ontop.JPG">
+<img class="albumimage" src="../../photos/lowres/GR10100_0391_ontop.JPG">
+</a>
+ </div>
+<div class="column"> 
+<a href="../../photos/raw/GR10100_0185_greatlighting.JPG">
+<img class="albumimage" src="../../photos/lowres/GR10100_0185_greatlighting.JPG">
+</a>
+ </div>
+</div>
+
+    <figcaption>
+Through-hike in the Pyrenees on the GR10 trail ~ 2024    </figcaption>
+    </figure>
+</div>
+
+
 <a href="../../photos/raw/labraderie.jpeg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/labraderie.jpeg">
     <figcaption>
 A bunch of us at La Braderie in Lille ~ 2024    </figcaption>
@@ -144,7 +199,7 @@ A bunch of us at La Braderie in Lille ~ 2024    </figcaption>
 
 
 <a href="../../photos/raw/IMG-20240820-WA0010.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/IMG-20240820-WA0010.jpg">
     <figcaption>
 Adrien and me at Cours Julien in Marseille ~ 2024    </figcaption>
@@ -153,7 +208,7 @@ Adrien and me at Cours Julien in Marseille ~ 2024    </figcaption>
 
 
 <a href="../../photos/raw/tyler_sunny_quentin_new_apt.JPG">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/tyler_sunny_quentin_new_apt.JPG">
     <figcaption>
 Tyler, Sunny, Me, and Quentin in a new apartment with a new camera  ~ 2024    </figcaption>
@@ -162,7 +217,7 @@ Tyler, Sunny, Me, and Quentin in a new apartment with a new camera  ~ 2024    </
 
 
 <a href="../../photos/raw/biketrip.jpeg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/biketrip.jpeg">
     <figcaption>
 Another pic from our weekend bike trip ~ 2024    </figcaption>
@@ -171,7 +226,7 @@ Another pic from our weekend bike trip ~ 2024    </figcaption>
 
 
 <a href="../../photos/raw/bryan-tyler-rishik-biking.jpeg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/bryan-tyler-rishik-biking.jpeg">
     <figcaption>
 Me, Tyler, and Rishik biking in the Scarpe-Escaut Park ~ 2024    </figcaption>
@@ -180,7 +235,7 @@ Me, Tyler, and Rishik biking in the Scarpe-Escaut Park ~ 2024    </figcaption>
 
 
 <a href="../../photos/raw/PXL_20240810_102847355.MP.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/PXL_20240810_102847355.MP.jpg">
     <figcaption>
 Me hiking in the Ardennes forest ~ 2024    </figcaption>
@@ -189,7 +244,7 @@ Me hiking in the Ardennes forest ~ 2024    </figcaption>
 
 
 <a href="../../photos/raw/the-boyz.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/the-boyz.jpg">
     <figcaption>
 Out with The Boys ~ 2024    </figcaption>
@@ -198,7 +253,7 @@ Out with The Boys ~ 2024    </figcaption>
 
 
 <a href="../../photos/raw/avi-rishik-moi-amsterdam.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/avi-rishik-moi-amsterdam.jpg">
     <figcaption>
 Aviraj, Rishik, and Me in Amsterdam ~ 2024    </figcaption>
@@ -207,7 +262,7 @@ Aviraj, Rishik, and Me in Amsterdam ~ 2024    </figcaption>
 
 
 <a href="../../photos/raw/tylerbday2024.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/tylerbday2024.jpg">
     <figcaption>
 Tyler&rsquo;s 29th birthday with Me, Tyler, Rishik, and Sunny ~ 2024    </figcaption>
@@ -216,7 +271,7 @@ Tyler&rsquo;s 29th birthday with Me, Tyler, Rishik, and Sunny ~ 2024    </figcap
 
 
 <a href="../../photos/raw/tim-bryan-horses.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/tim-bryan-horses.jpg">
     <figcaption>
 Me and Tim at a horse farm in Basque country ~ 2024    </figcaption>
@@ -225,7 +280,7 @@ Me and Tim at a horse farm in Basque country ~ 2024    </figcaption>
 
 
 <a href="../../photos/raw/bryan-tim-stokes.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/bryan-tim-stokes.jpg">
     <figcaption>
 Me and Tim at a surf hostel near Zarautz ~ 2024    </figcaption>
@@ -234,7 +289,7 @@ Me and Tim at a surf hostel near Zarautz ~ 2024    </figcaption>
 
 
 <a href="../../photos/raw/flo-tim-spain.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/flo-tim-spain.jpg">
     <figcaption>
 Flo, Tim, and Me in Algeciras ~ 2024    </figcaption>
@@ -243,7 +298,7 @@ Flo, Tim, and Me in Algeciras ~ 2024    </figcaption>
 
 
 <a href="../../photos/raw/tangiers-coffee.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/tangiers-coffee.jpg">
     <figcaption>
 Me and Tim at a café in Tangiers ~ 2024    </figcaption>
@@ -252,7 +307,7 @@ Me and Tim at a café in Tangiers ~ 2024    </figcaption>
 
 
 <a href="../../photos/raw/maroc-hike-cat.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/maroc-hike-cat.jpg">
     <figcaption>
 Climbing near Tetouan with Tim, Me, and a village cat ~ 2024    </figcaption>
@@ -261,7 +316,7 @@ Climbing near Tetouan with Tim, Me, and a village cat ~ 2024    </figcaption>
 
 
 <a href="../../photos/raw/maroc-hike-hole.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/maroc-hike-hole.jpg">
     <figcaption>
 Hiking near Tetouan with Sami, Tim, Me, and Flo ~ 2024    </figcaption>
@@ -270,7 +325,7 @@ Hiking near Tetouan with Sami, Tim, Me, and Flo ~ 2024    </figcaption>
 
 
 <a href="../../photos/raw/asilah-beach.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/asilah-beach.jpg">
     <figcaption>
 On the beach near Asilah with Margaux, Me, Tim, Constance, Clemence, and Sami ~ 2024    </figcaption>
@@ -279,7 +334,7 @@ On the beach near Asilah with Margaux, Me, Tim, Constance, Clemence, and Sami ~ 
 
 
 <a href="../../photos/raw/couscous.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/couscous.jpg">
     <figcaption>
 Eating Sami&rsquo;s mother&rsquo;s couscous with Alex, Me, Sami, and Tim ~ 2024    </figcaption>
@@ -288,7 +343,7 @@ Eating Sami&rsquo;s mother&rsquo;s couscous with Alex, Me, Sami, and Tim ~ 2024 
 
 
 <a href="../../photos/raw/sila-bday-balcony.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/sila-bday-balcony.jpg">
     <figcaption>
 Sila&rsquo;s 30th birthday in Nempont-Saint-Firmin ~ 2024    </figcaption>
@@ -297,7 +352,7 @@ Sila&rsquo;s 30th birthday in Nempont-Saint-Firmin ~ 2024    </figcaption>
 
 
 <a href="../../photos/raw/sila-bday-beach.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/sila-bday-beach.jpg">
     <figcaption>
 Sila&rsquo;s 30th birthday in Berck ~ 2024    </figcaption>
@@ -306,7 +361,7 @@ Sila&rsquo;s 30th birthday in Berck ~ 2024    </figcaption>
 
 
 <a href="../../photos/raw/cassy-antoine-party.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/cassy-antoine-party.jpg">
     <figcaption>
 House party with Cassandra, Antoine, and Me ~ 2024    </figcaption>
@@ -315,7 +370,7 @@ House party with Cassandra, Antoine, and Me ~ 2024    </figcaption>
 
 
 <a href="../../photos/raw/newyear2024.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/newyear2024.jpg">
     <figcaption>
 New year&rsquo;s with Grazilla, Cécile, Tyler, Sunny, and Me ~ 2024    </figcaption>
@@ -324,7 +379,7 @@ New year&rsquo;s with Grazilla, Cécile, Tyler, Sunny, and Me ~ 2024    </figcap
 
 
 <a href="../../photos/raw/roommates_sami.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/roommates_sami.jpg">
     <figcaption>
 Sami&rsquo;s farewell party with all the roommates ~ 2023    </figcaption>
@@ -333,7 +388,7 @@ Sami&rsquo;s farewell party with all the roommates ~ 2023    </figcaption>
 
 
 <a href="../../photos/raw/bryan-jason-citadelle.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/bryan-jason-citadelle.jpg">
     <figcaption>
 Me and Jason at La Citadelle de Lille ~ 2023    </figcaption>
@@ -342,7 +397,7 @@ Me and Jason at La Citadelle de Lille ~ 2023    </figcaption>
 
 
 <a href="../../photos/raw/adam-bryan-jason-ghent.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/adam-bryan-jason-ghent.jpg">
     <figcaption>
 Adam, Me, and Jason on the edge of a canal in Ghent ~ 2023    </figcaption>
@@ -351,7 +406,7 @@ Adam, Me, and Jason on the edge of a canal in Ghent ~ 2023    </figcaption>
 
 
 <a href="../../photos/raw/bryan-piscine.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/bryan-piscine.jpg">
     <figcaption>
 Me at La Piscine ~ 2023    </figcaption>
@@ -360,7 +415,7 @@ Me at La Piscine ~ 2023    </figcaption>
 
 
 <a href="../../photos/raw/bryan-julie-namur.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/bryan-julie-namur.jpg">
     <figcaption>
 Julie and Me at on Le Centenaire at Beez ~ 2023    </figcaption>
@@ -369,7 +424,7 @@ Julie and Me at on Le Centenaire at Beez ~ 2023    </figcaption>
 
 
 <a href="../../photos/raw/alex-nadir-me-sachin-julien-morzine.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/alex-nadir-me-sachin-julien-morzine.jpg">
     <figcaption>
 Alex, Nadir, Me, Sachin, and Julien at Thom&rsquo;s wedding in Morzine ~ 2023    </figcaption>
@@ -378,7 +433,7 @@ Alex, Nadir, Me, Sachin, and Julien at Thom&rsquo;s wedding in Morzine ~ 2023   
 
 
 <a href="../../photos/raw/eatin-rishik-chicken.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/eatin-rishik-chicken.jpg">
     <figcaption>
 Me eating Rishik&rsquo;s chicken for Indian Independence Day ~ 2023    </figcaption>
@@ -387,7 +442,7 @@ Me eating Rishik&rsquo;s chicken for Indian Independence Day ~ 2023    </figcapt
 
 
 <a href="../../photos/raw/rishik-quentin-me-fete.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/rishik-quentin-me-fete.jpg">
     <figcaption>
 Rishik, Quentin, and Me after a long night ~ 2023    </figcaption>
@@ -396,7 +451,7 @@ Rishik, Quentin, and Me after a long night ~ 2023    </figcaption>
 
 
 <a href="../../photos/raw/me-michael-st-charles.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/me-michael-st-charles.jpg">
     <figcaption>
 Me and Michael on St. Charles Bridge in Prague ~ 2023    </figcaption>
@@ -405,7 +460,7 @@ Me and Michael on St. Charles Bridge in Prague ~ 2023    </figcaption>
 
 
 <a href="../../photos/raw/sachin-me-edi-martijn.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/sachin-me-edi-martijn.jpg">
     <figcaption>
 Sachin, Me, Edi, and Martijn at Thom&rsquo;s bachelor party in Paris ~ 2023    </figcaption>
@@ -414,7 +469,7 @@ Sachin, Me, Edi, and Martijn at Thom&rsquo;s bachelor party in Paris ~ 2023    <
 
 
 <a href="../../photos/raw/me-silvio-tyler-colin-tok.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/me-silvio-tyler-colin-tok.jpg">
     <figcaption>
 Me, Silvio, Tyler, and Colin at Tok-ici (With Pierre on the Bass) ~ 2023    </figcaption>
@@ -423,7 +478,7 @@ Me, Silvio, Tyler, and Colin at Tok-ici (With Pierre on the Bass) ~ 2023    </fi
 
 
 <a href="../../photos/raw/Silvio-rishik-me-colin-sarrazins.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/Silvio-rishik-me-colin-sarrazins.jpg">
     <figcaption>
 Silvio, Rishik, Me, and Colin at Place des Sarrazins ~ 2023    </figcaption>
@@ -432,7 +487,7 @@ Silvio, Rishik, Me, and Colin at Place des Sarrazins ~ 2023    </figcaption>
 
 
 <a href="../../photos/raw/adri-moi-flo-sami-banana.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/adri-moi-flo-sami-banana.jpg">
     <figcaption>
 Adri, Me, Flo, and Sami en route towards Hypercourt for Banana Boom ~ 2023    </figcaption>
@@ -441,7 +496,7 @@ Adri, Me, Flo, and Sami en route towards Hypercourt for Banana Boom ~ 2023    </
 
 
 <a href="../../photos/raw/atomium.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/atomium.jpg">
     <figcaption>
 Me, Michael, and Tyler at the Atomium in Brussels ~ 2023    </figcaption>
@@ -450,7 +505,7 @@ Me, Michael, and Tyler at the Atomium in Brussels ~ 2023    </figcaption>
 
 
 <a href="../../photos/raw/egouts.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/egouts.jpg">
     <figcaption>
 Me in the Sewers of Brussels ~ 2023    </figcaption>
@@ -459,7 +514,7 @@ Me in the Sewers of Brussels ~ 2023    </figcaption>
 
 
 <a href="../../photos/raw/parents-lille.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/parents-lille.jpg">
     <figcaption>
 Me, my parents, Laura, Aubrée, and Tyler in my courtyard ~ 2023    </figcaption>
@@ -468,7 +523,7 @@ Me, my parents, Laura, Aubrée, and Tyler in my courtyard ~ 2023    </figcaption
 
 
 <a href="../../photos/raw/aux-enfants-terribles.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/aux-enfants-terribles.jpg">
     <figcaption>
 Aubrée, Sunny, Me, and Tyler at <em>Aux Enfants Terribles</em> ~ 2023    </figcaption>
@@ -477,7 +532,7 @@ Aubrée, Sunny, Me, and Tyler at <em>Aux Enfants Terribles</em> ~ 2023    </figc
 
 
 <a href="../../photos/raw/colocs-court.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/colocs-court.jpg">
     <figcaption>
 Me and my roommates in our courtyard ~ 2023    </figcaption>
@@ -486,7 +541,7 @@ Me and my roommates in our courtyard ~ 2023    </figcaption>
 
 
 <a href="../../photos/raw/flo-anniv.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/flo-anniv.jpg">
     <figcaption>
 Me, Flo, and Constance at a restaurant in Lille ~ 2023    </figcaption>
@@ -495,7 +550,7 @@ Me, Flo, and Constance at a restaurant in Lille ~ 2023    </figcaption>
 
 
 <a href="../../photos/raw/jason-alcohol.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/jason-alcohol.jpg">
     <figcaption>
 Me, Jason, and some others in Pittsburgh one night ~ 2023    </figcaption>
@@ -504,7 +559,7 @@ Me, Jason, and some others in Pittsburgh one night ~ 2023    </figcaption>
 
 
 <a href="../../photos/raw/picnic_anton.jpeg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/picnic_anton.jpeg">
     <figcaption>
 A bunch of people including Anton et a picnic in Paris ~ 2022    </figcaption>
@@ -513,7 +568,7 @@ A bunch of people including Anton et a picnic in Paris ~ 2022    </figcaption>
 
 
 <a href="../../photos/raw/swap-hai-bryan-nice.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/swap-hai-bryan-nice.jpg">
     <figcaption>
 Swap, Hai and me in Nice ~ 2022    </figcaption>
@@ -522,7 +577,7 @@ Swap, Hai and me in Nice ~ 2022    </figcaption>
 
 
 <a href="../../photos/raw/bryan-michael-tyler-anvers.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/bryan-michael-tyler-anvers.jpg">
     <figcaption>
 Me, Michael, and Tyler in Antwerp ~ 2021    </figcaption>
@@ -531,7 +586,7 @@ Me, Michael, and Tyler in Antwerp ~ 2021    </figcaption>
 
 
 <a href="../../photos/raw/bryan-colin_cape-perpetua.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/bryan-colin_cape-perpetua.jpg">
     <figcaption>
 Me and Colin at Cape Perpetua, OR ~ 2021    </figcaption>
@@ -540,7 +595,7 @@ Me and Colin at Cape Perpetua, OR ~ 2021    </figcaption>
 
 
 <a href="../../photos/raw/michael-tyler-bryan-dunkerque.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/michael-tyler-bryan-dunkerque.jpg">
     <figcaption>
 Michael, Tyler, and me in Dunkerque ~ 2021    </figcaption>
@@ -549,7 +604,7 @@ Michael, Tyler, and me in Dunkerque ~ 2021    </figcaption>
 
 
 <a href="../../photos/raw/michael-julie-bryan-tyler-dunkerque.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/michael-julie-bryan-tyler-dunkerque.jpg">
     <figcaption>
 Michael, Julie, me, and Tyler in Dunkerque ~ 2021    </figcaption>
@@ -558,7 +613,7 @@ Michael, Julie, me, and Tyler in Dunkerque ~ 2021    </figcaption>
 
 
 <a href="../../photos/raw/julien-bryan-nadir-yanomi-skate-blabla.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/julien-bryan-nadir-yanomi-skate-blabla.jpg">
     <figcaption>
 Julien, Me, Nadir, and Yanomi at Blabla ~ 2021    </figcaption>
@@ -567,7 +622,7 @@ Julien, Me, Nadir, and Yanomi at Blabla ~ 2021    </figcaption>
 
 
 <a href="../../photos/raw/bryan-blabla-skate.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/bryan-blabla-skate.jpg">
     <figcaption>
 Just me on a skateboard at Blabla ~ 2021    </figcaption>
@@ -576,7 +631,7 @@ Just me on a skateboard at Blabla ~ 2021    </figcaption>
 
 
 <a href="../../photos/raw/bryan-julie-etienne-cici-william-yanomi-grenoble.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/bryan-julie-etienne-cici-william-yanomi-grenoble.jpg">
     <figcaption>
 Half of me, Julie, Etienne, Cici, William, and Yanomi at Fort de la Bastille, Grénoble ~ 2021    </figcaption>
@@ -585,7 +640,7 @@ Half of me, Julie, Etienne, Cici, William, and Yanomi at Fort de la Bastille, Gr
 
 
 <a href="../../photos/raw/bryan-jeremy.png">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/bryan-jeremy.png">
     <figcaption>
 Me, Jeremy, and Mathieu on French TV ~ 2021    </figcaption>
@@ -594,7 +649,7 @@ Me, Jeremy, and Mathieu on French TV ~ 2021    </figcaption>
 
 
 <a href="../../photos/raw/michael-bryan-lecart.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/michael-bryan-lecart.jpg">
     <figcaption>
 Me and Michael at L&rsquo;Écart ~ 2020    </figcaption>
@@ -603,7 +658,7 @@ Me and Michael at L&rsquo;Écart ~ 2020    </figcaption>
 
 
 <a href="../../photos/raw/michael-bryan-julie.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/michael-bryan-julie.jpg">
     <figcaption>
 Michael, me, and Julie in Wazemmes ~ 2020    </figcaption>
@@ -612,7 +667,7 @@ Michael, me, and Julie in Wazemmes ~ 2020    </figcaption>
 
 
 <a href="../../photos/raw/alex-bryan-paris.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/alex-bryan-paris.jpg">
     <figcaption>
 Alex and Bryan at Le Viaduc ~ 2020    </figcaption>
@@ -621,7 +676,7 @@ Alex and Bryan at Le Viaduc ~ 2020    </figcaption>
 
 
 <a href="../../photos/raw/Anton-william-bryan-la-seine.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/Anton-william-bryan-la-seine.jpg">
     <figcaption>
 Anton, William and me at Jardin Tino Rossi ~ 2020    </figcaption>
@@ -630,7 +685,7 @@ Anton, William and me at Jardin Tino Rossi ~ 2020    </figcaption>
 
 
 <a href="../../photos/raw/bryan-julie-dune.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/bryan-julie-dune.jpg">
     <figcaption>
 Me and Julie at Dune du Pilat ~ 2020    </figcaption>
@@ -639,7 +694,7 @@ Me and Julie at Dune du Pilat ~ 2020    </figcaption>
 
 
 <a href="../../photos/raw/a-bunch-of-people-chez-moi-ivry.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/a-bunch-of-people-chez-moi-ivry.jpg">
     <figcaption>
 A bunch of people in Ivry-sur-Seine ~ 2019    </figcaption>
@@ -648,7 +703,7 @@ A bunch of people in Ivry-sur-Seine ~ 2019    </figcaption>
 
 
 <a href="../../photos/raw/michael-bryan-lorenzo-edinburgh.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/michael-bryan-lorenzo-edinburgh.jpg">
     <figcaption>
 Michael, me, and Lorenzo in Edinburgh ~ 2019    </figcaption>
@@ -657,7 +712,7 @@ Michael, me, and Lorenzo in Edinburgh ~ 2019    </figcaption>
 
 
 <a href="../../photos/raw/chunglab.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/chunglab.jpg">
     <figcaption>
 Chung Lab ~ 2019    </figcaption>
@@ -666,7 +721,7 @@ Chung Lab ~ 2019    </figcaption>
 
 
 <a href="../../photos/raw/tyler-lorenzo-remy-bryan-blabla2018.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/tyler-lorenzo-remy-bryan-blabla2018.jpg">
     <figcaption>
 Tyler, me, Lorenzo, and Rémy ~ 2018    </figcaption>
@@ -675,7 +730,7 @@ Tyler, me, Lorenzo, and Rémy ~ 2018    </figcaption>
 
 
 <a href="../../photos/raw/billpatbryan.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/billpatbryan.jpg">
     <figcaption>
 Me, Patrick, and Bill ~ 2018    </figcaption>
@@ -684,7 +739,7 @@ Me, Patrick, and Bill ~ 2018    </figcaption>
 
 
 <a href="../../photos/raw/me_and_bill_on_a_mountain_with_a_dog.jpg">
-    <figure class="image">
+<figure class="image">
     <img src="../../photos/lowres/me_and_bill_on_a_mountain_with_a_dog.jpg">
     <figcaption>
 Me and Bill and a dog on a mountain ~ 2017    </figcaption>
@@ -699,7 +754,7 @@ Me and Bill and a dog on a mountain ~ 2017    </figcaption>
 </body>
 </html>
 <footer class="footer layout__footer">
-<p><span>© Bryan Kaperick&#39;s Website</span> <span style="color:grey"> -- Last updated  2024-09-22 00:00:32
+<p><span>© Bryan Kaperick&#39;s Website</span> <span style="color:grey"> -- Last updated  2024-09-22 17:36:54
 </span></p>
 
 

@@ -1,5 +1,5 @@
 cd raw
-for file in ./*
+for file in $( find . -size -$((1024*1024))c )
 do
     if ! test -f "../lowres/$file"; then
         # TODO when ubuntu supports magick (updated version of convert) we can use this commented
@@ -8,7 +8,7 @@ do
         convert -strip -interlace Plane -gaussian-blur 0.05 -quality 75% $file  "../lowres/$file"
     fi
 done
-for file in $( find . -size +1M )
+for file in $( find . -size +$((1024*1024))c )
 do
     if ! test -f "../lowres/$file"; then
         echo "Large file: $file"
