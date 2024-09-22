@@ -21,7 +21,7 @@ def get_album_block(album, photo_blocks):
 .albumimage {
     width: 300px;
     height: auto;
-    max-width: 100%;
+    max-width: 50%;
 }
 .album {
     display: grid;
