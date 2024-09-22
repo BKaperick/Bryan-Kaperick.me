@@ -36,7 +36,6 @@ def get_album_block(album, photo_blocks):
 .albumimage {
     width: auto;
     height: auto;
-/*     max-width: 50%; */
 }
 .album {
     display: grid;
@@ -46,21 +45,13 @@ def get_album_block(album, photo_blocks):
 .row {
     display: flex;
     flex: 50%;
-/*    padding: 1em; */
 }
 .column {
   padding: 1em;
 }
-/*
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-*/
 </style>
 
 <div class="album">
-    <a href="<?="/" . $lang . "/photos/" . $p->{0}->name . ".html"; ?>">
     <figure>
 """.replace("{0}", album)
     images = [x[0] for x in sorted(photo_blocks, key=order_photos)]
@@ -72,7 +63,6 @@ def get_album_block(album, photo_blocks):
 <?=$p->{0}->$lang;?> ~ <?=$p->{0}->year;?>
     </figcaption>
     </figure>
-</a>
 </div>
 """.format(album)
 
@@ -80,7 +70,7 @@ def get_album_block(album, photo_blocks):
 
 def get_photo_block(key):
     return """<a href="<?="/photos/raw/" . $p->{0}->name;?>">
-    <figure class="image">
+<figure class="image">
     <img src=<?="/photos/lowres/" . $p->{0}->name;?>>
     <figcaption>
 <?=$p->{0}->$lang;?> ~ <?=$p->{0}->year;?>
@@ -90,7 +80,10 @@ def get_photo_block(key):
 """.format(key)
 
 def get_photo_block_in_album(key):
-    return """<img class="albumimage" src=<?="/photos/lowres/" . $p->{0}->name;?>>
+    return """
+<a href="<?="/photos/raw/" . $p->{0}->name;?>">
+<img class="albumimage" src=<?="/photos/lowres/" . $p->{0}->name;?>>
+</a>
 """.format(key)
 
 with open("photos.json", "r") as fw:
