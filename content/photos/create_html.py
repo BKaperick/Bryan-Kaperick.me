@@ -1,6 +1,7 @@
 import json
 import os
 import sys
+from math import sqrt,floor
 sys.path.append(os.path.abspath("../../"))
 from helper import *
 
@@ -8,66 +9,71 @@ photo_blocks = []
 
 # 2024.05
 
-
+def get_grid(photo_count):
+    rows = floor(sqrt(photo_count))
+    columns = photo_count // rows
+    rows_with_extra = photo_count % rows
+    
+    elem = """"""
+    count = 0
+    for r in range(rows):
+        elem += '<div class="row">\n'
+        for c in range(columns + int(r < rows_with_extra)):
+            elem += '<div class="column"> {0} </div>\n'.format("{" + str(count) + "}")
+            count += 1
+        elem += '</div>\n'
+    #print(elem)
+    return elem
+    
+    
+    
 
 def get_album_block(album, photo_blocks):
     pre = """
 <style>
-.row {
-  padding: 0 4px;
-}
 
 /* Create two equal columns that sits next to each other */
 .albumimage {
-    width: 300px;
+    width: auto;
     height: auto;
-    max-width: 50%;
+/*     max-width: 50%; */
 }
 .album {
     display: grid;
     grid-auto-flow: column;
 }
 
-.column {
-    width: 300px;
+.row {
     display: flex;
-  flex: 50%;
-  padding: 0 4px;
+    flex: 50%;
+/*    padding: 1em; */
 }
-
+.column {
+  padding: 1em;
+}
+/*
 .column img {
   margin-top: 8px;
   vertical-align: middle;
 }
+*/
 </style>
 
 <div class="album">
     <a href="<?="/" . $lang . "/photos/" . $p->{0}->name . ".html"; ?>">
     <figure>
-        <div class="row">
-          <div class="column">
 """.replace("{0}", album)
     images = [x[0] for x in sorted(photo_blocks, key=order_photos)]
-
-    images_elem = """
-    {0}
-    {1}
-    </div>
-    <div class="column">
-    {2}
-    {3}
-    """.format(*images)
+    images_elem = get_grid(len(images)).format(*images)
 
     #images_elem = "\n\n".join(images)
     post = """
-        </div>    
-    </div>
-</div>
     <figcaption>
 <?=$p->{0}->$lang;?> ~ <?=$p->{0}->year;?>
     </figcaption>
     </figure>
 </a>
+</div>
 """.format(album)
 
     return pre + images_elem + post

@@ -1,57 +1,55 @@
 
 <style>
-.row {
-  padding: 0 4px;
-}
 
 /* Create two equal columns that sits next to each other */
 .albumimage {
-    width: 300px;
+    width: auto;
     height: auto;
+/*     max-width: 50%; */
 }
 .album {
     display: grid;
     grid-auto-flow: column;
 }
 
-.column {
-    width: 300px;
+.row {
     display: flex;
-  flex: 50%;
-  padding: 0 4px;
+    flex: 50%;
+/*    padding: 1em; */
 }
-
+.column {
+  padding: 1em;
+}
+/*
 .column img {
   margin-top: 8px;
   vertical-align: middle;
 }
+*/
 </style>
 
 <div class="album">
     <a href="<?="/" . $lang . "/photos/" . $p->GR10->name . ".html"; ?>">
     <figure>
-        <div class="row">
-          <div class="column">
-
-    <img class="albumimage" src=<?="/photos/lowres/" . $p->openroad->name;?>>
-
-    <img class="albumimage" src=<?="/photos/lowres/" . $p->majesticcow->name;?>>
-
-    </div>
-    <div class="column">
-    <img class="albumimage" src=<?="/photos/lowres/" . $p->ontop->name;?>>
-
-    <img class="albumimage" src=<?="/photos/lowres/" . $p->greatlighting->name;?>>
-
-    
-        </div>    
-    </div>
+<div class="row">
+<div class="column"> <img class="albumimage" src=<?="/photos/lowres/" . $p->openroad->name;?>>
+ </div>
+<div class="column"> <img class="albumimage" src=<?="/photos/lowres/" . $p->majesticcow->name;?>>
+ </div>
 </div>
+<div class="row">
+<div class="column"> <img class="albumimage" src=<?="/photos/lowres/" . $p->ontop->name;?>>
+ </div>
+<div class="column"> <img class="albumimage" src=<?="/photos/lowres/" . $p->greatlighting->name;?>>
+ </div>
+</div>
+
     <figcaption>
 <?=$p->GR10->$lang;?> ~ <?=$p->GR10->year;?>
     </figcaption>
     </figure>
 </a>
+</div>
 
 
 <a href="<?="/photos/raw/" . $p->labraderiejpeg->name;?>">
