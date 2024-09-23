@@ -365,5 +365,14 @@
         "rawpath": "./raw/the_lake.txt",
         "order_in_month": 1,
         "body": "<div class=\"poem\"><p><span class=\"line\">Dusk called you on a quest for your reflection.</span><br>\n<span class=\"line\">Comment dire le fait de \"se remettre en question\"?</span><br>\n<span class=\"line\">Lounging at the lake brim,</span><br>\n<span class=\"line\">the water showed an unfamiliar apparition.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">You looked, in search of a placid reassurance.</span><br>\n<span class=\"line\">He stared back with a rippling insolence,</span><br>\n<span class=\"line\">gripping in its wickedness,</span><br>\n<span class=\"line\">quick to erode the fangs of your innocence.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">So you're swimming in the mire of your contrapart</span><br>\n<span class=\"line\">with anguish shining cleaner than its grime depart.</span><br>\n<span class=\"line\">Dawn wakes you with a start,</span><br>\n<span class=\"line\">for the spirit of the lake has replaced your heart.</p></div>"
+    },
+    "gull": {
+        "title": "The gull",
+        "author": "Bryan Kaperick",
+        "month": "Sep",
+        "year": "2024",
+        "rawpath": "./raw/the_gull.txt",
+        "order_in_month": 1,
+        "body": "<div class=\"poem\"><p><span class=\"line\">A lone, lost seagull drapes his tattered wings.</span><br>\n<span class=\"line\">That knackered bird he flaps and flaps again.</span><br>\n<span class=\"line\">And through his feathers, morning light he brings</span><br>\n<span class=\"line\">to drones who know not who they are nor when.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Above the streets and putrid, muddy streams</span><br>\n<span class=\"line\">The frantic caws of he who questions fate.</span><br>\n<span class=\"line\">Of vagabonds with vapid, crumpled dreams,</span><br>\n<span class=\"line\">so subsist the living, dying waste.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">The crooked, white crow he croaks his final calls</span><br>\n<span class=\"line\">As those twisted up in shame begin to fray</span><br>\n<span class=\"line\">where condensated liqueur fogs the walls&mdash;</span><br>\n<span class=\"line\">so fall the stars that never see the day.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">That gull since-swamped in Johnny's *briny deeps*</span><br>\n<span class=\"line\">still dreams of scents that drift on calmer seas,</span><br>\n<span class=\"line\">to flutter far from all the night-stale creeps,</span><br>\n<span class=\"line\">from land where neither beast nor man is free.</p></div>"
     }
 }
