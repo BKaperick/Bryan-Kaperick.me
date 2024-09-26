@@ -26,10 +26,7 @@ def get_grid(photo_count):
     return elem
     
     
-    
-
-def get_album_block(album, photo_blocks):
-    pre = """
+style_header = """
 <style>
 
 /* Create two equal columns that sits next to each other */
@@ -50,7 +47,11 @@ def get_album_block(album, photo_blocks):
   padding: 1em;
 }
 </style>
+"""
 
+
+def get_album_block(album, photo_blocks):
+    pre = """
 <div class="album">
     <figure>
 """.replace("{0}", album)
@@ -113,7 +114,7 @@ with open("photos.json", "r") as fw:
             photo_blocks.append((block, photo))
         
 
-print("\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
+print(style_header + "\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
 
 
     
