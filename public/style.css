@@ -1244,3 +1244,21 @@ details summary>* {
   margin-left: -1em;
 }
 
+/* Photo album styles for the main photos page */
+.albumimage {
+    width: auto;
+    height: auto;
+}
+.album {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.photorow {
+    display: flex;
+    flex: 50%;
+}
+.photocolumn {
+  padding: 1em;
+}
+

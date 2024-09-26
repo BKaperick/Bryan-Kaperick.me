@@ -1,46 +1,25 @@
 
-<style>
-
-/* Create two equal columns that sits next to each other */
-.albumimage {
-    width: auto;
-    height: auto;
-}
-.album {
-    display: grid;
-    grid-auto-flow: column;
-}
-
-.row {
-    display: flex;
-    flex: 50%;
-}
-.column {
-  padding: 1em;
-}
-</style>
-
 <div class="album">
     <figure>
-<div class="row">
-<div class="column"> 
+<div class="photorow">
+<div class="photocolumn"> 
 <a href="<?="/photos/raw/" . $p->openroad->name;?>">
 <img class="albumimage" src=<?="/photos/lowres/" . $p->openroad->name;?>>
 </a>
  </div>
-<div class="column"> 
+<div class="photocolumn"> 
 <a href="<?="/photos/raw/" . $p->majesticcow->name;?>">
 <img class="albumimage" src=<?="/photos/lowres/" . $p->majesticcow->name;?>>
 </a>
  </div>
 </div>
-<div class="row">
-<div class="column"> 
+<div class="photorow">
+<div class="photocolumn"> 
 <a href="<?="/photos/raw/" . $p->ontop->name;?>">
 <img class="albumimage" src=<?="/photos/lowres/" . $p->ontop->name;?>>
 </a>
  </div>
-<div class="column"> 
+<div class="photocolumn"> 
 <a href="<?="/photos/raw/" . $p->greatlighting->name;?>">
 <img class="albumimage" src=<?="/photos/lowres/" . $p->greatlighting->name;?>>
 </a>
@@ -87,13 +66,13 @@
 
 <div class="album">
     <figure>
-<div class="row">
-<div class="column"> 
+<div class="photorow">
+<div class="photocolumn"> 
 <a href="<?="/photos/raw/" . $p->biketripjpeg->name;?>">
 <img class="albumimage" src=<?="/photos/lowres/" . $p->biketripjpeg->name;?>>
 </a>
  </div>
-<div class="column"> 
+<div class="photocolumn"> 
 <a href="<?="/photos/raw/" . $p->bryantylerrishikbikingjpeg->name;?>">
 <img class="albumimage" src=<?="/photos/lowres/" . $p->bryantylerrishikbikingjpeg->name;?>>
 </a>
