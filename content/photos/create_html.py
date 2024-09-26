@@ -7,8 +7,6 @@ from helper import *
 
 photo_blocks = []
 
-# 2024.05
-
 def get_grid(photo_count):
     rows = floor(sqrt(photo_count))
     columns = photo_count // rows
@@ -17,38 +15,13 @@ def get_grid(photo_count):
     elem = """"""
     count = 0
     for r in range(rows):
-        elem += '<div class="row">\n'
+        elem += '<div class="photorow">\n'
         for c in range(columns + int(r < rows_with_extra)):
-            elem += '<div class="column"> {0} </div>\n'.format("{" + str(count) + "}")
+            elem += '<div class="photocolumn"> {0} </div>\n'.format("{" + str(count) + "}")
             count += 1
         elem += '</div>\n'
     #print(elem)
     return elem
-    
-    
-style_header = """
-<style>
-
-/* Create two equal columns that sits next to each other */
-.albumimage {
-    width: auto;
-    height: auto;
-}
-.album {
-    display: grid;
-    grid-auto-flow: column;
-}
-
-.row {
-    display: flex;
-    flex: 50%;
-}
-.column {
-  padding: 1em;
-}
-</style>
-"""
-
 
 def get_album_block(album, photo_blocks):
     pre = """
@@ -91,30 +64,33 @@ with open("photos.json", "r") as fw:
     photos = json.load(fw)
     album_photos = []
     for key,photo in photos.items():
+
         # ignore albums for now
         if "is_album" in photo and photo["is_album"]:
             album_photos += photo["photos"]
+
     for key,photo in photos.items():
+
         # ignore albums for now
         if key == "is_album":
             continue
+
         if "is_album" in photo and photo["is_album"] == True:
             album_blocks = []
             for subkey in photo["photos"]:
                 subphoto = photos[subkey]
-                # if subkey == "is_album":
-                #     continue
                 block = get_photo_block_in_album(subkey)
                 album_blocks.append((block, subphoto))
             block = get_album_block(key, album_blocks)
             photo_blocks.append((block, photo))
-            #print(block)
+
+        # Photo is not contained in any album, so just print it on main photos page
         elif key not in album_photos:
             block = get_photo_block(key)
             photo_blocks.append((block, photo))
         
 
-print(style_header + "\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
+print("\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
 
 
     
