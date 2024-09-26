@@ -249,7 +249,7 @@
         ]
     },
     "including_2022_2": {
-        "name": "picnic_anton.jpeg",
+        "name": "picnic_anton.jpg",
         "year": 2022,
         "order_in_year": 2,
         "en": "A bunch of people including Anton et a picnic in Paris",
@@ -729,7 +729,7 @@
         ]
     },
     "bryantylerrishikbikingjpeg": {
-        "name": "bryan-tyler-rishik-biking.jpeg",
+        "name": "bryan-tyler-rishik-biking.jpg",
         "month": "Aug",
         "year": 2024,
         "order_in_year": 17,
@@ -740,7 +740,7 @@
         ]
     },
     "biketripjpeg": {
-        "name": "biketrip.jpeg",
+        "name": "biketrip.jpg",
         "month": "Aug",
         "year": 2024,
         "order_in_year": 18,
@@ -753,7 +753,7 @@
         ]
     },
     "quentin": {
-        "name": "tyler_sunny_quentin_new_apt.JPG",
+        "name": "tyler_sunny_quentin_new_apt.jpg",
         "month": "Aug",
         "year": 2024,
         "order_in_year": 19,
@@ -779,7 +779,7 @@
         ]
     },
     "labraderiejpeg": {
-        "name": "labraderie.jpeg",
+        "name": "labraderie.jpg",
         "month": "Sep",
         "year": 2024,
         "order_in_year": 21,
@@ -799,7 +799,7 @@
         ]
     },
     "greatlighting": {
-        "name": "GR10100_0185_greatlighting.JPG",
+        "name": "GR10100_0185_greatlighting.jpg",
         "month": "Sep",
         "year": 2024,
         "order_in_year": 22,
@@ -811,7 +811,7 @@
         "is_album": false
     },
     "ontop": {
-        "name": "GR10100_0391_ontop.JPG",
+        "name": "GR10100_0391_ontop.jpg",
         "month": "Sep",
         "year": 2024,
         "order_in_year": 23,
@@ -823,7 +823,7 @@
         "is_album": false
     },
     "majesticcow": {
-        "name": "GR10100_0318_majesticcow.JPG",
+        "name": "GR10100_0318_majesticcow.jpg",
         "month": "Sep",
         "year": 2024,
         "order_in_year": 24,
@@ -835,7 +835,7 @@
         "is_album": false
     },
     "openroad": {
-        "name": "GR10100_0406_openroad.JPG",
+        "name": "GR10100_0406_openroad.jpg",
         "month": "Sep",
         "year": 2024,
         "order_in_year": 25,
