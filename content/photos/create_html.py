@@ -93,7 +93,6 @@ with open("photos.json", "r") as fw:
             photo_blocks.append((block, photo))
         
         block = get_photo_captioned_figure(key, "raw")
-        php_en_path = "../en/photos/" + key + ".php"
         html_path = "./raw_with_label/" + key + ".html"
         with open(html_path, "w") as f:
             f.write(block)
