@@ -13,6 +13,7 @@
 /content/fr/now/now* /fr/now/now 301
 /content/fr/photos/photos* /fr/photos/photos 301
 /content/fr/poetry/poetry* /fr/poetry/poetry 301
+/poems/* /en/poetry/:splat 301
 
 /en/* / 404
 /fr/* /index_fr.html 404
