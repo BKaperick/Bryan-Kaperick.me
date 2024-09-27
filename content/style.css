@@ -641,7 +641,8 @@ ul menu {
     max-height: 300px;
 }
 .sublogo__image {
-    width: 250vh;
+    width: 75vh;
+    height: 15vh;
 }
 
 .header__site-name {

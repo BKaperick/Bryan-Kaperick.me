@@ -636,7 +636,13 @@ ul menu {
 }
 
 .header__logo-image {
-	vertical-align: bottom
+	vertical-align: bottom;
+    max-width: 300px;
+    max-height: 300px;
+}
+.sublogo__image {
+    width: 75vh;
+    height: 15vh;
 }
 
 .header__site-name {
@@ -1304,4 +1310,3 @@ figure.single-image {
 .photocolumn {
   padding: .5em;
 }
-
