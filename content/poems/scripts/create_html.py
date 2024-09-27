@@ -5,11 +5,11 @@ from helper import *
 import json
 poem_blocks = []
 
-def get_bryan_block(key, block_path):
+def get_bryan_block(key):
     return """<p><em><?=$p->{0}->title;?></em> &ndash; <?=$language[$p->{0}->month];?> <?=$p->{0}->year;?></p>
     <blockquote>
     <?=$p->{0}->body;?>
-    </blockquote>""".format(key, block_path)
+    </blockquote>""".format(key)
 
 def get_insp_block(key, subtitle = False):
     return """<p><em><?=$p->{0}->title;?></em> &ndash; <?=$p->{0}->author;?>
@@ -19,7 +19,7 @@ def get_insp_block(key, subtitle = False):
     </blockquote>""".format(key, "<em><br /><p>&nbsp;&nbsp;&nbsp;&nbsp;<?=$p->{0}->subtitle;?></em></p>".format(key) if subtitle else "")
 
 def wrap_block_in_link(block, poem, link):
-    wrapped_block = """<a href="<?="/poems/{0}"?>" style="text-decoration:none">{1}
+    wrapped_block = """<a href="<?="/" . $lang . "/poetry/{0}"?>" style="text-decoration:none">{1}
 </a>""".format(link, block)
     return (wrapped_block, poem, link)
 
@@ -28,7 +28,7 @@ with open("poems.json", "r") as fr:
     for key,poem in poems.items():
         if poem['author'] == 'Bryan Kaperick':
             block_path = poem['rawpath'].replace(".txt", ".php").replace("./raw/", "")
-            block = get_bryan_block(key, block_path)
+            block = get_bryan_block(key)
         else:
             block_path = None
             block = get_insp_block(key, 'subtitle' in poem.keys())
@@ -55,10 +55,13 @@ for block,poem,php_path in poem_blocks:
         html_path = "./blocks/" + php_path.replace(".php", ".html")
         with open(html_path, "w") as f:
             f.write(block)
-        with open(php_path, "w") as f:
-            f.write("""<?php
+
+        for language in ["en", "fr"]:
+            lang_php_path = "../{0}/poetry/{1}".format(language, php_path)
+            with open(lang_php_path, "w") as f:
+                f.write("""<?php 
 include($_SERVER['DOCUMENT_ROOT']."/poems/minimal_poem_header.php");
-include($_SERVER['DOCUMENT_ROOT']."/minimal_header.html");
-include($_SERVER['DOCUMENT_ROOT']."/poems/{0}");
+include($_SERVER['DOCUMENT_ROOT']."/{0}/minimal_header.html");
+include($_SERVER['DOCUMENT_ROOT']."/poems/{1}");
 ?> 
-""".format(html_path))
+""".format(language, html_path))
