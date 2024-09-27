@@ -162,7 +162,7 @@ class="active" aria-current="page">Accueil</a></li>
 </body>
 </html>
 <footer class="footer layout__footer">
-<p><span>© Le Site Web de Bryan Kaperick</span> <span style="color:grey"> -- Mis à jour  2024-09-27 14:47:23
+<p><span>© Le Site Web de Bryan Kaperick</span> <span style="color:grey"> -- Mis à jour  2024-09-27 18:04:19
 </span></p>
 
 
@@ -1418,10 +1418,53 @@ details summary>* {
 .albumimage {
     width: auto;
     height: auto;
+    padding: 0;
+    margin: 0;
 }
-.album {
+div.album {
     display: grid;
     grid-auto-flow: column;
+    padding: 0;
+    margin: 0;
+}
+figure.album {
+    padding: 0;
+    margin: 0;
+}
+.image > figcaption {
+    font-size: 100%;
+    text-decoration: none;
+}
+.albumimage > figcaption {
+    font-size: 90%;
+    color: grey;
+    text-decoration: none;
+}
+.album > figcaption {
+    font-size: 100%;
+    text-decoration: underline;
+}
+.single-image > figcaption {
+    font-size: 150%;
+    text-align: center;
+    padding: .7rem 0 .7rem 0;
+}
+
+figure.single-image {
+    padding: 0;
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 99vh;
+}
+.single-image > img {
+    max-width: 100%;
+    max-height: 95vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
 }
 
 .photorow {
@@ -1429,7 +1472,7 @@ details summary>* {
     flex: 50%;
 }
 .photocolumn {
-  padding: 1em;
+  padding: .5em;
 }
 
 </style>

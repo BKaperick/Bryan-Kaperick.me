@@ -26,9 +26,10 @@ def get_grid(photo_count):
 def get_album_block(album, photo_blocks):
     pre = """
 <div class="album">
-    <figure>
+    <figure class="album">
 """.replace("{0}", album)
-    images = [x[0] for x in sorted(photo_blocks, key=order_photos)]
+    #images = [x[0] for x in sorted(photo_blocks, key=order_photos)]
+    images = [x[0] for x in photo_blocks]
     images_elem = get_grid(len(images)).format(*images)
 
     #images_elem = "\n\n".join(images)
@@ -42,27 +43,36 @@ def get_album_block(album, photo_blocks):
 
     return pre + images_elem + post
 
-def get_photo_captioned_figure(key, subdir):
+def get_photo_captioned_figure(key, subdir, year = True):
     return """<figure class="image">
     <img src=<?="/photos/{1}/" . $p->{0}->name;?>>
     <figcaption>
-<?=$p->{0}->$lang;?> ~ <?=$p->{0}->year;?>
+<?=$p->{0}->$lang;?>{2}
     </figcaption>
 </figure>
-""".format(key, subdir)
+""".format(key, subdir, " ~ <?=$p->{0}->year;?>".format(key) if year else "")
 
-def get_photo_block(key):
+def get_photo_block(key, year = True):
     #return """<a href="<?="/{0}.php";?>">
     return """<a href="<?="/" . $lang . "/photos/{0}.php";?>">
 {1}
 </a>
-""".format(key, get_photo_captioned_figure(key, "lowres"))
+""".format(key, get_photo_captioned_figure(key, "lowres", year))
+
+def get_photo_captioned_figure_in_album(key):
+    return """<figure class="albumimage">
+    <img class="albumimage" src=<?="/photos/lowres/" . $p->{0}->name;?>>
+    <figcaption>
+<?=$p->{0}->$lang;?>
+    </figcaption>
+</figure>
+""".format(key)
 
 def get_photo_block_in_album(key):
-    return """<a href="<?="/photos/raw/" . $p->{0}->name;?>">
-<img class="albumimage" src=<?="/photos/lowres/" . $p->{0}->name;?>>
-</a>
-""".format(key)
+    return """<span style="color:grey"><a href="<?="/" . $lang . "/photos/{0}.php";?>">
+{1}
+</a></span>
+""".format(key, get_photo_captioned_figure_in_album(key))
 
 with open("photos.json", "r") as fw:
     photos = json.load(fw)
@@ -92,7 +102,7 @@ with open("photos.json", "r") as fw:
             block = get_photo_block(key)
             photo_blocks.append((block, photo))
         
-        block = get_photo_captioned_figure(key, "raw")
+        block = get_photo_captioned_figure(key, "raw").replace('class="image"', 'class="single-image"')
         html_path = "./raw_with_label/" + key + ".html"
         with open(html_path, "w") as f:
             f.write(block)
