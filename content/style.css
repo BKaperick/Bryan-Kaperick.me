@@ -233,8 +233,7 @@ sup {
 img,
 svg {
 	max-width: 100%;
-	height: auto;
-    max-height: 80%;
+	height: auto
 }
 
 button,
