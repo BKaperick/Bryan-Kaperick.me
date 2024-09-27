@@ -1248,17 +1248,39 @@ details summary>* {
 .albumimage {
     width: auto;
     height: auto;
+    padding: 0;
+    margin: 0;
 }
-.album {
+div.album {
     display: grid;
     grid-auto-flow: column;
+    padding: 0;
+    margin: 0;
+}
+figure.album {
+    padding: 0;
+    margin: 0;
+}
+.image > figcaption {
+    font-size: 100%;
+    text-decoration: none;
+}
+.albumimage > figcaption {
+    font-size: 90%;
+    color: grey;
+    text-decoration: none;
+}
+.album > figcaption {
+    font-size: 100%;
+    text-decoration: underline;
 }
 
 .photorow {
     display: flex;
     flex: 50%;
+    padding: 0;
 }
 .photocolumn {
-  padding: 1em;
+  padding: 0 1em;
 }
 

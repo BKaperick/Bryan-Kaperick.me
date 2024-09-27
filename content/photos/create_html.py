@@ -26,7 +26,7 @@ def get_grid(photo_count):
 def get_album_block(album, photo_blocks):
     pre = """
 <div class="album">
-    <figure>
+    <figure class="album">
 """.replace("{0}", album)
     images = [x[0] for x in sorted(photo_blocks, key=order_photos)]
     images_elem = get_grid(len(images)).format(*images)
@@ -45,7 +45,7 @@ def get_album_block(album, photo_blocks):
 def get_photo_captioned_figure(key, subdir):
     return """<figure class="image">
     <img src=<?="/photos/{1}/" . $p->{0}->name;?>>
-    <figcaption>
+    <figcaption class="image">
 <?=$p->{0}->$lang;?> ~ <?=$p->{0}->year;?>
     </figcaption>
 </figure>
@@ -58,11 +58,20 @@ def get_photo_block(key):
 </a>
 """.format(key, get_photo_captioned_figure(key, "lowres"))
 
-def get_photo_block_in_album(key):
-    return """<a href="<?="/photos/raw/" . $p->{0}->name;?>">
-<img class="albumimage" src=<?="/photos/lowres/" . $p->{0}->name;?>>
-</a>
+def get_photo_captioned_figure_in_album(key):
+    return """<figure class="albumimage">
+    <img class="albumimage" src=<?="/photos/lowres/" . $p->{0}->name;?>>
+    <figcaption class="albumimage">
+<?=$p->{0}->$lang;?>
+    </figcaption>
+</figure>
 """.format(key)
+
+def get_photo_block_in_album(key):
+    return """<span style="color:grey"><a href="<?="/" . $lang . "/photos/{0}.php";?>">
+{1}
+</a></span>
+""".format(key, get_photo_captioned_figure_in_album(key))
 
 with open("photos.json", "r") as fw:
     photos = json.load(fw)
