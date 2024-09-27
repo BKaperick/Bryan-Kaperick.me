@@ -45,7 +45,7 @@ def get_album_block(album, photo_blocks):
 def get_photo_captioned_figure(key, subdir, year = True):
     return """<figure class="image">
     <img src=<?="/photos/{1}/" . $p->{0}->name;?>>
-    <figcaption class="image">
+    <figcaption>
 <?=$p->{0}->$lang;?>{2}
     </figcaption>
 </figure>
@@ -61,7 +61,7 @@ def get_photo_block(key, year = True):
 def get_photo_captioned_figure_in_album(key):
     return """<figure class="albumimage">
     <img class="albumimage" src=<?="/photos/lowres/" . $p->{0}->name;?>>
-    <figcaption class="albumimage">
+    <figcaption>
 <?=$p->{0}->$lang;?>
     </figcaption>
 </figure>
