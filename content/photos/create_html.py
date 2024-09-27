@@ -96,7 +96,8 @@ with open("photos.json", "r") as fw:
         block = """<link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
 <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
 <link rel="apple-touch-icon" href="/static/favicon.ico">
-<link rel="stylesheet" href="/style.css">""" + get_photo_captioned_figure(key, "raw")
+<link rel="stylesheet" href="/style.css">""" + ""
+        block = get_photo_captioned_figure(key, "raw")
         php_path = "./raw_with_label/" + key + ".php"
         html_path = "./raw_with_label/" + key + ".html"
         with open(html_path, "w") as f:
@@ -110,6 +111,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/view/Language/lang.".$lang.".php");
 $string = file_get_contents($_SERVER['DOCUMENT_ROOT']."/photos/photos.json");
 $p = json_decode($string);
 global $p;
+include($_SERVER['DOCUMENT_ROOT']."/minimal_header.html");
 include($_SERVER['DOCUMENT_ROOT']."/photos/{0}");
 ?> 
 """.format(html_path))
