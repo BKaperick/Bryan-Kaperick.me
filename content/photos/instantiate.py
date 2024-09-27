@@ -80,11 +80,13 @@ def instantiate_album(photos, basepath, name):
         path = os.path.join(basepath, file)
         if (file == '__empty__.txt') or os.path.isdir(path):
             continue
+
+        fixed_file = file.replace(".JPG", ".jpg").replace(".jpeg", ".jpg").replace(".JPEG", ".jpg")
         
-        nickname, d = instantiate_image(photos.keys(), file, count)
+        nickname, d = instantiate_image(photos.keys(), fixed_file, count)
         photos[nickname] = d
         album_d["photos"].append(nickname)
-        move_photo_file(basepath, file)
+        move_photo_file(basepath, fixed_file)
         count += 1
     return album_d
 
