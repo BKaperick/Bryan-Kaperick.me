@@ -43,8 +43,7 @@ def get_album_block(album, photo_blocks):
     return pre + images_elem + post
 
 def get_photo_captioned_figure(key, subdir):
-    return """
-<figure class="image">
+    return """<figure class="image">
     <img src=<?="/photos/{1}/" . $p->{0}->name;?>>
     <figcaption>
 <?=$p->{0}->$lang;?> ~ <?=$p->{0}->year;?>
@@ -59,8 +58,7 @@ def get_photo_block(key):
 """.format(key, get_photo_captioned_figure(key, "lowres"))
 
 def get_photo_block_in_album(key):
-    return """
-<a href="<?="/photos/raw/" . $p->{0}->name;?>">
+    return """<a href="<?="/photos/raw/" . $p->{0}->name;?>">
 <img class="albumimage" src=<?="/photos/lowres/" . $p->{0}->name;?>>
 </a>
 """.format(key)
@@ -93,10 +91,6 @@ with open("photos.json", "r") as fw:
             block = get_photo_block(key)
             photo_blocks.append((block, photo))
         
-        block = """<link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
-<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
-<link rel="apple-touch-icon" href="/static/favicon.ico">
-<link rel="stylesheet" href="/style.css">""" + ""
         block = get_photo_captioned_figure(key, "raw")
         php_path = "./raw_with_label/" + key + ".php"
         html_path = "./raw_with_label/" + key + ".html"
