@@ -6,12 +6,7 @@ import json
 poem_blocks = []
 
 def get_bryan_block(key, block_path):
-    return """
-<link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
-<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
-<link rel="apple-touch-icon" href="/static/favicon.ico">
-<link rel="stylesheet" href="/style.css">
-<p><em><?=$p->{0}->title;?></em> &ndash; <?=$language[$p->{0}->month];?> <?=$p->{0}->year;?></p>
+    return """<p><em><?=$p->{0}->title;?></em> &ndash; <?=$language[$p->{0}->month];?> <?=$p->{0}->year;?></p>
     <blockquote>
     <?=$p->{0}->body;?>
     </blockquote>""".format(key, block_path)
@@ -69,6 +64,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/view/Language/lang.".$lang.".php");
 $string = file_get_contents($_SERVER['DOCUMENT_ROOT']."/poems/poems.json");
 $p = json_decode($string);
 global $p;
+include($_SERVER['DOCUMENT_ROOT']."/minimal_header.html");
 include($_SERVER['DOCUMENT_ROOT']."/poems/{0}");
 ?> 
 """.format(html_path))
