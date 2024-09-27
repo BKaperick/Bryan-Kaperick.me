@@ -28,7 +28,8 @@ def get_album_block(album, photo_blocks):
 <div class="album">
     <figure class="album">
 """.replace("{0}", album)
-    images = [x[0] for x in sorted(photo_blocks, key=order_photos)]
+    #images = [x[0] for x in sorted(photo_blocks, key=order_photos)]
+    images = [x[0] for x in photo_blocks]
     images_elem = get_grid(len(images)).format(*images)
 
     #images_elem = "\n\n".join(images)
@@ -93,7 +94,6 @@ with open("photos.json", "r") as fw:
                 subphoto = photos[subkey]
                 block = get_photo_block_in_album(subkey)
                 album_blocks.append((block, subphoto))
-            album_blocks = sorted(album_blocks, key=order_photos)
             block = get_album_block(key, album_blocks)
             photo_blocks.append((block, photo))
 
