@@ -52,7 +52,8 @@ def get_photo_captioned_figure(key, subdir):
 """.format(key, subdir)
 
 def get_photo_block(key):
-    return """<a href="<?="/photos/raw_with_label/{0}.php";?>">
+    #return """<a href="<?="/{0}.php";?>">
+    return """<a href="<?="/" . $lang . "/photos/{0}.php";?>">
 {1}
 </a>
 """.format(key, get_photo_captioned_figure(key, "lowres"))
@@ -92,17 +93,19 @@ with open("photos.json", "r") as fw:
             photo_blocks.append((block, photo))
         
         block = get_photo_captioned_figure(key, "raw")
-        php_path = "./raw_with_label/" + key + ".php"
+        php_en_path = "../en/photos/" + key + ".php"
         html_path = "./raw_with_label/" + key + ".html"
         with open(html_path, "w") as f:
             f.write(block)
-        with open(php_path, "w") as f:
-            f.write("""<?php 
+        for language in ["en", "fr"]:
+            php_path = "../{0}/photos/{1}.php".format(language, key)
+            with open(php_path, "w") as f:
+                f.write("""<?php 
 include($_SERVER['DOCUMENT_ROOT']."/photos/minimal_photo_header.php");
-include($_SERVER['DOCUMENT_ROOT']."/minimal_header.html");
-include($_SERVER['DOCUMENT_ROOT']."/photos/{0}");
+include($_SERVER['DOCUMENT_ROOT']."/{0}/minimal_header.html");
+include($_SERVER['DOCUMENT_ROOT']."/photos/{1}");
 ?> 
-""".format(html_path))
+""".format(language, html_path))
     
         
 
