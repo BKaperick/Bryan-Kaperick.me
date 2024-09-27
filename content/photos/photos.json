@@ -747,7 +747,7 @@
         "year": 2024,
         "order_in_year": 18,
         "en": "Day two",
-        "fr": "Le deuxième jour",
+        "fr": "Le deuxi\u00e8me jour",
         "people": [
             "bryan",
             "rishik",
@@ -817,7 +817,6 @@
         "month": "Sep",
         "year": 2024,
         "order_in_year": 23,
-        "en": "",
         "en": "",
         "people": [
             "bryan"
