@@ -56,14 +56,8 @@ for block,poem,php_path in poem_blocks:
         with open(html_path, "w") as f:
             f.write(block)
         with open(php_path, "w") as f:
-            f.write("""<?php 
-$lang = $_GET["lang"] ?? "en";
-global $language;
-require_once($_SERVER['DOCUMENT_ROOT']."/view/Language/lang.".$lang.".php");
-
-$string = file_get_contents($_SERVER['DOCUMENT_ROOT']."/poems/poems.json");
-$p = json_decode($string);
-global $p;
+            f.write("""<?php
+include($_SERVER['DOCUMENT_ROOT']."/poems/minimal_poem_header.php");
 include($_SERVER['DOCUMENT_ROOT']."/minimal_header.html");
 include($_SERVER['DOCUMENT_ROOT']."/poems/{0}");
 ?> 
