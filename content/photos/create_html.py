@@ -49,7 +49,7 @@ def get_photo_captioned_figure(key, subdir, year = True):
 <?=$p->{0}->$lang;?>{2}
     </figcaption>
 </figure>
-""".format(key, subdir, " ~ <?=$p->{0}->year;?>".format(key))
+""".format(key, subdir, " ~ <?=$p->{0}->year;?>".format(key) if year else "")
 
 def get_photo_block(key, year = True):
     #return """<a href="<?="/{0}.php";?>">
@@ -93,6 +93,7 @@ with open("photos.json", "r") as fw:
                 subphoto = photos[subkey]
                 block = get_photo_block_in_album(subkey)
                 album_blocks.append((block, subphoto))
+            album_blocks = sorted(album_blocks, key=order_photos)
             block = get_album_block(key, album_blocks)
             photo_blocks.append((block, photo))
 

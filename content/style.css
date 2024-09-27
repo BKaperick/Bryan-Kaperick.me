@@ -1300,9 +1300,8 @@ figure.single-image {
 .photorow {
     display: flex;
     flex: 50%;
-    padding: 0;
 }
 .photocolumn {
-  padding: 0 1em;
+  padding: .5em;
 }
 

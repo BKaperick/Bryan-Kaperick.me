@@ -733,6 +733,8 @@
         "month": "Aug",
         "year": 2024,
         "order_in_year": 17,
+        "en": "Day one",
+        "fr": "Le premier jour",
         "people": [
             "bryan",
             "tyler",
@@ -744,8 +746,8 @@
         "month": "Aug",
         "year": 2024,
         "order_in_year": 18,
-        "en": "Another pic from our weekend bike trip",
-        "fr": "Encore un photo de nous sur notre weekend v\u00e9lo",
+        "en": "Day two",
+        "fr": "Le deuxième jour",
         "people": [
             "bryan",
             "rishik",
@@ -803,8 +805,8 @@
         "month": "Sep",
         "year": 2024,
         "order_in_year": 22,
-        "en": "Through-hike in the Pyrenees on the GR10 trail",
-        "fr": "Trekking dans les Pyr\u00e9n\u00e9es sur le GR10",
+        "en": "",
+        "fr": "",
         "people": [
             "bryan"
         ],
@@ -815,8 +817,8 @@
         "month": "Sep",
         "year": 2024,
         "order_in_year": 23,
-        "en": "Through-hike in the Pyrenees on the GR10 trail",
-        "fr": "Trekking dans les Pyr\u00e9n\u00e9es sur le GR10",
+        "en": "",
+        "en": "",
         "people": [
             "bryan"
         ],
@@ -827,8 +829,8 @@
         "month": "Sep",
         "year": 2024,
         "order_in_year": 24,
-        "en": "Through-hike in the Pyrenees on the GR10 trail",
-        "fr": "Trekking dans les Pyr\u00e9n\u00e9es sur le GR10",
+        "en": "",
+        "fr": "",
         "people": [
             "bryan"
         ],
@@ -838,9 +840,9 @@
         "name": "GR10100_0406_openroad.jpg",
         "month": "Sep",
         "year": 2024,
+        "en": "",
+        "fr": "",
         "order_in_year": 25,
-        "en": "Through-hike in the Pyrenees on the GR10 trail",
-        "fr": "Trekking dans les Pyr\u00e9n\u00e9es sur le GR10",
         "people": [
             "bryan"
         ],

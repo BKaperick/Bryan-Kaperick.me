@@ -1277,6 +1277,7 @@ figure.album {
 .single-image > figcaption {
     font-size: 150%;
     text-align: center;
+    padding: .7rem 0 .7rem 0;
 }
 
 figure.single-image {
@@ -1295,16 +1296,12 @@ figure.single-image {
     width: auto;
     height: auto;
 }
-.single-image > figcaption {
-    padding: .7rem 0 .7rem 0;
-}
 
 .photorow {
     display: flex;
     flex: 50%;
-    padding: 0;
 }
 .photocolumn {
-  padding: 0 1em;
+  padding: .5em;
 }
 
