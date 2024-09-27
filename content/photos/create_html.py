@@ -42,20 +42,23 @@ def get_album_block(album, photo_blocks):
 
     return pre + images_elem + post
 
-def get_photo_block(key):
-    return """<a href="<?="/photos/raw/" . $p->{0}->name;?>">
-<figure class="image">
-    <img src=<?="/photos/lowres/" . $p->{0}->name;?>>
+def get_photo_captioned_figure(key, subdir):
+    return """<figure class="image">
+    <img src=<?="/photos/{1}/" . $p->{0}->name;?>>
     <figcaption>
 <?=$p->{0}->$lang;?> ~ <?=$p->{0}->year;?>
     </figcaption>
-    </figure>
+</figure>
+""".format(key, subdir)
+
+def get_photo_block(key):
+    return """<a href="<?="/photos/raw_with_label/{0}.php";?>">
+{1}
 </a>
-""".format(key)
+""".format(key, get_photo_captioned_figure(key, "lowres"))
 
 def get_photo_block_in_album(key):
-    return """
-<a href="<?="/photos/raw/" . $p->{0}->name;?>">
+    return """<a href="<?="/photos/raw/" . $p->{0}->name;?>">
 <img class="albumimage" src=<?="/photos/lowres/" . $p->{0}->name;?>>
 </a>
 """.format(key)
@@ -65,7 +68,6 @@ with open("photos.json", "r") as fw:
     album_photos = []
     for key,photo in photos.items():
 
-        # ignore albums for now
         if "is_album" in photo and photo["is_album"]:
             album_photos += photo["photos"]
 
@@ -88,6 +90,26 @@ with open("photos.json", "r") as fw:
         elif key not in album_photos:
             block = get_photo_block(key)
             photo_blocks.append((block, photo))
+        
+        block = get_photo_captioned_figure(key, "raw")
+        php_path = "./raw_with_label/" + key + ".php"
+        html_path = "./raw_with_label/" + key + ".html"
+        with open(html_path, "w") as f:
+            f.write(block)
+        with open(php_path, "w") as f:
+            f.write("""<?php 
+$lang = $_GET["lang"] ?? "en";
+global $language;
+require_once($_SERVER['DOCUMENT_ROOT']."/view/Language/lang.".$lang.".php");
+
+$string = file_get_contents($_SERVER['DOCUMENT_ROOT']."/photos/photos.json");
+$p = json_decode($string);
+global $p;
+include($_SERVER['DOCUMENT_ROOT']."/minimal_header.html");
+include($_SERVER['DOCUMENT_ROOT']."/photos/{0}");
+?> 
+""".format(html_path))
+    
         
 
 print("\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
