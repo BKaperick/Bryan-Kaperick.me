@@ -27,7 +27,7 @@ def get_album_block(album, photo_blocks):
     pre = """
 <div class="album">
     <figure class="album">
-""".replace("{0}", album)
+""".format(album)
     #images = [x[0] for x in sorted(photo_blocks, key=order_photos)]
     images = [x[0] for x in photo_blocks]
     images_elem = get_grid(len(images)).format(*images)
@@ -52,12 +52,11 @@ def get_photo_captioned_figure(key, subdir, year = True):
 </figure>
 """.format(key, subdir, " ~ <?=$p->{0}->year;?>".format(key) if year else "")
 
-def get_photo_block(key, year = True):
-    #return """<a href="<?="/{0}.php";?>">
+def get_photo_block(key, file_name, year = True):
     return """<a href="<?="/" . $lang . "/photos/{0}.php";?>">
 {1}
 </a>
-""".format(key, get_photo_captioned_figure(key, "lowres", year))
+""".format(file_name, get_photo_captioned_figure(key, "lowres", year))
 
 def get_photo_captioned_figure_in_album(key):
     return """<figure class="albumimage">
@@ -68,11 +67,11 @@ def get_photo_captioned_figure_in_album(key):
 </figure>
 """.format(key)
 
-def get_photo_block_in_album(key):
+def get_photo_block_in_album(key, file_name):
     return """<span style="color:grey"><a href="<?="/" . $lang . "/photos/{0}.php";?>">
 {1}
 </a></span>
-""".format(key, get_photo_captioned_figure_in_album(key))
+""".format(file_name, get_photo_captioned_figure_in_album(key))
 
 with open("photos.json", "r") as fw:
     photos = json.load(fw)
@@ -87,22 +86,24 @@ with open("photos.json", "r") as fw:
         # ignore albums for now
         if key == "is_album":
             continue
+        
+        file_name = photo["name"].replace(".jpg","")
 
         if "is_album" in photo and photo["is_album"] == True:
             album_blocks = []
             for subkey in photo["photos"]:
                 subphoto = photos[subkey]
-                block = get_photo_block_in_album(subkey)
+                file_name = subphoto["name"].replace(".jpg","")
+                block = get_photo_block_in_album(subkey, file_name)
                 album_blocks.append((block, subphoto))
             block = get_album_block(key, album_blocks)
             photo_blocks.append((block, photo))
 
+
         # Photo is not contained in any album, so just print it on main photos page
         elif key not in album_photos:
-            block = get_photo_block(key)
+            block = get_photo_block(key, file_name)
             photo_blocks.append((block, photo))
-
-        file_name = photo["name"].replace(".jpg","")
         
         block = get_photo_captioned_figure(key, "raw").replace('class="image"', 'class="single-image"')
         html_path = "./raw_with_label/" + file_name + ".html"
