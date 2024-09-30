@@ -161,7 +161,7 @@ class="active" aria-current="page">Home</a></li>
 </body>
 </html>
 <footer class="footer layout__footer">
-<p><span>© Bryan Kaperick&#39;s Website</span> <span style="color:grey"> -- Last updated  2024-09-30 00:00:21
+<p><span>© Bryan Kaperick&#39;s Website</span> <span style="color:grey"> -- Last updated  2024-09-30 12:42:49
 </span></p>
 
 
@@ -1443,28 +1443,6 @@ figure.album {
     font-size: 100%;
     text-decoration: underline;
 }
-.single-image > figcaption {
-    font-size: 150%;
-    text-align: center;
-    padding: .7rem 0 .7rem 0;
-}
-
-figure.single-image {
-    padding: 0;
-    display: block;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 99vh;
-}
-.single-image > img {
-    max-width: 100%;
-    max-height: 95vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    height: auto;
-}
 
 .photorow {
     display: flex;
@@ -1474,4 +1452,35 @@ figure.single-image {
   padding: .5em;
 }
 
+/*
+Page with full-quality image and its caption
+*/
+.single-image > figcaption {
+    text-align: center;
+    padding: .1rem 0 .1rem 0;
+}
+
+figure.single-image {
+    padding: 0;
+    margin: 0;
+}
+.single-image > img {
+    max-width: 100%;
+    max-height: 95vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+  padding: inherit;
+  margin:auto;
+  display: block;
+  
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 </style>
