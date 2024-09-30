@@ -140,14 +140,14 @@ class="active" aria-current="page">Home</a></li>
 </figure>
 
 <h1 id="daily-data-point">Daily data point</h1>
-<p>In Turkey in 2018, the <em>current number of cases of bipolar disorder per 100,000 people, in both sexes aged 20 to 24</em> was 1216.97</p>
+<p>In Puerto Rico in 2009, the <em>share of total deaths in females aged 10-14 years years that are from digestive diseases (Digestive diseases has the following ICD 10 codes: K20-K92.)</em> was 5.56</p>
 <span style="color:grey"><blockquote>
 <p>Thanks to the open API available by <a href="https://ourworldindata.org/">Our World in Data</a>.</p>
 </blockquote>
 </span>
 
 <h1 id="daily-french-slang">Daily French slang</h1>
-<p><em>tout ce qu'il y a</em> &ndash; Très, intensif
+<p><em>pas la même Saint-Martin</em> &ndash; Ce n'est pas pareil
 </p>
 <span style="color:grey"><blockquote>
 <p>Thanks to <a href="https://www.languefrancaise.net/Bob/Random">Bob: Dictionnaire de l&rsquo;argot</a>.</p>
@@ -161,7 +161,7 @@ class="active" aria-current="page">Home</a></li>
 </body>
 </html>
 <footer class="footer layout__footer">
-<p><span>© Bryan Kaperick&#39;s Website</span> <span style="color:grey"> -- Last updated  2024-09-27 18:26:37
+<p><span>© Bryan Kaperick&#39;s Website</span> <span style="color:grey"> -- Last updated  2024-09-30 14:10:51
 </span></p>
 
 
@@ -1448,19 +1448,26 @@ figure.album {
     font-size: 100%;
     text-decoration: underline;
 }
+
+.photorow {
+    display: flex;
+    flex: 50%;
+}
+.photocolumn {
+  padding: .5em;
+}
+
+/*
+Page with full-quality image and its caption
+*/
 .single-image > figcaption {
-    font-size: 150%;
     text-align: center;
-    padding: .7rem 0 .7rem 0;
+    padding: .1rem 0 .1rem 0;
 }
 
 figure.single-image {
     padding: 0;
-    display: block;
     margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 99vh;
 }
 .single-image > img {
     max-width: 100%;
@@ -1469,13 +1476,16 @@ figure.single-image {
     margin-right: auto;
     width: auto;
     height: auto;
-}
+  padding: inherit;
+  margin:auto;
+  display: block;
+  
+  /* Full height */
+  height: 100%;
 
-.photorow {
-    display: flex;
-    flex: 50%;
-}
-.photocolumn {
-  padding: .5em;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>

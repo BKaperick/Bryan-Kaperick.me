@@ -1280,19 +1280,26 @@ figure.album {
     font-size: 100%;
     text-decoration: underline;
 }
+
+.photorow {
+    display: flex;
+    flex: 50%;
+}
+.photocolumn {
+  padding: .5em;
+}
+
+/*
+Page with full-quality image and its caption
+*/
 .single-image > figcaption {
-    font-size: 150%;
     text-align: center;
-    padding: .7rem 0 .7rem 0;
+    padding: .1rem 0 .1rem 0;
 }
 
 figure.single-image {
     padding: 0;
-    display: block;
     margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 99vh;
 }
 .single-image > img {
     max-width: 100%;
@@ -1301,12 +1308,15 @@ figure.single-image {
     margin-right: auto;
     width: auto;
     height: auto;
-}
+  padding: inherit;
+  margin:auto;
+  display: block;
+  
+  /* Full height */
+  height: 100%;
 
-.photorow {
-    display: flex;
-    flex: 50%;
-}
-.photocolumn {
-  padding: .5em;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
