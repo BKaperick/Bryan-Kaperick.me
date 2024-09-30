@@ -101,13 +101,15 @@ with open("photos.json", "r") as fw:
         elif key not in album_photos:
             block = get_photo_block(key)
             photo_blocks.append((block, photo))
+
+        file_name = photo["name"].replace(".jpg","")
         
         block = get_photo_captioned_figure(key, "raw").replace('class="image"', 'class="single-image"')
-        html_path = "./raw_with_label/" + key + ".html"
+        html_path = "./raw_with_label/" + file_name + ".html"
         with open(html_path, "w") as f:
             f.write(block)
         for language in ["en", "fr"]:
-            php_path = "../{0}/photos/{1}.php".format(language, key)
+            php_path = "../{0}/photos/{1}.php".format(language, file_name)
             with open(php_path, "w") as f:
                 f.write("""<?php 
 include($_SERVER['DOCUMENT_ROOT']."/photos/minimal_photo_header.php");
