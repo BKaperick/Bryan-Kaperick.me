@@ -20,7 +20,6 @@ def get_grid(photo_count):
             elem += '<div class="photocolumn"> {0} </div>\n'.format("{" + str(count) + "}")
             count += 1
         elem += '</div>\n'
-    #print(elem)
     return elem
 
 def get_album_block(album, photo_blocks):
@@ -43,14 +42,14 @@ def get_album_block(album, photo_blocks):
 
     return pre + images_elem + post
 
-def get_photo_captioned_figure(key, subdir, year = True):
+def get_photo_captioned_figure(key, subdir, year = True, album_key = None):
     return """<figure class="image">
-    <img src=<?="/photos/{1}/" . $p->{0}->name;?>>
+    <img src=<?="/photos/{2}/" . $p->{0}->name;?>>
     <figcaption>
-<?=$p->{0}->$lang;?>{2}
+<?=$p->{1}->$lang;?>{3}
     </figcaption>
 </figure>
-""".format(key, subdir, " ~ <?=$p->{0}->year;?>".format(key) if year else "")
+""".format(key, album_key if album_key else key, subdir, " ~ <?=$p->{0}->year;?>".format(key) if year else "")
 
 def get_photo_block(key, file_name, year = True):
     return """<a href="<?="/" . $lang . "/photos/{0}.php";?>">
@@ -81,6 +80,7 @@ with open("photos.json", "r") as fw:
         if "is_album" in photo and photo["is_album"]:
             album_photos += photo["photos"]
 
+    photo_key_to_album_key = {}
     for key,photo in photos.items():
 
         # ignore albums for now
@@ -92,6 +92,7 @@ with open("photos.json", "r") as fw:
         if "is_album" in photo and photo["is_album"] == True:
             album_blocks = []
             for subkey in photo["photos"]:
+                photo_key_to_album_key[subkey] = key
                 subphoto = photos[subkey]
                 sub_file_name = subphoto["name"].replace(".jpg","")
                 block = get_photo_block_in_album(subkey, sub_file_name)
@@ -105,7 +106,21 @@ with open("photos.json", "r") as fw:
             block = get_photo_block(key, file_name)
             photo_blocks.append((block, photo))
         
-        block = get_photo_captioned_figure(key, "raw").replace('class="image"', 'class="single-image"')
+    for key,photo in photos.items():
+        # ignore albums for now
+        if key == "is_album":
+            continue
+        
+        file_name = photo["name"].replace(".jpg","")
+        
+        # The idea is that if the photo is (1) contained in an album and (2) doesn't have its own description,
+        # then on the single-image page, we use the album caption rather than leaving it at "~ [year]"
+        if key in photo_key_to_album_key and not photos[key]["en"] and not photos[key]["fr"]:
+            block = get_photo_captioned_figure(key, "raw", album_key = photo_key_to_album_key[key])
+        else:
+            block = get_photo_captioned_figure(key, "raw")
+        block = block.replace('class="image"', 'class="single-image"')
+        
         html_path = "./raw_with_label/" + file_name + ".html"
         with open(html_path, "w") as f:
             f.write(block)
