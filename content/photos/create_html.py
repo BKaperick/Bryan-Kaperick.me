@@ -93,8 +93,8 @@ with open("photos.json", "r") as fw:
             album_blocks = []
             for subkey in photo["photos"]:
                 subphoto = photos[subkey]
-                file_name = subphoto["name"].replace(".jpg","")
-                block = get_photo_block_in_album(subkey, file_name)
+                sub_file_name = subphoto["name"].replace(".jpg","")
+                block = get_photo_block_in_album(subkey, sub_file_name)
                 album_blocks.append((block, subphoto))
             block = get_album_block(key, album_blocks)
             photo_blocks.append((block, photo))
