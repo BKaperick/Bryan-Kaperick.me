@@ -1275,18 +1275,23 @@ figure.album {
     text-decoration: underline;
 }
 .single-image > figcaption {
-    font-size: 150%;
     text-align: center;
-    padding: .7rem 0 .7rem 0;
+    padding: .1rem 0 .1rem 0;
 }
 
 figure.single-image {
     padding: 0;
-    display: block;
     margin: 0;
+/*
+    display: block;
     margin-left: auto;
     margin-right: auto;
     max-height: 99vh;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 95vh;
+*/
 }
 .single-image > img {
     max-width: 100%;
@@ -1295,6 +1300,26 @@ figure.single-image {
     margin-right: auto;
     width: auto;
     height: auto;
+  padding: inherit;
+  margin:auto;
+  display: block;
+/*position: absolute;
+left: 50%;
+top: 50%;
+
+-webkit-transform:translate(-50%, -50%);
+-moz-transform:translate(-50%, -50%);
+-ms-transform:translate(-50%, -50%);
+-o-transform:translate(-50%, -50%);
+transform:translate(-50%, -50%);
+*/
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .photorow {
@@ -1304,4 +1329,3 @@ figure.single-image {
 .photocolumn {
   padding: .5em;
 }
-
