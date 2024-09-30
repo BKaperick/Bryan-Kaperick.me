@@ -20,14 +20,13 @@ def get_grid(photo_count):
             elem += '<div class="photocolumn"> {0} </div>\n'.format("{" + str(count) + "}")
             count += 1
         elem += '</div>\n'
-    #print(elem)
     return elem
 
 def get_album_block(album, photo_blocks):
     pre = """
 <div class="album">
     <figure class="album">
-""".replace("{0}", album)
+""".format(album)
     #images = [x[0] for x in sorted(photo_blocks, key=order_photos)]
     images = [x[0] for x in photo_blocks]
     images_elem = get_grid(len(images)).format(*images)
@@ -43,21 +42,20 @@ def get_album_block(album, photo_blocks):
 
     return pre + images_elem + post
 
-def get_photo_captioned_figure(key, subdir, year = True):
+def get_photo_captioned_figure(key, subdir, year = True, album_key = None):
     return """<figure class="image">
-    <img src=<?="/photos/{1}/" . $p->{0}->name;?>>
+    <img src=<?="/photos/{2}/" . $p->{0}->name;?>>
     <figcaption>
-<?=$p->{0}->$lang;?>{2}
+<?=$p->{1}->$lang;?>{3}
     </figcaption>
 </figure>
-""".format(key, subdir, " ~ <?=$p->{0}->year;?>".format(key) if year else "")
+""".format(key, album_key if album_key else key, subdir, " ~ <?=$p->{0}->year;?>".format(key) if year else "")
 
-def get_photo_block(key, year = True):
-    #return """<a href="<?="/{0}.php";?>">
+def get_photo_block(key, file_name, year = True):
     return """<a href="<?="/" . $lang . "/photos/{0}.php";?>">
 {1}
 </a>
-""".format(key, get_photo_captioned_figure(key, "lowres", year))
+""".format(file_name, get_photo_captioned_figure(key, "lowres", year))
 
 def get_photo_captioned_figure_in_album(key):
     return """<figure class="albumimage">
@@ -68,11 +66,11 @@ def get_photo_captioned_figure_in_album(key):
 </figure>
 """.format(key)
 
-def get_photo_block_in_album(key):
+def get_photo_block_in_album(key, file_name):
     return """<span style="color:grey"><a href="<?="/" . $lang . "/photos/{0}.php";?>">
 {1}
 </a></span>
-""".format(key, get_photo_captioned_figure_in_album(key))
+""".format(file_name, get_photo_captioned_figure_in_album(key))
 
 with open("photos.json", "r") as fw:
     photos = json.load(fw)
@@ -82,32 +80,52 @@ with open("photos.json", "r") as fw:
         if "is_album" in photo and photo["is_album"]:
             album_photos += photo["photos"]
 
+    photo_key_to_album_key = {}
     for key,photo in photos.items():
 
         # ignore albums for now
         if key == "is_album":
             continue
+        
+        file_name = photo["name"].replace(".jpg","")
 
         if "is_album" in photo and photo["is_album"] == True:
             album_blocks = []
             for subkey in photo["photos"]:
+                photo_key_to_album_key[subkey] = key
                 subphoto = photos[subkey]
-                block = get_photo_block_in_album(subkey)
+                sub_file_name = subphoto["name"].replace(".jpg","")
+                block = get_photo_block_in_album(subkey, sub_file_name)
                 album_blocks.append((block, subphoto))
             block = get_album_block(key, album_blocks)
             photo_blocks.append((block, photo))
 
+
         # Photo is not contained in any album, so just print it on main photos page
         elif key not in album_photos:
-            block = get_photo_block(key)
+            block = get_photo_block(key, file_name)
             photo_blocks.append((block, photo))
         
-        block = get_photo_captioned_figure(key, "raw").replace('class="image"', 'class="single-image"')
-        html_path = "./raw_with_label/" + key + ".html"
+    for key,photo in photos.items():
+        # ignore albums for now
+        if key == "is_album":
+            continue
+        
+        file_name = photo["name"].replace(".jpg","")
+        
+        # The idea is that if the photo is (1) contained in an album and (2) doesn't have its own description,
+        # then on the single-image page, we use the album caption rather than leaving it at "~ [year]"
+        if key in photo_key_to_album_key and not photos[key]["en"] and not photos[key]["fr"]:
+            block = get_photo_captioned_figure(key, "raw", album_key = photo_key_to_album_key[key])
+        else:
+            block = get_photo_captioned_figure(key, "raw")
+        block = block.replace('class="image"', 'class="single-image"')
+        
+        html_path = "./raw_with_label/" + file_name + ".html"
         with open(html_path, "w") as f:
             f.write(block)
         for language in ["en", "fr"]:
-            php_path = "../{0}/photos/{1}.php".format(language, key)
+            php_path = "../{0}/photos/{1}.php".format(language, file_name)
             with open(php_path, "w") as f:
                 f.write("""<?php 
 include($_SERVER['DOCUMENT_ROOT']."/photos/minimal_photo_header.php");
