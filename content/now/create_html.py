@@ -53,7 +53,7 @@ with open("now.json", "r") as fw:
     <td class="border1" style="min-width:100px"><?=$p->{0}->date;?></td>
     <td class="border1"><?=$p->{0}->$lang;?></td>
     <td class="border1"><a href="<?="/now/raw/" . $p->{0}->photo;?>">
-        <img src="<?="/now/lowres/" . $p->{0}->photo;?>" style="max-width:60px;width:100%"></a></td>
+        <img src="<?="/now/lowres/" . $p->{0}->photo . ".webp";?>" style="max-width:60px;width:100%"></a></td>
 </tr>
 """.format(key)
         
