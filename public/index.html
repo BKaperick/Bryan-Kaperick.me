@@ -50,7 +50,7 @@
 <div class="page layout__page layout__sidebar-second">
 <header class="header layout__header">
 <img src=>
-<a href="index.html" title="Home" rel="home" class="header__logo"><img src="static/logo.png" alt="Home" class="header__logo-image"></a>
+<a href="index.html" title="Home" rel="home" class="header__logo"><img src="static/logo.jpg" alt="Home" class="header__logo-image"></a>
 <h1 class="header__site-name">
 <a href="index.html" title="Home" class="header__site-link" rel="home"><span>Bryan Kaperick&#39;s Website</span></a>
 </h1>
@@ -136,7 +136,7 @@ class="active" aria-current="page">Home</a></li>
 <div class="content">
 
 <figure class="image">
-<img src="static/logo_man_strikes.jpg">
+<a href="static/mountain_sunset.png"><img src="static/mountain_sunset.png" class="image"></a>
 </figure>
 
 <h1 id="daily-data-point">Daily data point</h1>
@@ -161,9 +161,13 @@ class="active" aria-current="page">Home</a></li>
 </body>
 </html>
 <footer class="footer layout__footer">
-<p><span>© Bryan Kaperick&#39;s Website</span> <span style="color:grey"> -- Last updated  2024-10-02 00:00:21
-</span></p>
-
+<span style="color:grey"> 
+<p><span>© Bryan Kaperick&#39;s Website</span> – <nobr>Last updated  2024-10-02
+</nobr>
+<br>
+The profile picture was sketched by <a href="https://www.instagram.com/j.andrews96/" style="color:#585858">Jason Andrews</a>
+</p>
+</span>
 
 </footer>
 <style>
@@ -805,7 +809,14 @@ ul menu {
 }
 
 .header__logo-image {
-	vertical-align: bottom
+	vertical-align: bottom;
+    max-width: 200px;
+    max-height: 200px;
+}
+.sublogo__image > img {
+	max-width: 960px;
+    /*width: 75vh;*/
+    max-height: 15vh;
 }
 
 .header__site-name {
