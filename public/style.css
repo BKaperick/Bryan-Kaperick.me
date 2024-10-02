@@ -636,7 +636,14 @@ ul menu {
 }
 
 .header__logo-image {
-	vertical-align: bottom
+	vertical-align: bottom;
+    max-width: 200px;
+    max-height: 200px;
+}
+.sublogo__image > img {
+	max-width: 960px;
+    /*width: 75vh;*/
+    max-height: 15vh;
 }
 
 .header__site-name {
@@ -1306,8 +1313,9 @@ figure.single-image {
   margin:auto;
   display: block;
   
-  /* Full height */
+  /* Full height
   height: 100%;
+ */
 
   /* Center and scale the image nicely */
   background-position: center;
