@@ -27,6 +27,7 @@ $language = array(
     'Photos'=>'Photos',
     'Bio'=>'Bio',
     'Blog Posts'=>'Blog Posts',
-    'Now'=>'Maintenant'
+    'Now'=>'Maintenant',
+    'SKETCH_CRED'=>'Le croquis du logo a été réalisé par'
 );
 ?>

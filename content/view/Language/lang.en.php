@@ -27,6 +27,7 @@ $language = array(
     'Photos'=>'Photos',
     'Bio'=>'Bio',
     'Blog Posts'=>'Blog Posts',
-    'Now'=>'Now'
+    'Now'=>'Now',
+    'SKETCH_CRED'=>'Logo photo sketch by'
 );
 ?>
