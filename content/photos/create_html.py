@@ -44,12 +44,12 @@ def get_album_block(album, photo_blocks):
 
 def get_photo_captioned_figure(key, subdir, year = True, album_key = None):
     return """<figure class="image">
-    <img src=<?="/photos/{2}/" . $p->{0}->name;?>>
+    <img src=<?="/photos/{2}/" . $p->{0}->name . "{4}";?>>
     <figcaption>
 <?=$p->{1}->$lang;?>{3}
     </figcaption>
 </figure>
-""".format(key, album_key if album_key else key, subdir, " ~ <?=$p->{0}->year;?>".format(key) if year else "")
+""".format(key, album_key if album_key else key, subdir, " ~ <?=$p->{0}->year;?>".format(key) if year else "", ".webp" if subdir == "lowres" else "")
 
 def get_photo_block(key, file_name, year = True):
     return """<a href="<?="/" . $lang . "/photos/{0}.php";?>">
@@ -59,7 +59,7 @@ def get_photo_block(key, file_name, year = True):
 
 def get_photo_captioned_figure_in_album(key):
     return """<figure class="albumimage">
-    <img class="albumimage" src=<?="/photos/lowres/" . $p->{0}->name;?>>
+    <img class="albumimage" src=<?="/photos/lowres/" . $p->{0}->name . ".webp";?>>
     <figcaption>
 <?=$p->{0}->$lang;?>
     </figcaption>
