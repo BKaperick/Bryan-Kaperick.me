@@ -640,8 +640,13 @@ ul menu {
     max-width: 200px;
     max-height: 200px;
 }
+.sublogo__image > figure {
+    display: block;
+    
+}
 .sublogo__image > img {
-    width: 75vh;
+	max-width: 960px;
+    /*width: 75vh;*/
     height: 15vh;
 }
 
