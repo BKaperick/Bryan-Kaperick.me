@@ -28,6 +28,6 @@ $language = array(
     'Bio'=>'Bio',
     'Blog Posts'=>'Blog Posts',
     'Now'=>'Maintenant',
-    'SKETCH_CRED'=>'La photo de profile a été esquissé par'
+    'SKETCH_CRED'=>'La photo de profile a été esquissée par'
 );
 ?>
