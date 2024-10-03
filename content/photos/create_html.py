@@ -43,13 +43,16 @@ def get_album_block(album, photo_blocks):
     return pre + images_elem + post
 
 def get_photo_captioned_figure(key, subdir, year = True, album_key = None):
+    image_key = album_key if album_key else key
+    caption_year = " ~ <?=$p->{0}->year;?>".format(key) if year else ""
+    file_suffix = ".webp" if subdir == "lowres" else ""
     return """<figure class="image">
-    <img src=<?="/photos/{2}/" . $p->{0}->name . "{4}";?>>
+    <img src=<?="/photos/{2}/" . $p->{0}->name . "{4}";?> alt="<?=$p->{1}->$lang;?>{3}">
     <figcaption>
 <?=$p->{1}->$lang;?>{3}
     </figcaption>
 </figure>
-""".format(key, album_key if album_key else key, subdir, " ~ <?=$p->{0}->year;?>".format(key) if year else "", ".webp" if subdir == "lowres" else "")
+""".format(key, image_key, subdir, caption_year, file_suffix)
 
 def get_photo_block(key, file_name, year = True):
     return """<a href="<?="/" . $lang . "/photos/{0}.php";?>">
@@ -59,7 +62,7 @@ def get_photo_block(key, file_name, year = True):
 
 def get_photo_captioned_figure_in_album(key):
     return """<figure class="albumimage">
-    <img class="albumimage" src=<?="/photos/lowres/" . $p->{0}->name . ".webp";?>>
+    <img class="albumimage" src=<?="/photos/lowres/" . $p->{0}->name . ".webp";?> alt="<?=$p->{0}->$lang;?>">
     <figcaption>
 <?=$p->{0}->$lang;?>
     </figcaption>
@@ -105,6 +108,8 @@ with open("photos.json", "r") as fw:
         elif key not in album_photos:
             block = get_photo_block(key, file_name)
             photo_blocks.append((block, photo))
+    
+    print("\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
         
     for key,photo in photos.items():
         # ignore albums for now
@@ -136,7 +141,6 @@ include($_SERVER['DOCUMENT_ROOT']."/photos/{1}");
     
         
 
-print("\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
 
 
     
