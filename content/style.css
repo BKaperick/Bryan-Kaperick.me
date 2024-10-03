@@ -477,6 +477,10 @@ ul menu {
 .layout__second-sidebar,
 .layout__page-top,
 .layout__page-bottom,
+.layout__cookieconsent {
+	padding: 0 10px;
+	min-width: 0
+}
 
 @media (min-width: 666px) {
 
@@ -488,6 +492,9 @@ ul menu {
 	.layout__second-sidebar,
 	.layout__page-top,
 	.layout__page-bottom,
+	.layout__cookieconsent {
+		padding: 0 20px
+	}
 }
 
 @supports (display: grid) {
@@ -551,6 +558,9 @@ ul menu {
 		grid-area: foot
 	}
 
+	.layout__cookieconsent {
+		grid-area: notice
+	}
 }
 
 .box {
@@ -585,12 +595,34 @@ ul menu {
 	clear: both
 }
 
+.cookieconsent {
+	font-size: .81818182rem;
+	line-height: 1.40909091rem;
+	position: sticky;
+	bottom: 0;
+	width: 100%;
+	color: #000;
+	background-color: #fffce6;
+	border-top: 4px solid #fd0;
+	text-align: center;
+	transform: translateY(100vh);
+	transition: all 130ms ease-in
+}
+
+.cookieconsent a {
+	color: inherit
+}
+
 .button--accept {
 	border-color: #43a808
 }
 
 .button--decline {
 	border-color: #fd0
+}
+
+.js-cookieconsent-open {
+	transform: translateY(0)
 }
 
 @media (min-width: 666px) {
