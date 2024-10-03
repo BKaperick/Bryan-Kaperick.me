@@ -79,55 +79,55 @@ $language_toggle = array(
 <nav class="main-menu layout__navigation">
 <h2 class="visually-hidden">Main menu</h2>
 <ul class="navbar">
-<li><a href="/"
+<li><a class="button_link" style="background:transparent" href="/"
 <?=
 (str_contains(basename($_SERVER['SCRIPT_FILENAME']), "index")) 
 ? "class=\"active\" aria-current=\"page\"" 
-: "" ?>><?=$language['Home'];
-?>
-</a></li>
-<li><a href="/<?=$lang?>/now/now.php"
+: "" ?>><div class="button_and_image"><div class="button_text"><?=$language['Home'];
+?></div>
+</div></a></li>
+<li><a class="button_link" style="background:transparent" href="/<?=$lang?>/now/now.php"
 <?=
 (str_contains($_SERVER['SCRIPT_FILENAME'], "now")) 
 ? "class=\"active\" aria-current=\"page\"" 
-: "" ?>><?=$language['Now'];
-?>
-</a></li>
-<li><a href="/<?=$lang?>/poetry/poetry.php" 
+: "" ?>><div class="button_and_image"><div class="button_text"><?=$language['Now'];
+?></div>
+</div></a></li>
+<li><a class="button_link" style="background:transparent" href="/<?=$lang?>/poetry/poetry.php" 
 <?=
 (str_contains(basename($_SERVER['SCRIPT_FILENAME']), "poetry")) 
 ? "class=\"active\" aria-current=\"page\"" 
-: "" ?>><?=$language['Poetry'];
-?>
-</a></li>
-<li><a href="/<?=$lang?>/contact/contact.php"
+: "" ?>><div class="button_and_image"><div class="button_text"><?=$language['Poetry'];
+?></div>
+</div></a></li>
+<li><a class="button_link" style="background:transparent" href="/<?=$lang?>/contact/contact.php"
 <?=
 (str_contains(basename($_SERVER['SCRIPT_FILENAME']), "contact")) 
 ? "class=\"active\" aria-current=\"page\"" 
-: "" ?>><?=$language['Contact'];
-?>
-</a></li>
-<li><a href="/<?=$lang?>/photos/photos.php"
+: "" ?>><div class="button_and_image"><div class="button_text"><?=$language['Contact'];
+?></div>
+</div></a></li>
+<li><a class="button_link" style="background:transparent" href="/<?=$lang?>/photos/photos.php"
 <?=
 (str_contains(basename($_SERVER['SCRIPT_FILENAME']), "photos")) 
 ? "class=\"active\" aria-current=\"page\"" 
-: "" ?>><?=$language['Photos'];
-?>
-</a></li>
-<li><a href="/<?=$lang?>/bio/bio.php"
+: "" ?>><div class="button_and_image"><div class="button_text"><?=$language['Photos'];
+?></div>
+</div></a></li>
+<li><a class="button_link" style="background:transparent" href="/<?=$lang?>/bio/bio.php"
 <?=
 (str_contains(basename($_SERVER['SCRIPT_FILENAME']), "bio")) 
 ? "class=\"active\" aria-current=\"page\"" 
-: "" ?>><?=$language['Bio'];
-?>
-</a></li>
-<li><a href="/<?=$lang?>/blog-post/blog-post.php"
+: "" ?>><div class="button_and_image"><div class="button_text"><?=$language['Bio'];
+?></div>
+</div></a></li>
+<li><a class="button_link" style="background:transparent" href="/<?=$lang?>/blog-post/blog-post.php"
 <?=
 (str_contains($_SERVER['SCRIPT_FILENAME'], "blog-post")) 
 ? "class=\"active\" aria-current=\"page\"" 
-: "" ?>><?=$language['Blog Posts'];
-?>
-</a></li>
+: "" ?>><div class="button_and_image"><div class="button_text"><?=$language['Blog Posts'];
+?></div>
+</div></a></li>
 </ul>
 
 </nav>
