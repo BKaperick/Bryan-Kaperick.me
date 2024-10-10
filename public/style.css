@@ -1305,7 +1305,7 @@ display: inline-block
 }
 .button_text {
     /* position: absolute; */
-    background: url('static/button_background.webp') no-repeat;
+    background: url('http://localhost:8000/static/button_background.webp') no-repeat;
     background-size: 100% 100%;
     padding: 10px;
     /*top: 5%;
