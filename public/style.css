@@ -295,7 +295,7 @@ button,
 	line-height: inherit;
 	text-decoration: none;
 	cursor: pointer;
-	color: #000;
+	color: #333;
 	text-align: center;
 	background-image: linear-gradient(#f6f6f6, #e2e2e2);
 	border: 1px solid #e4e4e4;
@@ -1293,25 +1293,4 @@ figure.single-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.button_image {
-    width: auto;
-    height: auto;
-display: inline-block
-}
-.button_and_image {
-display: inline-block
-}
-.button_text {
-    /* position: absolute; */
-    background: url('http://localhost:8000/static/button_background.webp') no-repeat;
-    background-size: 100% 100%;
-    padding: 10px;
-    /*top: 5%;
-    left: 5%;*/
-}
-.button_link {
-    background-color: transparent;
-    background: transparent;
 }
