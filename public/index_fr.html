@@ -73,20 +73,27 @@
 <nav class="main-menu layout__navigation">
 <h2 class="visually-hidden">Main menu</h2>
 <ul class="navbar">
-<li><a href="index.html"
-class="active" aria-current="page">Accueil</a></li>
-<li><a href="fr/now/now.html"
->Maintenant</a></li>
-<li><a href="fr/poetry/poetry.html" 
->Poésie</a></li>
-<li><a href="fr/contact/contact.html"
->Contacter</a></li>
-<li><a href="fr/photos/photos.html"
->Photos</a></li>
-<li><a href="fr/bio/bio.html"
->Bio</a></li>
-<li><a href="fr/blog-post/blog-post.html"
->Blog Posts</a></li>
+<li><a class="button_link" style="background:transparent" href="index.html"
+class="active" aria-current="page"><div class="button_and_image"><div class="button_text">Accueil</div>
+</div></a></li>
+<li><a class="button_link" style="background:transparent" href="fr/now/now.html"
+><div class="button_and_image"><div class="button_text">Maintenant</div>
+</div></a></li>
+<li><a class="button_link" style="background:transparent" href="fr/poetry/poetry.html" 
+><div class="button_and_image"><div class="button_text">Poésie</div>
+</div></a></li>
+<li><a class="button_link" style="background:transparent" href="fr/contact/contact.html"
+><div class="button_and_image"><div class="button_text">Contacter</div>
+</div></a></li>
+<li><a class="button_link" style="background:transparent" href="fr/photos/photos.html"
+><div class="button_and_image"><div class="button_text">Photos</div>
+</div></a></li>
+<li><a class="button_link" style="background:transparent" href="fr/bio/bio.html"
+><div class="button_and_image"><div class="button_text">Bio</div>
+</div></a></li>
+<li><a class="button_link" style="background:transparent" href="fr/blog-post/blog-post.html"
+><div class="button_and_image"><div class="button_text">Blog Posts</div>
+</div></a></li>
 </ul>
 
 </nav>
@@ -469,7 +476,7 @@ button,
 	line-height: inherit;
 	text-decoration: none;
 	cursor: pointer;
-	color: #333;
+	color: #000;
 	text-align: center;
 	background-image: linear-gradient(#f6f6f6, #e2e2e2);
 	border: 1px solid #e4e4e4;
@@ -650,8 +657,7 @@ ul menu {
 .layout__first-sidebar,
 .layout__second-sidebar,
 .layout__page-top,
-.layout__page-bottom,
-.layout__cookieconsent {
+.layout__page-bottom {
 	padding: 0 10px;
 	min-width: 0
 }
@@ -665,8 +671,7 @@ ul menu {
 	.layout__first-sidebar,
 	.layout__second-sidebar,
 	.layout__page-top,
-	.layout__page-bottom,
-	.layout__cookieconsent {
+	.layout__page-bottom {
 		padding: 0 20px
 	}
 }
@@ -731,10 +736,6 @@ ul menu {
 	.layout__footer {
 		grid-area: foot
 	}
-
-	.layout__cookieconsent {
-		grid-area: notice
-	}
 }
 
 .box {
@@ -769,34 +770,12 @@ ul menu {
 	clear: both
 }
 
-.cookieconsent {
-	font-size: .81818182rem;
-	line-height: 1.40909091rem;
-	position: sticky;
-	bottom: 0;
-	width: 100%;
-	color: #000;
-	background-color: #fffce6;
-	border-top: 4px solid #fd0;
-	text-align: center;
-	transform: translateY(100vh);
-	transition: all 130ms ease-in
-}
-
-.cookieconsent a {
-	color: inherit
-}
-
 .button--accept {
 	border-color: #43a808
 }
 
 .button--decline {
 	border-color: #fd0
-}
-
-.js-cookieconsent-open {
-	transform: translateY(0)
 }
 
 @media (min-width: 666px) {
@@ -1495,5 +1474,26 @@ figure.single-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.button_image {
+    width: auto;
+    height: auto;
+display: inline-block
+}
+.button_and_image {
+display: inline-block
+}
+.button_text {
+    /* position: absolute; */
+    background: url('static/button_background.webp') no-repeat;
+    background-size: 100% 100%;
+    padding: 10px;
+    /*top: 5%;
+    left: 5%;*/
+}
+.button_link {
+    background-color: transparent;
+    background: transparent;
 }
 </style>
