@@ -142,14 +142,14 @@ class="active" aria-current="page">Home</a></li>
 </figure>
 
 <h1 id="daily-data-point">Daily data point</h1>
-<p>In Czechia in 2000, the <em>forest area as a proportion of total land area</em> was 34.13084%</p>
+<p>In France in 2007, the <em>share of total DALYs that are from klinefelter syndrome, in both sexes aged 7-27 days</em> was 0.0</p>
 <span style="color:grey"><blockquote>
 <p>Thanks to the open API available by <a href="https://ourworldindata.org/">Our World in Data</a>.</p>
 </blockquote>
 </span>
 
 <h1 id="daily-french-slang">Daily French slang</h1>
-<p><em>niche</em> &ndash; Chambre
+<p><em>castagner</em> &ndash; Cogner, sanctionner, frapper ; se bagarrer, se battre
 </p>
 <span style="color:grey"><blockquote>
 <p>Thanks to <a href="https://www.languefrancaise.net/Bob/Random">Bob: Dictionnaire de l&rsquo;argot</a>.</p>
@@ -164,7 +164,7 @@ class="active" aria-current="page">Home</a></li>
 </html>
 <footer class="footer layout__footer">
 <span style="color:grey"> 
-<p><span>© Bryan Kaperick&#39;s Website</span> – <nobr>Last updated  2024-10-15
+<p><span>© Bryan Kaperick&#39;s Website</span> – <nobr>Last updated  2024-10-16
 </nobr>
 <br>
 The profile picture was sketched by <a href="https://www.instagram.com/j.andrews96/" style="color:#585858">Jason Andrews</a>
@@ -730,7 +730,12 @@ ul menu {
 	.layout__first-sidebar {
 		grid-area: side1
 	}
-
+	
+    .footnotes {
+        display: grid;
+		grid-area: main / main / main / side2;
+        font-size: .8rem;
+	}
 	.layout__second-sidebar {
 		grid-area: side2
 	}
@@ -1070,6 +1075,16 @@ aside ol>li::before {
 	text-align: center
 }
 
+.footnotes ol {
+    margin: 0;
+}
+.footnotes li {
+    line-height: .9em;
+}
+.footnotes p {
+    margin: .50rem 0;
+    line-height: 1.1em;
+}
 .pager__item,
 .pager-item,
 .pager-first,
