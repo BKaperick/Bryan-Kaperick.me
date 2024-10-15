@@ -883,8 +883,15 @@ aside ol>li::before {
 	list-style-type: none;
 	list-style-image: none
 }
+.footnotes ol {
+    margin: 0;
+}
 .footnotes li {
     line-height: .9em;
+}
+.footnotes p {
+    margin: .50rem 0;
+    line-height: 1.1em;
 }
 
 .pager {
@@ -1309,8 +1316,20 @@ figure.single-image {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.wide-content p {
-    /* font-size: 100%; */
-    font-size: 1rem;
+.project-title {
+    float: left;
+}
+.project-icon {
+    padding: .5rem 0 .1rem .1rem;
+}
+.content {
+    clear: both;
+}
+.project-wrapper {
+    background-color: #ddd; /*#c8c4c3;*/
+    border-radius: 5px;
+    padding: .5rem .5rem .5rem .5rem;
+}
+.project-tagline {
+    text-decoration: none;
 }
