@@ -47,7 +47,7 @@
 </head>
 
 <body class="list-page front">
-<div class="page layout__page layout__sidebar-second">
+<div class="page layout__page">
 <header class="header layout__header">
 <img src=>
 <a href="index.html" title="Home" rel="home" class="header__logo"><img src="static/logo_cleaned_reduce_50pct.webp" alt="Home" class="header__logo-image"></a>
@@ -307,7 +307,8 @@ blockquote {
 dl,
 ol,
 ul {
-	margin: 1.40909091rem 0
+	margin: 1.20909091rem 0;
+    padding-inline-start: 0px;
 }
 
 dd {
@@ -716,7 +717,12 @@ ul menu {
 	.layout__first-sidebar {
 		grid-area: side1
 	}
-
+	
+    .footnotes {
+        display: grid;
+		grid-area: main / main / main / side2;
+        font-size: .8rem;
+	}
 	.layout__second-sidebar {
 		grid-area: side2
 	}
@@ -1053,6 +1059,16 @@ aside ol>li::before {
 	text-align: center
 }
 
+.footnotes ol {
+    margin: 0;
+}
+.footnotes li {
+    line-height: .9em;
+}
+.footnotes p {
+    margin: .50rem 0;
+    line-height: 1.1em;
+}
 .pager__item,
 .pager-item,
 .pager-first,
