@@ -883,8 +883,15 @@ aside ol>li::before {
 	list-style-type: none;
 	list-style-image: none
 }
+.footnotes ol {
+    margin: 0;
+}
 .footnotes li {
     line-height: .9em;
+}
+.footnotes p {
+    margin: .50rem 0;
+    line-height: 1.1em;
 }
 
 .pager {
