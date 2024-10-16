@@ -28,6 +28,7 @@ $language = array(
     'Bio'=>'Bio',
     'Blog Posts'=>'Blog Posts',
     'Now'=>'Maintenant',
-    'SKETCH_CRED'=>'La photo de profile a été esquissée par'
+    'SKETCH_CRED'=>'La photo de profile a été esquissée par',
+    'Click for other artistic attributions' => 'Cliquez ici pour des autres attributions artistiques'
 );
 ?>

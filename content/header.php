@@ -70,6 +70,7 @@ $language_toggle = array(
 <ul class="navbar">
 
 <li><a rel="alternate" lang="<?=$language_toggle[$lang]?>" hreflang="<?=$language_toggle[$lang]?>" href="?lang=<?=$language_toggle[$lang];?>"><?=$language['LANGUAGE_TOGGLE'];?></a></li>
+<li><a href="/en/contact/contact.html#attribution">Attribution</a></li>
 
 </ul>
 </nav>

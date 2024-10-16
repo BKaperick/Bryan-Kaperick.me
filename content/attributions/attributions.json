@@ -2,7 +2,7 @@
     "american_coffee": {
         "name": "Coffee",
         "author": "Bilicube Studio",
-        "image": "../../static/american-coffee.svg",
+        "image": "../../static/american-coffee.webp",
         "link": "https://thenounproject.com/icon/coffee-7286442/",
         "repository": "Noun Project",
         "repository_link": "https://thenounproject.com/",
@@ -11,11 +11,12 @@
     },
     "french_coffee": {
         "name": "French Press",
-        "image": "../../static/french-coffee.svg",
+        "image": "../../static/french-coffee.webp",
         "author": "Cannavale",
         "link": "https://thenounproject.com/icon/french-press-4853026/",
         "repository": "Noun Project",
         "repository_link": "https://thenounproject.com/",
-        "license": "CC BY 3.0"
+        "license": "CC BY 3.0",
+        "license_link": "https://creativecommons.org/licenses/by/3.0/"
     }
 }
