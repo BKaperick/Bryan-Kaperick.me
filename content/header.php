@@ -53,7 +53,7 @@ $language_toggle = array(
 </head>
 
 <body class="list-page front">
-<div class="page layout__page layout__sidebar-second">
+<div class="page layout__page">
 <header class="header layout__header">
 <img src=>
 <a href="/" title="Home" rel="home" class="header__logo"><img src="/static/logo_cleaned_reduce_50pct.webp" alt="Home" class="header__logo-image"></a>
