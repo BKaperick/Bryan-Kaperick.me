@@ -1310,3 +1310,21 @@ figure.single-image {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.language_icon {
+  max-width: 50px;
+  max-width: 25%;
+  max-height: 50px;
+  float:right;
+  padding: 5px 0 0 0;
+}
+.language_box {
+    float: left;
+    background-color: #eee; /*#c8c4c3;*/
+    border-radius: 5px;
+	padding: 0 10px 0 10px;
+}
+.language_text {
+    float: left;
+    max-width: 75%;
+    padding: 0 0 0 0;
+}
