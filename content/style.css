@@ -1314,7 +1314,6 @@ figure.single-image {
   max-width: 50px;
   max-width: 25%;
   max-height: 50px;
-  text-align: center;
   float:right;
   padding: 5px 0 0 0;
 }
@@ -1326,5 +1325,6 @@ figure.single-image {
 }
 .language_text {
     float: left;
-    width: 75%;
+    max-width: 75%;
+    padding: 0 0 0 0;
 }
