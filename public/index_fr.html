@@ -58,8 +58,9 @@
 <h2 class="visually-hidden">Language selector</h2>
 <nav class="language-selector layout__language-selector">
 
-<a rel="alternate" lang="en" hreflang="en" href="index.html"><div class="language_box"><div class="language_text">Uh, in English please...?</div>
+<a rel="alternate" lang="en" hreflang="en" href="index.html"><div class="language_box"><div class="language_text language_text_fr">Uh, in English please...?</div>
 <img src="static/cafe-en.webp" class="language_icon"></div></a>
+    
 
 </nav>
 </div>
@@ -1486,7 +1487,7 @@ figure.single-image {
   max-width: 25%;
   max-height: 50px;
   float:right;
-  padding: 5px 0 0 0;
+  padding: 5px 0 5px 5px;
 }
 .language_box {
     float: left;
@@ -1496,7 +1497,16 @@ figure.single-image {
 }
 .language_text {
     float: left;
-    max-width: 75%;
-    padding: 0 0 0 0;
+    /* max-width: 71%; english */
+    /* max-width: 83%; french */
+    /*padding: 0 5px 0 0;*/
+    /*display: inline-block;*/
+    text-align: end;
+}
+.language_text_fr {
+    max-width: 71%; /* french */
+}
+.language_text_en {
+    max-width: 83%; /* french */
 }
 </style>
