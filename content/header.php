@@ -64,8 +64,9 @@ $language_toggle = array(
 <h2 class="visually-hidden">Language selector</h2>
 <nav class="language-selector layout__language-selector">
 
-<a rel="alternate" lang="<?=$language_toggle[$lang]?>" hreflang="<?=$language_toggle[$lang]?>" href="?lang=<?=$language_toggle[$lang];?>"><div class="language_box"><div class="language_text"><?=$language['LANGUAGE_TOGGLE'];?></div>
+<a rel="alternate" lang="<?=$language_toggle[$lang]?>" hreflang="<?=$language_toggle[$lang]?>" href="?lang=<?=$language_toggle[$lang];?>"><div class="language_box"><div class="language_text language_text_<?=$lang?>"><?=$language['LANGUAGE_TOGGLE'];?></div>
 <img src="/static/cafe-<?=$language_toggle[$lang]?>.webp" class="language_icon"></div></a>
+    
 
 </nav>
 </div>
