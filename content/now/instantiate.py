@@ -20,28 +20,30 @@ count = 1
 with open("now.json", "r+") as fw:
     nows = json.load(fw)
     print("{0} now keys present at start".format(len(nows.keys())))
-    file = [f for f in os.listdir("./new/") if not '.txt' in f][0]
-    print("file: " + file)
-    name_words = [clean_key(w) for w in file.replace(".txt", "").replace(".jpg", "").split("_")]
-    longest_word = max(name_words, key=len)
-    name_guess = " ".join(name_words)
-    name_guess = name_guess[0].capitalize() + name_guess[1:]
+    files = [f for f in os.listdir("./new/") if not '.txt' in f]
+    if files:
+        file = files[0]
+        print("file: " + file)
+        name_words = [clean_key(w) for w in file.replace(".txt", "").replace(".jpg", "").split("_")]
+        longest_word = max(name_words, key=len)
+        name_guess = " ".join(name_words)
+        name_guess = name_guess[0].capitalize() + name_guess[1:]
 
-    d = {
-        "location": location,
-        "date": str(datetime.datetime.now().strftime("%Y-%m-%d")),
-        "en": en_trad,
-        "fr": fr_trad,
-        "photo": file
-    }
-    nickname = longest_word + '_' + str(count) if longest_word in nows.keys() else longest_word
+        d = {
+            "location": location,
+            "date": str(datetime.datetime.now().strftime("%Y-%m-%d")),
+            "en": en_trad,
+            "fr": fr_trad,
+            "photo": file
+        }
+        nickname = longest_word + '_' + str(count) if longest_word in nows.keys() else longest_word
 
-    nows[nickname] = d
-    count += 1
-    print("{0} now keys present".format(len(nows.keys())))
-    
-    os.rename("./new/" + file, "./raw/" + file)
+        nows[nickname] = d
+        count += 1
+        print("{0} now keys present".format(len(nows.keys())))
+        
+        os.rename("./new/" + file, "./raw/" + file)
 
-    fw.seek(0)
-    json.dump(nows, fw, indent=4)
-    fw.truncate()
+        fw.seek(0)
+        json.dump(nows, fw, indent=4)
+        fw.truncate()
