@@ -543,8 +543,8 @@
         "name": "sila-bday-beach.jpg",
         "year": 2024,
         "order_in_year": 3,
-        "en": "Sila&rsquo;s 30th birthday in Berck",
-        "fr": "Le 30e anniversaire de Sila \u00e0 Berck",
+        "en": "Also in Berck",
+        "fr": "Aussi à Berck",
         "people": [
             "bryan",
             "tyler",
@@ -556,14 +556,26 @@
         "name": "sila-bday-balcony.jpg",
         "year": 2024,
         "order_in_year": 4,
-        "en": "Sila&rsquo;s 30th birthday in Nempont-Saint-Firmin",
-        "fr": "Le 30e anniversaire de Sila \u00e0 Nempont-Saint-Firmin",
+        "en": "In Nempont-Saint-Firmin",
+        "fr": "A Nempont-Saint-Firmin",
         "people": [
             "bryan",
             "sila",
             "laura",
             "gassim",
             "leah_laura"
+        ]
+    },
+    "Silas_Bday": {
+        "name": "Silas_Bday",
+        "year": 2024,
+        "order_in_year": 3.1,
+        "en": "Sila&rsquo;s 30th birthday in Nempont-Saint-Firmin",
+        "fr": "Le 30e anniversaire de Sila \u00e0 Nempont-Saint-Firmin",
+        "is_album": true,
+        "photos": [
+            "NempontSaintFirmin_2024_4",
+            "Silas_2024_3"
         ]
     },
     "julie": {
@@ -686,6 +698,24 @@
         "people": [
             "bryan",
             "tim"
+        ]
+    },
+    "Morocco_Spain": {
+        "name": "Morocco_Spain",
+        "year": 2024,
+        "order_in_year": 12,
+        "en": "Trip to Morocco to visit Sami, and the return through Spain",
+        "fr": "Voyage au Maroc pour rendre visite à Sami, et le retour par l'Espagne",
+        "is_album": true,
+        "photos": [
+            "mothers_2024_5",
+            "Constance_2024_6",
+            "Tetouan_2024_7",
+            "Climbing_2024_8",
+            "Tangiers_2024_9",
+            "Algeciras_2024_10",
+            "Zarautz_2024_11",
+            "country_2024_12"
         ]
     },
     "tylerbday": {
