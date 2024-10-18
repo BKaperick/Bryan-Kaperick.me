@@ -1272,10 +1272,10 @@ figure.album {
 
 .photorow {
     display: flex;
-    flex: 50%;
 }
 .photocolumn {
-  padding: .5em;
+    flex: 50%;
+    padding: .5em;
 }
 
 /*
