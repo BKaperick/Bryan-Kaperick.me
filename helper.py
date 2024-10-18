@@ -39,14 +39,15 @@ def ordering(x):
 
 def order_photos(x):
     if 'month' in x[1] and x[1]['month'] in months:
-        month = months[x[1]['month']]/1000
+        month = months[x[1]['month']]/10000
         if 'order_in_month' in x[1]:
-            month += x[1]['order_in_month']/10000
+            month += x[1]['order_in_month']/100000
     else:
         month = 0
     if 'order_in_year' in x[1]:
         year = int(x[1]['year']) + x[1]['order_in_year']/100
     else:
         year = 0
-    return -(year + month)
+    order_val = -(year + month)
+    return order_val
 
