@@ -129,7 +129,7 @@ with open("photos.json", "r+") as fw:
 
     for name,path in albums:
         photos[name] = instantiate_album(photos, path, name)
-        
+        os.rmdir(path)
     
     fw.seek(0)
     json.dump(photos, fw, indent=4)
