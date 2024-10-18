@@ -31,7 +31,7 @@ def set_initial_count(photos):
             count = order_in_year 
     return count
 
-def get_nickname(photo_keys, file):
+def get_nickname(photo_keys, file, count):
     name_words = [clean_key(w) for w in file.lower().replace(".txt", "").replace(".jpeg", "").replace(".jpg", "").split("_")]
     longest_word = max(name_words, key=len)
     nickname = longest_word + '_' + str(count) if longest_word in photo_keys else longest_word
@@ -51,7 +51,7 @@ def instantiate_image(photo_keys, file, count):
         "people": ["bryan"],
         "is_album": False
         }
-    nickname = get_nickname(photo_keys, file)
+    nickname = get_nickname(photo_keys, file, count)
     return nickname, d 
 
 def move_photo_file(basepath, file):
@@ -82,6 +82,7 @@ def instantiate_album(photos, basepath, name):
             continue
 
         fixed_file = file.replace(".JPG", ".jpg").replace(".jpeg", ".jpg").replace(".JPEG", ".jpg")
+        os.rename(path, os.path.join(basepath, fixed_file))
         
         nickname, d = instantiate_image(photos.keys(), fixed_file, count)
         photos[nickname] = d

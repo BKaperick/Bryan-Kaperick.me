@@ -566,6 +566,18 @@
             "leah_laura"
         ]
     },
+    "julie": {
+        "name": "julie_bryan_coloc_party.jpg",
+        "month": "May",
+        "year": 2024,
+        "order_in_year": 4.5,
+        "en": "Julie and I in a heated discussion",
+        "fr": "Moi et Julie en discussion animé",
+        "people": [
+            "bryan", "julie_coloc"
+        ],
+        "is_album": false
+    },
     "mothers_2024_5": {
         "name": "couscous.jpg",
         "year": 2024,
@@ -861,6 +873,56 @@
             "ontop",
             "majesticcow",
             "openroad"
+        ]
+    },
+    "quentin_26": {
+        "name": "quentin_bryan_pacs.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 26,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "cleaning": {
+        "name": "rishik_bryan_cleaning.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 28,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "cecile": {
+        "name": "cecile_sunny_pacs.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 29,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "Pacs_Party": {
+        "name": "Pacs_Party",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 28,
+        "en": "Party to celebrate the civil marriage of Sunny and Cécile",
+        "fr": "La fete pour le PACS de Sunny et Cécile",
+        "is_album": true,
+        "photos": [
+            "cleaning",
+            "cecile",
+            "quentin_26"
         ]
     }
 }
