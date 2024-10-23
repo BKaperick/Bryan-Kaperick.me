@@ -1,4 +1,1 @@
-In Ghana in 2021, the *dates | 00000577 || Import Value Base Period Quantity | 000064 || 1000 dollars (Item: Dates
-Description: Dates This subclass includes: - dates, fruit of the date palm, Phoenix dactylifera
-
-Metric: Import Value Base Period Quantity)* was 160
+In Luxembourg in 2011, the *share of total DALYs that are from foreign body in other body part, in both sexes aged 5-14 years* was 0.09
