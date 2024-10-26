@@ -973,10 +973,12 @@
         "month": "Oct",
         "year": 2024,
         "order_in_year": 30,
-        "en": "Pizza Party at Sunny and C\u00e9cile's place",
-        "fr": "Pizza Party chez Sunny et C\u00e9cile",
+        "en": "",
+        "fr": "",
         "people": [
-            "bryan"
+            "cecile",
+            "bryan",
+            "rishik"
         ],
         "is_album": false
     },
@@ -985,10 +987,11 @@
         "month": "Oct",
         "year": 2024,
         "order_in_year": 31,
-        "en": "Pizza Party at Sunny and C\u00e9cile's place",
-        "fr": "Pizza Party chez Sunny et C\u00e9cile",
+        "en": "Tyler and Anastasia's",
+        "fr": "Celui de Tyler et Anastasia",
         "people": [
-            "bryan"
+            "tyler",
+            "anastasia"
         ],
         "is_album": false
     },
@@ -997,10 +1000,10 @@
         "month": "Oct",
         "year": 2024,
         "order_in_year": 32,
-        "en": "Pizza Party at Sunny and C\u00e9cile's place",
-        "fr": "Pizza Party chez Sunny et C\u00e9cile",
+        "en": "Sunny's",
+        "fr": "Celui de Sunny",
         "people": [
-            "bryan"
+            "sunny"
         ],
         "is_album": false
     },
@@ -1009,8 +1012,8 @@
         "month": "Oct",
         "year": 2024,
         "order_in_year": 33,
-        "en": "Pizza Party at Sunny and C\u00e9cile's place",
-        "fr": "Pizza Party chez Sunny et C\u00e9cile",
+        "en": "Mine",
+        "fr": "Le mien",
         "people": [
             "bryan"
         ],
@@ -1021,10 +1024,14 @@
         "month": "Oct",
         "year": 2024,
         "order_in_year": 34,
-        "en": "Pizza Party at Sunny and C\u00e9cile's place",
-        "fr": "Pizza Party chez Sunny et C\u00e9cile",
+        "en": "",
+        "fr": "",
         "people": [
-            "bryan"
+            "bryan",
+            "cecile",
+            "tyler",
+            "anastasia",
+            "rishik"
         ],
         "is_album": false
     },
@@ -1033,10 +1040,10 @@
         "month": "Oct",
         "year": 2024,
         "order_in_year": 35,
-        "en": "Pizza Party at Sunny and C\u00e9cile's place",
-        "fr": "Pizza Party chez Sunny et C\u00e9cile",
+        "en": "Rishik's",
+        "fr": "Celui de Rishik",
         "people": [
-            "bryan"
+            "rishik"
         ],
         "is_album": false
     },
@@ -1051,9 +1058,9 @@
         "photos": [
             "pizza",
             "anastasia",
+            "eating",
             "piaaz",
             "pizza_33",
-            "eating",
             "rishik"
         ]
     }
