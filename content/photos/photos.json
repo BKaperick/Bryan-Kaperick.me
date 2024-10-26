@@ -544,7 +544,7 @@
         "year": 2024,
         "order_in_year": 3,
         "en": "Also in Berck",
-        "fr": "Aussi à Berck",
+        "fr": "Aussi \u00e0 Berck",
         "people": [
             "bryan",
             "tyler",
@@ -705,7 +705,7 @@
         "year": 2024,
         "order_in_year": 12,
         "en": "Trip to Morocco to visit Sami, and the return through Spain",
-        "fr": "Voyage au Maroc pour rendre visite à Sami, et le retour par l'Espagne",
+        "fr": "Voyage au Maroc pour rendre visite \u00e0 Sami, et le retour par l'Espagne",
         "is_album": true,
         "photos": [
             "mothers_2024_5",
@@ -967,5 +967,114 @@
             "cecile",
             "quentin_26"
         ]
+    },
+    "pizza": {
+        "name": "pizza_prep.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 30,
+        "en": "",
+        "fr": "",
+        "people": [
+            "cecile",
+            "bryan",
+            "rishik"
+        ],
+        "is_album": false
+    },
+    "anastasia": {
+        "name": "pizza_tyler_anastasia.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 31,
+        "en": "Tyler and Anastasia's",
+        "fr": "Celui de Tyler et Anastasia",
+        "people": [
+            "tyler",
+            "anastasia"
+        ],
+        "is_album": false
+    },
+    "piaaz": {
+        "name": "piaaz_sunny.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 32,
+        "en": "Sunny's",
+        "fr": "Celui de Sunny",
+        "people": [
+            "sunny"
+        ],
+        "is_album": false
+    },
+    "pizza_33": {
+        "name": "pizza_bryan.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 33,
+        "en": "Mine",
+        "fr": "Le mien",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "eating": {
+        "name": "pizza_eating.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 34,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "cecile",
+            "tyler",
+            "anastasia",
+            "rishik"
+        ],
+        "is_album": false
+    },
+    "rishik": {
+        "name": "pizza_rishik.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 35,
+        "en": "Rishik's",
+        "fr": "Celui de Rishik",
+        "people": [
+            "rishik"
+        ],
+        "is_album": false
+    },
+    "PizzaParty": {
+        "name": "PizzaParty",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 30,
+        "en": "Pizza Party at Sunny and C\u00e9cile's place",
+        "fr": "Pizza Party chez Sunny et C\u00e9cile",
+        "is_album": true,
+        "photos": [
+            "pizza",
+            "anastasia",
+            "eating",
+            "rishik",
+            "pizza_33",
+            "piaaz",
+            "cecile_36"
+        ]
+    },
+    "cecile_36": {
+        "name": "pizza_cecile.jpeg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 36,
+        "en": "C\u00e9cile's",
+        "fr": "Celui de C\u00e9cile",
+        "people": [
+            "cecile"
+        ],
+        "is_album": false
     }
 }
