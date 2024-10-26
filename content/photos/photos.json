@@ -1069,12 +1069,117 @@
         "name": "pizza_cecile.jpeg",
         "month": "Oct",
         "year": 2024,
-        "order_in_year": 36,
+        "order_in_year": 37,
         "en": "C\u00e9cile's",
         "fr": "Celui de C\u00e9cile",
         "people": [
             "cecile"
         ],
         "is_album": false
+    },
+    "rousse": {
+        "name": "croix_rousse.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 37,
+        "en": "Sunrise in La Croix Rousse neighborhood",
+        "fr": "Levé du soleil dans le quartier de La Croix Rousse",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "biking": {
+        "name": "julie_biking.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 38,
+        "en": "",
+        "fr": "",
+        "people": [
+            "julie"
+        ],
+        "is_album": false
+    },
+    "laurine": {
+        "name": "lyon_julie_laurine_bryan.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 39,
+        "en": "",
+        "fr": "",
+        "people": [
+            "julie",
+            "bryan",
+            "laurine"
+        ],
+        "is_album": false
+    },
+    "sixb": {
+        "name": "sixb_plus.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "Me flashing a 6b+",
+        "fr": "Moi qui flashe un 6b+",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "laurine_41": {
+        "name": "julie_laurine_dalle.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 41,
+        "en": "",
+        "fr": "",
+        "people": [
+            "julie",
+            "laurine"
+        ],
+        "is_album": false
+    },
+    "laurine_42": {
+        "name": "bryan_laurine_devers.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 42,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "laurine"
+        ],
+        "is_album": false
+    },
+    "laurine_43": {
+        "name": "view_julie_laurine_apt.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 43,
+        "en": "View from their apartment",
+        "fr": "La vue de leur appartement",
+        "people": [
+        ],
+        "is_album": false
+    },
+    "Lyon": {
+        "name": "Lyon",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 36,
+        "en": "Weekend in Lyon with Julie and Laurine",
+        "fr": "Un weekend à Lyon avec Julie et Laurine",
+        "is_album": true,
+        "photos": [
+            "rousse",
+            "biking",
+            "laurine",
+            "sixb",
+            "laurine_41",
+            "laurine_42",
+            "laurine_43"
+        ]
     }
 }
