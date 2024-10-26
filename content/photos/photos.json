@@ -544,7 +544,7 @@
         "year": 2024,
         "order_in_year": 3,
         "en": "Also in Berck",
-        "fr": "Aussi à Berck",
+        "fr": "Aussi \u00e0 Berck",
         "people": [
             "bryan",
             "tyler",
@@ -705,7 +705,7 @@
         "year": 2024,
         "order_in_year": 12,
         "en": "Trip to Morocco to visit Sami, and the return through Spain",
-        "fr": "Voyage au Maroc pour rendre visite à Sami, et le retour par l'Espagne",
+        "fr": "Voyage au Maroc pour rendre visite \u00e0 Sami, et le retour par l'Espagne",
         "is_album": true,
         "photos": [
             "mothers_2024_5",
