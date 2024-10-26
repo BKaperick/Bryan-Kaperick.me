@@ -1061,7 +1061,20 @@
             "eating",
             "piaaz",
             "pizza_33",
-            "rishik"
+            "rishik",
+            "cecile_36"
         ]
+    },
+    "cecile_36": {
+        "name": "pizza_cecile.jpeg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 36,
+        "en": "Cécile's",
+        "fr": "Celui de Cécile",
+        "people": [
+            "cecile"
+        ],
+        "is_album": false
     }
 }
