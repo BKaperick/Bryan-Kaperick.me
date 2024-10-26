@@ -1083,7 +1083,7 @@
         "year": 2024,
         "order_in_year": 37,
         "en": "Sunrise in La Croix Rousse neighborhood",
-        "fr": "Levé du soleil dans le quartier de La Croix Rousse",
+        "fr": "Lev\u00e9 du soleil dans le quartier de La Croix Rousse",
         "people": [
             "bryan"
         ],
@@ -1160,8 +1160,7 @@
         "order_in_year": 43,
         "en": "View from their apartment",
         "fr": "La vue de leur appartement",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     },
     "Lyon": {
@@ -1170,7 +1169,7 @@
         "year": 2024,
         "order_in_year": 36,
         "en": "Weekend in Lyon with Julie and Laurine",
-        "fr": "Un weekend à Lyon avec Julie et Laurine",
+        "fr": "Un weekend \u00e0 Lyon avec Julie et Laurine",
         "is_album": true,
         "photos": [
             "rousse",
