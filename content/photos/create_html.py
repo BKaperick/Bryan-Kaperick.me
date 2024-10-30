@@ -58,7 +58,7 @@ def get_photo_captioned_figure(key, subdir, use_photo_caption = True, album_key 
 </figure>
 """.format(key, caption_key, subdir, caption_year, file_suffix)
 
-def _delete_get_photo_captioned_figure_with_previous_next(key, subdir, use_photo_caption = True, album_key = None, 
+def get_photo_captioned_figure_with_previous_next(key, subdir, use_photo_caption = True, album_key = None, 
                                                   prev_file = None, next_file = None):
     """
     Figure with caption.  If `album_key` is given AND `use_photo_caption` is True, 
@@ -69,26 +69,17 @@ def _delete_get_photo_captioned_figure_with_previous_next(key, subdir, use_photo
     caption_key = key if use_photo_caption else album_key
     file_suffix = ".webp" if subdir == "lowres" else ""
     return """<figure class="image">
-    {5}
     <img src=<?="/photos/{2}/" . $p->{0}->name . "{4}";?> alt="<?=$p->{1}->$lang;?>{3}">
     <figcaption>
+    {5}
 <?=$p->{1}->$lang;?>{3}
-    </figcaption>
     {6}
+    </figcaption>
 </figure>
 """.format(key, caption_key, subdir, caption_year, file_suffix,
-    """<a href="<?="./{0}.php";?>"><?=$language['Previous']?></a>""".format(prev_file) if prev_file else "",
-    """<a href="<?="./{0}.php";?>"><?=$language['Next']?></a>""".format(next_file) if next_file else ""
-           )
-
-def get_photo_captioned_figure_with_previous_next(key, subdir, use_photo_caption, album_key, prev_file = None, next_file = None):
-    return """{0}
-{1}
-{2}""".format(
-        get_photo_captioned_figure(key, subdir, use_photo_caption, album_key),
     """<a class="prev_link" href="<?="./{0}.php";?>"><?=$language['Previous']?></a>""".format(prev_file) if prev_file else "",
     """<a class="next_link" href="<?="./{0}.php";?>"><?=$language['Next']?></a>""".format(next_file) if next_file else ""
-        )
+           )
 
 def get_photo_block(key, file_name):
     return """<a href="<?="/" . $lang . "/photos/{0}.php";?>">
