@@ -63,8 +63,8 @@ def get_photo_block_next_previous_links(key, use_photo_caption, album_key, prev_
 {0}
 {2}""".format(
         get_photo_captioned_figure(key, "raw", use_photo_caption, album_key),
-    """<a href="<?="./{0}.php";?>">Previous</a>""".format(prev_file) if prev_file else "",
-    """<a href="<?="./{0}.php";?>">Next</a>""".format(next_file) if next_file else ""
+    """<a href="<?="./{0}.php";?>"><?=$language['Previous']?></a>""".format(prev_file) if prev_file else "",
+    """<a href="<?="./{0}.php";?>"><?=$language['Next']?></a>""".format(next_file) if next_file else ""
         )
 
 def get_photo_block(key, file_name):

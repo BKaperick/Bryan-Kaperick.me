@@ -29,6 +29,8 @@ $language = array(
     'Blog Posts'=>'Blog Posts',
     'Now'=>'Maintenant',
     'SKETCH_CRED'=>'La photo de profile a été esquissée par',
-    'Click for other artistic attributions' => 'Cliquez ici pour des autres attributions artistiques'
+    'Click for other artistic attributions' => 'Cliquez ici pour des autres attributions artistiques',
+    'Previous'=>'Précédent',
+    'Next'=>'Suivant'
 );
 ?>
