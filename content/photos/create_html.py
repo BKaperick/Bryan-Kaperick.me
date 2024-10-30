@@ -1,31 +1,31 @@
-    import json
-    import os
-    import sys
-    from math import sqrt,floor
-    sys.path.append(os.path.abspath("../../"))
-    from helper import *
+import json
+import os
+import sys
+from math import sqrt,floor
+sys.path.append(os.path.abspath("../../"))
+from helper import *
 
-    photo_blocks = []
+photo_blocks = []
 
-    def get_grid(photo_count):
-        rows = floor(sqrt(photo_count))
-        columns = photo_count // rows
-        rows_with_extra = photo_count % rows
-        
-        elem = """"""
-        count = 0
-        for r in range(rows):
-            elem += '<div class="photorow">\n'
-            for c in range(columns + int(r < rows_with_extra)):
-                elem += '<div class="photocolumn"> {0} </div>\n'.format("{" + str(count) + "}")
-                count += 1
-            elem += '</div>\n'
-        return elem
+def get_grid(photo_count):
+    rows = floor(sqrt(photo_count))
+    columns = photo_count // rows
+    rows_with_extra = photo_count % rows
+    
+    elem = """"""
+    count = 0
+    for r in range(rows):
+        elem += '<div class="photorow">\n'
+        for c in range(columns + int(r < rows_with_extra)):
+            elem += '<div class="photocolumn"> {0} </div>\n'.format("{" + str(count) + "}")
+            count += 1
+        elem += '</div>\n'
+    return elem
 
-    def get_album_block(album, photo_blocks):
-        pre = """
-    <div class="album">
-        <figure class="album">
+def get_album_block(album, photo_blocks):
+    pre = """
+<div class="album">
+    <figure class="album">
 """.format(album)
     #images = [x[0] for x in sorted(photo_blocks, key=order_photos)]
     images = [x[0] for x in photo_blocks]
