@@ -31,7 +31,6 @@ def get_album_block(album, photo_blocks):
     images = [x[0] for x in photo_blocks]
     images_elem = get_grid(len(images)).format(*images)
 
-    #images_elem = "\n\n".join(images)
     post = """
     <figcaption>
 <?=$p->{0}->$lang;?> ~ <?=$p->{0}->year;?>
@@ -147,9 +146,8 @@ with open("photos.json", "r") as fw:
             key_next = photo_key_to_next[key]
             prev_file_name = photos[key_prev]["name"].replace(".jpg", "") if key_prev != None else None
             next_file_name = photos[key_next]["name"].replace(".jpg", "") if key_next != None else None
-            #print(str(prev_file_name) + " < " + file_name + " > " + str(next_file_name))
-            block = get_photo_block_next_previous_links(key, photo["en"] or photo["fr"], photo_key_to_album_key[key], prev_file_name, next_file_name)
-            # block = get_photo_captioned_figure(key, "raw", photo["en"] or photo["fr"], photo_key_to_album_key[key])
+            block = get_photo_block_next_previous_links(
+            key, photo["en"] or photo["fr"], photo_key_to_album_key[key], prev_file_name, next_file_name)
         else:
             block = get_photo_captioned_figure(key, "raw")
         block = block.replace('class="image"', 'class="single-image"')
