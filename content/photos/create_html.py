@@ -42,12 +42,14 @@ def get_album_block(album, photo_blocks):
 
     return pre + images_elem + post
 
-def get_photo_captioned_figure(key, subdir, year = True, album_key = None):
+def get_photo_captioned_figure(key, subdir, use_photo_caption = True, album_key = None):
     """
-    Figure with caption
+    Figure with caption.  If `album_key` is given AND `use_photo_caption` is True, 
+    then we use the description from the album instead
     """
     image_key = album_key if album_key else key
-    caption_year = " ~ <?=$p->{0}->year;?>".format(key) if year else ""
+    caption_year = " ~ <?=$p->{0}->year;?>".format(key)
+    caption_key = key if use_photo_caption else album_key
     file_suffix = ".webp" if subdir == "lowres" else ""
     return """<figure class="image">
     <img src=<?="/photos/{2}/" . $p->{0}->name . "{4}";?> alt="<?=$p->{1}->$lang;?>{3}">
@@ -55,22 +57,22 @@ def get_photo_captioned_figure(key, subdir, year = True, album_key = None):
 <?=$p->{1}->$lang;?>{3}
     </figcaption>
 </figure>
-""".format(key, image_key, subdir, caption_year, file_suffix)
+""".format(key, caption_key, subdir, caption_year, file_suffix)
 
-def get_photo_block_next_previous_links(key, prev_file = None, next_file = None):
+def get_photo_block_next_previous_links(key, use_photo_caption, album_key, prev_file = None, next_file = None):
     return """{1}
 {0}
 {2}""".format(
-        get_photo_captioned_figure(key, "raw", year),
-    """<a href="<?="./{0}";?>">Previous</a>""".format(prev_file) if prev_file else "",
-    """<a href="<?="./{0}";?>">Next</a>""".format(next_file) if next_file else ""
+        get_photo_captioned_figure(key, "raw", use_photo_caption, album_key),
+    """<a href="<?="./{0}.php";?>">Previous</a>""".format(prev_file) if prev_file else "",
+    """<a href="<?="./{0}.php";?>">Next</a>""".format(next_file) if next_file else ""
         )
 
-def get_photo_block(key, file_name, year = True):
+def get_photo_block(key, file_name):
     return """<a href="<?="/" . $lang . "/photos/{0}.php";?>">
 {1}
 </a>
-""".format(file_name, get_photo_captioned_figure(key, "lowres", year))
+""".format(file_name, get_photo_captioned_figure(key, "lowres"))
 
 def get_photo_captioned_figure_in_album(key):
     return """<figure class="albumimage">
@@ -110,6 +112,8 @@ with open("photos.json", "r") as fw:
             album_blocks = []
             for i,subkey in enumerate(photo["photos"]):
                 photo_key_to_album_key[subkey] = key
+
+                # Used to assign the 'Previous' and 'Next links on the single-photo page when the photo is part of an album
                 photo_key_to_previous[subkey] = None if i == 0 else photo["photos"][i-1]
                 photo_key_to_next[subkey] = None if i == len(photo["photos"]) - 1 else photo["photos"][i+1]
 
@@ -138,12 +142,14 @@ with open("photos.json", "r") as fw:
         
         # The idea is that if the photo is (1) contained in an album and (2) doesn't have its own description,
         # then on the single-image page, we use the album caption rather than leaving it at "~ [year]"
-        if key in photo_key_to_album_key and not photos[key]["en"] and not photos[key]["fr"]:
-            prev = photo_key_to_previous[key]
-            prev_file_name = photos[prev]["name"].replace(".jpg", "") if prev != None else None
-            next_file_name = photos[next]["name"].replace(".jpg", "") if next != None else None
-            block = get_photo_block_next_previous_links(key, prev_file_name, next_file_name)
-            block = get_photo_captioned_figure(key, "raw", album_key = photo_key_to_album_key[key])
+        if key in photo_key_to_album_key:
+            key_prev = photo_key_to_previous[key]
+            key_next = photo_key_to_next[key]
+            prev_file_name = photos[key_prev]["name"].replace(".jpg", "") if key_prev != None else None
+            next_file_name = photos[key_next]["name"].replace(".jpg", "") if key_next != None else None
+            #print(str(prev_file_name) + " < " + file_name + " > " + str(next_file_name))
+            block = get_photo_block_next_previous_links(key, photo["en"] or photo["fr"], photo_key_to_album_key[key], prev_file_name, next_file_name)
+            # block = get_photo_captioned_figure(key, "raw", photo["en"] or photo["fr"], photo_key_to_album_key[key])
         else:
             block = get_photo_captioned_figure(key, "raw")
         block = block.replace('class="image"', 'class="single-image"')
