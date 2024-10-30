@@ -43,6 +43,9 @@ def get_album_block(album, photo_blocks):
     return pre + images_elem + post
 
 def get_photo_captioned_figure(key, subdir, year = True, album_key = None):
+    """
+    Figure with caption
+    """
     image_key = album_key if album_key else key
     caption_year = " ~ <?=$p->{0}->year;?>".format(key) if year else ""
     file_suffix = ".webp" if subdir == "lowres" else ""
@@ -53,6 +56,15 @@ def get_photo_captioned_figure(key, subdir, year = True, album_key = None):
     </figcaption>
 </figure>
 """.format(key, image_key, subdir, caption_year, file_suffix)
+
+def get_photo_block_next_previous_links(key, prev_file = None, next_file = None):
+    return """{1}
+{0}
+{2}""".format(
+        get_photo_captioned_figure(key, "raw", year),
+    """<a href="<?="./{0}";?>">Previous</a>""".format(prev_file) if prev_file else "",
+    """<a href="<?="./{0}";?>">Next</a>""".format(next_file) if next_file else ""
+        )
 
 def get_photo_block(key, file_name, year = True):
     return """<a href="<?="/" . $lang . "/photos/{0}.php";?>">
@@ -84,6 +96,8 @@ with open("photos.json", "r") as fw:
             album_photos += photo["photos"]
 
     photo_key_to_album_key = {}
+    photo_key_to_previous = {}
+    photo_key_to_next = {}
     for key,photo in photos.items():
 
         # ignore albums for now
@@ -94,12 +108,15 @@ with open("photos.json", "r") as fw:
 
         if "is_album" in photo and photo["is_album"] == True:
             album_blocks = []
-            for subkey in photo["photos"]:
+            for i,subkey in enumerate(photo["photos"]):
                 photo_key_to_album_key[subkey] = key
-                subphoto = photos[subkey]
-                sub_file_name = subphoto["name"].replace(".jpg","")
-                block = get_photo_block_in_album(subkey, sub_file_name)
-                album_blocks.append((block, subphoto))
+                photo_key_to_previous[subkey] = None if i == 0 else photo["photos"][i-1]
+                photo_key_to_next[subkey] = None if i == len(photo["photos"]) - 1 else photo["photos"][i+1]
+
+                sub_photo = photos[subkey]
+                sub_file_name = sub_photo["name"].replace(".jpg","")
+                sub_block = get_photo_block_in_album(subkey, sub_file_name)
+                album_blocks.append((sub_block, sub_photo))
             block = get_album_block(key, album_blocks)
             photo_blocks.append((block, photo))
 
@@ -110,7 +127,8 @@ with open("photos.json", "r") as fw:
             photo_blocks.append((block, photo))
     
     print("\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
-        
+    
+    # Get single-image pages (stored in raw_with_label)
     for key,photo in photos.items():
         # ignore albums for now
         if key == "is_album":
@@ -121,6 +139,10 @@ with open("photos.json", "r") as fw:
         # The idea is that if the photo is (1) contained in an album and (2) doesn't have its own description,
         # then on the single-image page, we use the album caption rather than leaving it at "~ [year]"
         if key in photo_key_to_album_key and not photos[key]["en"] and not photos[key]["fr"]:
+            prev = photo_key_to_previous[key]
+            prev_file_name = photos[prev]["name"].replace(".jpg", "") if prev != None else None
+            next_file_name = photos[next]["name"].replace(".jpg", "") if next != None else None
+            block = get_photo_block_next_previous_links(key, prev_file_name, next_file_name)
             block = get_photo_captioned_figure(key, "raw", album_key = photo_key_to_album_key[key])
         else:
             block = get_photo_captioned_figure(key, "raw")
