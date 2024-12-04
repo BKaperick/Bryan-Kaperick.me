@@ -44,6 +44,7 @@
     },
     "untitled_jun24": {
         "rawpath": "./raw/untitled_jun2024.txt",
+        "audiopath": "../../poems/recordings/untitled_jun24.mp3",
         "title": "Untitled",
         "author": "Bryan Kaperick",
         "order_in_month": 1,
