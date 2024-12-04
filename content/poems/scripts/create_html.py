@@ -16,8 +16,7 @@ def get_bryan_block_with_audio(key):
     <blockquote>
     <?=$p->{0}->body;?>
     </blockquote>
-    <audio controls src="<?=$p->{0}->audio_path;?>"></audio>
-  <a href="<?=$p->{0}->audio_path;?>">Download audio</a>
+    <audio controls src="<?=$p->{0}->audiopath;?>"></audio>
     """.format(key)
 
 def get_insp_block(key, subtitle = False):
