@@ -11,6 +11,15 @@ def get_bryan_block(key):
     <?=$p->{0}->body;?>
     </blockquote>""".format(key)
 
+def get_bryan_block_with_audio(key):
+    return """<p><em><?=$p->{0}->title;?></em> &ndash; <?=$language[$p->{0}->month];?> <?=$p->{0}->year;?></p>
+    <blockquote>
+    <?=$p->{0}->body;?>
+    </blockquote>
+    <audio controls src="<?=$p->{0}->audio_path;?>"></audio>
+  <a href="<?=$p->{0}->audio_path;?>">Download audio</a>
+    """.format(key)
+
 def get_insp_block(key, subtitle = False):
     return """<p><em><?=$p->{0}->title;?></em> &ndash; <?=$p->{0}->author;?>
     {1}</p>
@@ -26,13 +35,16 @@ def wrap_block_in_link(block, poem, link):
 with open("poems.json", "r") as fr:
     poems = json.load(fr)
     for key,poem in poems.items():
+        audio_block = None
         if poem['author'] == 'Bryan Kaperick':
             block_path = poem['rawpath'].replace(".txt", ".php").replace("./raw/", "")
             block = get_bryan_block(key)
+            if "audiopath" in poem.keys():
+                audio_block = get_bryan_block_with_audio(key)
         else:
             block_path = None
             block = get_insp_block(key, 'subtitle' in poem.keys())
-        poem_blocks.append((block, poem, block_path))
+        poem_blocks.append((block, audio_block, poem, block_path))
 
 with open("poems_inspiration.html", "w") as f_insp:
     poems_insp = [p for p in poem_blocks if p[1]['author'] != "Bryan Kaperick"]
@@ -50,11 +62,13 @@ with open("poems2022.html", "w") as f22:
     poems22 = [wrap_block_in_link(*p) for p in poem_blocks if p[1]['author'] == "Bryan Kaperick" and int(p[1]['year']) <= 2022]
     f22.write("\n\n".join([x[0] for x in sorted(poems22, key=ordering)]))
 
-for block,poem,php_path in poem_blocks:
+for block,audio_block,poem,php_path in poem_blocks:
     if 'rawpath' in poem:
         html_path = "./blocks/" + php_path.replace(".php", ".html")
         with open(html_path, "w") as f:
-            f.write(block)
+            # We only write the audio block if an audio exists, and only on the single-poem page
+            block_to_write = block if audio_block == None else audio_block
+            f.write(block_to_write)
 
         for language in ["en", "fr"]:
             lang_php_path = "../{0}/poetry/{1}".format(language, php_path)
