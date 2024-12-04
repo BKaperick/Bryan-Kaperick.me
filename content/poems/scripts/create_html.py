@@ -27,7 +27,7 @@ def get_insp_block(key, subtitle = False):
     <?=$p->{0}->body;?>
     </blockquote>""".format(key, "<em><br /><p>&nbsp;&nbsp;&nbsp;&nbsp;<?=$p->{0}->subtitle;?></em></p>".format(key) if subtitle else "")
 
-def wrap_block_in_link(block, poem, link):
+def wrap_block_in_link(block, poem, link, _):
     wrapped_block = """<a href="<?="/" . $lang . "/poetry/{0}"?>" style="text-decoration:none">{1}
 </a>""".format(link, block)
     return (wrapped_block, poem, link)
@@ -44,7 +44,7 @@ with open("poems.json", "r") as fr:
         else:
             block_path = None
             block = get_insp_block(key, 'subtitle' in poem.keys())
-        poem_blocks.append((block, audio_block, poem, block_path))
+        poem_blocks.append((block, poem, block_path, audio_block))
 
 with open("poems_inspiration.html", "w") as f_insp:
     poems_insp = [p for p in poem_blocks if p[1]['author'] != "Bryan Kaperick"]
@@ -62,7 +62,7 @@ with open("poems2022.html", "w") as f22:
     poems22 = [wrap_block_in_link(*p) for p in poem_blocks if p[1]['author'] == "Bryan Kaperick" and int(p[1]['year']) <= 2022]
     f22.write("\n\n".join([x[0] for x in sorted(poems22, key=ordering)]))
 
-for block,audio_block,poem,php_path in poem_blocks:
+for block,poem,php_path,audio_block in poem_blocks:
     if 'rawpath' in poem:
         html_path = "./blocks/" + php_path.replace(".php", ".html")
         with open(html_path, "w") as f:
