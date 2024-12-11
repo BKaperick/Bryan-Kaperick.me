@@ -396,7 +396,7 @@
         "year": "2024",
         "rawpath": "./raw/home_sketch_2.txt",
         "audiopath": "../../poems/recordings/sketch.mp4",
-        "order_in_month": 1,
+        "order_in_month": 2,
         "body": "<div class=\"poem\"><p><span class=\"line\">How words could be?</span><br>\n<span class=\"line\">How they could steep.</span><br>\n<span class=\"line\">To swim in unannounced</span><br>\n<span class=\"line\">recounting false, rhyming memories</span><br>\n<span class=\"line\">to all who would listen.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">And some listened and sipped.</span><br>\n<span class=\"line\">And of those, some tasted.</span><br>\n<span class=\"line\">And of those, some lived and relived.</span><br>\n<span class=\"line\">And at least one,</span><br>\n<span class=\"line\">daring still past the dregs,</span><br>\n<span class=\"line\">never made it all the way home.</p></div>"
     },
     "untitled": {
@@ -425,7 +425,7 @@
         "month": "Dec",
         "year": "2024",
         "rawpath": "./raw/the_arctic_plain_by_night",
-        "order_in_month": 1,
+        "order_in_month": 3,
         "body": "<div class=\"poem\"><p><span class=\"line\">Frozen was this place.</span><br>\n<span class=\"line\">Upon it placed a placid slate</span><br>\n<span class=\"line\">of ice.  Its might slighted</span><br>\n<span class=\"line\">only by the wooden flame's reach.</span><br>\n<span class=\"line\">Heat-stained beech</span><br>\n<span class=\"line\">sunken in a pool. Stone breached.</span><br>\n<span class=\"line\">Its presence slowly traced.</span><br>\n<span class=\"line\">Flickers glowed, and fore-elements effaced.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">A bear born in such barren land,</span><br>\n<span class=\"line\">fur matted under the harsh cold,</span><br>\n<span class=\"line\">carried further on by</span><br>\n<span class=\"line\">the wailing wind's sail.</span><br>\n<span class=\"line\">This creature comprehends</span><br>\n<span class=\"line\">from deep within.</span><br>\n<span class=\"line\">Ancestral knots never untied,</span><br>\n<span class=\"line\">pulled ever tighter and petrified.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Fur flakked with mud, dirty</span><br>\n<span class=\"line\">and damp, absorbs the savory</span><br>\n<span class=\"line\">smoke to a saturated choke</span><br>\n<span class=\"line\">and evokes streams</span><br>\n<span class=\"line\">of warm steam stacks to</span><br>\n<span class=\"line\">rise enveloped in empty howls.</span><br>\n<span class=\"line\">They dance intertwined</span><br>\n<span class=\"line\">whispering up unto the divine.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">In between yawns and</span><br>\n<span class=\"line\">howls he gnaws at his prey.</span><br>\n<span class=\"line\">Raw flesh that lends an ache</span><br>\n<span class=\"line\">to his jaw bone,</span><br>\n<span class=\"line\">strained near break. All</span><br>\n<span class=\"line\">to sustain another hunt</span><br>\n<span class=\"line\">between long, lonesome flights</span><br>\n<span class=\"line\">along the arctic plain by night.</p></div>"
     }
 }
