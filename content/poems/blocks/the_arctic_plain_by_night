@@ -1,0 +1,4 @@
+<p><em><?=$p->arctic->title;?></em> &ndash; <?=$language[$p->arctic->month];?> <?=$p->arctic->year;?></p>
+    <blockquote>
+    <?=$p->arctic->body;?>
+    </blockquote>
