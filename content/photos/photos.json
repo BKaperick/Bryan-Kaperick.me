@@ -1186,8 +1186,8 @@
         "month": "Jan",
         "year": 2025,
         "order_in_year": 1,
-        "en": "",
-        "fr": "",
+        "en": "Chickens at the guest house",
+        "fr": "Des poules à la Chambre d'hotes",
         "people": [
             "bryan"
         ],
@@ -1198,8 +1198,8 @@
         "month": "Jan",
         "year": 2025,
         "order_in_year": 2,
-        "en": "",
-        "fr": "",
+        "en": "Unknown Kohimians",
+        "fr": "Des Kohimois inconnus",
         "people": [
             "bryan"
         ],
@@ -1210,8 +1210,8 @@
         "month": "Jan",
         "year": 2025,
         "order_in_year": 3,
-        "en": "",
-        "fr": "",
+        "en": "Eating some street food",
+        "fr": "On mange du street food",
         "people": [
             "bryan"
         ],
@@ -1222,8 +1222,8 @@
         "month": "Jan",
         "year": 2025,
         "order_in_year": 4,
-        "en": "",
-        "fr": "",
+        "en": "In front of the local Catholic Cathedral",
+        "fr": "Devant la cathédrale Catholique locale",
         "people": [
             "bryan"
         ],
@@ -1234,10 +1234,12 @@
         "month": "Jan",
         "year": 2025,
         "order_in_year": 5,
-        "en": "",
-        "fr": "",
+        "en": "Aviraj and Tridip reseal the rice bag in the taxi trunk",
+        "fr": "Aviraj and Tridip referment le sac du riz dans le coffre du taxi",
         "people": [
-            "bryan"
+            "bryan",
+            "aviraj",
+            "tridip"
         ],
         "is_album": false
     },
@@ -1246,8 +1248,8 @@
         "month": "Jan",
         "year": 2025,
         "order_in_year": 6,
-        "en": "",
-        "fr": "",
+        "en": "In Kisama Heritage Village",
+        "fr": "A Kisama, un Village du Patrimoine",
         "people": [
             "bryan"
         ],
@@ -1258,8 +1260,8 @@
         "month": "Jan",
         "year": 2025,
         "order_in_year": 7,
-        "en": "",
-        "fr": "",
+        "en": "At Faith Harvest Church after Christmas mass",
+        "fr": "A l'eglise du Faith Harvest après la messe du Noel",
         "people": [
             "bryan"
         ],
@@ -1270,8 +1272,8 @@
         "month": "Jan",
         "year": 2025,
         "order_in_year": 8,
-        "en": "",
-        "fr": "",
+        "en": "Learned to ride a scooty",
+        "fr": "J'ai appris à conduire un scooty",
         "people": [
             "bryan"
         ],
@@ -1282,8 +1284,8 @@
         "month": "Jan",
         "year": 2025,
         "order_in_year": 9,
-        "en": "",
-        "fr": "",
+        "en": "She wanted a \"Christmas couple\" selfie",
+        "fr": "Elle voulait un selfie du genre \"Couple à Noel\"",
         "people": [
             "bryan"
         ],
