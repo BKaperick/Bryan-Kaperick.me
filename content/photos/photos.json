@@ -1180,5 +1180,137 @@
             "laurine_42",
             "laurine_43"
         ]
+    },
+    "chicken": {
+        "name": "failed_chicken_selfie.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 56,
+        "en": "Chickens at the guest house",
+        "fr": "Des poules \u00e0 la Chambre d'hotes",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "kohimians": {
+        "name": "random_kohimians.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 57,
+        "en": "Unknown Kohimians",
+        "fr": "Des Kohimois inconnus",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "streetfood": {
+        "name": "streetfood_avi.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 58,
+        "en": "Eating some street food",
+        "fr": "On mange du street food",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "cathedral": {
+        "name": "cathedral_showing.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 59,
+        "en": "In front of the local Catholic Cathedral",
+        "fr": "Devant la cath\u00e9drale Catholique locale",
+        "people": [
+            "bryan",
+            "aviraj"
+        ],
+        "is_album": false
+    },
+    "retying": {
+        "name": "retying_the_rice.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 60,
+        "en": "Aviraj and Tridip reseal the rice bag in the taxi trunk",
+        "fr": "Aviraj et Tridip referment le sac du riz dans le coffre du taxi",
+        "people": [
+            "aviraj",
+            "tridip"
+        ],
+        "is_album": false
+    },
+    "standoff": {
+        "name": "mexican_standoff.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 61,
+        "en": "In Kisama Heritage Village",
+        "fr": "A Kisama, un Village du Patrimoine",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "christmas": {
+        "name": "aviraj_bryan_tridip_christmas.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 62,
+        "en": "At Faith Harvest Church after Christmas mass",
+        "fr": "A l'eglise du Faith Harvest apr\u00e8s la messe du Noel",
+        "people": [
+            "aviraj",
+            "tridip",
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "scooty": {
+        "name": "scooty_kohima.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 63,
+        "en": "Learned to ride a scooty",
+        "fr": "J'ai appris \u00e0 conduire un scooty",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "random": {
+        "name": "random_kohima_girl.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 64,
+        "en": "She wanted a \"Christmas couple\" selfie",
+        "fr": "Elle voulait un selfie du genre \"Couple \u00e0 Noel\"",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "Kristmas_in_Kohima": {
+        "name": "Kristmas_in_Kohima",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "Kristmas in Kohima with Aviraj and Tridip",
+        "fr": "Kristmas \u00e0 Kohima avec Aviraj et Tridip",
+        "is_album": true,
+        "photos": [
+            "chicken",
+            "kohimians",
+            "streetfood",
+            "cathedral",
+            "retying",
+            "standoff",
+            "christmas",
+            "scooty",
+            "random"
+        ]
     }
 }

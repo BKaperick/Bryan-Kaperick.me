@@ -25,7 +25,11 @@ def set_initial_count(photos):
     count = 1
     year = datetime.datetime.now().year
     if len(photos) > 0:
-        last_photo = max([(k,v) for k,v in photos.items() if v['year'] == year], key=lambda x : x[1]['order_in_year'])
+        this_year_photos = [(k,v) for k,v in photos.items() if v['year'] == year]
+        if len(this_year_photos) > 0:
+            last_photo = max(this_year_photos, key=lambda x : x[1]['order_in_year'])
+        else:
+            last_photo = None
         if last_photo:
             order_in_year = last_photo[1]['order_in_year'] + 1
             count = order_in_year 
