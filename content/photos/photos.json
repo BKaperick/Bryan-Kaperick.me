@@ -1310,7 +1310,43 @@
             "standoff",
             "christmas",
             "scooty",
-            "random"
+            "random",
+            "kohima",
+            "kohima_2",
+            "kohima_3"
         ]
+    },
+    "kohima": {
+        "name": "kohima_night_1.jpg",
+        "month": "Jan",
+        "year": 2025,
+        "order_in_year": 1,
+        "en": "",
+        "fr": "",
+        "people": [
+        ],
+        "is_album": false
+    },
+    "kohima_2": {
+        "name": "kohima_night_2.jpg",
+        "month": "Jan",
+        "year": 2025,
+        "order_in_year": 2,
+        "en": "",
+        "fr": "",
+        "people": [
+        ],
+        "is_album": false
+    },
+    "kohima_3": {
+        "name": "kohima_day.jpg",
+        "month": "Jan",
+        "year": 2025,
+        "order_in_year": 3,
+        "en": "",
+        "fr": "",
+        "people": [
+        ],
+        "is_album": false
     }
 }

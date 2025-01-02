@@ -79,12 +79,11 @@ def iterate_basepath(basepath):
         yield path, fixed_file
 
 def instantiate_album(photos, basepath, name):
-    count = set_initial_count(photos)
     album_d = {
         "name": name,
         "month": str(datetime.datetime.now().strftime("%B"))[:3],
         "year": datetime.datetime.now().year,
-        "order_in_year": count,
+        "order_in_year": set_initial_count(photos),
         "en": en_trad,
         "fr": fr_trad,
         "is_album": True,
@@ -94,6 +93,7 @@ def instantiate_album(photos, basepath, name):
     append_to_album(photos, basepath, name)
 
 def append_to_album(photos, basepath, name):
+    count = set_initial_count(photos)
     album = photos[name]
     for path, fixed_file in iterate_basepath(basepath):
         os.rename(path, os.path.join(basepath, fixed_file))
