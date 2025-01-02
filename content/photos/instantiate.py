@@ -66,6 +66,18 @@ def move_photo_file(basepath, file):
         os.makedirs(directory)
     os.rename(basepath + "/" + file, directory + file)
 
+def iterate_basepath(basepath):
+    for file in os.listdir(basepath):
+        
+        # skip directories and __empty__ placeholder file
+        path = os.path.join(basepath, file)
+        if (file == '__empty__.txt') or os.path.isdir(path):
+            continue
+
+        fixed_file = file.replace(".JPG", ".jpg").replace(".jpeg", ".jpg").replace(".JPEG", ".jpg")
+
+        yield path, fixed_file
+
 def instantiate_album(photos, basepath, name):
     count = set_initial_count(photos)
     album_d = {
@@ -78,22 +90,24 @@ def instantiate_album(photos, basepath, name):
         "is_album": True,
         "photos": []
         }
-    for file in os.listdir(basepath):
-        
-        # skip directories and __empty__ placeholder file
-        path = os.path.join(basepath, file)
-        if (file == '__empty__.txt') or os.path.isdir(path):
-            continue
+    photos[name] = album_d
+    append_to_album(photos, basepath, name)
 
-        fixed_file = file.replace(".JPG", ".jpg").replace(".jpeg", ".jpg").replace(".JPEG", ".jpg")
+def append_to_album(photos, basepath, name):
+    album = photos[name]
+    for path, fixed_file in iterate_basepath(basepath):
+        os.rename(path, os.path.join(basepath, fixed_file))
+        
+    #for file in os.listdir(basepath):
+    for path, fixed_file in iterate_basepath(basepath):
         os.rename(path, os.path.join(basepath, fixed_file))
         
         nickname, d = instantiate_image(photos.keys(), fixed_file, count)
         photos[nickname] = d
-        album_d["photos"].append(nickname)
+        album["photos"].append(nickname)
         move_photo_file(basepath, fixed_file)
         count += 1
-    return album_d
+    return album
 
     #print("{0} photo keys present".format(len(photos.keys())))
     #return photos
@@ -132,7 +146,10 @@ with open("photos.json", "r+") as fw:
     photos = instantiate_dir(photos, basepath)
 
     for name,path in albums:
-        photos[name] = instantiate_album(photos, path, name)
+        if name in photos:
+            append_to_album(photos, path, name)
+        else:
+            instantiate_album(photos, path, name)
         os.rmdir(path)
     
     fw.seek(0)
