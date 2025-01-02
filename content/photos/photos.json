@@ -1323,8 +1323,7 @@
         "order_in_year": 1,
         "en": "",
         "fr": "",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     },
     "kohima_2": {
@@ -1334,8 +1333,7 @@
         "order_in_year": 2,
         "en": "",
         "fr": "",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     },
     "kohima_3": {
@@ -1345,8 +1343,7 @@
         "order_in_year": 3,
         "en": "",
         "fr": "",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     }
 }
