@@ -1318,9 +1318,9 @@
     },
     "kohima": {
         "name": "kohima_night_1.jpg",
-        "month": "Jan",
-        "year": 2025,
-        "order_in_year": 1,
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 65,
         "en": "",
         "fr": "",
         "people": [],
@@ -1328,9 +1328,9 @@
     },
     "kohima_2": {
         "name": "kohima_night_2.jpg",
-        "month": "Jan",
-        "year": 2025,
-        "order_in_year": 2,
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 66,
         "en": "",
         "fr": "",
         "people": [],
@@ -1338,9 +1338,110 @@
     },
     "kohima_3": {
         "name": "kohima_day.jpg",
-        "month": "Jan",
-        "year": 2025,
-        "order_in_year": 3,
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 67,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "Jaifu": {
+        "name": "Jaifu",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "Day-hike to Japfu Peak starting from Kigwema",
+        "fr": "Randon\u00e9e au Pique de Japfu qui commence \u00e0 Kigwema",
+        "is_album": true,
+        "photos": [
+            "trailhead",
+            "frosted",
+            "summetselfi",
+            "summet",
+            "summet_9",
+            "summet_12",
+            "rhododendron",
+            "burned"
+        ]
+    },
+    "summetselfi": {
+        "name": "summetselfi.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "burned": {
+        "name": "burned_fields.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "Jhum cultivation (slash-and-burn agriculture)",
+        "fr": "La cultivation de Jhum (culture sur br\u00fblis)",
+        "people": [],
+        "is_album": false
+    },
+    "summet": {
+        "name": "summet_view_1.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "trailhead": {
+        "name": "peak_from_trailhead.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "View from the trailhead",
+        "fr": "La vue du point de d\u00e9part",
+        "people": [],
+        "is_album": false
+    },
+    "summet_9": {
+        "name": "summet_view_2.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "frosted": {
+        "name": "frosted_ground.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "rhododendron": {
+        "name": "rhododendron_trees.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "summet_12": {
+        "name": "japfu_summet.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
         "en": "",
         "fr": "",
         "people": [],
