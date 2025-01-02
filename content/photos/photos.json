@@ -1446,5 +1446,107 @@
         "fr": "",
         "people": [],
         "is_album": false
+    },
+    "India_Trip": {
+        "name": "India_Trip",
+        "month": "Jan",
+        "year": 2025,
+        "order_in_year": 1,
+        "en": "",
+        "fr": "",
+        "is_album": true,
+        "photos": [
+            "brahmaputra",
+            "shadow",
+            "fuzzy",
+            "lighting",
+            "system",
+            "learning",
+            "ferris"
+        ]
+    },
+    "brahmaputra": {
+        "name": "brahmaputra_picnic.jpg",
+        "month": "Jan",
+        "year": 2025,
+        "order_in_year": 2,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "shadow": {
+        "name": "shadow_gang.jpg",
+        "month": "Jan",
+        "year": 2025,
+        "order_in_year": 3,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "fuzzy": {
+        "name": "fuzzy_gang.jpg",
+        "month": "Jan",
+        "year": 2025,
+        "order_in_year": 4,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "lighting": {
+        "name": "good_lighting_cave.jpg",
+        "month": "Jan",
+        "year": 2025,
+        "order_in_year": 5,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "system": {
+        "name": "kids_room_solar_system.jpg",
+        "month": "Jan",
+        "year": 2025,
+        "order_in_year": 6,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "learning": {
+        "name": "learning_drive_manual.jpg",
+        "month": "Jan",
+        "year": 2025,
+        "order_in_year": 7,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "ferris": {
+        "name": "dehli_ferris_wheel.jpg",
+        "month": "Jan",
+        "year": 2025,
+        "order_in_year": 8,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
     }
 }
