@@ -1286,8 +1286,8 @@
         "month": "Dec",
         "year": 2024,
         "order_in_year": 64,
-        "en": "She wanted a \"Christmas couple\" selfie",
-        "fr": "Elle voulait un selfie du genre \"Couple \u00e0 Noel\"",
+        "en": "She wanted a \"Christmas couple\" photo",
+        "fr": "Elle voulait un photo du genre \"Couple \u00e0 Noel\"",
         "people": [
             "bryan"
         ],
@@ -1445,6 +1445,333 @@
         "en": "",
         "fr": "",
         "people": [],
+        "is_album": false
+    },
+    "Iiindia": {
+        "name": "Iiindia",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "Trip to India with Tyler, Rishik, C\u00e9cile and Quentin",
+        "fr": "Voyage en Inde avec Tyler, Rishik, C\u00e9cile et Quentin",
+        "is_album": true,
+        "photos": [
+            "mahal",
+            "cecile_11",
+            "qutub",
+            "rishik_1",
+            "ferris",
+            "north",
+            "falls",
+            "waterfalls",
+            "climbing",
+            "lighting",
+            "bridge",
+            "nagakitchen",
+            "farmers",
+            "pregnant",
+            "cleansing",
+            "golfcourse",
+            "golfcourse_7",
+            "reception",
+            "brahmaputra",
+            "smoking",
+            "system",
+            "stadium",
+            "learning_15"
+        ]
+    },
+    "nagakitchen": {
+        "name": "nagakitchen.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "Pork thali, Naga-style",
+        "fr": "Thali de porc, dans le style de Naga",
+        "people": [],
+        "is_album": false
+    },
+    "farmers": {
+        "name": "rishik_tyler_farmers.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "",
+        "fr": "",
+        "people": [
+            "rishik",
+            "tyler"
+        ],
+        "is_album": false
+    },
+    "golfcourse": {
+        "name": "shadow_golfcourse.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "rishik",
+            "tyler",
+            "quentin"
+        ],
+        "is_album": false
+    },
+    "falls": {
+        "name": "fefe_falls.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "Fefe falls",
+        "fr": "La cascade de Fefe",
+        "people": [
+            "bryan",
+            "cecile",
+            "tyler"
+        ],
+        "is_album": false
+    },
+    "stadium": {
+        "name": "golden_hour_stadium.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "Jorhat stadium",
+        "fr": "Le stade de Jorhat",
+        "people": [],
+        "is_album": false
+    },
+    "golfcourse_7": {
+        "name": "blurry_golfcourse.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "quentin",
+            "tyler",
+            "neha"
+        ],
+        "is_album": false
+    },
+    "brahmaputra": {
+        "name": "brahmaputra_picnic.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "Picnic at the Brahmaputra river",
+        "fr": "Un pique-nique Au bord du fleuve Brahmapoutre",
+        "people": [
+            "bryan",
+            "rishik",
+            "cecile",
+            "quentin"
+        ],
+        "is_album": false
+    },
+    "smoking": {
+        "name": "rishik_smoking.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "",
+        "fr": "",
+        "people": [
+            "rishik"
+        ],
+        "is_album": false
+    },
+    "cecile_11": {
+        "name": "bryan_cecile_qutub_minar.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "At Qutub Minar in Delhi",
+        "fr": "A Qutub Minar \u00e0 D\u00e9lhi",
+        "people": [
+            "bryan",
+            "cecile"
+        ],
+        "is_album": false
+    },
+    "lighting": {
+        "name": "good_lighting_cave.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "Krem Chympe cave",
+        "fr": "La grotte de Krem Chympe",
+        "people": [
+            "bryan",
+            "cecile",
+            "rishik",
+            "tyler"
+        ],
+        "is_album": false
+    },
+    "system": {
+        "name": "kids_room_solar_system.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "learning_15": {
+        "name": "learning_drive_manual.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "Learning to drive stick",
+        "fr": "J'apprends \u00e0 conduire une voiture manuelle",
+        "people": [
+            "bryan",
+            "rishik"
+        ],
+        "is_album": false
+    },
+    "ferris": {
+        "name": "dehli_ferris_wheel.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "climbing": {
+        "name": "cave_climbing.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "cleansing": {
+        "name": "cleansing_ceremony.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "The Haldi (cleansing) ceremony",
+        "fr": "La c\u00e9r\u00e9monie de Haldi (de purification)",
+        "people": [
+            "bryan",
+            "rishik",
+            "quentin",
+            "cecile",
+            "tyler",
+            "rishik_mom",
+            "rishik_dad"
+        ],
+        "is_album": false
+    },
+    "qutub": {
+        "name": "qutub_minar_dazed.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 1,
+        "en": "Qutub Minar tower",
+        "fr": "Tour de Qutub Minar",
+        "people": [
+            "tyler"
+        ],
+        "is_album": false
+    },
+    "north": {
+        "name": "north_dehli.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 2,
+        "en": "Busy street in Delhi",
+        "fr": "Un rue blind\u00e9 \u00e0 D\u00e9lhi",
+        "people": [],
+        "is_album": false
+    },
+    "pregnant": {
+        "name": "pregnant_goats.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 3,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "cecile"
+        ],
+        "is_album": false
+    },
+    "mahal": {
+        "name": "taj_mahal.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 4,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "bridge": {
+        "name": "root_bridge.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 5,
+        "en": "The Mawkyrnot Living Root Bridge",
+        "fr": "Le pont de racines vivant de Mawkyrnot",
+        "people": [],
+        "is_album": false
+    },
+    "reception": {
+        "name": "action_marriage_reception.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 6,
+        "en": "",
+        "fr": "",
+        "people": [
+            "sabya",
+            "quentin",
+            "ruchira",
+            "cecile",
+            "tyler"
+        ],
+        "is_album": false
+    },
+    "waterfalls": {
+        "name": "more_waterfalls.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 7,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "rishik_1": {
+        "name": "qutub_minar_rishik.jpg",
+        "month": "Jan",
+        "year": 2025,
+        "order_in_year": 1,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "rishik"
+        ],
         "is_album": false
     }
 }
