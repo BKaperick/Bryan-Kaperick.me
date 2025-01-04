@@ -6,10 +6,10 @@ do
         # line, but for now gh actions is on an ubuntu container
         #magick $file -strip -interlace Plane -gaussian-blur 0.05 -quality 85% "../lowres/$file"
         #convert -strip -interlace Plane -gaussian-blur 0.05 -quality 50% $file  "../lowres/$file"
-        convert $file -quality 50% "../lowres/$file.webp" 
+        convert $file -quality 40% "../lowres/$file.webp" 
     fi
 done
-for file in $( find . -size +$((800*800))c )
+for file in $( find . -size +$((700*700))c )
 do
     if ! test -f "../lowres/$file.webp"; then
         echo "Large file: $file"
@@ -17,7 +17,7 @@ do
         # line, but for now gh actions is on an ubuntu container
         #magick $file -strip -interlace Plane -gaussian-blur 0.05 -quality 85% "../lowres/$file"
         #convert -strip -interlace Plane -gaussian-blur 0.05 -quality 10% $file  "../lowres/$file"
-        convert $file -quality 10% "../lowres/$file.webp" 
+        convert $file -quality 8% "../lowres/$file.webp" 
     fi
 done
 cd ..
