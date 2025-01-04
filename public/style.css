@@ -9,6 +9,20 @@ html {
 	scroll-behavior: smooth
 }
 
+/* Define the light theme (default) */
+:root {
+  --page-bg-color: #fff; /* Background color */
+  --body-bg-color: #eee;
+  --text-color: black; /* Text color */
+}
+
+/* Define the dark theme */
+.dark-theme {
+  --bg-color: black; /* Background color */
+  --body-bg-color: #111111;
+  --text-color: #fff; /* Text color */
+}
+
 @media (min-width: 1111px).html {
 	font-size: 112.5%;
 	line-height: 1.38888889em
@@ -22,7 +36,8 @@ html {
 
 body {
 	margin: 0;
-	padding: 0
+	padding: 0;
+    color: var(--text-color);
 }
 
 h1,
@@ -835,22 +850,6 @@ aside ol>li::before {
 	overflow: visible
 }
 
-.watermark {
-	font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
-	font-weight: bold;
-	text-transform: uppercase;
-	display: block;
-	height: 0;
-	overflow: visible;
-	background-color: transparent;
-	color: #eee;
-	font-size: 75px;
-	line-height: 1;
-	text-align: center;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
-	word-wrap: break-word
-}
-
 .more-link {
 	text-align: right
 }
@@ -916,11 +915,11 @@ aside ol>li::before {
 }
 
 body {
-	background-color: #eee
+	background-color: var(--body-bg-color);
 }
 
 .page {
-	background-color: #fff
+	background-color:var(--page-bg-color);
 }
 
 .header {
@@ -1353,4 +1352,19 @@ figure.single-image {
 }
 .next_link {
   float:right;
+}
+
+/* Style the toggle button */
+#toggle {
+  position: fixed; /* Fix the position of the button */
+  bottom: 10px; /* Set the bottom position to 10 pixels */
+  right: 10px; /* Set the right position to 10 pixels */
+  padding: 10px; /* Add some space around the button */
+  border: none; /* Remove the border */
+  border-radius: 5px; /* Add some rounded corners */
+  cursor: pointer; /* Change the cursor to a pointer */
+}
+/* Change the button color on hover */
+#toggle:hover {
+  background-color: gray;
 }

@@ -7,5 +7,23 @@
 <a href="<?="/" . $lang . "/attributions/attributions.php"?>" style="color:grey"><?php echo $language['Click for other artistic attributions'] ?></a>
 </p>
 </span>
+<button id="toggle">Toggle Dark Mode</button>
 
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode");
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
 </footer>

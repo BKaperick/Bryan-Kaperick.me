@@ -9,6 +9,24 @@ html {
 	scroll-behavior: smooth
 }
 
+/* Define the light theme (default) */
+:root {
+  --page-bg-color: #fff; /* Background color */
+  --body-bg-color: #eee;
+  --text-color: black; /* Text color */
+  --header-color: #333;
+  --button-text-color: #fff;
+}
+
+/* Define the dark theme */
+.dark-theme {
+  --page-bg-color: black; /* Background color */
+  --body-bg-color: #111111;
+  --text-color: #fff; /* Text color */
+  --header-color: #ccc;
+  --button-text-color: black;
+}
+
 @media (min-width: 1111px).html {
 	font-size: 112.5%;
 	line-height: 1.38888889em
@@ -22,7 +40,8 @@ html {
 
 body {
 	margin: 0;
-	padding: 0
+	padding: 0;
+    color: var(--text-color);
 }
 
 h1,
@@ -177,7 +196,7 @@ pre {
 }
 
 a {
-	color: #000;
+	color: var(--text-color);
 	-webkit-text-decoration-skip: objects
 }
 
@@ -187,7 +206,7 @@ a {
 
 a:hover,
 a:focus {
-	color: #333
+	color: var(--header-color);
 }
 
 a:active {
@@ -295,7 +314,7 @@ button,
 	line-height: inherit;
 	text-decoration: none;
 	cursor: pointer;
-	color: #333;
+	color: var(--header-color);
 	text-align: center;
 	background-image: linear-gradient(#f6f6f6, #e2e2e2);
 	border: 1px solid #e4e4e4;
@@ -340,7 +359,7 @@ button:active,
 [type='submit']:focus,
 [type='submit']:active {
 	text-decoration: none;
-	color: #333
+	color: var(--header-color);
 }
 
 .button:active,
@@ -835,22 +854,6 @@ aside ol>li::before {
 	overflow: visible
 }
 
-.watermark {
-	font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
-	font-weight: bold;
-	text-transform: uppercase;
-	display: block;
-	height: 0;
-	overflow: visible;
-	background-color: transparent;
-	color: #eee;
-	font-size: 75px;
-	line-height: 1;
-	text-align: center;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
-	word-wrap: break-word
-}
-
 .more-link {
 	text-align: right
 }
@@ -916,11 +919,11 @@ aside ol>li::before {
 }
 
 body {
-	background-color: #eee
+	background-color: var(--body-bg-color);
 }
 
 .page {
-	background-color: #fff
+	background-color:var(--page-bg-color);
 }
 
 .header {
@@ -994,7 +997,7 @@ article>header,
 .header,
 .footer {
 	font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
-	color: #333;
+	color: var(--header-color);
 	font-weight: normal
 }
 
@@ -1046,7 +1049,7 @@ article code {
 }
 
 article pre {
-	color: #333;
+	color: var(--header-color);
 	border-radius: 3px;
 	padding: 5px;
 	border: 1px solid #ccc;
@@ -1140,8 +1143,8 @@ figure.podcast audio {
 
 .main-menu a {
 	display: block;
-	background-color: #333;
-	color: #fff;
+	background-color: var(--header-color);
+	color: var(--button-text-color);
 	padding: 2px 8px;
 	text-decoration: none
 }
@@ -1153,7 +1156,7 @@ figure.podcast audio {
 
 .main-menu a:active,
 .main-menu a.active {
-	background-color: #333;
+	background-color: var(--header-color);
 	text-decoration: underline
 }
 
@@ -1342,7 +1345,7 @@ figure.single-image {
 .prev_link,
 .next_link {
   font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
-  background-color: #333;
+  background-color: var(--header-color);
   font-weight: normal;
   color: #fff;
   padding: .5rem;
@@ -1353,4 +1356,20 @@ figure.single-image {
 }
 .next_link {
   float:right;
+}
+
+/* Style the toggle button */
+#toggle {
+  position: fixed; /* Fix the position of the button */
+  bottom: 10px; /* Set the bottom position to 10 pixels */
+  right: 10px; /* Set the right position to 10 pixels */
+  padding: 10px; /* Add some space around the button */
+  border: none; /* Remove the border */
+  border-radius: 5px; /* Add some rounded corners */
+  cursor: pointer; /* Change the cursor to a pointer */
+}
+/* Change the button color on hover */
+#toggle:hover {
+  background-color: var(--text-color);
+  color: var(--button-text-color);
 }

@@ -86,6 +86,23 @@
 </ul>
 
 </nav>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode");
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
 <!DOCTYPE html>
 <html class="nojs" lang="en" dir="ltr">
 <head>
@@ -167,5 +184,5 @@ La photo de profile a été esquissée par <a href="https://www.instagram.com/j.
 <a href="attributions.html" style="color:grey">Cliquez ici pour des autres attributions artistiques</a>
 </p>
 </span>
-
+<button id="toggle">Toggle Dark Mode</button>
 </footer>

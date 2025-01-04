@@ -86,6 +86,23 @@ class="active" aria-current="page">Contact</a></li>
 </ul>
 
 </nav>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode");
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
 <!DOCTYPE html>
 <html class="nojs" lang="en" dir="ltr">
 <head>
@@ -176,6 +193,6 @@ The profile picture was sketched by <a href="https://www.instagram.com/j.andrews
 <a href="../attributions/attributions.html" style="color:grey">Click for other artistic attributions</a>
 </p>
 </span>
-
+<button id="toggle">Toggle Dark Mode</button>
 </footer>
 
