@@ -6,6 +6,11 @@
 <br>
 <a href="<?="/" . $lang . "/attributions/attributions.php"?>" style="color:grey"><?php echo $language['Click for other artistic attributions'] ?></a>
 </p>
-</span>
 
+</span>
+<button id="toggle" class="bottom"><img src="/static/dark-mode.webp" class="invertible"></button>
 </footer>
+
+<script>
+<?php include($_SERVER['DOCUMENT_ROOT']."/toggle_darkmode.js") ?>
+</script>
