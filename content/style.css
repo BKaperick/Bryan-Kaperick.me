@@ -25,24 +25,26 @@ html {
   --border-bottom: #b4b4b4;
   --grade-start: #f6f6f6;
   --grade-end: #e2e2e2;
+  filter: invert(0);
 }
 
 /* Define the dark theme */
 .dark-theme {
-  --page-bg-color: black; /* Background color */
-  --body-bg-color: #111111;
-  --text-color: #fff; /* Text color */
-  --black-color: white; /* Text color */
-  --header-color: #ccc;
-  --inv-header-color: #333;
-  --button-text-color: black;
-  --submit-border: #1b1b1b;
-  --css-grey: #7f7f7f;
-  --menu-focus: #999999;
-  --border-left: #2d2d2d;
-  --border-bottom: #4b4b4b;
-  --grade-start: #090909;
-  --grade-end: #1d1d1d;
+  filter: invert(1);
+  --page-bg-color: #fff; /* Background color */
+  --body-bg-color: #eee;
+  --text-color: black; /* Text color */
+  --black-color: black; /* Text color */
+  --header-color: #333;
+  --inv-header-color: #ccc;
+  --button-text-color: #fff;
+  --submit-border: #e4e4e4;
+  --css-grey: grey;
+  --menu-focus: #666666;
+  --border-left: #d2d2d2;
+  --border-bottom: #b4b4b4;
+  --grade-start: #f6f6f6;
+  --grade-end: #e2e2e2;
 }
 
 @media (min-width: 1111px).html {
