@@ -18,5 +18,15 @@
         "repository_link": "https://thenounproject.com/",
         "license": "CC BY 3.0",
         "license_link": "https://creativecommons.org/licenses/by/3.0/"
+    },
+    "dark_mode": {
+        "name": "Light Bulb",
+        "image": "../../static/dark-mode.webp",
+        "author": "Iqbal Widianto",
+        "link": "https://thenounproject.com/icon/light-bulb-7165559/",
+        "repository": "Noun Project",
+        "repository_link": "https://thenounproject.com/",
+        "license": "CC BY 3.0",
+        "license_link": "https://creativecommons.org/licenses/by/3.0/"
     }
 }
