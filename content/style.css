@@ -25,11 +25,13 @@ html {
   --border-bottom: #b4b4b4;
   --grade-start: #f6f6f6;
   --grade-end: #e2e2e2;
+  --filter-applied: 0;
   filter: invert(0);
 }
 
 /* Define the dark theme */
 .dark-theme {
+  --filter-applied: 1;
   filter: invert(1);
   --page-bg-color: #fff; /* Background color */
   --body-bg-color: #eee;
@@ -272,7 +274,12 @@ sup {
 img,
 svg {
 	max-width: 100%;
-	height: auto
+	height: auto;
+    filter: invert(var(--filter-applied));
+}
+
+.invertible {
+    filter: invert(1 - var(--filter-applied));
 }
 
 button,

@@ -55,8 +55,7 @@ $language_toggle = array(
 <body class="list-page front">
 <div class="page layout__page">
 <header class="header layout__header">
-<img src=>
-<a href="/" title="Home" rel="home" class="header__logo"><img src="/static/logo_cleaned_reduce_50pct.webp" alt="Home" class="header__logo-image"></a>
+<a href="/" title="Home" rel="home" class="header__logo"><img src="/static/logo_cleaned_reduce_50pct.webp" alt="Home" class="header__logo-image invertible"></a>
 <h1 class="header__site-name">
 <a href="/" title="Home" class="header__site-link" rel="home"><span><?php echo $language['SITE_TITLE'] ?></span></a>
 </h1>
@@ -65,7 +64,7 @@ $language_toggle = array(
 <nav class="language-selector layout__language-selector">
 
 <a rel="alternate" lang="<?=$language_toggle[$lang]?>" hreflang="<?=$language_toggle[$lang]?>" href="?lang=<?=$language_toggle[$lang];?>"><div class="language_box"><div class="language_text language_text_<?=$lang?>"><?=$language['LANGUAGE_TOGGLE'];?></div>
-<img src="/static/cafe-<?=$language_toggle[$lang]?>.webp" class="language_icon"></div></a>
+<img src="/static/cafe-<?=$language_toggle[$lang]?>.webp" class="language_icon invertible"></div></a>
     
 
 </nav>

@@ -8,7 +8,7 @@
 </p>
 </span>
 <button id="toggle">Toggle Dark Mode</button>
-
+</footer>
 
 <script>
 const root = document.documentElement;
@@ -26,4 +26,3 @@ toggle.addEventListener("click", () => {
   }
 });
 </script>
-</footer>
