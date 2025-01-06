@@ -1343,13 +1343,22 @@ figure.single-image {
 /* Style the toggle button */
 #toggle {
   position: fixed; /* Fix the position of the button */
-  bottom: 10px; /* Set the bottom position to 10 pixels */
-  right: 10px; /* Set the right position to 10 pixels */
-  padding: 10px; /* Add some space around the button */
   border: none; /* Remove the border */
   border-radius: 5px; /* Add some rounded corners */
   cursor: pointer; /* Change the cursor to a pointer */
 }
+#toggle.bottom {
+  bottom: 10px; /* Set the bottom position to 10 pixels */
+  right: 10px; /* Set the right position to 10 pixels */
+  padding: 10px; /* Add some space around the button */
+}
+
+#toggle.top {
+  top: 10px; /* Set the bottom position to 10 pixels */
+  right: 10px; /* Set the right position to 10 pixels */
+  padding: 10px; /* Add some space around the button */
+}
+
 /* Change the button color on hover */
 #toggle:hover {
   background-color: var(--text-color);

@@ -8,7 +8,7 @@
 </p>
 
 </span>
-<button id="toggle"><img src="/static/dark-mode.webp" class="invertible"></button>
+<button id="toggle" class="bottom"><img src="/static/dark-mode.webp" class="invertible"></button>
 </footer>
 
 <script>
