@@ -49,8 +49,7 @@
 <body class="list-page front">
 <div class="page layout__page">
 <header class="header layout__header">
-<img src=>
-<a href="index_fr.html" title="Home" rel="home" class="header__logo"><img src="static/logo_cleaned_reduce_50pct.webp" alt="Home" class="header__logo-image"></a>
+<a href="index_fr.html" title="Home" rel="home" class="header__logo"><img src="static/logo_cleaned_reduce_50pct.webp" alt="Home" class="header__logo-image invertible"></a>
 <h1 class="header__site-name">
 <a href="index_fr.html" title="Home" class="header__site-link" rel="home"><span>Le Site Web de Bryan Kaperick</span></a>
 </h1>
@@ -59,7 +58,7 @@
 <nav class="language-selector layout__language-selector">
 
 <a rel="alternate" lang="en" hreflang="en" href="index.html"><div class="language_box"><div class="language_text language_text_fr">Uh, in English please...?</div>
-<img src="static/cafe-en.webp" class="language_icon"></div></a>
+<img src="static/cafe-en.webp" class="language_icon invertible"></div></a>
     
 
 </nav>
@@ -86,23 +85,6 @@ class="active" aria-current="page">Accueil</a></li>
 </ul>
 
 </nav>
-
-<script>
-const root = document.documentElement;
-const toggle = document.getElementById("toggle");
-const darkMode = localStorage.getItem("dark-mode");
-if (darkMode) {
-  root.classList.add("dark-theme");
-}
-toggle.addEventListener("click", () => {
-  root.classList.toggle("dark-theme");
-  if (root.classList.contains("dark-theme")) {
-    localStorage.setItem("dark-mode", true);
-  } else {
-    localStorage.removeItem("dark-mode");
-  }
-});
-</script>
 <!DOCTYPE html>
 <html class="nojs" lang="fr" dir="ltr">
 <head>
@@ -176,16 +158,34 @@ toggle.addEventListener("click", () => {
 </html>
 <footer class="footer layout__footer">
 <span style="color:grey"> 
-<p><span>© Le Site Web de Bryan Kaperick</span> – <nobr>Mis à jour  2025-01-04
+<p><span>© Le Site Web de Bryan Kaperick</span> – <nobr>Mis à jour  2025-01-06
 </nobr>
 <br>
 La photo de profile a été esquissée par <a href="https://www.instagram.com/j.andrews96/" style="color:#585858">Jason Andrews</a>
 <br>
 <a href="fr/attributions/attributions.html" style="color:grey">Cliquez ici pour des autres attributions artistiques</a>
 </p>
+
 </span>
-<button id="toggle">Toggle Dark Mode</button>
+<button id="toggle" class="bottom"><img src="static/dark-mode.webp" class="invertible"></button>
 </footer>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode");
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
 <style>
   html {
 	font-family: "Garamond Premier Pro", Charter, "Times New Roman", serif;
@@ -203,13 +203,39 @@ La photo de profile a été esquissée par <a href="https://www.instagram.com/j.
   --page-bg-color: #fff; /* Background color */
   --body-bg-color: #eee;
   --text-color: black; /* Text color */
+  --black-color: black; /* Text color */
+  --header-color: #333;
+  --inv-header-color: #ccc;
+  --button-text-color: #fff;
+  --submit-border: #e4e4e4;
+  --css-grey: grey;
+  --menu-focus: #666666;
+  --border-left: #d2d2d2;
+  --border-bottom: #b4b4b4;
+  --grade-start: #f6f6f6;
+  --grade-end: #e2e2e2;
+  --filter-applied: 0;
+  filter: invert(0);
 }
 
 /* Define the dark theme */
 .dark-theme {
-  --bg-color: black; /* Background color */
-  --body-bg-color: #111111;
-  --text-color: #fff; /* Text color */
+  --filter-applied: 1;
+  filter: invert(1);
+  --page-bg-color: #fff; /* Background color */
+  --body-bg-color: #eee;
+  --text-color: black; /* Text color */
+  --black-color: black; /* Text color */
+  --header-color: #333;
+  --inv-header-color: #ccc;
+  --button-text-color: #fff;
+  --submit-border: #e4e4e4;
+  --css-grey: grey;
+  --menu-focus: #666666;
+  --border-left: #d2d2d2;
+  --border-bottom: #b4b4b4;
+  --grade-start: #f6f6f6;
+  --grade-end: #e2e2e2;
 }
 
 @media (min-width: 1111px).html {
@@ -322,7 +348,7 @@ h6 {
 hr {
 	margin: 1.40909091rem 0;
 	border: 0;
-	border-top: 1px solid #ccc
+	border-top: 1px solid var(--inv-header-color)
 }
 
 .divider>:first-child,
@@ -381,17 +407,17 @@ pre {
 }
 
 a {
-	color: #000;
+	color: var(--text-color);
 	-webkit-text-decoration-skip: objects
 }
 
 :visited {
-	color: #000
+	color: var(--black-color);
 }
 
 a:hover,
 a:focus {
-	color: #333
+	color: var(--header-color);
 }
 
 a:active {
@@ -437,7 +463,12 @@ sup {
 img,
 svg {
 	max-width: 100%;
-	height: auto
+	height: auto;
+    filter: invert(var(--filter-applied));
+}
+
+.invertible {
+    filter: invert(1 - var(--filter-applied));
 }
 
 button,
@@ -499,13 +530,13 @@ button,
 	line-height: inherit;
 	text-decoration: none;
 	cursor: pointer;
-	color: #333;
+	color: var(--header-color);
 	text-align: center;
-	background-image: linear-gradient(#f6f6f6, #e2e2e2);
-	border: 1px solid #e4e4e4;
-	border-left-color: #d2d2d2;
-	border-right-color: #d2d2d2;
-	border-bottom-color: #b4b4b4;
+	background-image: linear-gradient(var(--grade-start), var(--grade-end));
+	border: 1px solid var(--submit-border);
+	border-left-color: var(--border-left);
+	border-right-color: var(--border-left);
+	border-bottom-color: var(--border-bottom);
 	border-radius: 2px;
 	-moz-appearance: button;
 	-webkit-appearance: button
@@ -544,7 +575,7 @@ button:active,
 [type='submit']:focus,
 [type='submit']:active {
 	text-decoration: none;
-	color: #333
+	color: var(--header-color);
 }
 
 .button:active,
@@ -553,8 +584,8 @@ button:active,
 [type='reset']:active,
 [type='submit']:active {
 	border-color: #555;
-	text-shadow: #333 0 -1px 0;
-	background: #666;
+	text-shadow: var(--header-color) 0 -1px 0;
+	background: var(--menu-focus);
 	color: #fff
 }
 
@@ -573,8 +604,8 @@ button[disabled],
 [disabled][type='submit'] {
 	cursor: default;
 	color: #999;
-	background-color: #eee;
-	border-color: #eee;
+	background-color: var(--body-bg-color);
+	border-color: var(--body-bg-color);
 	background-image: none;
 	text-shadow: none
 }
@@ -605,7 +636,7 @@ button[disabled]:active,
 
 fieldset {
 	padding: .49318182rem .70454545rem .91590909rem;
-	border: 1px solid #ccc
+	border: 1px solid var(--inv-header-color)
 }
 
 legend {
@@ -768,7 +799,7 @@ ul menu {
 
 .box {
 	margin-bottom: 1.40909091rem;
-	border: 5px solid #ccc;
+	border: 5px solid var(--inv-header-color);
 	padding: 1em
 }
 
@@ -780,11 +811,11 @@ ul menu {
 .box:hover,
 .box.is-focus,
 .box--is-focus {
-	border-color: #000
+	border-color: var(--black-color);
 }
 
 .box--highlight {
-	border-color: #000
+	border-color: var(--black-color); 
 }
 
 .clearfix::before {
@@ -834,7 +865,7 @@ ul menu {
 
 .header__site-link:link,
 .header__site-link:visited {
-	color: #000;
+	color: var(--black-color);
 	text-decoration: none
 }
 
@@ -887,7 +918,7 @@ ul menu {
 
 .inverted-box {
 	padding: .70454545rem;
-	background: #333;
+	background: var(--header-color);
 	color: #fff;
 	border-radius: 5px
 }
@@ -973,51 +1004,6 @@ aside ol>li::before {
 	aside ol>li::before {
 		font-size: .88888889rem
 	}
-}
-
-.message {
-	padding: 10px;
-	border-width: 1px;
-	border-style: solid;
-	width: 95%
-}
-
-.message.status {
-	background-color: #f4feee;
-	color: #43a808;
-	border-color: #43a808
-}
-
-.message.warning {
-	background-color: #fffce6;
-	color: #000;
-	border-color: #000
-}
-
-.message.error {
-	background-color: #fff0f0;
-	color: #c00;
-	border-color: #c00
-}
-
-.responsive-video {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 25px;
-	height: 0
-}
-
-.responsive-video__embed,
-.responsive-video iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%
-}
-
-.responsive-video--4-3 {
-	padding-bottom: 75%
 }
 
 .visually-hidden {
@@ -1125,7 +1111,7 @@ body {
 	margin-top: 2.11363636rem;
 	padding: .70454545rem 0;
 	text-align: center;
-	border-top: 2px solid #333
+	border-top: 2px solid var(--header-color)
 }
 
 .footer p {
@@ -1182,12 +1168,12 @@ article>header,
 .header,
 .footer {
 	font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
-	color: #333;
+	color: var(--header-color);
 	font-weight: normal
 }
 
 article>header {
-	color: #666
+	color: var(--menu-focus)
 }
 
 article .submitted {
@@ -1216,7 +1202,7 @@ article .tags li {
 }
 
 article .content-dates {
-	color: #666;
+	color: var(--menu-focus);
 	text-align: right
 }
 
@@ -1234,10 +1220,10 @@ article code {
 }
 
 article pre {
-	color: #333;
+	color: var(--header-color);
 	border-radius: 3px;
 	padding: 5px;
-	border: 1px solid #ccc;
+	border: 1px solid var(--inv-header-color);
 	background-color: #fff;
 	overflow: auto;
 	max-height: 300px;
@@ -1328,20 +1314,20 @@ figure.podcast audio {
 
 .main-menu a {
 	display: block;
-	background-color: #333;
-	color: #fff;
+	background-color: var(--header-color);
+	color: var(--button-text-color);
 	padding: 2px 8px;
 	text-decoration: none
 }
 
 .main-menu a:hover,
 .main-menu a:focus {
-	background-color: #666
+	background-color: var(--menu-focus)
 }
 
 .main-menu a:active,
 .main-menu a.active {
-	background-color: #333;
+	background-color: var(--header-color);
 	text-decoration: underline
 }
 
@@ -1449,7 +1435,7 @@ figure.album {
 }
 .albumimage > figcaption {
     font-size: 90%;
-    color: grey;
+    color: var(--css-grey);
     text-decoration: none;
 }
 .album > figcaption {
@@ -1509,7 +1495,7 @@ figure.single-image {
 }
 .language_box {
     float: left;
-    background-color: #eee; /*#c8c4c3;*/
+    background-color: var(--body-bg-color); /*#c8c4c3;*/
     border-radius: 5px;
 	padding: 0 10px 0 10px;
 }
@@ -1530,9 +1516,9 @@ figure.single-image {
 .prev_link,
 .next_link {
   font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
-  background-color: #333;
+  background-color: var(--header-color);
   font-weight: normal;
-  color: #fff;
+  color: var(--button-text-color);
   padding: .5rem;
   text-decoration: none;
 }
@@ -1546,15 +1532,25 @@ figure.single-image {
 /* Style the toggle button */
 #toggle {
   position: fixed; /* Fix the position of the button */
-  bottom: 10px; /* Set the bottom position to 10 pixels */
-  right: 10px; /* Set the right position to 10 pixels */
-  padding: 10px; /* Add some space around the button */
   border: none; /* Remove the border */
   border-radius: 5px; /* Add some rounded corners */
   cursor: pointer; /* Change the cursor to a pointer */
 }
+#toggle.bottom {
+  bottom: 10px; /* Set the bottom position to 10 pixels */
+  right: 10px; /* Set the right position to 10 pixels */
+  padding: 10px; /* Add some space around the button */
+}
+
+#toggle.top {
+  top: 10px; /* Set the bottom position to 10 pixels */
+  right: 10px; /* Set the right position to 10 pixels */
+  padding: 10px; /* Add some space around the button */
+}
+
 /* Change the button color on hover */
 #toggle:hover {
-  background-color: gray;
+  background-color: var(--text-color);
+  color: var(--button-text-color);
 }
 </style>

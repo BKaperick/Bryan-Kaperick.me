@@ -3,6 +3,24 @@
 <link rel="apple-touch-icon" href="../../static/favicon.ico">
 <link rel="stylesheet" href="../../style.css">
 
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode");
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
 <figure class="single-image">
     <img src="../../photos/raw/learning_drive_manual.jpg" alt="J'apprends à conduire une voiture manuelle ~ 2024">
     <figcaption>
