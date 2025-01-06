@@ -14,8 +14,17 @@ html {
   --page-bg-color: #fff; /* Background color */
   --body-bg-color: #eee;
   --text-color: black; /* Text color */
+  --black-color: black; /* Text color */
   --header-color: #333;
+  --inv-header-color: #ccc;
   --button-text-color: #fff;
+  --submit-border: #e4e4e4;
+  --css-grey: grey;
+  --menu-focus: #666666;
+  --border-left: #d2d2d2;
+  --border-bottom: #b4b4b4;
+  --grade-start: #f6f6f6;
+  --grade-end: #e2e2e2;
 }
 
 /* Define the dark theme */
@@ -23,8 +32,17 @@ html {
   --page-bg-color: black; /* Background color */
   --body-bg-color: #111111;
   --text-color: #fff; /* Text color */
+  --black-color: white; /* Text color */
   --header-color: #ccc;
+  --inv-header-color: #333;
   --button-text-color: black;
+  --submit-border: #1b1b1b;
+  --css-grey: #7f7f7f;
+  --menu-focus: #999999;
+  --border-left: #2d2d2d;
+  --border-bottom: #4b4b4b;
+  --grade-start: #090909;
+  --grade-end: #1d1d1d;
 }
 
 @media (min-width: 1111px).html {
@@ -137,7 +155,7 @@ h6 {
 hr {
 	margin: 1.40909091rem 0;
 	border: 0;
-	border-top: 1px solid #ccc
+	border-top: 1px solid var(--inv-header-color)
 }
 
 .divider>:first-child,
@@ -201,7 +219,7 @@ a {
 }
 
 :visited {
-	color: #000
+	color: var(--black-color);
 }
 
 a:hover,
@@ -316,11 +334,11 @@ button,
 	cursor: pointer;
 	color: var(--header-color);
 	text-align: center;
-	background-image: linear-gradient(#f6f6f6, #e2e2e2);
-	border: 1px solid #e4e4e4;
-	border-left-color: #d2d2d2;
-	border-right-color: #d2d2d2;
-	border-bottom-color: #b4b4b4;
+	background-image: linear-gradient(var(--grade-start), var(--grade-end));
+	border: 1px solid var(--submit-border);
+	border-left-color: var(--border-left);
+	border-right-color: var(--border-left);
+	border-bottom-color: var(--border-bottom);
 	border-radius: 2px;
 	-moz-appearance: button;
 	-webkit-appearance: button
@@ -368,8 +386,8 @@ button:active,
 [type='reset']:active,
 [type='submit']:active {
 	border-color: #555;
-	text-shadow: #333 0 -1px 0;
-	background: #666;
+	text-shadow: var(--header-color) 0 -1px 0;
+	background: var(--menu-focus);
 	color: #fff
 }
 
@@ -388,8 +406,8 @@ button[disabled],
 [disabled][type='submit'] {
 	cursor: default;
 	color: #999;
-	background-color: #eee;
-	border-color: #eee;
+	background-color: var(--body-bg-color);
+	border-color: var(--body-bg-color);
 	background-image: none;
 	text-shadow: none
 }
@@ -420,7 +438,7 @@ button[disabled]:active,
 
 fieldset {
 	padding: .49318182rem .70454545rem .91590909rem;
-	border: 1px solid #ccc
+	border: 1px solid var(--inv-header-color)
 }
 
 legend {
@@ -583,7 +601,7 @@ ul menu {
 
 .box {
 	margin-bottom: 1.40909091rem;
-	border: 5px solid #ccc;
+	border: 5px solid var(--inv-header-color);
 	padding: 1em
 }
 
@@ -595,11 +613,11 @@ ul menu {
 .box:hover,
 .box.is-focus,
 .box--is-focus {
-	border-color: #000
+	border-color: var(--black-color);
 }
 
 .box--highlight {
-	border-color: #000
+	border-color: var(--black-color); 
 }
 
 .clearfix::before {
@@ -649,7 +667,7 @@ ul menu {
 
 .header__site-link:link,
 .header__site-link:visited {
-	color: #000;
+	color: var(--black-color);
 	text-decoration: none
 }
 
@@ -702,7 +720,7 @@ ul menu {
 
 .inverted-box {
 	padding: .70454545rem;
-	background: #333;
+	background: var(--header-color);
 	color: #fff;
 	border-radius: 5px
 }
@@ -788,51 +806,6 @@ aside ol>li::before {
 	aside ol>li::before {
 		font-size: .88888889rem
 	}
-}
-
-.message {
-	padding: 10px;
-	border-width: 1px;
-	border-style: solid;
-	width: 95%
-}
-
-.message.status {
-	background-color: #f4feee;
-	color: #43a808;
-	border-color: #43a808
-}
-
-.message.warning {
-	background-color: #fffce6;
-	color: #000;
-	border-color: #000
-}
-
-.message.error {
-	background-color: #fff0f0;
-	color: #c00;
-	border-color: #c00
-}
-
-.responsive-video {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 25px;
-	height: 0
-}
-
-.responsive-video__embed,
-.responsive-video iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%
-}
-
-.responsive-video--4-3 {
-	padding-bottom: 75%
 }
 
 .visually-hidden {
@@ -940,7 +913,7 @@ body {
 	margin-top: 2.11363636rem;
 	padding: .70454545rem 0;
 	text-align: center;
-	border-top: 2px solid #333
+	border-top: 2px solid var(--header-color)
 }
 
 .footer p {
@@ -1002,7 +975,7 @@ article>header,
 }
 
 article>header {
-	color: #666
+	color: var(--menu-focus)
 }
 
 article .submitted {
@@ -1031,7 +1004,7 @@ article .tags li {
 }
 
 article .content-dates {
-	color: #666;
+	color: var(--menu-focus);
 	text-align: right
 }
 
@@ -1052,7 +1025,7 @@ article pre {
 	color: var(--header-color);
 	border-radius: 3px;
 	padding: 5px;
-	border: 1px solid #ccc;
+	border: 1px solid var(--inv-header-color);
 	background-color: #fff;
 	overflow: auto;
 	max-height: 300px;
@@ -1151,7 +1124,7 @@ figure.podcast audio {
 
 .main-menu a:hover,
 .main-menu a:focus {
-	background-color: #666
+	background-color: var(--menu-focus)
 }
 
 .main-menu a:active,
@@ -1264,7 +1237,7 @@ figure.album {
 }
 .albumimage > figcaption {
     font-size: 90%;
-    color: grey;
+    color: var(--css-grey);
     text-decoration: none;
 }
 .album > figcaption {
@@ -1324,7 +1297,7 @@ figure.single-image {
 }
 .language_box {
     float: left;
-    background-color: #eee; /*#c8c4c3;*/
+    background-color: var(--body-bg-color); /*#c8c4c3;*/
     border-radius: 5px;
 	padding: 0 10px 0 10px;
 }
@@ -1347,7 +1320,7 @@ figure.single-image {
   font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
   background-color: var(--header-color);
   font-weight: normal;
-  color: #fff;
+  color: var(--button-text-color);
   padding: .5rem;
   text-decoration: none;
 }
