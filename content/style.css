@@ -8,6 +8,10 @@ html {
 	box-sizing: border-box;
 	scroll-behavior: smooth
 }
+/* Define mobile font size to be smaller */
+@media only screen and (max-width: 600px) {
+	font-size: 100%;
+}
 
 /* Define the light theme (default) */
 :root {
