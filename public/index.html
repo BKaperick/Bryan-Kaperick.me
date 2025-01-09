@@ -157,7 +157,7 @@ class="active" aria-current="page">Home</a></li>
 </html>
 <footer class="footer layout__footer">
 <span style="color:grey"> 
-<p><span>© Bryan Kaperick&#39;s Website</span> – <nobr>Last updated  2025-01-08
+<p><span>© Bryan Kaperick&#39;s Website</span> – <nobr>Last updated  2025-01-09
 </nobr>
 <br>
 The profile picture was sketched by <a href="https://www.instagram.com/j.andrews96/" style="color:#585858">Jason Andrews</a>
@@ -195,6 +195,25 @@ toggle.addEventListener("click", () => {
 	min-height: 100%;
 	box-sizing: border-box;
 	scroll-behavior: smooth
+}
+/* Define mobile font size to be smaller, and moreso for poems */
+@media screen 
+and (max-device-width: 665px)
+{
+    html {
+	    font-size: 120%;
+    }
+    blockquote {
+	    font-size: 100%;
+    }
+    div.dedicated-poem-page {
+	    font-size: 200%;
+        line-height: 1.40909091em;
+        padding-left: 5px;
+    }
+    .dedicated-poem-page > blockquote {
+        padding-left: 25px;
+    }
 }
 
 /* Define the light theme (default) */
@@ -1401,6 +1420,7 @@ details summary>* {
 .albumimage {
     width: auto;
     height: auto;
+    min-width: 100px;
     padding: 0;
     margin: 0;
 }
