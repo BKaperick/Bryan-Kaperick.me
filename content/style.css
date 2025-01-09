@@ -9,8 +9,13 @@ html {
 	scroll-behavior: smooth
 }
 /* Define mobile font size to be smaller */
-@media (max-width: 700px).html {
-	font-size: 100%;
+@media (min-width: 0px) {
+    html {
+	    font-size: 120%;
+    }
+    blockquote {
+	    font-size: 100%;
+    }
 }
 
 /* Define the light theme (default) */
