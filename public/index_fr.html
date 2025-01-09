@@ -197,9 +197,16 @@ toggle.addEventListener("click", () => {
 	box-sizing: border-box;
 	scroll-behavior: smooth
 }
-/* Define mobile font size to be smaller */
-@media (max-width: 700px).html {
-	font-size: 100%;
+/* Define mobile font size to be smaller, and moreso for poems */
+@media screen 
+and (max-device-width: 665px)
+{
+    html {
+	    font-size: 120%;
+    }
+    blockquote {
+	    font-size: 100%;
+    }
 }
 
 /* Define the light theme (default) */
