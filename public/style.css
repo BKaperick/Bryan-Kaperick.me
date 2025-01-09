@@ -9,7 +9,7 @@ html {
 	scroll-behavior: smooth
 }
 /* Define mobile font size to be smaller */
-@media only screen and (max-width: 600px) {
+@media (max-width: 700px).html {
 	font-size: 100%;
 }
 
