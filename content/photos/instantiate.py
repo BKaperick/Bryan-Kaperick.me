@@ -25,13 +25,17 @@ def set_initial_count(photos):
     count = 1
     year = datetime.datetime.now().year
     if len(photos) > 0:
-        last_photo = max([(k,v) for k,v in photos.items() if v['year'] == year], key=lambda x : x[1]['order_in_year'])
+        this_year_photos = [(k,v) for k,v in photos.items() if v['year'] == year]
+        if len(this_year_photos) > 0:
+            last_photo = max(this_year_photos, key=lambda x : x[1]['order_in_year'])
+        else:
+            last_photo = None
         if last_photo:
             order_in_year = last_photo[1]['order_in_year'] + 1
             count = order_in_year 
     return count
 
-def get_nickname(photo_keys, file):
+def get_nickname(photo_keys, file, count):
     name_words = [clean_key(w) for w in file.lower().replace(".txt", "").replace(".jpeg", "").replace(".jpg", "").split("_")]
     longest_word = max(name_words, key=len)
     nickname = longest_word + '_' + str(count) if longest_word in photo_keys else longest_word
@@ -51,7 +55,7 @@ def instantiate_image(photo_keys, file, count):
         "people": ["bryan"],
         "is_album": False
         }
-    nickname = get_nickname(photo_keys, file)
+    nickname = get_nickname(photo_keys, file, count)
     return nickname, d 
 
 def move_photo_file(basepath, file):
@@ -62,18 +66,7 @@ def move_photo_file(basepath, file):
         os.makedirs(directory)
     os.rename(basepath + "/" + file, directory + file)
 
-def instantiate_album(photos, basepath, name):
-    count = set_initial_count(photos)
-    album_d = {
-        "name": name,
-        "month": str(datetime.datetime.now().strftime("%B"))[:3],
-        "year": datetime.datetime.now().year,
-        "order_in_year": count,
-        "en": en_trad,
-        "fr": fr_trad,
-        "is_album": True,
-        "photos": []
-        }
+def iterate_basepath(basepath):
     for file in os.listdir(basepath):
         
         # skip directories and __empty__ placeholder file
@@ -82,13 +75,39 @@ def instantiate_album(photos, basepath, name):
             continue
 
         fixed_file = file.replace(".JPG", ".jpg").replace(".jpeg", ".jpg").replace(".JPEG", ".jpg")
+
+        yield path, fixed_file
+
+def instantiate_album(photos, basepath, name):
+    album_d = {
+        "name": name,
+        "month": str(datetime.datetime.now().strftime("%B"))[:3],
+        "year": datetime.datetime.now().year,
+        "order_in_year": set_initial_count(photos),
+        "en": en_trad,
+        "fr": fr_trad,
+        "is_album": True,
+        "photos": []
+        }
+    photos[name] = album_d
+    append_to_album(photos, basepath, name)
+
+def append_to_album(photos, basepath, name):
+    count = set_initial_count(photos)
+    album = photos[name]
+    for path, fixed_file in iterate_basepath(basepath):
+        os.rename(path, os.path.join(basepath, fixed_file))
+        
+    #for file in os.listdir(basepath):
+    for path, fixed_file in iterate_basepath(basepath):
+        os.rename(path, os.path.join(basepath, fixed_file))
         
         nickname, d = instantiate_image(photos.keys(), fixed_file, count)
         photos[nickname] = d
-        album_d["photos"].append(nickname)
+        album["photos"].append(nickname)
         move_photo_file(basepath, fixed_file)
         count += 1
-    return album_d
+    return album
 
     #print("{0} photo keys present".format(len(photos.keys())))
     #return photos
@@ -127,8 +146,11 @@ with open("photos.json", "r+") as fw:
     photos = instantiate_dir(photos, basepath)
 
     for name,path in albums:
-        photos[name] = instantiate_album(photos, path, name)
-        
+        if name in photos:
+            append_to_album(photos, path, name)
+        else:
+            instantiate_album(photos, path, name)
+        os.rmdir(path)
     
     fw.seek(0)
     json.dump(photos, fw, indent=4)

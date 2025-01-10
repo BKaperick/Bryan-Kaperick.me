@@ -543,8 +543,8 @@
         "name": "sila-bday-beach.jpg",
         "year": 2024,
         "order_in_year": 3,
-        "en": "Sila&rsquo;s 30th birthday in Berck",
-        "fr": "Le 30e anniversaire de Sila \u00e0 Berck",
+        "en": "Also in Berck",
+        "fr": "Aussi \u00e0 Berck",
         "people": [
             "bryan",
             "tyler",
@@ -556,8 +556,8 @@
         "name": "sila-bday-balcony.jpg",
         "year": 2024,
         "order_in_year": 4,
-        "en": "Sila&rsquo;s 30th birthday in Nempont-Saint-Firmin",
-        "fr": "Le 30e anniversaire de Sila \u00e0 Nempont-Saint-Firmin",
+        "en": "In Nempont-Saint-Firmin",
+        "fr": "A Nempont-Saint-Firmin",
         "people": [
             "bryan",
             "sila",
@@ -565,6 +565,43 @@
             "gassim",
             "leah_laura"
         ]
+    },
+    "Silas_Bday": {
+        "name": "Silas_Bday",
+        "year": 2024,
+        "order_in_year": 3.1,
+        "en": "Sila&rsquo;s 30th birthday in Nempont-Saint-Firmin",
+        "fr": "Le 30e anniversaire de Sila \u00e0 Nempont-Saint-Firmin",
+        "is_album": true,
+        "photos": [
+            "NempontSaintFirmin_2024_4",
+            "Silas_2024_3"
+        ]
+    },
+    "julie": {
+        "name": "julie_bryan_coloc_party.jpg",
+        "month": "May",
+        "year": 2024,
+        "order_in_year": 4.5,
+        "en": "Julie and I in a heated discussion",
+        "fr": "Moi et Julie en discussion anim\u00e9",
+        "people": [
+            "bryan",
+            "julie_coloc"
+        ],
+        "is_album": false
+    },
+    "bryan": {
+        "name": "bryan_dance_coloc_party.jpg",
+        "month": "May",
+        "year": 2024,
+        "order_in_year": 4.6,
+        "en": "Me dancing",
+        "fr": "Moi qui danse",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
     },
     "mothers_2024_5": {
         "name": "couscous.jpg",
@@ -661,6 +698,24 @@
         "people": [
             "bryan",
             "tim"
+        ]
+    },
+    "Morocco_Spain": {
+        "name": "Morocco_Spain",
+        "year": 2024,
+        "order_in_year": 12,
+        "en": "Trip to Morocco to visit Sami, and the return through Spain",
+        "fr": "Voyage au Maroc pour rendre visite \u00e0 Sami, et le retour par l'Espagne",
+        "is_album": true,
+        "photos": [
+            "mothers_2024_5",
+            "Constance_2024_6",
+            "Tetouan_2024_7",
+            "Climbing_2024_8",
+            "Tangiers_2024_9",
+            "Algeciras_2024_10",
+            "Zarautz_2024_11",
+            "country_2024_12"
         ]
     },
     "tylerbday": {
@@ -862,5 +917,861 @@
             "majesticcow",
             "openroad"
         ]
+    },
+    "quentin_26": {
+        "name": "quentin_bryan_pacs.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 26,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "cleaning": {
+        "name": "rishik_bryan_cleaning.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 28,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "cecile": {
+        "name": "cecile_sunny_pacs.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 29,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "Pacs_Party": {
+        "name": "Pacs_Party",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 28,
+        "en": "C\u00e9cile's housewarming party",
+        "fr": "La cr\u00e9maill\u00e8re de C\u00e9cile",
+        "is_album": true,
+        "photos": [
+            "cleaning",
+            "cecile",
+            "quentin_26"
+        ]
+    },
+    "pizza": {
+        "name": "pizza_prep.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 30,
+        "en": "",
+        "fr": "",
+        "people": [
+            "cecile",
+            "bryan",
+            "rishik"
+        ],
+        "is_album": false
+    },
+    "anastasia": {
+        "name": "pizza_tyler_anastasia.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 31,
+        "en": "Tyler and Anastasia's",
+        "fr": "Celui de Tyler et Anastasia",
+        "people": [
+            "tyler",
+            "anastasia"
+        ],
+        "is_album": false
+    },
+    "piaaz": {
+        "name": "piaaz_sunny.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 32,
+        "en": "Sunny's",
+        "fr": "Celui de Sunny",
+        "people": [
+            "sunny"
+        ],
+        "is_album": false
+    },
+    "pizza_33": {
+        "name": "pizza_bryan.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 33,
+        "en": "Mine",
+        "fr": "Le mien",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "eating": {
+        "name": "pizza_eating.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 34,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "cecile",
+            "tyler",
+            "anastasia",
+            "rishik"
+        ],
+        "is_album": false
+    },
+    "rishik": {
+        "name": "pizza_rishik.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 35,
+        "en": "Rishik's",
+        "fr": "Celui de Rishik",
+        "people": [
+            "rishik"
+        ],
+        "is_album": false
+    },
+    "PizzaParty": {
+        "name": "PizzaParty",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 30,
+        "en": "Pizza Party at Sunny and C\u00e9cile's place",
+        "fr": "Pizza Party chez Sunny et C\u00e9cile",
+        "is_album": true,
+        "photos": [
+            "pizza",
+            "anastasia",
+            "eating",
+            "rishik",
+            "pizza_33",
+            "piaaz",
+            "cecile_36"
+        ]
+    },
+    "cecile_36": {
+        "name": "pizza_cecile.jpeg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 37,
+        "en": "C\u00e9cile's",
+        "fr": "Celui de C\u00e9cile",
+        "people": [
+            "cecile"
+        ],
+        "is_album": false
+    },
+    "rousse": {
+        "name": "croix_rousse.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 37,
+        "en": "Sunrise in La Croix Rousse neighborhood",
+        "fr": "Lev\u00e9 du soleil dans le quartier de La Croix Rousse",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "biking": {
+        "name": "julie_biking.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 38,
+        "en": "",
+        "fr": "",
+        "people": [
+            "julie"
+        ],
+        "is_album": false
+    },
+    "laurine": {
+        "name": "lyon_julie_laurine_bryan.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 39,
+        "en": "",
+        "fr": "",
+        "people": [
+            "julie",
+            "bryan",
+            "laurine"
+        ],
+        "is_album": false
+    },
+    "sixb": {
+        "name": "sixb_plus.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "Me flashing a 6b+",
+        "fr": "Moi qui flashe un 6b+",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "laurine_41": {
+        "name": "julie_laurine_dalle.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 41,
+        "en": "",
+        "fr": "",
+        "people": [
+            "julie",
+            "laurine"
+        ],
+        "is_album": false
+    },
+    "laurine_42": {
+        "name": "bryan_laurine_devers.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 42,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "laurine"
+        ],
+        "is_album": false
+    },
+    "laurine_43": {
+        "name": "view_julie_laurine_apt.jpg",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 43,
+        "en": "View from their apartment",
+        "fr": "La vue de leur appartement",
+        "people": [],
+        "is_album": false
+    },
+    "Lyon": {
+        "name": "Lyon",
+        "month": "Oct",
+        "year": 2024,
+        "order_in_year": 36,
+        "en": "Weekend in Lyon with Julie and Laurine",
+        "fr": "Un weekend \u00e0 Lyon avec Julie et Laurine",
+        "is_album": true,
+        "photos": [
+            "rousse",
+            "biking",
+            "laurine",
+            "sixb",
+            "laurine_41",
+            "laurine_42",
+            "laurine_43"
+        ]
+    },
+    "chicken": {
+        "name": "failed_chicken_selfie.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 56,
+        "en": "Chickens at the guest house",
+        "fr": "Des poules \u00e0 la Chambre d'hotes",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "kohimians": {
+        "name": "random_kohimians.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 57,
+        "en": "Unknown Kohimians",
+        "fr": "Des Kohimois inconnus",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "streetfood": {
+        "name": "streetfood_avi.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 58,
+        "en": "Eating some street food",
+        "fr": "On mange du street food",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "cathedral": {
+        "name": "cathedral_showing.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 59,
+        "en": "In front of the local Catholic Cathedral",
+        "fr": "Devant la cath\u00e9drale Catholique locale",
+        "people": [
+            "bryan",
+            "aviraj"
+        ],
+        "is_album": false
+    },
+    "retying": {
+        "name": "retying_the_rice.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 60,
+        "en": "Aviraj and Tridip reseal the rice bag in the taxi trunk",
+        "fr": "Aviraj et Tridip referment le sac du riz dans le coffre du taxi",
+        "people": [
+            "aviraj",
+            "tridip"
+        ],
+        "is_album": false
+    },
+    "standoff": {
+        "name": "mexican_standoff.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 61,
+        "en": "In Kisama Heritage Village",
+        "fr": "A Kisama, un Village du Patrimoine",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "christmas": {
+        "name": "aviraj_bryan_tridip_christmas.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 62,
+        "en": "At Faith Harvest Church after Christmas mass",
+        "fr": "A l'eglise du Faith Harvest apr\u00e8s la messe du Noel",
+        "people": [
+            "aviraj",
+            "tridip",
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "scooty": {
+        "name": "scooty_kohima.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 63,
+        "en": "Learned to ride a scooty",
+        "fr": "J'ai appris \u00e0 conduire un scooty",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "random": {
+        "name": "random_kohima_girl.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 64,
+        "en": "She wanted a \"Christmas couple\" photo",
+        "fr": "Elle voulait un photo du genre \"Couple \u00e0 Noel\"",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "Kristmas_in_Kohima": {
+        "name": "Kristmas_in_Kohima",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "Kristmas in Kohima with Aviraj and Tridip",
+        "fr": "Kristmas \u00e0 Kohima avec Aviraj et Tridip",
+        "is_album": true,
+        "photos": [
+            "chicken",
+            "kohimians",
+            "streetfood",
+            "cathedral",
+            "retying",
+            "standoff",
+            "christmas",
+            "scooty",
+            "random",
+            "kohima",
+            "kohima_2",
+            "kohima_3"
+        ]
+    },
+    "kohima": {
+        "name": "kohima_night_1.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 65,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "kohima_2": {
+        "name": "kohima_night_2.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 66,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "kohima_3": {
+        "name": "kohima_day.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 67,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "Jaifu": {
+        "name": "Jaifu",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "Day-hike to Japfu Peak starting from Kigwema",
+        "fr": "Randon\u00e9e au Pique de Japfu qui commence \u00e0 Kigwema",
+        "is_album": true,
+        "photos": [
+            "trailhead",
+            "frosted",
+            "summetselfi",
+            "summet",
+            "summet_9",
+            "summet_12",
+            "rhododendron",
+            "burned"
+        ]
+    },
+    "summetselfi": {
+        "name": "summetselfi.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "burned": {
+        "name": "burned_fields.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "Jhum cultivation (slash-and-burn agriculture)",
+        "fr": "La cultivation de Jhum (culture sur br\u00fblis)",
+        "people": [],
+        "is_album": false
+    },
+    "summet": {
+        "name": "summet_view_1.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "trailhead": {
+        "name": "peak_from_trailhead.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "View from the trailhead",
+        "fr": "La vue du point de d\u00e9part",
+        "people": [],
+        "is_album": false
+    },
+    "summet_9": {
+        "name": "summet_view_2.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "frosted": {
+        "name": "frosted_ground.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "rhododendron": {
+        "name": "rhododendron_trees.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "summet_12": {
+        "name": "japfu_summet.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 55,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "Iiindia": {
+        "name": "Iiindia",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "Trip to India with Tyler, Rishik, C\u00e9cile and Quentin",
+        "fr": "Voyage en Inde avec Tyler, Rishik, C\u00e9cile et Quentin",
+        "is_album": true,
+        "photos": [
+            "mahal",
+            "cecile_11",
+            "qutub",
+            "rishik_1",
+            "ferris",
+            "north",
+            "falls",
+            "waterfalls",
+            "climbing",
+            "lighting",
+            "bridge",
+            "nagakitchen",
+            "farmers",
+            "pregnant",
+            "cleansing",
+            "golfcourse",
+            "golfcourse_7",
+            "reception",
+            "brahmaputra",
+            "smoking",
+            "system",
+            "stadium",
+            "learning_15"
+        ]
+    },
+    "nagakitchen": {
+        "name": "nagakitchen.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "Pork thali, Naga-style",
+        "fr": "Thali de porc, dans le style de Naga",
+        "people": [],
+        "is_album": false
+    },
+    "farmers": {
+        "name": "rishik_tyler_farmers.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "",
+        "fr": "",
+        "people": [
+            "rishik",
+            "tyler"
+        ],
+        "is_album": false
+    },
+    "golfcourse": {
+        "name": "shadow_golfcourse.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "rishik",
+            "tyler",
+            "quentin"
+        ],
+        "is_album": false
+    },
+    "falls": {
+        "name": "fefe_falls.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "Fefe falls",
+        "fr": "La cascade de Fefe",
+        "people": [
+            "bryan",
+            "cecile",
+            "tyler"
+        ],
+        "is_album": false
+    },
+    "stadium": {
+        "name": "golden_hour_stadium.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "Jorhat stadium",
+        "fr": "Le stade de Jorhat",
+        "people": [],
+        "is_album": false
+    },
+    "golfcourse_7": {
+        "name": "blurry_golfcourse.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "quentin",
+            "tyler",
+            "neha"
+        ],
+        "is_album": false
+    },
+    "brahmaputra": {
+        "name": "brahmaputra_picnic.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "Picnic at the Brahmaputra river",
+        "fr": "Un pique-nique Au bord du fleuve Brahmapoutre",
+        "people": [
+            "bryan",
+            "rishik",
+            "cecile",
+            "quentin"
+        ],
+        "is_album": false
+    },
+    "smoking": {
+        "name": "rishik_smoking.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "",
+        "fr": "",
+        "people": [
+            "rishik"
+        ],
+        "is_album": false
+    },
+    "cecile_11": {
+        "name": "bryan_cecile_qutub_minar.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "At Qutub Minar in Delhi",
+        "fr": "A Qutub Minar \u00e0 D\u00e9lhi",
+        "people": [
+            "bryan",
+            "cecile"
+        ],
+        "is_album": false
+    },
+    "lighting": {
+        "name": "good_lighting_cave.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "Krem Chympe cave",
+        "fr": "La grotte de Krem Chympe",
+        "people": [
+            "bryan",
+            "cecile",
+            "rishik",
+            "tyler"
+        ],
+        "is_album": false
+    },
+    "system": {
+        "name": "kids_room_solar_system.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "learning_15": {
+        "name": "learning_drive_manual.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "Learning to drive stick",
+        "fr": "J'apprends \u00e0 conduire une voiture manuelle",
+        "people": [
+            "bryan",
+            "rishik"
+        ],
+        "is_album": false
+    },
+    "ferris": {
+        "name": "dehli_ferris_wheel.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "climbing": {
+        "name": "cave_climbing.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "cleansing": {
+        "name": "cleansing_ceremony.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 40,
+        "en": "The Haldi (cleansing) ceremony",
+        "fr": "La c\u00e9r\u00e9monie de Haldi (de purification)",
+        "people": [
+            "bryan",
+            "rishik",
+            "quentin",
+            "cecile",
+            "tyler",
+            "rishik_mom",
+            "rishik_dad"
+        ],
+        "is_album": false
+    },
+    "qutub": {
+        "name": "qutub_minar_dazed.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 1,
+        "en": "Qutub Minar tower",
+        "fr": "Tour de Qutub Minar",
+        "people": [
+            "tyler"
+        ],
+        "is_album": false
+    },
+    "north": {
+        "name": "north_dehli.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 2,
+        "en": "Busy street in Delhi",
+        "fr": "Un rue blind\u00e9 \u00e0 D\u00e9lhi",
+        "people": [],
+        "is_album": false
+    },
+    "pregnant": {
+        "name": "pregnant_goats.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 3,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "cecile"
+        ],
+        "is_album": false
+    },
+    "mahal": {
+        "name": "taj_mahal.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 4,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "bridge": {
+        "name": "root_bridge.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 5,
+        "en": "The Mawkyrnot Living Root Bridge",
+        "fr": "Le pont de racines vivant de Mawkyrnot",
+        "people": [],
+        "is_album": false
+    },
+    "reception": {
+        "name": "action_marriage_reception.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 6,
+        "en": "",
+        "fr": "",
+        "people": [
+            "sabya",
+            "quentin",
+            "ruchira",
+            "cecile",
+            "tyler"
+        ],
+        "is_album": false
+    },
+    "waterfalls": {
+        "name": "more_waterfalls.jpg",
+        "month": "Dec",
+        "year": 2024,
+        "order_in_year": 7,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "rishik_1": {
+        "name": "qutub_minar_rishik.jpg",
+        "month": "Jan",
+        "year": 2025,
+        "order_in_year": 1,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "rishik"
+        ],
+        "is_album": false
     }
 }

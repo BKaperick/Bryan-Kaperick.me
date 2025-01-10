@@ -44,6 +44,7 @@
     },
     "untitled_jun24": {
         "rawpath": "./raw/untitled_jun2024.txt",
+        "audiopath": "../../poems/recordings/untitled_jun24.mp3",
         "title": "Untitled",
         "author": "Bryan Kaperick",
         "order_in_month": 1,
@@ -354,6 +355,7 @@
         "month": "Aug",
         "year": "2024",
         "rawpath": "./raw/ode_to_the_gr10.txt",
+        "audiopath": "../../poems/recordings/ode_to_the_gr10.mp4",
         "order_in_month": 1,
         "body": "<div class=\"poem\"><p><span class=\"line\">All 'round the mountains, the walkers wake.</span><br>\n<span class=\"line\">Beneath the drizzle, their coffees bake.</span><br>\n<span class=\"line\">High up where shadows drift on clouds' wake,</span><br>\n<span class=\"line\">whole legions eager to this quest undertake.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">The stone remains stoic, as always, it seems.</span><br>\n<span class=\"line\">Even now when with all of these leeches it teems.</span><br>\n<span class=\"line\">Bundles in coats beyond Joseph's dreams,</span><br>\n<span class=\"line\">even the pack's cost counted in reams</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">of fabric exceeds all that for a king.</span><br>\n<span class=\"line\">If counting the contents, add that of his offspring.</span><br>\n<span class=\"line\">Hannibal's slaves would've killed for such things!</span><br>\n<span class=\"line\">Or herders of sheep on this trail they were blazing.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">No planting or sowing, they're just passers-by,</span><br>\n<span class=\"line\">equipped with aluminum sticks they fly.</span><br>\n<span class=\"line\">Oh! How the Catalan cattle bells cry</span><br>\n<span class=\"line\">at wannabe Magellans and Sisyphi.</p></div>"
     },
@@ -363,6 +365,7 @@
         "month": "Sep",
         "year": "2024",
         "rawpath": "./raw/the_lake.txt",
+        "audiopath": "../../poems/recordings/lake.mp4",
         "order_in_month": 1,
         "body": "<div class=\"poem\"><p><span class=\"line\">Dusk called you on a quest for your reflection.</span><br>\n<span class=\"line\">Comment dire le fait de \"se remettre en question\"?</span><br>\n<span class=\"line\">Lounging at the lake brim,</span><br>\n<span class=\"line\">the water showed an unfamiliar apparition.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">You looked, in search of a placid reassurance.</span><br>\n<span class=\"line\">He stared back with a rippling insolence,</span><br>\n<span class=\"line\">gripping in its wickedness,</span><br>\n<span class=\"line\">quick to erode the fangs of your innocence.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">So you're swimming in the mire of your contrapart</span><br>\n<span class=\"line\">with anguish shining cleaner than its grime depart.</span><br>\n<span class=\"line\">Dawn wakes you with a start,</span><br>\n<span class=\"line\">for the spirit of the lake has replaced your heart.</p></div>"
     },
@@ -372,6 +375,7 @@
         "month": "Sep",
         "year": "2024",
         "rawpath": "./raw/the_gull.txt",
+        "audiopath": "../../poems/recordings/gull.mp4",
         "order_in_month": 2,
         "body": "<div class=\"poem\"><p><span class=\"line\">A lone lost seagull drapes his tattered wings.</span><br>\n<span class=\"line\">That knackered bird he flaps and flaps again.</span><br>\n<span class=\"line\">And through his feathers, morning light he brings</span><br>\n<span class=\"line\">to drones who know not who they are nor when.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Above the streets and putrid musky streams,</span><br>\n<span class=\"line\">cry frantic caws of a beak whipped into haste,</span><br>\n<span class=\"line\">over vagabonds with vapid crumpled dreams:</span><br>\n<span class=\"line\">so subsist the living dying waste.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">The crooked white crow he croaks his final calls,</span><br>\n<span class=\"line\">as those twisted up in shame begin to fray</span><br>\n<span class=\"line\">where condensated liqueur fogs the walls&mdash;</span><br>\n<span class=\"line\">so fall the stars that never see the day.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">That gull since-swamped in Johnnys' <em>briny deeps</em></span><br>\n<span class=\"line\">still dreams of scents that drift on calmer seas,</span><br>\n<span class=\"line\">to flutter far from all the night-stale creeps,</span><br>\n<span class=\"line\">from land where neither beast nor man is free.</p></div>"
     },
@@ -381,7 +385,56 @@
         "month": "Oct",
         "year": "2024",
         "rawpath": "./raw/soda_pop.txt",
+        "audiopath": "../../poems/recordings/soda_pop.mp4",
         "order_in_month": 1,
         "body": "<div class=\"poem\"><p><span class=\"line\">I heard it all at the countertop:</span><br>\n<span class=\"line\">a rubbery mix,</span><br>\n<span class=\"line\">the pangs of soda water unspriz'd,</span><br>\n<span class=\"line\">the clank</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and clank</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and clank.</span><br>\n<span class=\"line\">Flat taps:</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;a rhythm to suscitate</span><br>\n<span class=\"line\">all those syrupy drips unsipped.</span><br>\n<span class=\"line\">Only fizzled-out sparks emit.</span><br>\n<span class=\"line\">Better seal it up quick.</span><br>\n<span class=\"line\">Lick</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;it</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spit.</span><br>\n<span class=\"line\">Bottle it all up,</span><br>\n<span class=\"line\">and crank</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and crank</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and crank</span><br>\n<span class=\"line\">the nozzle shut.</p></div>"
+    },
+    "sketch": {
+        "title": "Home sketch #2",
+        "author": "Bryan Kaperick",
+        "month": "Dec",
+        "year": "2024",
+        "rawpath": "./raw/home_sketch_2.txt",
+        "audiopath": "../../poems/recordings/sketch.mp4",
+        "order_in_month": 2,
+        "body": "<div class=\"poem\"><p><span class=\"line\">How words could be?</span><br>\n<span class=\"line\">How they could steep.</span><br>\n<span class=\"line\">To swim in unannounced</span><br>\n<span class=\"line\">recounting false, rhyming memories</span><br>\n<span class=\"line\">to all who would listen.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">And some listened and sipped.</span><br>\n<span class=\"line\">And of those, some tasted.</span><br>\n<span class=\"line\">And of those, some lived and relived.</span><br>\n<span class=\"line\">And at least one,</span><br>\n<span class=\"line\">daring still past the dregs,</span><br>\n<span class=\"line\">never made it all the way home.</p></div>"
+    },
+    "untitled": {
+        "title": "Untitled duet",
+        "author": "Bryan Kaperick",
+        "month": "Nov",
+        "year": "2024",
+        "rawpath": "./raw/untitled_nov2024.txt",
+        "audiopath": "../../poems/recordings/untitled_duet.mp3",
+        "order_in_month": 1,
+        "body": "<div class=\"poem\"><p><span class=\"line\">Up above the sky she climbed</span><br>\n<span class=\"line\">until she hung suspended,</span><br>\n<span class=\"line\">bundled in the cloud cover</span><br>\n<span class=\"line\">alone but still befriended</span><br>\n<span class=\"line\">by her audience below.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">She floated on the silk mist,</span><br>\n<span class=\"line\">her raggedy, smirking grin,</span><br>\n<span class=\"line\">crooked, toothy laugh and wink</span><br>\n<span class=\"line\">that means she's never tellin'</span><br>\n<span class=\"line\">the day she'll fall back down.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Boys would climb on rotten trunks</span><br>\n<span class=\"line\">across the plains and over seas.</span><br>\n<span class=\"line\">Leaves would fall to draw the shades,</span><br>\n<span class=\"line\">branches perched as front row seats</span><br>\n<span class=\"line\">to the constellation's glow.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">One dream bubble caught her look</span><br>\n<span class=\"line\">and rose along her wispy airs</span><br>\n<span class=\"line\">against the rain sheets pelting down</span><br>\n<span class=\"line\">she brought him in her flying lair</span><br>\n<span class=\"line\">and draped him all across her lap.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">How unequipped he was</span><br>\n<span class=\"line\">to lighten the grip</span><br>\n<span class=\"line\">of those hip-sunken digits</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">under steady assault</span><br>\n<span class=\"line\">by whole hordes of</span><br>\n<span class=\"line\">her rain-wrinkled fingers</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">lapping around and down his spine,</span><br>\n<span class=\"line\">restlessly caressing</span><br>\n<span class=\"line\">his numbed-over fingertips and toes.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">His surrender secured, they</span><br>\n<span class=\"line\">inaugurate the darling</span><br>\n<span class=\"line\">of his mind's idle thoughts</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">and his fingers' aimless walks</span><br>\n<span class=\"line\">guided by the keen, meaty sense</span><br>\n<span class=\"line\">of his above-the-stars fox.</p></div>"
+    },
+    "sketch_3": {
+        "title": "Home sketch #1",
+        "author": "Bryan Kaperick",
+        "month": "Dec",
+        "year": "2024",
+        "rawpath": "./raw/home_sketch_1.txt",
+        "audiopath": "../../poems/recordings/sketch_3.mp4",
+        "order_in_month": 1,
+        "body": "<div class=\"poem\"><p><span class=\"line\">To travel alone and old is to</span><br>\n<span class=\"line\">sleep upright on the subway,</span><br>\n<span class=\"line\">subsist on Central Park dates</span><br>\n<span class=\"line\">and hostel kitchen coffee.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">To eat a hot dog nearby</span><br>\n<span class=\"line\">and strike conversation across</span><br>\n<span class=\"line\">an open packet of sauerkraut.</span><br>\n<span class=\"line\">To buy a sim card on the plane &mdash; blind.</span><br>\n<span class=\"line\">\"Why would I need that?\"</span><br>\n<span class=\"line\">he asks, sincerely.  \"I'll take three.\"</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Always making everyone aware</span><br>\n<span class=\"line\">of how pleasant they've been,</span><br>\n<span class=\"line\">crossing them</span><br>\n<span class=\"line\">on their lonely, rambling path home.</p></div>"
+    },
+    "arctic": {
+        "title": "The arctic plain by night",
+        "author": "Bryan Kaperick",
+        "month": "Dec",
+        "year": "2024",
+        "rawpath": "./raw/the_arctic_plain_by_night.txt",
+        "order_in_month": 3,
+        "body": "<div class=\"poem\"><p><span class=\"line\">Frozen was this place.</span><br>\n<span class=\"line\">Upon it placed a placid slate</span><br>\n<span class=\"line\">of ice.  Its might slighted</span><br>\n<span class=\"line\">only by the wooden flame's reach.</span><br>\n<span class=\"line\">Heat-stained beech</span><br>\n<span class=\"line\">sunken in a pool. Stone breached.</span><br>\n<span class=\"line\">Its presence slowly traced.</span><br>\n<span class=\"line\">Flickers glowed, and fore-elements effaced.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">A bear born in such barren land,</span><br>\n<span class=\"line\">fur matted under the harsh cold,</span><br>\n<span class=\"line\">carried further on by</span><br>\n<span class=\"line\">the wailing wind's sail.</span><br>\n<span class=\"line\">This creature comprehends</span><br>\n<span class=\"line\">from deep within.</span><br>\n<span class=\"line\">Ancestral knots never untied,</span><br>\n<span class=\"line\">pulled ever tighter and petrified.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Fur flakked with mud, dirty</span><br>\n<span class=\"line\">and damp, absorbs the savory</span><br>\n<span class=\"line\">smoke to a saturated choke</span><br>\n<span class=\"line\">and evokes streams</span><br>\n<span class=\"line\">of warm steam stacks to</span><br>\n<span class=\"line\">rise enveloped in empty howls.</span><br>\n<span class=\"line\">They dance intertwined</span><br>\n<span class=\"line\">whispering up unto the divine.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">In between yawns and</span><br>\n<span class=\"line\">howls he gnaws at his prey.</span><br>\n<span class=\"line\">Raw flesh that lends an ache</span><br>\n<span class=\"line\">to his jaw bone,</span><br>\n<span class=\"line\">strained near break. All</span><br>\n<span class=\"line\">to sustain another hunt</span><br>\n<span class=\"line\">between long, lonesome flights</span><br>\n<span class=\"line\">along the arctic plain by night.</p></div>"
+    },
+    "chemical": {
+        "title": "The Bengal Chemical metro stop",
+        "author": "Bryan Kaperick",
+        "month": "Jan",
+        "year": "2025",
+        "rawpath": "./raw/the_bengal_chemical_metro_stop.txt",
+        "order_in_month": 1,
+        "body": "<div class=\"poem\"><p><span class=\"line\">A fine and eager Kolkata crowd lined up</span><br>\n<span class=\"line\">at the Bengal Chemical metro stop.</span><br>\n<span class=\"line\">Breathing heated air, their lungs would swell</span><br>\n<span class=\"line\">with dust gumming up inside.  She tells</span><br>\n<span class=\"line\">of that same congeal she carried all the day</span><br>\n<span class=\"line\">from a dream that overslept, it stayed</span><br>\n<span class=\"line\">till now since drowzy dawn before.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Its weight bore down her glassy core,</span><br>\n<span class=\"line\">and cracked her ankle clean, the fracture snapped</span><br>\n<span class=\"line\">and stalled the wagon's scheduled second act,</span><br>\n<span class=\"line\">as the wheels began to slide into distress,</span><br>\n<span class=\"line\">losing traction, gradually helpless.</span><br>\n<span class=\"line\">Never meant to reap its fine, eager crop</span><br>\n<span class=\"line\">at the Bengal Chemical metro stop.</p></div>"
     }
 }

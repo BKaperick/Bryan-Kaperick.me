@@ -3,7 +3,7 @@ $language = array(
     'POETRY_TITLE'=>"Poetry", 
     'SITE_TITLE'=>"Bryan Kaperick&#39;s Website",
     'Site last updated'=>"Last updated",
-    'LANGUAGE_TOGGLE'=>'Euh, il n&#39;y a pas une version Français, hein ?',
+    'LANGUAGE_TOGGLE'=>'Euh, y&#39;a pas une version Française, hein&nbsp;?',
     'Datapoint'=>'Daily data point',
     'Slang'=>'Daily French slang',
     'Jan'=>'January',
@@ -29,6 +29,9 @@ $language = array(
     'Blog Posts'=>'Blog Posts',
     'Projects'=>'Projects',
     'Now'=>'Now',
-    'SKETCH_CRED'=>'The profile picture was sketched by'
+    'SKETCH_CRED'=>'The profile picture was sketched by',
+    'Click for other artistic attributions' => 'Click for other artistic attributions',
+    'Previous'=>'Previous',
+    'Next'=>'Next'
 );
 ?>
