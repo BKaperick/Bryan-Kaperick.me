@@ -3,9 +3,30 @@
 <link rel="apple-touch-icon" href="../../static/favicon.ico">
 <link rel="stylesheet" href="../../style.css">
 
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
 <figure class="single-image">
     <img src="../../photos/raw/asilah-beach.jpg" alt="On the beach near Asilah with Margaux, Me, Tim, Constance, Clemence, and Sami ~ 2024">
     <figcaption>
-On the beach near Asilah with Margaux, Me, Tim, Constance, Clemence, and Sami ~ 2024    </figcaption>
+    <a class="prev_link" href="couscous.html">Previous</a>
+On the beach near Asilah with Margaux, Me, Tim, Constance, Clemence, and Sami ~ 2024    <a class="next_link" href="maroc-hike-hole.html">Next</a>
+    </figcaption>
 </figure>
  

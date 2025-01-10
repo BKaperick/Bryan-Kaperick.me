@@ -3,7 +3,26 @@
 <link rel="apple-touch-icon" href="../../static/favicon.ico">
 <link rel="stylesheet" href="../../style.css">
 
-<p><em>A cool, dry place</em> &ndash; Janvier 2024</p>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>A cool, dry place</em> &ndash; Janvier 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">Sitting pristine in her sleeve</span><br>
 <span class="line">plastic shrink wrapped unscratched</span><br>
@@ -31,4 +50,5 @@
 <span class="line">under another</span><br>
 <span class="line">overplayed eventually clichéd</span><br>
 <span class="line">wedged among the others</span><br>
-<span class="line">In a cool, dry place.</p></div>    </blockquote> 
+<span class="line">In a cool, dry place.</p></div>    </blockquote>
+    </div> 

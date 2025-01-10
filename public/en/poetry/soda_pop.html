@@ -3,7 +3,27 @@
 <link rel="apple-touch-icon" href="../../static/favicon.ico">
 <link rel="stylesheet" href="../../style.css">
 
-<p><em>Soda pop</em> &ndash; October 2024</p>
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Soda pop</em> &ndash; October 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">I heard it all at the countertop:</span><br>
 <span class="line">a rubbery mix,</span><br>
@@ -24,4 +44,6 @@
 <span class="line">and crank</span><br>
 <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and crank</span><br>
 <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and crank</span><br>
-<span class="line">the nozzle shut.</p></div>    </blockquote> 
+<span class="line">the nozzle shut.</p></div>    </blockquote>
+    <audio controls src="http://localhost:8000/poems/recordings/soda_pop.mp4"></audio>
+    </div> 

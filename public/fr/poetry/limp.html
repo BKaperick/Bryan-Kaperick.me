@@ -3,7 +3,26 @@
 <link rel="apple-touch-icon" href="../../static/favicon.ico">
 <link rel="stylesheet" href="../../style.css">
 
-<p><em>Limp</em> &ndash; Octobre 2023</p>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Limp</em> &ndash; Octobre 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">As I ran by I saw you lying</span><br>
 <span class="line">limp along the sidewalk</span><br>
@@ -23,4 +42,5 @@
 <div class="poem"><p><span class="line">I lay my hand to light first flame</span><br>
 <span class="line">since summer’s hibernation</span><br>
 <span class="line">But you’ve cooled your gaze to stone</span><br>
-<span class="line">and cast it in the ocean</p></div>    </blockquote> 
+<span class="line">and cast it in the ocean</p></div>    </blockquote>
+    </div> 

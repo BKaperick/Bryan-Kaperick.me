@@ -3,7 +3,27 @@
 <link rel="apple-touch-icon" href="../../static/favicon.ico">
 <link rel="stylesheet" href="../../style.css">
 
-<p><em>The gull</em> &ndash; September 2024</p>
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>The gull</em> &ndash; September 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">A lone lost seagull drapes his tattered wings.</span><br>
 <span class="line">That knackered bird he flaps and flaps again.</span><br>
@@ -23,4 +43,6 @@
 <div class="poem"><p><span class="line">That gull since-swamped in Johnnys' <em>briny deeps</em></span><br>
 <span class="line">still dreams of scents that drift on calmer seas,</span><br>
 <span class="line">to flutter far from all the night-stale creeps,</span><br>
-<span class="line">from land where neither beast nor man is free.</p></div>    </blockquote> 
+<span class="line">from land where neither beast nor man is free.</p></div>    </blockquote>
+    <audio controls src="../../poems/recordings/gull.mp4"></audio>
+    </div> 

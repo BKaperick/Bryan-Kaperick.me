@@ -3,7 +3,26 @@
 <link rel="apple-touch-icon" href="../../static/favicon.ico">
 <link rel="stylesheet" href="../../style.css">
 
-<p><em>As if.</em> &ndash; Juillet 2024</p>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>As if.</em> &ndash; Juillet 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">She’s a mystery.</span><br>
 <span class="line">As if I wanted to cling on to her drapes</span><br>
@@ -39,4 +58,5 @@
 <span class="line">As if it didn’t exist only in the instant.</span><br>
 <span class="line">As if thoughts of your sex had been</span><br>
 <span class="line">gliding around inside</span><br>
-<span class="line">for an eternity already.</p></div>    </blockquote> 
+<span class="line">for an eternity already.</p></div>    </blockquote>
+    </div> 

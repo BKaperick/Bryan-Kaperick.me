@@ -1,0 +1,63 @@
+<link rel="shortcut icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="apple-touch-icon" href="../../static/favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>The arctic plain by night</em> &ndash; December 2024</p>
+    <blockquote>
+    <div class="poem"><p><span class="line">Frozen was this place.</span><br>
+<span class="line">Upon it placed a placid slate</span><br>
+<span class="line">of ice.  Its might slighted</span><br>
+<span class="line">only by the wooden flame's reach.</span><br>
+<span class="line">Heat-stained beech</span><br>
+<span class="line">sunken in a pool. Stone breached.</span><br>
+<span class="line">Its presence slowly traced.</span><br>
+<span class="line">Flickers glowed, and fore-elements effaced.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">A bear born in such barren land,</span><br>
+<span class="line">fur matted under the harsh cold,</span><br>
+<span class="line">carried further on by</span><br>
+<span class="line">the wailing wind's sail.</span><br>
+<span class="line">This creature comprehends</span><br>
+<span class="line">from deep within.</span><br>
+<span class="line">Ancestral knots never untied,</span><br>
+<span class="line">pulled ever tighter and petrified.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">Fur flakked with mud, dirty</span><br>
+<span class="line">and damp, absorbs the savory</span><br>
+<span class="line">smoke to a saturated choke</span><br>
+<span class="line">and evokes streams</span><br>
+<span class="line">of warm steam stacks to</span><br>
+<span class="line">rise enveloped in empty howls.</span><br>
+<span class="line">They dance intertwined</span><br>
+<span class="line">whispering up unto the divine.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">In between yawns and</span><br>
+<span class="line">howls he gnaws at his prey.</span><br>
+<span class="line">Raw flesh that lends an ache</span><br>
+<span class="line">to his jaw bone,</span><br>
+<span class="line">strained near break. All</span><br>
+<span class="line">to sustain another hunt</span><br>
+<span class="line">between long, lonesome flights</span><br>
+<span class="line">along the arctic plain by night.</p></div>    </blockquote>
+    </div> 

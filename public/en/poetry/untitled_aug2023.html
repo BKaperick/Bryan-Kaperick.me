@@ -3,7 +3,27 @@
 <link rel="apple-touch-icon" href="../../static/favicon.ico">
 <link rel="stylesheet" href="../../style.css">
 
-<p><em>Untitled</em> &ndash; August 2023</p>
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Untitled</em> &ndash; August 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">A giant in the shoes of a man</span><br>
 <span class="line">A god wrapped in a mortal’s pelt</span><br>
@@ -32,4 +52,5 @@
 <div class="poem"><p><span class="line">Those hogs slabbered with haste, as if at the trough</span><br>
 <span class="line">Sweet death had complied with their final demand</span><br>
 <span class="line">All noble spirits on the shore had crumpled</span><br>
-<span class="line">For heavy are the souls of the damned.</p></div>    </blockquote> 
+<span class="line">For heavy are the souls of the damned.</p></div>    </blockquote>
+    </div> 

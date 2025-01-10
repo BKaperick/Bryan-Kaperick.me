@@ -3,7 +3,26 @@
 <link rel="apple-touch-icon" href="../../static/favicon.ico">
 <link rel="stylesheet" href="../../style.css">
 
-<p><em>Untitled night</em> &ndash; Février 2023</p>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Untitled night</em> &ndash; Février 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">Her animal lay wild,</span><br>
 <span class="line">hunched, and prowling in its cage</span><br>
@@ -29,4 +48,5 @@
 <span class="line">And finally, when she drew blood,</span><br>
 <span class="line">evinced our last temptation</span><br>
 <span class="line">— We shared her gristle-ridden lair</span><br>
-<span class="line">fused together, cast in crimson.</p></div>    </blockquote> 
+<span class="line">fused together, cast in crimson.</p></div>    </blockquote>
+    </div> 
