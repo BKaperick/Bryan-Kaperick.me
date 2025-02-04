@@ -46,19 +46,23 @@
 <h1 class="title ">WikiSwitcher</h1><img src="../../../static/wikiswitcher_icon_cropped.png">
 </header>
 <div class="content">
-<p>WikiSwitcher is a Google Chrome Extension which allows a user to choose the best language for a given Wikipedia article by comparing the lengths of all versions which exist in the user's configured languages.</p>
+    <p>WikiSwitcher is a Google Chrome Extension which allows a user to choose the best language for a given Wikipedia article by comparing the lengths of all versions which exist in the user's configured languages.</p>
+    <p>
+This chrome extension intends to facilitate the user-experience of Wikipedia for users that read in multiple languages. On installation, the user configures the languages they wish to see. Then, when a wikipedia article loads, the extension queries the MediaWiki Action API to query the length of the same article written in other languages that the user speaks. If one is found that is better (i.e. longer text), then a pop-up alert will notify the user prompting the option to redirect to that article language instead.
+</p>
 
-<figure class="image">
-<img src="../../../static/screenshot_1.png">
-<figcaption>
-Popup page for configurating languages</figcaption>
-</figure>
+<div class="proparent">
+    <div class="prochild">
+    <img src="../../../static/screenshot_1.png" style="max-width:10%">
+    </div>
 
-<figure class="image">
-<img src="../../../static/screenshot_2.png">
-<figcaption>
-Extension proposing a different language for the article</figcaption>
-</figure>
+    <div class="prochild">
+    <img src="../../../static/screenshot_2.png" style="max-width:10%">
+    Extension proposing a different language for the article
+    </div>
+</div>
+    Popup page for configurating languages
+
 </article>
 </main>
 </div>
