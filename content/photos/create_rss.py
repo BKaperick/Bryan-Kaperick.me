@@ -53,13 +53,12 @@ with open("photos.json", 'r+') as fread:
     items = {'en': [], 'fr': []}
     photos = sorted(photos, key=ordering)
     for name, photo in photos:
-        description = photo["en"]
         dt_date = datetime.strptime("{0} {1}".format(photo["month"], photo["year"]), "%b %Y")
-        items['en'].append(create_item(photo["title"], photo["rawpath"], description, dt_date, 'en'))
-        items['fr'].append(create_item(photo["title"], photo["rawpath"], description, dt_date, 'fr'))
+        items['en'].append(create_item(photo["title"], photo["rawpath"], photo['en'], dt_date, 'en'))
+        items['fr'].append(create_item(photo["title"], photo["rawpath"], photo['fr'], dt_date, 'fr'))
 
 for language in ["en", "fr"]:
-    lang_path = "../{0}/poetry/feed.xml".format(language)
+    lang_path = "../{0}/photos/feed.xml".format(language)
     with open(lang_path, "w") as fw:
         fw.write(rss_header[language])
         fw.write("".join(items[language]))
