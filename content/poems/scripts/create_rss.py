@@ -12,6 +12,7 @@ rss_header = """<?xml version="1.0" encoding="UTF-8" ?>
     <title>Bryan Kaperick's website</title>
     <link>http://www.bryan-kaperick.me</link>
     <description>Personal website for Bryan Kaperick</description>
+    <atom:link href="https://www.bryan-kaperick.me/en/poetry/rss.xml" rel="self" type="application/rss+xml" />
 """
 
 rss_footer = """  </channel>
@@ -29,6 +30,7 @@ def create_item(title, rawpath, desc, date):
     <item>
       <title>{0}</title>
       <link>{1}</link>
+      <guid>{1}</guid>
       <description>{2}</description>
       <pubDate>{3}</pubDate>
     </item>
