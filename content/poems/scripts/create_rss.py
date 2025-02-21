@@ -43,8 +43,9 @@ with open("poems.json", 'r+') as fread:
         dt_date = datetime.strptime("{0} {1}".format(poem["month"], poem["year"]), "%b %Y")
         items.append(create_item(poem["title"], poem["rawpath"], description, dt_date))
 
-with open("feed.xml", "w") as fw:
-    fw.write(rss_header)
-    fw.write("\n".join(items))
-    fw.write(rss_footer)
-
+for language in ["en"]:#, "fr"]:
+    lang_path = "../{0}/poetry/feed.xml".format(language)
+    with open(lang_path, "w") as fw:
+        fw.write(rss_header)
+        fw.write("".join(items))
+        fw.write(rss_footer)
