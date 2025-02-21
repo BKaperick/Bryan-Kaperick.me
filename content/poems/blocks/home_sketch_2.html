@@ -1,6 +1,7 @@
-<p><em><?=$p->sketch->title;?></em> &ndash; <?=$language[$p->sketch->month];?> <?=$p->sketch->year;?></p>
+<div class="dedicated-poem-page">
+    <p><em><?=$p->sketch->title;?></em> &ndash; <?=$language[$p->sketch->month];?> <?=$p->sketch->year;?></p>
     <blockquote>
     <?=$p->sketch->body;?>
     </blockquote>
     <audio controls src="<?=$p->sketch->audiopath;?>"></audio>
-    
+    </div>

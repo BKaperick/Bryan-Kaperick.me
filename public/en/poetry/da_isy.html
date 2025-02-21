@@ -3,7 +3,27 @@
 <link rel="apple-touch-icon" href="../../static/favicon.ico">
 <link rel="stylesheet" href="../../style.css">
 
-<p><em>Da isy</em> &ndash; July 2024</p>
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Da isy</em> &ndash; July 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">Sunlight stained your bedroom walls.</span><br>
 <span class="line">You and I hid baking in the sheets.</span><br>
@@ -28,4 +48,5 @@
 <span class="line">a daisy was born,</span><br>
 <span class="line">meant only to wilt.</span><br>
 <span class="line">And so I tried</span><br>
-<span class="line">to catch each petal as it fell.</p></div>    </blockquote> 
+<span class="line">to catch each petal as it fell.</p></div>    </blockquote>
+    </div> 

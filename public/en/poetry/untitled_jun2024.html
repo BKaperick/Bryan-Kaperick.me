@@ -3,7 +3,27 @@
 <link rel="apple-touch-icon" href="../../static/favicon.ico">
 <link rel="stylesheet" href="../../style.css">
 
-<p><em>Untitled</em> &ndash; June 2024</p>
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Untitled</em> &ndash; June 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">Morning growls</span><br>
 <span class="line">While the di-named lioness</span><br>
@@ -13,4 +33,4 @@
 <span class="line">Where our fallen arms defined us</span><br>
 <span class="line">As the grass defined the meadow.</p></div>    </blockquote>
     <audio controls src="../../poems/recordings/untitled_jun24.mp3"></audio>
-     
+    </div> 

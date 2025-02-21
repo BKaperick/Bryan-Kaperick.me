@@ -1,6 +1,7 @@
-<p><em><?=$p->soda->title;?></em> &ndash; <?=$language[$p->soda->month];?> <?=$p->soda->year;?></p>
+<div class="dedicated-poem-page">
+    <p><em><?=$p->soda->title;?></em> &ndash; <?=$language[$p->soda->month];?> <?=$p->soda->year;?></p>
     <blockquote>
     <?=$p->soda->body;?>
     </blockquote>
     <audio controls src="<?=$p->soda->audiopath;?>"></audio>
-    
+    </div>

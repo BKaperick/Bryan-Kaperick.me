@@ -8,3 +8,9 @@ global $language;
 require_once($_SERVER['DOCUMENT_ROOT']."/view/Language/lang.".$lang.".php");
 ?>
 
+</span>
+<button id="toggle" class="top"><img src="/static/dark-mode.webp" class="invertible"></button>
+
+<script>
+<?php include($_SERVER['DOCUMENT_ROOT']."/toggle_darkmode.js") ?>
+</script>

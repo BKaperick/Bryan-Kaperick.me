@@ -3,7 +3,27 @@
 <link rel="apple-touch-icon" href="../../static/favicon.ico">
 <link rel="stylesheet" href="../../style.css">
 
-<p><em>Ode (with love) to the gr10</em> &ndash; August 2024</p>
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Ode (with love) to the gr10</em> &ndash; August 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">All 'round the mountains, the walkers wake.</span><br>
 <span class="line">Beneath the drizzle, their coffees bake.</span><br>
@@ -25,4 +45,4 @@
 <span class="line">Oh! How the Catalan cattle bells cry</span><br>
 <span class="line">at wannabe Magellans and Sisyphi.</p></div>    </blockquote>
     <audio controls src="../../poems/recordings/ode_to_the_gr10.mp4"></audio>
-     
+    </div> 

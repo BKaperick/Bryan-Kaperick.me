@@ -3,7 +3,26 @@
 <link rel="apple-touch-icon" href="../../static/favicon.ico">
 <link rel="stylesheet" href="../../style.css">
 
-<p><em>Crossing your path</em> &ndash; Juillet 2023</p>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Crossing your path</em> &ndash; Juillet 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">I’d like to cross your path from time to time</span><br>
 <span class="line">To say ‘Hello’ and then ‘Goodbye’</span><br>
@@ -24,4 +43,5 @@
 <span class="line">Not sure how read’ly I’d admit</span><br>
 <span class="line">Your verse with him struck something new</span><br>
 <span class="line">And better than the one we wrote</span><br>
-<span class="line">Just for me and you.</p></div>    </blockquote> 
+<span class="line">Just for me and you.</p></div>    </blockquote>
+    </div> 

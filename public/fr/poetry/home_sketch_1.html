@@ -3,7 +3,26 @@
 <link rel="apple-touch-icon" href="../../static/favicon.ico">
 <link rel="stylesheet" href="../../style.css">
 
-<p><em>Home sketch #1</em> &ndash; Decembre 2024</p>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Home sketch #1</em> &ndash; Decembre 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">To travel alone and old is to</span><br>
 <span class="line">sleep upright on the subway,</span><br>
@@ -22,4 +41,4 @@
 <span class="line">crossing them</span><br>
 <span class="line">on their lonely, rambling path home.</p></div>    </blockquote>
     <audio controls src="../../poems/recordings/sketch_3.mp4"></audio>
-     
+    </div> 

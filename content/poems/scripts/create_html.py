@@ -6,18 +6,21 @@ import json
 poem_blocks = []
 
 def get_bryan_block(key):
-    return """<p><em><?=$p->{0}->title;?></em> &ndash; <?=$language[$p->{0}->month];?> <?=$p->{0}->year;?></p>
+    return """<div>
+    <p><em><?=$p->{0}->title;?></em> &ndash; <?=$language[$p->{0}->month];?> <?=$p->{0}->year;?></p>
     <blockquote>
     <?=$p->{0}->body;?>
-    </blockquote>""".format(key)
+    </blockquote>
+    </div>""".format(key)
 
 def get_bryan_block_with_audio(key):
-    return """<p><em><?=$p->{0}->title;?></em> &ndash; <?=$language[$p->{0}->month];?> <?=$p->{0}->year;?></p>
+    return """<div>
+    <p><em><?=$p->{0}->title;?></em> &ndash; <?=$language[$p->{0}->month];?> <?=$p->{0}->year;?></p>
     <blockquote>
     <?=$p->{0}->body;?>
     </blockquote>
     <audio controls src="<?=$p->{0}->audiopath;?>"></audio>
-    """.format(key)
+    </div>""".format(key)
 
 def get_insp_block(key, subtitle = False):
     return """<p><em><?=$p->{0}->title;?></em> &ndash; <?=$p->{0}->author;?>
@@ -49,6 +52,10 @@ with open("poems_inspiration.html", "w") as f_insp:
     poems_insp = [p for p in poem_blocks if p[1]['author'] != "Bryan Kaperick"]
     f_insp.write("\n\n".join([x[0] for x in poems_insp]))
 
+with open("poems2025.html", "w") as f25:
+    poems25 = [wrap_block_in_link(*p) for p in poem_blocks if p[1]['author'] == "Bryan Kaperick" and int(p[1]['year']) == 2025]
+    f25.write("\n\n".join([x[0] for x in sorted(poems25, key=ordering)]))
+
 with open("poems2024.html", "w") as f24:
     poems24 = [wrap_block_in_link(*p) for p in poem_blocks if p[1]['author'] == "Bryan Kaperick" and int(p[1]['year']) == 2024]
     f24.write("\n\n".join([x[0] for x in sorted(poems24, key=ordering)]))
@@ -67,6 +74,9 @@ for block,poem,php_path,audio_block in poem_blocks:
         with open(html_path, "w") as f:
             # We only write the audio block if an audio exists, and only on the single-poem page
             block_to_write = block if audio_block == None else audio_block
+
+            #Add class tag so we can adjust font size separately from the other poems page
+            block_to_write = block_to_write.replace("<div>", '<div class="dedicated-poem-page">')
             f.write(block_to_write)
 
         for language in ["en", "fr"]:

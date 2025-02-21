@@ -3,7 +3,27 @@
 <link rel="apple-touch-icon" href="../../static/favicon.ico">
 <link rel="stylesheet" href="../../style.css">
 
-<p><em>Those oozing stacks grow</em> &ndash; April 2023</p>
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Those oozing stacks grow</em> &ndash; April 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">I want to tell of carcasses stacked tall</span><br>
 <span class="line">Of honey dried out at crusty summer’s fall</span><br>
@@ -41,4 +61,5 @@
 <div class="poem"><p><span class="line">I promised sick tales of flesh piled high</span><br>
 <span class="line">but suffice it to know</span><br>
 <span class="line">those oozing stacks grow</span><br>
-<span class="line">with each ripe passerby.</p></div>    </blockquote> 
+<span class="line">with each ripe passerby.</p></div>    </blockquote>
+    </div> 

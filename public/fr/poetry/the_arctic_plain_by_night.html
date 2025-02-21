@@ -3,7 +3,26 @@
 <link rel="apple-touch-icon" href="../../static/favicon.ico">
 <link rel="stylesheet" href="../../style.css">
 
-<p><em>The arctic plain by night</em> &ndash; Decembre 2024</p>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>The arctic plain by night</em> &ndash; Decembre 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">Frozen was this place.</span><br>
 <span class="line">Upon it placed a placid slate</span><br>
@@ -39,4 +58,5 @@
 <span class="line">strained near break. All</span><br>
 <span class="line">to sustain another hunt</span><br>
 <span class="line">between long, lonesome flights</span><br>
-<span class="line">along the arctic plain by night.</p></div>    </blockquote> 
+<span class="line">along the arctic plain by night.</p></div>    </blockquote>
+    </div> 

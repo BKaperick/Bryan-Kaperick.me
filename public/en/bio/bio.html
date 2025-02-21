@@ -49,8 +49,7 @@
 <body class="list-page front">
 <div class="page layout__page">
 <header class="header layout__header">
-<img src=>
-<a href="../../index.html" title="Home" rel="home" class="header__logo"><img src="../../static/logo_cleaned_reduce_50pct.webp" alt="Home" class="header__logo-image"></a>
+<a href="../../index.html" title="Home" rel="home" class="header__logo"><img src="../../static/logo_cleaned_reduce_50pct.webp" alt="Home" class="header__logo-image invertible"></a>
 <h1 class="header__site-name">
 <a href="../../index.html" title="Home" class="header__site-link" rel="home"><span>Bryan Kaperick&#39;s Website</span></a>
 </h1>
@@ -59,7 +58,7 @@
 <nav class="language-selector layout__language-selector">
 
 <a rel="alternate" lang="fr" hreflang="fr" href="/fr/bio/bio.html"><div class="language_box"><div class="language_text language_text_en">Euh, y&#39;a pas une version Française, hein&nbsp;?</div>
-<img src="../../static/cafe-fr.webp" class="language_icon"></div></a>
+<img src="../../static/cafe-fr.webp" class="language_icon invertible"></div></a>
     
 
 </nav>
@@ -198,13 +197,31 @@ France, I enjoy walking around parks and cities, practicing my French with stran
 </html>
 <footer class="footer layout__footer">
 <span style="color:grey"> 
-<p><span>© Bryan Kaperick&#39;s Website</span> – <nobr>Last updated  2024-12-14
+<p><span>© Bryan Kaperick&#39;s Website</span> – <nobr>Last updated  2025-02-21
 </nobr>
 <br>
 The profile picture was sketched by <a href="https://www.instagram.com/j.andrews96/" style="color:#585858">Jason Andrews</a>
 <br>
 <a href="../attributions/attributions.html" style="color:grey">Click for other artistic attributions</a>
 </p>
-</span>
 
+</span>
+<button id="toggle" class="bottom"><img src="../../static/dark-mode.webp" class="invertible"></button>
 </footer>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>

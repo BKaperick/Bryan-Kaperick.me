@@ -3,7 +3,26 @@
 <link rel="apple-touch-icon" href="../../static/favicon.ico">
 <link rel="stylesheet" href="../../style.css">
 
-<p><em>In the dark</em> &ndash; Janvier 2024</p>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>In the dark</em> &ndash; Janvier 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">Pinned to dusk and strung like wire</span><br>
 <span class="line">Tower the branches' fractal spires</span><br>
@@ -19,4 +38,5 @@
 <span class="line">To manufacture beauty in the dark</span><br>
 </p></div>
 <div class="poem"><p><span class="line">These streaks will soon be printed on the dawn</span><br>
-<span class="line">Where fractal spires linger on and on.</p></div>    </blockquote> 
+<span class="line">Where fractal spires linger on and on.</p></div>    </blockquote>
+    </div> 
