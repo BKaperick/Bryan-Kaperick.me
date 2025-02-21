@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 import re
 
 rss_header = """<?xml version="1.0" encoding="UTF-8" ?>
@@ -26,7 +27,7 @@ def create_item(title, rawpath, desc, date):
     </item>
 """.format(title, link, desc, date.strftime("%a, %d %b %Y %H:%M:%S GMT"))
 
-first_line_regex = r'<div class=\"poem\"><p><span class=\"line\">(.*?)</span><br>\n<span class=\"line\">'
+first_line_regex = r'<div class=\"poem\"><p><span class=\"line\">(.*?)<\/span><br>'
 
 with open("poems.json", 'r+') as fread:
     poems = json.load(fread)
@@ -35,12 +36,15 @@ with open("poems.json", 'r+') as fread:
         if poem["author"] != "Bryan Kaperick":
             continue
 
-        description = re.search(first_line_regex, poem["body"]).group(1)
-        dt_date = datetime.strptime(f"{0} {1}".format(poem["month"], poem["year"]), "%b %Y")
+        description_ = re.search(first_line_regex, poem["body"])
+        # Minor clean: if first line ends in '.', only add 2 more
+        description = description_.group(1).replace("....","...")
+
+        dt_date = datetime.strptime("{0} {1}".format(poem["month"], poem["year"]), "%b %Y")
         items.append(create_item(poem["title"], poem["rawpath"], description, dt_date))
 
 with open("feed.xml", "w") as fw:
-    fw.writeline(rss_header)
-    fw.writeline("\n".join(items))
-    fw.writeline(rss_footer)
+    fw.write(rss_header)
+    fw.write("\n".join(items))
+    fw.write(rss_footer)
 
