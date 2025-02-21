@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Bryan Kaperick's website</title>
+    <link>http://www.bryan-kaperick.me</link>
+    <description>Personal website for Bryan Kaperick</description>
+    <item>
+      <title>The Bengal Chemical metro stop</title>
+      <link>https://www.bryan-kaperick.me/en/poetry/the_bengal_chemical_metro_stop</link>
+      <description>A fine and eager Kolkata crowd lined up...</description>
+      <pubDate>Mon, 1 Jan 2025 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>The arctic plain by night</title>
+      <link>https://www.bryan-kaperick.me/en/poetry/the_arctic_plain_by_night</link>
+      <description>Frozen was this place...</description>
+      <pubDate>Mon, 1 Dec 2024 12:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
