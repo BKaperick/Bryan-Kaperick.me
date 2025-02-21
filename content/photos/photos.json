@@ -1902,8 +1902,8 @@
         "month": "Feb",
         "year": 2025,
         "order_in_year": 11,
-        "en": "Hải Vân Pass",
-        "fr": "Col de Hải Vân",
+        "en": "H\u1ea3i V\u00e2n Pass",
+        "fr": "Col de H\u1ea3i V\u00e2n",
         "people": [
             "bryan"
         ],
@@ -1942,8 +1942,7 @@
         "order_in_year": 14,
         "en": "Hanoi",
         "fr": "Hano\u00ef",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     }
 }
