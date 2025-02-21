@@ -45,3 +45,4 @@ find . -type f -wholename "*/blog-post/*" -exec sed -i -E "s/\/(\w\w)\/(.*)\/(.*
 
 # Copy over RSS feed files as well
 cp ../content/en/poetry/feed.xml ../public/en/poetry/feed.xml
+cp ../content/fr/poetry/feed.xml ../public/fr/poetry/feed.xml

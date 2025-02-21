@@ -6,14 +6,24 @@ import sys
 sys.path.append(os.path.abspath("../../"))
 from helper import *
 
-rss_header = """<?xml version="1.0" encoding="UTF-8" ?>
+rss_header = {
+'en': """<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
   <channel>
-    <title>Bryan Kaperick's website</title>
-    <link>http://www.bryan-kaperick.me</link>
-    <description>Personal website for Bryan Kaperick</description>
+    <title>Bryan Kaperick's poetry</title>
+    <link>https://www.bryan-kaperick.me/en/poetry/poetry</link>
+    <description>Original poems by Bryan (English feed)</description>
     <atom:link href="https://www.bryan-kaperick.me/en/poetry/rss.xml" rel="self" type="application/rss+xml" />
+""",
+'fr': """<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>La Poesie de Bryan Kaperick</title>
+    <link>https://www.bryan-kaperick.me/fr/poetry/poetry</link>
+    <description>Des poèmes originaux écrits par Bryan (flux francais)</description>
+    <atom:link href="https://www.bryan-kaperick.me/fr/poetry/rss.xml" rel="self" type="application/rss+xml" />
 """
+}
 
 rss_footer = """  </channel>
 </rss>
@@ -23,9 +33,9 @@ rss_footer = """  </channel>
 def html_to_xml(text):
     return text.replace("&rsquo;", "&apos;")
 
-def create_item(title, rawpath, desc, date):
 
-    link = poem["rawpath"].replace("./raw/","https://www.bryan-kaperick.me/en/poetry/").replace(".txt","")
+def create_item(title, rawpath, desc, date, lang):
+    link = poem["rawpath"].replace("./raw/","https://www.bryan-kaperick.me/{0}/poetry/").format(lang).replace(".txt","")
     return html_to_xml("""
     <item>
       <title>{0}</title>
@@ -40,7 +50,7 @@ first_line_regex = r'<div class=\"poem\"><p><span class=\"line\">(.*?)<\/span><b
 
 with open("poems.json", 'r+') as fread:
     poems = [p for p in json.load(fread).items() if p[1]["author"] == "Bryan Kaperick"]
-    items = []
+    items = {'en': [], 'fr': []}
     poems = sorted(poems, key=ordering)
     for name, poem in poems:
 
@@ -49,11 +59,12 @@ with open("poems.json", 'r+') as fread:
         description = (description_.group(1) + "...").replace("....","...")
 
         dt_date = datetime.strptime("{0} {1}".format(poem["month"], poem["year"]), "%b %Y")
-        items.append(create_item(poem["title"], poem["rawpath"], description, dt_date))
+        items['en'].append(create_item(poem["title"], poem["rawpath"], description, dt_date, 'en'))
+        items['fr'].append(create_item(poem["title"], poem["rawpath"], description, dt_date, 'fr'))
 
-for language in ["en"]:#, "fr"]:
+for language in ["en", "fr"]:
     lang_path = "../{0}/poetry/feed.xml".format(language)
     with open(lang_path, "w") as fw:
-        fw.write(rss_header)
-        fw.write("".join(items))
+        fw.write(rss_header[language])
+        fw.write("".join(items[language]))
         fw.write(rss_footer)
