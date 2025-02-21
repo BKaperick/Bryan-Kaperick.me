@@ -1,6 +1,9 @@
 import json
 from datetime import datetime
 import re
+import os
+import sys
+sys.path.append(os.path.abspath("../../"))
 from helper import *
 
 rss_header = """<?xml version="1.0" encoding="UTF-8" ?>
@@ -34,12 +37,10 @@ def create_item(title, rawpath, desc, date):
 first_line_regex = r'<div class=\"poem\"><p><span class=\"line\">(.*?)<\/span><br>'
 
 with open("poems.json", 'r+') as fread:
-    poems = json.load(fread)
+    poems = [p for p in json.load(fread).items() if p[1]["author"] == "Bryan Kaperick"]
     items = []
-    poems = sorted(poems, key=lambda x : ordering(x))
-    for name, poem in poems.items():
-        if poem["author"] != "Bryan Kaperick":
-            continue
+    poems = sorted(poems, key=ordering)
+    for name, poem in poems:
 
         description_ = re.search(first_line_regex, poem["body"])
         # Minor clean: if first line ends in '.', only add 2 more
