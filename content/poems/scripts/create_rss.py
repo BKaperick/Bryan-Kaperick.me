@@ -11,17 +11,17 @@ rss_header = {
 <rss version="2.0">
   <channel>
     <title>Bryan Kaperick's poetry</title>
-    <link>https://www.bryan-kaperick.me/en/poetry/poetry</link>
+    <link>https://www.bryan-kaperick.me</link>
     <description>Original poems by Bryan (English feed)</description>
-    <atom:link href="https://www.bryan-kaperick.me/en/poetry/rss.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
 """,
 'fr': """<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
   <channel>
     <title>La Poesie de Bryan Kaperick</title>
-    <link>https://www.bryan-kaperick.me/fr/poetry/poetry</link>
+    <link>https://www.bryan-kaperick.me/index_fr</link>
     <description>Des poèmes originaux écrits par Bryan (flux francais)</description>
-    <atom:link href="https://www.bryan-kaperick.me/fr/poetry/rss.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language>
 """
 }
 
