@@ -2,9 +2,9 @@
 <rss version="2.0">
   <channel>
     <title>Bryan Kaperick's poetry</title>
-    <link>https://www.bryan-kaperick.me/en/poetry/poetry</link>
+    <link>https://www.bryan-kaperick.me</link>
     <description>Original poems by Bryan (English feed)</description>
-    <atom:link href="https://www.bryan-kaperick.me/en/poetry/rss.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
 
     <item>
       <title>The Bengal Chemical metro stop</title>
