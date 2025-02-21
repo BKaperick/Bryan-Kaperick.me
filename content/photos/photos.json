@@ -1803,7 +1803,7 @@
         "year": 2025,
         "order_in_year": 3,
         "en": "Hanoi",
-        "fr": "Hanoï",
+        "fr": "Hano\u00ef",
         "people": [
             "bryan"
         ],
@@ -1838,10 +1838,11 @@
         "month": "Feb",
         "year": 2025,
         "order_in_year": 6,
-        "en": "",
-        "fr": "",
+        "en": "Siem Reap",
+        "fr": "Siem Reap",
         "people": [
-            "bryan"
+            "bryan",
+            "hippo"
         ],
         "is_album": false
     },
@@ -1851,7 +1852,7 @@
         "year": 2025,
         "order_in_year": 7,
         "en": "Remote work",
-        "fr": "Télétravail",
+        "fr": "T\u00e9l\u00e9travail",
         "people": [
             "bryan"
         ],
@@ -1877,7 +1878,9 @@
         "en": "Hoi An",
         "fr": "Hoi An",
         "people": [
-            "bryan"
+            "bryan",
+            "alex",
+            "hippo"
         ],
         "is_album": false
     },
@@ -1889,7 +1892,8 @@
         "en": "",
         "fr": "",
         "people": [
-            "bryan"
+            "bryan",
+            "alex"
         ],
         "is_album": false
     },
@@ -1898,8 +1902,8 @@
         "month": "Feb",
         "year": 2025,
         "order_in_year": 11,
-        "en": "",
-        "fr": "",
+        "en": "Hải Vân Pass",
+        "fr": "Col de Hải Vân",
         "people": [
             "bryan"
         ],
@@ -1913,7 +1917,9 @@
         "en": "Tien Son cave",
         "fr": "La grotte de Tien Son",
         "people": [
-            "bryan"
+            "bryan",
+            "hippo",
+            "alex"
         ],
         "is_album": false
     },
@@ -1935,9 +1941,8 @@
         "year": 2025,
         "order_in_year": 14,
         "en": "Hanoi",
-        "fr": "Hanoï",
+        "fr": "Hano\u00ef",
         "people": [
-            "bryan"
         ],
         "is_album": false
     }
