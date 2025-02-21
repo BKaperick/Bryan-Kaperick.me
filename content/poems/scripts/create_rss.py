@@ -29,7 +29,7 @@ def create_item(title, rawpath, desc, date):
     <item>
       <title>{0}</title>
       <link>{1}</link>
-      <description>{2}...</description>
+      <description>{2}</description>
       <pubDate>{3}</pubDate>
     </item>
 """.format(title, link, desc, date.strftime("%a, %d %b %Y %H:%M:%S GMT")))
@@ -44,7 +44,7 @@ with open("poems.json", 'r+') as fread:
 
         description_ = re.search(first_line_regex, poem["body"])
         # Minor clean: if first line ends in '.', only add 2 more
-        description = description_.group(1).replace("....","...")
+        description = (description_.group(1) + "...").replace("....","...")
 
         dt_date = datetime.strptime("{0} {1}".format(poem["month"], poem["year"]), "%b %Y")
         items.append(create_item(poem["title"], poem["rawpath"], description, dt_date))
