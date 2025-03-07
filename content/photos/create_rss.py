@@ -35,7 +35,7 @@ def html_to_xml(text):
 
 
 def create_item(title, rawpath, desc, date, lang):
-    link = photo["rawpath"].replace("./raw/","https://www.bryan-kaperick.me/{0}/photos/").format(lang).replace(".txt","")
+    link = "https://www.bryan-kaperick.me/{0}/photos/").format(lang) + rawpath
     return html_to_xml("""
     <item>
       <title>{0}</title>
@@ -54,8 +54,8 @@ with open("photos.json", 'r+') as fread:
     photos = sorted(photos, key=ordering)
     for name, photo in photos:
         dt_date = datetime.strptime("{0} {1}".format(photo["month"], photo["year"]), "%b %Y")
-        items['en'].append(create_item(photo["title"], photo["rawpath"], photo['en'], dt_date, 'en'))
-        items['fr'].append(create_item(photo["title"], photo["rawpath"], photo['fr'], dt_date, 'fr'))
+        items['en'].append(create_item(photo["en"], photo["name"], photo['en'], dt_date, 'en'))
+        items['fr'].append(create_item(photo["fr"], photo["name"], photo['fr'], dt_date, 'fr'))
 
 for language in ["en", "fr"]:
     lang_path = "../{0}/photos/feed.xml".format(language)
