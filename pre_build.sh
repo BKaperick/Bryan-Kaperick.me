@@ -16,6 +16,7 @@ echo "starting photo ingestion"
 python3 instantiate.py "$1"
 ../../compress.sh
 python3 create_html.py > photos.html
+python3 ./create_rss.py
 
 cd ../widgets
 echo "starting widget ingestion"
