@@ -36,6 +36,7 @@
     },
     "asif": {
         "rawpath": "./raw/as_if.txt",
+        "audiopath": "../../poems/recordings/as_if.mp4",
         "title": "As if.",
         "author": "Bryan Kaperick",
         "order_in_month": 1,
@@ -45,7 +46,7 @@
     },
     "untitled_jun24": {
         "rawpath": "./raw/untitled_jun2024.txt",
-        "audiopath": "../../poems/recordings/untitled_jun24.mp3",
+        "audiopath": "../../poems/recordings/morning_growls.mp4",
         "title": "Untitled",
         "author": "Bryan Kaperick",
         "order_in_month": 1,
@@ -55,6 +56,7 @@
     },
     "float": {
         "rawpath": "./raw/free_to_float.txt",
+        "audiopath": "../../poems/recordings/free_to_float.mp4",
         "title": "Free to float",
         "author": "Bryan Kaperick",
         "order_in_month": 5,
@@ -64,6 +66,7 @@
     },
     "decline": {
         "rawpath": "./raw/while_in_decline.txt",
+        "audiopath": "../../poems/recordings/while_in_decline.mp4",
         "title": "While in decline",
         "author": "Bryan Kaperick",
         "order_in_month": 4,
@@ -73,6 +76,7 @@
     },
     "triad": {
         "rawpath": "./raw/untitled_triad.txt",
+        "audiopath": "../../poems/recordings/triad.mp4",
         "title": "Untitled triad",
         "author": "Bryan Kaperick",
         "order_in_month": 3,
