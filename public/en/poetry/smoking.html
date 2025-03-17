@@ -1,0 +1,48 @@
+<link rel="shortcut icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="apple-touch-icon" href="../../static/favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Smoking</em> &ndash; March 2025</p>
+    <blockquote>
+    <div class="poem"><p><span class="line">An ashtray overfilled.</span><br>
+<span class="line">A dozen impressed, burnt-up cigarettes</span><br>
+<span class="line">and a mushy chewed-out core;</span><br>
+<span class="line">the embers sing sweet apple sonnets.</span><br>
+<span class="line">Echoes of <i>tappuah</i> rise in the air.</span><br>
+<span class="line">Clumps of sugar raked over and</span><br>
+<span class="line">raped with cinders caked</span><br>
+<span class="line">in burnt ash flakes</span><br>
+<span class="line">that caramelize her cries.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">Carmen choked up on the smokey cross</span><br>
+<span class="line">of jealousy and refried tobacco leaves</span><br>
+<span class="line">so that I could breathe. I,</span><br>
+<span class="line">seed of the fruit with rib</span><br>
+<span class="line">from its core stripped,</span><br>
+<span class="line">cut down the first tree</span><br>
+<span class="line">and lit it up as she hanged,</span><br>
+<span class="line">then picked the stump,</span><br>
+<span class="line">rolled it between my fingers,</span><br>
+<span class="line">and smothered it in the tray.</p></div>    </blockquote>
+    </div> 
