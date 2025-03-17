@@ -460,7 +460,7 @@
         "month": "Mar",
         "year": "2025",
         "rawpath": "./raw/smoking.txt",
-        "order_in_month": 1,
+        "order_in_month": 2,
         "body": "<div class=\"poem\"><p><span class=\"line\">An ashtray overfilled.</span><br>\n<span class=\"line\">A dozen impressed, burnt-up cigarettes</span><br>\n<span class=\"line\">and a mushy chewed-out core;</span><br>\n<span class=\"line\">the embers sing sweet apple sonnets.</span><br>\n<span class=\"line\">Echoes of <i>tappuah</i> rise in the air.</span><br>\n<span class=\"line\">Clumps of sugar raked over and</span><br>\n<span class=\"line\">raped with cinders caked</span><br>\n<span class=\"line\">in burnt ash flakes</span><br>\n<span class=\"line\">that caramelize her cries.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Carmen choked up on the smokey cross</span><br>\n<span class=\"line\">of jealousy and refried tobacco leaves</span><br>\n<span class=\"line\">so that I could breathe. I,</span><br>\n<span class=\"line\">seed of the fruit with rib</span><br>\n<span class=\"line\">from its core stripped,</span><br>\n<span class=\"line\">cut down the first tree</span><br>\n<span class=\"line\">and lit it up as she hanged,</span><br>\n<span class=\"line\">then picked the stump,</span><br>\n<span class=\"line\">rolled it between my fingers,</span><br>\n<span class=\"line\">and smothered it in the tray.</p></div>"
     }
 }
