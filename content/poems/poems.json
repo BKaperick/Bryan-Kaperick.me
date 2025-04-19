@@ -462,5 +462,14 @@
         "rawpath": "./raw/smoking.txt",
         "order_in_month": 2,
         "body": "<div class=\"poem\"><p><span class=\"line\">An ashtray overfilled.</span><br>\n<span class=\"line\">A dozen impressed, burnt-up cigarettes</span><br>\n<span class=\"line\">and a mushy chewed-out core;</span><br>\n<span class=\"line\">the embers sing sweet apple sonnets.</span><br>\n<span class=\"line\">Echoes of <i>tappuah</i> rise in the air.</span><br>\n<span class=\"line\">Clumps of sugar raked over and</span><br>\n<span class=\"line\">raped with cinders caked</span><br>\n<span class=\"line\">in burnt ash flakes</span><br>\n<span class=\"line\">that caramelize her cries.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Carmen choked up on the smokey cross</span><br>\n<span class=\"line\">of jealousy and refried tobacco leaves</span><br>\n<span class=\"line\">so that I could breathe. I,</span><br>\n<span class=\"line\">seed of the fruit with rib</span><br>\n<span class=\"line\">from its core stripped,</span><br>\n<span class=\"line\">cut down the first tree</span><br>\n<span class=\"line\">and lit it up as she hanged,</span><br>\n<span class=\"line\">then picked the stump,</span><br>\n<span class=\"line\">rolled it between my fingers,</span><br>\n<span class=\"line\">and smothered it in the tray.</p></div>"
+    },
+    "about": {
+        "title": "What about",
+        "author": "Bryan Kaperick",
+        "month": "Apr",
+        "year": "2025",
+        "rawpath": "./raw/what_about.txt",
+        "order_in_month": 1,
+        "body": "<div class=\"poem\"><p><span class=\"line\">Talk to me as you walk around love.</span><br>\n<span class=\"line\">Sweet love.  Garlicky</span><br>\n<span class=\"line\">nostalgia love.  Bitter gunboat</span><br>\n<span class=\"line\">compromise love.  Lost in watery</span><br>\n<span class=\"line\">soupy love.  It's all there in you</span><br>\n<span class=\"line\">love.  Every ingredient a key</span><br>\n<span class=\"line\">to sing a stream into a river,</span><br>\n<span class=\"line\">to sing a lake into a sea,</span><br>\n<span class=\"line\">to talk down your desires</span><br>\n<span class=\"line\">and fold them into me.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">And if</span><br>\n<span class=\"line\">we stepped together, stomped</span><br>\n<span class=\"line\">on flower beds</span><br>\n<span class=\"line\">and let the crumpled petals</span><br>\n<span class=\"line\">dissipate in drops of dew,</span><br>\n<span class=\"line\">would it break our stride to feel</span><br>\n<span class=\"line\">the sun who dries</span><br>\n<span class=\"line\">the salty streaks of dew</span><br>\n<span class=\"line\">We find each morn'</span><br>\n<span class=\"line\">beneath our eyes?</p></div>"
     }
 }
