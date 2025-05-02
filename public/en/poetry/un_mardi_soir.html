@@ -1,0 +1,35 @@
+<link rel="shortcut icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="apple-touch-icon" href="../../static/favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Un mardi soir</em> &ndash; March 2024</p>
+    <blockquote>
+    <div class="poem"><p><span class="line">Du temps perdu</span><br>
+<span class="line">sous la pluie</span><br>
+<span class="line">d’un mardi soir.</span><br>
+<span class="line">Trempé, il se déchire tout seul</span><br>
+<span class="line">quand on essaie de ramasser</span><br>
+<span class="line">ce qui en reste de la table</span><br>
+<span class="line">après qu’elle parte.</p></div>    </blockquote>
+    </div> 

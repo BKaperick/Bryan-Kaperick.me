@@ -1,0 +1,32 @@
+<link rel="shortcut icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="apple-touch-icon" href="../../static/favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Monorhyme sketch #1</em> &ndash; November 2023</p>
+    <blockquote>
+    <div class="poem"><p><span class="line">Alcohol is entropy, and entropy is time</span><br>
+<span class="line">Hungover before I transitively unwind.</span><br>
+<span class="line">Wilted flowers wither while I dine on rotten wine</span><br>
+<span class="line">And ever wet the whistle of a lover once mine.</p></div>    </blockquote>
+    </div> 

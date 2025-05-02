@@ -1,0 +1,34 @@
+<link rel="shortcut icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="apple-touch-icon" href="../../static/favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Fierce creature</em> &ndash; Janvier 2020</p>
+    <blockquote>
+    <div class="poem"><p><span class="line">Fierce creature.</span><br>
+<span class="line">Her warm-armed currents</span><br>
+<span class="line">Race beneath hazy burgundy skies.</span><br>
+<span class="line">Pulsing violent,</span><br>
+<span class="line">Spewing caustic, emptying</span><br>
+<span class="line">Into basins which steam future desire,</span><br>
+<span class="line">Filled to quench days spent apart.</p></div>    </blockquote>
+    </div> 

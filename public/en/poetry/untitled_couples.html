@@ -1,0 +1,45 @@
+<link rel="shortcut icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="apple-touch-icon" href="../../static/favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Untitled couples</em> &ndash; October 2023</p>
+    <blockquote>
+    <div class="poem"><p><span class="line">Bound up inside, a voice he wimpers on,</span><br>
+<span class="line">“Bring back the soft of touch that long has gone…”</span><br>
+</p></div>
+<div class="poem"><p><span class="line">What waste of blood to keep that louse around</span><br>
+<span class="line">— I’ll take my heart to firm or fertile ground.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">I peer upstream to tempt the river’s way</span><br>
+<span class="line">When new soleil he shines and dawns the day.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">My thrill it shimmers on the sandy cusp</span><br>
+<span class="line">Of virgin plain untouched by Sodom’s rust.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">I’ll feign defense to pangs that thrust me out</span><br>
+<span class="line">Beyond the surface dissipating shroud.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">With that I’ll rise above the tar that blinds</span><br>
+<span class="line">Before I’ve found the words for th’other side.</p></div>    </blockquote>
+    </div> 

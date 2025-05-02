@@ -1,0 +1,35 @@
+<link rel="shortcut icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="apple-touch-icon" href="../../static/favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Kansas sky</em> &ndash; July 2022</p>
+    <blockquote>
+    <div class="poem"><p><span class="line">This morning I watched a cloud fall to earth.</span><br>
+<span class="line">Once suspended in the Kansas sky</span><br>
+<span class="line">&nbsp;&nbsp;&nbsp;now turned to vapor in my eye.</span><br>
+<span class="line">The eye which held a twinkle last night</span><br>
+<span class="line">Not from a star, but a lightning strike.</span><br>
+<span class="line">And here I gaze at Julie next to me</span><br>
+<span class="line">&nbsp;&nbsp;&nbsp;She takes my cloud and twinkle and goes to sleep</p></div>    </blockquote>
+    </div> 
