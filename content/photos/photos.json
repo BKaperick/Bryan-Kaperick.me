@@ -1966,7 +1966,11 @@
         "en": "A Thursday night at Djurdjura",
         "fr": "Un jeudi soir à Djurdjura",
         "people": [
-            "bryan"
+            "bryan",
+            "martin",
+            "pourbali",
+            "sunny",
+            "silvio"
         ],
         "is_album": false
     },
@@ -2003,7 +2007,8 @@
         "en": "Quentin's birthday",
         "fr": "L'anniversaire de Quentin",
         "people": [
-            "bryan"
+            "bryan",
+            "quentin"
         ],
         "is_album": false
     },
@@ -2028,7 +2033,23 @@
         "en": "",
         "fr": "",
         "people": [
-            "bryan"
+            "bryan",
+            "pourbali",
+            "laura",
+            "silvio",
+            "charles",
+            "gavin",
+            "pranjit",
+            "cecile",
+            "sila",
+            "arnoo",
+            "anastasia",
+            "tyler",
+            "chantal",
+            "ravi",
+            "quentin",
+            "antoine_quentin",
+            "moneer"
         ],
         "is_album": false
     },
