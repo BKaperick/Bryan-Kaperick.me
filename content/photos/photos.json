@@ -1951,7 +1951,7 @@
         "year": 2025,
         "order_in_year": 15,
         "en": "Colin came back to Paris",
-        "fr": "Colin encore une fois du passage à Paris",
+        "fr": "Colin encore une fois du passage \u00e0 Paris",
         "people": [
             "bryan",
             "colin"
@@ -1964,7 +1964,7 @@
         "year": 2025,
         "order_in_year": 16,
         "en": "A Thursday night at Djurdjura",
-        "fr": "Un jeudi soir à Djurdjura",
+        "fr": "Un jeudi soir \u00e0 Djurdjura",
         "people": [
             "bryan"
         ],
@@ -1976,7 +1976,7 @@
         "year": 2025,
         "order_in_year": 17,
         "en": "Daytrip to Tilburg with Michael",
-        "fr": "Une journée à Tilburg avec Michael",
+        "fr": "Une journ\u00e9e \u00e0 Tilburg avec Michael",
         "people": [
             "bryan",
             "michael"
@@ -1989,7 +1989,7 @@
         "year": 2025,
         "order_in_year": 18,
         "en": "Wazemmes Market",
-        "fr": "Marché de Wazemmes",
+        "fr": "March\u00e9 de Wazemmes",
         "people": [
             "bryan"
         ],
