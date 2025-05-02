@@ -26,6 +26,7 @@
     },
     "daisy": {
         "rawpath": "./raw/da_isy.txt",
+        "audiopath": "../../poems/recordings/daisy.mp4",
         "title": "Da isy",
         "author": "Bryan Kaperick",
         "order_in_month": 2,
@@ -35,6 +36,7 @@
     },
     "asif": {
         "rawpath": "./raw/as_if.txt",
+        "audiopath": "../../poems/recordings/as_if.mp4",
         "title": "As if.",
         "author": "Bryan Kaperick",
         "order_in_month": 1,
@@ -44,7 +46,7 @@
     },
     "untitled_jun24": {
         "rawpath": "./raw/untitled_jun2024.txt",
-        "audiopath": "../../poems/recordings/untitled_jun24.mp3",
+        "audiopath": "../../poems/recordings/morning_growls.mp4",
         "title": "Untitled",
         "author": "Bryan Kaperick",
         "order_in_month": 1,
@@ -54,6 +56,7 @@
     },
     "float": {
         "rawpath": "./raw/free_to_float.txt",
+        "audiopath": "../../poems/recordings/free_to_float.mp4",
         "title": "Free to float",
         "author": "Bryan Kaperick",
         "order_in_month": 5,
@@ -63,6 +66,7 @@
     },
     "decline": {
         "rawpath": "./raw/while_in_decline.txt",
+        "audiopath": "../../poems/recordings/while_in_decline.mp4",
         "title": "While in decline",
         "author": "Bryan Kaperick",
         "order_in_month": 4,
@@ -72,6 +76,7 @@
     },
     "triad": {
         "rawpath": "./raw/untitled_triad.txt",
+        "audiopath": "../../poems/recordings/triad.mp4",
         "title": "Untitled triad",
         "author": "Bryan Kaperick",
         "order_in_month": 3,
@@ -385,7 +390,7 @@
         "month": "Oct",
         "year": "2024",
         "rawpath": "./raw/soda_pop.txt",
-        "audiopath": "../../poems/recordings/soda_pop.mp4",
+        "audiopath": "../../poems/recordings/soda.mp4",
         "order_in_month": 1,
         "body": "<div class=\"poem\"><p><span class=\"line\">I heard it all at the countertop:</span><br>\n<span class=\"line\">a rubbery mix,</span><br>\n<span class=\"line\">the pangs of soda water unspriz'd,</span><br>\n<span class=\"line\">the clank</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and clank</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and clank.</span><br>\n<span class=\"line\">Flat taps:</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;a rhythm to suscitate</span><br>\n<span class=\"line\">all those syrupy drips unsipped.</span><br>\n<span class=\"line\">Only fizzled-out sparks emit.</span><br>\n<span class=\"line\">Better seal it up quick.</span><br>\n<span class=\"line\">Lick</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;it</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spit.</span><br>\n<span class=\"line\">Bottle it all up,</span><br>\n<span class=\"line\">and crank</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and crank</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and crank</span><br>\n<span class=\"line\">the nozzle shut.</p></div>"
     },
@@ -425,6 +430,7 @@
         "month": "Dec",
         "year": "2024",
         "rawpath": "./raw/the_arctic_plain_by_night.txt",
+        "audiopath": "../../poems/recordings/arctic_plain.mp4",
         "order_in_month": 3,
         "body": "<div class=\"poem\"><p><span class=\"line\">Frozen was this place.</span><br>\n<span class=\"line\">Upon it placed a placid slate</span><br>\n<span class=\"line\">of ice.  Its might slighted</span><br>\n<span class=\"line\">only by the wooden flame's reach.</span><br>\n<span class=\"line\">Heat-stained beech</span><br>\n<span class=\"line\">sunken in a pool. Stone breached.</span><br>\n<span class=\"line\">Its presence slowly traced.</span><br>\n<span class=\"line\">Flickers glowed, and fore-elements effaced.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">A bear born in such barren land,</span><br>\n<span class=\"line\">fur matted under the harsh cold,</span><br>\n<span class=\"line\">carried further on by</span><br>\n<span class=\"line\">the wailing wind's sail.</span><br>\n<span class=\"line\">This creature comprehends</span><br>\n<span class=\"line\">from deep within.</span><br>\n<span class=\"line\">Ancestral knots never untied,</span><br>\n<span class=\"line\">pulled ever tighter and petrified.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Fur flakked with mud, dirty</span><br>\n<span class=\"line\">and damp, absorbs the savory</span><br>\n<span class=\"line\">smoke to a saturated choke</span><br>\n<span class=\"line\">and evokes streams</span><br>\n<span class=\"line\">of warm steam stacks to</span><br>\n<span class=\"line\">rise enveloped in empty howls.</span><br>\n<span class=\"line\">They dance intertwined</span><br>\n<span class=\"line\">whispering up unto the divine.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">In between yawns and</span><br>\n<span class=\"line\">howls he gnaws at his prey.</span><br>\n<span class=\"line\">Raw flesh that lends an ache</span><br>\n<span class=\"line\">to his jaw bone,</span><br>\n<span class=\"line\">strained near break. All</span><br>\n<span class=\"line\">to sustain another hunt</span><br>\n<span class=\"line\">between long, lonesome flights</span><br>\n<span class=\"line\">along the arctic plain by night.</p></div>"
     },
@@ -434,7 +440,36 @@
         "month": "Jan",
         "year": "2025",
         "rawpath": "./raw/the_bengal_chemical_metro_stop.txt",
+        "audiopath": "../../poems/recordings/bengal_chemical.mp4",
         "order_in_month": 1,
         "body": "<div class=\"poem\"><p><span class=\"line\">A fine and eager Kolkata crowd lined up</span><br>\n<span class=\"line\">at the Bengal Chemical metro stop.</span><br>\n<span class=\"line\">Breathing heated air, their lungs would swell</span><br>\n<span class=\"line\">with dust gumming up inside.  She tells</span><br>\n<span class=\"line\">of that same congeal she carried all the day</span><br>\n<span class=\"line\">from a dream that overslept, it stayed</span><br>\n<span class=\"line\">till now since drowzy dawn before.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Its weight bore down her glassy core,</span><br>\n<span class=\"line\">and cracked her ankle clean, the fracture snapped</span><br>\n<span class=\"line\">and stalled the wagon's scheduled second act,</span><br>\n<span class=\"line\">as the wheels began to slide into distress,</span><br>\n<span class=\"line\">losing traction, gradually helpless.</span><br>\n<span class=\"line\">Never meant to reap its fine, eager crop</span><br>\n<span class=\"line\">at the Bengal Chemical metro stop.</p></div>"
+    },
+    "untitled_1": {
+        "title": "Untitled",
+        "author": "Bryan Kaperick",
+        "month": "Mar",
+        "year": "2025",
+        "rawpath": "./raw/untitled_mar2025.txt",
+        "audiopath": "../../poems/recordings/untitled_mar2025.mp4",
+        "order_in_month": 1,
+        "body": "<div class=\"poem\"><p><span class=\"line\">Under sunlight setting</span><br>\n<span class=\"line\">moth-like hid a feisty</span><br>\n<span class=\"line\">locksmith</span><br>\n<span class=\"line\">on my bike</span><br>\n<span class=\"line\">wielding screw-driven</span><br>\n<span class=\"line\">might prying</span><br>\n<span class=\"line\">inside saddle pin lips</span><br>\n<span class=\"line\">pursed then pressed</span><br>\n<span class=\"line\">open wide</span><br>\n<span class=\"line\">mounted in the moonlight</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">All while I</span><br>\n<span class=\"line\">none the wiser</span><br>\n<span class=\"line\">find her</span><br>\n<span class=\"line\">stood up at dawn light by</span><br>\n<span class=\"line\">my own cycle</span><br>\n<span class=\"line\">light one seat</span><br>\n<span class=\"line\">sized up and sidled off</span><br>\n<span class=\"line\">stolen by a slick</span><br>\n<span class=\"line\">brazen kiss in the night</p></div>"
+    },
+    "smoking": {
+        "title": "Smoking",
+        "author": "Bryan Kaperick",
+        "month": "Mar",
+        "year": "2025",
+        "rawpath": "./raw/smoking.txt",
+        "order_in_month": 2,
+        "body": "<div class=\"poem\"><p><span class=\"line\">An ashtray overfilled.</span><br>\n<span class=\"line\">A dozen impressed, burnt-up cigarettes</span><br>\n<span class=\"line\">and a mushy chewed-out core;</span><br>\n<span class=\"line\">the embers sing sweet apple sonnets.</span><br>\n<span class=\"line\">Echoes of <i>tappuah</i> rise in the air.</span><br>\n<span class=\"line\">Clumps of sugar raked over and</span><br>\n<span class=\"line\">raped with cinders caked</span><br>\n<span class=\"line\">in burnt ash flakes</span><br>\n<span class=\"line\">that caramelize her cries.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Carmen choked up on the smokey cross</span><br>\n<span class=\"line\">of jealousy and refried tobacco leaves</span><br>\n<span class=\"line\">so that I could breathe. I,</span><br>\n<span class=\"line\">seed of the fruit with rib</span><br>\n<span class=\"line\">from its core stripped,</span><br>\n<span class=\"line\">cut down the first tree</span><br>\n<span class=\"line\">and lit it up as she hanged,</span><br>\n<span class=\"line\">then picked the stump,</span><br>\n<span class=\"line\">rolled it between my fingers,</span><br>\n<span class=\"line\">and smothered it in the tray.</p></div>"
+    },
+    "about": {
+        "title": "What about",
+        "author": "Bryan Kaperick",
+        "month": "Apr",
+        "year": "2025",
+        "rawpath": "./raw/what_about.txt",
+        "order_in_month": 1,
+        "body": "<div class=\"poem\"><p><span class=\"line\">Talk to me as you walk around love.</span><br>\n<span class=\"line\">Sweet love.  Garlicky</span><br>\n<span class=\"line\">nostalgia love.  Bitter gunboat</span><br>\n<span class=\"line\">compromise love.  Lost in watery</span><br>\n<span class=\"line\">soupy love.  It's all there in you</span><br>\n<span class=\"line\">love.  Every ingredient a key</span><br>\n<span class=\"line\">to sing a stream into a river,</span><br>\n<span class=\"line\">to sing a lake into a sea,</span><br>\n<span class=\"line\">to talk down your desires</span><br>\n<span class=\"line\">and fold them into me.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">And if</span><br>\n<span class=\"line\">we stepped together, stomped</span><br>\n<span class=\"line\">on flower beds</span><br>\n<span class=\"line\">and let the crumpled petals</span><br>\n<span class=\"line\">dissipate in drops of dew,</span><br>\n<span class=\"line\">would it break our stride to feel</span><br>\n<span class=\"line\">the sun who dries</span><br>\n<span class=\"line\">the salty streaks of dew</span><br>\n<span class=\"line\">We find each morn'</span><br>\n<span class=\"line\">beneath our eyes?</p></div>"
     }
 }

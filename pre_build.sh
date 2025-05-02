@@ -3,6 +3,7 @@ echo "starting poetry ingestion"
 python3 ./scripts/instantiate.py
 python3 ./scripts/format_poem.py
 python3 ./scripts/create_html.py
+python3 ./scripts/create_rss.py
 
 cd ../now
 echo "starting now ingestion"
