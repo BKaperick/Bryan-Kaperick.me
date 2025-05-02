@@ -1945,15 +1945,16 @@
         "people": [],
         "is_album": false
     },
-    "quentin_15": {
-        "name": "quentin_bday_2025_2.jpeg",
+    "bryan_19": {
+        "name": "bryan_colin_paris_2025.jpg",
         "month": "May",
         "year": 2025,
         "order_in_year": 15,
-        "en": "",
-        "fr": "",
+        "en": "Colin came back to Paris",
+        "fr": "Colin encore une fois du passage à Paris",
         "people": [
-            "bryan"
+            "bryan",
+            "colin"
         ],
         "is_album": false
     },
@@ -1962,8 +1963,8 @@
         "month": "May",
         "year": 2025,
         "order_in_year": 16,
-        "en": "",
-        "fr": "",
+        "en": "A Thursday night at Djurdjura",
+        "fr": "Un jeudi soir à Djurdjura",
         "people": [
             "bryan"
         ],
@@ -1974,10 +1975,11 @@
         "month": "May",
         "year": 2025,
         "order_in_year": 17,
-        "en": "",
-        "fr": "",
+        "en": "Daytrip to Tilburg with Michael",
+        "fr": "Une journée à Tilburg avec Michael",
         "people": [
-            "bryan"
+            "bryan",
+            "michael"
         ],
         "is_album": false
     },
@@ -1986,20 +1988,20 @@
         "month": "May",
         "year": 2025,
         "order_in_year": 18,
-        "en": "",
-        "fr": "",
+        "en": "Wazemmes Market",
+        "fr": "Marché de Wazemmes",
         "people": [
             "bryan"
         ],
         "is_album": false
     },
-    "bryan_19": {
-        "name": "bryan_colin_paris_2025.jpg",
+    "quentin_15": {
+        "name": "quentin_bday_2025_2.jpeg",
         "month": "May",
         "year": 2025,
         "order_in_year": 19,
-        "en": "Colin came back to Paris",
-        "fr": "Colin encore une fois du passage à Paris",
+        "en": "Quentin's birthday",
+        "fr": "L'anniversaire de Quentin",
         "people": [
             "bryan"
         ],
