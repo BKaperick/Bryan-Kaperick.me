@@ -27,6 +27,7 @@ $language = array(
     'Photos'=>'Photos',
     'Bio'=>'Bio',
     'Blog Posts'=>'Blog Posts',
+    'Projects'=>'Projects',
     'Now'=>'Now',
     'SKETCH_CRED'=>'The profile picture was sketched by',
     'Click for other artistic attributions' => 'Click for other artistic attributions',
