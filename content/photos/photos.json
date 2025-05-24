@@ -2064,5 +2064,162 @@
             "bryan"
         ],
         "is_album": false
+    },
+    "LyonClimbingMay2025": {
+        "name": "LyonClimbingMay2025",
+        "month": "May",
+        "year": 2025,
+        "order_in_year": 24,
+        "en": "Weekend in Lyon climbing at 'Le gouffre d'enfer'",
+        "fr": "Un weekend à Lyon pour faire de l'escalade dans 'Le gouffre d'enfer'",
+        "is_album": true,
+        "photos": [
+            "climbing_25",
+            "climbing_26",
+            "climbing_27",
+            "climbing_28",
+            "lyon",
+            "courbiere"
+        ]
+    },
+    "climbing_25": {
+        "name": "lyon_climbing_descend.jpg",
+        "month": "May",
+        "year": 2025,
+        "order_in_year": 25,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "climbing_26": {
+        "name": "lyon_climbing_devers.jpg",
+        "month": "May",
+        "year": 2025,
+        "order_in_year": 26,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "climbing_27": {
+        "name": "lyon_climbing_1.jpg",
+        "month": "May",
+        "year": 2025,
+        "order_in_year": 27,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "climbing_28": {
+        "name": "lyon_climbing_2.jpg",
+        "month": "May",
+        "year": 2025,
+        "order_in_year": 28,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "lyon": {
+        "name": "lyon_bbq.jpg",
+        "month": "May",
+        "year": 2025,
+        "order_in_year": 29,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "courbiere": {
+        "name": "la_courbiere_site.jpg",
+        "month": "May",
+        "year": 2025,
+        "order_in_year": 30,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "DescendingLaLesse": {
+        "name": "DescendingLaLesse",
+        "month": "May",
+        "year": 2025,
+        "order_in_year": 31,
+        "en": "",
+        "fr": "",
+        "is_album": true,
+        "photos": [
+            "others",
+            "castle",
+            "kayak"
+        ]
+    },
+    "others": {
+        "name": "kayak_others.jpg",
+        "month": "May",
+        "year": 2025,
+        "order_in_year": 32,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "castle": {
+        "name": "kayak_castle.jpg",
+        "month": "May",
+        "year": 2025,
+        "order_in_year": 33,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "kayak": {
+        "name": "kayak_la_lesse.jpg",
+        "month": "May",
+        "year": 2025,
+        "order_in_year": 34,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "tyler": {
+        "name": "tyler_30_salam.jpeg",
+        "month": "May",
+        "year": 2025,
+        "order_in_year": 35,
+        "en": "Tyler's 30th Birthday at La Mousse Touch'",
+        "fr": "Le 30e Anniversaire de Tyler à La Mousse Touch'",
+        "people": [
+            "bryan",
+            "louise",
+            "tyler",
+            "pourbali",
+            "martin",
+            "sunny",
+            "anastasia"
+        ],
+        "is_album": false
     }
 }
