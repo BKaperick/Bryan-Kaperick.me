@@ -2071,7 +2071,7 @@
         "year": 2025,
         "order_in_year": 24,
         "en": "Weekend in Lyon climbing at 'Le gouffre d'enfer'",
-        "fr": "Un weekend à Lyon pour faire de l'escalade dans 'Le gouffre d'enfer'",
+        "fr": "Un weekend \u00e0 Lyon pour faire de l'escalade dans 'Le gouffre d'enfer'",
         "is_album": true,
         "photos": [
             "climbing_25",
@@ -2155,8 +2155,7 @@
         "order_in_year": 30,
         "en": "",
         "fr": "",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     },
     "DescendingLaLesse": {
@@ -2164,8 +2163,8 @@
         "month": "May",
         "year": 2025,
         "order_in_year": 31,
-        "en": "",
-        "fr": "",
+        "en": "Kayaking on La Lesse river in the Ardennes",
+        "fr": "Weekend kayak sur La Lesse dans les Ardennes",
         "is_album": true,
         "photos": [
             "others",
@@ -2195,8 +2194,7 @@
         "order_in_year": 33,
         "en": "",
         "fr": "",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     },
     "kayak": {
@@ -2221,7 +2219,7 @@
         "year": 2025,
         "order_in_year": 35,
         "en": "Tyler's 30th Birthday at La Mousse Touch'",
-        "fr": "Le 30e Anniversaire de Tyler à La Mousse Touch'",
+        "fr": "Le 30e Anniversaire de Tyler \u00e0 La Mousse Touch'",
         "people": [
             "bryan",
             "louise",
