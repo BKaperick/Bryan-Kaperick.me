@@ -103,7 +103,7 @@ def get_photo_block_in_album(key, file_name):
 </a></span>
 """.format(file_name, get_photo_captioned_figure_in_album(key))
 
-def get_leaderboard():
+def generate_leaderboard():
 
     header = """
     <style>
@@ -133,9 +133,9 @@ def get_leaderboard():
     footer = """
     </table>
     """
-    ranked = get_leaderboard()
+    ranked = get_leaderboard()[::-1]
     data = [header]
-    for person,cnt in ranked:
+    for i,(person,cnt) in enumerate(ranked):
         block = """
         <tr> 
             <td>{0}</td>
@@ -143,11 +143,13 @@ def get_leaderboard():
         </tr>
         """.format(person,cnt)
         data.append(block)
+        if i > 10:
+            break
     data.append(footer)
     return "\n\n".join(data)
 
 
-def get_album_block(key, photo, photo_key_to_album_key, photo_key_to_previous, photo_key_to_next):
+def create_album_block(key, photo, photo_key_to_album_key, photo_key_to_previous, photo_key_to_next):
     album_blocks = []
     for i,subkey in enumerate(photo["photos"]):
         photo_key_to_album_key[subkey] = key
@@ -182,14 +184,14 @@ with open("photos.json", "r") as fw:
         file_name = photo["name"].replace(".jpg","")
 
         if "is_album" in photo and photo["is_album"] == True:
-            block = get_album_block(key, photo, photo_key_to_album_key, photo_key_to_previous, photo_key_to_next)
+            block = create_album_block(key, photo, photo_key_to_album_key, photo_key_to_previous, photo_key_to_next)
             photo_blocks.append((block, photo))
 
         # Photo is not contained in any album, so just print it on main photos page
         elif key not in album_photos:
             block = get_photo_block(key, file_name)
             photo_blocks.append((block, photo))
-    print(get_leaderboard() + "\n\n")
+    print(generate_leaderboard() + "\n\n")
     print("\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
     
     # Get single-image pages (stored in raw_with_label)

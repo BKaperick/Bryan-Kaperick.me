@@ -1251,7 +1251,8 @@
         "en": "In Kisama Heritage Village",
         "fr": "A Kisama, un Village du Patrimoine",
         "people": [
-            "bryan"
+            "bryan",
+            "aviraj"
         ],
         "is_album": false
     },
@@ -1805,7 +1806,6 @@
         "en": "Hanoi",
         "fr": "Hano\u00ef",
         "people": [
-            "bryan"
         ],
         "is_album": false
     },
@@ -2008,7 +2008,15 @@
         "fr": "L'anniversaire de Quentin",
         "people": [
             "bryan",
-            "quentin"
+            "quentin",
+            "chantal",
+            "antoine_quentin",
+            "anastasia",
+            "pourbali",
+            "tyler",
+            "sunny",
+            "cecile",
+            "rishik"
         ],
         "is_album": false
     },
@@ -2061,7 +2069,21 @@
         "en": "",
         "fr": "",
         "people": [
-            "bryan"
+            "bryan",
+            "rishik",
+            "quentin",
+            "cecile",
+            "tyler",
+            "gavin",
+            "moneer",
+            "charles",
+            "arnoo",
+            "ravi",
+            "pranjit",
+            "chantal",
+            "anastasia",
+            "jeanne",
+            "myriam"
         ],
         "is_album": false
     }
