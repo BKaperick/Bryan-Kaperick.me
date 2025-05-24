@@ -4,6 +4,7 @@ import sys
 from math import sqrt,floor
 sys.path.append(os.path.abspath("../../"))
 from helper import *
+from create_leaderboard import *
 
 photo_blocks = []
 
@@ -102,6 +103,65 @@ def get_photo_block_in_album(key, file_name):
 </a></span>
 """.format(file_name, get_photo_captioned_figure_in_album(key))
 
+def get_leaderboard():
+
+    header = """
+    <style>
+    .border1 {
+      border-top:thin solid;
+      border-bottom:thin solid;
+      border-left:thin solid;
+      border-right:thin solid;
+      border-color:black;
+      padding: 5px;
+    }
+    table {
+      border: 2px solid black;
+    }
+    td {
+      text-align: center;
+      vertical-align: middle;
+    }
+    </style>
+
+    <table border=1 frame=sides cellspacing="0" cellpadding="5">
+      <tr>
+        <th class="border1">Person</th>
+        <th class="border1">Present in how many photos?</th>
+      </tr>
+    """
+    footer = """
+    </table>
+    """
+    ranked = get_leaderboard()
+    data = [header]
+    for person,cnt in ranked:
+        block = """
+        <tr> 
+            <td>{0}</td>
+            <td>{1} photos</td>
+        </tr>
+        """.format(person,cnt)
+        data.append(block)
+    data.append(footer)
+    return "\n\n".join(data)
+
+
+def get_album_block(key, photo, photo_key_to_album_key, photo_key_to_previous, photo_key_to_next):
+    album_blocks = []
+    for i,subkey in enumerate(photo["photos"]):
+        photo_key_to_album_key[subkey] = key
+
+        # Used to assign the 'Previous' and 'Next links on the single-photo page when the photo is part of an album
+        photo_key_to_previous[subkey] = None if i == 0 else photo["photos"][i-1]
+        photo_key_to_next[subkey] = None if i == len(photo["photos"]) - 1 else photo["photos"][i+1]
+
+        sub_photo = photos[subkey]
+        sub_file_name = sub_photo["name"].replace(".jpg","")
+        sub_block = get_photo_block_in_album(subkey, sub_file_name)
+        album_blocks.append((sub_block, sub_photo))
+    return get_album_block(key, album_blocks)
+
 with open("photos.json", "r") as fw:
     photos = json.load(fw)
     album_photos = []
@@ -122,27 +182,14 @@ with open("photos.json", "r") as fw:
         file_name = photo["name"].replace(".jpg","")
 
         if "is_album" in photo and photo["is_album"] == True:
-            album_blocks = []
-            for i,subkey in enumerate(photo["photos"]):
-                photo_key_to_album_key[subkey] = key
-
-                # Used to assign the 'Previous' and 'Next links on the single-photo page when the photo is part of an album
-                photo_key_to_previous[subkey] = None if i == 0 else photo["photos"][i-1]
-                photo_key_to_next[subkey] = None if i == len(photo["photos"]) - 1 else photo["photos"][i+1]
-
-                sub_photo = photos[subkey]
-                sub_file_name = sub_photo["name"].replace(".jpg","")
-                sub_block = get_photo_block_in_album(subkey, sub_file_name)
-                album_blocks.append((sub_block, sub_photo))
-            block = get_album_block(key, album_blocks)
+            block = get_album_block(key, photo, photo_key_to_album_key, photo_key_to_previous, photo_key_to_next)
             photo_blocks.append((block, photo))
-
 
         # Photo is not contained in any album, so just print it on main photos page
         elif key not in album_photos:
             block = get_photo_block(key, file_name)
             photo_blocks.append((block, photo))
-    
+    print(get_leaderboard() + "\n\n")
     print("\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
     
     # Get single-image pages (stored in raw_with_label)
