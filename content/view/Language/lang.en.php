@@ -32,6 +32,9 @@ $language = array(
     'SKETCH_CRED'=>'The profile picture was sketched by',
     'Click for other artistic attributions' => 'Click for other artistic attributions',
     'Previous'=>'Previous',
-    'Next'=>'Next'
+    'Next'=>'Next',
+    'leaderboard'=>'Leaderboard',
+    'All-time Leaderboard'=>'All-time Leaderboard',
+    'Previous Winners'=>'Previous Winners'
 );
 ?>

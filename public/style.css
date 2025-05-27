@@ -1389,20 +1389,24 @@ figure.single-image {
   color: var(--button-text-color);
 }
 
-div.proparent {
-    width: 100px;
+/* Tables (for now page and photos leaderboard) */
+.border1 {
+  border-top:thin solid;
+  border-bottom:thin solid;
+  border-left:thin solid;
+  border-right:thin solid;
+  border-color:black;
+  padding: 5px;
 }
-.proparent {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-gap: 20px; 
-    border: 1px solid black; 
-    width: 50%; 
+table {
+  border: 2px solid black;
 }
-.prochild {
-    display: flex;
-    flex: 50%;
-    padding: .5em;
-    margin: 10px; 
-    border: 1px solid red; 
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }

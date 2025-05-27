@@ -4,6 +4,7 @@ import sys
 from math import sqrt,floor
 sys.path.append(os.path.abspath("../../"))
 from helper import *
+from create_leaderboard import *
 
 photo_blocks = []
 
@@ -102,6 +103,69 @@ def get_photo_block_in_album(key, file_name):
 </a></span>
 """.format(file_name, get_photo_captioned_figure_in_album(key))
 
+
+def generate_leaderboard():
+    
+    #
+    # HTML Blocks
+    #
+    two_row_block = """    <tr> 
+        <td>{0}</td>
+        <td>{1}</td>
+    </tr>\n"""
+
+    one_table_header = """<table border=1 frame=sides style="float: left; max-width: 250px; margin: 25px">
+        <th class="border1" colspan=2><?=$language['{0}'];?></th>\n"""
+
+    header = """
+    <details>
+      <summary><h3><?=$language['leaderboard'];?></h3>
+    </summary>
+    <div class="clearfix">"""
+
+    footer = """</details></div>"""
+    
+    # all-time table filling
+    alltime_table = one_table_header.format("All-time Leaderboard")
+    ranked,cnt = get_leaderboard()
+    for i,(person,cnt) in enumerate(ranked[::-1]):
+        block = two_row_block.format(i+1,person)
+        alltime_table += block
+        if i+1 >= 10:
+            break
+    alltime_table += "</table>"
+    
+    # historical table filling
+    history_table = one_table_header.format("Previous Winners")
+    for year in range(2017, 2026)[::-1]:
+        winner, winner_metric = get_leaderboard_winner(year, metric = "inv_weight")
+        block = two_row_block.format(year, winner)
+        history_table += block
+    history_table += "</table>"
+    
+    # Assemble the data
+    data = [header]
+    data.append(alltime_table)
+    data.append(history_table)
+    data.append(footer)
+    return "\n".join(data)
+
+
+def create_album_block(key, photo, photo_key_to_album_key, photo_key_to_previous, photo_key_to_next):
+    album_blocks = []
+    for i,subkey in enumerate(photo["photos"]):
+        photo_key_to_album_key[subkey] = key
+
+        # Used to assign the 'Previous' and 'Next links on the single-photo page when the photo is part of an album
+        photo_key_to_previous[subkey] = None if i == 0 else photo["photos"][i-1]
+        photo_key_to_next[subkey] = None if i == len(photo["photos"]) - 1 else photo["photos"][i+1]
+
+        sub_photo = photos[subkey]
+        sub_file_name = sub_photo["name"].replace(".jpg","")
+        sub_block = get_photo_block_in_album(subkey, sub_file_name)
+        album_blocks.append((sub_block, sub_photo))
+    return get_album_block(key, album_blocks)
+
 with open("photos.json", "r") as fw:
     photos = json.load(fw)
     album_photos = []
@@ -122,27 +186,15 @@ with open("photos.json", "r") as fw:
         file_name = photo["name"].replace(".jpg","")
 
         if "is_album" in photo and photo["is_album"] == True:
-            album_blocks = []
-            for i,subkey in enumerate(photo["photos"]):
-                photo_key_to_album_key[subkey] = key
-
-                # Used to assign the 'Previous' and 'Next links on the single-photo page when the photo is part of an album
-                photo_key_to_previous[subkey] = None if i == 0 else photo["photos"][i-1]
-                photo_key_to_next[subkey] = None if i == len(photo["photos"]) - 1 else photo["photos"][i+1]
-
-                sub_photo = photos[subkey]
-                sub_file_name = sub_photo["name"].replace(".jpg","")
-                sub_block = get_photo_block_in_album(subkey, sub_file_name)
-                album_blocks.append((sub_block, sub_photo))
-            block = get_album_block(key, album_blocks)
+            block = create_album_block(key, photo, photo_key_to_album_key, photo_key_to_previous, photo_key_to_next)
             photo_blocks.append((block, photo))
-
 
         # Photo is not contained in any album, so just print it on main photos page
         elif key not in album_photos:
             block = get_photo_block(key, file_name)
             photo_blocks.append((block, photo))
     
+    print(generate_leaderboard() + "\n\n")
     print("\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
     
     # Get single-image pages (stored in raw_with_label)

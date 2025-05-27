@@ -32,6 +32,9 @@ $language = array(
     'SKETCH_CRED'=>'La photo de profile a été esquissée par',
     'Click for other artistic attributions' => 'Cliquez ici pour des autres attributions artistiques',
     'Previous'=>'Précédent',
-    'Next'=>'Suivant'
+    'Next'=>'Suivant',
+    'leaderboard'=>'Classement',
+    'All-time Leaderboard'=>'Classement de tous les temps',
+    'Previous Winners'=>'Anciens lauréats'
 );
 ?>
