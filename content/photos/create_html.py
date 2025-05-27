@@ -106,9 +106,13 @@ def get_photo_block_in_album(key, file_name):
 def generate_leaderboard():
 
     header = """
+    <details>
+      <summary><h3><?=$language['leaderboard'];?></h3>
+    </summary>
+
     <div class="clearfix">
-    <table border=1 frame=sides style="float: left; max-width: 250px; margin: 25px">
-        <th class="border1" colspan=2>All-time Leaderboard</th>
+    <table border=1 frame=sides style="float: left; max-width: 300px; margin: 25px">
+        <th class="border1" colspan=2><?=$language['All-time Leaderboard'];?></th>
     """
     footer = """
     </table>
@@ -130,7 +134,7 @@ def generate_leaderboard():
     
     history_table = """
     <table border=1 frame=sides style="float: left; max-width: 250px; margin: 25px">
-        <th class="border1" colspan=2>Previous Winners</th>
+        <th class="border1" colspan=2><?=$language['Previous Winners'];?></th>
     """
     for year in range(2017, 2026)[::-1]:
         winner, winner_metric = get_leaderboard_winner(year, metric = "inv_weight")
@@ -141,8 +145,11 @@ def generate_leaderboard():
         </tr>
         """.format(year, winner)
         history_table += block
-    history_table += "</table></div>"
+    history_table += "</table>"
+
     data.append(history_table)
+
+    data.append("</details></div>")
     return "\n".join(data)
 
 
@@ -188,6 +195,7 @@ with open("photos.json", "r") as fw:
         elif key not in album_photos:
             block = get_photo_block(key, file_name)
             photo_blocks.append((block, photo))
+    
     print(generate_leaderboard() + "\n\n")
     print("\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
     
