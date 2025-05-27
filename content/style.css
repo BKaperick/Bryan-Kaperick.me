@@ -1370,3 +1370,25 @@ figure.single-image {
   background-color: var(--text-color);
   color: var(--button-text-color);
 }
+
+/* Tables (for now page and photos leaderboard) */
+.border1 {
+  border-top:thin solid;
+  border-bottom:thin solid;
+  border-left:thin solid;
+  border-right:thin solid;
+  border-color:black;
+  padding: 5px;
+}
+table {
+  border: 2px solid black;
+}
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

@@ -12,24 +12,6 @@ now_blocks = []
 #}
 
 header = """
-<style>
-.border1 {
-  border-top:thin solid;
-  border-bottom:thin solid;
-  border-left:thin solid;
-  border-right:thin solid;
-  border-color:black;
-  padding: 5px;
-}
-table {
-  border: 2px solid black;
-}
-td {
-  text-align: center;
-  vertical-align: middle;
-}
-</style>
-
 <table border=1 frame=sides cellspacing="0" cellpadding="5">
   <tr>
     <th class="border1">Location</th>

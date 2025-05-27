@@ -106,47 +106,44 @@ def get_photo_block_in_album(key, file_name):
 def generate_leaderboard():
 
     header = """
-    <style>
-    .border1 {
-      border-top:thin solid;
-      border-bottom:thin solid;
-      border-left:thin solid;
-      border-right:thin solid;
-      border-color:black;
-      padding: 5px;
-    }
-    table {
-      border: 2px solid black;
-    }
-    td {
-      text-align: center;
-      vertical-align: middle;
-    }
-    </style>
-
-    <table border=1 frame=sides cellspacing="0" cellpadding="5">
-      <tr>
-        <th class="border1">Person</th>
-        <th class="border1">Present in how many photos?</th>
-      </tr>
+    <div class="clearfix">
+    <table border=1 frame=sides style="float: left; max-width: 250px; margin: 25px">
+        <th class="border1" colspan=2>All-time Leaderboard</th>
     """
     footer = """
     </table>
     """
-    ranked = get_leaderboard()[::-1]
+    ranked,cnt = get_leaderboard()
+    ranked = ranked[::-1]
     data = [header]
     for i,(person,cnt) in enumerate(ranked):
         block = """
         <tr> 
             <td>{0}</td>
-            <td>{1} photos</td>
+            <td>{1}</td>
         </tr>
-        """.format(person,cnt)
+        """.format(i+1,person)
         data.append(block)
-        if i > 10:
+        if i+1 >= 10:
             break
-    data.append(footer)
-    return "\n\n".join(data)
+    data.append("</table>")
+    
+    history_table = """
+    <table border=1 frame=sides style="float: left; max-width: 250px; margin: 25px">
+        <th class="border1" colspan=2>Previous Winners</th>
+    """
+    for year in range(2017, 2026)[::-1]:
+        winner, winner_metric = get_leaderboard_winner(year, metric = "inv_weight")
+        block = """
+        <tr> 
+            <td>{0}</td>
+            <td>{1}</td>
+        </tr>
+        """.format(year, winner)
+        history_table += block
+    history_table += "</table></div>"
+    data.append(history_table)
+    return "\n".join(data)
 
 
 def create_album_block(key, photo, photo_key_to_album_key, photo_key_to_previous, photo_key_to_next):

@@ -1,6 +1,7 @@
 import json
 import os
 import sys
+import math
 from math import sqrt,floor
 sys.path.append(os.path.abspath("../../"))
 from helper import *
@@ -12,15 +13,22 @@ name_to_cleaned = {
     "remy_blabla": "Remy"
 }
 
+class Score:
+    count = 0
+    inv_weight = 0
+    def __init__(self):
+        pass
+        
+
 def clean_name(name):
     if name in name_to_cleaned:
         return name_to_cleaned[name]
     else:
         return name[0].upper() + name[1:]
 
-def get_leaderboard(year = None, min_cutoff = 1):
-    print(year)
+def get_leaderboard(year = None, metric = "inv_weight"):
     leaderboard = dict()
+    leaderboard_invweighted = dict()
     with open("photos.json", "r") as fw:
         photos = json.load(fw)
         album_photos = []
@@ -31,25 +39,31 @@ def get_leaderboard(year = None, min_cutoff = 1):
             if year != None and photo["year"] != year:
                 continue
             count += 1
-            print(key, photo["people"])
             for person in photo["people"]:
                 if not person in leaderboard:
-                    leaderboard[person] = 0
-                leaderboard[person] += 1
+                    leaderboard[person] = Score()
+                leaderboard[person].count += 1
+                leaderboard[person].inv_weight += 1 / math.log(1 + len(photo["people"]))
+
     del leaderboard["bryan"]
-    leaders = [(clean_name(k),v) for k,v in leaderboard.items() if v >= min_cutoff]
-    ranked = sorted(leaders, key= lambda x : x[1])
+    leaders = [(clean_name(k),v) for k,v in leaderboard.items()]
+    ranked = sorted(leaders, key= lambda x : getattr(x[1], "inv_weight"))
     return ranked, count
 
+def get_leaderboard_winner(year = None, metric = "inv_weight"):
+    ranked_year, count_year = get_leaderboard(year, metric = metric)
+    if len(ranked_year) >= 1:
+        winner, winner_score = ranked_year[-1]
+        winner_metric = getattr(winner_score, metric)
+        if len(ranked_year) > 1 and winner_metric == getattr(ranked_year[-2][1], metric):
+            winner = ", ".join(sorted([w[0] for w in ranked_year if getattr(w[1], metric) == winner_metric]))
+    return winner, winner_metric
+
 if __name__ == '__main__':
-    ranked,count = get_leaderboard()
+    metric = "inv_weight"
+    ranked,count = get_leaderboard(metric = metric)
     for year in range(2017, 2026):
-        ranked_year, count_year = get_leaderboard(year)
-        if len(ranked_year) > 1:
-            winner, winner_cnt = ranked_year[-1]
-            if winner_cnt > ranked_year[-2][1]:
-                winner = ", ".join([w[0] for w in ranked_year if w[1] == winner_cnt])
-            print("winner in {0}: {1} - {2} photos ({3})".format(year, winner, winner_cnt, f"{winner_cnt/count_year:.0%}"))
-    print(ranked)
-    print("\n".join(["{0} - {1}".format(x[0], x[1]) for x in ranked]))
+        winner, winner_metric = get_leaderboard_winner(year, metric)
+        print("winner in {0}: {1} - {2} photos".format(year, winner, winner_metric))
+    print("\n".join(["{0} - {1}".format(x[0], getattr(x[1], metric)) for x in ranked]))
 

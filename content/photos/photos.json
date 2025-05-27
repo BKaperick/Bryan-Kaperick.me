@@ -78,7 +78,9 @@
             "charley",
             "valentin",
             "julien",
-            "rija"
+            "rija",
+            "xia",
+            "alexandre"
         ]
     },
     "Julie_2020_1": {
@@ -549,7 +551,10 @@
             "bryan",
             "tyler",
             "sila",
-            "moneer"
+            "moneer",
+            "bernard",
+            "leah_laura",
+            "ornella"
         ]
     },
     "NempontSaintFirmin_2024_4": {
@@ -563,7 +568,9 @@
             "sila",
             "laura",
             "gassim",
-            "leah_laura"
+            "leah_laura",
+            "ornella",
+            "bernard"
         ]
     },
     "Silas_Bday": {
@@ -851,7 +858,7 @@
             "quentin",
             "rishik",
             "zambuka",
-            "sabia",
+            "sabya",
             "martin"
         ]
     },
@@ -2165,8 +2172,9 @@
         "en": "",
         "fr": "",
         "people": [
-            "bryan",
-            "valentin"
+            "valentin",
+            "clement",
+            "xia"
         ],
         "is_album": false
     },
