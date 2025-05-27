@@ -103,53 +103,51 @@ def get_photo_block_in_album(key, file_name):
 </a></span>
 """.format(file_name, get_photo_captioned_figure_in_album(key))
 
+
 def generate_leaderboard():
+    
+    #
+    # HTML Blocks
+    #
+    two_row_block = """    <tr> 
+        <td>{0}</td>
+        <td>{1}</td>
+    </tr>\n"""
+
+    one_table_header = """<table border=1 frame=sides style="float: left; max-width: 250px; margin: 25px">
+        <th class="border1" colspan=2><?=$language['{0}'];?></th>\n"""
 
     header = """
     <details>
       <summary><h3><?=$language['leaderboard'];?></h3>
     </summary>
+    <div class="clearfix">"""
 
-    <div class="clearfix">
-    <table border=1 frame=sides style="float: left; max-width: 300px; margin: 25px">
-        <th class="border1" colspan=2><?=$language['All-time Leaderboard'];?></th>
-    """
-    footer = """
-    </table>
-    """
+    footer = """</details></div>"""
+    
+    # all-time table filling
+    alltime_table = one_table_header.format("All-time Leaderboard")
     ranked,cnt = get_leaderboard()
-    ranked = ranked[::-1]
-    data = [header]
-    for i,(person,cnt) in enumerate(ranked):
-        block = """
-        <tr> 
-            <td>{0}</td>
-            <td>{1}</td>
-        </tr>
-        """.format(i+1,person)
-        data.append(block)
+    for i,(person,cnt) in enumerate(ranked[::-1]):
+        block = two_row_block.format(i+1,person)
+        alltime_table += block
         if i+1 >= 10:
             break
-    data.append("</table>")
+    alltime_table += "</table>"
     
-    history_table = """
-    <table border=1 frame=sides style="float: left; max-width: 250px; margin: 25px">
-        <th class="border1" colspan=2><?=$language['Previous Winners'];?></th>
-    """
+    # historical table filling
+    history_table = one_table_header.format("Previous Winners")
     for year in range(2017, 2026)[::-1]:
         winner, winner_metric = get_leaderboard_winner(year, metric = "inv_weight")
-        block = """
-        <tr> 
-            <td>{0}</td>
-            <td>{1}</td>
-        </tr>
-        """.format(year, winner)
+        block = two_row_block.format(year, winner)
         history_table += block
     history_table += "</table>"
-
+    
+    # Assemble the data
+    data = [header]
+    data.append(alltime_table)
     data.append(history_table)
-
-    data.append("</details></div>")
+    data.append(footer)
     return "\n".join(data)
 
 
