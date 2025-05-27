@@ -5,7 +5,7 @@
 <html lang="fr">
 <html class="nojs" lang=$lang dir="ltr">
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <link rel="alternate" type="application/rss+xml" title="RSS" href="https://bryan-kaperick.me/index.xml">
 <meta name="created" content="2021-10-24T18:44:04+0200">
@@ -1559,5 +1559,27 @@ figure.single-image {
 #toggle:hover {
   background-color: var(--text-color);
   color: var(--button-text-color);
+}
+
+/* Tables (for now page and photos leaderboard) */
+.border1 {
+  border-top:thin solid;
+  border-bottom:thin solid;
+  border-left:thin solid;
+  border-right:thin solid;
+  border-color:black;
+  padding: 5px;
+}
+table {
+  border: 2px solid black;
+}
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 </style>

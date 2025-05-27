@@ -78,7 +78,9 @@
             "charley",
             "valentin",
             "julien",
-            "rija"
+            "rija",
+            "xia",
+            "alexandre"
         ]
     },
     "Julie_2020_1": {
@@ -549,7 +551,10 @@
             "bryan",
             "tyler",
             "sila",
-            "moneer"
+            "moneer",
+            "bernard",
+            "leah_laura",
+            "ornella"
         ]
     },
     "NempontSaintFirmin_2024_4": {
@@ -563,7 +568,9 @@
             "sila",
             "laura",
             "gassim",
-            "leah_laura"
+            "leah_laura",
+            "ornella",
+            "bernard"
         ]
     },
     "Silas_Bday": {
@@ -851,7 +858,7 @@
             "quentin",
             "rishik",
             "zambuka",
-            "sabia",
+            "sabya",
             "martin"
         ]
     },
@@ -1251,7 +1258,8 @@
         "en": "In Kisama Heritage Village",
         "fr": "A Kisama, un Village du Patrimoine",
         "people": [
-            "bryan"
+            "bryan",
+            "aviraj"
         ],
         "is_album": false
     },
@@ -1805,7 +1813,6 @@
         "en": "Hanoi",
         "fr": "Hano\u00ef",
         "people": [
-            "bryan"
         ],
         "is_album": false
     },
@@ -2008,7 +2015,15 @@
         "fr": "L'anniversaire de Quentin",
         "people": [
             "bryan",
-            "quentin"
+            "quentin",
+            "chantal",
+            "antoine_quentin",
+            "anastasia",
+            "pourbali",
+            "tyler",
+            "sunny",
+            "cecile",
+            "rishik"
         ],
         "is_album": false
     },
@@ -2061,7 +2076,21 @@
         "en": "",
         "fr": "",
         "people": [
-            "bryan"
+            "bryan",
+            "rishik",
+            "quentin",
+            "cecile",
+            "tyler",
+            "gavin",
+            "moneer",
+            "charles",
+            "arnoo",
+            "ravi",
+            "pranjit",
+            "chantal",
+            "anastasia",
+            "jeanne",
+            "myriam"
         ],
         "is_album": false
     },
@@ -2143,8 +2172,9 @@
         "en": "",
         "fr": "",
         "people": [
-            "bryan",
-            "valentin"
+            "valentin",
+            "clement",
+            "xia"
         ],
         "is_album": false
     },
