@@ -1,0 +1,56 @@
+<link rel="shortcut icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="apple-touch-icon" href="../../static/favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Gun smoke</em> &ndash; June 2025</p>
+    <blockquote>
+    <div class="poem"><p><span class="line">Between the felt of the heart</span><br>
+<span class="line">and its velvet-corded veins</span><br>
+<span class="line">sits a fatty layer &mdash;</span><br>
+</p></div>
+<div class="poem"><p><span class="line">grease stains.</span><br>
+<span class="line">Cave frescas smudged into the window</span><br>
+<span class="line">stenciled in by cheeks and fingertips</span><br>
+<span class="line">by past passengers passing by</span><br>
+<span class="line">to be wiped off, slept off, shooed off</span><br>
+<span class="line">like the fly at the movies,</span><br>
+<span class="line">by wind chance,</span><br>
+<span class="line">past velvet-corded</span><br>
+<span class="line">stanchions, brought in, caught in</span><br>
+<span class="line">the midst of lense and action,</span><br>
+<span class="line">between drama and projector's divination.</span><br>
+<span class="line">Shifting as a shadow above the cracks</span><br>
+<span class="line">of rapid fire light &mdash;</span><br>
+</p></div>
+<div class="poem"><p><span class="line">gun smoke.</span><br>
+<span class="line">Drifting up and away</span><br>
+<span class="line">from both hunter and the prey;</span><br>
+<span class="line">it clears, settles, cleans</span><br>
+<span class="line">the traces of the temporary.</span><br>
+<span class="line">All well and good, but</span><br>
+<span class="line">below the bullet blows</span><br>
+<span class="line">penetrate what fat may lay</span><br>
+<span class="line">to blood that fuzzy organ</span><br>
+<span class="line">till it's dead.</p></div>    </blockquote>
+    </div> 
