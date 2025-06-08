@@ -2328,8 +2328,8 @@
         "month": "Jun",
         "year": 2025,
         "order_in_year": 50,
-        "en": "With Clémence at Le Kraken",
-        "fr": "Avec Clémence au Kraken",
+        "en": "With Cl\u00e9mence at Le Kraken",
+        "fr": "Avec Cl\u00e9mence au Kraken",
         "people": [
             "bryan"
         ],
@@ -2341,7 +2341,7 @@
         "year": 2025,
         "order_in_year": 51,
         "en": "Graffiti in Marseilles",
-        "fr": "Graffiti à Marseille",
+        "fr": "Graffiti \u00e0 Marseille",
         "people": [
             "bryan"
         ],
@@ -2365,7 +2365,7 @@
         "year": 2025,
         "order_in_year": 53,
         "en": "Graffiti in Marseilles",
-        "fr": "Graffiti à Marseille",
+        "fr": "Graffiti \u00e0 Marseille",
         "people": [
             "bryan"
         ],
@@ -2404,7 +2404,7 @@
         "year": 2025,
         "order_in_year": 56,
         "en": "Graffiti in Marseilles",
-        "fr": "Graffiti à Marseille",
+        "fr": "Graffiti \u00e0 Marseille",
         "people": [
             "bryan"
         ],
@@ -2417,8 +2417,7 @@
         "order_in_year": 57,
         "en": "Alley in old town of Nice",
         "fr": "Une ruelle dans le vieux quartier de Nice",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     }
 }
