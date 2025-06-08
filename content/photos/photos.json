@@ -2259,5 +2259,158 @@
             "anastasia"
         ],
         "is_album": false
+    },
+    "deule": {
+        "name": "deule_boat.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 46,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "Marseille_Nice": {
+        "name": "Marseille_Nice",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 47,
+        "en": "",
+        "fr": "",
+        "is_album": true,
+        "photos": [
+            "calanques",
+            "calanques_49",
+            "clemence",
+            "marseille",
+            "beach",
+            "graff",
+            "calanques_54",
+            "bananagrams",
+            "marseille_56",
+            "alley"
+        ]
+    },
+    "calanques": {
+        "name": "calanques_plage.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 48,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "calanques_49": {
+        "name": "calanques_mountain.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 49,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "clemence": {
+        "name": "clemence_kraken.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 50,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "marseille": {
+        "name": "marseille_graff_3.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 51,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "beach": {
+        "name": "nice_beach.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 52,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "graff": {
+        "name": "graff_1.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 53,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "calanques_54": {
+        "name": "chantal_myriam_bryan_calanques.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 54,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "bananagrams": {
+        "name": "bananagrams.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 55,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "marseille_56": {
+        "name": "marseille_graff.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 56,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "alley": {
+        "name": "nice_alley.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 57,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
     }
 }
