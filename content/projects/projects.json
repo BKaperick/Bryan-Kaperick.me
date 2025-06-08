@@ -1,13 +1,32 @@
 {
+    "catan": {
+        "title": "Catan.jl",
+        "icon": "../../static/cleaned_catan_logo.svg",
+        "start_month": "Sep",
+        "start_year": "2024",
+        "end_month": "Sep",
+        "end_year": "2024",
+        "github_link": "https://github.com/BKaperick/Catan.jl",
+        "external_link": "",
+        "order_in_month": 1,
+        "en": "Catan.jl is an engine for playing Settlers of Catan with human and scripted players",
+        "fr": "Catan.jl est un moteur pour jouer aux Colons de Catan avec des joueurs humains et scriptés",
+        "tags": ["julia"],
+        "order": 1
+    },
     "wikiswitcher": {
         "title": "WikiSwitcher",
-        "icon": "../../../static/wikiswitcher_icon_cropped.png",
-        "month": "Sep",
-        "year": "2024",
+        "icon": "../../static/wikiswitcher_icon_cropped.png",
+        "start_month": "Sep",
+        "start_year": "2024",
+        "end_month": "Sep",
+        "end_year": "2024",
         "github_link": "https://github.com/BKaperick/WikiSwitcher",
         "external_link": "https://chromewebstore.google.com/detail/wikiswitcher/hpcjbdockpdedhmceilapegnafhldojo",
         "order_in_month": 1,
-        "tagline": "WikiSwitcher is a Google Chrome Extension to automatically choose the best language for a given Wikipedia article",
-        "tags": ["js", "chrome-extension"]
+        "en": "WikiSwitcher is a Google Chrome Extension to automatically choose the best language for a given Wikipedia article",
+        "fr": "WikiSwitcher est une extension Google Chrome qui permet de choisir automatiquement la meilleure langue pour un article donné de Wikipédia",
+        "tags": ["js", "chrome-extension"],
+        "order": 2
     }
 }
