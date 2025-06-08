@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="../../style.css">
 
-<html lang="en">
+<html lang="fr">
 <html class="nojs" lang=$lang dir="ltr">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,16 +49,16 @@
 <body class="list-page front">
 <div class="page layout__page">
 <header class="header layout__header">
-<a href="../../index.html" title="Home" rel="home" class="header__logo"><img src="../../static/logo_cleaned_reduce_50pct.webp" alt="Home" class="header__logo-image invertible"></a>
+<a href="../../index_fr.html" title="Home" rel="home" class="header__logo"><img src="../../static/logo_cleaned_reduce_50pct.webp" alt="Home" class="header__logo-image invertible"></a>
 <h1 class="header__site-name">
-<a href="../../index.html" title="Home" class="header__site-link" rel="home"><span>Bryan Kaperick&#39;s Website</span></a>
+<a href="../../index_fr.html" title="Home" class="header__site-link" rel="home"><span>Le Site Web de Bryan Kaperick</span></a>
 </h1>
 <div class="region header__region">
 <h2 class="visually-hidden">Language selector</h2>
 <nav class="language-selector layout__language-selector">
 
-<a rel="alternate" lang="fr" hreflang="fr" href="/fr/wiki-switcher/wiki-switcher.html"><div class="language_box"><div class="language_text language_text_en">Euh, y&#39;a pas une version Française, hein&nbsp;?</div>
-<img src="../../static/cafe-fr.webp" class="language_icon invertible"></div></a>
+<a rel="alternate" lang="en" hreflang="en" href="/en/projects/projects.html"><div class="language_box"><div class="language_text language_text_fr">Uh, in English please...?</div>
+<img src="../../static/cafe-en.webp" class="language_icon invertible"></div></a>
     
 
 </nav>
@@ -68,14 +68,14 @@
 <nav class="main-menu layout__navigation">
 <h2 class="visually-hidden">Main menu</h2>
 <ul class="navbar">
-<li><a href="../../index.html"
->Home</a></li>
+<li><a href="../../index_fr.html"
+>Accueil</a></li>
 <li><a href="../now/now.html"
->Now</a></li>
+>Maintenant</a></li>
 <li><a href="../poetry/poetry.html" 
->Poetry</a></li>
+>Poésie</a></li>
 <li><a href="../contact/contact.html"
->Contact</a></li>
+>Contacter</a></li>
 <li><a href="../photos/photos.html"
 >Photos</a></li>
 <li><a href="../bio/bio.html"
@@ -83,7 +83,7 @@
 <li><a href="../blog-post/blog-post.html"
 >Blog Posts</a></li>
 <li><a href="projects.html"
-class="active" aria-current="page">Projects</a></li>
+class="active" aria-current="page">Projets</a></li>
 </ul>
 
 </nav>
@@ -91,28 +91,28 @@ class="active" aria-current="page">Projects</a></li>
 <html class="nojs" lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>WikiSwitcher – Bryan Kaperick&#39;s Website</title>
-<meta name="description" content="WikiSwitcher chrome extension">
-<meta name="created" content="2024-10-10T16:33:25+0100">
-<meta name="modified" content="2024-10-10T16:33:25+0100">
+<meta name="viewport" content="width=device-width">
+<title>Projets – Le Site Web de Bryan Kaperick</title>
+
+<meta name="description" content="Divers projets techniques de ma part">
+<meta name="created" content="2021-11-02T23:52:44+0200">
+<meta name="modified" content="2023-07-15T21:16:26+0200">
 
 
-<meta property="og:site_name" content="Bryan Kaperick&#39;s Website">
-<meta property="og:title" content="WikiSwitcher">
-<meta property="og:url" content="https://bryan-kaperick.me/en/projects/wiki-switcher/">
-<meta property="og:type" content="article">
+<meta property="og:site_name" content="Le Site Web de Bryan Kaperick">
+<meta property="og:title" content="Projets">
+<meta property="og:url" content="https://bryan-kaperick.me/fr/projects/projects.html">
+<meta property="og:type" content="website">
 
-<link rel="canonical" href="https://bryan-kaperick.me/en/projects/wiki-switcher/">
+<link rel="canonical" hreflang="en" href="../../en/projects/projects.html">
+<link rel="alternate" hreflang="fr" href="projects.html">
 
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "WikiSwitcher",
-    "datePublished": "2021-11-01T20:33:25+01:00",
-    "dateModified": "2021-11-02T02:38:21+01:00",
-    "url" : "https://bryan-kaperick.me/en/projects/wiki-switcher/",
-    "description": "WikiSwitcher chrome extension",
+    "url" : "https://bryan-kaperick.me/fr/projects/projects.html",
+    "name": "Projects",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://bryan-kaperick.me/"
@@ -127,45 +127,58 @@ class="active" aria-current="page">Projects</a></li>
 
 </head>
 
-<body class="single-page">
+<body class="list-page">
 
-<main class="main wide__main">
-<article class="section-projects single-view">
-<header>
-<h1 class="title ">WikiSwitcher</h1><img src="../../static/wikiswitcher_icon_cropped.png">
-</header>
+<main class="main layout__main">
+<h1 class="title">Projets</h1>
+<article class="section-projects list-view">
 <div class="content">
-    <p>WikiSwitcher is a Google Chrome Extension which allows a user to choose the best language for a given Wikipedia article by comparing the lengths of all versions which exist in the user's configured languages.</p>
-    <p>
-This chrome extension intends to facilitate the user-experience of Wikipedia for users that read in multiple languages. On installation, the user configures the languages they wish to see. Then, when a wikipedia article loads, the extension queries the MediaWiki Action API to query the length of the same article written in other languages that the user speaks. If one is found that is better (i.e. longer text), then a pop-up alert will notify the user prompting the option to redirect to that article language instead.
-</p>
 
-<div class="proparent">
-    <div class="prochild">
-    <img src="../../static/screenshot_1.png" style="max-width:10%">
-    </div>
-
-    <div class="prochild">
-    <img src="../../static/screenshot_2.png" style="max-width:10%">
-    Extension proposing a different language for the article
-    </div>
+Divers projets techniques de ma part.
+<br>
 </div>
-    Popup page for configurating languages
-
 </article>
-</main>
+
+<article class="section-projects list-view">
+
+  <a href="http://localhost:8000/fr/projects/catan.php">
+    <div class="project-wrapper">
+      <header class="project-header">
+      <h2 class="title project-title">Catan.jl</h2>
+          <img class="project-icon" src="../../static/cleaned_catan_logo.svg">
+      </header>
+      <div class="content project-tagline">
+      Catan.jl est un moteur pour jouer aux Colons de Catan avec des joueurs humains et scriptés...
+      </div>
+    </div>
+  </a>
+
+
+  <a href="http://localhost:8000/fr/projects/wikiswitcher.php">
+    <div class="project-wrapper">
+      <header class="project-header">
+      <h2 class="title project-title">WikiSwitcher</h2>
+          <img class="project-icon" src="../../static/wikiswitcher_icon_cropped.png">
+      </header>
+      <div class="content project-tagline">
+      WikiSwitcher est une extension Google Chrome qui permet de choisir automatiquement la meilleure langue pour un article donné de Wikipédia...
+      </div>
+    </div>
+  </a></article>
+
+
 </div>
+</main>
 </body>
 </html>
-
 <footer class="footer layout__footer">
 <span style="color:grey"> 
-<p><span>© Bryan Kaperick&#39;s Website</span> – <nobr>Last updated  2025-05-27
+<p><span>© Le Site Web de Bryan Kaperick</span> – <nobr>Mis à jour  2025-06-08
 </nobr>
 <br>
-The profile picture was sketched by <a href="https://www.instagram.com/j.andrews96/" style="color:#585858">Jason Andrews</a>
+La photo de profile a été esquissée par <a href="https://www.instagram.com/j.andrews96/" style="color:#585858">Jason Andrews</a>
 <br>
-<a href="../attributions/attributions.html" style="color:grey">Click for other artistic attributions</a>
+<a href="../attributions/attributions.html" style="color:grey">Cliquez ici pour des autres attributions artistiques</a>
 </p>
 
 </span>

@@ -1304,11 +1304,18 @@ figure.single-image {
   background-size: cover;
 }
 
+.project-header {
+}
+
 .project-title {
     float: left;
 }
 .project-icon {
+    float: right;
     padding: .5rem 0 .1rem .1rem;
+    max-width: 100px;
+    background-color: #8c8b93; /*#c8c4c3;*/
+    border-radius: 5px;
 }
 .content {
     clear: both;
@@ -1317,6 +1324,7 @@ figure.single-image {
     background-color: #ddd; /*#c8c4c3;*/
     border-radius: 5px;
     padding: .5rem .5rem .5rem .5rem;
+    margin: .5rem .5rem .5rem .5rem;
 }
 .project-tagline {
     text-decoration: none;
