@@ -2268,7 +2268,12 @@
         "en": "",
         "fr": "",
         "people": [
-            "bryan"
+            "bryan",
+            "louise",
+            "rishik",
+            "sunny",
+            "cecile",
+            "pourbali"
         ],
         "is_album": false
     },
@@ -2281,16 +2286,16 @@
         "fr": "",
         "is_album": true,
         "photos": [
+            "calanques_54",
             "calanques",
             "calanques_49",
-            "clemence",
-            "marseille",
-            "beach",
-            "graff",
-            "calanques_54",
             "bananagrams",
+            "marseille",
+            "graff",
             "marseille_56",
-            "alley"
+            "clemence",
+            "alley",
+            "beach"
         ]
     },
     "calanques": {
@@ -2298,10 +2303,11 @@
         "month": "Jun",
         "year": 2025,
         "order_in_year": 48,
-        "en": "",
-        "fr": "",
+        "en": "Les Calanques",
+        "fr": "Les Calanques",
         "people": [
-            "bryan"
+            "chantal",
+            "myriam"
         ],
         "is_album": false
     },
@@ -2310,8 +2316,8 @@
         "month": "Jun",
         "year": 2025,
         "order_in_year": 49,
-        "en": "",
-        "fr": "",
+        "en": "Les Calanques",
+        "fr": "Les Calanques",
         "people": [
             "bryan"
         ],
@@ -2322,8 +2328,8 @@
         "month": "Jun",
         "year": 2025,
         "order_in_year": 50,
-        "en": "",
-        "fr": "",
+        "en": "With Clémence at Le Kraken",
+        "fr": "Avec Clémence au Kraken",
         "people": [
             "bryan"
         ],
@@ -2334,8 +2340,8 @@
         "month": "Jun",
         "year": 2025,
         "order_in_year": 51,
-        "en": "",
-        "fr": "",
+        "en": "Graffiti in Marseilles",
+        "fr": "Graffiti à Marseille",
         "people": [
             "bryan"
         ],
@@ -2358,8 +2364,8 @@
         "month": "Jun",
         "year": 2025,
         "order_in_year": 53,
-        "en": "",
-        "fr": "",
+        "en": "Graffiti in Marseilles",
+        "fr": "Graffiti à Marseille",
         "people": [
             "bryan"
         ],
@@ -2373,7 +2379,9 @@
         "en": "",
         "fr": "",
         "people": [
-            "bryan"
+            "bryan",
+            "chantal",
+            "myriam"
         ],
         "is_album": false
     },
@@ -2385,7 +2393,8 @@
         "en": "",
         "fr": "",
         "people": [
-            "bryan"
+            "myriam",
+            "chantal"
         ],
         "is_album": false
     },
@@ -2394,8 +2403,8 @@
         "month": "Jun",
         "year": 2025,
         "order_in_year": 56,
-        "en": "",
-        "fr": "",
+        "en": "Graffiti in Marseilles",
+        "fr": "Graffiti à Marseille",
         "people": [
             "bryan"
         ],
@@ -2406,10 +2415,9 @@
         "month": "Jun",
         "year": 2025,
         "order_in_year": 57,
-        "en": "",
-        "fr": "",
+        "en": "Alley in old town of Nice",
+        "fr": "Une ruelle dans le vieux quartier de Nice",
         "people": [
-            "bryan"
         ],
         "is_album": false
     }
