@@ -2283,7 +2283,7 @@
         "year": 2025,
         "order_in_year": 47,
         "en": "A short trip to Marseilles and Nice",
-        "fr": "Un petit voyage à Marseille et à Nice",
+        "fr": "Un petit voyage \u00e0 Marseille et \u00e0 Nice",
         "is_album": true,
         "photos": [
             "calanques_54",
