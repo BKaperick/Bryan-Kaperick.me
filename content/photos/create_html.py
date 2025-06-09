@@ -194,6 +194,7 @@ with open("photos.json", "r") as fw:
             block = get_photo_block(key, file_name)
             photo_blocks.append((block, photo))
     
+    # This gets piped to `./content/photos/photos.html`
     print(generate_leaderboard() + "\n\n")
     print("\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
     

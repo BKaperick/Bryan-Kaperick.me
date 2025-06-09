@@ -25,5 +25,9 @@ cd ../attributions
 echo "starting attributions ingestion"
 python3 create_html.py
 
+cd ../projects
+echo "starting project ingestion"
+python3 ./scripts/create_html.py
+
 cd ../..
 echo "finished data ingestion"

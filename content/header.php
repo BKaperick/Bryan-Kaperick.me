@@ -123,6 +123,13 @@ $language_toggle = array(
 : "" ?>><?=$language['Blog Posts'];
 ?>
 </a></li>
+<li><a href="/<?=$lang?>/projects/projects.php"
+<?=
+(str_contains($_SERVER['SCRIPT_FILENAME'], "projects")) 
+? "class=\"active\" aria-current=\"page\"" 
+: "" ?>><?=$language['Projects'];
+?>
+</a></li>
 </ul>
 
 </nav>
