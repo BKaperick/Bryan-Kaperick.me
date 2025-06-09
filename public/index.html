@@ -230,6 +230,7 @@ and (max-device-width: 665px)
   --button-text-color: #fff;
   --submit-border: #e4e4e4;
   --css-grey: grey;
+  --project-icon-bg: #8c8b93;
   --menu-focus: #666666;
   --border-left: #d2d2d2;
   --border-bottom: #b4b4b4;
@@ -1499,12 +1500,15 @@ figure.single-image {
 }
 
 .project-footer {
-    float:right;
-    display:flex;
-    /*
-    clear: both;
-     * */
     margin: .5rem .5rem .5rem .5rem;
+    width:100%;
+}
+.project-footer-left {
+    float: left;
+}
+.project-footer-right {
+    text-align: right;
+    float: right;
 }
 .project-footer-icon {
     min-width: 50px;
@@ -1512,19 +1516,24 @@ figure.single-image {
     /*float: right;*/
     padding: .1rem .1rem .1rem .1rem;
     border-radius: 5px;
-    background-color: #8c8b93; /*#c8c4c3;*/
+    background-color: var(--project-icon-bg); /*#c8c4c3;*/
     margin: .1rem .1rem .1rem .1rem;
+    float:right;
 }
+
+.project-tag {
+    font-size: smaller;
+    margin: .1rem .1rem .1rem .1rem;
+    padding: 0rem .1rem 0rem .1rem;
+    border-radius: 5px;
+    background-color: var(--project-icon-bg); /*#c8c4c3;*/
+    float:left;
+}
+
 .project-footer-link-icon {
     min-width: 25px;
     max-width: 25px;
-    /*float: right;*/
     color: var(--black-color);
-    /*
-    filter: 1;
-    Vxcolor: white;
-     *
-     * filter: invert(var(--filter-applied));*/
     padding: .1rem .1rem .1rem .1rem;
     margin: .1rem .1rem .1rem .1rem;
 }
@@ -1539,7 +1548,7 @@ figure.single-image {
     float: right;
     padding: .3rem .3rem .3rem .3rem;
     max-width: 100px;
-    background-color: #8c8b93; /*#c8c4c3;*/
+    background-color: var(--project-icon-bg); 
     border-radius: 5px;
 }
 .content {
@@ -1558,7 +1567,7 @@ figure.single-image {
 }
 .project-tagline {
     text-decoration: none;
-
+}
 .language_icon {
   max-width: 50px;
   max-width: 25%;
