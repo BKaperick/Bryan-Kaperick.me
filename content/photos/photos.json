@@ -2259,5 +2259,165 @@
             "anastasia"
         ],
         "is_album": false
+    },
+    "deule": {
+        "name": "deule_boat.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 46,
+        "en": "Boating on La Deule for Sunny's birthday",
+        "fr": "On fait du bateau sur La Deule pour l'anniversaire de Sunny",
+        "people": [
+            "bryan",
+            "louise",
+            "rishik",
+            "sunny",
+            "cecile",
+            "pourbali"
+        ],
+        "is_album": false
+    },
+    "Marseille_Nice": {
+        "name": "Marseille_Nice",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 47,
+        "en": "A short trip to Marseilles and Nice",
+        "fr": "Un petit voyage \u00e0 Marseille et \u00e0 Nice",
+        "is_album": true,
+        "photos": [
+            "calanques_54",
+            "calanques",
+            "calanques_49",
+            "bananagrams",
+            "marseille",
+            "marseille_56",
+            "graff",
+            "clemence",
+            "alley",
+            "beach"
+        ]
+    },
+    "calanques": {
+        "name": "calanques_plage.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 48,
+        "en": "Aux Calanques",
+        "fr": "Aux Calanques",
+        "people": [
+            "chantal",
+            "myriam"
+        ],
+        "is_album": false
+    },
+    "calanques_49": {
+        "name": "calanques_mountain.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 49,
+        "en": "Aux Calanques",
+        "fr": "Aux Calanques",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "clemence": {
+        "name": "clemence_kraken.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 50,
+        "en": "With Cl\u00e9mence at Le Kraken",
+        "fr": "Avec Cl\u00e9mence au Kraken",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "marseille": {
+        "name": "marseille_graff_3.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 51,
+        "en": "Roger, GG, Mimi, and lil' Migi",
+        "fr": "Roger, GG, Mimi, et lil' Migi",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "beach": {
+        "name": "nice_beach.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 52,
+        "en": "Mi on a Nice beach",
+        "fr": "Mi sur un Nice plage",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "graff": {
+        "name": "graff_1.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 53,
+        "en": "GG and Mimi?",
+        "fr": "GG et Mimi ?",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "calanques_54": {
+        "name": "chantal_myriam_bryan_calanques.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 54,
+        "en": "Aux Calanques",
+        "fr": "Aux Calanques",
+        "people": [
+            "bryan",
+            "chantal",
+            "myriam"
+        ],
+        "is_album": false
+    },
+    "bananagrams": {
+        "name": "bananagrams.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 55,
+        "en": "Bananagrams, gg",
+        "fr": "Bananagrams, gg",
+        "people": [
+            "myriam",
+            "chantal"
+        ],
+        "is_album": false
+    },
+    "marseille_56": {
+        "name": "marseille_graff.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 56,
+        "en": "GG + Mimi <3",
+        "fr": "GG + Mimi <3",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "alley": {
+        "name": "nice_alley.jpg",
+        "month": "Jun",
+        "year": 2025,
+        "order_in_year": 57,
+        "en": "Alley in old town of Nice",
+        "fr": "Une ruelle dans le vieux quartier de Nice",
+        "people": [],
+        "is_album": false
     }
 }
