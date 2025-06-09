@@ -12,6 +12,7 @@ months = {
 'Nov': 10,
 'Dec': 11
 }
+months_reverse = {v:k for k,v in months.items()}
 
 invalid_key_chars = [r"<", r">", ",", ".", r"&rsquo;", "'", "-", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 def clean_key(w):
