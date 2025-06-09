@@ -1,75 +1,5 @@
 [
     {
-        "title": "nice_alley.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/alley",
-        "desc": "Alley in old town of Nice",
-        "date": "20250601",
-        "category": "photos"
-    },
-    {
-        "title": "marseille_graff.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/marseille_56",
-        "desc": "GG + Mimi <3",
-        "date": "20250601",
-        "category": "photos"
-    },
-    {
-        "title": "bananagrams.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/bananagrams",
-        "desc": "Bananagrams, gg",
-        "date": "20250601",
-        "category": "photos"
-    },
-    {
-        "title": "chantal_myriam_bryan_calanques.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/calanques_54",
-        "desc": "Aux Calanques",
-        "date": "20250601",
-        "category": "photos"
-    },
-    {
-        "title": "graff_1.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/graff",
-        "desc": "GG and Mimi?",
-        "date": "20250601",
-        "category": "photos"
-    },
-    {
-        "title": "nice_beach.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/beach",
-        "desc": "Mi on a Nice beach",
-        "date": "20250601",
-        "category": "photos"
-    },
-    {
-        "title": "marseille_graff_3.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/marseille",
-        "desc": "Roger, GG, Mimi, and lil' Migi",
-        "date": "20250601",
-        "category": "photos"
-    },
-    {
-        "title": "clemence_kraken.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/clemence",
-        "desc": "With Cl\u00e9mence at Le Kraken",
-        "date": "20250601",
-        "category": "photos"
-    },
-    {
-        "title": "calanques_mountain.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/calanques_49",
-        "desc": "Aux Calanques",
-        "date": "20250601",
-        "category": "photos"
-    },
-    {
-        "title": "calanques_plage.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/calanques",
-        "desc": "Aux Calanques",
-        "date": "20250601",
-        "category": "photos"
-    },
-    {
         "title": "Marseille_Nice",
         "link": "https://www.bryan-kaperick.me/en/photos/Marseille_Nice",
         "desc": "A short trip to Marseilles and Nice",
@@ -98,27 +28,6 @@
         "category": "photos"
     },
     {
-        "title": "kayak_la_lesse.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/kayak",
-        "desc": "",
-        "date": "20250501",
-        "category": "photos"
-    },
-    {
-        "title": "kayak_castle.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/castle",
-        "desc": "",
-        "date": "20250501",
-        "category": "photos"
-    },
-    {
-        "title": "kayak_others.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/others",
-        "desc": "",
-        "date": "20250501",
-        "category": "photos"
-    },
-    {
         "title": "DescendingLaLesse",
         "link": "https://www.bryan-kaperick.me/en/photos/DescendingLaLesse",
         "desc": "Kayaking on La Lesse river in the Ardennes",
@@ -126,65 +35,9 @@
         "category": "photos"
     },
     {
-        "title": "la_courbiere_site.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/courbiere",
-        "desc": "",
-        "date": "20250501",
-        "category": "photos"
-    },
-    {
-        "title": "lyon_bbq.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/lyon",
-        "desc": "",
-        "date": "20250501",
-        "category": "photos"
-    },
-    {
-        "title": "lyon_climbing_2.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/climbing_28",
-        "desc": "",
-        "date": "20250501",
-        "category": "photos"
-    },
-    {
-        "title": "lyon_climbing_1.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/climbing_27",
-        "desc": "",
-        "date": "20250501",
-        "category": "photos"
-    },
-    {
-        "title": "lyon_climbing_devers.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/climbing_26",
-        "desc": "",
-        "date": "20250501",
-        "category": "photos"
-    },
-    {
-        "title": "lyon_climbing_descend.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/climbing_25",
-        "desc": "",
-        "date": "20250501",
-        "category": "photos"
-    },
-    {
         "title": "LyonClimbingMay2025",
         "link": "https://www.bryan-kaperick.me/en/photos/LyonClimbingMay2025",
         "desc": "Weekend in Lyon climbing at 'Le gouffre d'enfer'",
-        "date": "20250501",
-        "category": "photos"
-    },
-    {
-        "title": "rishik_bbq_2.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/rishik_22",
-        "desc": "",
-        "date": "20250501",
-        "category": "photos"
-    },
-    {
-        "title": "rishik_bbq.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/rishik_21",
-        "desc": "",
         "date": "20250501",
         "category": "photos"
     },
@@ -252,101 +105,10 @@
         "category": "poetry"
     },
     {
-        "title": "hanoi_rooftops.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/rooftops",
-        "desc": "Hanoi",
-        "date": "20250201",
-        "category": "photos"
-    },
-    {
-        "title": "bryan_cave.HEIC",
-        "link": "https://www.bryan-kaperick.me/en/photos/caveheic",
-        "desc": "Tien Son cave",
-        "date": "20250201",
-        "category": "photos"
-    },
-    {
-        "title": "bryan_hippo_alex_caves.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/bryan_12",
-        "desc": "Tien Son cave",
-        "date": "20250201",
-        "category": "photos"
-    },
-    {
-        "title": "bryan_moto.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/bryan_11",
-        "desc": "H\u1ea3i V\u00e2n Pass",
-        "date": "20250201",
-        "category": "photos"
-    },
-    {
-        "title": "bryan_alex_garagist.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/garagist",
-        "desc": "",
-        "date": "20250201",
-        "category": "photos"
-    },
-    {
-        "title": "hippo_bryan_alex_bbq.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/hippo",
-        "desc": "Hoi An",
-        "date": "20250201",
-        "category": "photos"
-    },
-    {
-        "title": "cropped_bryan_bookstreet.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/bookstreet",
-        "desc": "Ho Chi Minh",
-        "date": "20250201",
-        "category": "photos"
-    },
-    {
-        "title": "bryan_bus_coding.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/coding",
-        "desc": "Remote work",
-        "date": "20250201",
-        "category": "photos"
-    },
-    {
-        "title": "bryan_hippo_eating.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/eating_6",
-        "desc": "Siem Reap",
-        "date": "20250201",
-        "category": "photos"
-    },
-    {
-        "title": "cropped_bryan_salon.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/cropped",
-        "desc": "",
-        "date": "20250201",
-        "category": "photos"
-    },
-    {
-        "title": "bryan_tights.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/tights",
-        "desc": "",
-        "date": "20250201",
-        "category": "photos"
-    },
-    {
-        "title": "hanoi_street.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/street",
-        "desc": "Hanoi",
-        "date": "20250201",
-        "category": "photos"
-    },
-    {
         "title": "SE_Asia_Alex_Hippo",
         "link": "https://www.bryan-kaperick.me/en/photos/SE_Asia_Alex_Hippo",
         "desc": "Trip in Cambodia and Vietnam with Alex and Hippo",
         "date": "20250201",
-        "category": "photos"
-    },
-    {
-        "title": "qutub_minar_rishik.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/rishik_1",
-        "desc": "",
-        "date": "20250101",
         "category": "photos"
     },
     {
@@ -357,219 +119,9 @@
         "category": "poetry"
     },
     {
-        "title": "more_waterfalls.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/waterfalls",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "action_marriage_reception.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/reception",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "root_bridge.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/bridge",
-        "desc": "The Mawkyrnot Living Root Bridge",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "taj_mahal.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/mahal",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "pregnant_goats.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/pregnant",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "north_dehli.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/north",
-        "desc": "Busy street in Delhi",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "qutub_minar_dazed.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/qutub",
-        "desc": "Qutub Minar tower",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "cleansing_ceremony.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/cleansing",
-        "desc": "The Haldi (cleansing) ceremony",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "cave_climbing.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/climbing",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "dehli_ferris_wheel.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/ferris",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "learning_drive_manual.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/learning_15",
-        "desc": "Learning to drive stick",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "kids_room_solar_system.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/system",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "good_lighting_cave.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/lighting",
-        "desc": "Krem Chympe cave",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "bryan_cecile_qutub_minar.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/cecile_11",
-        "desc": "At Qutub Minar in Delhi",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "rishik_smoking.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/smoking",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "brahmaputra_picnic.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/brahmaputra",
-        "desc": "Picnic at the Brahmaputra river",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "blurry_golfcourse.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/golfcourse_7",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "golden_hour_stadium.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/stadium",
-        "desc": "Jorhat stadium",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "fefe_falls.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/falls",
-        "desc": "Fefe falls",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "shadow_golfcourse.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/golfcourse",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "rishik_tyler_farmers.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/farmers",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "nagakitchen.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/nagakitchen",
-        "desc": "Pork thali, Naga-style",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
         "title": "Iiindia",
         "link": "https://www.bryan-kaperick.me/en/photos/Iiindia",
         "desc": "Trip to India with Tyler, Rishik, C\u00e9cile and Quentin",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "japfu_summet.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/summet_12",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "rhododendron_trees.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/rhododendron",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "frosted_ground.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/frosted",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "summet_view_2.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/summet_9",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "peak_from_trailhead.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/trailhead",
-        "desc": "View from the trailhead",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "summet_view_1.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/summet",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "burned_fields.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/burned",
-        "desc": "Jhum cultivation (slash-and-burn agriculture)",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "summetselfi.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/summetselfi",
-        "desc": "",
         "date": "20241201",
         "category": "photos"
     },
@@ -581,93 +133,9 @@
         "category": "photos"
     },
     {
-        "title": "kohima_day.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/kohima_3",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "kohima_night_2.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/kohima_2",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "kohima_night_1.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/kohima",
-        "desc": "",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
         "title": "Kristmas_in_Kohima",
         "link": "https://www.bryan-kaperick.me/en/photos/Kristmas_in_Kohima",
         "desc": "Kristmas in Kohima with Aviraj and Tridip",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "random_kohima_girl.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/random",
-        "desc": "She wanted a \"Christmas couple\" photo",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "scooty_kohima.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/scooty",
-        "desc": "Learned to ride a scooty",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "aviraj_bryan_tridip_christmas.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/christmas",
-        "desc": "At Faith Harvest Church after Christmas mass",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "mexican_standoff.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/standoff",
-        "desc": "In Kisama Heritage Village",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "retying_the_rice.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/retying",
-        "desc": "Aviraj and Tridip reseal the rice bag in the taxi trunk",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "cathedral_showing.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/cathedral",
-        "desc": "In front of the local Catholic Cathedral",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "streetfood_avi.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/streetfood",
-        "desc": "Eating some street food",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "random_kohimians.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/kohimians",
-        "desc": "Unknown Kohimians",
-        "date": "20241201",
-        "category": "photos"
-    },
-    {
-        "title": "failed_chicken_selfie.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/chicken",
-        "desc": "Chickens at the guest house",
         "date": "20241201",
         "category": "photos"
     },
@@ -707,62 +175,6 @@
         "category": "photos"
     },
     {
-        "title": "view_julie_laurine_apt.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/laurine_43",
-        "desc": "View from their apartment",
-        "date": "20241001",
-        "category": "photos"
-    },
-    {
-        "title": "bryan_laurine_devers.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/laurine_42",
-        "desc": "",
-        "date": "20241001",
-        "category": "photos"
-    },
-    {
-        "title": "julie_laurine_dalle.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/laurine_41",
-        "desc": "",
-        "date": "20241001",
-        "category": "photos"
-    },
-    {
-        "title": "sixb_plus.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/sixb",
-        "desc": "Me flashing a 6b+",
-        "date": "20241001",
-        "category": "photos"
-    },
-    {
-        "title": "lyon_julie_laurine_bryan.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/laurine",
-        "desc": "",
-        "date": "20241001",
-        "category": "photos"
-    },
-    {
-        "title": "julie_biking.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/biking",
-        "desc": "",
-        "date": "20241001",
-        "category": "photos"
-    },
-    {
-        "title": "croix_rousse.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/rousse",
-        "desc": "Sunrise in La Croix Rousse neighborhood",
-        "date": "20241001",
-        "category": "photos"
-    },
-    {
-        "title": "pizza_cecile.jpeg",
-        "link": "https://www.bryan-kaperick.me/en/photos/cecile_36",
-        "desc": "C\u00e9cile's",
-        "date": "20241001",
-        "category": "photos"
-    },
-    {
         "title": "PizzaParty",
         "link": "https://www.bryan-kaperick.me/en/photos/PizzaParty",
         "desc": "Pizza Party at Sunny and C\u00e9cile's place",
@@ -770,72 +182,9 @@
         "category": "photos"
     },
     {
-        "title": "pizza_rishik.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/rishik",
-        "desc": "Rishik's",
-        "date": "20241001",
-        "category": "photos"
-    },
-    {
-        "title": "pizza_eating.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/eating",
-        "desc": "",
-        "date": "20241001",
-        "category": "photos"
-    },
-    {
-        "title": "pizza_bryan.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/pizza_33",
-        "desc": "Mine",
-        "date": "20241001",
-        "category": "photos"
-    },
-    {
-        "title": "piaaz_sunny.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/piaaz",
-        "desc": "Sunny's",
-        "date": "20241001",
-        "category": "photos"
-    },
-    {
-        "title": "pizza_tyler_anastasia.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/anastasia",
-        "desc": "Tyler and Anastasia's",
-        "date": "20241001",
-        "category": "photos"
-    },
-    {
-        "title": "pizza_prep.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/pizza",
-        "desc": "",
-        "date": "20241001",
-        "category": "photos"
-    },
-    {
         "title": "Pacs_Party",
         "link": "https://www.bryan-kaperick.me/en/photos/Pacs_Party",
         "desc": "C\u00e9cile's housewarming party",
-        "date": "20241001",
-        "category": "photos"
-    },
-    {
-        "title": "cecile_sunny_pacs.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/cecile",
-        "desc": "",
-        "date": "20241001",
-        "category": "photos"
-    },
-    {
-        "title": "rishik_bryan_cleaning.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/cleaning",
-        "desc": "",
-        "date": "20241001",
-        "category": "photos"
-    },
-    {
-        "title": "quentin_bryan_pacs.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/quentin_26",
-        "desc": "",
         "date": "20241001",
         "category": "photos"
     },
@@ -850,34 +199,6 @@
         "title": "GR10",
         "link": "https://www.bryan-kaperick.me/en/photos/GR10",
         "desc": "Through-hike in the Pyrenees on the GR10 trail",
-        "date": "20240901",
-        "category": "photos"
-    },
-    {
-        "title": "GR10100_0406_openroad.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/openroad",
-        "desc": "",
-        "date": "20240901",
-        "category": "photos"
-    },
-    {
-        "title": "GR10100_0318_majesticcow.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/majesticcow",
-        "desc": "",
-        "date": "20240901",
-        "category": "photos"
-    },
-    {
-        "title": "GR10100_0391_ontop.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/ontop",
-        "desc": "",
-        "date": "20240901",
-        "category": "photos"
-    },
-    {
-        "title": "GR10100_0185_greatlighting.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/greatlighting",
-        "desc": "",
         "date": "20240901",
         "category": "photos"
     },
@@ -913,20 +234,6 @@
         "title": "tyler_sunny_quentin_new_apt.jpg",
         "link": "https://www.bryan-kaperick.me/en/photos/quentin",
         "desc": "Tyler, Sunny, Me, and Quentin in a new apartment with a new camera ",
-        "date": "20240801",
-        "category": "photos"
-    },
-    {
-        "title": "biketrip.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/biketripjpeg",
-        "desc": "Day two",
-        "date": "20240801",
-        "category": "photos"
-    },
-    {
-        "title": "bryan-tyler-rishik-biking.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/bryantylerrishikbikingjpeg",
-        "desc": "Day one",
         "date": "20240801",
         "category": "photos"
     },
@@ -1001,62 +308,6 @@
         "category": "photos"
     },
     {
-        "title": "tim-bryan-horses.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/country_2024_12",
-        "desc": "Me and Tim at a horse farm in Basque country",
-        "date": "20240501",
-        "category": "photos"
-    },
-    {
-        "title": "bryan-tim-stokes.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/Zarautz_2024_11",
-        "desc": "Me and Tim at a surf hostel near Zarautz",
-        "date": "20240501",
-        "category": "photos"
-    },
-    {
-        "title": "flo-tim-spain.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/Algeciras_2024_10",
-        "desc": "Flo, Tim, and Me in Algeciras",
-        "date": "20240501",
-        "category": "photos"
-    },
-    {
-        "title": "tangiers-coffee.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/Tangiers_2024_9",
-        "desc": "Me and Tim at a caf\u00e9 in Tangiers",
-        "date": "20240501",
-        "category": "photos"
-    },
-    {
-        "title": "maroc-hike-cat.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/Climbing_2024_8",
-        "desc": "Climbing near Tetouan with Tim, Me, and a village cat",
-        "date": "20240501",
-        "category": "photos"
-    },
-    {
-        "title": "maroc-hike-hole.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/Tetouan_2024_7",
-        "desc": "Hiking near Tetouan with Sami, Tim, Me, and Flo",
-        "date": "20240501",
-        "category": "photos"
-    },
-    {
-        "title": "asilah-beach.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/Constance_2024_6",
-        "desc": "On the beach near Asilah with Margaux, Me, Tim, Constance, Clemence, and Sami",
-        "date": "20240501",
-        "category": "photos"
-    },
-    {
-        "title": "couscous.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/mothers_2024_5",
-        "desc": "Eating Sami&rsquo;s mother&rsquo;s couscous with Alex, Me, Sami, and Tim",
-        "date": "20240501",
-        "category": "photos"
-    },
-    {
         "title": "bryan_dance_coloc_party.jpg",
         "link": "https://www.bryan-kaperick.me/en/photos/bryan",
         "desc": "Me dancing",
@@ -1074,20 +325,6 @@
         "title": "Silas_Bday",
         "link": "https://www.bryan-kaperick.me/en/photos/Silas_Bday",
         "desc": "Sila&rsquo;s 30th birthday in Nempont-Saint-Firmin",
-        "date": "20240501",
-        "category": "photos"
-    },
-    {
-        "title": "sila-bday-balcony.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/NempontSaintFirmin_2024_4",
-        "desc": "In Nempont-Saint-Firmin",
-        "date": "20240501",
-        "category": "photos"
-    },
-    {
-        "title": "sila-bday-beach.jpg",
-        "link": "https://www.bryan-kaperick.me/en/photos/Silas_2024_3",
-        "desc": "Also in Berck",
         "date": "20240501",
         "category": "photos"
     },

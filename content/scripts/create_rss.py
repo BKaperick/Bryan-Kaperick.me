@@ -3,6 +3,7 @@ from datetime import datetime
 import re
 import os
 import sys
+import itertools
 sys.path.append(os.path.abspath("../../"))
 from helper import *
 
@@ -125,9 +126,11 @@ def create_poem_content_list(items):
 def create_photo_content_list(items):
     with open("../photos/photos.json", 'r+') as fread:
         photos = [p for p in json.load(fread).items()]# if p[1]["is_album"] == False]
+        album_photos = set(itertools.chain.from_iterable([p[1]["photos"] for p in photos if "is_album" in p[1] and p[1]["is_album"]]))
         #poems = sorted(poems, key=ordering)
         for name, photo in photos:
-            items['en'].append(create_photo_json(name, photo, 'en'))
-            items['fr'].append(create_photo_json(name, photo, 'fr'))
+            if not name in album_photos:
+                items['en'].append(create_photo_json(name, photo, 'en'))
+                items['fr'].append(create_photo_json(name, photo, 'fr'))
 
 create_combined_content_list()
