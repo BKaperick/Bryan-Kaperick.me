@@ -39,6 +39,7 @@ and (max-device-width: 665px)
   --button-text-color: #fff;
   --submit-border: #e4e4e4;
   --css-grey: grey;
+  --project-icon-bg: #8c8b93;
   --menu-focus: #666666;
   --border-left: #d2d2d2;
   --border-bottom: #b4b4b4;
@@ -189,7 +190,7 @@ dd {
 
 ol,
 ul {
-	padding: 0 0 0 44px
+	padding: 0 0 0 22px
 }
 
 ol ol,
@@ -1302,6 +1303,79 @@ figure.single-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.project-header {
+}
+
+.project-footer {
+    margin: .5rem .5rem .5rem .5rem;
+    width:100%;
+}
+.project-footer-left {
+    float: left;
+}
+.project-footer-right {
+    text-align: right;
+    float: right;
+}
+.project-footer-icon {
+    min-width: 50px;
+    max-width: 50px;
+    /*float: right;*/
+    padding: .1rem .1rem .1rem .1rem;
+    border-radius: 5px;
+    background-color: var(--project-icon-bg); /*#c8c4c3;*/
+    margin: .1rem .1rem .1rem .1rem;
+    float:right;
+}
+
+.project-tag {
+    font-size: smaller;
+    margin: .1rem .1rem .1rem .1rem;
+    padding: 0rem .1rem 0rem .1rem;
+    border-radius: 5px;
+    background-color: var(--project-icon-bg); /*#c8c4c3;*/
+    float:left;
+}
+
+.project-footer-link-icon {
+    min-width: 25px;
+    max-width: 25px;
+    color: var(--black-color);
+    padding: .1rem .1rem .1rem .1rem;
+    margin: .1rem .1rem .1rem .1rem;
+}
+
+.project-year {
+    margin-left: 1rem;
+}
+.project-title {
+    float: left;
+}
+.project-icon {
+    float: right;
+    padding: .3rem .3rem .3rem .3rem;
+    max-width: 100px;
+    background-color: var(--project-icon-bg); 
+    border-radius: 5px;
+}
+.content {
+    clear: both;
+}
+.project-content {
+    clear: both;
+}
+.project-wrapper {
+    background-color: #ddd; /*#c8c4c3;*/
+    border-radius: 5px;
+    padding: .5rem .5rem .5rem .5rem;
+    margin: .5rem .5rem .5rem .5rem;
+    display: inline-block;
+    width: 100%;
+}
+.project-tagline {
+    text-decoration: none;
 }
 .language_icon {
   max-width: 50px;
