@@ -20,12 +20,6 @@ ICONS = {
         }
 
 
-"""
-"url": "https://github.com/BKaperick/Catan.jl",
-"external": true,
-"icon": "github"
-"""
-
 def get_footer_link(key, link, i):
     icon = ICONS[link["icon"]]
     return """
@@ -33,23 +27,36 @@ def get_footer_link(key, link, i):
           <img class="project-footer-icon" src={2}>
         </a>""".format(key, i, icon)
 
-def create_footer_project_preview_block(key, links):
+def get_footer_tag(key, i):
+    return """<span class="project-tag"><?=$p->{0}->tags[{1}];?></span>""".format(key, i)
+
+def create_footer_project_preview_block(key, links, tags):
     link_blocks = []
     for i,link in enumerate(links):
         link_blocks.append(get_footer_link(key, link, i))
     links_str = "\n".join(link_blocks)
+    
+    tag_blocks = []
+    for i,tag in enumerate(tags):
+        tag_blocks.append(get_footer_tag(key, i))
+    tags_str = "\n".join(tag_blocks)
 
         
     return """<footer class="project-footer">
+        <span class="project-footer-left">
+        {1}
+        </span>
+        <span class="project-footer-right">
         <img class="invertible project-footer-link-icon" src="../../static/url-link.svg">
         {0}
-      </footer>""".format(links_str)
+        </span>
+      </footer>""".format(links_str, tags_str)
 
 def create_project_preview_block(key, project):
     head = """<div class="project-wrapper">\n"""
     header = create_header_project_preview_block(key, project)
     body = create_body_project_preview_block(key)
-    footer = create_footer_project_preview_block(key, project["links"])
+    footer = create_footer_project_preview_block(key, project["links"], project["tags"])
     foot = "\n</div>"
 
     return head + header + body + footer + foot

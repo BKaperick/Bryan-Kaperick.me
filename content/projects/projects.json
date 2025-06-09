@@ -14,7 +14,7 @@
         "order_in_month": 1,
         "en": "CatanLearning.jl uses CatanEngine.jl to implement reinforcement-learning players which learn high-level strategies via self-play.",
         "fr": "CatanLearning.jl utilise CatanEngine.jl pour implémenter des joueurs à apprentissage par renforcement qui apprennent des stratégies de haut niveau en jouant eux-mêmes.",
-        "tags": ["julia", "ml", "rl"],
+        "tags": ["julia", "machine-learning", "reinforcement-learning"],
         "order": 1
     },
     "catan": {
@@ -34,7 +34,7 @@
         "order_in_month": 1,
         "en": "CatanEngine.jl is an engine for playing Settlers of Catan with human and scripted players.",
         "fr": "CatanEngine.jl est un moteur pour jouer aux Colons de Catan avec des joueurs humains et scriptés.",
-        "tags": ["julia"],
+        "tags": ["julia", "async-programming"],
         "order": 2
     },
     "wikiswitcher": {
@@ -58,8 +58,8 @@
         ],
         "order": 3,
         "en": "WikiSwitcher is a Google Chrome Extension to automatically choose the best language for a given Wikipedia article among the user's configured languaged.",
-        "fr": "WikiSwitcher est une extension Google Chrome qui permet de choisir automatiquement la meilleure langue pour un article donné de Wikipédia parmi les langues selectionnées par l'utilisateur",
-        "tags": ["js", "chrome-extension"],
+        "fr": "WikiSwitcher est une extension Google Chrome qui permet de choisir automatiquement la meilleure langue pour un article donné de Wikipédia parmi les langues selectionnées par l'utilisateur.",
+        "tags": ["java-script", "chrome-extension"],
         "order": 3
     },
     "fizz": {
@@ -78,6 +78,7 @@
                 "external": true,
                 "icon": "github"
             }
-        ]
+        ],
+        "tags": ["python", "physics"]
     }
 }
