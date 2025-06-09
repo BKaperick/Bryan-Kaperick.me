@@ -1377,6 +1377,12 @@ figure.single-image {
 .project-tagline {
     text-decoration: none;
 }
+
+.rss-icon {
+  max-width: 40px;
+  float: right;
+}
+
 .language_icon {
   max-width: 50px;
   max-width: 25%;
