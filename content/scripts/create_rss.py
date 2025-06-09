@@ -127,10 +127,12 @@ def create_photo_content_list(items):
     with open("../photos/photos.json", 'r+') as fread:
         photos = [p for p in json.load(fread).items()]# if p[1]["is_album"] == False]
         album_photos = set(itertools.chain.from_iterable([p[1]["photos"] for p in photos if "is_album" in p[1] and p[1]["is_album"]]))
-        #poems = sorted(poems, key=ordering)
         for name, photo in photos:
+            link_name = name
+            if "is_album" in photo and photo["is_album"]:
+                link_name = photo["photos"][0]
             if not name in album_photos:
-                items['en'].append(create_photo_json(name, photo, 'en'))
-                items['fr'].append(create_photo_json(name, photo, 'fr'))
+                items['en'].append(create_photo_json(link_name, photo, 'en'))
+                items['fr'].append(create_photo_json(link_name, photo, 'fr'))
 
 create_combined_content_list()
