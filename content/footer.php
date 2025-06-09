@@ -5,6 +5,7 @@
 <?php echo $language['SKETCH_CRED'] ?> <a href="https://www.instagram.com/j.andrews96/" style="color:#585858">Jason Andrews</a>
 <br>
 <a href="<?="/" . $lang . "/attributions/attributions.php"?>" style="color:grey"><?php echo $language['Click for other artistic attributions'] ?></a>
+<a href="<?="/" . $lang . "/feed.xml"?>"><img src="/static/rss_icon.svg" class="rss-icon"></a>
 </p>
 
 </span>

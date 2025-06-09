@@ -19,7 +19,7 @@ rss_header = {
 'fr': """<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
   <channel>
-    <title>La Poesie de Bryan Kaperick</title>
+    <title>Le Site Web de Bryan Kaperick</title>
     <link>https://www.bryan-kaperick.me/index_fr</link>
     <description>Des contenus originaux créé par Bryan (flux francais)</description>
     <language>fr</language>
