@@ -56,10 +56,10 @@ def create_project_preview_block(key, project):
 
 def create_header_project_preview_block(key, project):
     y1 = project["start_year"] 
-    y2 = project["end_year"]
-    if y1 == y2:
+    y2 = project["end_year"] if "end_year" in project else None
+    if y2 != None and y1 == y2:
         year_str = "({0})".format(y1)
-    elif y2 == current_year:
+    elif y2 == None:
         year_str = "({0} - )".format(y1)
     else:
         year_str = "({0} - {1})".format(y1, y2)

@@ -4,8 +4,6 @@
         "icon": "../../static/learning_cleaned_logo.svg",
         "start_month": "Sep",
         "start_year": 2024,
-        "end_month": "Sep",
-        "end_year": 2025,
         "links":[
             {
                 "url": "https://github.com/BKaperick/CatanLearning.jl",
