@@ -1,32 +1,85 @@
 {
-    "catan": {
-        "title": "Catan.jl",
-        "icon": "../../static/cleaned_catan_logo.svg",
+    "catan_ml": {
+        "title": "CatanLearning.jl",
+        "icon": "../../static/learning_cleaned_logo.svg",
         "start_month": "Sep",
-        "start_year": "2024",
+        "start_year": 2024,
         "end_month": "Sep",
-        "end_year": "2024",
-        "github_link": "https://github.com/BKaperick/Catan.jl",
-        "external_link": "",
+        "end_year": 2025,
+        "links":[
+            {
+                "url": "https://github.com/BKaperick/CatanLearning.jl",
+                "external": true,
+                "icon": "github"
+            }
+        ],
         "order_in_month": 1,
-        "en": "Catan.jl is an engine for playing Settlers of Catan with human and scripted players",
-        "fr": "Catan.jl est un moteur pour jouer aux Colons de Catan avec des joueurs humains et scriptés",
-        "tags": ["julia"],
+        "en": "CatanLearning.jl uses CatanEngine.jl to implement reinforcement-learning players which learn high-level strategies via self-play.",
+        "fr": "CatanLearning.jl utilise CatanEngine.jl pour implémenter des joueurs à apprentissage par renforcement qui apprennent des stratégies de haut niveau en jouant eux-mêmes.",
+        "tags": ["julia", "ml", "rl"],
         "order": 1
+    },
+    "catan": {
+        "title": "CatanEngine.jl",
+        "icon": "../../static/engine_cleaned_logo.svg",
+        "start_month": "Sep",
+        "start_year": 2023,
+        "end_month": "Sep",
+        "end_year": 2025,
+        "links":[
+            {
+                "url": "https://github.com/BKaperick/CatanEngine.jl",
+                "external": true,
+                "icon": "github"
+            }
+        ],
+        "order_in_month": 1,
+        "en": "CatanEngine.jl is an engine for playing Settlers of Catan with human and scripted players.",
+        "fr": "CatanEngine.jl est un moteur pour jouer aux Colons de Catan avec des joueurs humains et scriptés.",
+        "tags": ["julia"],
+        "order": 2
     },
     "wikiswitcher": {
         "title": "WikiSwitcher",
         "icon": "../../static/wikiswitcher_icon_cropped.png",
         "start_month": "Sep",
-        "start_year": "2024",
+        "start_year": 2024,
         "end_month": "Sep",
-        "end_year": "2024",
-        "github_link": "https://github.com/BKaperick/WikiSwitcher",
-        "external_link": "https://chromewebstore.google.com/detail/wikiswitcher/hpcjbdockpdedhmceilapegnafhldojo",
-        "order_in_month": 1,
-        "en": "WikiSwitcher is a Google Chrome Extension to automatically choose the best language for a given Wikipedia article",
-        "fr": "WikiSwitcher est une extension Google Chrome qui permet de choisir automatiquement la meilleure langue pour un article donné de Wikipédia",
+        "end_year": 2024,
+        "links":[
+            {
+                "url": "https://chromewebstore.google.com/detail/wikiswitcher/hpcjbdockpdedhmceilapegnafhldojo",
+                "external": true,
+                "icon": "chrome-extension"
+            },
+            {
+                "url": "https://github.com/BKaperick/WikiSwitcher",
+                "external": true,
+                "icon": "github"
+            }
+        ],
+        "order": 3,
+        "en": "WikiSwitcher is a Google Chrome Extension to automatically choose the best language for a given Wikipedia article among the user's configured languaged.",
+        "fr": "WikiSwitcher est une extension Google Chrome qui permet de choisir automatiquement la meilleure langue pour un article donné de Wikipédia parmi les langues selectionnées par l'utilisateur",
         "tags": ["js", "chrome-extension"],
-        "order": 2
+        "order": 3
+    },
+    "fizz": {
+        "title": "Fizz-2D",
+        "order": 4,
+        "icon": "../../static/fizz-2d.png",
+        "en": "Bare-bones 2D physics engine for handling interactions of rigid convex polygons on a 2D plane.",
+        "fr": "Moteur physique 2D simple pour gérer les interactions de polygones convexes rigides sur un plan 2D.",
+        "start_month": "Nov",
+        "start_year": 2017,
+        "end_month": "May",
+        "end_year": 2019,
+        "links":[
+            {
+                "url": "https://github.com/BKaperick/Fizz-2D",
+                "external": true,
+                "icon": "github"
+            }
+        ]
     }
 }

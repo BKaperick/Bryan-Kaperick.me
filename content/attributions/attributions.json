@@ -28,5 +28,15 @@
         "repository_link": "https://thenounproject.com/",
         "license": "CC BY 3.0",
         "license_link": "https://creativecommons.org/licenses/by/3.0/"
+    },
+    "url_link": {
+        "name": "url",
+        "image": "../../static/url-link.svg",
+        "author": "Colourcreatype",
+        "link": "https://thenounproject.com/browse/icons/term/url/",
+        "repository": "Noun Project",
+        "repository_link": "https://thenounproject.com/",
+        "license": "CC BY 3.0",
+        "license_link": "https://creativecommons.org/licenses/by/3.0/"
     }
 }

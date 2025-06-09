@@ -1307,12 +1307,46 @@ figure.single-image {
 .project-header {
 }
 
+.project-footer {
+    float:right;
+    display:flex;
+    /*
+    clear: both;
+     * */
+    margin: .5rem .5rem .5rem .5rem;
+}
+.project-footer-icon {
+    min-width: 50px;
+    max-width: 50px;
+    /*float: right;*/
+    padding: .1rem .1rem .1rem .1rem;
+    border-radius: 5px;
+    background-color: #8c8b93; /*#c8c4c3;*/
+    margin: .1rem .1rem .1rem .1rem;
+}
+.project-footer-link-icon {
+    min-width: 25px;
+    max-width: 25px;
+    /*float: right;*/
+    color: var(--black-color);
+    /*
+    filter: 1;
+    Vxcolor: white;
+     *
+     * filter: invert(var(--filter-applied));*/
+    padding: .1rem .1rem .1rem .1rem;
+    margin: .1rem .1rem .1rem .1rem;
+}
+
+.project-year {
+    margin-left: 1rem;
+}
 .project-title {
     float: left;
 }
 .project-icon {
     float: right;
-    padding: .5rem 0 .1rem .1rem;
+    padding: .3rem .3rem .3rem .3rem;
     max-width: 100px;
     background-color: #8c8b93; /*#c8c4c3;*/
     border-radius: 5px;
@@ -1320,11 +1354,15 @@ figure.single-image {
 .content {
     clear: both;
 }
+.project-content {
+    clear: both;
+}
 .project-wrapper {
     background-color: #ddd; /*#c8c4c3;*/
     border-radius: 5px;
     padding: .5rem .5rem .5rem .5rem;
     margin: .5rem .5rem .5rem .5rem;
+    display: inline-block;
 }
 .project-tagline {
     text-decoration: none;
