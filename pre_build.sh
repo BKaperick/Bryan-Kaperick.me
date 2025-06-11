@@ -1,7 +1,7 @@
 cd ./content/poems
 echo "starting poetry ingestion"
 python3 ./scripts/instantiate.py
-python3 ./scripts/format_poem.py
+python3 ./scripts/format_poem.py all-poems
 python3 ./scripts/create_html.py
 
 cd ../now
