@@ -16,6 +16,7 @@ def wrap_project_preview_block_internal_link(key, block, links):
 
 ICONS = {
         "github": "../../static/external/Octicons-mark-github.svg",
+        "julia-docs": "../../static/external/julia-docs.svg",
         "chrome-extension": "../../static/external/chrome-extensions.svg"
         }
 

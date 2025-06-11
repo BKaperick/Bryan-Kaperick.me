@@ -29,6 +29,11 @@
                 "url": "https://github.com/BKaperick/CatanEngine.jl",
                 "external": true,
                 "icon": "github"
+            },
+            {
+                "url": "https://bkaperick.github.io/Catan.jl/stable/",
+                "external": true,
+                "icon": "julia-docs"
             }
         ],
         "order_in_month": 1,
@@ -46,14 +51,14 @@
         "end_year": 2024,
         "links":[
             {
-                "url": "https://chromewebstore.google.com/detail/wikiswitcher/hpcjbdockpdedhmceilapegnafhldojo",
-                "external": true,
-                "icon": "chrome-extension"
-            },
-            {
                 "url": "https://github.com/BKaperick/WikiSwitcher",
                 "external": true,
                 "icon": "github"
+            },
+            {
+                "url": "https://chromewebstore.google.com/detail/wikiswitcher/hpcjbdockpdedhmceilapegnafhldojo",
+                "external": true,
+                "icon": "chrome-extension"
             }
         ],
         "order": 3,
