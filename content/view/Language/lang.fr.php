@@ -38,6 +38,6 @@ $language = array(
     'Previous Winners'=>'Anciens lauréats',
     'Latest Updates'=>'Dernières mises à jour',
     'new-photos'=>'Nouvelles photos',
-    'new-poetry'=>'Nouveaux poèmes'
+    'new-poetry'=>'Nouveau poème'
 );
 ?>
