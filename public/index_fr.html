@@ -153,6 +153,31 @@ class="active" aria-current="page">Accueil</a></li>
 </blockquote>
 </span>
 
+<h1 id="latest-updates">Dernières mises à jour</h1>
+<p><table class="no-border>"
+<tr>
+            <td class="latest-updates">Juin 2025</td>
+            <td class="latest-updates">Nouvel album photo</td>
+            <td class="latest-updates"><a href="https://www.bryan-kaperick.me/fr/photos/chantal_myriam_bryan_calanques">Un petit voyage à Marseille et à Nice</a></td>
+</tr>
+                       
+<tr>
+            <td class="latest-updates">Juin 2025</td>
+            <td class="latest-updates">Nouvelle photo</td>
+            <td class="latest-updates"><a href="https://www.bryan-kaperick.me/fr/photos/deule_boat">On fait du bateau sur La Deule pour l'anniversaire de Sunny</a></td>
+</tr>
+                       
+<tr>
+            <td class="latest-updates">Juin 2025</td>
+            <td class="latest-updates">Nouveau poème</td>
+            <td class="latest-updates"><a href="https://www.bryan-kaperick.me/fr/poetry/gun_smoke">Gun smoke</a></td>
+</tr>
+                       
+</table></p>
+<span style="color:grey"><blockquote>
+</blockquote>
+</span>
+
 
 </div>
 </article>
@@ -161,7 +186,7 @@ class="active" aria-current="page">Accueil</a></li>
 </html>
 <footer class="footer layout__footer">
 <span style="color:grey"> 
-<p><span>© Le Site Web de Bryan Kaperick</span> – <nobr>Mis à jour  2025-06-11
+<p><span>© Le Site Web de Bryan Kaperick</span> – <nobr>Mis à jour  2025-06-12
 </nobr>
 <br>
 La photo de profile a été esquissée par <a href="https://www.instagram.com/j.andrews96/" style="color:#585858">Jason Andrews</a>
@@ -218,6 +243,16 @@ and (max-device-width: 665px)
     }
     .dedicated-poem-page > blockquote {
         padding-left: 25px;
+    }
+    .latest-updates {
+        font-size: 100%;
+    }
+}
+@media screen 
+and (min-device-width: 666px)
+{
+    .latest-updates {
+        font-size: 120%;
     }
 }
 
@@ -681,7 +716,7 @@ table {
 
 td,
 th {
-	padding: 0
+	padding: 2
 }
 
 details {
@@ -1645,6 +1680,12 @@ figure.single-image {
 }
 
 /* Tables (for now page and photos leaderboard) */
+.latest-updates {
+	/*font-size: 120%;*/
+    border: none;
+  text-align: left;
+}
+
 .border1 {
   border-top:thin solid;
   border-bottom:thin solid;
@@ -1653,7 +1694,7 @@ figure.single-image {
   border-color:black;
   padding: 5px;
 }
-table {
+table.bordered {
   border: 2px solid black;
 }
 td {

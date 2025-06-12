@@ -12,7 +12,7 @@ now_blocks = []
 #}
 
 header = """
-<table border=1 frame=sides cellspacing="0" cellpadding="5">
+<table class="bordered" border=1 frame=sides cellspacing="0" cellpadding="5">
   <tr>
     <th class="border1">Location</th>
     <th class="border1">Date</th>

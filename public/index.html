@@ -152,6 +152,31 @@ class="active" aria-current="page">Home</a></li>
 </blockquote>
 </span>
 
+<h1 id="latest-updates">Latest updates</h1>
+<p><table class="no-border>"
+<tr>
+            <td class="latest-updates">June 2025</td>
+            <td class="latest-updates">New photo album</td>
+            <td class="latest-updates"><a href="https://www.bryan-kaperick.me/en/photos/chantal_myriam_bryan_calanques">A short trip to Marseilles and Nice</a></td>
+</tr>
+                       
+<tr>
+            <td class="latest-updates">June 2025</td>
+            <td class="latest-updates">New photo</td>
+            <td class="latest-updates"><a href="https://www.bryan-kaperick.me/en/photos/deule_boat">Boating on La Deule for Sunny's birthday</a></td>
+</tr>
+                       
+<tr>
+            <td class="latest-updates">June 2025</td>
+            <td class="latest-updates">New poem</td>
+            <td class="latest-updates"><a href="https://www.bryan-kaperick.me/en/poetry/gun_smoke">Gun smoke</a></td>
+</tr>
+                       
+</table></p>
+<span style="color:grey"><blockquote>
+</blockquote>
+</span>
+
 
 </div>
 </article>
@@ -160,7 +185,7 @@ class="active" aria-current="page">Home</a></li>
 </html>
 <footer class="footer layout__footer">
 <span style="color:grey"> 
-<p><span>© Bryan Kaperick&#39;s Website</span> – <nobr>Last updated  2025-06-11
+<p><span>© Bryan Kaperick&#39;s Website</span> – <nobr>Last updated  2025-06-12
 </nobr>
 <br>
 The profile picture was sketched by <a href="https://www.instagram.com/j.andrews96/" style="color:#585858">Jason Andrews</a>
@@ -217,6 +242,16 @@ and (max-device-width: 665px)
     }
     .dedicated-poem-page > blockquote {
         padding-left: 25px;
+    }
+    .latest-updates {
+        font-size: 100%;
+    }
+}
+@media screen 
+and (min-device-width: 666px)
+{
+    .latest-updates {
+        font-size: 120%;
     }
 }
 
@@ -680,7 +715,7 @@ table {
 
 td,
 th {
-	padding: 0
+	padding: 2
 }
 
 details {
@@ -1644,6 +1679,12 @@ figure.single-image {
 }
 
 /* Tables (for now page and photos leaderboard) */
+.latest-updates {
+	/*font-size: 120%;*/
+    border: none;
+  text-align: left;
+}
+
 .border1 {
   border-top:thin solid;
   border-bottom:thin solid;
@@ -1652,7 +1693,7 @@ figure.single-image {
   border-color:black;
   padding: 5px;
 }
-table {
+table.bordered {
   border: 2px solid black;
 }
 td {

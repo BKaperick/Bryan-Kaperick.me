@@ -35,6 +35,10 @@ $language = array(
     'Next'=>'Next',
     'leaderboard'=>'Leaderboard',
     'All-time Leaderboard'=>'All-time Leaderboard',
-    'Previous Winners'=>'Previous Winners'
+    'Previous Winners'=>'Previous Winners',
+    'Latest Updates'=>'Latest updates',
+    'new-photos'=>'New photo',
+    'new-photos-album'=>'New photo album',
+    'new-poetry'=>'New poem'
 );
 ?>
