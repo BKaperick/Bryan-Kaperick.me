@@ -22,16 +22,26 @@ with open('datapoint_content.html', 'w') as fw:
 
 
 def latest_updates_from_content(lang):
-    out = ["<ul>"]
+    #out = ["<ul>"]
+    out = ['<table class="no-border>"']
     with open('../scripts/content_{0}.json'.format(lang), 'r+') as fr:
         content = [p for p in json.load(fr)][:3]
         for c in content:
             date = datetime.strptime(c["date"], "%Y%m%d")
             month = date.strftime("%b")
             translated_date = date.strftime("M %Y").replace("M", "<?php echo $language['{0}'] ?>".format(month)) 
-            #translated_date = translated_date[1:] if translated_date[0] == "0" else translated_date
-            out.append("""<li>{0}: <?php echo $language['new-{1}'] ?> &ndash; <a href="{3}">{2}</a></li>""".format(translated_date, c["category"], c["desc"], c["link"]))
-    out.append("</ul>")
+            #out.append("""<li>{0}: <?php echo $language['new-{1}'] ?> &ndash; <a href="{3}">{2}</a></li>""".format(translated_date, c["category"], c["title"], c["link"]))
+            precise_category_type = "new-" + c["category"]
+            if "is_album" in c and c["is_album"]:
+                precise_category_type += "-album"
+            print(precise_category_type)
+            out.append("""<tr>
+            <td class="latest-updates">{0}</td>
+            <td class="latest-updates"><?php echo $language['{1}'] ?></td>
+            <td class="latest-updates"><a href="{3}">{2}</a></td>\n</tr>
+                       """.format(translated_date, precise_category_type, c["title"], c["link"]))
+    #out.append("</ul>")
+    out.append("</table>")
     return "\n".join(out)
 
 for lang in ["en", "fr"]:

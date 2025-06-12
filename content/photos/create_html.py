@@ -114,7 +114,7 @@ def generate_leaderboard():
         <td>{1}</td>
     </tr>\n"""
 
-    one_table_header = """<table border=1 frame=sides style="float: left; max-width: 250px; margin: 25px">
+    one_table_header = """<table class="bordered" border=1 frame=sides style="float: left; max-width: 250px; margin: 25px">
         <th class="border1" colspan=2><?=$language['{0}'];?></th>\n"""
 
     header = """

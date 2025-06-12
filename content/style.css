@@ -1452,6 +1452,11 @@ figure.single-image {
 }
 
 /* Tables (for now page and photos leaderboard) */
+.latest-updates {
+    border: none;
+  text-align: left;
+}
+
 .border1 {
   border-top:thin solid;
   border-bottom:thin solid;
@@ -1460,7 +1465,7 @@ figure.single-image {
   border-color:black;
   padding: 5px;
 }
-table {
+table.bordered {
   border: 2px solid black;
 }
 td {

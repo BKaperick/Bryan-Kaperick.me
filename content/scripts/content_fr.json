@@ -1,17 +1,19 @@
 [
     {
-        "title": "Marseille_Nice",
+        "title": "Un petit voyage \u00e0 Marseille et \u00e0 Nice",
         "link": "https://www.bryan-kaperick.me/fr/photos/chantal_myriam_bryan_calanques",
         "desc": "Un petit voyage \u00e0 Marseille et \u00e0 Nice",
         "date": "20250601",
-        "category": "photos"
+        "category": "photos",
+        "is_album": true
     },
     {
-        "title": "deule_boat.jpg",
+        "title": "On fait du bateau sur La Deule pour l'anniversaire de Sunny",
         "link": "https://www.bryan-kaperick.me/fr/photos/deule_boat",
         "desc": "On fait du bateau sur La Deule pour l'anniversaire de Sunny",
         "date": "20250601",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
         "title": "Gun smoke",
@@ -21,67 +23,76 @@
         "category": "poetry"
     },
     {
-        "title": "tyler_30_salam.jpeg",
+        "title": "Le 30e Anniversaire de Tyler \u00e0 La Mousse Touch'",
         "link": "https://www.bryan-kaperick.me/fr/photos/tyler_30_salam",
         "desc": "Le 30e Anniversaire de Tyler \u00e0 La Mousse Touch'",
         "date": "20250501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "DescendingLaLesse",
+        "title": "Weekend kayak sur La Lesse dans les Ardennes",
         "link": "https://www.bryan-kaperick.me/fr/photos/kayak_others",
         "desc": "Weekend kayak sur La Lesse dans les Ardennes",
         "date": "20250501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": true
     },
     {
-        "title": "LyonClimbingMay2025",
+        "title": "Un weekend \u00e0 Lyon pour faire de l'escalade dans 'Le gouffre d'enfer'",
         "link": "https://www.bryan-kaperick.me/fr/photos/lyon_climbing_descend",
         "desc": "Un weekend \u00e0 Lyon pour faire de l'escalade dans 'Le gouffre d'enfer'",
         "date": "20250501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": true
     },
     {
-        "title": "Rishik_bbq",
+        "title": "BBQ pour l'anniversaire de Rishik",
         "link": "https://www.bryan-kaperick.me/fr/photos/rishik_bbq",
         "desc": "BBQ pour l'anniversaire de Rishik",
         "date": "20250501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": true
     },
     {
-        "title": "quentin_bday_2025_2.jpeg",
+        "title": "L'anniversaire de Quentin",
         "link": "https://www.bryan-kaperick.me/fr/photos/quentin_bday_2025_2",
         "desc": "L'anniversaire de Quentin",
         "date": "20250501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "marche.jpeg",
+        "title": "March\u00e9 de Wazemmes",
         "link": "https://www.bryan-kaperick.me/fr/photos/marche",
         "desc": "March\u00e9 de Wazemmes",
         "date": "20250501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "tilburg.jpeg",
+        "title": "Une journ\u00e9e \u00e0 Tilburg avec Michael",
         "link": "https://www.bryan-kaperick.me/fr/photos/tilburg",
         "desc": "Une journ\u00e9e \u00e0 Tilburg avec Michael",
         "date": "20250501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "djurdjura.jpeg",
+        "title": "Un jeudi soir \u00e0 Djurdjura",
         "link": "https://www.bryan-kaperick.me/fr/photos/djurdjura",
         "desc": "Un jeudi soir \u00e0 Djurdjura",
         "date": "20250501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "bryan_colin_paris_2025.jpg",
+        "title": "Colin encore une fois du passage \u00e0 Paris",
         "link": "https://www.bryan-kaperick.me/fr/photos/bryan_colin_paris_2025",
         "desc": "Colin encore une fois du passage \u00e0 Paris",
         "date": "20250501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
         "title": "What about",
@@ -105,11 +116,12 @@
         "category": "poetry"
     },
     {
-        "title": "SE_Asia_Alex_Hippo",
+        "title": "Voyage au Cambodge et au Vietnam avec Alex et Hippo",
         "link": "https://www.bryan-kaperick.me/fr/photos/hanoi_street",
         "desc": "Voyage au Cambodge et au Vietnam avec Alex et Hippo",
         "date": "20250201",
-        "category": "photos"
+        "category": "photos",
+        "is_album": true
     },
     {
         "title": "The Bengal Chemical metro stop",
@@ -119,25 +131,28 @@
         "category": "poetry"
     },
     {
-        "title": "Iiindia",
+        "title": "Voyage en Inde avec Tyler, Rishik, C\u00e9cile et Quentin",
         "link": "https://www.bryan-kaperick.me/fr/photos/taj_mahal",
         "desc": "Voyage en Inde avec Tyler, Rishik, C\u00e9cile et Quentin",
         "date": "20241201",
-        "category": "photos"
+        "category": "photos",
+        "is_album": true
     },
     {
-        "title": "Jaifu",
+        "title": "Randon\u00e9e au Pique de Japfu qui commence \u00e0 Kigwema",
         "link": "https://www.bryan-kaperick.me/fr/photos/peak_from_trailhead",
         "desc": "Randon\u00e9e au Pique de Japfu qui commence \u00e0 Kigwema",
         "date": "20241201",
-        "category": "photos"
+        "category": "photos",
+        "is_album": true
     },
     {
-        "title": "Kristmas_in_Kohima",
+        "title": "Kristmas \u00e0 Kohima avec Aviraj et Tridip",
         "link": "https://www.bryan-kaperick.me/fr/photos/failed_chicken_selfie",
         "desc": "Kristmas \u00e0 Kohima avec Aviraj et Tridip",
         "date": "20241201",
-        "category": "photos"
+        "category": "photos",
+        "is_album": true
     },
     {
         "title": "The arctic plain by night",
@@ -168,25 +183,28 @@
         "category": "poetry"
     },
     {
-        "title": "Lyon",
+        "title": "Un weekend \u00e0 Lyon avec Julie et Laurine",
         "link": "https://www.bryan-kaperick.me/fr/photos/croix_rousse",
         "desc": "Un weekend \u00e0 Lyon avec Julie et Laurine",
         "date": "20241001",
-        "category": "photos"
+        "category": "photos",
+        "is_album": true
     },
     {
-        "title": "PizzaParty",
+        "title": "Pizza Party chez Sunny et C\u00e9cile",
         "link": "https://www.bryan-kaperick.me/fr/photos/pizza_prep",
         "desc": "Pizza Party chez Sunny et C\u00e9cile",
         "date": "20241001",
-        "category": "photos"
+        "category": "photos",
+        "is_album": true
     },
     {
-        "title": "Pacs_Party",
+        "title": "La cr\u00e9maill\u00e8re de C\u00e9cile",
         "link": "https://www.bryan-kaperick.me/fr/photos/rishik_bryan_cleaning",
         "desc": "La cr\u00e9maill\u00e8re de C\u00e9cile",
         "date": "20241001",
-        "category": "photos"
+        "category": "photos",
+        "is_album": true
     },
     {
         "title": "Soda pop",
@@ -196,18 +214,20 @@
         "category": "poetry"
     },
     {
-        "title": "GR10",
+        "title": "Trekking dans les Pyr\u00e9n\u00e9es sur le GR10",
         "link": "https://www.bryan-kaperick.me/fr/photos/GR10100_0185_greatlighting",
         "desc": "Trekking dans les Pyr\u00e9n\u00e9es sur le GR10",
         "date": "20240901",
-        "category": "photos"
+        "category": "photos",
+        "is_album": true
     },
     {
-        "title": "labraderie.jpg",
+        "title": "Pas mal de mes amis \u00e0 La Braderie de Lille",
         "link": "https://www.bryan-kaperick.me/fr/photos/labraderie",
         "desc": "Pas mal de mes amis \u00e0 La Braderie de Lille",
         "date": "20240901",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
         "title": "The gull",
@@ -224,32 +244,36 @@
         "category": "poetry"
     },
     {
-        "title": "IMG-20240820-WA0010.jpg",
+        "title": "Adrien et moi au Cours Julien \u00e0 Marseille",
         "link": "https://www.bryan-kaperick.me/fr/photos/IMG-20240820-WA0010",
         "desc": "Adrien et moi au Cours Julien \u00e0 Marseille",
         "date": "20240801",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "tyler_sunny_quentin_new_apt.jpg",
+        "title": "Tyler, Sunny, Moi, et Quentin dans un nouvel appartement avec une nouvelle cam\u00e9ra",
         "link": "https://www.bryan-kaperick.me/fr/photos/tyler_sunny_quentin_new_apt",
         "desc": "Tyler, Sunny, Moi, et Quentin dans un nouvel appartement avec une nouvelle cam\u00e9ra",
         "date": "20240801",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "scarpeescaut",
+        "title": "Moi, Tyler, et Rishik en v\u00e9lo au Parc naturel r\u00e9gional Scarpe-Escaut",
         "link": "https://www.bryan-kaperick.me/fr/photos/bryan-tyler-rishik-biking",
         "desc": "Moi, Tyler, et Rishik en v\u00e9lo au Parc naturel r\u00e9gional Scarpe-Escaut",
         "date": "20240801",
-        "category": "photos"
+        "category": "photos",
+        "is_album": true
     },
     {
-        "title": "PXL_20240810_102847355.MP.jpg",
+        "title": "Moi pendant un trek dans les Ardennes",
         "link": "https://www.bryan-kaperick.me/fr/photos/PXL_20240810_102847355",
         "desc": "Moi pendant un trek dans les Ardennes",
         "date": "20240801",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
         "title": "Ode (with love) to the gr10",
@@ -273,18 +297,20 @@
         "category": "poetry"
     },
     {
-        "title": "the-boyz.jpg",
+        "title": "Out avec The Boys",
         "link": "https://www.bryan-kaperick.me/fr/photos/the-boyz",
         "desc": "Out avec The Boys",
         "date": "20240601",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "avi-rishik-moi-amsterdam.jpg",
+        "title": "Aviraj, Rishik, et Moi \u00e0 Amsterdam",
         "link": "https://www.bryan-kaperick.me/fr/photos/avi-rishik-moi-amsterdam",
         "desc": "Aviraj, Rishik, et Moi \u00e0 Amsterdam",
         "date": "20240601",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
         "title": "Untitled",
@@ -294,46 +320,52 @@
         "category": "poetry"
     },
     {
-        "title": "tylerbday2024.jpg",
+        "title": "Le 29e anniversaire de Tyler avec Moi, Tyler, Rishik, et Sunny",
         "link": "https://www.bryan-kaperick.me/fr/photos/tylerbday2024",
         "desc": "Le 29e anniversaire de Tyler avec Moi, Tyler, Rishik, et Sunny",
         "date": "20240501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "Morocco_Spain",
+        "title": "Voyage au Maroc pour rendre visite \u00e0 Sami, et le retour par l'Espagne",
         "link": "https://www.bryan-kaperick.me/fr/photos/couscous",
         "desc": "Voyage au Maroc pour rendre visite \u00e0 Sami, et le retour par l'Espagne",
         "date": "20240501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": true
     },
     {
-        "title": "bryan_dance_coloc_party.jpg",
+        "title": "Moi qui danse",
         "link": "https://www.bryan-kaperick.me/fr/photos/bryan_dance_coloc_party",
         "desc": "Moi qui danse",
         "date": "20240501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "julie_bryan_coloc_party.jpg",
+        "title": "Moi et Julie en discussion anim\u00e9",
         "link": "https://www.bryan-kaperick.me/fr/photos/julie_bryan_coloc_party",
         "desc": "Moi et Julie en discussion anim\u00e9",
         "date": "20240501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "Silas_Bday",
+        "title": "Le 30e anniversaire de Sila \u00e0 Nempont-Saint-Firmin",
         "link": "https://www.bryan-kaperick.me/fr/photos/sila-bday-balcony",
         "desc": "Le 30e anniversaire de Sila \u00e0 Nempont-Saint-Firmin",
         "date": "20240501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": true
     },
     {
-        "title": "cassy-antoine-party.jpg",
+        "title": "Une fete \u00e0 la maison avec Cassandra, Antoine, et Moi",
         "link": "https://www.bryan-kaperick.me/fr/photos/cassy-antoine-party",
         "desc": "Une fete \u00e0 la maison avec Cassandra, Antoine, et Moi",
         "date": "20240501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
         "title": "Watch",
@@ -399,11 +431,12 @@
         "category": "poetry"
     },
     {
-        "title": "newyear2024.jpg",
+        "title": "La fete du nouvel an avec Grazilla, C\u00e9cile, Tyler, Sunny, et Moi",
         "link": "https://www.bryan-kaperick.me/fr/photos/newyear2024",
         "desc": "La fete du nouvel an avec Grazilla, C\u00e9cile, Tyler, Sunny, et Moi",
         "date": "20240101",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
         "title": "In the dark",
@@ -448,11 +481,12 @@
         "category": "poetry"
     },
     {
-        "title": "roommates_sami.jpg",
+        "title": "La fete du d\u00e9part de Sami avec all the roommates",
         "link": "https://www.bryan-kaperick.me/fr/photos/roommates_sami",
         "desc": "La fete du d\u00e9part de Sami avec all the roommates",
         "date": "20231001",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
         "title": "A raven&rsquo;s lust",
@@ -483,39 +517,44 @@
         "category": "poetry"
     },
     {
-        "title": "bryan-jason-citadelle.jpg",
+        "title": "Moi et Jason \u00e0 La Citadelle de Lille",
         "link": "https://www.bryan-kaperick.me/fr/photos/bryan-jason-citadelle",
         "desc": "Moi et Jason \u00e0 La Citadelle de Lille",
         "date": "20230901",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "adam-bryan-jason-ghent.jpg",
+        "title": "Adam, Moi, et Jason au bord d&rsquo;un canal \u00e0 Gand",
         "link": "https://www.bryan-kaperick.me/fr/photos/adam-bryan-jason-ghent",
         "desc": "Adam, Moi, et Jason au bord d&rsquo;un canal \u00e0 Gand",
         "date": "20230901",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "bryan-piscine.jpg",
+        "title": "Moi \u00e0 La Piscine",
         "link": "https://www.bryan-kaperick.me/fr/photos/bryan-piscine",
         "desc": "Moi \u00e0 La Piscine",
         "date": "20230901",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "bryan-julie-namur.jpg",
+        "title": "Julie et Moi sur Le Centenaire \u00e0 Beez",
         "link": "https://www.bryan-kaperick.me/fr/photos/bryan-julie-namur",
         "desc": "Julie et Moi sur Le Centenaire \u00e0 Beez",
         "date": "20230901",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "alex-nadir-me-sachin-julien-morzine.jpg",
+        "title": "Alex, Nadir, Moi, Sachin, et Julien \u00e0u mariage de Thom \u00e0 Morzine",
         "link": "https://www.bryan-kaperick.me/fr/photos/alex-nadir-me-sachin-julien-morzine",
         "desc": "Alex, Nadir, Moi, Sachin, et Julien \u00e0u mariage de Thom \u00e0 Morzine",
         "date": "20230901",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
         "title": "Hm, apparently Pompeii isn't in Greece",
@@ -532,18 +571,20 @@
         "category": "poetry"
     },
     {
-        "title": "eatin-rishik-chicken.jpg",
+        "title": "Moi et du poulet cuit par Rishik pour La Fete Nationale d&rsquo;Inde",
         "link": "https://www.bryan-kaperick.me/fr/photos/eatin-rishik-chicken",
         "desc": "Moi et du poulet cuit par Rishik pour La Fete Nationale d&rsquo;Inde",
         "date": "20230801",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "rishik-quentin-me-fete.jpg",
+        "title": "Rishik, Quentin, et Moi apr\u00e8s une longue soir\u00e9e",
         "link": "https://www.bryan-kaperick.me/fr/photos/rishik-quentin-me-fete",
         "desc": "Rishik, Quentin, et Moi apr\u00e8s une longue soir\u00e9e",
         "date": "20230801",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
         "title": "Untitled",
@@ -553,32 +594,36 @@
         "category": "poetry"
     },
     {
-        "title": "me-michael-st-charles.jpg",
+        "title": "Moi et Michael sur le pont de St. Charles \u00e0 Prague",
         "link": "https://www.bryan-kaperick.me/fr/photos/me-michael-st-charles",
         "desc": "Moi et Michael sur le pont de St. Charles \u00e0 Prague",
         "date": "20230701",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "sachin-me-edi-martijn.jpg",
+        "title": "Sachin, Moi, Edi, et Martijn \u00e0 l&rsquo;enterrement de vie de garcon pour Thom \u00e0 Paris",
         "link": "https://www.bryan-kaperick.me/fr/photos/sachin-me-edi-martijn",
         "desc": "Sachin, Moi, Edi, et Martijn \u00e0 l&rsquo;enterrement de vie de garcon pour Thom \u00e0 Paris",
         "date": "20230701",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "me-silvio-tyler-colin-tok.jpg",
+        "title": "Moi, Silvio, Tyler, et Colin \u00e0 Tok-ici (Avec Pierre qui joue le Bass)",
         "link": "https://www.bryan-kaperick.me/fr/photos/me-silvio-tyler-colin-tok",
         "desc": "Moi, Silvio, Tyler, et Colin \u00e0 Tok-ici (Avec Pierre qui joue le Bass)",
         "date": "20230701",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "Silvio-rishik-me-colin-sarrazins.jpg",
+        "title": "Silvio, Rishik, Moi, et Colin au Place des Sarrazins",
         "link": "https://www.bryan-kaperick.me/fr/photos/Silvio-rishik-me-colin-sarrazins",
         "desc": "Silvio, Rishik, Moi, et Colin au Place des Sarrazins",
         "date": "20230701",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
         "title": "Untitled pt. 2",
@@ -602,25 +647,28 @@
         "category": "poetry"
     },
     {
-        "title": "adri-moi-flo-sami-banana.jpg",
+        "title": "Adri, Moi, Flo, et Sami sur la route vers Hypercourt pour Banana Boom",
         "link": "https://www.bryan-kaperick.me/fr/photos/adri-moi-flo-sami-banana",
         "desc": "Adri, Moi, Flo, et Sami sur la route vers Hypercourt pour Banana Boom",
         "date": "20230601",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "atomium.jpg",
+        "title": "Moi, Michael, et Tyler \u00e0 l&rsquo;Atomium \u00e0 Bruxelles",
         "link": "https://www.bryan-kaperick.me/fr/photos/atomium",
         "desc": "Moi, Michael, et Tyler \u00e0 l&rsquo;Atomium \u00e0 Bruxelles",
         "date": "20230601",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "egouts.jpg",
+        "title": "Moi dans les \u00e9gouts de Bruxelles",
         "link": "https://www.bryan-kaperick.me/fr/photos/egouts",
         "desc": "Moi dans les \u00e9gouts de Bruxelles",
         "date": "20230601",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
         "title": "Whalebone branches",
@@ -630,18 +678,20 @@
         "category": "poetry"
     },
     {
-        "title": "parents-lille.jpg",
+        "title": "Moi, mes parents, Laura, Aubr\u00e9e, et Tyler dans ma cour",
         "link": "https://www.bryan-kaperick.me/fr/photos/parents-lille",
         "desc": "Moi, mes parents, Laura, Aubr\u00e9e, et Tyler dans ma cour",
         "date": "20230501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "aux-enfants-terribles.jpg",
+        "title": "Aubr\u00e9e, Sunny, Moi, et Tyler \u00e0 <em>Aux Enfants Terribles</em>",
         "link": "https://www.bryan-kaperick.me/fr/photos/aux-enfants-terribles",
         "desc": "Aubr\u00e9e, Sunny, Moi, et Tyler \u00e0 <em>Aux Enfants Terribles</em>",
         "date": "20230501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
         "title": "Untitled",
@@ -651,11 +701,12 @@
         "category": "poetry"
     },
     {
-        "title": "colocs-court.jpg",
+        "title": "Moi et mes colocs dans notre cour",
         "link": "https://www.bryan-kaperick.me/fr/photos/colocs-court",
         "desc": "Moi et mes colocs dans notre cour",
         "date": "20230401",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
         "title": "Those oozing stacks grow",
@@ -665,11 +716,12 @@
         "category": "poetry"
     },
     {
-        "title": "flo-anniv.jpg",
+        "title": "Moi, Flo, et Constance dans un resto \u00e0 Lille",
         "link": "https://www.bryan-kaperick.me/fr/photos/flo-anniv",
         "desc": "Moi, Flo, et Constance dans un resto \u00e0 Lille",
         "date": "20230301",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
         "title": "Bruges pluie blues",
@@ -679,11 +731,12 @@
         "category": "poetry"
     },
     {
-        "title": "jason-alcohol.jpg",
+        "title": "Moi, Jason, et des autres \u00e0 Pittsburgh une nuit",
         "link": "https://www.bryan-kaperick.me/fr/photos/jason-alcohol",
         "desc": "Moi, Jason, et des autres \u00e0 Pittsburgh une nuit",
         "date": "20230201",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
         "title": "Untitled night",
@@ -700,18 +753,20 @@
         "category": "poetry"
     },
     {
-        "title": "picnic_anton.jpg",
+        "title": "Pas mal de gens, y-compris Anton et moi pour une piquenique \u00e0 Paris",
         "link": "https://www.bryan-kaperick.me/fr/photos/picnic_anton",
         "desc": "Pas mal de gens, y-compris Anton et moi pour une piquenique \u00e0 Paris",
         "date": "20220601",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "swap-hai-bryan-nice.jpg",
+        "title": "Swap, Hai, et moi \u00e0 Nice",
         "link": "https://www.bryan-kaperick.me/fr/photos/swap-hai-bryan-nice",
         "desc": "Swap, Hai, et moi \u00e0 Nice",
         "date": "20220601",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
         "title": "Like jackals, lips slippery",
@@ -721,95 +776,108 @@
         "category": "poetry"
     },
     {
-        "title": "bryan-michael-tyler-anvers.jpg",
+        "title": "Moi, Michael, et Tyler \u00e0 Anvers",
         "link": "https://www.bryan-kaperick.me/fr/photos/bryan-michael-tyler-anvers",
         "desc": "Moi, Michael, et Tyler \u00e0 Anvers",
         "date": "20210901",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "bryan-colin_cape-perpetua.jpg",
+        "title": "Moi et Colin \u00e0 Cape Perpetua, OR",
         "link": "https://www.bryan-kaperick.me/fr/photos/bryan-colin_cape-perpetua",
         "desc": "Moi et Colin \u00e0 Cape Perpetua, OR",
         "date": "20210801",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "michael-tyler-bryan-dunkerque.jpg",
+        "title": "Michael, Tyler,et moi \u00e0 Dunkerque",
         "link": "https://www.bryan-kaperick.me/fr/photos/michael-tyler-bryan-dunkerque",
         "desc": "Michael, Tyler,et moi \u00e0 Dunkerque",
         "date": "20210701",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "michael-julie-bryan-tyler-dunkerque.jpg",
+        "title": "Michael, Julie, moi, et Tyler \u00e0 Dunkerque",
         "link": "https://www.bryan-kaperick.me/fr/photos/michael-julie-bryan-tyler-dunkerque",
         "desc": "Michael, Julie, moi, et Tyler \u00e0 Dunkerque",
         "date": "20210601",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "julien-bryan-nadir-yanomi-skate-blabla.jpg",
+        "title": "Julien, moi, Nadir, et Yanomi \u00e0 Blabla",
         "link": "https://www.bryan-kaperick.me/fr/photos/julien-bryan-nadir-yanomi-skate-blabla",
         "desc": "Julien, moi, Nadir, et Yanomi \u00e0 Blabla",
         "date": "20210501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "bryan-blabla-skate.jpg",
+        "title": "Que moi sur un skate \u00e0 Blabla",
         "link": "https://www.bryan-kaperick.me/fr/photos/bryan-blabla-skate",
         "desc": "Que moi sur un skate \u00e0 Blabla",
         "date": "20210401",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "bryan-julie-etienne-cici-william-yanomi-grenoble.jpg",
+        "title": "La moiti\u00e9 de moi, Julie, Etienne, Cici, William, et Yanomi \u00e0 Fort de la Bastille, Gr\u00e9noble",
         "link": "https://www.bryan-kaperick.me/fr/photos/bryan-julie-etienne-cici-william-yanomi-grenoble",
         "desc": "La moiti\u00e9 de moi, Julie, Etienne, Cici, William, et Yanomi \u00e0 Fort de la Bastille, Gr\u00e9noble",
         "date": "20210301",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "bryan-jeremy.png",
+        "title": "Moi, Jeremy, et Mathieu au t\u00e9l\u00e9vision Francais",
         "link": "https://www.bryan-kaperick.me/fr/photos/bryan-jeremy",
         "desc": "Moi, Jeremy, et Mathieu au t\u00e9l\u00e9vision Francais",
         "date": "20210201",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "michael-bryan-lecart.jpg",
+        "title": "Moi et Michael \u00e0 L&rsquo;\u00c9cart",
         "link": "https://www.bryan-kaperick.me/fr/photos/michael-bryan-lecart",
         "desc": "Moi et Michael \u00e0 L&rsquo;\u00c9cart",
         "date": "20200601",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "michael-bryan-julie.jpg",
+        "title": "Michael, moi, et Julie \u00e0 Wazemmes",
         "link": "https://www.bryan-kaperick.me/fr/photos/michael-bryan-julie",
         "desc": "Michael, moi, et Julie \u00e0 Wazemmes",
         "date": "20200501",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "alex-bryan-paris.jpg",
+        "title": "Alex et moi \u00e0 Le Viaduc",
         "link": "https://www.bryan-kaperick.me/fr/photos/alex-bryan-paris",
         "desc": "Alex et moi \u00e0 Le Viaduc",
         "date": "20200401",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "Anton-william-bryan-la-seine.jpg",
+        "title": "Anton, William et moi \u00e0 Jardin Tino Rossi",
         "link": "https://www.bryan-kaperick.me/fr/photos/Anton-william-bryan-la-seine",
         "desc": "Anton, William et moi \u00e0 Jardin Tino Rossi",
         "date": "20200301",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "bryan-julie-dune.jpg",
+        "title": "Moi et Julie \u00e0 Dune du Pilat",
         "link": "https://www.bryan-kaperick.me/fr/photos/bryan-julie-dune",
         "desc": "Moi et Julie \u00e0 Dune du Pilat",
         "date": "20200201",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
         "title": "Fierce creature",
@@ -819,45 +887,51 @@
         "category": "poetry"
     },
     {
-        "title": "a-bunch-of-people-chez-moi-ivry.jpg",
+        "title": "Pas mal de gens \u00e0 Ivry-sur-Seine",
         "link": "https://www.bryan-kaperick.me/fr/photos/a-bunch-of-people-chez-moi-ivry",
         "desc": "Pas mal de gens \u00e0 Ivry-sur-Seine",
         "date": "20190401",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "michael-bryan-lorenzo-edinburgh.jpg",
+        "title": "Michael, moi, et Lorenzo \u00e0 Edinburgh",
         "link": "https://www.bryan-kaperick.me/fr/photos/michael-bryan-lorenzo-edinburgh",
         "desc": "Michael, moi, et Lorenzo \u00e0 Edinburgh",
         "date": "20190301",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "chunglab.jpg",
+        "title": "Chung Lab",
         "link": "https://www.bryan-kaperick.me/fr/photos/chunglab",
         "desc": "Chung Lab",
         "date": "20190201",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "tyler-lorenzo-remy-bryan-blabla2018.jpg",
+        "title": "Tyler, moi, Lorenzo, et R\u00e9my \u00e0 Tcha-Tcha",
         "link": "https://www.bryan-kaperick.me/fr/photos/tyler-lorenzo-remy-bryan-blabla2018",
         "desc": "Tyler, moi, Lorenzo, et R\u00e9my \u00e0 Tcha-Tcha",
         "date": "20180301",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "billpatbryan.jpg",
+        "title": "Moi, Patrick, et Bill",
         "link": "https://www.bryan-kaperick.me/fr/photos/billpatbryan",
         "desc": "Moi, Patrick, et Bill",
         "date": "20180201",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     },
     {
-        "title": "me_and_bill_on_a_mountain_with_a_dog.jpg",
+        "title": "Moi et Bill et un chien sur une montaigne",
         "link": "https://www.bryan-kaperick.me/fr/photos/me_and_bill_on_a_mountain_with_a_dog",
         "desc": "Moi et Bill et un chien sur une montaigne",
         "date": "20170201",
-        "category": "photos"
+        "category": "photos",
+        "is_album": false
     }
 ]
