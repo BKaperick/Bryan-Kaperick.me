@@ -87,6 +87,34 @@
 
 <div class="project-wrapper">
 <header class="project-header">
+      <h2 class="title project-title"><?=$p->bookindexing->title;?></h2>
+      <h3 class="title project-title project-year">(2023 - 2024)</h3>
+          <img class="project-icon" src=<?=$p->bookindexing->icon;?>>
+      </header>
+    
+      
+      <div class="project-content project-tagline">
+        <?=$p->bookindexing->$lang;?>
+      </div>
+    <footer class="project-footer">
+        <span class="project-footer-left">
+        <span class="project-tag"><?=$p->bookindexing->tags[0];?></span>
+<span class="project-tag"><?=$p->bookindexing->tags[1];?></span>
+<span class="project-tag"><?=$p->bookindexing->tags[2];?></span>
+<span class="project-tag"><?=$p->bookindexing->tags[3];?></span>
+        </span>
+        <span class="project-footer-right">
+        <img class="invertible project-footer-link-icon" src="../../static/url-link.svg">
+        
+        <a href=<?=$p->bookindexing->links[0]->url;?>>
+          <img class="project-footer-icon" src=../../static/external/Octicons-mark-github.svg>
+        </a>
+        </span>
+      </footer>
+</div>
+
+<div class="project-wrapper">
+<header class="project-header">
       <h2 class="title project-title"><?=$p->fizz->title;?></h2>
       <h3 class="title project-title project-year">(2017 - 2019)</h3>
           <img class="project-icon" src=<?=$p->fizz->icon;?>>
