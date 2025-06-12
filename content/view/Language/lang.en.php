@@ -35,6 +35,9 @@ $language = array(
     'Next'=>'Next',
     'leaderboard'=>'Leaderboard',
     'All-time Leaderboard'=>'All-time Leaderboard',
-    'Previous Winners'=>'Previous Winners'
+    'Previous Winners'=>'Previous Winners',
+    'Latest Updates'=>'Latest updates',
+    'new-photos'=>'New photos',
+    'new-poetry'=>'New poem'
 );
 ?>
