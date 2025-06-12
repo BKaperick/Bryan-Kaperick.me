@@ -154,11 +154,26 @@ class="active" aria-current="page">Accueil</a></li>
 </span>
 
 <h1 id="latest-updates">Dernières mises à jour</h1>
-<p><ul>
-<li>Juin 2025: Nouvelles photos &ndash; <a href="https://www.bryan-kaperick.me/fr/photos/chantal_myriam_bryan_calanques">Un petit voyage à Marseille et à Nice</a></li>
-<li>Juin 2025: Nouvelles photos &ndash; <a href="https://www.bryan-kaperick.me/fr/photos/deule_boat">On fait du bateau sur La Deule pour l'anniversaire de Sunny</a></li>
-<li>Juin 2025: Nouveau poème &ndash; <a href="https://www.bryan-kaperick.me/fr/poetry/gun_smoke">Between the felt of the heart...</a></li>
-</ul></p>
+<p><table class="no-border>"
+<tr>
+            <td class="latest-updates">Juin 2025</td>
+            <td class="latest-updates">Nouvel album photo</td>
+            <td class="latest-updates"><a href="https://www.bryan-kaperick.me/fr/photos/chantal_myriam_bryan_calanques">Un petit voyage à Marseille et à Nice</a></td>
+</tr>
+                       
+<tr>
+            <td class="latest-updates">Juin 2025</td>
+            <td class="latest-updates">Nouvelle photo</td>
+            <td class="latest-updates"><a href="https://www.bryan-kaperick.me/fr/photos/deule_boat">On fait du bateau sur La Deule pour l'anniversaire de Sunny</a></td>
+</tr>
+                       
+<tr>
+            <td class="latest-updates">Juin 2025</td>
+            <td class="latest-updates">Nouveau poème</td>
+            <td class="latest-updates"><a href="https://www.bryan-kaperick.me/fr/poetry/gun_smoke">Gun smoke</a></td>
+</tr>
+                       
+</table></p>
 <span style="color:grey"><blockquote>
 </blockquote>
 </span>
@@ -1655,6 +1670,11 @@ figure.single-image {
 }
 
 /* Tables (for now page and photos leaderboard) */
+.latest-updates {
+    border: none;
+  text-align: left;
+}
+
 .border1 {
   border-top:thin solid;
   border-bottom:thin solid;
@@ -1663,7 +1683,7 @@ figure.single-image {
   border-color:black;
   padding: 5px;
 }
-table {
+table.bordered {
   border: 2px solid black;
 }
 td {
