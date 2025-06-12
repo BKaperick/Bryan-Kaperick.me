@@ -125,13 +125,17 @@ def create_poem_content_list(items):
 
 def create_photo_content_list(items):
     with open("../photos/photos.json", 'r+') as fread:
-        photos = [p for p in json.load(fread).items()]# if p[1]["is_album"] == False]
+        photos_dict = json.load(fread)
+        photos = [p for p in photos_dict.items()]# if p[1]["is_album"] == False]
         album_photos = set(itertools.chain.from_iterable([p[1]["photos"] for p in photos if "is_album" in p[1] and p[1]["is_album"]]))
-        for name, photo in photos:
-            link_name = name
+        for key, photo in photos:
+
+            # Link name is the photo file name without the suffix
+            link_name = photos_dict[key]["name"].split(".")[0]
+
             if "is_album" in photo and photo["is_album"]:
-                link_name = photo["photos"][0]
-            if not name in album_photos:
+                link_name = photos_dict[photo["photos"][0]]["name"].split(".")[0]
+            if not key in album_photos:
                 items['en'].append(create_photo_json(link_name, photo, 'en'))
                 items['fr'].append(create_photo_json(link_name, photo, 'fr'))
 
