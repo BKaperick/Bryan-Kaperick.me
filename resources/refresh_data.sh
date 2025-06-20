@@ -1,5 +1,6 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "$0" )" && pwd )"
+source ~/website-env/bin/activate
 python $DIR/datagetter.py $DIR/../content/widgets/datapoint.txt
 python $DIR/write_scraped_data.py $DIR/../content/widgets/argot.txt
 echo "$DIR"
