@@ -2457,5 +2457,133 @@
         "fr": "Une ruelle dans le vieux quartier de Nice",
         "people": [],
         "is_album": false
+    },
+    "Bretagne2025": {
+        "name": "Bretagne2025",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 58,
+        "en": "",
+        "fr": "",
+        "is_album": true,
+        "photos": [
+            "bretagne",
+            "bretagne_60",
+            "sunset",
+            "stmichel",
+            "beach_63",
+            "bretagne_64",
+            "",
+            "_66",
+            "_67"
+        ]
+    },
+    "bretagne": {
+        "name": "bretagne_waves.jpg",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 59,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "bretagne_60": {
+        "name": "bretagne_cliffs1.jpg",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 60,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "sunset": {
+        "name": "sunset.jpg",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 61,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "stmichel": {
+        "name": "mont_stmichel.jpg",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 62,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "beach_63": {
+        "name": "clay_beach.jpg",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 63,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "bretagne_64": {
+        "name": "bretagne_rocky_beach.jpg",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 64,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "": {
+        "name": "100_0879.jpg",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 65,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "_66": {
+        "name": "100_0908.jpg",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 66,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "_67": {
+        "name": "100_0865.jpg",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 67,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
     }
 }
