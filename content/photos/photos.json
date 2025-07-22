@@ -2457,5 +2457,117 @@
         "fr": "Une ruelle dans le vieux quartier de Nice",
         "people": [],
         "is_album": false
+    },
+    "Bretagne2025": {
+        "name": "Bretagne2025",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 58,
+        "en": "Hike on the coast of the Mont-Saint-Michel Bay",
+        "fr": "Un balade sur le littoral de La Baie du Mont-Saint-Michel",
+        "is_album": true,
+        "photos": [
+            "stmichel",
+            "bretagne_64",
+            "bretagne",
+            "bretagne_60",
+            "sunset",
+            "beach_63",
+            "pointe",
+            "bretagne_sunrise",
+            "gr34_balise"
+        ]
+    },
+    "bretagne": {
+        "name": "bretagne_waves.jpg",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 59,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "bretagne_60": {
+        "name": "bretagne_cliffs1.jpg",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 60,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "sunset": {
+        "name": "sunset.jpg",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 61,
+        "en": "La Point de la Varde",
+        "fr": "La Point de la Varde",
+        "people": [],
+        "is_album": false
+    },
+    "stmichel": {
+        "name": "mont_stmichel.jpg",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 62,
+        "en": "Le Mont-Saint-Michel",
+        "fr": "Le Mont-Saint-Michel",
+        "people": [],
+        "is_album": false
+    },
+    "beach_63": {
+        "name": "clay_beach.jpg",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 63,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "bretagne_64": {
+        "name": "bretagne_rocky_beach.jpg",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 64,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "gr34_balise": {
+        "name": "100_0908.jpg",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 66,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "bretagne_sunrise": {
+        "name": "100_0865.jpg",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 67,
+        "en": "La Point de la Varde",
+        "fr": "La Point de la Varde",
+        "people": [],
+        "is_album": false
+    },
+    "pointe": {
+        "name": "bryan_pointe_de_varda.JPG",
+        "month": "Jul",
+        "year": 2025,
+        "order_in_year": 68,
+        "en": "La Point de la Varde",
+        "fr": "La Point de la Varde",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
     }
 }

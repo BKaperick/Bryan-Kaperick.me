@@ -62,7 +62,7 @@
             }
         ],
         "order": 3,
-        "en": "WikiSwitcher is a Google Chrome Extension to automatically choose the best language for a given Wikipedia article among the user's configured languaged.",
+        "en": "WikiSwitcher is a Google Chrome Extension to automatically choose the best language for a given Wikipedia article among the user's configured languages.",
         "fr": "WikiSwitcher est une extension Google Chrome qui permet de choisir automatiquement la meilleure langue pour un article donné de Wikipédia parmi les langues selectionnées par l'utilisateur.",
         "tags": ["java-script", "chrome-extension"],
         "order": 3
