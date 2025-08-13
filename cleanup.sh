@@ -10,7 +10,7 @@ cd fr
 # Create canonical french-language files
 for f in $(find . -maxdepth 10 -type f -name '*\?lang=fr*'); do
     newname=`echo "$f" | sed 's/\?lang=fr//'`
-    echo "current file is $f -> $newname"
+    #echo "current file is $f -> $newname"
     mv "$f" "$newname"
 done
 cd ..
@@ -34,7 +34,7 @@ find . -type f -name "index_fr.html" -exec sed -i -E 's/<a href="index.html" tit
 # At the end, rename everything to use `.html` rather than the uglier `.php.html`. 
 for f in $(find . -maxdepth 10 -type f -name '*php.html'); do
     newname=`echo "$f" | sed 's/.php.html/.html/'`
-    echo "current file is $f -> $newname"
+    #echo "current file is $f -> $newname"
     mv "$f" "$newname"
 done
 find . -type f -wholename "*" -exec sed -i -E "s/.php.html/.html/g" {} \;

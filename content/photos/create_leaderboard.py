@@ -9,8 +9,9 @@ from helper import *
 name_to_cleaned = {
     "cecile": "Cécile",
     "floriane": "Flo",
-    "julie": "Julie S.",
-    "remy_blabla": "Remy"
+    "julie": "Julie",
+    "remy_blabla": "Remy",
+    "chris_louise": "Christopher"
 }
 
 class Score:
@@ -26,7 +27,7 @@ def clean_name(name):
     else:
         return name[0].upper() + name[1:]
 
-def get_leaderboard(year = None, metric = "inv_weight"):
+def get_leaderboard(year = None, metric = "inv_weight", verbose = False):
     leaderboard = dict()
     leaderboard_invweighted = dict()
     with open("photos.json", "r") as fw:
@@ -48,10 +49,14 @@ def get_leaderboard(year = None, metric = "inv_weight"):
     del leaderboard["bryan"]
     leaders = [(clean_name(k),v) for k,v in leaderboard.items()]
     ranked = sorted(leaders, key= lambda x : getattr(x[1], "inv_weight"))
+    if verbose:
+        print("year {0}".format(year))
+        for leader in ranked:
+            print("{0}: inv_weight={1} (N={2})".format(leader[0], leader[1].inv_weight, leader[1].count))
     return ranked, count
 
-def get_leaderboard_winner(year = None, metric = "inv_weight"):
-    ranked_year, count_year = get_leaderboard(year, metric = metric)
+def get_leaderboard_winner(year = None, metric = "inv_weight", verbose=False):
+    ranked_year, count_year = get_leaderboard(year, metric = metric, verbose=verbose)
     if len(ranked_year) >= 1:
         winner, winner_score = ranked_year[-1]
         winner_metric = getattr(winner_score, metric)
@@ -61,7 +66,7 @@ def get_leaderboard_winner(year = None, metric = "inv_weight"):
 
 if __name__ == '__main__':
     metric = "inv_weight"
-    ranked,count = get_leaderboard(metric = metric)
+    ranked,count = get_leaderboard(metric = metric, verbose=True)
     for year in range(2017, 2026):
         winner, winner_metric = get_leaderboard_winner(year, metric)
         print("winner in {0}: {1} - {2} photos".format(year, winner, winner_metric))
