@@ -2575,7 +2575,7 @@
         "month": "Jul",
         "year": 2025,
         "order_in_year": 69,
-        "en": "La Fete des Remparts à Dinan",
+        "en": "La Fete des Remparts \u00e0 Dinan",
         "fr": "The Ramparts Festival in Dinan",
         "is_album": true,
         "photos": [
@@ -2590,7 +2590,7 @@
         "year": 2025,
         "order_in_year": 70,
         "en": "Wet",
-        "fr": "Mouillés",
+        "fr": "Mouill\u00e9s",
         "people": [
             "bryan",
             "chris",
