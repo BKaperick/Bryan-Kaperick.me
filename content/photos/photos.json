@@ -2572,11 +2572,11 @@
     },
     "FetedesRemparts": {
         "name": "FetedesRemparts",
-        "month": "Aug",
+        "month": "Jul",
         "year": 2025,
         "order_in_year": 69,
-        "en": "",
-        "fr": "",
+        "en": "La Fete des Remparts à Dinan",
+        "fr": "The Ramparts Festival in Dinan",
         "is_album": true,
         "photos": [
             "medieval",
@@ -2586,37 +2586,50 @@
     },
     "medieval": {
         "name": "medieval_rain.jpg",
-        "month": "Aug",
+        "month": "Jul",
         "year": 2025,
         "order_in_year": 70,
-        "en": "",
-        "fr": "",
+        "en": "Wet",
+        "fr": "Mouillés",
         "people": [
-            "bryan"
+            "bryan",
+            "chris",
+            "louise",
+            "marie",
+            "marion",
+            "pj"
         ],
         "is_album": false
     },
     "medieval_71": {
         "name": "medieval_dry.jpg",
-        "month": "Aug",
+        "month": "Jul",
         "year": 2025,
         "order_in_year": 71,
-        "en": "",
-        "fr": "",
+        "en": "Dry",
+        "fr": "Secs",
         "people": [
-            "bryan"
+            "bryan",
+            "charles_louise",
+            "jess",
+            "marion",
+            "pj",
+            "louise",
+            "marie",
+            "chris"
         ],
         "is_album": false
     },
     "cropped_72": {
         "name": "bbq_cropped.jpg",
-        "month": "Aug",
+        "month": "Jul",
         "year": 2025,
         "order_in_year": 72,
-        "en": "",
-        "fr": "",
+        "en": "BBQ time",
+        "fr": "Moment de barbeque",
         "people": [
-            "bryan"
+            "bryan",
+            "louise"
         ],
         "is_album": false
     }
