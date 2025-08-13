@@ -2569,5 +2569,55 @@
             "bryan"
         ],
         "is_album": false
+    },
+    "FetedesRemparts": {
+        "name": "FetedesRemparts",
+        "month": "Aug",
+        "year": 2025,
+        "order_in_year": 69,
+        "en": "",
+        "fr": "",
+        "is_album": true,
+        "photos": [
+            "medieval",
+            "medieval_71",
+            "cropped_72"
+        ]
+    },
+    "medieval": {
+        "name": "medieval_rain.jpg",
+        "month": "Aug",
+        "year": 2025,
+        "order_in_year": 70,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "medieval_71": {
+        "name": "medieval_dry.jpg",
+        "month": "Aug",
+        "year": 2025,
+        "order_in_year": 71,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "cropped_72": {
+        "name": "bbq_cropped.jpg",
+        "month": "Aug",
+        "year": 2025,
+        "order_in_year": 72,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
     }
 }
