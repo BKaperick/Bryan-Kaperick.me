@@ -14,12 +14,12 @@ def create_book_block(key, book):
     year = int(book["personal"]["finish_year"])
     return """
     <tr>
-        <td><?=$p->{0}->title;?></td>
-        <td>{1}</td>
-        <td>{2}<?=$p->{0}->personal->finish_year;?></td>
-        <td><?=$p->{0}->personal->rating;?></td>
+        <td class="left"><?=$p->{0}->title;?></td>
+        <td class="left">{1}</td>
+        <td class="left">{2}<?=$p->{0}->personal->finish_year;?></td>
+        <td class="left">{3} <?=$p->{0}->personal->rating;?></td>
     </tr>
-    """.format(key, authors, month)
+    """.format(key, authors, month, "█"*int(book["personal"]["rating"]))
 
 def date_getter(b):
     month = int(b["personal"]["finish_month"]) if "finish_month" in b["personal"] else 0
