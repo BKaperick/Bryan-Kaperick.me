@@ -557,7 +557,7 @@
             "finish_month": 11,
             "finish_year": 2022,
             "recommended_by": "Learn French",
-            "rating": 3
+            "rating": 2
         }
     },
     "gilgamesh": {
@@ -605,7 +605,7 @@
             "finish_month": 9,
             "finish_year": 2022,
             "recommended_by": "General critical consensus",
-            "rating": 5
+            "rating": 7
         }
     },
     "pale": {
@@ -629,7 +629,7 @@
             "finish_month": 9,
             "finish_year": 2022,
             "recommended_by": "General critical consensus",
-            "rating": 5
+            "rating": 8
         }
     },
     "gilbraltar": {
@@ -653,7 +653,7 @@
             "finish_month": 6,
             "finish_year": 2022,
             "recommended_by": "General critical consensus",
-            "rating": 5
+            "rating": 6
         }
     },
     "proof": {
@@ -709,7 +709,7 @@
             "finish_month": 1,
             "finish_year": 2022,
             "recommended_by": "Other books by same author",
-            "rating": 5
+            "rating": 4
         }
     },
     "Lolita": {
@@ -733,7 +733,7 @@
             "finish_month": 12,
             "finish_year": 2021,
             "recommended_by": "General critical consensus",
-            "rating": 5
+            "rating": 9
         }
     },
     "Au": {
@@ -757,7 +757,7 @@
             "finish_month": 9,
             "finish_year": 2021,
             "recommended_by": "General critical consensus",
-            "rating": 5
+            "rating": 6
         }
     },
     "milarepa": {
