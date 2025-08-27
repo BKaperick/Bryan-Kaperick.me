@@ -20,7 +20,8 @@
             "finish_month": 8,
             "finish_year": 2025,
             "recommended_by": "Sami, Adrien, and Louise",
-            "rating": 8
+            "rating": 8,
+            "status": "completed"
         }
     },
     "honte": {
@@ -44,7 +45,8 @@
             "finish_month": 8,
             "finish_year": 2025,
             "recommended_by": "Short book to read aloud",
-            "rating": 1
+            "rating": 1,
+            "status": "completed"
         }
     },
     "left": {
@@ -68,7 +70,8 @@
             "finish_month": 7,
             "finish_year": 2025,
             "recommended_by": "General critical consensus",
-            "rating": 7
+            "rating": 7,
+            "status": "completed"
         }
     },
     "abundance": {
@@ -98,7 +101,8 @@
             "finish_month": 5,
             "finish_year": 2025,
             "recommended_by": "Current political context",
-            "rating": 6
+            "rating": 6,
+            "status": "completed"
         }
     },
     "pnin": {
@@ -122,8 +126,9 @@
             "start_year": 2024,
             "finish_month": 7,
             "finish_year": 2025,
-            "recommended_by": "General critical consensus",
-            "rating": 8
+            "recommended_by": "Other books by same author",
+            "rating": 8,
+            "status": "completed"
         }
     },
     "antimemetics": {
@@ -147,7 +152,8 @@
             "finish_month": 4,
             "finish_year": 2025,
             "recommended_by": "Patrick Casey",
-            "rating": 4
+            "rating": 4,
+            "status": "completed"
         }
     },
     "zeno": {
@@ -171,7 +177,8 @@
             "finish_month": 6,
             "finish_year": 2025,
             "recommended_by": "General critical consensus",
-            "rating": 7
+            "rating": 7,
+            "status": "completed"
         }
     },
     "lenteur": {
@@ -196,7 +203,8 @@
             "finish_month": 10,
             "finish_year": 2024,
             "recommended_by": "Other books by same author",
-            "rating": 7
+            "rating": 7,
+            "status": "completed"
         }
     },
     "passion": {
@@ -220,7 +228,8 @@
             "finish_month": 9,
             "finish_year": 2024,
             "recommended_by": "General critical consensus",
-            "rating": 6
+            "rating": 6,
+            "status": "completed"
         }
     },
     "crime": {
@@ -244,7 +253,8 @@
             "finish_month": 8,
             "finish_year": 2024,
             "recommended_by": "General critical consensus",
-            "rating": 9
+            "rating": 9,
+            "status": "completed"
         }
     },
     "underground": {
@@ -268,7 +278,8 @@
             "finish_month": 8,
             "finish_year": 2024,
             "recommended_by": "General critical consensus",
-            "rating": 8
+            "rating": 8,
+            "status": "completed"
         }
     },
     "unjust": {
@@ -292,7 +303,8 @@
             "finish_month": 7,
             "finish_year": 2024,
             "recommended_by": "Current political context",
-            "rating": 9
+            "rating": 9,
+            "status": "completed"
         }
     },
     "rises": {
@@ -316,7 +328,8 @@
             "finish_month": 5,
             "finish_year": 2024,
             "recommended_by": "General critical consensus",
-            "rating": 6
+            "rating": 6,
+            "status": "completed"
         }
     },
     "forty": {
@@ -341,7 +354,8 @@
             "finish_month": 3,
             "finish_year": 2024,
             "recommended_by": "General critical consensus",
-            "rating": 6
+            "rating": 6,
+            "status": "completed"
         }
     },
     "Do": {
@@ -365,7 +379,8 @@
             "finish_month": 1,
             "finish_year": 2024,
             "recommended_by": "Film adaptation",
-            "rating": 3
+            "rating": 3,
+            "status": "completed"
         }
     },
     "soumission": {
@@ -389,11 +404,12 @@
             "finish_month": 12,
             "finish_year": 2023,
             "recommended_by": "Current political context",
-            "rating": 5
+            "rating": 5,
+            "status": "completed"
         }
     },
     "kong": {
-        "title": "King Kong Théorie",
+        "title": "King Kong Th\u00e9orie",
         "authors": [
             {
                 "name": "Virginie Despentes",
@@ -413,7 +429,8 @@
             "finish_month": 10,
             "finish_year": 2023,
             "recommended_by": "General critical consensus",
-            "rating": 4
+            "rating": 4,
+            "status": "completed"
         }
     },
     "england": {
@@ -437,7 +454,8 @@
             "finish_month": 8,
             "finish_year": 2023,
             "recommended_by": "Michael Hakl",
-            "rating": 6
+            "rating": 6,
+            "status": "completed"
         }
     },
     "Death": {
@@ -453,7 +471,7 @@
         "language": {
             "read": "fr",
             "written": "cn",
-            "translator": "Gwennaël Gaffric"
+            "translator": "Gwenna\u00ebl Gaffric"
         },
         "personal": {
             "start_month": 3,
@@ -461,7 +479,8 @@
             "finish_month": 5,
             "finish_year": 2023,
             "recommended_by": "Continuation of series",
-            "rating": 7
+            "rating": 7,
+            "status": "completed"
         }
     },
     "Transformer": {
@@ -485,7 +504,8 @@
             "finish_month": 4,
             "finish_year": 2023,
             "recommended_by": "Learning",
-            "rating": 7
+            "rating": 7,
+            "status": "abandoned"
         }
     },
     "forest": {
@@ -501,7 +521,7 @@
         "language": {
             "read": "fr",
             "written": "cn",
-            "translator": "Gwennaël Gaffric"
+            "translator": "Gwenna\u00ebl Gaffric"
         },
         "personal": {
             "start_month": 12,
@@ -509,7 +529,8 @@
             "finish_month": 2,
             "finish_year": 2023,
             "recommended_by": "General critical consensus",
-            "rating": 5
+            "rating": 5,
+            "status": "completed"
         }
     },
     "down": {
@@ -533,14 +554,15 @@
             "finish_month": 11,
             "finish_year": 2022,
             "recommended_by": "William (Paris)",
-            "rating": 7
+            "rating": 7,
+            "status": "completed"
         }
     },
     "Acide": {
         "title": "Acide Sulfurique",
         "authors": [
             {
-                "name": "Amélie Nothomb",
+                "name": "Am\u00e9lie Nothomb",
                 "countries": [
                     "FR"
                 ]
@@ -557,7 +579,8 @@
             "finish_month": 11,
             "finish_year": 2022,
             "recommended_by": "Learn French",
-            "rating": 2
+            "rating": 2,
+            "status": "completed"
         }
     },
     "gilgamesh": {
@@ -581,7 +604,8 @@
             "finish_month": 9,
             "finish_year": 2022,
             "recommended_by": "General critical consensus",
-            "rating": 5
+            "rating": 5,
+            "status": "completed"
         }
     },
     "problem": {
@@ -597,7 +621,7 @@
         "language": {
             "read": "fr",
             "written": "cn",
-            "translator": "Gwennaël Gaffric"
+            "translator": "Gwenna\u00ebl Gaffric"
         },
         "personal": {
             "start_month": 7,
@@ -605,7 +629,8 @@
             "finish_month": 9,
             "finish_year": 2022,
             "recommended_by": "General critical consensus",
-            "rating": 7
+            "rating": 7,
+            "status": "completed"
         }
     },
     "pale": {
@@ -629,7 +654,8 @@
             "finish_month": 9,
             "finish_year": 2022,
             "recommended_by": "General critical consensus",
-            "rating": 8
+            "rating": 8,
+            "status": "completed"
         }
     },
     "gilbraltar": {
@@ -653,11 +679,12 @@
             "finish_month": 6,
             "finish_year": 2022,
             "recommended_by": "General critical consensus",
-            "rating": 6
+            "rating": 6,
+            "status": "completed"
         }
     },
     "proof": {
-        "title": "Gödel&rsquo;s Proof",
+        "title": "G\u00f6del&rsquo;s Proof",
         "publish_year": 1958,
         "authors": [
             {
@@ -685,7 +712,8 @@
             "finish_month": 1,
             "finish_year": 2022,
             "recommended_by": "Learning",
-            "rating": 5
+            "rating": 5,
+            "status": "completed"
         }
     },
     "bluebeard": {
@@ -709,7 +737,8 @@
             "finish_month": 1,
             "finish_year": 2022,
             "recommended_by": "Other books by same author",
-            "rating": 4
+            "rating": 4,
+            "status": "completed"
         }
     },
     "Lolita": {
@@ -733,7 +762,8 @@
             "finish_month": 12,
             "finish_year": 2021,
             "recommended_by": "General critical consensus",
-            "rating": 9
+            "rating": 9,
+            "status": "completed"
         }
     },
     "Au": {
@@ -757,7 +787,8 @@
             "finish_month": 9,
             "finish_year": 2021,
             "recommended_by": "General critical consensus",
-            "rating": 6
+            "rating": 6,
+            "status": "completed"
         }
     },
     "milarepa": {
@@ -781,7 +812,8 @@
             "finish_month": 4,
             "finish_year": 2021,
             "recommended_by": "General critical consensus",
-            "rating": 5
+            "rating": 5,
+            "status": "completed"
         }
     },
     "cradle": {
@@ -805,7 +837,8 @@
             "finish_month": 3,
             "finish_year": 2021,
             "recommended_by": "Other books by same author",
-            "rating": 6
+            "rating": 6,
+            "status": "completed"
         }
     },
     "claudius": {
@@ -829,7 +862,8 @@
             "finish_month": 7,
             "finish_year": 2021,
             "recommended_by": "Jo Anne Kaperick",
-            "rating": 7
+            "rating": 7,
+            "status": "completed"
         }
     },
     "Fear": {
@@ -853,7 +887,8 @@
             "finish_month": 12,
             "finish_year": 2020,
             "recommended_by": "General critical consensus",
-            "rating": 9
+            "rating": 9,
+            "status": "completed"
         }
     },
     "mistook": {
@@ -878,11 +913,12 @@
             "finish_month": 11,
             "finish_year": 2020,
             "recommended_by": "Julie Speckens",
-            "rating": 7
+            "rating": 7,
+            "status": "completed"
         }
     },
     "herisson": {
-        "title": "L&rsquo;Élegance du Hérisson",
+        "title": "L&rsquo;\u00c9legance du H\u00e9risson",
         "authors": [
             {
                 "name": "Muriel Barbery",
@@ -902,7 +938,8 @@
             "finish_month": 12,
             "finish_year": 2020,
             "recommended_by": "Learning French",
-            "rating": 2
+            "rating": 2,
+            "status": "completed"
         }
     },
     "Zen": {
@@ -926,7 +963,8 @@
             "finish_month": 5,
             "finish_year": 2020,
             "recommended_by": "Joseph Kaperick",
-            "rating": 9
+            "rating": 9,
+            "status": "completed"
         }
     },
     "Sapiens": {
@@ -951,14 +989,15 @@
             "finish_month": 5,
             "finish_year": 2020,
             "recommended_by": "Learning",
-            "rating": 6
+            "rating": 6,
+            "status": "completed"
         }
     },
     "petit": {
         "title": "Le Petit Prince",
         "authors": [
             {
-                "name": "Antoine de Saint-Exupéry",
+                "name": "Antoine de Saint-Exup\u00e9ry",
                 "countries": [
                     "FR"
                 ]
@@ -975,7 +1014,8 @@
             "finish_month": 4,
             "finish_year": 2020,
             "recommended_by": "Learning French",
-            "rating": 7
+            "rating": 7,
+            "status": "completed"
         }
     },
     "go": {
@@ -1000,14 +1040,15 @@
             "finish_month": 2,
             "finish_year": 2020,
             "recommended_by": "Jason Andrews",
-            "rating": 5
+            "rating": 5,
+            "status": "completed"
         }
     },
     "Torpedo": {
         "title": "Torpedo a Disparu",
         "authors": [
             {
-                "name": "Cédric Harlé",
+                "name": "C\u00e9dric Harl\u00e9",
                 "countries": [
                     "US"
                 ]
@@ -1022,7 +1063,8 @@
             "start_year": 2020,
             "finish_year": 2020,
             "recommended_by": "Learn French",
-            "rating": 3
+            "rating": 3,
+            "status": "completed"
         }
     },
     "Dune": {
@@ -1046,11 +1088,12 @@
             "finish_month": 12,
             "finish_year": 2019,
             "recommended_by": "Kevin Kaperick",
-            "rating": 7
+            "rating": 7,
+            "status": "completed"
         }
     },
     "L": {
-        "title": "L&rsquo;Étranger",
+        "title": "L&rsquo;\u00c9tranger",
         "authors": [
             {
                 "name": "Albert Camus",
@@ -1070,7 +1113,8 @@
             "finish_month": 10,
             "finish_year": 2019,
             "recommended_by": "Learn French",
-            "rating": 6
+            "rating": 6,
+            "status": "completed"
         }
     },
     "Clockwork": {
@@ -1094,11 +1138,12 @@
             "finish_month": 6,
             "finish_year": 2019,
             "recommended_by": "Film adaptation",
-            "rating": 5
+            "rating": 5,
+            "status": "completed"
         }
     },
     "Surely": {
-        "title": "Surely You’re Joking, Mr. Feynman!",
+        "title": "Surely You\u2019re Joking, Mr. Feynman!",
         "authors": [
             {
                 "name": "Richard Feynman",
@@ -1118,7 +1163,8 @@
             "finish_month": 5,
             "finish_year": 2019,
             "recommended_by": "General critical consensus",
-            "rating": 7
+            "rating": 7,
+            "status": "completed"
         }
     }
 }

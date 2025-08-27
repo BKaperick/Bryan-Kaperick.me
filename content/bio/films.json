@@ -1,0 +1,108 @@
+[
+    {
+        "title": "Sometimes I Think About Dying, 2023 - \u2605\u2605\u2605\u2605",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "Sometimes I Think About Dying, 2023 - \u2605\u2605\u2605\u2605"
+        },
+        "links": [
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://letterboxd.com/bkapers/film/sometimes-i-think-about-dying-2023/"
+            }
+        ],
+        "link": "https://letterboxd.com/bkapers/film/sometimes-i-think-about-dying-2023/",
+        "id": "letterboxd-watch-992421223",
+        "guidislink": false,
+        "published": "Sat, 23 Aug 2025 22:48:13 +1200",
+        "published_parsed": [
+            2025,
+            8,
+            23,
+            10,
+            48,
+            13,
+            5,
+            235,
+            0
+        ],
+        "letterboxd_watcheddate": "2025-08-22",
+        "letterboxd_rewatch": "No",
+        "letterboxd_filmtitle": "Sometimes I Think About Dying",
+        "letterboxd_filmyear": "2023",
+        "letterboxd_memberrating": "4.0",
+        "tmdb_movieid": "891933",
+        "summary": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/8/0/2/7/5/9/802759-sometimes-i-think-about-dying-2023-0-600-0-900-crop.jpg?v=4c63a12d07\" /></p> <p>Watched on Friday August 22, 2025.</p>",
+        "summary_detail": {
+            "type": "text/html",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/8/0/2/7/5/9/802759-sometimes-i-think-about-dying-2023-0-600-0-900-crop.jpg?v=4c63a12d07\" /></p> <p>Watched on Friday August 22, 2025.</p>"
+        },
+        "authors": [
+            {
+                "name": "bkapers"
+            }
+        ],
+        "author": "bkapers",
+        "author_detail": {
+            "name": "bkapers"
+        }
+    },
+    {
+        "title": "Climax, 2018 - \u2605\u2605\u2605\u00bd",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "Climax, 2018 - \u2605\u2605\u2605\u00bd"
+        },
+        "links": [
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://letterboxd.com/bkapers/film/climax-2018/"
+            }
+        ],
+        "link": "https://letterboxd.com/bkapers/film/climax-2018/",
+        "id": "letterboxd-watch-985216727",
+        "guidislink": false,
+        "published": "Sun, 17 Aug 2025 05:39:48 +1200",
+        "published_parsed": [
+            2025,
+            8,
+            16,
+            17,
+            39,
+            48,
+            5,
+            228,
+            0
+        ],
+        "letterboxd_watcheddate": "2025-08-16",
+        "letterboxd_rewatch": "No",
+        "letterboxd_filmtitle": "Climax",
+        "letterboxd_filmyear": "2018",
+        "letterboxd_memberrating": "3.5",
+        "tmdb_movieid": "507076",
+        "summary": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/4/3/6/8/7/3/436873-climax-0-600-0-900-crop.jpg?v=b3003b4908\" /></p> <p>Watched on Saturday August 16, 2025.</p>",
+        "summary_detail": {
+            "type": "text/html",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/4/3/6/8/7/3/436873-climax-0-600-0-900-crop.jpg?v=b3003b4908\" /></p> <p>Watched on Saturday August 16, 2025.</p>"
+        },
+        "authors": [
+            {
+                "name": "bkapers"
+            }
+        ],
+        "author": "bkapers",
+        "author_detail": {
+            "name": "bkapers"
+        }
+    }
+]
