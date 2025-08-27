@@ -18,11 +18,11 @@ def create_film_block(key, film):
     <tr>
         <td class="left"><?=$f[{0}]->letterboxd_filmtitle;?></td>
         <td><?=$f[{0}]->letterboxd_filmyear;?></td>
-        <td>{1} <?=$language["{2}"];?> {3}</td>
+        <td>{1} {2} {3}</td>
         <td class="left">{4}</td>
     </tr>
     """.format(key, day, month, year, "█"*scaled_rating + " " + str(scaled_rating))
-
+    #<td>{1} <?=$language["{2}"];?> {3}</td>
 
 header = """
 <table class="bordered" border=1 frame=sides cellspacing="0" cellpadding="5">
