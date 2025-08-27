@@ -14,10 +14,6 @@ statuses = [
         ]
 
 def create_book_block(key, book):
-    authors = ", ".join([a["name"] for a in book["authors"]])
-    month_ind = int(book["personal"]["finish_month"]) if "finish_month" in book["personal"] else 0
-    month = months_reverse[month_ind-1] + " " if month_ind > 0 else ""
-    year = int(book["personal"]["finish_year"])
     return """
     <tr>
         <td class="left"><?=$p->{0}->title;?></td>
