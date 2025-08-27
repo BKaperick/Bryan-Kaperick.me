@@ -60,6 +60,8 @@ with open("books.json", "r") as fr:
     old_books = [b for b in books if not b[0] in recent_books]
 
     for i,(key,book) in enumerate(ordered_books):
+        if book["personal"]["status"] != "completed":
+            continue
         block = create_book_block(key, book)
         
         if key in recent_books:
