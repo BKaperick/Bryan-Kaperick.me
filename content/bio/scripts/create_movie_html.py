@@ -14,8 +14,8 @@ def create_film_block(key, film):
     return """
     <tr>
         <td class="left"><?=$f[{0}]->letterboxd_filmtitle;?></td>
-        <td class="left"><?=$f[{0}]->letterboxd_filmyear;?></td>
-        <td class="left">{1}</td>
+        <td><?=$f[{0}]->letterboxd_filmyear;?></td>
+        <td>{1}</td>
         <td class="left">{2}</td>
     </tr>
     """.format(key, watch_date.strftime("%d %b %Y"), "█"*scaled_rating + " " + str(scaled_rating))
