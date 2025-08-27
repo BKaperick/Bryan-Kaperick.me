@@ -15,7 +15,12 @@ def create_book_block(key, book):
 with open("books.json", "r") as fr:
     books = json.load(fr)
     blocks = []
-    for key,book in books.items():
+    limit = None
+    if len(sys.argv) > 1:
+        limit = int(sys.argv[1])
+    books = books.items()
+    ordered_books = sorted(books, key=lambda b : b["personal"]
+    for i,(key,book) in enumerate()):
         block = create_book_block(key, book)
         blocks.append(block)
     books_html = "<ul>\n" + "\n".join(blocks) + "\n<\\ul>"
