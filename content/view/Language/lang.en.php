@@ -45,6 +45,7 @@ $language = array(
     'Finished'=>'Finished',
     'Rating'=>'Rating',
     'Released'=>'Released',
-    'Watched'=>'Watched'
+    'Watched'=>'Watched',
+    ''=>''
 );
 ?>

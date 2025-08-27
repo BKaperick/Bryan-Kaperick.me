@@ -45,6 +45,7 @@ $language = array(
     'Finished'=>'Date fini',
     'Rating'=>'Note',
     'Released'=>'Date Sortie',
-    'Watched'=>'Date Regardée'
+    'Watched'=>'Date Regardée',
+    ''=>''
 );
 ?>

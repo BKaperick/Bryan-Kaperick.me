@@ -11,14 +11,17 @@ current_year = datetime.now().year
 def create_film_block(key, film):
     watch_date = datetime.strptime(film["letterboxd_watcheddate"], "%Y-%m-%d")
     scaled_rating = int(float(film["letterboxd_memberrating"])*2)
+    day = watch_date.strftime("%d")
+    year = watch_date.strftime("%Y")
+    month = watch_date.strftime("%b")
     return """
     <tr>
         <td class="left"><?=$f[{0}]->letterboxd_filmtitle;?></td>
         <td><?=$f[{0}]->letterboxd_filmyear;?></td>
-        <td>{1}</td>
-        <td class="left">{2}</td>
+        <td>{1} <?=$language["{2}"];?> {3}</td>
+        <td class="left">{4}</td>
     </tr>
-    """.format(key, watch_date.strftime("%d %b %Y"), "█"*scaled_rating + " " + str(scaled_rating))
+    """.format(key, day, month, year, "█"*scaled_rating + " " + str(scaled_rating))
 
 
 header = """

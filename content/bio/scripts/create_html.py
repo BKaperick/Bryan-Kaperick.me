@@ -10,13 +10,13 @@ current_year = datetime.now().year
 def create_book_block(key, book):
     authors = ", ".join([a["name"] for a in book["authors"]])
     month_ind = int(book["personal"]["finish_month"]) if "finish_month" in book["personal"] else 0
-    month = months_reverse[month_ind-1] + " " if month_ind > 0 else ""
+    month = months_reverse[month_ind-1] if month_ind > 0 else ""
     year = int(book["personal"]["finish_year"])
     return """
     <tr>
         <td class="left"><?=$p->{0}->title;?></td>
         <td class="left">{1}</td>
-        <td>{2}<?=$p->{0}->personal->finish_year;?></td>
+        <td><?=substr($language["{2}"],0,3)?> <?=$p->{0}->personal->finish_year;?></td>
         <td class="left" style="width: 150px;">{3} <?=$p->{0}->personal->rating;?></td>
     </tr>
     """.format(key, authors, month, "█"*int(book["personal"]["rating"]))
