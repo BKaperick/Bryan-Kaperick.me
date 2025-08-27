@@ -33,9 +33,6 @@ header = """
     <th class="border1"><?=$language["Author(s)"];?></th>
     <th class="border1"><?=$language["Finished"];?></th>
     <th class="border1"><?=$language["Rating"];?> (1-10)</th>
-    <th class="border1">Author(s)</th>
-    <th class="border1">Finished</th>
-    <th class="border1">Rating (1-10)</th>
   </tr>
 """
 footer = """\n</table>"""
