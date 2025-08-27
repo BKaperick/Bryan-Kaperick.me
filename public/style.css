@@ -858,7 +858,7 @@ aside ol>li::before {
 
 .more-link__help-icon {
 	padding: 1px 0 1px 20px;
-	background-image: url(http://localhost:8000/sass/navigation/more-link/more-link__help-icon.svg);
+	background-image: url(sass/navigation/more-link/more-link__help-icon.svg.html);
 	background-position: 0 50%;
 	background-repeat: no-repeat
 }
