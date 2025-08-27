@@ -1,0 +1,1076 @@
+{
+    "left": {
+        "title": "The Left Hand of Darkness",
+        "authors": [
+            {
+                "name": "Ursala K. Le Guin",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 12,
+            "start_year": 2024,
+            "finish_month": 7,
+            "finish_year": 2025,
+            "recommended_by": "General critical consensus",
+            "rating": 8
+        }
+    },
+    "abundance": {
+        "title": "Abundance",
+        "authors": [
+            {
+                "name": "Ezra Klein",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "name": "Derek Thompson",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 5,
+            "start_year": 2025,
+            "finish_month": 5,
+            "finish_year": 2025,
+            "recommended_by": "Current political context",
+            "rating": 6
+        }
+    },
+    "pnin": {
+        "title": "Pnin",
+        "authors": [
+            {
+                "name": "Vladimir Nabokov",
+                "countries": [
+                    "US",
+                    "RU"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 12,
+            "start_year": 2024,
+            "finish_month": 7,
+            "finish_year": 2025,
+            "recommended_by": "General critical consensus",
+            "rating": 8
+        }
+    },
+    "antimemetics": {
+        "title": "There Is No Antimemetics Division",
+        "authors": [
+            {
+                "name": "qntm",
+                "countries": [
+                    "UK"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 2,
+            "start_year": 2025,
+            "finish_month": 4,
+            "finish_year": 2025,
+            "recommended_by": "Patrick Casey",
+            "rating": 4
+        }
+    },
+    "zeno": {
+        "title": "La Conscience de Zeno",
+        "authors": [
+            {
+                "name": "Italo Svevo",
+                "countries": [
+                    "IT"
+                ]
+            }
+        ],
+        "language": {
+            "read": "fr",
+            "written": "it",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 8,
+            "start_year": 2023,
+            "finish_month": 7,
+            "finish_year": 2024,
+            "recommended_by": "General critical consensus",
+            "rating": 7
+        }
+    },
+    "lenteur": {
+        "title": "La Lenteur",
+        "authors": [
+            {
+                "name": "Milan Kundera",
+                "countries": [
+                    "FR",
+                    "CZ"
+                ]
+            }
+        ],
+        "language": {
+            "read": "fr",
+            "written": "fr",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 10,
+            "start_year": 2024,
+            "finish_month": 10,
+            "finish_year": 2024,
+            "recommended_by": "Other books by same author",
+            "rating": 5
+        }
+    },
+    "passion": {
+        "title": "Passion Simple",
+        "authors": [
+            {
+                "name": "Annie Ernaux",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "language": {
+            "read": "fr",
+            "written": "fr",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 9,
+            "start_year": 2024,
+            "finish_month": 9,
+            "finish_year": 2024,
+            "recommended_by": "General critical consensus",
+            "rating": 6
+        }
+    },
+    "crime": {
+        "title": "Crime and Punishment",
+        "authors": [
+            {
+                "name": "Fyodor Dostoevsky",
+                "countries": [
+                    "RU"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "ru",
+            "translator": "Pevear and Volokhonsky"
+        },
+        "personal": {
+            "start_month": 8,
+            "start_year": 2024,
+            "finish_month": 8,
+            "finish_year": 2024,
+            "recommended_by": "General critical consensus",
+            "rating": 9
+        }
+    },
+    "underground": {
+        "title": "Notes from Underground",
+        "authors": [
+            {
+                "name": "Fyodor Dostoevsky",
+                "countries": [
+                    "RU"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "ru",
+            "translator": "Pevear and Volokhonsky"
+        },
+        "personal": {
+            "start_month": 8,
+            "start_year": 2024,
+            "finish_month": 8,
+            "finish_year": 2024,
+            "recommended_by": "General critical consensus",
+            "rating": 8
+        }
+    },
+    "unjust": {
+        "title": "Just and Unjust Wars: A Moral Argument with Historical Illustrations",
+        "authors": [
+            {
+                "name": "Michael Walzer",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 6,
+            "start_year": 2024,
+            "finish_month": 7,
+            "finish_year": 2024,
+            "recommended_by": "Current political context",
+            "rating": 9
+        }
+    },
+    "rises": {
+        "title": "The Sun Also Rises",
+        "authors": [
+            {
+                "name": "Ernest Hemingway",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 4,
+            "start_year": 2024,
+            "finish_month": 5,
+            "finish_year": 2024,
+            "recommended_by": "General critical consensus",
+            "rating": 5
+        }
+    },
+    "forty": {
+        "title": "The Forty Rules of Love",
+        "publish_year": 2009,
+        "authors": [
+            {
+                "name": "Elif Shufak",
+                "countries": [
+                    "TK"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 1,
+            "start_year": 2024,
+            "finish_month": 3,
+            "finish_year": 2024,
+            "recommended_by": "General critical consensus",
+            "rating": 5
+        }
+    },
+    "Do": {
+        "title": "Do Androids Dream of Electric Sheep?",
+        "authors": [
+            {
+                "name": "Philip K. Dick",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 12,
+            "start_year": 2023,
+            "finish_month": 1,
+            "finish_year": 2024,
+            "recommended_by": "Film adaptation",
+            "rating": 3
+        }
+    },
+    "soumission": {
+        "title": "Soumission",
+        "authors": [
+            {
+                "name": "Michel Houellebecq",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "language": {
+            "read": "fr",
+            "written": "fr",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 10,
+            "start_year": 2023,
+            "finish_month": 12,
+            "finish_year": 2023,
+            "recommended_by": "Current political context",
+            "rating": 5
+        }
+    },
+    "kong": {
+        "title": "King Kong Théorie",
+        "authors": [
+            {
+                "name": "Virginie Despentes",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "language": {
+            "read": "fr",
+            "written": "fr",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 9,
+            "start_year": 2023,
+            "finish_month": 10,
+            "finish_year": 2023,
+            "recommended_by": "General critical consensus",
+            "rating": 4
+        }
+    },
+    "england": {
+        "title": "I Served the King of England",
+        "authors": [
+            {
+                "name": "Bohumil Hrabal",
+                "countries": [
+                    "CZ"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "cz",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 7,
+            "start_year": 2023,
+            "finish_month": 8,
+            "finish_year": 2023,
+            "recommended_by": "Michael Hakl",
+            "rating": 7
+        }
+    },
+    "Death": {
+        "title": "Death's End",
+        "authors": [
+            {
+                "name": "Cixin Liu",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "language": {
+            "read": "fr",
+            "written": "cn",
+            "translator": "Gwennaël Gaffric"
+        },
+        "personal": {
+            "start_month": 3,
+            "start_year": 2023,
+            "finish_month": 5,
+            "finish_year": 2023,
+            "recommended_by": "Continuation of series",
+            "rating": 7
+        }
+    },
+    "Transformer": {
+        "title": "Transformer: The Deep Chemistry of Life and Death",
+        "authors": [
+            {
+                "name": "Nick Lane",
+                "countries": [
+                    "UK"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 1,
+            "start_year": 2023,
+            "finish_month": 4,
+            "finish_year": 2023,
+            "recommended_by": "Learning",
+            "rating": 7
+        }
+    },
+    "forest": {
+        "title": "The Dark Forest",
+        "authors": [
+            {
+                "name": "Cixin Liu",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "language": {
+            "read": "fr",
+            "written": "cn",
+            "translator": "Gwennaël Gaffric"
+        },
+        "personal": {
+            "start_month": 12,
+            "start_year": 2022,
+            "finish_month": 2,
+            "finish_year": 2023,
+            "recommended_by": "General critical consensus",
+            "rating": 5
+        }
+    },
+    "down": {
+        "title": "Down and Out in Paris and London",
+        "authors": [
+            {
+                "name": "George Orwell",
+                "countries": [
+                    "UK"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 11,
+            "start_year": 2022,
+            "finish_month": 11,
+            "finish_year": 2022,
+            "recommended_by": "William (Paris)",
+            "rating": 7
+        }
+    },
+    "Acide": {
+        "title": "Acide Sulfurique",
+        "authors": [
+            {
+                "name": "Amélie Nothomb",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "language": {
+            "read": "fr",
+            "written": "fr",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 10,
+            "start_year": 2022,
+            "finish_month": 11,
+            "finish_year": 2022,
+            "recommended_by": "Learn French",
+            "rating": 3
+        }
+    },
+    "gilgamesh": {
+        "title": "The Epic of Gilgamesh",
+        "authors": [
+            {
+                "name": "Sin-Leqi-Unninni(?)",
+                "countries": [
+                    "IQ"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 9,
+            "start_year": 2022,
+            "finish_month": 9,
+            "finish_year": 2022,
+            "recommended_by": "General critical consensus",
+            "rating": 5
+        }
+    },
+    "problem": {
+        "title": "The Three Body Problem",
+        "authors": [
+            {
+                "name": "Cixin Liu",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "language": {
+            "read": "fr",
+            "written": "cn",
+            "translator": "Gwennaël Gaffric"
+        },
+        "personal": {
+            "start_month": 7,
+            "start_year": 2022,
+            "finish_month": 9,
+            "finish_year": 2022,
+            "recommended_by": "General critical consensus",
+            "rating": 5
+        }
+    },
+    "pale": {
+        "title": "Pale Fire",
+        "authors": [
+            {
+                "name": "Vladimir Nabokov",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 6,
+            "start_year": 2022,
+            "finish_month": 9,
+            "finish_year": 2022,
+            "recommended_by": "General critical consensus",
+            "rating": 5
+        }
+    },
+    "gilbraltar": {
+        "title": "Le Marin de Gilbraltar",
+        "authors": [
+            {
+                "name": "Marguerite Duras",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 2,
+            "start_year": 2022,
+            "finish_month": 6,
+            "finish_year": 2022,
+            "recommended_by": "General critical consensus",
+            "rating": 5
+        }
+    },
+    "proof": {
+        "title": "Gödel&rsquo;s Proof",
+        "publish_year": 1958,
+        "authors": [
+            {
+                "name": "Ernest Nagel",
+                "countries": [
+                    "US",
+                    "SK"
+                ]
+            },
+            {
+                "name": "James R. Newman",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 1,
+            "start_year": 2022,
+            "finish_month": 1,
+            "finish_year": 2022,
+            "recommended_by": "Learning",
+            "rating": 5
+        }
+    },
+    "bluebeard": {
+        "title": "Bluebeard",
+        "authors": [
+            {
+                "name": "Kurt Vonnegut",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 12,
+            "start_year": 2021,
+            "finish_month": 1,
+            "finish_year": 2022,
+            "recommended_by": "Other books by same author",
+            "rating": 5
+        }
+    },
+    "Lolita": {
+        "title": "Lolita",
+        "authors": [
+            {
+                "name": "Vladimir Nabokov",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 9,
+            "start_year": 2021,
+            "finish_month": 12,
+            "finish_year": 2021,
+            "recommended_by": "General critical consensus",
+            "rating": 5
+        }
+    },
+    "Au": {
+        "title": "Au Bonheur des Ogres",
+        "authors": [
+            {
+                "name": "Daniel Pennac",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 5,
+            "start_year": 2021,
+            "finish_month": 9,
+            "finish_year": 2021,
+            "recommended_by": "General critical consensus",
+            "rating": 5
+        }
+    },
+    "milarepa": {
+        "title": "Milarepa",
+        "authors": [
+            {
+                "name": "Eric Emmanuel-Schmitt",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 3,
+            "start_year": 2021,
+            "finish_month": 4,
+            "finish_year": 2021,
+            "recommended_by": "General critical consensus",
+            "rating": 5
+        }
+    },
+    "cradle": {
+        "title": "Cat&rsquo;s Cradle",
+        "authors": [
+            {
+                "name": "Kurt Vonnegut",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 1,
+            "start_year": 2021,
+            "finish_month": 3,
+            "finish_year": 2021,
+            "recommended_by": "Other books by same author",
+            "rating": 6
+        }
+    },
+    "claudius": {
+        "title": "I, Claudius",
+        "authors": [
+            {
+                "name": "Robert Graves",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 12,
+            "start_year": 2020,
+            "finish_month": 7,
+            "finish_year": 2021,
+            "recommended_by": "Jo Anne Kaperick",
+            "rating": 7
+        }
+    },
+    "Fear": {
+        "title": "Fear and Loathing in Las Vegas",
+        "authors": [
+            {
+                "name": "Hunter S. Thompson",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 12,
+            "start_year": 2020,
+            "finish_month": 12,
+            "finish_year": 2020,
+            "recommended_by": "General critical consensus",
+            "rating": 9
+        }
+    },
+    "mistook": {
+        "title": "The Man Who Mistook His Wife for a Hat",
+        "authors": [
+            {
+                "name": "Oliver Sacks",
+                "countries": [
+                    "US",
+                    "UK"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 11,
+            "start_year": 2020,
+            "finish_month": 11,
+            "finish_year": 2020,
+            "recommended_by": "Julie Speckens",
+            "rating": 7
+        }
+    },
+    "herisson": {
+        "title": "L&rsquo;Élegance du Hérisson",
+        "authors": [
+            {
+                "name": "Muriel Barbery",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "language": {
+            "read": "fr",
+            "written": "fr",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 6,
+            "start_year": 2020,
+            "finish_month": 12,
+            "finish_year": 2020,
+            "recommended_by": "Learning French",
+            "rating": 2
+        }
+    },
+    "Zen": {
+        "title": "Zen and the Art of Motorcycle Maintenance",
+        "authors": [
+            {
+                "name": "Robert M. Persig",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 4,
+            "start_year": 2020,
+            "finish_month": 5,
+            "finish_year": 2020,
+            "recommended_by": "Joseph Kaperick",
+            "rating": 9
+        }
+    },
+    "Sapiens": {
+        "title": "Sapiens",
+        "authors": [
+            {
+                "name": "Yuval Noah Harari",
+                "countries": [
+                    "US",
+                    "IL"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 5,
+            "start_year": 2020,
+            "finish_month": 5,
+            "finish_year": 2020,
+            "recommended_by": "Learning",
+            "rating": 6
+        }
+    },
+    "petit": {
+        "title": "Le Petit Prince",
+        "authors": [
+            {
+                "name": "Antoine de Saint-Exupéry",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "language": {
+            "read": "fr",
+            "written": "fr",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 4,
+            "start_year": 2020,
+            "finish_month": 4,
+            "finish_year": 2020,
+            "recommended_by": "Learning French",
+            "rating": 7
+        }
+    },
+    "go": {
+        "title": "The Master of Go",
+        "publish_year": 1951,
+        "authors": [
+            {
+                "name": "Yasunari Kawabata",
+                "countries": [
+                    "JP"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "jp",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 2,
+            "start_year": 2020,
+            "finish_month": 2,
+            "finish_year": 2020,
+            "recommended_by": "Jason Andrews",
+            "rating": 5
+        }
+    },
+    "Torpedo": {
+        "title": "Torpedo a Disparu",
+        "authors": [
+            {
+                "name": "Cédric Harlé",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_year": 2020,
+            "finish_year": 2020,
+            "recommended_by": "Learn French",
+            "rating": 3
+        }
+    },
+    "Dune": {
+        "title": "Dune",
+        "authors": [
+            {
+                "name": "Frank Herbert",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 10,
+            "start_year": 2019,
+            "finish_month": 12,
+            "finish_year": 2019,
+            "recommended_by": "Kevin Kaperick",
+            "rating": 7
+        }
+    },
+    "L": {
+        "title": "L&rsquo;Étranger",
+        "authors": [
+            {
+                "name": "Albert Camus",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "language": {
+            "read": "fr",
+            "written": "fr",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 7,
+            "start_year": 2019,
+            "finish_month": 10,
+            "finish_year": 2019,
+            "recommended_by": "Learn French",
+            "rating": 6
+        }
+    },
+    "Clockwork": {
+        "title": "A Clockwork Orange",
+        "authors": [
+            {
+                "name": "Anthony Burgess",
+                "countries": [
+                    "UK"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 5,
+            "start_year": 2019,
+            "finish_month": 6,
+            "finish_year": 2019,
+            "recommended_by": "Film adaptation",
+            "rating": 5
+        }
+    },
+    "Surely": {
+        "title": "Surely You’re Joking, Mr. Feynman!",
+        "authors": [
+            {
+                "name": "Richard Feynman",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 5,
+            "start_year": 2019,
+            "finish_month": 5,
+            "finish_year": 2019,
+            "recommended_by": "General critical consensus",
+            "rating": 7
+        }
+    }
+}

@@ -28,6 +28,10 @@ cd ../projects
 echo "starting project ingestion"
 python3 ./scripts/create_html.py
 
+cd ../bio
+echo "starting bio page ingestion"
+python3 ./scripts/create_html.py
+
 cd ../scripts
 echo "starting rss feed content creation"
 python3 ./create_rss.py
