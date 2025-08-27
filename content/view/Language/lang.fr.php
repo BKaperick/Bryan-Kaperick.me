@@ -39,6 +39,10 @@ $language = array(
     'Latest Updates'=>'Dernières mises à jour',
     'new-photos'=>'Nouvelle photo',
     'new-photos-album'=>'Nouvel album photo',
-    'new-poetry'=>'Nouveau poème'
+    'new-poetry'=>'Nouveau poème',
+    'Title'=>'Titre',
+    'Author(s)'=>'Ecrivain(s)',
+    'Finished'=>'Date fini',
+    'Rating'=>'Note'
 );
 ?>
