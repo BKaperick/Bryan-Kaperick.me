@@ -39,15 +39,32 @@ footer = """\n</table>"""
 
 with open("books.json", "r") as fr:
     books = json.load(fr)
-    blocks = []
+    recent_blocks = []
+    old_blocks = []
     limit = None
     if len(sys.argv) > 1:
         limit = int(sys.argv[1])
     books = books.items()
     ordered_books = sorted(books, key=lambda b : -date_getter(b[1]))
+
+    now = datetime.now()
+    now.month
+    
+    recent_books = [b[0] for b in books if (date_getter(b[1]) >= 100 * now.year) or ((date_getter(b[1]) >= 100 * (now.year - 1)) and date_getter(b[1]) % 100 >= now.month)]
+    old_books = [b for b in books if not b[0] in recent_books]
+
     for i,(key,book) in enumerate(ordered_books):
         block = create_book_block(key, book)
-        blocks.append(block)
-    books_html = header + "\n".join(blocks) + footer
-    with open("books.html", "w") as p:
+        
+        if key in recent_books:
+            recent_blocks.append(block)
+        else:
+            old_blocks.append(block)
+    
+    books_html = header + "\n".join(recent_blocks) + footer
+    with open("recent_books.html", "w") as p:
+        p.write(books_html)
+    
+    books_html = header + "\n".join(old_blocks) + footer
+    with open("old_books.html", "w") as p:
         p.write(books_html)
