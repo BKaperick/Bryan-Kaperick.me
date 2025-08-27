@@ -1,4 +1,52 @@
 {
+    "flash": {
+        "title": "Flash ou le Grand Voyage",
+        "authors": [
+            {
+                "name": "Charles Duchaussois",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "language": {
+            "read": "fr",
+            "written": "fr",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 7,
+            "start_year": 2025,
+            "finish_month": 8,
+            "finish_year": 2025,
+            "recommended_by": "Sami, Adrien, and Louise",
+            "rating": 8
+        }
+    },
+    "honte": {
+        "title": "La Honte",
+        "authors": [
+            {
+                "name": "Annie Ernaux",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "language": {
+            "read": "fr",
+            "written": "fr",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 5,
+            "start_year": 2025,
+            "finish_month": 8,
+            "finish_year": 2025,
+            "recommended_by": "Short book to read aloud",
+            "rating": 1
+        }
+    },
     "left": {
         "title": "The Left Hand of Darkness",
         "authors": [
@@ -20,7 +68,7 @@
             "finish_month": 7,
             "finish_year": 2025,
             "recommended_by": "General critical consensus",
-            "rating": 8
+            "rating": 7
         }
     },
     "abundance": {
@@ -120,8 +168,8 @@
         "personal": {
             "start_month": 8,
             "start_year": 2023,
-            "finish_month": 7,
-            "finish_year": 2024,
+            "finish_month": 6,
+            "finish_year": 2025,
             "recommended_by": "General critical consensus",
             "rating": 7
         }
@@ -148,7 +196,7 @@
             "finish_month": 10,
             "finish_year": 2024,
             "recommended_by": "Other books by same author",
-            "rating": 5
+            "rating": 7
         }
     },
     "passion": {
@@ -268,7 +316,7 @@
             "finish_month": 5,
             "finish_year": 2024,
             "recommended_by": "General critical consensus",
-            "rating": 5
+            "rating": 6
         }
     },
     "forty": {
@@ -293,7 +341,7 @@
             "finish_month": 3,
             "finish_year": 2024,
             "recommended_by": "General critical consensus",
-            "rating": 5
+            "rating": 6
         }
     },
     "Do": {
@@ -389,7 +437,7 @@
             "finish_month": 8,
             "finish_year": 2023,
             "recommended_by": "Michael Hakl",
-            "rating": 7
+            "rating": 6
         }
     },
     "Death": {
@@ -509,7 +557,7 @@
             "finish_month": 11,
             "finish_year": 2022,
             "recommended_by": "Learn French",
-            "rating": 3
+            "rating": 2
         }
     },
     "gilgamesh": {
@@ -557,7 +605,7 @@
             "finish_month": 9,
             "finish_year": 2022,
             "recommended_by": "General critical consensus",
-            "rating": 5
+            "rating": 7
         }
     },
     "pale": {
@@ -581,7 +629,7 @@
             "finish_month": 9,
             "finish_year": 2022,
             "recommended_by": "General critical consensus",
-            "rating": 5
+            "rating": 8
         }
     },
     "gilbraltar": {
@@ -605,7 +653,7 @@
             "finish_month": 6,
             "finish_year": 2022,
             "recommended_by": "General critical consensus",
-            "rating": 5
+            "rating": 6
         }
     },
     "proof": {
@@ -661,7 +709,7 @@
             "finish_month": 1,
             "finish_year": 2022,
             "recommended_by": "Other books by same author",
-            "rating": 5
+            "rating": 4
         }
     },
     "Lolita": {
@@ -685,7 +733,7 @@
             "finish_month": 12,
             "finish_year": 2021,
             "recommended_by": "General critical consensus",
-            "rating": 5
+            "rating": 9
         }
     },
     "Au": {
@@ -709,7 +757,7 @@
             "finish_month": 9,
             "finish_year": 2021,
             "recommended_by": "General critical consensus",
-            "rating": 5
+            "rating": 6
         }
     },
     "milarepa": {
