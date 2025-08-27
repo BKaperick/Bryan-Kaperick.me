@@ -31,6 +31,8 @@ python3 ./scripts/create_html.py
 cd ../bio
 echo "starting bio page ingestion"
 python3 ./scripts/create_html.py
+python3 ./scripts/ingest_films.py
+python3 ./scripts/create_movie_html.py
 
 cd ../scripts
 echo "starting rss feed content creation"
