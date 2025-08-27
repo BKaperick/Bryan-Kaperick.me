@@ -43,6 +43,8 @@ $language = array(
     'Title'=>'Titre',
     'Author(s)'=>'Ecrivain(s)',
     'Finished'=>'Date fini',
-    'Rating'=>'Note'
+    'Rating'=>'Note',
+    'Released'=>'Date Sortie',
+    'Watched'=>'Date Regardée'
 );
 ?>

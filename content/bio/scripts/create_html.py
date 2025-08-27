@@ -7,13 +7,11 @@ from helper import *
 from datetime import datetime
 current_year = datetime.now().year
 
-statuses = [
-        "completed",
-        "in-progress",
-        "abandoned"
-        ]
-
 def create_book_block(key, book):
+    authors = ", ".join([a["name"] for a in book["authors"]])
+    month_ind = int(book["personal"]["finish_month"]) if "finish_month" in book["personal"] else 0
+    month = months_reverse[month_ind-1] + " " if month_ind > 0 else ""
+    year = int(book["personal"]["finish_year"])
     return """
     <tr>
         <td class="left"><?=$p->{0}->title;?></td>
@@ -56,8 +54,6 @@ with open("books.json", "r") as fr:
     old_books = [b for b in books if not b[0] in recent_books]
 
     for i,(key,book) in enumerate(ordered_books):
-        if book["personal"]["status"] != "completed":
-            continue
         block = create_book_block(key, book)
         
         if key in recent_books:
