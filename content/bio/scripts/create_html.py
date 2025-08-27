@@ -7,6 +7,12 @@ from helper import *
 from datetime import datetime
 current_year = datetime.now().year
 
+statuses = [
+        "completed",
+        "in-progress",
+        "abandoned"
+        ]
+
 def create_book_block(key, book):
     authors = ", ".join([a["name"] for a in book["authors"]])
     month_ind = int(book["personal"]["finish_month"]) if "finish_month" in book["personal"] else 0
