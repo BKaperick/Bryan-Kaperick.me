@@ -37,13 +37,7 @@ jobs:
       continue-on-error: true
       run: |
         cd Bryan-Kaperick.me
-        (php -S localhost:8000 -t content/) &
-        sleep 3s
-        rm -rf public
-        mkdir public
-        cd public
-        ls -lt
-        wget -q -k -K  -E -r -l 10 -p -N -F -nH localhost:8000
+        ./build.sh
             
     - name: Post-processing and cleanup
       run: |
