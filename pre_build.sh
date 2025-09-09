@@ -18,6 +18,7 @@ python3 create_html.py > photos.html
 
 cd ../widgets
 echo "starting widget ingestion"
+./update_last_update.sh
 python3 create_html.py
 
 cd ../attributions
