@@ -18,6 +18,7 @@ cd ..
 # Remove excess files
 find . -type f -name '*\?*' -delete
 find . -type f -name '*.orig' -delete
+find . -type f -name '*robots.txt*' -delete
 
 # Change all urls from using ?lang= php vars to the proper `/en/` or `/fr/` subdirectory.
 find . -type f -wholename ".*" -exec sed -i -E "s/href=\"(.*).php%3Flang=(\w\w)/href=\"\/\2\/\1\/\1.php/g" {} \;

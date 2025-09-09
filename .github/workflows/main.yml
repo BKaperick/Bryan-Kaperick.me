@@ -28,16 +28,11 @@ jobs:
         cd Bryan-Kaperick.me
         sudo ./pre_build.sh "${{ github.event.pull_request.body }}"
 
-    - name: Wget static site
+    - name: Build static site
       continue-on-error: true
       run: |
         cd Bryan-Kaperick.me
         ./build.sh 3
-            
-    - name: Post-processing and cleanup
-      run: |
-        cd Bryan-Kaperick.me
-        sudo ./cleanup.sh
       
     - name: Push changes
       run: |
