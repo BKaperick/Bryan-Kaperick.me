@@ -16,21 +16,16 @@ jobs:
     - name: Install wget, git, and friends
       run: |
         sudo apt-get install -qq -o=Dpkg::Use-Pty=0 wget git python3 imagemagick
-        git --version
     
     - name: Clone repo
       run: |
         git clone -b ${{ github.head_ref || github.ref_name }} --depth=1 https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
         sleep 3s
         cd Bryan-Kaperick.me
-        ls -lt
-        pwd
         
     - name: Ingest new data
       run: |
         cd Bryan-Kaperick.me
-
-        git log -n 1 --pretty=%cd --date=format:'%Y-%m-%d' >| ./content/widgets/last_update_date.txt
         sudo ./pre_build.sh "${{ github.event.pull_request.body }}"
 
     - name: Wget static site
@@ -42,7 +37,6 @@ jobs:
     - name: Post-processing and cleanup
       run: |
         cd Bryan-Kaperick.me
-        ls -lt
         sudo ./cleanup.sh
       
     - name: Push changes
