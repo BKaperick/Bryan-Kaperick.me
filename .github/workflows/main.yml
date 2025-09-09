@@ -37,10 +37,8 @@ jobs:
       continue-on-error: true
       run: |
         cd Bryan-Kaperick.me
-        cd content
-        (php -S localhost:8000) &
+        (php -S localhost:8000 -t content/) &
         sleep 3s
-        cd ..
         rm -rf public
         mkdir public
         cd public
