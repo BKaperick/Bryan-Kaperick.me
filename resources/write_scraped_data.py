@@ -18,9 +18,6 @@ def pop_from_file(fname):
 
 if __name__ == '__main__':
     job_done = False
-    process = CrawlerProcess()
-    process.crawl(ArgoSpider)
-    process.start()
     while True:
         for f in os.listdir():
             if file_regex.match(f):
@@ -32,3 +29,7 @@ if __name__ == '__main__':
                         job_done = True
         if job_done:
             break
+        else:
+            process = CrawlerProcess()
+            process.crawl(ArgoSpider)
+            process.start()
