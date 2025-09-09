@@ -37,6 +37,8 @@ footer = """\n</table>"""
 
 with open("films.json", "r") as fr:
     films = json.load(fr)
+    date_and_film = [(datetime.strptime(film["letterboxd_watcheddate"], "%Y-%m-%d"), film) for film in films]
+    sorted_films = [f[1] for f in sorted(date_and_film, key=lambda x : x[0], reverse=True)]
     blocks = []
     blocks = []
     limit = None
@@ -46,7 +48,7 @@ with open("films.json", "r") as fr:
     now = datetime.now()
     now.month
     
-    for key,film in enumerate(films):
+    for key,film in enumerate(sorted_films):
         block = create_film_block(key, film)
         blocks.append(block)
     films_html = header + "\n".join(blocks) + footer
