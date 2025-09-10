@@ -1,5 +1,0 @@
-{
-    "term": "al\u00e9ser son cylindre",
-    "definition": "Mourir, \u00eatre malade, moribond",
-    "citations": 3
-}
