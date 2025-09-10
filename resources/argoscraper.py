@@ -3,6 +3,8 @@ from datetime import datetime
 import scrapy
 import json
 import re
+import warnings
+import logging
 
 headers = {        
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',        
@@ -22,12 +24,40 @@ headers = {
 
 year_regex = re.compile(r'\d\d(\d\d|xx)')
 
+def parse_css(response: scrapy.http.TextResponse):
+    """Parse the css retrieved from the dictionary URL.  If the parser stops working, likely the problem is here.
+    """
+    base_data = response.css("body")[0].css("main#main")[0].css("div#wikitext")[0].css("div.fpltemplate")[0]
+    terms = base_data.css("a::text").getall()
+    definitions = base_data.css("em::text").getall()
+    citations = base_data.css("span.cross::text").getall()
+    years = base_data.css("ol > li > span:first-child").getall()
+    years = [y if '<span style="color: green;">' in y else None for y in years]
+    
+    # Throw a warning if there were any suspected parsing errors
+    if len(terms) != 10:
+        warnings.warn(f"Unexpected number of terms {len(terms)} != 10")
+    if len(definitions) != 10:
+        warnings.warn(f"Unexpected number of definitions {len(definitions)} != 10")
+    if len(citations) != 10:
+        warnings.warn(f"Unexpected number of citations {len(citations)} != 10")
+    if len(years) != 10:
+        warnings.warn(f"Unexpected number of years {len(years)} != 10")
+    return (terms, definitions, citations, years)
+
 '''
 Run with `$scrapy runspider argoscraper.py`
 '''
 class ArgoSpider(scrapy.Spider):
     name = "argo"
     date_str = datetime.today().strftime('%Y%m%d_%H%M%S')
+
+    def __init__(self, *args, **kwargs):
+        logger = logging.getLogger("scrapy")
+        logger.setLevel(logging.WARNING)
+        logger = logging.getLogger("asyncio")
+        logger.setLevel(logging.WARNING)
+        super().__init__(*args, **kwargs)
 
     async def start(self):
 
@@ -37,40 +67,44 @@ class ArgoSpider(scrapy.Spider):
         for url in urls:
             yield scrapy.Request(url=url, headers=headers, callback=self.parse)
 
-    def parse(self, response):
-        base_data = response.css("body")[0].css("main#main")[0].css("div#wikitext")[0].css("div.fpltemplate")[0]
-        # Definitions:
-        terms = base_data.css("a::text").getall()
-        # Words:
-        definitions = base_data.css("em::text").getall()
+    def clean_year(self, year):
+        if year == None:
+            return None
+        clean_year = year_regex.search(year)
+        if clean_year == None:
+            self.log("Failed to parse year: " + year)
+        else:
+            clean_year = clean_year.group(0)
+            if 'x' in clean_year:
+                clean_year = clean_year[:2] + '00s'
 
-        citations = base_data.css("span.cross::text").getall()
-        years = base_data.css("ol > li > span:first-child").getall()
-        self.log(years)
-        years = [y if '<span style="color: green;">' in y else None for y in years]
+    def clean_and_compile_data(self, term,defn,ctn,year, skip_empty_year = False, min_num_citations = 2):
+        if year == None and skip_empty_year:
+            return None
+        clean_ctn = int(ctn.replace("(", "").replace(")", ""))
+        if clean_ctn < min_num_citations:
+            return None
+
+        clean_year = self.clean_year(year)
+        clean_term = term.replace("?","").replace("■ ","").strip()
+        clean_defn = defn.replace("?","").replace("■ ","").strip()
+        return {
+                "term": clean_term,
+                "definition": clean_defn,
+                "citations": clean_ctn,
+                "year": clean_year
+                }
+
+    def parse(self, response):
+        # CSS Parsing
+        page_data = parse_css(response)
         page = response.url.split("/")[-3]
         filename = f"{page}-{self.date_str}.json"
         terms_to_add = []
-        self.log(f"Let's write to {filename} {len(terms)} {len(definitions)} {len(citations)} {len(years)}") 
-        for term,defn,ctn,year in zip(terms, definitions, citations, years):
-            self.log(year)
-            if year == None:
-                continue
-            clean_year = year_regex.search(year).group(0)
-            if 'x' in clean_year:
-                clean_year = clean_year[:2] + '00s'
-            clean_term = term.replace("?","").replace("■ ","").strip()
-            clean_defn = defn.replace("?","").replace("■ ","").strip()
-            clean_ctn = int(ctn.replace("(", "").replace(")", ""))
-
-            if clean_ctn > 1:
-                d = dict()
-                d["term"] = clean_term
-                d["definition"] = clean_defn
-                d["citations"] = clean_ctn
-                d["year"] = clean_year
+        for data in zip(*page_data):
+            d = self.clean_and_compile_data(*data, skip_empty_year = False, min_num_citations = 2)
+            if d != None:
                 terms_to_add.append(d)
-        print(terms_to_add)
         if len(terms_to_add) > 0:
             with open(filename, 'w') as fw:
                 fw.seek(0)
