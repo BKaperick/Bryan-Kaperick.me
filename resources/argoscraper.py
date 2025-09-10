@@ -1,6 +1,7 @@
 from pathlib import Path
 from datetime import datetime
 import scrapy
+import json
 
 headers = {        
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',        
@@ -39,11 +40,28 @@ class ArgoSpider(scrapy.Spider):
         terms = base_data.css("a::text").getall()
         # Words:
         definitions = base_data.css("em::text").getall()
+
+        citations = base_data.css("span.cross::text").getall()
+        #year = base_data.css("span::text").getall()
+        self.log(f"YEAR {year}")
         page = response.url.split("/")[-3]
-        filename = f"{page}-{self.date_str}.txt"
-        with open(filename, 'w') as f:
-            for term,defn in zip(terms, definitions):
-                clean_term = term.replace("?","").replace("■ ","").strip()
-                clean_defn = defn.replace("?","").replace("■ ","").strip()
-                f.write(f"*{clean_term}* -- {clean_defn}\n")
+        filename = f"{page}-{self.date_str}.json"
+        terms_to_add = []
+        self.log(f"Let's write to {filename} {len(terms)} {len(definitions)} {len(citations)}") 
+        for term,defn,ctn in zip(terms, definitions, citations):
+            clean_term = term.replace("?","").replace("■ ","").strip()
+            clean_defn = defn.replace("?","").replace("■ ","").strip()
+            clean_ctn = int(ctn.replace("(", "").replace(")", ""))
+            if clean_ctn > 1:
+                d = dict()
+                d["term"] = clean_term
+                d["definition"] = clean_defn
+                d["citations"] = clean_ctn
+                terms_to_add.append(d)
+        print(terms_to_add)
+        if len(terms_to_add) > 0:
+            with open(filename, 'w') as fw:
+                fw.seek(0)
+                json.dump(terms_to_add, fw, indent=4)
+                fw.truncate()
         self.log(f"Saved file {filename}")
