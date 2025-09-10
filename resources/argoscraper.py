@@ -42,7 +42,8 @@ class ArgoSpider(scrapy.Spider):
         definitions = base_data.css("em::text").getall()
 
         citations = base_data.css("span.cross::text").getall()
-        #year = base_data.css("span::text").getall()
+        year = [y for y in base_data.css("span::text").getall() if not '(' in y]
+        year = year[0] if len(year) > 0 else None
         self.log(f"YEAR {year}")
         page = response.url.split("/")[-3]
         filename = f"{page}-{self.date_str}.json"
