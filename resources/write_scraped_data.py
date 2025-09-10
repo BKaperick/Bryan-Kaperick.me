@@ -5,6 +5,7 @@ import json
 from argoscraper import ArgoSpider
 from scrapy.crawler import CrawlerProcess
 content_path = sys.argv[1]
+force_crawl = len(sys.argv) > 2 and ('crawl' in sys.argv[2])
 file_regex = re.compile(r'www\.languefrancaise\.net-.*\.json')
 
 def pop_from_file(fname):
@@ -22,6 +23,10 @@ def pop_from_file(fname):
 
 if __name__ == '__main__':
     job_done = False
+    if force_crawl:
+        process = CrawlerProcess()
+        process.crawl(ArgoSpider)
+        process.start()
     while True:
         for f in os.listdir():
             if file_regex.match(f):
@@ -36,7 +41,6 @@ if __name__ == '__main__':
         if job_done:
             break
         else:
-            print("STARTING")
             process = CrawlerProcess()
             process.crawl(ArgoSpider)
             process.start()

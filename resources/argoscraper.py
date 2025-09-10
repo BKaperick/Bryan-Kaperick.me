@@ -2,6 +2,7 @@ from pathlib import Path
 from datetime import datetime
 import scrapy
 import json
+import re
 
 headers = {        
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',        
@@ -18,6 +19,8 @@ headers = {
     'Upgrade-Insecure-Requests': '1',        
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0'        
 }
+
+year_regex = re.compile(r'\d\d(\d\d|xx)')
 
 '''
 Run with `$scrapy runspider argoscraper.py`
@@ -42,22 +45,30 @@ class ArgoSpider(scrapy.Spider):
         definitions = base_data.css("em::text").getall()
 
         citations = base_data.css("span.cross::text").getall()
-        year = [y for y in base_data.css("span::text").getall() if not '(' in y]
-        year = year[0] if len(year) > 0 else None
-        self.log(f"YEAR {year}")
+        years = base_data.css("ol > li > span:first-child").getall()
+        self.log(years)
+        years = [y if '<span style="color: green;">' in y else None for y in years]
         page = response.url.split("/")[-3]
         filename = f"{page}-{self.date_str}.json"
         terms_to_add = []
-        self.log(f"Let's write to {filename} {len(terms)} {len(definitions)} {len(citations)}") 
-        for term,defn,ctn in zip(terms, definitions, citations):
+        self.log(f"Let's write to {filename} {len(terms)} {len(definitions)} {len(citations)} {len(years)}") 
+        for term,defn,ctn,year in zip(terms, definitions, citations, years):
+            self.log(year)
+            if year == None:
+                continue
+            clean_year = year_regex.search(year).group(0)
+            if 'x' in clean_year:
+                clean_year = clean_year[:2] + '00s'
             clean_term = term.replace("?","").replace("■ ","").strip()
             clean_defn = defn.replace("?","").replace("■ ","").strip()
             clean_ctn = int(ctn.replace("(", "").replace(")", ""))
+
             if clean_ctn > 1:
                 d = dict()
                 d["term"] = clean_term
                 d["definition"] = clean_defn
                 d["citations"] = clean_ctn
+                d["year"] = clean_year
                 terms_to_add.append(d)
         print(terms_to_add)
         if len(terms_to_add) > 0:
