@@ -4,12 +4,11 @@ from datetime import datetime
 import json
 
 with open('argot_content.html', 'w') as fw:
-    with open('argot.txt', 'r') as fr:
-        content = fr.read()
-        content = content.replace("*", "<em>", 1)
-        content = content.replace("*", "</em>", 1)
-        content = content.replace("--", "&ndash;", 1)
-        fw.write(content)
+    with open('argot.json', 'r') as fr:
+        content = json.load(fr)
+        term_and_year = f"{content['term']}" + "" if content['year'] == None else f" ({content['year']})"
+        out_str = f"<em>{term_and_year}</em> &ndash; {content['definition']}"
+        fw.write(out_str)
         # *se capitonner* -- Garnir le corsage de sa robe d'avantages en coton pour séduire les hommes
 
 with open('datapoint_content.html', 'w') as fw:

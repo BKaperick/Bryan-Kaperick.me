@@ -871,6 +871,10 @@ aside ol>li::before {
 	list-style-image: none
 }
 
+a.citation_link {
+    color : #585858;
+}
+
 .pager {
 	margin-top: .70454545rem;
 	margin-bottom: .70454545rem;
