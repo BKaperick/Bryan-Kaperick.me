@@ -2632,5 +2632,60 @@
             "louise"
         ],
         "is_album": false
+    },
+    "BridgesOfRotterdam": {
+        "name": "BridgesOfRotterdam",
+        "month": "Sep",
+        "year": 2025,
+        "order_in_year": 73,
+        "en": "Bridges and other worlds of Rotterdam",
+        "fr": "Des ponts et autres mondes de Rotterdam",
+        "is_album": true,
+        "photos": [
+            "portql",
+            "rotterdam_geo_bridge",
+            "rotterdam",
+            "rotterdam_76"
+        ]
+    },
+    "portql": {
+        "name": "portql.jpg",
+        "month": "Sep",
+        "year": 2025,
+        "order_in_year": 74,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "rotterdam": {
+        "name": "rotterdam_red_bridge_1.jpg",
+        "month": "Sep",
+        "year": 2025,
+        "order_in_year": 75,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "rotterdam_76": {
+        "name": "rotterdam_moon_bridge.jpg",
+        "month": "Sep",
+        "year": 2025,
+        "order_in_year": 76,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "rotterdam_geo_bridge": {
+        "name": "rotterdam_geometric_bridge.jpg",
+        "month": "Sep",
+        "year": 2025,
+        "order_in_year": 77,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
     }
 }
