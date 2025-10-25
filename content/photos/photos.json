@@ -2632,5 +2632,68 @@
             "louise"
         ],
         "is_album": false
+    },
+    "BridgesOfRotterdam": {
+        "name": "BridgesOfRotterdam",
+        "month": "Oct",
+        "year": 2025,
+        "order_in_year": 73,
+        "en": "",
+        "fr": "",
+        "is_album": true,
+        "photos": [
+            "portql",
+            "rotterdam",
+            "rotterdam_76",
+            "rotterdam_77"
+        ]
+    },
+    "portql": {
+        "name": "portql.jpg",
+        "month": "Oct",
+        "year": 2025,
+        "order_in_year": 74,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "rotterdam": {
+        "name": "rotterdam_red_bridge_1.jpg",
+        "month": "Oct",
+        "year": 2025,
+        "order_in_year": 75,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "rotterdam_76": {
+        "name": "rotterdam_moon_bridge.jpg",
+        "month": "Oct",
+        "year": 2025,
+        "order_in_year": 76,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "rotterdam_77": {
+        "name": "rotterdam_geometric_bridge.jpg",
+        "month": "Oct",
+        "year": 2025,
+        "order_in_year": 77,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
     }
 }

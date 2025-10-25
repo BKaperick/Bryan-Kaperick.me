@@ -1,5 +1,58 @@
 [
     {
+        "title": "Dazed and Confused, 1993 - \u2605\u2605\u2605\u2605",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "Dazed and Confused, 1993 - \u2605\u2605\u2605\u2605"
+        },
+        "links": [
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://letterboxd.com/bkapers/film/dazed-and-confused/"
+            }
+        ],
+        "link": "https://letterboxd.com/bkapers/film/dazed-and-confused/",
+        "id": "letterboxd-watch-1050499907",
+        "guidislink": false,
+        "published": "Fri, 24 Oct 2025 10:29:54 +1300",
+        "published_parsed": [
+            2025,
+            10,
+            23,
+            21,
+            29,
+            54,
+            3,
+            296,
+            0
+        ],
+        "letterboxd_watcheddate": "2025-10-23",
+        "letterboxd_rewatch": "No",
+        "letterboxd_filmtitle": "Dazed and Confused",
+        "letterboxd_filmyear": "1993",
+        "letterboxd_memberrating": "4.0",
+        "tmdb_movieid": "9571",
+        "summary": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/4/7/0/2/9/47029-dazed-and-confused-0-600-0-900-crop.jpg?v=a3b615703a\" /></p> <p>Watched on Thursday October 23, 2025.</p>",
+        "summary_detail": {
+            "type": "text/html",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/4/7/0/2/9/47029-dazed-and-confused-0-600-0-900-crop.jpg?v=a3b615703a\" /></p> <p>Watched on Thursday October 23, 2025.</p>"
+        },
+        "authors": [
+            {
+                "name": "bkapers"
+            }
+        ],
+        "author": "bkapers",
+        "author_detail": {
+            "name": "bkapers"
+        }
+    },
+    {
         "title": "Punch-Drunk Love, 2002 - \u2605\u2605\u00bd",
         "title_detail": {
             "type": "text/plain",
