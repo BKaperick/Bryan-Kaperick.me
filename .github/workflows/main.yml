@@ -16,7 +16,7 @@ jobs:
     - name: Install wget, git, and friends
       run: |
         sudo apt-get install -qq -o=Dpkg::Use-Pty=0 wget git python3-pip imagemagick
-        sudo pip3 install feedparser
+        sudo pip3 install feedparser --break-system-packages
     
     - name: Clone repo
       run: |
