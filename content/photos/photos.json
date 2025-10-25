@@ -2634,8 +2634,8 @@
         "is_album": false
     },
     "BridgesOfRotterdam": {
-        "name": "BridgesOfRotterdam",
-        "month": "Oct",
+        "name": "Bridges and other worlds of Rotterdam",
+        "month": "Sep",
         "year": 2025,
         "order_in_year": 73,
         "en": "",
@@ -2650,50 +2650,42 @@
     },
     "portql": {
         "name": "portql.jpg",
-        "month": "Oct",
+        "month": "Sep",
         "year": 2025,
         "order_in_year": 74,
         "en": "",
         "fr": "",
-        "people": [
-            "bryan"
-        ],
+        "people": [],
         "is_album": false
     },
     "rotterdam": {
         "name": "rotterdam_red_bridge_1.jpg",
-        "month": "Oct",
+        "month": "Sep",
         "year": 2025,
         "order_in_year": 75,
         "en": "",
         "fr": "",
-        "people": [
-            "bryan"
-        ],
+        "people": [],
         "is_album": false
     },
     "rotterdam_76": {
         "name": "rotterdam_moon_bridge.jpg",
-        "month": "Oct",
+        "month": "Sep",
         "year": 2025,
         "order_in_year": 76,
         "en": "",
         "fr": "",
-        "people": [
-            "bryan"
-        ],
+        "people": [],
         "is_album": false
     },
     "rotterdam_77": {
         "name": "rotterdam_geometric_bridge.jpg",
-        "month": "Oct",
+        "month": "Sep",
         "year": 2025,
         "order_in_year": 77,
         "en": "",
         "fr": "",
-        "people": [
-            "bryan"
-        ],
+        "people": [],
         "is_album": false
     }
 }
