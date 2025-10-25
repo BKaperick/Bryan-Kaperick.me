@@ -2643,9 +2643,9 @@
         "is_album": true,
         "photos": [
             "portql",
+            "rotterdam_geo_bridge",
             "rotterdam",
-            "rotterdam_76",
-            "rotterdam_77"
+            "rotterdam_76"
         ]
     },
     "portql": {
@@ -2678,7 +2678,7 @@
         "people": [],
         "is_album": false
     },
-    "rotterdam_77": {
+    "rotterdam_geo_bridge": {
         "name": "rotterdam_geometric_bridge.jpg",
         "month": "Sep",
         "year": 2025,
