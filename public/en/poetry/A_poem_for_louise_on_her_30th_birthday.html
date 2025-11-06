@@ -1,0 +1,48 @@
+<link rel="shortcut icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="apple-touch-icon" href="../../static/favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>A poem for louise on her 30th birthday</em> &ndash; November 2025</p>
+    <blockquote>
+    <div class="poem"><p><span class="line">A tale of tu- of sun dried -lips,</span><br>
+<span class="line">of vines and tied-up fingertips</span><br>
+<span class="line">grown up and over seasons lost,</span><br>
+<span class="line">planted fresh at paths now crossed</span><br>
+<span class="line">'tween bashful weeds and stubborn desire;</span><br>
+<span class="line">'tween hands that shook to clear the ire</span><br>
+<span class="line">of caustic balderdash smoke stacks</span><br>
+<span class="line">whose absence fills the rotten cracks</span><br>
+<span class="line">left in the wake of storm weight felt</span><br>
+<span class="line">deep in the folded, folded pelt</span><br>
+<span class="line">of her rumpled velvet rose&mdash;</span><br>
+</p></div>
+<div class="poem"><p><span class="line">&mdash;And now that flower with thorny throes,</span><br>
+<span class="line">fends fine in fields of matched ambrose.</span><br>
+<span class="line">Blue petals bound in Louisette stitches</span><br>
+<span class="line">rooted in the ground, sewn wishes</span><br>
+<span class="line">after thirty turns under sun that shines,</span><br>
+<span class="line">a glint within her well-watered eyes</span><br>
+<span class="line">toward two stems now inter-bound,</span><br>
+<span class="line">a four-leaf lover sought and found.</p></div>    </blockquote>
+    </div> 
