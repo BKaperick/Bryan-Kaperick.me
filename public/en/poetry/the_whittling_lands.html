@@ -1,0 +1,55 @@
+<link rel="shortcut icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="apple-touch-icon" href="../../static/favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>The Whittling Lands</em> &ndash; October 2025</p>
+    <blockquote>
+    <div class="poem"><p><span class="line">Those who walk in the Whittling Lands,</span><br>
+<span class="line">traipsing through the Whittling Fields,</span><br>
+<span class="line">pockets of air crumble down</span><br>
+<span class="line">where down-trodden are the stern,</span><br>
+<span class="line">turned rotten bed of chips,</span><br>
+<span class="line">splinters, dead bits, and dirt.</span><br>
+<span class="line">Overburdened earth soaks it up</span><br>
+<span class="line">then cakes underfoot.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">Those who walk in the Whittling Lands,</span><br>
+<span class="line">stumbling along the Whittled Halls,</span><br>
+<span class="line">with angels carved in marble knobs,</span><br>
+<span class="line">and sand drifts down from up above;</span><br>
+<span class="line">patches of grease coat the choir</span><br>
+<span class="line">and bely, by filling, the cracks of walls</span><br>
+<span class="line">draped in shadow-silent glow</span><br>
+<span class="line">and still as stones in cave-black night.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">The walkers in these Whittling Lands</span><br>
+<span class="line">they came en masse</span><br>
+<span class="line">and left reduced.</span><br>
+<span class="line">Those who stayed</span><br>
+</p></div>
+<div class="poem"><p><span class="line">had come to know</span><br>
+<span class="line">and come to move</span><br>
+<span class="line">this world before</span><br>
+<span class="line">they whittled all away.</p></div>    </blockquote>
+    </div> 

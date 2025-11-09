@@ -1,5 +1,12 @@
 [
     {
+        "title": "The Whittling Lands",
+        "link": "https://www.bryan-kaperick.me/en/poetry/the_whittling_lands",
+        "desc": "Those who walk in the Whittling Lands,...",
+        "date": "20251001",
+        "category": "poetry"
+    },
+    {
         "title": "Bridges and other worlds of Rotterdam",
         "link": "https://www.bryan-kaperick.me/en/photos/portql",
         "desc": "Bridges and other worlds of Rotterdam",
@@ -22,6 +29,13 @@
         "date": "20250701",
         "category": "photos",
         "is_album": true
+    },
+    {
+        "title": "A poem for Louise on her 30th birthday",
+        "link": "https://www.bryan-kaperick.me/en/poetry/A_poem_for_louise_on_her_30th_birthday",
+        "desc": "A tale of tu- of sun dried -lips,...",
+        "date": "20250701",
+        "category": "poetry"
     },
     {
         "title": "A short trip to Marseilles and Nice",
