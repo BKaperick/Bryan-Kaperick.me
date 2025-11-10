@@ -16,6 +16,16 @@ jobs:
       with:
         php-version: '8.0'
 
+    - name: Install wget, git, and friends
+      run: |
+        sudo apt-get install -qq -o=Dpkg::Use-Pty=0 wget git imagemagick
+
+    - name: Clone repo
+      run: |
+        git clone -b ${{ github.head_ref || github.ref_name }} --depth=1 https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
+        sleep 3s
+        cd Bryan-Kaperick.me
+        
     - name: "Set up Python"
       uses: actions/setup-python@v6
       with:
@@ -38,16 +48,6 @@ jobs:
 
     - name: Install the project
       run: uv sync --locked --all-extras
-
-    - name: Install wget, git, and friends
-      run: |
-        sudo apt-get install -qq -o=Dpkg::Use-Pty=0 wget git imagemagick
-
-    - name: Clone repo
-      run: |
-        git clone -b ${{ github.head_ref || github.ref_name }} --depth=1 https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
-        sleep 3s
-        cd Bryan-Kaperick.me
 
     - name: Ingest new data
       run: |
