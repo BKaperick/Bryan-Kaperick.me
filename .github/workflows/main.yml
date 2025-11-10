@@ -50,6 +50,7 @@ jobs:
       run: |
         cd Bryan-Kaperick.me
         uv sync --locked --all-extras
+        alias python3=python
 
     - name: Ingest new data
       run: |
