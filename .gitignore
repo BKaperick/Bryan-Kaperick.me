@@ -1,6 +1,5 @@
 *.DS_Store
 .DS_Store
-.python-version
 *.icloud
 *__pycache__*
 *swp
