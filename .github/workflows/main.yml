@@ -54,14 +54,12 @@ jobs:
     - name: Ingest new data
       run: |
         cd Bryan-Kaperick.me
-        alias python3=python
         sudo ./pre_build.sh "${{ github.event.pull_request.body }}"
 
     - name: Build static site
       continue-on-error: true
       run: |
         cd Bryan-Kaperick.me
-        alias python3=python
         ./build.sh 3
 
     - name: Push changes
