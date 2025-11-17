@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -l
 
 cd ./content/poems
 echo "starting poetry ingestion"
