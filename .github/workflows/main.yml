@@ -27,7 +27,7 @@ jobs:
         cd Bryan-Kaperick.me
         
     - name: "Set up Python"
-      uses: actions/setup-python@v6
+      uses: actions/setup-python@v4
       with:
         python-version-file: "./Bryan-Kaperick.me/.python-version"
 
