@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd ./content/poems
 echo "starting poetry ingestion"
 /__t/Python/3.13.9/x64/bin/python ./scripts/instantiate.py
