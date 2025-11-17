@@ -56,7 +56,7 @@ jobs:
         cd Bryan-Kaperick.me
         echo $PATH
         sudo ls /__t/Python/3.13.9/x64/bin
-        python --version
+        which python
         sudo ./pre_build.sh "${{ github.event.pull_request.body }}"
 
     - name: Build static site
