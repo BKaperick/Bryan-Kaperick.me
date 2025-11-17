@@ -57,7 +57,7 @@ jobs:
         echo $PATH
         sudo ls /__t/Python/3.13.9/x64/bin
         which python
-        sudo ./pre_build.sh "${{ github.event.pull_request.body }}"
+        ./pre_build.sh "${{ github.event.pull_request.body }}"
 
     - name: Build static site
       continue-on-error: true
