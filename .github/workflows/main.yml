@@ -54,7 +54,7 @@ jobs:
     - name: Ingest new data
       run: |
         cd Bryan-Kaperick.me
-        source .venv
+        source .venv/bin/activate
         ./pre_build.sh "${{ github.event.pull_request.body }}"
 
     - name: Build static site
