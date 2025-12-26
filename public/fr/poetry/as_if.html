@@ -1,0 +1,63 @@
+<link rel="shortcut icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="apple-touch-icon" href="../../static/favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>As if.</em> &ndash; Juillet 2024</p>
+    <blockquote>
+    <div class="poem"><p><span class="line">She’s a mystery.</span><br>
+<span class="line">As if I wanted to cling on to her drapes</span><br>
+<span class="line">to reveal a clouded sky.</span><br>
+<span class="line">As if I wanted to know.</span><br>
+<span class="line">As if she wanted the same.</span><br>
+<span class="line">As if I didn’t mull</span><br>
+<span class="line">for some time before she woke</span><br>
+<span class="line">over whether my fingers</span><br>
+<span class="line">could lace into hers. Now it’s</span><br>
+<span class="line">as if the thought never entered</span><br>
+<span class="line">my mind, but</span><br>
+<span class="line">it hasn’t left either,</span><br>
+<span class="line">as if it’s been</span><br>
+<span class="line">gliding around inside</span><br>
+<span class="line">for an eternity already.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">As if I couldn’t see when you were</span><br>
+<span class="line">lying. I lied back as if</span><br>
+<span class="line">you couldn’t do the same. As if</span><br>
+<span class="line">I didn’t see how you two said</span><br>
+<span class="line">goodbye. Him all red and smiling as if</span><br>
+<span class="line">he were drunk. As if</span><br>
+<span class="line">I didn’t look down to</span><br>
+<span class="line">see his red, drunk, smiling hand</span><br>
+<span class="line">brush your waist as he turned</span><br>
+<span class="line">to walk away, as if</span><br>
+<span class="line">I weren’t there, as if</span><br>
+<span class="line">I didn’t care. As if</span><br>
+<span class="line">I cared.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">As if sex were a commitment.</span><br>
+<span class="line">As if it didn’t exist only in the instant.</span><br>
+<span class="line">As if thoughts of your sex had been</span><br>
+<span class="line">gliding around inside</span><br>
+<span class="line">for an eternity already.</p></div>    </blockquote>
+    <audio controls src="../../poems/recordings/as_if.mp4"></audio>
+    </div> 

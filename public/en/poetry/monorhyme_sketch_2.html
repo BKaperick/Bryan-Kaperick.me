@@ -1,0 +1,32 @@
+<link rel="shortcut icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="apple-touch-icon" href="../../static/favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Monorhyme sketch #2</em> &ndash; November 2023</p>
+    <blockquote>
+    <div class="poem"><p><span class="line">Play back the track slow with all ears clear</span><br>
+<span class="line">Sycophants’ll scatter off or cower with fear</span><br>
+<span class="line">Honest men’ll settle in, lonesomely austere</span><br>
+<span class="line">Chimney fire cackling to toss another beer.</p></div>    </blockquote>
+    </div> 

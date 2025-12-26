@@ -1,0 +1,32 @@
+<link rel="shortcut icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="apple-touch-icon" href="../../static/favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<figure class="single-image">
+    <img src="../../photos/raw/bretagne_waves.jpg" alt="Hike on the coast of the Mont-Saint-Michel Bay ~ 2025">
+    <figcaption>
+    <a class="prev_link" href="bretagne_rocky_beach.html">Previous</a>
+Hike on the coast of the Mont-Saint-Michel Bay ~ 2025    <a class="next_link" href="bretagne_cliffs1.html">Next</a>
+    </figcaption>
+</figure>
+ 

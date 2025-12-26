@@ -1,0 +1,47 @@
+<link rel="shortcut icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="apple-touch-icon" href="../../static/favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page">
+    <p><em>Limp</em> &ndash; October 2023</p>
+    <blockquote>
+    <div class="poem"><p><span class="line">As I ran by I saw you lying</span><br>
+<span class="line">limp along the sidewalk</span><br>
+<span class="line">Unforced serendipity</span><br>
+<span class="line">I didn’t watch the clock</span><br>
+</p></div>
+<div class="poem"><p><span class="line">You seemed as well as one could seem</span><br>
+<span class="line">prostrate on the floor</span><br>
+<span class="line">Peaceful even, drowned amidst</span><br>
+<span class="line">the waves of foreign shore</span><br>
+</p></div>
+<div class="poem"><p><span class="line">I wondered how you landed here</span><br>
+<span class="line">your wings a crumpled mess</span><br>
+<span class="line">A fall from sunlight’s brazen stare</span><br>
+<span class="line">onto my path ingressed</span><br>
+</p></div>
+<div class="poem"><p><span class="line">I lay my hand to light first flame</span><br>
+<span class="line">since summer’s hibernation</span><br>
+<span class="line">But you’ve cooled your gaze to stone</span><br>
+<span class="line">and cast it in the ocean</p></div>    </blockquote>
+    </div> 
