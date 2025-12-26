@@ -1,5 +1,164 @@
 [
     {
+        "title": "Trainspotting, 1996 - \u2605\u2605\u2605",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "Trainspotting, 1996 - \u2605\u2605\u2605"
+        },
+        "links": [
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://letterboxd.com/bkapers/film/trainspotting/"
+            }
+        ],
+        "link": "https://letterboxd.com/bkapers/film/trainspotting/",
+        "id": "letterboxd-watch-1090824766",
+        "guidislink": false,
+        "published": "Tue, 2 Dec 2025 11:28:25 +1300",
+        "published_parsed": [
+            2025,
+            12,
+            1,
+            22,
+            28,
+            25,
+            0,
+            335,
+            0
+        ],
+        "letterboxd_watcheddate": "2025-12-01",
+        "letterboxd_rewatch": "No",
+        "letterboxd_filmtitle": "Trainspotting",
+        "letterboxd_filmyear": "1996",
+        "letterboxd_memberrating": "3.0",
+        "tmdb_movieid": "627",
+        "summary": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/5/1/4/9/7/51497-trainspotting-0-600-0-900-crop.jpg?v=c8597f6cb5\" /></p> <p>Watched on Monday December 1, 2025.</p>",
+        "summary_detail": {
+            "type": "text/html",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/5/1/4/9/7/51497-trainspotting-0-600-0-900-crop.jpg?v=c8597f6cb5\" /></p> <p>Watched on Monday December 1, 2025.</p>"
+        },
+        "authors": [
+            {
+                "name": "bkapers"
+            }
+        ],
+        "author": "bkapers",
+        "author_detail": {
+            "name": "bkapers"
+        }
+    },
+    {
+        "title": "Midsommar, 2019 - \u2605\u2605\u2605\u00bd",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "Midsommar, 2019 - \u2605\u2605\u2605\u00bd"
+        },
+        "links": [
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://letterboxd.com/bkapers/film/midsommar/"
+            }
+        ],
+        "link": "https://letterboxd.com/bkapers/film/midsommar/",
+        "id": "letterboxd-watch-1076527351",
+        "guidislink": false,
+        "published": "Tue, 18 Nov 2025 08:24:36 +1300",
+        "published_parsed": [
+            2025,
+            11,
+            17,
+            19,
+            24,
+            36,
+            0,
+            321,
+            0
+        ],
+        "letterboxd_watcheddate": "2025-11-16",
+        "letterboxd_rewatch": "No",
+        "letterboxd_filmtitle": "Midsommar",
+        "letterboxd_filmyear": "2019",
+        "letterboxd_memberrating": "3.5",
+        "tmdb_movieid": "530385",
+        "summary": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/4/5/9/5/6/4/459564-midsommar-0-600-0-900-crop.jpg?v=ed7b8ded1f\" /></p> <p>Watched on Sunday November 16, 2025.</p>",
+        "summary_detail": {
+            "type": "text/html",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/4/5/9/5/6/4/459564-midsommar-0-600-0-900-crop.jpg?v=ed7b8ded1f\" /></p> <p>Watched on Sunday November 16, 2025.</p>"
+        },
+        "authors": [
+            {
+                "name": "bkapers"
+            }
+        ],
+        "author": "bkapers",
+        "author_detail": {
+            "name": "bkapers"
+        }
+    },
+    {
+        "title": "Love Me If You Dare, 2003 - \u00bd",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "Love Me If You Dare, 2003 - \u00bd"
+        },
+        "links": [
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://letterboxd.com/bkapers/film/love-me-if-you-dare/"
+            }
+        ],
+        "link": "https://letterboxd.com/bkapers/film/love-me-if-you-dare/",
+        "id": "letterboxd-watch-1071798815",
+        "guidislink": false,
+        "published": "Thu, 13 Nov 2025 20:39:08 +1300",
+        "published_parsed": [
+            2025,
+            11,
+            13,
+            7,
+            39,
+            8,
+            3,
+            317,
+            0
+        ],
+        "letterboxd_watcheddate": "2025-11-13",
+        "letterboxd_rewatch": "Yes",
+        "letterboxd_filmtitle": "Love Me If You Dare",
+        "letterboxd_filmyear": "2003",
+        "letterboxd_memberrating": "0.5",
+        "tmdb_movieid": "8424",
+        "summary": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/4/7/7/3/6/47736-love-me-if-you-dare-0-600-0-900-crop.jpg?v=1246aed4e9\" /></p> <p>Watched on Thursday November 13, 2025.</p>",
+        "summary_detail": {
+            "type": "text/html",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/4/7/7/3/6/47736-love-me-if-you-dare-0-600-0-900-crop.jpg?v=1246aed4e9\" /></p> <p>Watched on Thursday November 13, 2025.</p>"
+        },
+        "authors": [
+            {
+                "name": "bkapers"
+            }
+        ],
+        "author": "bkapers",
+        "author_detail": {
+            "name": "bkapers"
+        }
+    },
+    {
         "title": "Dazed and Confused, 1993 - \u2605\u2605\u2605\u2605",
         "title_detail": {
             "type": "text/plain",

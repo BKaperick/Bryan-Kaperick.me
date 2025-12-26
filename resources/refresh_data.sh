@@ -10,4 +10,6 @@ git -C /home/bryan/Bryan-Kaperick.me add "$DIR/../content/widgets/datapoint.txt"
 git -C /home/bryan/Bryan-Kaperick.me add "www*"
 git -C /home/bryan/Bryan-Kaperick.me add "$DIR/../content/widgets/argot.json"
 git -C /home/bryan/Bryan-Kaperick.me commit -m "Update data point"
+git -C /home/bryan/Bryan-Kaperick.me add "$DIR/../content/bio/films.json"
+git -C /home/bryan/Bryan-Kaperick.me diff-index --quiet HEAD || git -C /home/bryan/Bryan-Kaperick.me commit -m "Update films"
 git -C /home/bryan/Bryan-Kaperick.me push
