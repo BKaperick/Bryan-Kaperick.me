@@ -46,15 +46,20 @@ jobs:
           uv-${{ runner.os }}-${{ hashFiles('uv.lock') }}
           uv-${{ runner.os }}
 
+    - name: Allow uv to use the system Python by default
+      run: echo "UV_SYSTEM_PYTHON=1" >> $GITHUB_ENV
+      shell: bash
+        
     - name: Install the project
       run: |
         cd Bryan-Kaperick.me
         uv sync --locked --all-extras
 
     - name: Ingest new data
+      shell: bash
       run: |
         cd Bryan-Kaperick.me
-        source .venv
+        source .venv/bin/activate
         ./pre_build.sh "${{ github.event.pull_request.body }}"
 
     - name: Build static site
