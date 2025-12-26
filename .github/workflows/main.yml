@@ -8,33 +8,66 @@ jobs:
   build:
     runs-on: ubuntu-latest    
     container: ubuntu
+    env:
+      UV_CACHE_DIR: /tmp/.uv-cache 
+
     steps:
     - uses: shivammathur/setup-php@v2
       with:
         php-version: '8.0'
-      
+
     - name: Install wget, git, and friends
       run: |
-        sudo apt-get install -qq -o=Dpkg::Use-Pty=0 wget git python3-pip imagemagick
-        sudo pip3 install feedparser --break-system-packages
-    
+        sudo apt-get install -qq -o=Dpkg::Use-Pty=0 wget git imagemagick
+
     - name: Clone repo
       run: |
         git clone -b ${{ github.head_ref || github.ref_name }} --depth=1 https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
         sleep 3s
         cd Bryan-Kaperick.me
         
-    - name: Ingest new data
+    - name: "Set up Python"
+      uses: actions/setup-python@v4
+      with:
+        python-version-file: "./Bryan-Kaperick.me/.python-version"
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v6
+      with:
+        version: "0.8.11"  
+        enable-cache: true 
+
+    - name: Restore uv cache
+      uses: actions/cache@v4
+      with:
+        path: /tmp/.uv-cache
+        key: uv-${{ runner.os }}-${{ hashFiles('uv.lock') }}
+        restore-keys: |
+          uv-${{ runner.os }}-${{ hashFiles('uv.lock') }}
+          uv-${{ runner.os }}
+
+    - name: Allow uv to use the system Python by default
+      run: echo "UV_SYSTEM_PYTHON=1" >> $GITHUB_ENV
+      shell: bash
+        
+    - name: Install the project
       run: |
         cd Bryan-Kaperick.me
-        sudo ./pre_build.sh "${{ github.event.pull_request.body }}"
+        uv sync --locked --all-extras
+
+    - name: Ingest new data
+      shell: bash
+      run: |
+        cd Bryan-Kaperick.me
+        source .venv/bin/activate
+        ./pre_build.sh "${{ github.event.pull_request.body }}"
 
     - name: Build static site
       continue-on-error: true
       run: |
         cd Bryan-Kaperick.me
         ./build.sh 3
-      
+
     - name: Push changes
       run: |
           cd Bryan-Kaperick.me
@@ -43,3 +76,6 @@ jobs:
           git add .
           git commit -m "[skip actions] built" --allow-empty
           git push origin ${{ github.head_ref || github.ref_name }}
+
+    - name: Minimize uv cache
+      run: uv cache prune --ci

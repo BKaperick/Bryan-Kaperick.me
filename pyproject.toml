@@ -1,0 +1,13 @@
+[project]
+name = "bryankaperickme"
+version = "0.1.0"
+description = "Scripts for building bryan-kaperick.me"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "feedparser>=6.0.12",
+    "numpy>=2.3.4",
+    "owid>=0.0.1",
+    "pandas>=2.3.3",
+    "scrapy>=2.13.3",
+]
