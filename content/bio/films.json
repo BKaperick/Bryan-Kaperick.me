@@ -1,5 +1,58 @@
 [
     {
+        "title": "French Fried Vacation 2, 1979 - \u2605\u00bd",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "French Fried Vacation 2, 1979 - \u2605\u00bd"
+        },
+        "links": [
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://letterboxd.com/bkapers/film/french-fried-vacation-2/"
+            }
+        ],
+        "link": "https://letterboxd.com/bkapers/film/french-fried-vacation-2/",
+        "id": "letterboxd-watch-1124096415",
+        "guidislink": false,
+        "published": "Sun, 28 Dec 2025 10:27:47 +1300",
+        "published_parsed": [
+            2025,
+            12,
+            27,
+            21,
+            27,
+            47,
+            5,
+            361,
+            0
+        ],
+        "letterboxd_watcheddate": "2025-12-25",
+        "letterboxd_rewatch": "No",
+        "letterboxd_filmtitle": "French Fried Vacation 2",
+        "letterboxd_filmyear": "1979",
+        "letterboxd_memberrating": "1.5",
+        "tmdb_movieid": "33701",
+        "summary": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/2/9/5/9/9/29599-french-fried-vacation-2-the-bronzes-go-skiing-0-600-0-900-crop.jpg?v=b552368214\" /></p> <p>Watched on Thursday December 25, 2025.</p>",
+        "summary_detail": {
+            "type": "text/html",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/2/9/5/9/9/29599-french-fried-vacation-2-the-bronzes-go-skiing-0-600-0-900-crop.jpg?v=b552368214\" /></p> <p>Watched on Thursday December 25, 2025.</p>"
+        },
+        "authors": [
+            {
+                "name": "bkapers"
+            }
+        ],
+        "author": "bkapers",
+        "author_detail": {
+            "name": "bkapers"
+        }
+    },
+    {
         "title": "Trainspotting, 1996 - \u2605\u2605\u2605",
         "title_detail": {
             "type": "text/plain",
@@ -136,7 +189,7 @@
             0
         ],
         "letterboxd_watcheddate": "2025-11-13",
-        "letterboxd_rewatch": "Yes",
+        "letterboxd_rewatch": "No",
         "letterboxd_filmtitle": "Love Me If You Dare",
         "letterboxd_filmyear": "2003",
         "letterboxd_memberrating": "0.5",
