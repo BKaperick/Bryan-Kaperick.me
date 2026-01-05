@@ -1,5 +1,58 @@
 [
     {
+        "title": "mother!, 2017 - \u2605\u2605\u2605",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "mother!, 2017 - \u2605\u2605\u2605"
+        },
+        "links": [
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://letterboxd.com/bkapers/film/mother-2017/"
+            }
+        ],
+        "link": "https://letterboxd.com/bkapers/film/mother-2017/",
+        "id": "letterboxd-watch-1142531973",
+        "guidislink": false,
+        "published": "Tue, 6 Jan 2026 09:38:18 +1300",
+        "published_parsed": [
+            2026,
+            1,
+            5,
+            20,
+            38,
+            18,
+            0,
+            5,
+            0
+        ],
+        "letterboxd_watcheddate": "2026-01-04",
+        "letterboxd_rewatch": "No",
+        "letterboxd_filmtitle": "mother!",
+        "letterboxd_filmyear": "2017",
+        "letterboxd_memberrating": "3.0",
+        "tmdb_movieid": "381283",
+        "summary": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/3/1/6/3/1/1/316311-mother--0-600-0-900-crop.jpg?v=399e8950fd\" /></p> <p>Watched on Sunday January 4, 2026.</p>",
+        "summary_detail": {
+            "type": "text/html",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/3/1/6/3/1/1/316311-mother--0-600-0-900-crop.jpg?v=399e8950fd\" /></p> <p>Watched on Sunday January 4, 2026.</p>"
+        },
+        "authors": [
+            {
+                "name": "bkapers"
+            }
+        ],
+        "author": "bkapers",
+        "author_detail": {
+            "name": "bkapers"
+        }
+    },
+    {
         "title": "Oldboy, 2003 - \u2605\u2605\u00bd",
         "title_detail": {
             "type": "text/plain",
