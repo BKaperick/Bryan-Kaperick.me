@@ -1,4 +1,54 @@
 {
+    "volume_one": {
+        "title": "On the Calculation of Volume",
+        "authors": [
+            {
+                "name": "Solvej Balle",
+                "countries": [
+                    "DN"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "dn",
+            "translator": "Barbara J. Haveland'"
+        },
+        "personal": {
+            "start_month": 8,
+            "start_year": 2025,
+            "finish_month": 11,
+            "finish_year": 2025,
+            "recommended_by": "Short book to read aloud",
+            "rating": 5,
+            "status": "completed"
+        }
+    },
+    "schlemihl": {
+        "title": "V.",
+        "authors": [
+            {
+                "name": "Thomas Pynchon",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en",
+            "translator": ""
+        },
+        "personal": {
+            "start_month": 9,
+            "start_year": 2025,
+            "finish_month": 12,
+            "finish_year": 2025,
+            "recommended_by": "Ryan Oppenheim; general critical consensus",
+            "rating": 7,
+            "status": "completed"
+        }
+    },
     "portrait": {
         "title": "A Portrait of the Artist as a Young Man",
         "authors": [
