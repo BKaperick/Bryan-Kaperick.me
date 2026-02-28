@@ -37,6 +37,10 @@ python3 ./scripts/create_html.py
 python3 ./scripts/ingest_films.py films.json
 python3 ./scripts/create_movie_html.py
 
+cd ../../resources
+python3 ./datagetter.py ../content/widgets/datapoint.txt
+python ./write_scraped_data.py ../content/widgets/argot.json
+
 cd ../scripts
 echo "starting rss feed content creation"
 python3 ./create_rss.py
