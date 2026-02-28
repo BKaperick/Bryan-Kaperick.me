@@ -1,4 +1,29 @@
 {
+    "my_friends": {
+        "title": "My Friends",
+        "authors": [
+            {
+                "name": "Fredrik Backman",
+                "countries": [
+                    "SE"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "se",
+            "translator": "Neil Smith"
+        },
+        "personal": {
+            "start_month": 2,
+            "start_year": 2026,
+            "finish_month": 2,
+            "finish_year": 2026,
+            "recommended_by": "Mom and Dad",
+            "rating": 3,
+            "status": "completed"
+        }
+    },
     "volume_one": {
         "title": "On the Calculation of Volume",
         "authors": [
