@@ -87,7 +87,8 @@ datasets_to_skip = {
 def get_random_data():
     title = None
     while any([(title == None) or (d in title) for d in datasets_to_skip]):
-        results = catalog.find('')
+        # results = catalog.find('')
+        results = catalog.Client().tables.search()
         result = results.sample().load()
         metadata = result.metadata
         data = metadata.dataset
