@@ -1,6 +1,14 @@
 [
     {
-        "title": "Steel",
+        "title": "",
+        "link": "https://www.bryan-kaperick.me/en/photos/flandres",
+        "desc": "",
+        "date": "20260301",
+        "category": "photos",
+        "is_album": true
+    },
+    {
+        "title": "On landing",
         "link": "https://www.bryan-kaperick.me/en/poetry/steel",
         "desc": "A cold steel hull with a vespertine sheen...",
         "date": "20260301",
