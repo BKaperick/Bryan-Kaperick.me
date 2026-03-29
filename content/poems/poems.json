@@ -502,6 +502,7 @@
     "steel": {
         "title": "On landing",
         "author": "Bryan Kaperick",
+        "day": 29,
         "month": "Mar",
         "year": "2026",
         "rawpath": "./raw/steel.txt",

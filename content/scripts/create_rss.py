@@ -34,8 +34,11 @@ rss_footer = """  </channel>
 def html_to_xml(text):
     return text.replace("&rsquo;", "&apos;")
 
-def to_sortable_date(month, year):
-    return datetime.strptime("{0} {1}".format(month, year), "%b %Y").strftime("%Y%m%d")
+def to_sortable_date(year, month, day = None):
+    if day:
+        return datetime.strptime("{0} {1} {2}".format(day, month, year), "%d %b %Y").strftime("%Y%m%d")
+    else:
+        return datetime.strptime("{0} {1}".format(month, year), "%b %Y").strftime("%Y%m%d")
 
 def to_rss_date(date):
     return datetime.strptime(date, "%Y%m%d").strftime("%a, %d %b %Y %H:%M:%S GMT")
@@ -46,8 +49,8 @@ def create_photo_json(key, photo, lang):
 
     # the only ones without months are old photos, not a big deal if we use the proxy `order_in_year` instead
     month = photo["month"] if "month" in photo else months_reverse[photo["order_in_year"]]
-
-    date = to_sortable_date(month, photo["year"])
+    day = photo.get("day")
+    date = to_sortable_date(photo["year"], month, day)
     return {
         "title": photo[lang],
         "link": link,
@@ -63,7 +66,7 @@ def create_poem_json(key, poem, lang):
     # Minor clean: if first line ends in '.', only add 2 more
     desc = (description_.group(1) + "...").replace("....","...")
 
-    date = to_sortable_date(poem["month"], poem["year"])
+    date = to_sortable_date(poem["year"], poem["month"], poem.get("day"))
     link = poem["rawpath"].replace("./raw/","https://www.bryan-kaperick.me/{0}/poetry/").format(lang).replace(".txt","")
     return {
         "title": poem["title"],
