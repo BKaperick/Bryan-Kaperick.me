@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "title": "",
         "link": "https://www.bryan-kaperick.me/en/photos/flandres",
         "desc": "",
@@ -8,6 +9,8 @@
         "is_album": true
     },
     {
+=======
+>>>>>>> 044ac2002dcd70e50817f1f9152169c864ddab19
         "title": "On landing",
         "link": "https://www.bryan-kaperick.me/en/poetry/steel",
         "desc": "A cold steel hull with a vespertine sheen...",
