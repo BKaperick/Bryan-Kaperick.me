@@ -2710,8 +2710,7 @@
         "order_in_year": 2,
         "en": "",
         "fr": "",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     },
     "fog": {
@@ -2721,8 +2720,7 @@
         "order_in_year": 3,
         "en": "",
         "fr": "",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     },
     "lille": {
@@ -2732,8 +2730,7 @@
         "order_in_year": 4,
         "en": "",
         "fr": "",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     },
     "sunny": {
@@ -2743,8 +2740,7 @@
         "order_in_year": 5,
         "en": "",
         "fr": "",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     }
 }
