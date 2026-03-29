@@ -52,6 +52,10 @@ with open("poems_inspiration.html", "w") as f_insp:
     poems_insp = [p for p in poem_blocks if p[1]['author'] != "Bryan Kaperick"]
     f_insp.write("\n\n".join([x[0] for x in poems_insp]))
 
+with open("poems2026.html", "w") as f26:
+    poems26 = [wrap_block_in_link(*p) for p in poem_blocks if p[1]['author'] == "Bryan Kaperick" and int(p[1]['year']) == 2026]
+    f26.write("\n\n".join([x[0] for x in sorted(poems26, key=ordering)]))
+
 with open("poems2025.html", "w") as f25:
     poems25 = [wrap_block_in_link(*p) for p in poem_blocks if p[1]['author'] == "Bryan Kaperick" and int(p[1]['year']) == 2025]
     f25.write("\n\n".join([x[0] for x in sorted(poems25, key=ordering)]))

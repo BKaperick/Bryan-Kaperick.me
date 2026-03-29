@@ -2687,5 +2687,61 @@
         "fr": "",
         "people": [],
         "is_album": false
+    },
+    "the_commute": {
+        "name": "the_commute",
+        "day": 28,
+        "month": "Mar",
+        "year": 2026,
+        "order_in_year": 1,
+        "en": "The daily commute",
+        "fr": "Le trajet quotidien",
+        "is_album": true,
+        "photos": [
+            "lille",
+            "flandres",
+            "fog",
+            "sunny"
+        ]
+    },
+    "flandres": {
+        "name": "flandres.jpg",
+        "month": "Mar",
+        "year": 2026,
+        "order_in_year": 2,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "fog": {
+        "name": "fog.jpg",
+        "month": "Mar",
+        "year": 2026,
+        "order_in_year": 3,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "lille": {
+        "name": "lille.jpg",
+        "month": "Mar",
+        "year": 2026,
+        "order_in_year": 4,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "sunny": {
+        "name": "sunny.jpg",
+        "month": "Mar",
+        "year": 2026,
+        "order_in_year": 5,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
     }
 }

@@ -1,5 +1,20 @@
 [
     {
+        "title": "On landing",
+        "link": "https://www.bryan-kaperick.me/en/poetry/steel",
+        "desc": "A cold steel hull with a vespertine sheen...",
+        "date": "20260329",
+        "category": "poetry"
+    },
+    {
+        "title": "The daily commute",
+        "link": "https://www.bryan-kaperick.me/en/photos/lille",
+        "desc": "The daily commute",
+        "date": "20260328",
+        "category": "photos",
+        "is_album": true
+    },
+    {
         "title": "The Whittling Lands",
         "link": "https://www.bryan-kaperick.me/en/poetry/the_whittling_lands",
         "desc": "Those who walk in the Whittling Lands,...",
