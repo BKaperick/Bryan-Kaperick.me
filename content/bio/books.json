@@ -1,4 +1,30 @@
 {
+    "legerete": {
+        "title": "L'Insoutenable Légèrté de l'etre",
+        "authors": [
+            {
+                "name": "Milan Kundera",
+                "countries": [
+                    "FR",
+                    "CZ"
+                ]
+            }
+        ],
+        "language": {
+            "read": "fr",
+            "written": "cz",
+            "translator": "François Kérel"
+        },
+        "personal": {
+            "start_month": 2,
+            "start_year": 2026,
+            "finish_month": 4,
+            "finish_year": 2026,
+            "recommended_by": ["Other books by same author", "Clemence", "general critical consensus"],
+            "rating": 7,
+            "status": "completed"
+        }
+    },
     "my_friends": {
         "title": "My Friends",
         "authors": [
@@ -19,7 +45,7 @@
             "start_year": 2026,
             "finish_month": 2,
             "finish_year": 2026,
-            "recommended_by": "Mom and Dad",
+            "recommended_by": ["Mom and Dad"],
             "rating": 3,
             "status": "completed"
         }
@@ -44,7 +70,7 @@
             "start_year": 2025,
             "finish_month": 11,
             "finish_year": 2025,
-            "recommended_by": "Short book to read aloud",
+            "recommended_by": ["Short book to read aloud"],
             "rating": 5,
             "status": "completed"
         }
@@ -69,7 +95,7 @@
             "start_year": 2025,
             "finish_month": 12,
             "finish_year": 2025,
-            "recommended_by": "Ryan Oppenheim; general critical consensus",
+            "recommended_by": ["Ryan Oppenheim","general critical consensus"],
             "rating": 7,
             "status": "completed"
         }
@@ -94,7 +120,7 @@
             "start_year": 2025,
             "finish_month": 9,
             "finish_year": 2025,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 9,
             "status": "completed"
         }
@@ -119,7 +145,7 @@
             "start_year": 2025,
             "finish_month": 8,
             "finish_year": 2025,
-            "recommended_by": "Sami, Adrien, and Louise",
+            "recommended_by": ["Sami", "Adrien", "Louise"],
             "rating": 8,
             "status": "completed"
         }
@@ -144,7 +170,7 @@
             "start_year": 2025,
             "finish_month": 8,
             "finish_year": 2025,
-            "recommended_by": "Short book to read aloud",
+            "recommended_by": ["Short book to read aloud"],
             "rating": 1,
             "status": "completed"
         }
@@ -169,7 +195,7 @@
             "start_year": 2024,
             "finish_month": 7,
             "finish_year": 2025,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 7,
             "status": "completed"
         }
@@ -200,7 +226,7 @@
             "start_year": 2025,
             "finish_month": 5,
             "finish_year": 2025,
-            "recommended_by": "Current political context",
+            "recommended_by": ["Current political context"],
             "rating": 6,
             "status": "completed"
         }
@@ -226,7 +252,7 @@
             "start_year": 2024,
             "finish_month": 7,
             "finish_year": 2025,
-            "recommended_by": "Other books by same author",
+            "recommended_by": ["Other books by same author"],
             "rating": 8,
             "status": "completed"
         }
@@ -251,7 +277,7 @@
             "start_year": 2025,
             "finish_month": 4,
             "finish_year": 2025,
-            "recommended_by": "Patrick Casey",
+            "recommended_by": ["Patrick Casey"],
             "rating": 4,
             "status": "completed"
         }
@@ -276,7 +302,7 @@
             "start_year": 2023,
             "finish_month": 6,
             "finish_year": 2025,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 7,
             "status": "completed"
         }
@@ -302,7 +328,7 @@
             "start_year": 2024,
             "finish_month": 10,
             "finish_year": 2024,
-            "recommended_by": "Other books by same author",
+            "recommended_by": ["Other books by same author"],
             "rating": 7,
             "status": "completed"
         }
@@ -327,7 +353,7 @@
             "start_year": 2024,
             "finish_month": 9,
             "finish_year": 2024,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 6,
             "status": "completed"
         }
@@ -352,7 +378,7 @@
             "start_year": 2024,
             "finish_month": 8,
             "finish_year": 2024,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 9,
             "status": "completed"
         }
@@ -377,7 +403,7 @@
             "start_year": 2024,
             "finish_month": 8,
             "finish_year": 2024,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 8,
             "status": "completed"
         }
@@ -402,7 +428,7 @@
             "start_year": 2024,
             "finish_month": 7,
             "finish_year": 2024,
-            "recommended_by": "Current political context",
+            "recommended_by": ["Current political context"],
             "rating": 9,
             "status": "completed"
         }
@@ -427,7 +453,7 @@
             "start_year": 2024,
             "finish_month": 5,
             "finish_year": 2024,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 6,
             "status": "completed"
         }
@@ -453,7 +479,7 @@
             "start_year": 2024,
             "finish_month": 3,
             "finish_year": 2024,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 6,
             "status": "completed"
         }
@@ -478,7 +504,7 @@
             "start_year": 2023,
             "finish_month": 1,
             "finish_year": 2024,
-            "recommended_by": "Film adaptation",
+            "recommended_by": ["Film adaptation"],
             "rating": 3,
             "status": "completed"
         }
@@ -503,7 +529,7 @@
             "start_year": 2023,
             "finish_month": 12,
             "finish_year": 2023,
-            "recommended_by": "Current political context",
+            "recommended_by": ["Current political context"],
             "rating": 5,
             "status": "completed"
         }
@@ -528,7 +554,7 @@
             "start_year": 2023,
             "finish_month": 10,
             "finish_year": 2023,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 4,
             "status": "completed"
         }
@@ -553,7 +579,7 @@
             "start_year": 2023,
             "finish_month": 8,
             "finish_year": 2023,
-            "recommended_by": "Michael Hakl",
+            "recommended_by": ["Michael Hakl"],
             "rating": 6,
             "status": "completed"
         }
@@ -578,7 +604,7 @@
             "start_year": 2023,
             "finish_month": 5,
             "finish_year": 2023,
-            "recommended_by": "Continuation of series",
+            "recommended_by": ["Continuation of series"],
             "rating": 7,
             "status": "completed"
         }
@@ -603,7 +629,7 @@
             "start_year": 2023,
             "finish_month": 4,
             "finish_year": 2023,
-            "recommended_by": "Learning",
+            "recommended_by": ["Learning"],
             "rating": 7,
             "status": "abandoned"
         }
@@ -628,7 +654,7 @@
             "start_year": 2022,
             "finish_month": 2,
             "finish_year": 2023,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 5,
             "status": "completed"
         }
@@ -653,7 +679,7 @@
             "start_year": 2022,
             "finish_month": 11,
             "finish_year": 2022,
-            "recommended_by": "William (Paris)",
+            "recommended_by": ["William (Paris)"],
             "rating": 7,
             "status": "completed"
         }
@@ -678,7 +704,7 @@
             "start_year": 2022,
             "finish_month": 11,
             "finish_year": 2022,
-            "recommended_by": "Learn French",
+            "recommended_by": ["Learn French"],
             "rating": 2,
             "status": "completed"
         }
@@ -703,7 +729,7 @@
             "start_year": 2022,
             "finish_month": 9,
             "finish_year": 2022,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 5,
             "status": "completed"
         }
@@ -728,7 +754,7 @@
             "start_year": 2022,
             "finish_month": 9,
             "finish_year": 2022,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 7,
             "status": "completed"
         }
@@ -753,7 +779,7 @@
             "start_year": 2022,
             "finish_month": 9,
             "finish_year": 2022,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 8,
             "status": "completed"
         }
@@ -778,7 +804,7 @@
             "start_year": 2022,
             "finish_month": 6,
             "finish_year": 2022,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 6,
             "status": "completed"
         }
@@ -811,7 +837,7 @@
             "start_year": 2022,
             "finish_month": 1,
             "finish_year": 2022,
-            "recommended_by": "Learning",
+            "recommended_by": ["Learning"],
             "rating": 5,
             "status": "completed"
         }
@@ -836,7 +862,7 @@
             "start_year": 2021,
             "finish_month": 1,
             "finish_year": 2022,
-            "recommended_by": "Other books by same author",
+            "recommended_by": ["Other books by same author"],
             "rating": 4,
             "status": "completed"
         }
@@ -861,7 +887,7 @@
             "start_year": 2021,
             "finish_month": 12,
             "finish_year": 2021,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 9,
             "status": "completed"
         }
@@ -886,7 +912,7 @@
             "start_year": 2021,
             "finish_month": 9,
             "finish_year": 2021,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 6,
             "status": "completed"
         }
@@ -911,7 +937,7 @@
             "start_year": 2021,
             "finish_month": 4,
             "finish_year": 2021,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 5,
             "status": "completed"
         }
@@ -936,7 +962,7 @@
             "start_year": 2021,
             "finish_month": 3,
             "finish_year": 2021,
-            "recommended_by": "Other books by same author",
+            "recommended_by": ["Other books by same author"],
             "rating": 6,
             "status": "completed"
         }
@@ -961,7 +987,7 @@
             "start_year": 2020,
             "finish_month": 7,
             "finish_year": 2021,
-            "recommended_by": "Jo Anne Kaperick",
+            "recommended_by": ["Jo Anne Kaperick"],
             "rating": 7,
             "status": "completed"
         }
@@ -986,7 +1012,7 @@
             "start_year": 2020,
             "finish_month": 12,
             "finish_year": 2020,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 9,
             "status": "completed"
         }
@@ -1012,7 +1038,7 @@
             "start_year": 2020,
             "finish_month": 11,
             "finish_year": 2020,
-            "recommended_by": "Julie Speckens",
+            "recommended_by": ["Julie Speckens"],
             "rating": 7,
             "status": "completed"
         }
@@ -1037,7 +1063,7 @@
             "start_year": 2020,
             "finish_month": 12,
             "finish_year": 2020,
-            "recommended_by": "Learning French",
+            "recommended_by": ["Learning French"],
             "rating": 2,
             "status": "completed"
         }
@@ -1062,7 +1088,7 @@
             "start_year": 2020,
             "finish_month": 5,
             "finish_year": 2020,
-            "recommended_by": "Joseph Kaperick",
+            "recommended_by": ["Dad"],
             "rating": 9,
             "status": "completed"
         }
@@ -1088,7 +1114,7 @@
             "start_year": 2020,
             "finish_month": 5,
             "finish_year": 2020,
-            "recommended_by": "Learning",
+            "recommended_by": ["Learning"],
             "rating": 6,
             "status": "completed"
         }
@@ -1113,7 +1139,7 @@
             "start_year": 2020,
             "finish_month": 4,
             "finish_year": 2020,
-            "recommended_by": "Learning French",
+            "recommended_by": ["Learning French"],
             "rating": 7,
             "status": "completed"
         }
@@ -1139,7 +1165,7 @@
             "start_year": 2020,
             "finish_month": 2,
             "finish_year": 2020,
-            "recommended_by": "Jason Andrews",
+            "recommended_by": ["Jason Andrews"],
             "rating": 5,
             "status": "completed"
         }
@@ -1162,7 +1188,7 @@
         "personal": {
             "start_year": 2020,
             "finish_year": 2020,
-            "recommended_by": "Learn French",
+            "recommended_by": ["Learn French"],
             "rating": 3,
             "status": "completed"
         }
@@ -1187,7 +1213,7 @@
             "start_year": 2019,
             "finish_month": 12,
             "finish_year": 2019,
-            "recommended_by": "Kevin Kaperick",
+            "recommended_by": ["Kevin Kaperick"],
             "rating": 7,
             "status": "completed"
         }
@@ -1212,7 +1238,7 @@
             "start_year": 2019,
             "finish_month": 10,
             "finish_year": 2019,
-            "recommended_by": "Learn French",
+            "recommended_by": ["Learn French"],
             "rating": 6,
             "status": "completed"
         }
@@ -1237,7 +1263,7 @@
             "start_year": 2019,
             "finish_month": 6,
             "finish_year": 2019,
-            "recommended_by": "Film adaptation",
+            "recommended_by": ["Film adaptation"],
             "rating": 5,
             "status": "completed"
         }
@@ -1262,7 +1288,7 @@
             "start_year": 2019,
             "finish_month": 5,
             "finish_year": 2019,
-            "recommended_by": "General critical consensus",
+            "recommended_by": ["General critical consensus"],
             "rating": 7,
             "status": "completed"
         }
