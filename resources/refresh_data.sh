@@ -2,7 +2,7 @@
 DIR="$( cd "$( dirname "$0" )" && pwd )"
 source ~/website-env/bin/activate
 python $DIR/../content/bio/scripts/ingest_films.py $DIR/../content/bio/films.json
-python $DIR/datagetter.py $DIR/../content/widgets/datapoint.txt
+# python $DIR/datagetter.py $DIR/../content/widgets/datapoint.txt
 python $DIR/write_scraped_data.py $DIR/../content/widgets/argot.json
 echo "$DIR"
 git -C /home/bryan/Bryan-Kaperick.me pull origin --ff-only
