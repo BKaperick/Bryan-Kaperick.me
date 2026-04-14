@@ -49,5 +49,5 @@ with open("films.json", "r") as fr:
         block = create_film_block(key, film)
         blocks.append(block)
     films_html = header + "\n".join(blocks) + footer
-    with open("films.html", "w") as p:
+    with open("films.generated.html", "w") as p:
         p.write(films_html)

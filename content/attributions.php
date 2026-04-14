@@ -7,6 +7,6 @@ $string = file_get_contents($_SERVER['DOCUMENT_ROOT']."/attributions/attribution
 $p = json_decode($string);
 
 include($_SERVER['DOCUMENT_ROOT']."/header.php");
-include($_SERVER['DOCUMENT_ROOT']."/".$lang."/attributions/attributions.html");
+include($_SERVER['DOCUMENT_ROOT']."/".$lang."/attributions/attributions.generated.html");
 include($_SERVER['DOCUMENT_ROOT']."/footer.php");
 ?>

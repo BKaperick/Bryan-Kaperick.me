@@ -20,5 +20,5 @@ with open("attributions.json", "r") as fr:
     for key in attrs.keys():
         blocks.append(get_block(key))
 
-with open("attributions.html", "w") as fw:
+with open("attributions.generated.html", "w") as fw:
     fw.write("\n\n".join(blocks))
