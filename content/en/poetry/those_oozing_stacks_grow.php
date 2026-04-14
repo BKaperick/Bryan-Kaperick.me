@@ -1,5 +1,5 @@
 <?php 
 include($_SERVER['DOCUMENT_ROOT']."/poems/minimal_poem_header.php");
 include($_SERVER['DOCUMENT_ROOT']."/en/minimal_header.html");
-include($_SERVER['DOCUMENT_ROOT']."/poems/./blocks/those_oozing_stacks_grow.html");
+include($_SERVER['DOCUMENT_ROOT']."/poems/./blocks/those_oozing_stacks_grow.generated.html");
 ?> 

@@ -23,7 +23,7 @@ When a new poem is added, the following steps are necessary.
 2. `python instantiate.py`
 3. `python format_poem.py`
 4. Manually inspect the new entry in `poems.json` and fix any metadata details that are incorrectly filled.
-5. `python create_html.py` to generate `poems_inspiration.html`, `poems2024.html`, `poems2023.html`, and `poems2022.html` to be read by `/$lang/poetry/poetry.html`.
+5. `python create_html.py` to generate `poems_inspiration.html`, `poems2024.generated.html`, `poems2023.generated.html`, and `poems2022.generated.html` to be read by `/$lang/poetry/poetry.html`.
 
 # TODO
 We want to automate steps 2, 3, and 5 above.
