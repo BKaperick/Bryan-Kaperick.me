@@ -83,5 +83,5 @@ with open("books.json", "r") as fr:
         p.write(books_html)
 
     books_html = header + "\n".join(old_blocks) + footer
-    with open("old_books.html", "w") as p:
+    with open("old_books.generated.html", "w") as p:
         p.write(books_html)
