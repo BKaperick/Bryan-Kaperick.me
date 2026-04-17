@@ -8,7 +8,7 @@ with open("poems.json", "r+") as fw:
     poems = json.load(fw)
 
     for file in os.listdir("./new/"):
-        if file == '__empty__.txt':
+        if file == "__empty__.txt":
             continue
         print(file)
         name_words = file.replace(".txt", "").split("_")
@@ -20,14 +20,19 @@ with open("poems.json", "r+") as fw:
             "author": "Bryan Kaperick",
             "month": str(datetime.datetime.now().strftime("%B"))[:3],
             "year": str(datetime.datetime.now().year),
+            "tags": [],
             "rawpath": "./raw/" + file,
-            "order_in_month": 1
-            }
-        nickname = longest_word + '_' + str(count) if longest_word in poems.keys() else longest_word
-    
+            "order_in_month": 1,
+        }
+        nickname = (
+            longest_word + "_" + str(count)
+            if longest_word in poems.keys()
+            else longest_word
+        )
+
         poems[nickname] = d
         count += 1
-        
+
         os.rename("./new/" + file, "./raw/" + file)
 
     fw.seek(0)

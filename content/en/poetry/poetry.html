@@ -44,6 +44,110 @@
 <p>I would categorize my personal style as somewhere between <em>derivative</em> and <em>cringe</em>.  Of course, I&rsquo;m open to all sorts of feedback.</p>
 <p>Click on the poem to redirect to a dedicated page (for easy sharing and reference) and an audio recording if I've made one.</p>
 
+
+
+<script type="module">
+
+//<script src="dist/flexsearch.bundle.min.js">
+// <script src="dist/lang/en.min.js">
+//<script src="dist/lang/fr.min.js">
+  import {Index} from "../../js/flexsearch.bundle.module.min.js";
+  // import EnglishEncoderPreset from "../../js/en.js";
+  // import FrenchEncoderPreset from "../../js/fr.js";
+
+  const index = new Index({
+    // use forward when you want to match partials
+    // e.g. match "flexsearch" when query "flex"
+    tokenize: "forward"
+  });
+  fetch("../../poems/poems.json")
+  .then(response => response.json())
+  .then(data => 
+  {for (let [key, value] of Object.entries(data))
+  {
+
+  //console.log(key);
+  //console.log(value["title"]);
+  index.add(key, value["title"] + " " + value["raw_body"]);
+  //index.add(key, value["raw_body"]);
+  //value["tags"].forEach(t => index.add(key, t));
+  };
+
+  console.log("Data loaded.")
+
+}
+  )
+  .catch(error => console.log(error));
+
+  function run_search_query() {
+  const user_query = document.getElementById('search_query').value;
+
+  var suggestions = document.getElementById("partial_search_results");
+  suggestions.innerHTML = ''
+  console.log("query submitted");
+  console.log(user_query);
+  
+  index.search(user_query, { suggest: true })
+  
+  .forEach((i,result_ind) => {
+    console.log(result_ind);
+    var poem_block = document.getElementById(i);
+    console.log("Found: " + i);
+    var option = document.createElement("option")
+    option.value = i
+    option.innerHTML = i;
+                
+  suggestions.appendChild(option);
+  if (result_ind == 0) {
+    
+    console.log("Redirecting to: " + poem_block.parentNode);
+    // window.location.href= poem_block.parentNode; 
+    };
+  })};
+
+    function run_search_query_redirect() {
+  const user_query = document.getElementById('search_query').value;
+
+  var suggestions = document.getElementById("partial_search_results");
+  suggestions.innerHTML = ''
+  console.log("query submitted");
+  console.log(user_query);
+  
+  index.search(user_query, { suggest: true })
+  
+  .forEach((i,result_ind) => {
+    console.log(result_ind);
+    var poem_block = document.getElementById(i);
+    console.log("Found: " + i);
+
+  if (result_ind == 0) {
+    
+    console.log("Redirecting to: " + poem_block.parentNode);
+    window.location.href= poem_block.parentNode; 
+    };
+  })};
+
+
+var form = document.getElementById("searchForm");
+function handleForm(event) { event.preventDefault(); } 
+form.addEventListener('input', event => {
+  handleForm(event); run_search_query();
+});
+form.addEventListener('submit', event => {
+  handleForm(event); run_search_query_redirect();
+});
+
+;
+</script>
+
+<form id="searchForm">
+    <input type="text" id = "search_query" list="partial_search_results">
+    <input type="submit" value="Search">
+    <div id="suggestions">
+    <datalist id="partial_search_results"></datalist>
+  </div>
+</form>
+
 <p><details>
   <summary><h1 id="les-oeuvres-qui-minspirent">
   <?=$language['Works that inspire me'];?>

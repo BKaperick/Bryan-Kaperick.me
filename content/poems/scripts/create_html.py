@@ -19,7 +19,7 @@ def get_bryan_block(key, is_dedicated_page: bool, with_audio: bool) -> str:
         if with_audio
         else ""
     )
-    return f"""<div class="{div_class}">
+    return f"""<div class="{div_class}" id="{key}">
     <p><em><?=$p->{key}->title;?></em> &ndash; <?=$language[$p->{key}->month];?> <?=$p->{key}->year;?></p>
     <blockquote>
     <?=$p->{key}->body;?>
