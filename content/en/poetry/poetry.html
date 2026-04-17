@@ -44,6 +44,22 @@
 <p>I would categorize my personal style as somewhere between <em>derivative</em> and <em>cringe</em>.  Of course, I&rsquo;m open to all sorts of feedback.</p>
 <p>Click on the poem to redirect to a dedicated page (for easy sharing and reference) and an audio recording if I've made one.</p>
 
+
+
+
+<script type="module">
+
+//<script src="dist/flexsearch.bundle.min.js">
+// <script src="dist/lang/en.min.js">
+//<script src="dist/lang/fr.min.js">
+  import FlexSearch from "./dist/flexsearch.bundle.module.min.js";
+  var EnglishEncoderPreset = window.FlexSearch.Language.en;
+  var FrenchEncoderPreset = window.FlexSearch.Language.fr;
+  // ... access FlexSearch
+  var Index = window.FlexSearch.Index;
+  var index = new Index(/* ... */);
+</script>
+
 <p><details>
   <summary><h1 id="les-oeuvres-qui-minspirent">
   <?=$language['Works that inspire me'];?>
