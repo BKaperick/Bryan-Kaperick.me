@@ -46,18 +46,42 @@
 
 
 
-
 <script type="module">
 
 //<script src="dist/flexsearch.bundle.min.js">
 // <script src="dist/lang/en.min.js">
 //<script src="dist/lang/fr.min.js">
-  import FlexSearch from "./dist/flexsearch.bundle.module.min.js";
-  var EnglishEncoderPreset = window.FlexSearch.Language.en;
-  var FrenchEncoderPreset = window.FlexSearch.Language.fr;
-  // ... access FlexSearch
-  var Index = window.FlexSearch.Index;
-  var index = new Index(/* ... */);
+  import {Index} from "../../js/flexsearch.bundle.module.min.js";
+  // import EnglishEncoderPreset from "../../js/en.js";
+  // import FrenchEncoderPreset from "../../js/fr.js";
+
+  const index = new Index({
+    // use forward when you want to match partials
+    // e.g. match "flexsearch" when query "flex"
+    tokenize: "forward"
+  });
+  fetch("../../poems/poems.json")
+  .then(response => response.json())
+  .then(data => 
+  {for (let [key, value] of Object.entries(data))
+  {
+
+  //console.log(key);
+  //console.log(value["title"]);
+  index.add(key, value["title"]);
+  };
+
+  console.log("Data loaded.")
+  index.search("Untitled", { suggest: true }).forEach(i => {
+  console.log("Searching...");
+  //   const result = data[i];
+  console.log(i);
+
+}
+  )
+  .catch(error => console.log(error));
+
+  });
 </script>
 
 <p><details>
