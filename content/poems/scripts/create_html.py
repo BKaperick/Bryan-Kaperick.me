@@ -2,32 +2,32 @@ import os
 import sys
 
 sys.path.append(os.path.abspath("../../"))
-from helper import *
+from helper import ordering
 import json
+from datetime import datetime
+
+current_year = datetime.now().year
 
 poem_blocks = []
 
 
-def get_bryan_block(key):
-    return """<div>
-    <p><em><?=$p->{0}->title;?></em> &ndash; <?=$language[$p->{0}->month];?> <?=$p->{0}->year;?></p>
+def get_bryan_block(key, is_dedicated_page: bool, with_audio: bool) -> str:
+    # class is used adjust font size separately from the main poems page
+    div_class = "dedicated-poem-page" if is_dedicated_page else "main-poem-page"
+    audio = (
+        f"""<audio controls src="<?=$p->{key}->audiopath;?>"></audio>\n"""
+        if with_audio
+        else ""
+    )
+    return f"""<div class="{div_class}">
+    <p><em><?=$p->{key}->title;?></em> &ndash; <?=$language[$p->{key}->month];?> <?=$p->{key}->year;?></p>
     <blockquote>
-    <?=$p->{0}->body;?>
+    <?=$p->{key}->body;?>
     </blockquote>
-    </div>""".format(key)
+    {audio}</div>"""
 
 
-def get_bryan_block_with_audio(key):
-    return """<div>
-    <p><em><?=$p->{0}->title;?></em> &ndash; <?=$language[$p->{0}->month];?> <?=$p->{0}->year;?></p>
-    <blockquote>
-    <?=$p->{0}->body;?>
-    </blockquote>
-    <audio controls src="<?=$p->{0}->audiopath;?>"></audio>
-    </div>""".format(key)
-
-
-def get_insp_block(key, subtitle=False):
+def get_insp_block(key, subtitle=False) -> str:
     return """<p><em><?=$p->{0}->title;?></em> &ndash; <?=$p->{0}->author;?>
     {1}</p>
     <blockquote>
@@ -42,82 +42,58 @@ def get_insp_block(key, subtitle=False):
     )
 
 
-def wrap_block_in_link(block, poem, link, _):
-    wrapped_block = """<a href="<?="/" . $lang . "/poetry/{0}"?>" style="text-decoration:none">{1}
-</a>""".format(link, block)
+def wrap_block_in_link(main_page_block, poem, link, _):
+    wrapped_block = f"""<a href="<?="/" . $lang . "/poetry/{link}"?>" style="text-decoration:none">{main_page_block}
+</a>"""
     return (wrapped_block, poem, link)
 
 
 with open("poems.json", "r") as fr:
     poems = json.load(fr)
     for key, poem in poems.items():
-        audio_block = None
+        dedicated_page_block = None
         if poem["author"] == "Bryan Kaperick":
             block_path = poem["rawpath"].replace(".txt", ".php").replace("./raw/", "")
-            block = get_bryan_block(key)
-            if "audiopath" in poem.keys():
-                audio_block = get_bryan_block_with_audio(key)
+
+            # Currently, the only difference is that the dedicated page includes the audio.
+            main_page_block = get_bryan_block(key, False, False)
+            dedicated_page_block = get_bryan_block(
+                key, True, "audiopath" in poem.keys()
+            )
         else:
             block_path = None
-            block = get_insp_block(key, "subtitle" in poem.keys())
-        poem_blocks.append((block, poem, block_path, audio_block))
+            main_page_block = get_insp_block(key, "subtitle" in poem.keys())
+        poem_blocks.append((main_page_block, poem, block_path, dedicated_page_block))
 
 with open("poems_inspiration.generated.html", "w") as f_insp:
     poems_insp = [p for p in poem_blocks if p[1]["author"] != "Bryan Kaperick"]
     f_insp.write("\n\n".join([x[0] for x in poems_insp]))
 
-with open("poems2026.generated.html", "w") as f26:
-    poems26 = [
+min_single_year = 2022
+
+for year in range(min_single_year + 1, current_year + 1):
+    with open(f"poems{year}.generated.html", "w") as f_year:
+        poems_year = [
+            wrap_block_in_link(*p)
+            for p in poem_blocks
+            if p[1]["author"] == "Bryan Kaperick" and int(p[1]["year"]) == year
+        ]
+        f_year.write("\n\n".join([x[0] for x in sorted(poems_year, key=ordering)]))
+
+# Note: for the min year, we use <= rather than strict =.
+with open(f"poems{min_single_year}.generated.html", "w") as f_year:
+    poems_year = [
         wrap_block_in_link(*p)
         for p in poem_blocks
-        if p[1]["author"] == "Bryan Kaperick" and int(p[1]["year"]) == 2026
+        if p[1]["author"] == "Bryan Kaperick" and int(p[1]["year"]) <= min_single_year
     ]
-    f26.write("\n\n".join([x[0] for x in sorted(poems26, key=ordering)]))
+    f_year.write("\n\n".join([x[0] for x in sorted(poems_year, key=ordering)]))
 
-with open("poems2025.generated.html", "w") as f25:
-    poems25 = [
-        wrap_block_in_link(*p)
-        for p in poem_blocks
-        if p[1]["author"] == "Bryan Kaperick" and int(p[1]["year"]) == 2025
-    ]
-    f25.write("\n\n".join([x[0] for x in sorted(poems25, key=ordering)]))
-
-with open("poems2024.generated.html", "w") as f24:
-    poems24 = [
-        wrap_block_in_link(*p)
-        for p in poem_blocks
-        if p[1]["author"] == "Bryan Kaperick" and int(p[1]["year"]) == 2024
-    ]
-    f24.write("\n\n".join([x[0] for x in sorted(poems24, key=ordering)]))
-
-with open("poems2023.generated.html", "w") as f23:
-    poems23 = [
-        wrap_block_in_link(*p)
-        for p in poem_blocks
-        if p[1]["author"] == "Bryan Kaperick" and int(p[1]["year"]) == 2023
-    ]
-    f23.write("\n\n".join([x[0] for x in sorted(poems23, key=ordering)]))
-
-with open("poems2022.generated.html", "w") as f22:
-    poems22 = [
-        wrap_block_in_link(*p)
-        for p in poem_blocks
-        if p[1]["author"] == "Bryan Kaperick" and int(p[1]["year"]) <= 2022
-    ]
-    f22.write("\n\n".join([x[0] for x in sorted(poems22, key=ordering)]))
-
-for block, poem, php_path, audio_block in poem_blocks:
+for main_page_block, poem, php_path, dedicated_page_block in poem_blocks:
     if "rawpath" in poem:
         html_path = "./blocks/" + php_path.replace(".php", ".generated.html")
         with open(html_path, "w") as f:
-            # We only write the audio block if an audio exists, and only on the single-poem page
-            block_to_write = block if audio_block == None else audio_block
-
-            # Add class tag so we can adjust font size separately from the other poems page
-            block_to_write = block_to_write.replace(
-                "<div>", '<div class="dedicated-poem-page">'
-            )
-            f.write(block_to_write)
+            f.write(dedicated_page_block)
 
         for language in ["en", "fr"]:
             lang_php_path = "../{0}/poetry/{1}".format(language, php_path)

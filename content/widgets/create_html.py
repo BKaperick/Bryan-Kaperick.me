@@ -44,5 +44,5 @@ def latest_updates_from_content(lang):
     return "\n".join(out)
 
 for lang in ["en", "fr"]:
-    with open('latest_updates_content_{0}.html'.format(lang), 'w') as fw:
+    with open('latest_updates_content_{0}.generated.html'.format(lang), 'w') as fw:
         fw.write(latest_updates_from_content(lang))
