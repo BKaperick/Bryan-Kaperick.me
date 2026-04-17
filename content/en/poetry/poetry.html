@@ -81,35 +81,71 @@
 
   function run_search_query() {
   const user_query = document.getElementById('search_query').value;
+
+  var suggestions = document.getElementById("partial_search_results");
+  suggestions.innerHTML = ''
   console.log("query submitted");
   console.log(user_query);
   
   index.search(user_query, { suggest: true })
   
   .forEach((i,result_ind) => {
-  console.log(result_ind);
-  console.log("Found: " + i);
+    console.log(result_ind);
+    var poem_block = document.getElementById(i);
+    console.log("Found: " + i);
+    var option = document.createElement("option")
+    option.value = i
+    option.innerHTML = i;
+                
+  suggestions.appendChild(option);
   if (result_ind == 0) {
-  var poem_block = document.getElementById(i);
     
-  console.log("Scrolling to: " + poem_block.parentNode);
-  window.location.href= poem_block.parentNode; 
-  };
-  });
-  }
+    console.log("Redirecting to: " + poem_block.parentNode);
+    // window.location.href= poem_block.parentNode; 
+    };
+  })};
+
+    function run_search_query_redirect() {
+  const user_query = document.getElementById('search_query').value;
+
+  var suggestions = document.getElementById("partial_search_results");
+  suggestions.innerHTML = ''
+  console.log("query submitted");
+  console.log(user_query);
+  
+  index.search(user_query, { suggest: true })
+  
+  .forEach((i,result_ind) => {
+    console.log(result_ind);
+    var poem_block = document.getElementById(i);
+    console.log("Found: " + i);
+
+  if (result_ind == 0) {
+    
+    console.log("Redirecting to: " + poem_block.parentNode);
+    window.location.href= poem_block.parentNode; 
+    };
+  })};
 
 
 var form = document.getElementById("searchForm");
 function handleForm(event) { event.preventDefault(); } 
+form.addEventListener('input', event => {
+  handleForm(event); run_search_query();
+});
 form.addEventListener('submit', event => {
-  handleForm(event); run_search_query();});
+  handleForm(event); run_search_query_redirect();
+});
 
 ;
 </script>
 
 <form id="searchForm">
-    <input type="text" id = "search_query">
+    <input type="text" id = "search_query" list="partial_search_results">
     <input type="submit" value="Search">
+    <div id="suggestions">
+    <datalist id="partial_search_results"></datalist>
+  </div>
 </form>
 
 <p><details>
