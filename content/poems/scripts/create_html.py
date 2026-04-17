@@ -17,15 +17,14 @@ def get_bryan_block(key, is_dedicated_page: bool, with_audio: bool) -> str:
     audio = (
         f"""<audio controls src="<?=$p->{key}->audiopath;?>"></audio>\n"""
         if with_audio
-        else "\n"
+        else ""
     )
     return f"""<div class="{div_class}">
     <p><em><?=$p->{key}->title;?></em> &ndash; <?=$language[$p->{key}->month];?> <?=$p->{key}->year;?></p>
     <blockquote>
     <?=$p->{key}->body;?>
     </blockquote>
-    {audio}
-    </div>"""
+    {audio}</div>"""
 
 
 def get_insp_block(key, subtitle=False) -> str:
