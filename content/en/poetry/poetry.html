@@ -68,9 +68,9 @@
 
   //console.log(key);
   //console.log(value["title"]);
-  index.add(key, value["title"]);
-  index.add(key, value["raw_body"]);
-  value["tags"].forEach(t => index.add(key, t));
+  index.add(key, value["title"] + " " + value["raw_body"]);
+  //index.add(key, value["raw_body"]);
+  //value["tags"].forEach(t => index.add(key, t));
   };
 
   console.log("Data loaded.")
