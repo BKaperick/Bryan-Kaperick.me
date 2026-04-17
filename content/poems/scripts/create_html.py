@@ -2,8 +2,11 @@ import os
 import sys
 
 sys.path.append(os.path.abspath("../../"))
-from helper import *
+from helper import ordering
 import json
+from datetime import datetime
+
+current_year = datetime.now().year
 
 poem_blocks = []
 
@@ -66,45 +69,25 @@ with open("poems_inspiration.generated.html", "w") as f_insp:
     poems_insp = [p for p in poem_blocks if p[1]["author"] != "Bryan Kaperick"]
     f_insp.write("\n\n".join([x[0] for x in poems_insp]))
 
-with open("poems2026.generated.html", "w") as f26:
-    poems26 = [
-        wrap_block_in_link(*p)
-        for p in poem_blocks
-        if p[1]["author"] == "Bryan Kaperick" and int(p[1]["year"]) == 2026
-    ]
-    f26.write("\n\n".join([x[0] for x in sorted(poems26, key=ordering)]))
+min_single_year = 2022
 
-with open("poems2025.generated.html", "w") as f25:
-    poems25 = [
-        wrap_block_in_link(*p)
-        for p in poem_blocks
-        if p[1]["author"] == "Bryan Kaperick" and int(p[1]["year"]) == 2025
-    ]
-    f25.write("\n\n".join([x[0] for x in sorted(poems25, key=ordering)]))
+for year in range(min_single_year + 1, current_year + 1):
+    with open(f"poems{year}.generated.html", "w") as f_year:
+        poems_year = [
+            wrap_block_in_link(*p)
+            for p in poem_blocks
+            if p[1]["author"] == "Bryan Kaperick" and int(p[1]["year"]) == year
+        ]
+        f_year.write("\n\n".join([x[0] for x in sorted(poems_year, key=ordering)]))
 
-with open("poems2024.generated.html", "w") as f24:
-    poems24 = [
+# Note: for the min year, we use <= rather than strict =.
+with open(f"poems{min_single_year}.generated.html", "w") as f_year:
+    poems_year = [
         wrap_block_in_link(*p)
         for p in poem_blocks
-        if p[1]["author"] == "Bryan Kaperick" and int(p[1]["year"]) == 2024
+        if p[1]["author"] == "Bryan Kaperick" and int(p[1]["year"]) <= min_single_year
     ]
-    f24.write("\n\n".join([x[0] for x in sorted(poems24, key=ordering)]))
-
-with open("poems2023.generated.html", "w") as f23:
-    poems23 = [
-        wrap_block_in_link(*p)
-        for p in poem_blocks
-        if p[1]["author"] == "Bryan Kaperick" and int(p[1]["year"]) == 2023
-    ]
-    f23.write("\n\n".join([x[0] for x in sorted(poems23, key=ordering)]))
-
-with open("poems2022.generated.html", "w") as f22:
-    poems22 = [
-        wrap_block_in_link(*p)
-        for p in poem_blocks
-        if p[1]["author"] == "Bryan Kaperick" and int(p[1]["year"]) <= 2022
-    ]
-    f22.write("\n\n".join([x[0] for x in sorted(poems22, key=ordering)]))
+    f_year.write("\n\n".join([x[0] for x in sorted(poems_year, key=ordering)]))
 
 for block, poem, php_path, audio_block in poem_blocks:
     if "rawpath" in poem:
