@@ -37,7 +37,12 @@
         "month": "Jul",
         "year": "2024",
         "body": "<div class=\"poem\"><p><span class=\"line\">Sunlight stained your bedroom walls.</span><br>\n<span class=\"line\">You and I hid baking in the sheets.</span><br>\n<span class=\"line\">Eyes shut, we searched</span><br>\n<span class=\"line\">and found each other\u2019s skin</span><br>\n<span class=\"line\">still damp from the night.</span><br>\n<span class=\"line\">We took turns sinking back into sleep,</span><br>\n<span class=\"line\">fleeing our obligations to The Greats</span><br>\n<span class=\"line\">who paved the city streets.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">After noon we emerged</span><br>\n<span class=\"line\">to face the day:</span><br>\n<span class=\"line\">our groggy eyes opened;</span><br>\n<span class=\"line\">your dimples glistened.</span><br>\n<span class=\"line\">We feasted</span><br>\n<span class=\"line\">on beauty eternal, carved into stone</span><br>\n<span class=\"line\">and on beauty fleeting, your tender lips</span><br>\n<span class=\"line\">wrapped around a burning cigarette.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">You took your last drag.</span><br>\n<span class=\"line\">And from the ashes,</span><br>\n<span class=\"line\">a daisy was born,</span><br>\n<span class=\"line\">meant only to wilt.</span><br>\n<span class=\"line\">And so I tried</span><br>\n<span class=\"line\">to catch each petal as it fell.</p></div>",
-        "tags": ["ode", "travel", "free-verse", "favorite"]
+        "tags": [
+            "ode",
+            "travel",
+            "free-verse",
+            "favorite"
+        ]
     },
     "asif": {
         "rawpath": "./raw/as_if.txt",
@@ -48,7 +53,10 @@
         "month": "Jul",
         "year": "2024",
         "body": "<div class=\"poem\"><p><span class=\"line\">She\u2019s a mystery.</span><br>\n<span class=\"line\">As if I wanted to cling on to her drapes</span><br>\n<span class=\"line\">to reveal a clouded sky.</span><br>\n<span class=\"line\">As if I wanted to know.</span><br>\n<span class=\"line\">As if she wanted the same.</span><br>\n<span class=\"line\">As if I didn\u2019t mull</span><br>\n<span class=\"line\">for some time before she woke</span><br>\n<span class=\"line\">over whether my fingers</span><br>\n<span class=\"line\">could lace into hers. Now it\u2019s</span><br>\n<span class=\"line\">as if the thought never entered</span><br>\n<span class=\"line\">my mind, but</span><br>\n<span class=\"line\">it hasn\u2019t left either,</span><br>\n<span class=\"line\">as if it\u2019s been</span><br>\n<span class=\"line\">gliding around inside</span><br>\n<span class=\"line\">for an eternity already.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">As if I couldn\u2019t see when you were</span><br>\n<span class=\"line\">lying. I lied back as if</span><br>\n<span class=\"line\">you couldn\u2019t do the same. As if</span><br>\n<span class=\"line\">I didn\u2019t see how you two said</span><br>\n<span class=\"line\">goodbye. Him all red and smiling as if</span><br>\n<span class=\"line\">he were drunk. As if</span><br>\n<span class=\"line\">I didn\u2019t look down to</span><br>\n<span class=\"line\">see his red, drunk, smiling hand</span><br>\n<span class=\"line\">brush your waist as he turned</span><br>\n<span class=\"line\">to walk away, as if</span><br>\n<span class=\"line\">I weren\u2019t there, as if</span><br>\n<span class=\"line\">I didn\u2019t care. As if</span><br>\n<span class=\"line\">I cared.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">As if sex were a commitment.</span><br>\n<span class=\"line\">As if it didn\u2019t exist only in the instant.</span><br>\n<span class=\"line\">As if thoughts of your sex had been</span><br>\n<span class=\"line\">gliding around inside</span><br>\n<span class=\"line\">for an eternity already.</p></div>",
-        "tags": ["personal", "free-verse"]
+        "tags": [
+            "personal",
+            "free-verse"
+        ]
     },
     "untitled_jun24": {
         "rawpath": "./raw/untitled_jun2024.txt",
@@ -59,7 +67,10 @@
         "month": "Jun",
         "year": "2024",
         "body": "<div class=\"poem\"><p><span class=\"line\">Morning growls</span><br>\n<span class=\"line\">While the di-named lioness</span><br>\n<span class=\"line\">In exhaling betrays</span><br>\n<span class=\"line\">Her thoughts hidden still</span><br>\n<span class=\"line\">On that hillside crest</span><br>\n<span class=\"line\">Where our fallen arms defined us</span><br>\n<span class=\"line\">As the grass defined the meadow.</p></div>",
-        "tags": ["personal", "free-verse"]
+        "tags": [
+            "personal",
+            "free-verse"
+        ]
     },
     "float": {
         "rawpath": "./raw/free_to_float.txt",
@@ -70,7 +81,10 @@
         "month": "May",
         "year": "2024",
         "body": "<div class=\"poem\"><p><span class=\"line\">If he could float from tree to tree,</span><br>\n<span class=\"line\">on which clich\u00e9s he\u2019d perch?</span><br>\n<span class=\"line\">Barefoot on her knife\u2019s edge,</span><br>\n<span class=\"line\">or rocking the cradle to ease</span><br>\n<span class=\"line\">Babe</span><br>\n<span class=\"line\">back to sleep.</span><br>\n<span class=\"line\">Back to dream states</span><br>\n<span class=\"line\">where men, like birds,</span><br>\n<span class=\"line\">are free to float from tree to tree.</p></div>",
-        "tags": ["free-verse", "favorite"]
+        "tags": [
+            "free-verse",
+            "favorite"
+        ]
     },
     "decline": {
         "rawpath": "./raw/while_in_decline.txt",
@@ -81,7 +95,12 @@
         "month": "May",
         "year": "2024",
         "body": "<div class=\"poem\"><p><span class=\"line\">The sun still shines while in decline</span><br>\n<span class=\"line\">And bees slave all their lives</span><br>\n<span class=\"line\">Sea waves collapse in foamy smacks</span><br>\n<span class=\"line\">And trees in hollow snaps.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">A man may choose to honey bathe</span><br>\n<span class=\"line\">Or surf the lightning\u2019s strike</span><br>\n<span class=\"line\">But he like all must heed the call</span><br>\n<span class=\"line\">Of sunset on his back.</p></div>",
-        "tags": ["iambic", "tetrameter", "metered", "rhyming"]
+        "tags": [
+            "iambic",
+            "tetrameter",
+            "metered",
+            "rhyming"
+        ]
     },
     "triad": {
         "rawpath": "./raw/untitled_triad.txt",
@@ -92,7 +111,10 @@
         "month": "May",
         "year": "2024",
         "body": "<div class=\"poem\"><p><span class=\"line\">Break my bones</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if you want to</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I\u2019ll wait</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">For them to heal before</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I call you</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;again</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">And when I do</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I\u2019ll come to you</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and crack yours too</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">The fractures\u2019ll fill</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;us one</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with the other</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">The reluctant sheet</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;can fall</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;between our feet</p></div>",
-        "tags": ["triad", "form-experiment"]
+        "tags": [
+            "triad",
+            "form-experiment"
+        ]
     },
     "moroccan": {
         "rawpath": "./raw/moroccan_mist.txt",
@@ -102,7 +124,12 @@
         "month": "May",
         "year": "2024",
         "body": "<div class=\"poem\"><p><span class=\"line\">Moroccan mist evaporates away</span><br>\n<span class=\"line\">From all the dusty hash that filled our lungs</span><br>\n<span class=\"line\">An offer Flo a coffee kind of day</span><br>\n<span class=\"line\">Afloat but crooked, far from ferry\u2019s strait.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">We\u2019d rather stop for cars and caravans</span><br>\n<span class=\"line\">We waited wafting in the evening gas</span><br>\n<span class=\"line\">To every city vite-fait brined in wine</span><br>\n<span class=\"line\">For Tim as well who kept the rhythm\u2019s beat.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Till Basque I surfed to take the solo lead</span><br>\n<span class=\"line\">Far from the hold of Silvio\u2019s belay</span><br>\n<span class=\"line\">Without a name I spun that game of chance</span><br>\n<span class=\"line\">And downed those drunken sips of Leah\u2019s sweet.</p></div>",
-        "tags": ["travel", "rhyming", "iambic", "pentameter"]
+        "tags": [
+            "travel",
+            "rhyming",
+            "iambic",
+            "pentameter"
+        ]
     },
     "watch": {
         "rawpath": "./raw/watch.txt",
@@ -112,7 +139,9 @@
         "month": "May",
         "year": "2024",
         "body": "<div class=\"poem\"><p><span class=\"line\">Watch through the window</span><br>\n<span class=\"line\">the mug that wobbles unprompted</span><br>\n<span class=\"line\">wait wait and watch</span><br>\n<span class=\"line\">the shards that settle among the crumbs</span><br>\n<span class=\"line\">wait outside an hour</span><br>\n<span class=\"line\">after the shatter settles</span><br>\n<span class=\"line\">and the lowly he rises</span><br>\n<span class=\"line\">to lick the spill off the tile</span><br>\n<span class=\"line\">like a dog</p></div>",
-        "tags": ["free-verse"]
+        "tags": [
+            "free-verse"
+        ]
     },
     "untitled_apr24": {
         "rawpath": "./raw/untitled_apr2024.txt",
@@ -122,7 +151,9 @@
         "month": "Apr",
         "year": "2024",
         "body": "<div class=\"poem\"><p><span class=\"line\">Puddles stain the pavement</span><br>\n<span class=\"line\">under sun\u2019s afternoon</span><br>\n<span class=\"line\">trampled by the tourists'</span><br>\n<span class=\"line\">dampened leather shoes.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Slouching on a concrete bench</span><br>\n<span class=\"line\">sidelining the plaza,</span><br>\n<span class=\"line\">he\u2019s chewing on some homesick</span><br>\n<span class=\"line\">and his heart\u2019s beating blue.</p></div>",
-        "tags": ["rhyming"]
+        "tags": [
+            "rhyming"
+        ]
     },
     "doghouse": {
         "rawpath": "./raw/the_doghouse.txt",
@@ -142,7 +173,9 @@
         "month": "Mar",
         "year": "2024",
         "body": "<div class=\"poem\"><p><span class=\"line\">Du temps perdu</span><br>\n<span class=\"line\">sous la pluie</span><br>\n<span class=\"line\">d\u2019un mardi soir.</span><br>\n<span class=\"line\">Tremp\u00e9, il se d\u00e9chire tout seul</span><br>\n<span class=\"line\">quand on essaie de ramasser</span><br>\n<span class=\"line\">ce qui en reste de la table</span><br>\n<span class=\"line\">apr\u00e8s qu\u2019elle parte.</p></div>",
-        "tags": ["francais"]
+        "tags": [
+            "francais"
+        ]
     },
     "tower": {
         "rawpath": "./raw/the_tower.txt",
@@ -152,7 +185,10 @@
         "month": "Feb",
         "year": "2024",
         "body": "<div class=\"poem\"><p><span class=\"line\">His eyes and Hers align to keep</span><br>\n<span class=\"line\">panoptic, periodic rhyme at sea</span><br>\n<span class=\"line\">and frothy mermen arms outreached</span><br>\n<span class=\"line\">for prey who slips away beneath</span><br>\n<span class=\"line\">the tower\u2019s twin-turn stare.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Frustrated shadows lurk below</span><br>\n<span class=\"line\">for sheer is water as it flows</span><br>\n<span class=\"line\">firmly caught within the tow</span><br>\n<span class=\"line\">of Their revolving omniglow</span><br>\n<span class=\"line\">where washed-up mysteries lay bare.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Then one night the twin pair winked \u2014</span><br>\n<span class=\"line\">Her brother fell from tower\u2019s brink.</span><br>\n<span class=\"line\">Straight He dove and straight He\u2019ll sink.</span><br>\n<span class=\"line\">Sister waterlogged by weeps,</span><br>\n<span class=\"line\">She cast Her duty off without a care.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Storms arise when rhythm\u2019s lost,</span><br>\n<span class=\"line\">sirens shriek like albatross,</span><br>\n<span class=\"line\">long-drowned urchins shed their moss,</span><br>\n<span class=\"line\">nocturne barges glide across</span><br>\n<span class=\"line\">the purview of a watch in disrepair.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">By dawn Her misery ossified.</span><br>\n<span class=\"line\">A corroded heart beats in half-time</span><br>\n<span class=\"line\">all while shadows grow twice as wide.</span><br>\n<span class=\"line\">Her mood now high and low like tide</span><br>\n<span class=\"line\">ever bound to the pull of out there.</p></div>",
-        "tags": ["fantastical", "favorite"]
+        "tags": [
+            "fantastical",
+            "favorite"
+        ]
     },
     "place": {
         "rawpath": "./raw/a_cool_dry_place.txt",
@@ -162,7 +198,9 @@
         "month": "Jan",
         "year": "2024",
         "body": "<div class=\"poem\"><p><span class=\"line\">Sitting pristine in her sleeve</span><br>\n<span class=\"line\">plastic shrink wrapped unscratched</span><br>\n<span class=\"line\">unplayed her ways unheard</span><br>\n<span class=\"line\">wait to be</span><br>\n<span class=\"line\">instead left</span><br>\n<span class=\"line\">bought and forgot</span><br>\n<span class=\"line\">In a cool, dry place.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Could she ever do what others do ?</span><br>\n<span class=\"line\">Be used as lovers use ?</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Cut up and torn off</span><br>\n<span class=\"line\">clicked nicked greased up and down</span><br>\n<span class=\"line\">soaked and dried</span><br>\n<span class=\"line\">out spun around and flexed</span><br>\n<span class=\"line\">And also</span><br>\n<span class=\"line\">one day forgotten</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Then they\u2019ll do what others do,</span><br>\n<span class=\"line\">And leave as lovers leave.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Set to dust collecting</span><br>\n<span class=\"line\">spores or moss tossed</span><br>\n<span class=\"line\">under another</span><br>\n<span class=\"line\">overplayed eventually clich\u00e9d</span><br>\n<span class=\"line\">wedged among the others</span><br>\n<span class=\"line\">In a cool, dry place.</p></div>",
-        "tags": ["favorite"]
+        "tags": [
+            "favorite"
+        ]
     },
     "dark": {
         "rawpath": "./raw/in_the_dark.txt",
@@ -172,7 +210,10 @@
         "month": "Jan",
         "year": "2024",
         "body": "<div class=\"poem\"><p><span class=\"line\">Pinned to dusk and strung like wire</span><br>\n<span class=\"line\">Tower the branches' fractal spires</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">A brass bell drones with windy pull</span><br>\n<span class=\"line\">Dull reverberations chill the air</span><br>\n<span class=\"line\">Birdlings dream and spiders' drool</span><br>\n<span class=\"line\">Seeps into webs of waxen stare</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Never a crack nor rust nor grime</span><br>\n<span class=\"line\">Hours to ages pierce without remark</span><br>\n<span class=\"line\">The lonesome architect\u2019s got time</span><br>\n<span class=\"line\">To manufacture beauty in the dark</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">These streaks will soon be printed on the dawn</span><br>\n<span class=\"line\">Where fractal spires linger on and on.</p></div>",
-        "tags": ["rhyming", "favorite"]
+        "tags": [
+            "rhyming",
+            "favorite"
+        ]
     },
     "monorhyme3": {
         "rawpath": "./raw/monorhyme_sketch_3.txt",
@@ -182,7 +223,10 @@
         "month": "Dec",
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">Goldilocks was feeling bold,</span><br>\n<span class=\"line\">For each bear was poured a bowl.</span><br>\n<span class=\"line\">Her belly roiled with each spoonful:</span><br>\n<span class=\"line\">Cold, more cold, and much more cold.</p></div>",
-        "tags": ["form-experiment", "rhyming"]
+        "tags": [
+            "form-experiment",
+            "rhyming"
+        ]
     },
     "monorhyme2": {
         "rawpath": "./raw/monorhyme_sketch_2.txt",
@@ -192,7 +236,10 @@
         "month": "Nov",
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">Play back the track slow with all ears clear</span><br>\n<span class=\"line\">Sycophants\u2019ll scatter off or cower with fear</span><br>\n<span class=\"line\">Honest men\u2019ll settle in, lonesomely austere</span><br>\n<span class=\"line\">Chimney fire cackling to toss another beer.</p></div>",
-        "tags": ["form-experiment", "rhyming"]
+        "tags": [
+            "form-experiment",
+            "rhyming"
+        ]
     },
     "monorhyme1": {
         "rawpath": "./raw/monorhyme_sketch_1.txt",
@@ -202,7 +249,10 @@
         "month": "Nov",
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">Alcohol is entropy, and entropy is time</span><br>\n<span class=\"line\">Hungover before I transitively unwind.</span><br>\n<span class=\"line\">Wilted flowers wither while I dine on rotten wine</span><br>\n<span class=\"line\">And ever wet the whistle of a lover once mine.</p></div>",
-        "tags": ["form-experiment", "rhyming"]
+        "tags": [
+            "form-experiment",
+            "rhyming"
+        ]
     },
     "sami": {
         "rawpath": "./raw/ode_to_sami.txt",
@@ -212,7 +262,9 @@
         "month": "Nov",
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">Our man\u2019s evaporated \u2014 gone.</span><br>\n<span class=\"line\">After the party rises dawn</span><br>\n<span class=\"line\">A quiet, calmer house he leaves</span><br>\n<span class=\"line\">Infused with that which he believes.</span><br>\n<span class=\"line\">Now off to scrub ancestral mire</span><br>\n<span class=\"line\">From the grounds of Imane\u2019s spire</span><br>\n<span class=\"line\">For shines a hope in progeny</span><br>\n<span class=\"line\">That\u2019s barely grazed by coloc-amis.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">As he ascends to the fourth floor</span><br>\n<span class=\"line\">We\u2019re sewing stitches evermore</span><br>\n<span class=\"line\">His scalpel sketched the lessons learned</span><br>\n<span class=\"line\">Into our cheeks the stories burn</span><br>\n<span class=\"line\">Red-raw from cold or rush of blood</span><br>\n<span class=\"line\">At Sami\u2019s wisdom understood.</p></div>",
-        "tags": ["ode"]
+        "tags": [
+            "ode"
+        ]
     },
     "chicory": {
         "rawpath": "./raw/chicory_root.txt",
@@ -222,7 +274,9 @@
         "month": "Oct",
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">An afternoon with chicory root</span><br>\n<span class=\"line\">My heart respires a holler and hoot</span><br>\n<span class=\"line\">Sans caffeine so must be due</span><br>\n<span class=\"line\">\u00c0 la frange d\u2019Aubr\u00e9e, surtout</p></div>",
-        "tags": ["rhyming"]
+        "tags": [
+            "rhyming"
+        ]
     },
     "couples": {
         "rawpath": "./raw/untitled_couples.txt",
@@ -232,7 +286,12 @@
         "month": "Oct",
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">Bound up inside, a voice he wimpers on,</span><br>\n<span class=\"line\">\u201cBring back the soft of touch that long has gone\u2026\u201d</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">What waste of blood to keep that louse around</span><br>\n<span class=\"line\">\u2014 I\u2019ll take my heart to firm or fertile ground.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">I peer upstream to tempt the river\u2019s way</span><br>\n<span class=\"line\">When new soleil he shines and dawns the day.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">My thrill it shimmers on the sandy cusp</span><br>\n<span class=\"line\">Of virgin plain untouched by Sodom\u2019s rust.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">I\u2019ll feign defense to pangs that thrust me out</span><br>\n<span class=\"line\">Beyond the surface dissipating shroud.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">With that I\u2019ll rise above the tar that blinds</span><br>\n<span class=\"line\">Before I\u2019ve found the words for th\u2019other side.</p></div>",
-        "tags": ["iambic", "pentameter", "rhyming", "metered"]
+        "tags": [
+            "iambic",
+            "pentameter",
+            "rhyming",
+            "metered"
+        ]
     },
     "limp": {
         "rawpath": "./raw/limp.txt",
@@ -242,7 +301,9 @@
         "month": "Oct",
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">As I ran by I saw you lying</span><br>\n<span class=\"line\">limp along the sidewalk</span><br>\n<span class=\"line\">Unforced serendipity</span><br>\n<span class=\"line\">I didn\u2019t watch the clock</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">You seemed as well as one could seem</span><br>\n<span class=\"line\">prostrate on the floor</span><br>\n<span class=\"line\">Peaceful even, drowned amidst</span><br>\n<span class=\"line\">the waves of foreign shore</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">I wondered how you landed here</span><br>\n<span class=\"line\">your wings a crumpled mess</span><br>\n<span class=\"line\">A fall from sunlight\u2019s brazen stare</span><br>\n<span class=\"line\">onto my path ingressed</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">I lay my hand to light first flame</span><br>\n<span class=\"line\">since summer\u2019s hibernation</span><br>\n<span class=\"line\">But you\u2019ve cooled your gaze to stone</span><br>\n<span class=\"line\">and cast it in the ocean</p></div>",
-        "tags": ["personal"]
+        "tags": [
+            "personal"
+        ]
     },
     "raven": {
         "rawpath": "./raw/a_ravens_lust.txt",
@@ -252,7 +313,9 @@
         "month": "Oct",
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">A pressing matter of morning walks,</span><br>\n<span class=\"line\">A pressure on the heart.</span><br>\n<span class=\"line\">She marches, tramples, stomps, and stalks</span><br>\n<span class=\"line\">My mind while we\u2019re apart.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">We both agree to guard our distance,</span><br>\n<span class=\"line\">But hunger grows like wolf to sheep</span><br>\n<span class=\"line\">Whose prey is stoled by thorn\u00e8d fence.</span><br>\n<span class=\"line\">A raven\u2019s lust at bay to keep.</p></div>",
-        "tags": ["personal"]
+        "tags": [
+            "personal"
+        ]
     },
     "september": {
         "rawpath": "./raw/september_slump.txt",
@@ -262,7 +325,9 @@
         "month": "Sep",
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">Obsessively revising</span><br>\n<span class=\"line\">Self-consuming second guessing</span><br>\n<span class=\"line\">Seeking sense in something</span><br>\n<span class=\"line\">set aflame by sorry selfish me.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Hiving scared hungover</span><br>\n<span class=\"line\">from a hopeless couple months</span><br>\n<span class=\"line\">of perfect idleness I passed beneath</span><br>\n<span class=\"line\">your gentle glowing grange.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">And once again I wash in vain</span><br>\n<span class=\"line\">to free my will from moping</span><br>\n<span class=\"line\">Meaning while I wait I\u2019m anxiously aware</span><br>\n<span class=\"line\">that every waking moment means</span><br>\n<span class=\"line\">the more and more you drift away from me.</p></div>",
-        "tags": ["personal"]
+        "tags": [
+            "personal"
+        ]
     },
     "apparently": {
         "rawpath": "./raw/hm_apparently_pompeii_isnt_in_greece.txt",
@@ -272,7 +337,9 @@
         "month": "Sep",
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">It\u2019s New Year\u2019s Eve on Mount Vesuvius</span><br>\n<span class=\"line\">Eruption warnings are dubious</span><br>\n<span class=\"line\">Togas loose, libations plenty</span><br>\n<span class=\"line\">The dance floor rumbles our favorite melody</span><br>\n<span class=\"line\">We brink dance to Old Hades' cry</span><br>\n<span class=\"line\">Who beckons us to chase our high</span><br>\n<span class=\"line\">His cavelings squirm through cracks to join us</span><br>\n<span class=\"line\">Sweet smoke consumes our rowdy chorus</span><br>\n<span class=\"line\">And so we played as spirits fused</span><br>\n<span class=\"line\">Unified, with stamina imbued</span><br>\n<span class=\"line\">We\u2019ll party on \u2018til liquid rock arrives</span><br>\n<span class=\"line\">\u2018Til ash and friends should come alive\u2026</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">\u2026With might was dawn\u2019s great geyser freed</span><br>\n<span class=\"line\">At that, our wine-dark punch bowl emptied</span><br>\n<span class=\"line\">Thus could raise one goblet all</span><br>\n<span class=\"line\">So that our tombstones may stand tall.</p></div>",
-        "tags": ["fantastical"]
+        "tags": [
+            "fantastical"
+        ]
     },
     "cripples": {
         "rawpath": "./raw/untitled_aug2023.txt",
@@ -282,7 +349,11 @@
         "month": "Aug",
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">A giant in the shoes of a man</span><br>\n<span class=\"line\">A god wrapped in a mortal\u2019s pelt</span><br>\n<span class=\"line\">A beggar assuming a rich man\u2019s svelte</span><br>\n<span class=\"line\">A one-trick pony who wows again.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">All those they rose under a cool twilight eve</span><br>\n<span class=\"line\">With friends and unknowns alike</span><br>\n<span class=\"line\">A savory potluck among salty waves reaching</span><br>\n<span class=\"line\">Ever closer, \u2018neath the call of soft moonlight.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">But from the water\u2019s flesh, soggy cripples emerged</span><br>\n<span class=\"line\">Each more grotesque than the last</span><br>\n<span class=\"line\">Until the bastard crew\u2019s final lizard</span><br>\n<span class=\"line\">Crawled out, terrorizing the virgin grass.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">&nbsp;&nbsp;&nbsp;<em>\u00ab Oh ! How he howled like a pig</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;all mixed up in his own blood</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;and his own foul slime! \u00bb</em></span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">The giant, at this he slouched</span><br>\n<span class=\"line\">The god took years on his shoulders</span><br>\n<span class=\"line\">The beggar sat and wept, his appetite lost</span><br>\n<span class=\"line\">The lame pony spooked off, driven mad by the odours.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Those hogs slabbered with haste, as if at the trough</span><br>\n<span class=\"line\">Sweet death had complied with their final demand</span><br>\n<span class=\"line\">All noble spirits on the shore had crumpled</span><br>\n<span class=\"line\">For heavy are the souls of the damned.</p></div>",
-        "tags": ["fantastical", "favorite", "rhyming"]
+        "tags": [
+            "fantastical",
+            "favorite",
+            "rhyming"
+        ]
     },
     "sharptremor": {
         "rawpath": "./raw/untitled_jul2023.txt",
@@ -292,7 +363,9 @@
         "month": "Jul",
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">If ever a lonely night</span><br>\n<span class=\"line\">Should you wake in a sharp tremor</span><br>\n<span class=\"line\">From a passing specter\u2019s strike</span><br>\n<span class=\"line\">Whose trailing vapors leak a sweet scent</span><br>\n<span class=\"line\">That only you and I could recognize\u2026</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">\u00c9crase-le !</span><br>\n<span class=\"line\">Et moi je vais faire pareil</span><br>\n<span class=\"line\">Il n\u2019est rien qu\u2019un moustique qui vit de l\u2019obscurit\u00e9</span><br>\n<span class=\"line\">Un porte-souvenir des nuits si chauds</span><br>\n<span class=\"line\">Et ses piq\u00fbres gu\u00e9riront par l\u2019aube du lendemain</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">M\u00eame si l\u2019odeur persiste toujours</span><br>\n<span class=\"line\">Cet odeur dont l\u2019existence le matin</span><br>\n<span class=\"line\">r\u00e9v\u00e8le que ce r\u00eave</span><br>\n<span class=\"line\">Ne vivait pas que dans ta t\u00eate</span><br>\n<span class=\"line\">Ni que pendant la nuit</p></div>",
-        "tags": ["francais"]
+        "tags": [
+            "francais"
+        ]
     },
     "untitled_night": {
         "rawpath": "./raw/untitled_night.txt",
@@ -302,7 +375,9 @@
         "month": "Feb",
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">Her animal lay wild,</span><br>\n<span class=\"line\">hunched, and prowling in its cage</span><br>\n<span class=\"line\">with iron bars made brittle by</span><br>\n<span class=\"line\">the advance of our seduction.</span><br>\n<span class=\"line\">Then one day she pounced and bared</span><br>\n<span class=\"line\">\u2014 Breathing with her whole body like an organ.</span><br>\n<span class=\"line\">An affront to what I used to know as \u201cpassion\u201d.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">At once the wilderness subsided</span><br>\n<span class=\"line\">and we both froze then melted.</span><br>\n<span class=\"line\">She stepped fully into me,</span><br>\n<span class=\"line\">hesitation revealed to be</span><br>\n<span class=\"line\">footprints parting in the sand</span><br>\n<span class=\"line\">as evening tide approaches.</span><br>\n<span class=\"line\">\u2014 Call it a kind of destiny</span><br>\n<span class=\"line\">we\u2019d read between the waves.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">So I gave myself relentlessly,</span><br>\n<span class=\"line\">inspired by that ferocity</span><br>\n<span class=\"line\">eager claws know well to be</span><br>\n<span class=\"line\">lurking beneath the dirt.</span><br>\n<span class=\"line\">And finally, when she drew blood,</span><br>\n<span class=\"line\">evinced our last temptation</span><br>\n<span class=\"line\">\u2014 We shared her gristle-ridden lair</span><br>\n<span class=\"line\">fused together, cast in crimson.</p></div>",
-        "tags": ["ode"]
+        "tags": [
+            "ode"
+        ]
     },
     "crossing": {
         "rawpath": "./raw/crossing_your_path.txt",
@@ -322,7 +397,9 @@
         "month": "Jul",
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">and the end it was so brief half an hour in the park and we didnt even break open the pulco and sparkling water</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">she was calm as was i there was maybe a single moment where a tear was held back</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">oh isnt it complicated to close the book of belle hectic mornings and pale razorburnt legs out in the world lovely lovely and probably crying brutally alone in her bed as i write this</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">sleep will come easier as i read it back each night knowing with each recitation ill fade further onto her horizon.</p></div>",
-        "tags": ["personal"]
+        "tags": [
+            "personal"
+        ]
     },
     "whalebone": {
         "rawpath": "./raw/whalebone_branches.txt",
@@ -332,7 +409,9 @@
         "month": "Jun",
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">Whalebone branches</span><br>\n<span class=\"line\">they bellow and spill</span><br>\n<span class=\"line\">leaves torn from their bindings</span><br>\n<span class=\"line\">onto all the stand-buyers</span><br>\n<span class=\"line\">in the widening gyre.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Those urchins from Ur</span><br>\n<span class=\"line\">with their babbling burns</span><br>\n<span class=\"line\">each scar submits a solution</span><br>\n<span class=\"line\">\u201cNot a 5-over-1, it\u2019s just so overdone.\u201d</span><br>\n<span class=\"line\">A sober flight takes thought</span><br>\n<span class=\"line\">with a rabid Star Fox</span><br>\n<span class=\"line\">whose atavistic impulses</span><br>\n<span class=\"line\">barrel-roll to steal the old</span><br>\n<span class=\"line\">from the Niagara Cafe.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">And maybe in its depths</span><br>\n<span class=\"line\">he\u2019ll ask directions</span><br>\n<span class=\"line\">from the Maidens of Mist.</span><br>\n<span class=\"line\">They\u2019ll turn tablets to clay</span><br>\n<span class=\"line\">declare \u201cLa vie est une scie\u201d</span><br>\n<span class=\"line\">buy a round for all</span><br>\n<span class=\"line\">the hypocrites of twenty twenty-three.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Silver tongues will take a lick,</span><br>\n<span class=\"line\">restore our faith in Moby Dick,</span><br>\n<span class=\"line\">find ourselves like that Tarkovsky flick,</span><br>\n<span class=\"line\">till no warm-blooded carcass persists.</p></div>",
-        "tags": ["fantastical"]
+        "tags": [
+            "fantastical"
+        ]
     },
     "lapins": {
         "rawpath": "./raw/untitled_may2023.txt",
@@ -342,7 +421,9 @@
         "month": "May",
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">Accro \u00e0 la banalit\u00e9</span><br>\n<span class=\"line\">A la recherche d\u2019une bi\u00e8re</span><br>\n<span class=\"line\">Tellement de temps bu</span><br>\n<span class=\"line\">Sans rien faire</span><br>\n<span class=\"line\">Chasseurs des pique-niques</span><br>\n<span class=\"line\">Cuites au soleil</span><br>\n<span class=\"line\">Brillants sommes nous</span><br>\n<span class=\"line\">Les lapins d\u2019\u00e9t\u00e9</p></div>",
-        "tags": ["francais"]
+        "tags": [
+            "francais"
+        ]
     },
     "oozing": {
         "rawpath": "./raw/those_oozing_stacks_grow.txt",
@@ -352,7 +433,9 @@
         "month": "Apr",
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">I want to tell of carcasses stacked tall</span><br>\n<span class=\"line\">Of honey dried out at crusty summer\u2019s fall</span><br>\n<span class=\"line\">That bridge appeared and beckoned passers-by</span><br>\n<span class=\"line\">To give the yonder ravine\u2019s edge a try.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">So you and her, cutting through the weeds \u2014</span><br>\n<span class=\"line\">Trudged, creaking, above the misty deeps</span><br>\n<span class=\"line\">In search of fire to warm your tender skin</span><br>\n<span class=\"line\">or adventure\u2019s strike to bake you from within.</span><br>\n<span class=\"line\">But an hour\u2019s passed and still ye edge along</span><br>\n<span class=\"line\">uncertain heartbeats pound a booming song.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">All while we howl and screech out for you</span><br>\n<span class=\"line\">\u201cOh lovelies, you\u2019ve never seen splendors more true</span><br>\n<span class=\"line\">than that which awaits all who cross the border</span><br>\n<span class=\"line\">and abides by our master\u2019s all-knowing order\u201d</span><br>\n<span class=\"line\">Put candidly, just once, for the hatchlings to our realm</span><br>\n<span class=\"line\">Take a dive, be immersed, as a feather to inkwell.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">You smirked and wrote verse, your spirits were high</span><br>\n<span class=\"line\">Eager for the taverns where they\u2019ll chant your hero\u2019s cry</span><br>\n<span class=\"line\">And so ye arrive, dock on our shores</span><br>\n<span class=\"line\">waves hit with sting, mixing afters and befores</span><br>\n<span class=\"line\">Drowning on the cliff, you hold each other tight</span><br>\n<span class=\"line\">Swords drawn, side by side, ready for the fight\u2026</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">\u2026Excuse me, dear listener,</span><br>\n<span class=\"line\">I\u2019ll divulge nothing more.</span><br>\n<span class=\"line\">Our master</span><br>\n<span class=\"line\">would rather</span><br>\n<span class=\"line\">cast shadows</span><br>\n<span class=\"line\">than lore.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">I promised sick tales of flesh piled high</span><br>\n<span class=\"line\">but suffice it to know</span><br>\n<span class=\"line\">those oozing stacks grow</span><br>\n<span class=\"line\">with each ripe passerby.</p></div>",
-        "tags": ["fantastical"]
+        "tags": [
+            "fantastical"
+        ]
     },
     "bruges": {
         "rawpath": "./raw/bruges_pluie_blues.txt",
@@ -362,7 +445,10 @@
         "month": "Mar",
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">Il plu dans cette vielle ville</span><br>\n<span class=\"line\">Pendant ces vacances d\u00e9biles</span><br>\n<span class=\"line\">O\u00f9 j\u2019accompagne mes parents</span><br>\n<span class=\"line\">Qui connaissent Bruges d\u2019un film</p></div>",
-        "tags": ["travel", "francais"]
+        "tags": [
+            "travel",
+            "francais"
+        ]
     },
     "kansas_4": {
         "rawpath": "./raw/kansas_sky.txt",
@@ -372,7 +458,11 @@
         "month": "Jul",
         "year": "2022",
         "body": "<div class=\"poem\"><p><span class=\"line\">This morning I watched a cloud fall to earth.</span><br>\n<span class=\"line\">Once suspended in the Kansas sky</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;now turned to vapor in my eye.</span><br>\n<span class=\"line\">The eye which held a twinkle last night</span><br>\n<span class=\"line\">Not from a star, but a lightning strike.</span><br>\n<span class=\"line\">And here I gaze at Julie next to me</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;She takes my cloud and twinkle and goes to sleep</p></div>",
-        "tags": ["travel", "personal", "rhyming"]
+        "tags": [
+            "travel",
+            "personal",
+            "rhyming"
+        ]
     },
     "slippery_1": {
         "rawpath": "./raw/like_jackals_lips_slippery.txt",
@@ -382,7 +472,10 @@
         "month": "May",
         "year": "2022",
         "body": "<div class=\"poem\"><p><span class=\"line\">Jackal toes and bloody lips</span><br>\n<span class=\"line\">On the wall trickles and drips</span><br>\n<span class=\"line\">Slips then slows to a crawl</span><br>\n<span class=\"line\">Let it all congeal.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">The rabbit\u2019s jellied members</span><br>\n<span class=\"line\">Cousins found in burnt-up embers</span><br>\n<span class=\"line\">Whether or not they come around</span><br>\n<span class=\"line\">That hound still shrieks.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Festered paste birthed in mildew</span><br>\n<span class=\"line\">Rancid stir of pustules brew</span><br>\n<span class=\"line\">We the few who slurp that liqueur</span><br>\n<span class=\"line\">While her dusty lips moan.</p></div>",
-        "tags": ["rhyming", "trochaic"]
+        "tags": [
+            "rhyming",
+            "trochaic"
+        ]
     },
     "fierce": {
         "rawpath": "./raw/fierce_creature.txt",
@@ -392,7 +485,11 @@
         "month": "Jan",
         "year": "2020",
         "body": "<div class=\"poem\"><p><span class=\"line\">Fierce creature.</span><br>\n<span class=\"line\">Her warm-armed currents</span><br>\n<span class=\"line\">Race beneath hazy burgundy skies.</span><br>\n<span class=\"line\">Pulsing violent,</span><br>\n<span class=\"line\">Spewing caustic, emptying</span><br>\n<span class=\"line\">Into basins which steam future desire,</span><br>\n<span class=\"line\">Filled to quench days spent apart.</p></div>",
-        "tags": ["free-verse", "personal", "favorite"]
+        "tags": [
+            "free-verse",
+            "personal",
+            "favorite"
+        ]
     },
     "gr10": {
         "title": "Ode (with love) to the gr10",
@@ -403,7 +500,9 @@
         "audiopath": "../../poems/recordings/ode_to_the_gr10.mp4",
         "order_in_month": 1,
         "body": "<div class=\"poem\"><p><span class=\"line\">All 'round the mountains, the walkers wake.</span><br>\n<span class=\"line\">Beneath the drizzle, their coffees bake.</span><br>\n<span class=\"line\">High up where shadows drift on clouds' wake,</span><br>\n<span class=\"line\">whole legions eager to this quest undertake.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">The stone remains stoic, as always, it seems.</span><br>\n<span class=\"line\">Even now when with all of these leeches it teems.</span><br>\n<span class=\"line\">Bundles in coats beyond Joseph's dreams,</span><br>\n<span class=\"line\">even the pack's cost counted in reams</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">of fabric exceeds all that for a king.</span><br>\n<span class=\"line\">If counting the contents, add that of his offspring.</span><br>\n<span class=\"line\">Hannibal's slaves would've killed for such things!</span><br>\n<span class=\"line\">Or herders of sheep on this trail they were blazing.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">No planting or sowing, they're just passers-by,</span><br>\n<span class=\"line\">equipped with aluminum sticks they fly.</span><br>\n<span class=\"line\">Oh! How the Catalan cattle bells cry</span><br>\n<span class=\"line\">at wannabe Magellans and Sisyphi.</p></div>",
-        "tags": ["travel"]
+        "tags": [
+            "travel"
+        ]
     },
     "lake": {
         "title": "The lake",
@@ -425,7 +524,9 @@
         "audiopath": "../../poems/recordings/gull.mp4",
         "order_in_month": 2,
         "body": "<div class=\"poem\"><p><span class=\"line\">A lone lost seagull drapes his tattered wings.</span><br>\n<span class=\"line\">That knackered bird he flaps and flaps again.</span><br>\n<span class=\"line\">And through his feathers, morning light he brings</span><br>\n<span class=\"line\">to drones who know not who they are nor when.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Above the streets and putrid musky streams,</span><br>\n<span class=\"line\">cry frantic caws of a beak whipped into haste,</span><br>\n<span class=\"line\">over vagabonds with vapid crumpled dreams:</span><br>\n<span class=\"line\">so subsist the living dying waste.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">The crooked white crow he croaks his final calls,</span><br>\n<span class=\"line\">as those twisted up in shame begin to fray</span><br>\n<span class=\"line\">where condensated liqueur fogs the walls&mdash;</span><br>\n<span class=\"line\">so fall the stars that never see the day.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">That gull since-swamped in Johnnys' <em>briny deeps</em></span><br>\n<span class=\"line\">still dreams of scents that drift on calmer seas,</span><br>\n<span class=\"line\">to flutter far from all the night-stale creeps,</span><br>\n<span class=\"line\">from land where neither beast nor man is free.</p></div>",
-        "tags": ["fantastical"]
+        "tags": [
+            "fantastical"
+        ]
     },
     "soda": {
         "title": "Soda pop",
@@ -436,7 +537,9 @@
         "audiopath": "../../poems/recordings/soda.mp4",
         "order_in_month": 1,
         "body": "<div class=\"poem\"><p><span class=\"line\">I heard it all at the countertop:</span><br>\n<span class=\"line\">a rubbery mix,</span><br>\n<span class=\"line\">the pangs of soda water unspriz'd,</span><br>\n<span class=\"line\">the clank</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and clank</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and clank.</span><br>\n<span class=\"line\">Flat taps:</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;a rhythm to suscitate</span><br>\n<span class=\"line\">all those syrupy drips unsipped.</span><br>\n<span class=\"line\">Only fizzled-out sparks emit.</span><br>\n<span class=\"line\">Better seal it up quick.</span><br>\n<span class=\"line\">Lick</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;it</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spit.</span><br>\n<span class=\"line\">Bottle it all up,</span><br>\n<span class=\"line\">and crank</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and crank</span><br>\n<span class=\"line\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and crank</span><br>\n<span class=\"line\">the nozzle shut.</p></div>",
-        "tags": ["form-experiment"]
+        "tags": [
+            "form-experiment"
+        ]
     },
     "sketch": {
         "title": "Home sketch #2",
@@ -458,7 +561,10 @@
         "audiopath": "../../poems/recordings/untitled_duet.mp3",
         "order_in_month": 1,
         "body": "<div class=\"poem\"><p><span class=\"line\">Up above the sky she climbed</span><br>\n<span class=\"line\">until she hung suspended,</span><br>\n<span class=\"line\">bundled in the cloud cover</span><br>\n<span class=\"line\">alone but still befriended</span><br>\n<span class=\"line\">by her audience below.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">She floated on the silk mist,</span><br>\n<span class=\"line\">her raggedy, smirking grin,</span><br>\n<span class=\"line\">crooked, toothy laugh and wink</span><br>\n<span class=\"line\">that means she's never tellin'</span><br>\n<span class=\"line\">the day she'll fall back down.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Boys would climb on rotten trunks</span><br>\n<span class=\"line\">across the plains and over seas.</span><br>\n<span class=\"line\">Leaves would fall to draw the shades,</span><br>\n<span class=\"line\">branches perched as front row seats</span><br>\n<span class=\"line\">to the constellation's glow.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">One dream bubble caught her look</span><br>\n<span class=\"line\">and rose along her wispy airs</span><br>\n<span class=\"line\">against the rain sheets pelting down</span><br>\n<span class=\"line\">she brought him in her flying lair</span><br>\n<span class=\"line\">and draped him all across her lap.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">How unequipped he was</span><br>\n<span class=\"line\">to lighten the grip</span><br>\n<span class=\"line\">of those hip-sunken digits</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">under steady assault</span><br>\n<span class=\"line\">by whole hordes of</span><br>\n<span class=\"line\">her rain-wrinkled fingers</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">lapping around and down his spine,</span><br>\n<span class=\"line\">restlessly caressing</span><br>\n<span class=\"line\">his numbed-over fingertips and toes.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">His surrender secured, they</span><br>\n<span class=\"line\">inaugurate the darling</span><br>\n<span class=\"line\">of his mind's idle thoughts</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">and his fingers' aimless walks</span><br>\n<span class=\"line\">guided by the keen, meaty sense</span><br>\n<span class=\"line\">of his above-the-stars fox.</p></div>",
-        "tags": ["personal", "ode"]
+        "tags": [
+            "personal",
+            "ode"
+        ]
     },
     "sketch_3": {
         "title": "Home sketch #1",
@@ -469,7 +575,10 @@
         "audiopath": "../../poems/recordings/sketch_3.mp4",
         "order_in_month": 1,
         "body": "<div class=\"poem\"><p><span class=\"line\">To travel alone and old is to</span><br>\n<span class=\"line\">sleep upright on the subway,</span><br>\n<span class=\"line\">subsist on Central Park dates</span><br>\n<span class=\"line\">and hostel kitchen coffee.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">To eat a hot dog nearby</span><br>\n<span class=\"line\">and strike conversation across</span><br>\n<span class=\"line\">an open packet of sauerkraut.</span><br>\n<span class=\"line\">To buy a sim card on the plane &mdash; blind.</span><br>\n<span class=\"line\">\"Why would I need that?\"</span><br>\n<span class=\"line\">he asks, sincerely.  \"I'll take three.\"</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Always making everyone aware</span><br>\n<span class=\"line\">of how pleasant they've been,</span><br>\n<span class=\"line\">crossing them</span><br>\n<span class=\"line\">on their lonely, rambling path home.</p></div>",
-        "tags": ["free-verse", "travel"]
+        "tags": [
+            "free-verse",
+            "travel"
+        ]
     },
     "arctic": {
         "title": "The arctic plain by night",
@@ -480,7 +589,9 @@
         "audiopath": "../../poems/recordings/arctic_plain.mp4",
         "order_in_month": 3,
         "body": "<div class=\"poem\"><p><span class=\"line\">Frozen was this place.</span><br>\n<span class=\"line\">Upon it placed a placid slate</span><br>\n<span class=\"line\">of ice.  Its might slighted</span><br>\n<span class=\"line\">only by the wooden flame's reach.</span><br>\n<span class=\"line\">Heat-stained beech</span><br>\n<span class=\"line\">sunken in a pool. Stone breached.</span><br>\n<span class=\"line\">Its presence slowly traced.</span><br>\n<span class=\"line\">Flickers glowed, and fore-elements effaced.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">A bear born in such barren land,</span><br>\n<span class=\"line\">fur matted under the harsh cold,</span><br>\n<span class=\"line\">carried further on by</span><br>\n<span class=\"line\">the wailing wind's sail.</span><br>\n<span class=\"line\">This creature comprehends</span><br>\n<span class=\"line\">from deep within.</span><br>\n<span class=\"line\">Ancestral knots never untied,</span><br>\n<span class=\"line\">pulled ever tighter and petrified.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Fur flakked with mud, dirty</span><br>\n<span class=\"line\">and damp, absorbs the savory</span><br>\n<span class=\"line\">smoke to a saturated choke</span><br>\n<span class=\"line\">and evokes streams</span><br>\n<span class=\"line\">of warm steam stacks to</span><br>\n<span class=\"line\">rise enveloped in empty howls.</span><br>\n<span class=\"line\">They dance intertwined</span><br>\n<span class=\"line\">whispering up unto the divine.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">In between yawns and</span><br>\n<span class=\"line\">howls he gnaws at his prey.</span><br>\n<span class=\"line\">Raw flesh that lends an ache</span><br>\n<span class=\"line\">to his jaw bone,</span><br>\n<span class=\"line\">strained near break. All</span><br>\n<span class=\"line\">to sustain another hunt</span><br>\n<span class=\"line\">between long, lonesome flights</span><br>\n<span class=\"line\">along the arctic plain by night.</p></div>",
-        "tags": ["fantastical"]
+        "tags": [
+            "fantastical"
+        ]
     },
     "chemical": {
         "title": "The Bengal Chemical metro stop",
@@ -491,7 +602,9 @@
         "audiopath": "../../poems/recordings/bengal_chemical.mp4",
         "order_in_month": 1,
         "body": "<div class=\"poem\"><p><span class=\"line\">A fine and eager Kolkata crowd lined up</span><br>\n<span class=\"line\">at the Bengal Chemical metro stop.</span><br>\n<span class=\"line\">Breathing heated air, their lungs would swell</span><br>\n<span class=\"line\">with dust gumming up inside.  She tells</span><br>\n<span class=\"line\">of that same congeal she carried all the day</span><br>\n<span class=\"line\">from a dream that overslept, it stayed</span><br>\n<span class=\"line\">till now since drowzy dawn before.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Its weight bore down her glassy core,</span><br>\n<span class=\"line\">and cracked her ankle clean, the fracture snapped</span><br>\n<span class=\"line\">and stalled the wagon's scheduled second act,</span><br>\n<span class=\"line\">as the wheels began to slide into distress,</span><br>\n<span class=\"line\">losing traction, gradually helpless.</span><br>\n<span class=\"line\">Never meant to reap its fine, eager crop</span><br>\n<span class=\"line\">at the Bengal Chemical metro stop.</p></div>",
-        "tags": ["travel"]
+        "tags": [
+            "travel"
+        ]
     },
     "untitled_1": {
         "title": "Untitled",
@@ -522,7 +635,9 @@
         "rawpath": "./raw/what_about.txt",
         "order_in_month": 1,
         "body": "<div class=\"poem\"><p><span class=\"line\">Talk to me as you walk around love.</span><br>\n<span class=\"line\">Sweet love.  Garlicky</span><br>\n<span class=\"line\">nostalgia love.  Bitter gunboat</span><br>\n<span class=\"line\">compromise love.  Lost in watery</span><br>\n<span class=\"line\">soupy love.  It's all there in you</span><br>\n<span class=\"line\">love.  Every ingredient a key</span><br>\n<span class=\"line\">to sing a stream into a river,</span><br>\n<span class=\"line\">to sing a lake into a sea,</span><br>\n<span class=\"line\">to talk down your desires</span><br>\n<span class=\"line\">and fold them into me.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">And if</span><br>\n<span class=\"line\">we stepped together, stomped</span><br>\n<span class=\"line\">on flower beds</span><br>\n<span class=\"line\">and let the crumpled petals</span><br>\n<span class=\"line\">dissipate in drops of dew,</span><br>\n<span class=\"line\">would it break our stride to feel</span><br>\n<span class=\"line\">the sun who dries</span><br>\n<span class=\"line\">the salty streaks of dew</span><br>\n<span class=\"line\">We find each morn'</span><br>\n<span class=\"line\">beneath our eyes?</p></div>",
-        "tags": ["favorite"]
+        "tags": [
+            "favorite"
+        ]
     },
     "smoke": {
         "title": "Gun smoke",
@@ -532,7 +647,9 @@
         "rawpath": "./raw/gun_smoke.txt",
         "order_in_month": 1,
         "body": "<div class=\"poem\"><p><span class=\"line\">Between the felt of the heart</span><br>\n<span class=\"line\">and its velvet-roped veins</span><br>\n<span class=\"line\">sits a fatty layer</span><br>\n<span class=\"line\">of lipid-remembered ephemera &mdash;</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">grease stains.</span><br>\n<span class=\"line\">Cave frescas smudged into the window</span><br>\n<span class=\"line\">stenciled in cheeks and fingertips</span><br>\n<span class=\"line\">by past passengers passing by</span><br>\n<span class=\"line\">to be wiped away, slept away, or shooed away</span><br>\n<span class=\"line\">like the fly at the movies,</span><br>\n<span class=\"line\">by wind chance,</span><br>\n<span class=\"line\">past velvet-corded</span><br>\n<span class=\"line\">stanchion, brought in, caught in</span><br>\n<span class=\"line\">the midst of lense and action,</span><br>\n<span class=\"line\">between drama and projector's divination.</span><br>\n<span class=\"line\">Shifting as a shadow above the cracks</span><br>\n<span class=\"line\">of rapid fire light &mdash;</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">gun smoke.</span><br>\n<span class=\"line\">Drifting up away</span><br>\n<span class=\"line\">from both hunter and his prey;</span><br>\n<span class=\"line\">it settles, clears, and cleans</span><br>\n<span class=\"line\">the whispy traces of the temporary.</span><br>\n<span class=\"line\">All's well and good, but</span><br>\n<span class=\"line\">below the bullet blows</span><br>\n<span class=\"line\">penetrate what fat may lay</span><br>\n<span class=\"line\">to blood that fuzzy organ &mdash;</span><br>\n<span class=\"line\">drench it dead.</p></div>",
-        "tags": ["favorite"]
+        "tags": [
+            "favorite"
+        ]
     },
     "birthday": {
         "title": "A poem for Louise on her 30th birthday",
@@ -542,7 +659,10 @@
         "rawpath": "./raw/A_poem_for_louise_on_her_30th_birthday.txt",
         "order_in_month": 1,
         "body": "<div class=\"poem\"><p><span class=\"line\">A tale of tu- of sun dried -lips,</span><br>\n<span class=\"line\">of vines and tied-up fingertips</span><br>\n<span class=\"line\">grown up and over seasons lost,</span><br>\n<span class=\"line\">planted fresh at paths now crossed</span><br>\n<span class=\"line\">'tween bashful weeds and stubborn desire;</span><br>\n<span class=\"line\">'tween hands that shook to clear the ire</span><br>\n<span class=\"line\">of caustic balderdash smoke stacks</span><br>\n<span class=\"line\">whose absence fills the rotten cracks</span><br>\n<span class=\"line\">left in the wake of storm weight felt</span><br>\n<span class=\"line\">deep in the folded, folded pelt</span><br>\n<span class=\"line\">of her rumpled velvet rose&mdash;</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">&mdash;And now that flower with thorny throes,</span><br>\n<span class=\"line\">fends fine in fields of matched ambrose.</span><br>\n<span class=\"line\">Blue petals bound in Louisette stitches</span><br>\n<span class=\"line\">rooted in the ground, sewn wishes</span><br>\n<span class=\"line\">after thirty turns under sun that shines,</span><br>\n<span class=\"line\">a glint within her well-watered eyes</span><br>\n<span class=\"line\">toward two stems now inter-bound,</span><br>\n<span class=\"line\">a four-leaf lover sought and found.</p></div>",
-        "tags": ["ode", "favorite"]
+        "tags": [
+            "ode",
+            "favorite"
+        ]
     },
     "whittling": {
         "title": "The Whittling Lands",
@@ -552,7 +672,9 @@
         "rawpath": "./raw/the_whittling_lands.txt",
         "order_in_month": 1,
         "body": "<div class=\"poem\"><p><span class=\"line\">Those who walk in the Whittling Lands,</span><br>\n<span class=\"line\">traipsing through the Whittling Fields,</span><br>\n<span class=\"line\">pockets of air crumble down</span><br>\n<span class=\"line\">where down-trodden are the stern,</span><br>\n<span class=\"line\">turned rotten bed of chips,</span><br>\n<span class=\"line\">splinters, dead bits, and dirt.</span><br>\n<span class=\"line\">Overburdened earth soaks it up</span><br>\n<span class=\"line\">then cakes underfoot.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Those who walk in the Whittling Lands,</span><br>\n<span class=\"line\">stumbling along the Whittled Halls,</span><br>\n<span class=\"line\">with angels carved in marble knobs,</span><br>\n<span class=\"line\">and sand drifts down from up above;</span><br>\n<span class=\"line\">patches of grease coat the choir</span><br>\n<span class=\"line\">and bely, by filling, the cracks of walls</span><br>\n<span class=\"line\">draped in shadow-silent glow</span><br>\n<span class=\"line\">and still as stones in cave-black night.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">The walkers in these Whittling Lands</span><br>\n<span class=\"line\">they came en masse</span><br>\n<span class=\"line\">and left reduced.</span><br>\n<span class=\"line\">Those who stayed</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">had come to know</span><br>\n<span class=\"line\">and come to move</span><br>\n<span class=\"line\">this world before</span><br>\n<span class=\"line\">they whittled all away.</p></div>",
-        "tags": ["fantastical"]
+        "tags": [
+            "fantastical"
+        ]
     },
     "steel": {
         "title": "On landing",
@@ -563,6 +685,12 @@
         "rawpath": "./raw/steel.txt",
         "order_in_month": 1,
         "body": "<div class=\"poem\"><p><span class=\"line\">A cold steel hull with a vespertine sheen</span><br>\n<span class=\"line\">is enticed by high dreams and, payload full,</span><br>\n<span class=\"line\">sets off in orbit to shine in the dark.</span><br>\n<span class=\"line\">Departure stark.  Stratosphere's open door.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">Through the spiraling years his panels wince,</span><br>\n<span class=\"line\">old batt'ries dim, cloudy belt spinning near</span><br>\n<span class=\"line\">where ambitions of birds unknown below</span><br>\n<span class=\"line\">fly circles slurping worms and grub</span><br>\n<span class=\"line\">and waft beneath the astral gust</span><br>\n<span class=\"line\">of milky roads who lead shadows to glow.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">With ground, collided.  Inevitable.</span><br>\n<span class=\"line\">Earthen metal made whole in meteor's strike.</span><br>\n<span class=\"line\">The liberty that but flight can extend:</span><br>\n<span class=\"line\">collapsed, condemned, sunken rubble debris.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">&mdash;</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">This planet nurtures its insects and beasts</span><br>\n<span class=\"line\">who in dirt drag their feet &mdash; on rock, assured.</span><br>\n<span class=\"line\">Even wings on the bird cry out fatigue</span><br>\n<span class=\"line\">if eagle eyes the cloudy throne</span><br>\n<span class=\"line\">forgets the branch he called his home</span><br>\n<span class=\"line\">and sucks in vapour of cottonmouth breeze.</p></div>",
-        "tags": ["favorite", "iambic", "trochaic", "dactylic", "metered"]
+        "tags": [
+            "favorite",
+            "iambic",
+            "trochaic",
+            "dactylic",
+            "metered"
+        ]
     }
 }

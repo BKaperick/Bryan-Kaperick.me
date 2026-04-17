@@ -72,17 +72,43 @@
   };
 
   console.log("Data loaded.")
-  index.search("Untitled", { suggest: true }).forEach(i => {
-  console.log("Searching...");
-  //   const result = data[i];
-  console.log(i);
 
 }
   )
   .catch(error => console.log(error));
 
+  function run_search_query() {
+  const user_query = document.getElementById('search_query').value;
+  console.log("query submitted");
+  console.log(user_query);
+  
+  index.search(user_query, { suggest: true })
+  
+  .forEach((i,result_ind) => {
+  console.log(result_ind);
+  console.log("Found: " + i);
+  if (result_ind == 0) {
+  var poem_block = document.getElementById(i);
+    
+  console.log("Scrolling to: " + poem_block.parentNode);
+  window.location.href= poem_block.parentNode; 
+  };
   });
+  }
+
+
+var form = document.getElementById("searchForm");
+function handleForm(event) { event.preventDefault(); } 
+form.addEventListener('submit', event => {
+  handleForm(event); run_search_query();});
+
+;
 </script>
+
+<form id="searchForm">
+    <input type="text" id = "search_query">
+    <input type="submit" value="Search">
+</form>
 
 <p><details>
   <summary><h1 id="les-oeuvres-qui-minspirent">
