@@ -1,6 +1,6 @@
 <footer class="footer layout__footer">
 <span style="color:grey"> 
-<p><span>© <?php echo $language['SITE_TITLE'] ?></span> – <nobr><?php echo $language['Site last updated'] ?>  <?php include($_SERVER['DOCUMENT_ROOT']."/widgets/last_update_date.txt"); ?></nobr>
+<p><span>© <?php echo $language['SITE_TITLE'] ?></span> – <nobr><?php echo $language['Site last updated'] ?>  <?php include($_SERVER['DOCUMENT_ROOT']."/widgets/last_update_date.generated.txt"); ?></nobr>
 <br>
 <?php echo $language['SKETCH_CRED'] ?> <a href="https://www.instagram.com/j.andrews96/" class="citation_link">Jason Andrews</a>
 <br>
