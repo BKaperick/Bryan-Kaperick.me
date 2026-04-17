@@ -13,7 +13,7 @@ poem_blocks = []
 
 def get_bryan_block(key, is_dedicated_page: bool, with_audio: bool) -> str:
     # class is used adjust font size separately from the main poems page
-    div_class = "dedicated-poem-page" if is_dedicated_page else "poem"
+    div_class = "dedicated-poem-page" if is_dedicated_page else "main-poem-page"
     audio = (
         f"""<audio controls src="<?=$p->{key}->audiopath;?>"></audio>\n"""
         if with_audio
