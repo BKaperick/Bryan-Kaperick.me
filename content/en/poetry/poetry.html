@@ -81,15 +81,16 @@
 
   function run_search_query() {
   const user_query = document.getElementById('search_query').value;
+  return index.search(user_query, { suggest: true });
+}
 
+
+function populate_result_suggestions(results) {
+  
   var suggestions = document.getElementById("partial_search_results");
+  // Erase previous suggestions
   suggestions.innerHTML = ''
-  console.log("query submitted");
-  console.log(user_query);
-  
-  index.search(user_query, { suggest: true })
-  
-  .forEach((i,result_ind) => {
+  results.forEach((i,result_ind) => {
     console.log(result_ind);
     var poem_block = document.getElementById(i);
     console.log("Found: " + i);
@@ -97,25 +98,17 @@
     option.value = i
     option.innerHTML = i;
                 
-  suggestions.appendChild(option);
-  if (result_ind == 0) {
-    
-    console.log("Redirecting to: " + poem_block.parentNode);
-    // window.location.href= poem_block.parentNode; 
-    };
+    suggestions.appendChild(option);
   })};
 
-    function run_search_query_redirect() {
+function redirect_from_results(results) {
   const user_query = document.getElementById('search_query').value;
 
-  var suggestions = document.getElementById("partial_search_results");
-  suggestions.innerHTML = ''
   console.log("query submitted");
   console.log(user_query);
   
-  index.search(user_query, { suggest: true })
   
-  .forEach((i,result_ind) => {
+  results.forEach((i,result_ind) => {
     console.log(result_ind);
     var poem_block = document.getElementById(i);
     console.log("Found: " + i);
@@ -131,10 +124,10 @@
 var form = document.getElementById("searchForm");
 function handleForm(event) { event.preventDefault(); } 
 form.addEventListener('input', event => {
-  handleForm(event); run_search_query();
+  handleForm(event); var res = run_search_query(); populate_result_suggestions(res);
 });
 form.addEventListener('submit', event => {
-  handleForm(event); run_search_query_redirect();
+  handleForm(event); var res = run_search_query(); redirect_from_results(res);
 });
 
 ;
