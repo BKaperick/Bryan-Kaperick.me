@@ -3,7 +3,7 @@ DIR="$( cd "$( dirname "$0" )" && pwd )"
 source $DIR/../.venv/bin/activate
 python $DIR/../content/bio/scripts/ingest_films.py $DIR/../content/bio/films.json
 # python $DIR/datagetter.py $DIR/../content/widgets/datapoint.txt
-python $DIR/write_scraped_data.py $DIR/../content/widgets/argot.json
+python $DIR/write_scraped_data.py $DIR/../content/widgets argot.json
 echo "$DIR"
 git -C $DIR/.. pull origin --ff-only
 git -C $DIR/.. add "$DIR/../content/widgets/datapoint.txt"

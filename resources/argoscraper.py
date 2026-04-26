@@ -4,6 +4,7 @@ import json
 import re
 import warnings
 import logging
+from pathlib import Path
 
 headers = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
@@ -59,11 +60,12 @@ class ArgoSpider(scrapy.Spider):
     name = "argo"
     date_str = datetime.today().strftime("%Y%m%d_%H%M%S")
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, save_dir=".", *args, **kwargs):
+        self.save_dir = Path(save_dir)
         logger = logging.getLogger("scrapy")
-        logger.setLevel(logging.WARNING)
+        logger.setLevel(logging.INFO)
         logger = logging.getLogger("asyncio")
-        logger.setLevel(logging.WARNING)
+        logger.setLevel(logging.INFO)
         super().__init__(*args, **kwargs)
 
     async def start(self):
@@ -108,7 +110,7 @@ class ArgoSpider(scrapy.Spider):
         # CSS Parsing
         page_data = parse_css(response)
         page = response.url.split("/")[-3]
-        filename = f"{page}-{self.date_str}.json"
+        filename = self.settings["save_dir"] / f"{page}-{self.date_str}.json"
         terms_to_add = []
         for data in zip(*page_data):
             d = self.clean_and_compile_data(
