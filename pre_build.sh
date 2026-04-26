@@ -56,7 +56,7 @@ if [[ "$1" == "draft" ]]; then
     echo "Skipping slang scraping in draft mode."
 else
     # python3 ./datagetter.py ../content/widgets/datapoint.txt
-    python3 ./write_scraped_data.py ../content/widgets/argot.json
+    python3 ./write_scraped_data.py ../content/widgets argot.json
 fi
 
 cd ../content/scripts
