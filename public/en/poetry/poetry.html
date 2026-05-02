@@ -134,13 +134,15 @@ class="active" aria-current="page">Poetry</a></li>
 <p>Click on the poem to redirect to a dedicated page (for easy sharing and reference) and an audio recording if I've made one.</p>
 
 
+<script type="text/javascript" src="../../js/search.js"></script>
 
 <script type="module">
 
 //<script src="http://localhost:8000/en/poetry/dist/flexsearch.bundle.min.js">
-// <script src="http://localhost:8000/en/poetry/dist/lang/en.min.js">
+//<script src="http://localhost:8000/en/poetry/dist/lang/en.min.js">
 //<script src="http://localhost:8000/en/poetry/dist/lang/fr.min.js">
   import {Index} from "../../js/flexsearch.bundle.module.min.js";
+  
   // import EnglishEncoderPreset from "../../js/en.js";
   // import FrenchEncoderPreset from "../../js/fr.js";
 
@@ -149,18 +151,22 @@ class="active" aria-current="page">Poetry</a></li>
     // e.g. match "flexsearch" when query "flex"
     tokenize: "forward"
   });
+
+  var titles = new Map();
+
   fetch("../../poems/poems.json")
   .then(response => response.json())
   .then(data => 
-  {for (let [key, value] of Object.entries(data))
   {
-
-  //console.log(key);
-  //console.log(value["title"]);
-  index.add(key, value["title"] + " " + value["raw_body"]);
-  //index.add(key, value["raw_body"]);
-  //value["tags"].forEach(t => index.add(key, t));
-  };
+    for (let [key, value] of Object.entries(data))
+    {
+      //console.log(key);
+      //console.log(value["title"]);
+      index.add(key, value["title"] + " " + value["raw_body"]);
+      titles[key] = value["title"] + ": " + value["raw_body"]
+      //index.add(key, value["raw_body"]);
+      //value["tags"].forEach(t => index.add(key, t));
+    };
 
   console.log("Data loaded.")
 
@@ -168,62 +174,30 @@ class="active" aria-current="page">Poetry</a></li>
   )
   .catch(error => console.log(error));
 
-  function run_search_query() {
-  const user_query = document.getElementById('search_query').value;
+const poem_block_ids = [...document.getElementsByClassName('main-poem-page')]
+  .map(element => element.id);
 
-  var suggestions = document.getElementById("partial_search_results");
-  suggestions.innerHTML = ''
-  console.log("query submitted");
-  console.log(user_query);
-  
-  index.search(user_query, { suggest: true })
-  
-  .forEach((i,result_ind) => {
-    console.log(result_ind);
-    var poem_block = document.getElementById(i);
-    console.log("Found: " + i);
-    var option = document.createElement("option")
-    option.value = i
-    option.innerHTML = i;
-                
-  suggestions.appendChild(option);
-  if (result_ind == 0) {
-    
-    console.log("Redirecting to: " + poem_block.parentNode);
-    // window.location.href= poem_block.parentNode; 
-    };
-  })};
+const poems2025 = document.getElementById("2025poems");
+// poems2025.innerHTML = poems2025.innerHTML.replace("{poems-count}", 5000);
 
-    function run_search_query_redirect() {
-  const user_query = document.getElementById('search_query').value;
-
-  var suggestions = document.getElementById("partial_search_results");
-  suggestions.innerHTML = ''
-  console.log("query submitted");
-  console.log(user_query);
+[...document.getElementsByClassName('poem-year-details')].forEach(detail => {
+  var poem_count = [...detail.getElementsByClassName('main-poem-page')].length;
+  console.log(detail.poem_count);
+  [...detail.getElementsByClassName('poem-year-header')].forEach(header => {
+    header.innerHTML = header.innerHTML.replace("{poems-count}", poem_count);
+  });
+});
   
-  index.search(user_query, { suggest: true })
-  
-  .forEach((i,result_ind) => {
-    console.log(result_ind);
-    var poem_block = document.getElementById(i);
-    console.log("Found: " + i);
-
-  if (result_ind == 0) {
-    
-    console.log("Redirecting to: " + poem_block.parentNode);
-    window.location.href= poem_block.parentNode; 
-    };
-  })};
 
 
 var form = document.getElementById("searchForm");
 function handleForm(event) { event.preventDefault(); } 
 form.addEventListener('input', event => {
-  handleForm(event); run_search_query();
+  // handleForm(event); var res = run_search_query(index); populate_result_suggestions(titles, res);
+  handleForm(event); var res = run_search_query(index); hide_nonmatching_results(poem_block_ids, res);
 });
 form.addEventListener('submit', event => {
-  handleForm(event); run_search_query_redirect();
+  handleForm(event); var res = run_search_query(index); redirect_from_results(res);
 });
 
 ;
@@ -403,8 +377,8 @@ And mean—they know not whom.</p>    </blockquote></details>
 <span class="line">and sucks in vapour of cottonmouth breeze.</p></div>    </blockquote>
     </div>
 </a>
-    <details>
-      <summary><h3 id="2025-20-poèmes">2025 (7 poems)</h3>
+    <details class="poem-year-details">
+      <summary><h3 id="2025poems" class="poem-year-header">2025 ({poems-count} poems)</h3>
     </summary>
 
     <a href="the_whittling_lands.html" style="text-decoration:none"><div class="main-poem-page" id="whittling">
@@ -601,8 +575,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>    </details>
 
-    <details>
-      <summary><h3 id="2024-20-poèmes">2024 (22 poems)</h3>
+    <details class="poem-year-details">
+      <summary><h3 id="2024poems" class="poem-year-header">2024 ({poems-count} poems)</h3>
     </summary>
 
     <a href="the_arctic_plain_by_night.html" style="text-decoration:none"><div class="main-poem-page" id="arctic">
@@ -1143,8 +1117,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>    </details>
 
-    <details>
-      <summary><h3 id="2023-20-poèmes">2023 (20 poems)</h3>
+    <details class="poem-year-details">
+      <summary><h3 id="2023poems" class="poem-year-header">2023 ({poems-count} poems)</h3>
     </summary>
 
     <a href="monorhyme_sketch_3.html" style="text-decoration:none"><div class="main-poem-page" id="monorhyme3">
@@ -1543,8 +1517,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>    </details>
 
-    <details>
-        <summary><h3 id="2020---2022-3-poèmes">2020 - 2022 (3 poems)</h3>
+    <details class="poem-year-details">
+        <summary><h3 id="2022poems" class="poem-year-header">2020 - 2022 ({poems-count} poems)</h3>
     </summary>
 
     <a href="kansas_sky.html" style="text-decoration:none"><div class="main-poem-page" id="kansas_4">
@@ -1602,7 +1576,7 @@ And mean—they know not whom.</p>    </blockquote></details>
 </html>
 <footer class="footer layout__footer">
 <span style="color:grey"> 
-<p><span>© Bryan Kaperick&#39;s Website</span> – <nobr>Last updated  2026-04-17
+<p><span>© Bryan Kaperick&#39;s Website</span> – <nobr>Last updated  2026-05-02
 </nobr>
 <br>
 The profile picture was sketched by <a href="https://www.instagram.com/j.andrews96/" class="citation_link">Jason Andrews</a>
