@@ -50,7 +50,7 @@
 <script type="module">
 
 //<script src="dist/flexsearch.bundle.min.js">
-// <script src="dist/lang/en.min.js">
+//<script src="dist/lang/en.min.js">
 //<script src="dist/lang/fr.min.js">
   import {Index} from "../../js/flexsearch.bundle.module.min.js";
   
@@ -62,18 +62,22 @@
     // e.g. match "flexsearch" when query "flex"
     tokenize: "forward"
   });
+
+  var titles = new Map();
+
   fetch("../../poems/poems.json")
   .then(response => response.json())
   .then(data => 
-  {for (let [key, value] of Object.entries(data))
   {
-
-  //console.log(key);
-  //console.log(value["title"]);
-  index.add(key, value["title"] + " " + value["raw_body"]);
-  //index.add(key, value["raw_body"]);
-  //value["tags"].forEach(t => index.add(key, t));
-  };
+    for (let [key, value] of Object.entries(data))
+    {
+      //console.log(key);
+      //console.log(value["title"]);
+      index.add(key, value["title"] + " " + value["raw_body"]);
+      titles[key] = value["title"] + ": " + value["raw_body"]
+      //index.add(key, value["raw_body"]);
+      //value["tags"].forEach(t => index.add(key, t));
+    };
 
   console.log("Data loaded.")
 
@@ -81,21 +85,28 @@
   )
   .catch(error => console.log(error));
 
-  function run_search_query() {
-  const user_query = document.getElementById('search_query').value;
-  return index.search(user_query, { suggest: true });
-}
+const poem_block_ids = [...document.getElementsByClassName('main-poem-page')]
+  .map(element => element.id);
 
+const poems2025 = document.getElementById("2025poems");
+// poems2025.innerHTML = poems2025.innerHTML.replace("{poems-count}", 5000);
 
+[...document.getElementsByClassName('poem-year-header')].forEach(header => {
+  var poem_count = [...header.getElementsByClassName('main-poem-page')].length;
+  console.log(poem_count);
+  header.innerHTML = header.innerHTML.replace("{poems-count}", poem_count);
+});
+  
 
 
 var form = document.getElementById("searchForm");
 function handleForm(event) { event.preventDefault(); } 
 form.addEventListener('input', event => {
-  handleForm(event); var res = run_search_query(); populate_result_suggestions(res);
+  // handleForm(event); var res = run_search_query(index); populate_result_suggestions(titles, res);
+  handleForm(event); var res = run_search_query(index); hide_nonmatching_results(poem_block_ids, res);
 });
 form.addEventListener('submit', event => {
-  handleForm(event); var res = run_search_query(); redirect_from_results(res);
+  handleForm(event); var res = run_search_query(index); redirect_from_results(res);
 });
 
 ;
@@ -127,28 +138,28 @@ form.addEventListener('submit', event => {
 <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2026.generated.html"); ?>
 
     <details>
-      <summary><h3 id="2025-20-poèmes">2025 (7 <?=$language['poem'];?>s)</h3>
+      <summary><h3 id="2025poems" class="poem-year-header">2025 ({poems-count} <?=$language['poem'];?>s)</h3>
     </summary>
 
     <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2025.generated.html"); ?>
     </details>
 
     <details>
-      <summary><h3 id="2024-20-poèmes">2024 (22 <?=$language['poem'];?>s)</h3>
+      <summary><h3 id="2024poems" class="poem-year-header">2024 ({poems-count} <?=$language['poem'];?>s)</h3>
     </summary>
 
     <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2024.generated.html"); ?>
     </details>
 
     <details>
-      <summary><h3 id="2023-20-poèmes">2023 (20 <?=$language['poem'];?>s)</h3>
+      <summary><h3 id="2023poems" class="poem-year-header">2023 ({poems-count} <?=$language['poem'];?>s)</h3>
     </summary>
 
     <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2023.generated.html"); ?>
     </details>
 
     <details>
-        <summary><h3 id="2020---2022-3-poèmes">2020 - 2022 (3 <?=$language['poem'];?>s)</h3>
+        <summary><h3 id="2022poems" class="poem-year-header">2020 - 2022 ({poems-count} <?=$language['poem'];?>s)</h3>
     </summary>
 
     <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2022.generated.html"); ?>
