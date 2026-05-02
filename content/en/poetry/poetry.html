@@ -91,10 +91,12 @@ const poem_block_ids = [...document.getElementsByClassName('main-poem-page')]
 const poems2025 = document.getElementById("2025poems");
 // poems2025.innerHTML = poems2025.innerHTML.replace("{poems-count}", 5000);
 
-[...document.getElementsByClassName('poem-year-header')].forEach(header => {
-  var poem_count = [...header.getElementsByClassName('main-poem-page')].length;
-  console.log(poem_count);
-  header.innerHTML = header.innerHTML.replace("{poems-count}", poem_count);
+[...document.getElementsByClassName('poem-year-details')].forEach(detail => {
+  var poem_count = [...detail.getElementsByClassName('main-poem-page')].length;
+  console.log(detail.poem_count);
+  [...detail.getElementsByClassName('poem-year-header')].forEach(header => {
+    header.innerHTML = header.innerHTML.replace("{poems-count}", poem_count);
+  });
 });
   
 
@@ -137,28 +139,28 @@ form.addEventListener('submit', event => {
 
 <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2026.generated.html"); ?>
 
-    <details>
+    <details class="poem-year-details">
       <summary><h3 id="2025poems" class="poem-year-header">2025 ({poems-count} <?=$language['poem'];?>s)</h3>
     </summary>
 
     <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2025.generated.html"); ?>
     </details>
 
-    <details>
+    <details class="poem-year-details">
       <summary><h3 id="2024poems" class="poem-year-header">2024 ({poems-count} <?=$language['poem'];?>s)</h3>
     </summary>
 
     <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2024.generated.html"); ?>
     </details>
 
-    <details>
+    <details class="poem-year-details">
       <summary><h3 id="2023poems" class="poem-year-header">2023 ({poems-count} <?=$language['poem'];?>s)</h3>
     </summary>
 
     <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2023.generated.html"); ?>
     </details>
 
-    <details>
+    <details class="poem-year-details">
         <summary><h3 id="2022poems" class="poem-year-header">2020 - 2022 ({poems-count} <?=$language['poem'];?>s)</h3>
     </summary>
 
