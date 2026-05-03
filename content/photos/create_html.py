@@ -29,38 +29,38 @@ def get_grid(photo_count):
 
 
 def get_album_block(album, photo_blocks):
-    pre = f"""
-<div class="album main-page-photo-block" id="{album}">
-    <figure class="album">
-"""
+    pre = (
+        f'<div class="album main-page-photo-block" id="{album}">\n'
+        + '    <figure class="album">\n'
+    )
+
     # images = [x[0] for x in sorted(photo_blocks, key=order_photos)]
     images = [x[0] for x in photo_blocks]
     images_elem = get_grid(len(images)).format(*images)
 
-    post = """
-    <figcaption class="photo-caption">
-<?=$p->{0}->$lang;?> ~ <?=$p->{0}->year;?>
-    </figcaption>
-    </figure>
-</div>
-""".format(album)
+    post = (
+        '        <figcaption class="photo-caption">\n'
+        + f"            <?=$p->{album}->$lang;?> ~ <?=$p->{album}->year;?>\n"
+        + "        </figcaption>\n"
+        + "    </figure>\n"
+        + "</div>"
+    )
 
     return pre + images_elem + post
 
 
-def get_photo_captioned_figure(key, subdir, use_photo_caption=True, album_key=None):
+def get_photo_captioned_figure(key, subdir):
     """
     Figure with caption.  If `album_key` is given AND `use_photo_caption` is True,
     then we use the description from the album instead
     """
-    image_key = album_key if album_key else key
     caption_year = f" ~ <?=$p->{key}->year;?>"
-    caption_key = key if use_photo_caption else album_key
     file_suffix = ".webp" if subdir == "lowres" else ""
-    return f"""<figure class="image main-page-photo-block" id="{image_key}">
-    <img src=<?="/photos/{subdir}/" . $p->{key}->name . "{file_suffix}";?> alt="<?=$p->{caption_key}->$lang;?>{caption_year}">
-    <figcaption class="photo-caption">
-<?=$p->{caption_key}->$lang;?>{caption_year}
+
+    return f"""<figure class="image main-page-photo-block" id="{key}">
+    <img src=<?="/photos/{subdir}/" . $p->{key}->name . "{file_suffix}";?> alt="<?=$p->{key}->$lang;?>{caption_year}">
+    <figcaption class="photo-caption">subdir
+        <?=$p->{key}->$lang;?>{caption_year}
     </figcaption>
 </figure>
 """
@@ -73,16 +73,15 @@ def get_photo_captioned_figure_with_previous_next(
     Figure with caption.  If `album_key` is given AND `use_photo_caption` is True,
     then we use the description from the album instead
     """
-    image_key = album_key if album_key else key
     caption_year = " ~ <?=$p->{0}->year;?>".format(key)
     caption_key = key if use_photo_caption else album_key
     file_suffix = ".webp" if subdir == "lowres" else ""
     return """<figure class="image">
     <img src=<?="/photos/{2}/" . $p->{0}->name . "{4}";?> alt="<?=$p->{1}->$lang;?>{3}">
     <figcaption class="photo-caption">
-    {5}
-<?=$p->{1}->$lang;?>{3}
-    {6}
+        {5}
+            <?=$p->{1}->$lang;?>{3}
+        {6}
     </figcaption>
 </figure>
 """.format(
@@ -91,14 +90,10 @@ def get_photo_captioned_figure_with_previous_next(
         subdir,
         caption_year,
         file_suffix,
-        """<a class="prev_link" href="<?="./{0}.php";?>"><?=$language['Previous']?></a>""".format(
-            prev_file
-        )
+        f"""<a class="prev_link" href="<?="./{prev_file}.php";?>"><?=$language['Previous']?></a>"""
         if prev_file
         else "",
-        """<a class="next_link" href="<?="./{0}.php";?>"><?=$language['Next']?></a>""".format(
-            next_file
-        )
+        f"""<a class="next_link" href="<?="./{next_file}.php";?>"><?=$language['Next']?></a>"""
         if next_file
         else "",
     )
@@ -266,6 +261,7 @@ with open("photos.json", "r") as fw:
         else:
             block = get_photo_captioned_figure(key, "raw")
         block = block.replace('class="image"', 'class="single-image"')
+        block = block.replace('class="image ', 'class="single-image ')
 
         html_path = "./raw_with_label/" + file_name + ".generated.html"
         with open(html_path, "w") as f:
