@@ -46,6 +46,7 @@ $language = array(
     'Rating'=>'Rating',
     'Released'=>'Released',
     'Watched'=>'Watched',
-    ''=>''
+    ''=>'',
+    'Filter'=>'Filter'
 );
 ?>
