@@ -42,8 +42,8 @@ function highlight_matching_text(input, class_name) {
   const mark_regex = /<mark>(.*)<\/mark>/;
   // It needs a capturing group in order to replace while respecting capitalization
   const input_regex = new RegExp("(" + input + ")", "i");
-  [...document.getElementsByClassName(class_name)].forEach(line => {
 
+  [...document.getElementsByClassName(class_name)].forEach(line => {
       // Remove existing mark
       line.innerHTML = line.innerHTML.replace(mark_regex, "$1");
       // Add new one

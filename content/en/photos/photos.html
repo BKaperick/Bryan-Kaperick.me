@@ -40,7 +40,7 @@
   // Build the search index from poems.json data
   import {Index} from "../../js/flexsearch.bundle.module.min.js";
   const index = new Index({tokenize: "forward"});
-  load_photos_index(index);
+  load_photos_index(index, "en");
 
   // Initialize the poem section counts
   // recount_visible_poems();

@@ -30,7 +30,7 @@ def get_grid(photo_count):
 
 def get_album_block(album, photo_blocks):
     pre = f"""
-<div class="album main-page-photo-block" id="{album}>
+<div class="album main-page-photo-block" id="{album}">
     <figure class="album">
 """
     # images = [x[0] for x in sorted(photo_blocks, key=order_photos)]
@@ -38,7 +38,7 @@ def get_album_block(album, photo_blocks):
     images_elem = get_grid(len(images)).format(*images)
 
     post = """
-    <figcaption>
+    <figcaption class="photo-caption">
 <?=$p->{0}->$lang;?> ~ <?=$p->{0}->year;?>
     </figcaption>
     </figure>
@@ -57,9 +57,9 @@ def get_photo_captioned_figure(key, subdir, use_photo_caption=True, album_key=No
     caption_year = f" ~ <?=$p->{key}->year;?>"
     caption_key = key if use_photo_caption else album_key
     file_suffix = ".webp" if subdir == "lowres" else ""
-    return f"""<figure class="image main-page-photo-block" id="{image_key}>
+    return f"""<figure class="image main-page-photo-block" id="{image_key}">
     <img src=<?="/photos/{subdir}/" . $p->{key}->name . "{file_suffix}";?> alt="<?=$p->{caption_key}->$lang;?>{caption_year}">
-    <figcaption>
+    <figcaption class="photo-caption">
 <?=$p->{caption_key}->$lang;?>{caption_year}
     </figcaption>
 </figure>
@@ -79,7 +79,7 @@ def get_photo_captioned_figure_with_previous_next(
     file_suffix = ".webp" if subdir == "lowres" else ""
     return """<figure class="image">
     <img src=<?="/photos/{2}/" . $p->{0}->name . "{4}";?> alt="<?=$p->{1}->$lang;?>{3}">
-    <figcaption>
+    <figcaption class="photo-caption">
     {5}
 <?=$p->{1}->$lang;?>{3}
     {6}
@@ -105,16 +105,16 @@ def get_photo_captioned_figure_with_previous_next(
 
 
 def get_photo_block(key, file_name):
-    return """<a href="<?="/" . $lang . "/photos/{0}.php";?>">
-{1}
+    return f"""<a id="{key}" href="<?="/" . $lang . "/photos/{file_name}.php";?>">
+{get_photo_captioned_figure(key, "lowres")}
 </a>
-""".format(file_name, get_photo_captioned_figure(key, "lowres"))
+"""
 
 
 def get_photo_captioned_figure_in_album(key):
     return """<figure class="albumimage">
     <img class="albumimage" src=<?="/photos/lowres/" . $p->{0}->name . ".webp";?> alt="<?=$p->{0}->$lang;?>">
-    <figcaption>
+    <figcaption class="photo-caption">
 <?=$p->{0}->$lang;?>
     </figcaption>
 </figure>
