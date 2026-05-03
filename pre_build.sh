@@ -9,9 +9,7 @@ python3 ./scripts/create_html.py
 cd ../now
 echo "starting now ingestion"
 if [[ "$1" == "draft" ]]; then
-    python3 instantiate.py ""
-else
-    python3 instantiate.py "$1"
+    python3 instantiate.py "$2"
 fi
 
 ../../compress.sh
@@ -20,9 +18,7 @@ python3 create_html.py > now.generated.html
 cd ../photos
 echo "starting photo ingestion"
 if [[ "$1" == "draft" ]]; then
-    python3 instantiate.py ""
-else
-    python3 instantiate.py "$1"
+    python3 instantiate.py "$2"
 fi
 ../../compress.sh
 python3 create_html.py > photos.generated.html
