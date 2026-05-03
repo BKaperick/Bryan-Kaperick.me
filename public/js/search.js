@@ -28,11 +28,11 @@ function populate_result_suggestions(titles, results) {
 
 function hide_nonmatching_results(keys, results) {
   keys.forEach(key => {
-    var poem_block = document.getElementById(key);
+    var content_block = document.getElementById(key);
     if (results.indexOf(key) == -1) {
-      poem_block.style.display = 'none';
+      content_block.style.display = 'none';
     } else {
-      poem_block.style.display = 'block';
+      content_block.style.display = 'block';
     }
 
   })
@@ -42,8 +42,8 @@ function highlight_matching_text(input, class_name) {
   const mark_regex = /<mark>(.*)<\/mark>/;
   // It needs a capturing group in order to replace while respecting capitalization
   const input_regex = new RegExp("(" + input + ")", "i");
-  [...document.getElementsByClassName(class_name)].forEach(line => {
 
+  [...document.getElementsByClassName(class_name)].forEach(line => {
       // Remove existing mark
       line.innerHTML = line.innerHTML.replace(mark_regex, "$1");
       // Add new one
