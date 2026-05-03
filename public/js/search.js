@@ -1,5 +1,6 @@
 
-function run_search_query(index, user_query) {
+function run_search_query(index) {
+  const user_query = document.getElementById('search_query').value;
   return index.search(user_query, { suggest: false });
 }
 
@@ -11,6 +12,7 @@ function populate_result_suggestions(titles, results) {
   console.log("Query returned " + results.length + " results:")
   results.forEach((i,result_ind) => {
     var poem_block = document.getElementById(i);
+    console.log("Found: " + titles[i]);
     var option = document.createElement("option")
     option.value = titles[i]; // to make auto-complete
     //option.innerHTML = titles[i]; // for display
@@ -29,20 +31,7 @@ function hide_nonmatching_results(keys, results) {
     }
 
   })
-};
-
-function highlight_matching_text(input, class_name) {
-  const mark_regex = /<mark>(.*)<\/mark>/;
-  // It needs a capturing group in order to replace while respecting capitalization
-  const input_regex = new RegExp("(" + input + ")", "i");
-  [...document.getElementsByClassName(class_name)].forEach(line => {
-
-      // Remove existing mark
-      line.innerHTML = line.innerHTML.replace(mark_regex, "$1");
-      // Add new one
-      line.innerHTML = line.innerHTML.replace(input_regex, "<mark>$1</mark>");
-  });
-};
+}
 
 function redirect_from_results(results) {
   const user_query = document.getElementById('search_query').value;
@@ -52,6 +41,7 @@ function redirect_from_results(results) {
   
   
   results.forEach((i,result_ind) => {
+    console.log(result_ind);
     var poem_block = document.getElementById(i);
     // console.log("Found: " + i);
 
