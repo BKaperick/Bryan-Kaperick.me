@@ -1,6 +1,13 @@
-
 function run_search_query(index, user_query) {
   return index.search(user_query, { suggest: false });
+}
+
+function listen_on_input(listen) {
+  var form = document.getElementById("searchForm");
+  form.addEventListener('input', event => {
+    event.preventDefault(); 
+    listen();
+  });
 }
 
 function populate_result_suggestions(titles, results) {
