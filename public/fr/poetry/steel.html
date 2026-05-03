@@ -1,0 +1,52 @@
+<link rel="shortcut icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="apple-touch-icon" href="../../static/favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page" id="steel">
+    <p class="poem-title"><em>On landing</em> &ndash; Mars 2026</p>
+    <blockquote>
+    <div class="poem"><p><span class="line">A cold steel hull with a vespertine sheen</span><br>
+<span class="line">is enticed by high dreams and, payload full,</span><br>
+<span class="line">sets off in orbit to shine in the dark.</span><br>
+<span class="line">Departure stark.  Stratosphere's open door.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">Through the spiraling years his panels wince,</span><br>
+<span class="line">old batt'ries dim, cloudy belt spinning near</span><br>
+<span class="line">where ambitions of birds unknown below</span><br>
+<span class="line">fly circles slurping worms and grub</span><br>
+<span class="line">and waft beneath the astral gust</span><br>
+<span class="line">of milky roads who lead shadows to glow.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">With ground, collided.  Inevitable.</span><br>
+<span class="line">Earthen metal made whole in meteor's strike.</span><br>
+<span class="line">The liberty that but flight can extend:</span><br>
+<span class="line">collapsed, condemned, sunken rubble debris.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">&mdash;</span><br>
+</p></div>
+<div class="poem"><p><span class="line">This planet nurtures its insects and beasts</span><br>
+<span class="line">who in dirt drag their feet &mdash; on rock, assured.</span><br>
+<span class="line">Even wings on the bird cry out fatigue</span><br>
+<span class="line">if eagle eyes the cloudy throne</span><br>
+<span class="line">forgets the branch he called his home</span><br>
+<span class="line">and sucks in vapour of cottonmouth breeze.</p></div>    </blockquote>
+    </div> 
