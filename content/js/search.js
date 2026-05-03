@@ -1,6 +1,5 @@
 
-function run_search_query(index) {
-  const user_query = document.getElementById('search_query').value;
+function run_search_query(index, user_query) {
   return index.search(user_query, { suggest: false });
 }
 
@@ -12,7 +11,6 @@ function populate_result_suggestions(titles, results) {
   console.log("Query returned " + results.length + " results:")
   results.forEach((i,result_ind) => {
     var poem_block = document.getElementById(i);
-    console.log("Found: " + titles[i]);
     var option = document.createElement("option")
     option.value = titles[i]; // to make auto-complete
     //option.innerHTML = titles[i]; // for display
@@ -41,7 +39,6 @@ function redirect_from_results(results) {
   
   
   results.forEach((i,result_ind) => {
-    console.log(result_ind);
     var poem_block = document.getElementById(i);
     // console.log("Found: " + i);
 

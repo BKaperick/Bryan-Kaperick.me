@@ -88,27 +88,56 @@
 const poem_block_ids = [...document.getElementsByClassName('main-poem-page')]
   .map(element => element.id);
 
-const poems2025 = document.getElementById("2025poems");
-// poems2025.innerHTML = poems2025.innerHTML.replace("{poems-count}", 5000);
 
-[...document.getElementsByClassName('poem-year-details')].forEach(detail => {
-  var poem_count = [...detail.getElementsByClassName('main-poem-page')].length;
-  console.log(detail.poem_count);
-  [...detail.getElementsByClassName('poem-year-header')].forEach(header => {
-    header.innerHTML = header.innerHTML.replace("{poems-count}", poem_count);
+// Get all the headers, and inject the counts
+function recount_visible_poems(max_do_unfold = 0) {
+  const poem_count_regex = /(\d+) \(\d+/;
+  [...document.getElementsByClassName('poem-year-details')].forEach(detail => {
+    var poem_count = [...detail.getElementsByClassName('main-poem-page')].filter(d => d.style.display != 'none').length;
+    if (poem_count < max_do_unfold) {
+      detail.open = true;
+    } else { detail.open = false;};
+    [...detail.getElementsByClassName('poem-year-header')].forEach(header => {
+      console.log(header.innerHTML)
+      header.innerHTML = header.innerHTML.replace(poem_count_regex, "$1 (" + poem_count);
+    });
   });
-});
-  
+};
 
+function highlight_matching_text(input, class_name) {
+  const mark_regex = /<mark>(.*)<\/mark>/;
+  [...document.getElementsByClassName(class_name)].forEach(line => {
 
+      // Remove existing mark
+      line.innerHTML = line.innerHTML.replace(mark_regex, "$1");
+      // Add new one
+      line.innerHTML = line.innerHTML.replace(input, "<mark>" + input + "</mark>");
+  });
+};
+
+//php_lang = <?=$language['poem'];?>
+//  ({poems-count} <?=$language['poem'];?>s)
+//new RegExp("\(\d+ " + php_lang + "\)")
+
+recount_visible_poems();
 var form = document.getElementById("searchForm");
 function handleForm(event) { event.preventDefault(); } 
 form.addEventListener('input', event => {
+  document.getElementById("my-works-det").open = true;
   // handleForm(event); var res = run_search_query(index); populate_result_suggestions(titles, res);
-  handleForm(event); var res = run_search_query(index); hide_nonmatching_results(poem_block_ids, res);
+  handleForm(event); 
+  const user_query = document.getElementById('search_query').value;
+  var res = run_search_query(index, user_query); 
+  console.log(res.length + " results.")
+  hide_nonmatching_results(poem_block_ids, res);
+  recount_visible_poems(3); // Unfold if at most X poems in year match the query 
+  highlight_matching_text(user_query, "line");
+  highlight_matching_text(user_query, "line");
 });
 form.addEventListener('submit', event => {
-  handleForm(event); var res = run_search_query(index); redirect_from_results(res);
+  handleForm(event); 
+  var res = run_search_query(index); 
+  redirect_from_results(res);
 });
 
 ;
@@ -131,7 +160,7 @@ form.addEventListener('submit', event => {
 <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems_inspiration.generated.html");?>
 </details>
 
-<details>
+<details id="my-works-det">
   <summary><h1 id="my-works">
   <?=$language['My works'];?>
 </h1>
@@ -140,28 +169,28 @@ form.addEventListener('submit', event => {
 <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2026.generated.html"); ?>
 
     <details class="poem-year-details">
-      <summary><h3 id="2025poems" class="poem-year-header">2025 ({poems-count} <?=$language['poem'];?>s)</h3>
+      <summary><h3 id="2025poems" class="poem-year-header">2025 (0 <?=$language['poem'];?>s)</h3>
     </summary>
 
     <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2025.generated.html"); ?>
     </details>
 
     <details class="poem-year-details">
-      <summary><h3 id="2024poems" class="poem-year-header">2024 ({poems-count} <?=$language['poem'];?>s)</h3>
+      <summary><h3 id="2024poems" class="poem-year-header">2024 (0 <?=$language['poem'];?>s)</h3>
     </summary>
 
     <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2024.generated.html"); ?>
     </details>
 
     <details class="poem-year-details">
-      <summary><h3 id="2023poems" class="poem-year-header">2023 ({poems-count} <?=$language['poem'];?>s)</h3>
+      <summary><h3 id="2023poems" class="poem-year-header">2023 (0 <?=$language['poem'];?>s)</h3>
     </summary>
 
     <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2023.generated.html"); ?>
     </details>
 
     <details class="poem-year-details">
-        <summary><h3 id="2022poems" class="poem-year-header">2020 - 2022 ({poems-count} <?=$language['poem'];?>s)</h3>
+        <summary><h3 id="2022poems" class="poem-year-header">2020 - 2022 (0 <?=$language['poem'];?>s)</h3>
     </summary>
 
     <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2022.generated.html"); ?>
