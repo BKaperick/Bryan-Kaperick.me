@@ -335,7 +335,12 @@
         "year": "2023",
         "body": "<div class=\"poem\"><p><span class=\"line\">A pressing matter of morning walks,</span><br>\n<span class=\"line\">A pressure on the heart.</span><br>\n<span class=\"line\">She marches, tramples, stomps, and stalks</span><br>\n<span class=\"line\">My mind while we\u2019re apart.</span><br>\n</p></div>\n<div class=\"poem\"><p><span class=\"line\">We both agree to guard our distance,</span><br>\n<span class=\"line\">But hunger grows like wolf to sheep</span><br>\n<span class=\"line\">Whose prey is stoled by thorn\u00e8d fence.</span><br>\n<span class=\"line\">A raven\u2019s lust at bay to keep.</p></div>",
         "tags": [
-            "personal"
+            "personal",
+            "rhyming",
+            "iambic",
+            "tetrameter",
+            "metered",
+            "trimeter"
         ],
         "raw_body": "A pressing matter of morning walks, A pressure on the heart. She marches, tramples, stomps, and stalks My mind while we\u2019re apart.  We both agree to guard our distance, But hunger grows like wolf to sheep Whose prey is stoled by thorn\u00e8d fence. A raven\u2019s lust at bay to keep."
     },

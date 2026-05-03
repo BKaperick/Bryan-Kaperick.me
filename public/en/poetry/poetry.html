@@ -135,102 +135,22 @@ class="active" aria-current="page">Poetry</a></li>
 
 
 <script type="text/javascript" src="../../js/search.js"></script>
+<script type="text/javascript" src="../../js/poetry.js"></script>
 
 <script type="module">
-
-//<script src="http://localhost:8000/en/poetry/dist/flexsearch.bundle.min.js">
-//<script src="http://localhost:8000/en/poetry/dist/lang/en.min.js">
-//<script src="http://localhost:8000/en/poetry/dist/lang/fr.min.js">
+  // Build the search index from poems.json data
   import {Index} from "../../js/flexsearch.bundle.module.min.js";
-  
-  // import EnglishEncoderPreset from "../../js/en.js";
-  // import FrenchEncoderPreset from "../../js/fr.js";
+  const index = new Index({tokenize: "forward"});
+  load_poetry_index(index);
 
-  const index = new Index({
-    // use forward when you want to match partials
-    // e.g. match "flexsearch" when query "flex"
-    tokenize: "forward"
-  });
+  // Initialize the poem section counts
+  recount_visible_poems();
 
-  var titles = new Map();
-
-  fetch("../../poems/poems.json")
-  .then(response => response.json())
-  .then(data => 
-  {
-    for (let [key, value] of Object.entries(data))
-    {
-      //console.log(key);
-      //console.log(value["title"]);
-      index.add(key, value["title"] + " " + value["raw_body"]);
-      titles[key] = value["title"] + ": " + value["raw_body"]
-      //index.add(key, value["raw_body"]);
-      //value["tags"].forEach(t => index.add(key, t));
-    };
-
-  console.log("Data loaded.")
-
-}
-  )
-  .catch(error => console.log(error));
-
-const poem_block_ids = [...document.getElementsByClassName('main-poem-page')]
-  .map(element => element.id);
-
-
-// Get all the headers, and inject the counts
-function recount_visible_poems(max_do_unfold = 0) {
-  const poem_count_regex = /(\d+) \(\d+/;
-  [...document.getElementsByClassName('poem-year-details')].forEach(detail => {
-    var poem_count = [...detail.getElementsByClassName('main-poem-page')].filter(d => d.style.display != 'none').length;
-    if (poem_count <= max_do_unfold) {
-      detail.open = true;
-    } else { detail.open = false;};
-    [...detail.getElementsByClassName('poem-year-header')].forEach(header => {
-      console.log(header.innerHTML)
-      header.innerHTML = header.innerHTML.replace(poem_count_regex, "$1 (" + poem_count);
-    });
-  });
-};
-
-recount_visible_poems();
-var form = document.getElementById("searchForm");
-function handleForm(event) { event.preventDefault(); } 
-form.addEventListener('input', event => {
-  conole.log("opening my works");
-  document.getElementById("my-works-det").open = true;
-  handleForm(event); 
-  const user_query = document.getElementById('search_query').value;
-  if (user_query == "") {
-    var res = poem_block_ids;
-    recount_visible_poems(0);
-  }
-  else {
-    var res = run_search_query(index, user_query);
-    recount_visible_poems(3); // Unfold if at most X poems in year match the query 
-  }
-  hide_nonmatching_results(poem_block_ids, res);
-  highlight_matching_text(user_query, "line");
-  highlight_matching_text(user_query, "poem-title");
-});
-form.addEventListener('submit', event => {
-  handleForm(event); 
-  var res = run_search_query(index); 
-  redirect_from_results(res);
-});
-
-;
+  // Update page based on user input
+  listen_on_input(() => poetry_input_listen(index));
 </script>
 
-<form id="searchForm">
-    <input type="text" id = "search_query" list="partial_search_results">
-    <input type="submit" value="Search">
-    <div id="suggestions">
-    <datalist id="partial_search_results"></datalist>
-  </div>
-</form>
-
-<p><details>
+<details>
   <summary><h1 id="les-oeuvres-qui-minspirent">
   Works that inspire me</h1>
 </summary>
@@ -361,10 +281,15 @@ That struggle in the buzzing room;<br>
 And they say always, &ldquo;I&rdquo; and &ldquo;I&rdquo;;<br>
 And mean—they know not whom.</p>    </blockquote></details>
 
+
 <details id="my-works-det" open="true">
   <summary><h1 id="my-works">
   My works</h1>
 </summary>
+
+<form id="searchForm">
+    Filter: <input type="text" id = "search_query" list="partial_search_results">
+</form>
 
     <details class="poem-year-details" open="true">
       <summary><h3 id="2026poems" class="poem-year-header">2026 (0 poems)</h3>

@@ -137,6 +137,22 @@ class="active" aria-current="page">Poésie</a></li>
 <p>Je dirais que mon style d&rsquo;écriture tombe quelque part sur le spectre entre <em>dérivée</em>, et <em>cringe</em>.  Bien sur que je reste ouvert à tout genre de retour.</p>
 <p>Cliquez sur le poème pour être redirigé vers une page dédiée (pour faciliter le partage et la référence) et un enregistrement audio si j'en ai fait un.</p>
 
+<script type="text/javascript" src="../../js/search.js"></script>
+<script type="text/javascript" src="../../js/poetry.js"></script>
+
+<script type="module">
+  // Build the search index from poems.json data
+  import {Index} from "../../js/flexsearch.bundle.module.min.js";
+  const index = new Index({tokenize: "forward"});
+  load_poetry_index(index);
+
+  // Initialize the poem section counts
+  recount_visible_poems();
+
+  // Update page based on user input
+  listen_on_input(() => poetry_input_listen(index));
+</script>
+
 <p><details>
   <summary><h1 id="les-oeuvres-qui-minspirent">
   Les oeuvres qui m'inspirent</h1>
@@ -268,12 +284,20 @@ That struggle in the buzzing room;<br>
 And they say always, &ldquo;I&rdquo; and &ldquo;I&rdquo;;<br>
 And mean—they know not whom.</p>    </blockquote></details>
 
-<details>
+<details id="my-works-det" open="true">
   <summary><h1 id="my-works">
   Mes oeuvres</h1>
 </summary>
 
-<a href="steel.html" style="text-decoration:none"><div class="main-poem-page" id="steel">
+<form id="searchForm">
+    Filtre: <input type="text" id = "search_query" list="partial_search_results">
+</form>
+
+    <details class="poem-year-details" open="true">
+      <summary><h3 id="2026poems" class="poem-year-header">2026 (0 poèmes)</h3>
+    </summary>
+
+    <a href="steel.html" style="text-decoration:none"><div class="main-poem-page" id="steel">
     <p class="poem-title"><em>On landing</em> &ndash; Mars 2026</p>
     <blockquote>
     <div class="poem"><p><span class="line">A cold steel hull with a vespertine sheen</span><br>
@@ -302,9 +326,10 @@ And mean—they know not whom.</p>    </blockquote></details>
 <span class="line">forgets the branch he called his home</span><br>
 <span class="line">and sucks in vapour of cottonmouth breeze.</p></div>    </blockquote>
     </div>
-</a>
-    <details>
-      <summary><h3 id="2025-20-poèmes">2025 (7 poèmes)</h3>
+</a>    </details>
+
+    <details class="poem-year-details">
+      <summary><h3 id="2025poems" class="poem-year-header">2025 (0 poèmes)</h3>
     </summary>
 
     <a href="the_whittling_lands.html" style="text-decoration:none"><div class="main-poem-page" id="whittling">
@@ -501,8 +526,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>    </details>
 
-    <details>
-      <summary><h3 id="2024-20-poèmes">2024 (22 poèmes)</h3>
+    <details class="poem-year-details">
+      <summary><h3 id="2024poems" class="poem-year-header">2024 (0 poèmes)</h3>
     </summary>
 
     <a href="the_arctic_plain_by_night.html" style="text-decoration:none"><div class="main-poem-page" id="arctic">
@@ -1043,8 +1068,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>    </details>
 
-    <details>
-      <summary><h3 id="2023-20-poèmes">2023 (20 poèmes)</h3>
+    <details class="poem-year-details">
+      <summary><h3 id="2023poems" class="poem-year-header">2023 (0 poèmes)</h3>
     </summary>
 
     <a href="monorhyme_sketch_3.html" style="text-decoration:none"><div class="main-poem-page" id="monorhyme3">
@@ -1443,8 +1468,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>    </details>
 
-    <details>
-        <summary><h3 id="2020---2022-3-poèmes">2020 - 2022 (3 poèmes)</h3>
+    <details class="poem-year-details">
+        <summary><h3 id="2022poems" class="poem-year-header">2020 - 2022 (0 poèmes)</h3>
     </summary>
 
     <a href="kansas_sky.html" style="text-decoration:none"><div class="main-poem-page" id="kansas_4">
@@ -1492,6 +1517,7 @@ And mean—they know not whom.</p>    </blockquote></details>
 <span class="line">Filled to quench days spent apart.</p></div>    </blockquote>
     </div>
 </a>    </details>
+
 </details>
 
 </div>
