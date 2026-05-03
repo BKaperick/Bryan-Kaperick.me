@@ -132,7 +132,7 @@ form.addEventListener('input', event => {
   hide_nonmatching_results(poem_block_ids, res);
   recount_visible_poems(3); // Unfold if at most X poems in year match the query 
   highlight_matching_text(user_query, "line");
-  highlight_matching_text(user_query, "line");
+  highlight_matching_text(user_query, "poem-title");
 });
 form.addEventListener('submit', event => {
   handleForm(event); 

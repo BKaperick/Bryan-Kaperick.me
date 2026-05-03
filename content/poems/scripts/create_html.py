@@ -20,7 +20,7 @@ def get_bryan_block(key, is_dedicated_page: bool, with_audio: bool) -> str:
         else ""
     )
     return f"""<div class="{div_class}" id="{key}">
-    <p><em><?=$p->{key}->title;?></em> &ndash; <?=$language[$p->{key}->month];?> <?=$p->{key}->year;?></p>
+    <p class="poem-title"><em><?=$p->{key}->title;?></em> &ndash; <?=$language[$p->{key}->month];?> <?=$p->{key}->year;?></p>
     <blockquote>
     <?=$p->{key}->body;?>
     </blockquote>
@@ -28,7 +28,7 @@ def get_bryan_block(key, is_dedicated_page: bool, with_audio: bool) -> str:
 
 
 def get_insp_block(key, subtitle=False) -> str:
-    return """<p><em><?=$p->{0}->title;?></em> &ndash; <?=$p->{0}->author;?>
+    return """<p class="poem-title"><em><?=$p->{0}->title;?></em> &ndash; <?=$p->{0}->author;?>
     {1}</p>
     <blockquote>
     <?=$p->{0}->body;?>
