@@ -32,6 +32,23 @@
     }
   }
 </script>
+
+<script type="text/javascript" src="../../js/search.js"></script>
+<script type="text/javascript" src="../../js/photos.js"></script>
+
+<script type="module">
+  // Build the search index from poems.json data
+  import {Index} from "../../js/flexsearch.bundle.module.min.js";
+  const index = new Index({tokenize: "forward"});
+  load_photos_index(index);
+
+  // Initialize the poem section counts
+  // recount_visible_poems();
+
+  // Update page based on user input
+  listen_on_input(() => photos_input_listen(index));
+</script>
+
 </head>
 
 <body class="list-page front">
@@ -43,6 +60,11 @@
 
             <div class="content">
                 <p>Some photos of me and my friends, in reverse chronological order.  Click on the photos to see their full-resolution version.</p>
+                
+                <form id="searchForm">
+                    <?=$language['Filter'];?>: <input type="text" id = "search_query" list="partial_search_results">
+                </form>
+                
                 <?php
                 include($_SERVER['DOCUMENT_ROOT']."/photos/photos.generated.html");
                 ?>

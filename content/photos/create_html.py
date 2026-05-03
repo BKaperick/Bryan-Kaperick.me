@@ -29,8 +29,8 @@ def get_grid(photo_count):
 
 
 def get_album_block(album, photo_blocks):
-    pre = """
-<div class="album">
+    pre = f"""
+<div class="album main-page-photo-block" id="{album}>
     <figure class="album">
 """
     # images = [x[0] for x in sorted(photo_blocks, key=order_photos)]
@@ -54,16 +54,16 @@ def get_photo_captioned_figure(key, subdir, use_photo_caption=True, album_key=No
     then we use the description from the album instead
     """
     image_key = album_key if album_key else key
-    caption_year = " ~ <?=$p->{0}->year;?>".format(key)
+    caption_year = f" ~ <?=$p->{key}->year;?>"
     caption_key = key if use_photo_caption else album_key
     file_suffix = ".webp" if subdir == "lowres" else ""
-    return """<figure class="image">
-    <img src=<?="/photos/{2}/" . $p->{0}->name . "{4}";?> alt="<?=$p->{1}->$lang;?>{3}">
+    return f"""<figure class="image main-page-photo-block" id="{image_key}>
+    <img src=<?="/photos/{subdir}/" . $p->{key}->name . "{file_suffix}";?> alt="<?=$p->{caption_key}->$lang;?>{caption_year}">
     <figcaption>
-<?=$p->{1}->$lang;?>{3}
+<?=$p->{caption_key}->$lang;?>{caption_year}
     </figcaption>
 </figure>
-""".format(key, caption_key, subdir, caption_year, file_suffix)
+"""
 
 
 def get_photo_captioned_figure_with_previous_next(

@@ -28,11 +28,11 @@ function populate_result_suggestions(titles, results) {
 
 function hide_nonmatching_results(keys, results) {
   keys.forEach(key => {
-    var poem_block = document.getElementById(key);
+    var content_block = document.getElementById(key);
     if (results.indexOf(key) == -1) {
-      poem_block.style.display = 'none';
+      content_block.style.display = 'none';
     } else {
-      poem_block.style.display = 'block';
+      content_block.style.display = 'block';
     }
 
   })
