@@ -29,7 +29,7 @@ We build the code via Github Actions and deploy the changes onto the head of the
 
 A typical local workflow would be the following:
 1. Make changes to the `./content/` directory
-2. Execute `pre_build.sh` to apply the changes 
+2. Execute `pre_build.sh draft` to apply the changes 
 3. Execute `build.sh` to apply the changes to `./public/`
 4. Execute `deploy_site.sh` to inspect changes in a web browser at `localhost:8000`
 

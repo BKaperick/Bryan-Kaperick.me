@@ -44,7 +44,24 @@
 <p>I would categorize my personal style as somewhere between <em>derivative</em> and <em>cringe</em>.  Of course, I&rsquo;m open to all sorts of feedback.</p>
 <p>Click on the poem to redirect to a dedicated page (for easy sharing and reference) and an audio recording if I've made one.</p>
 
-<p><details>
+
+<script type="text/javascript" src="../../js/search.js"></script>
+<script type="text/javascript" src="../../js/poetry.js"></script>
+
+<script type="module">
+  // Build the search index from poems.json data
+  import {Index} from "../../js/flexsearch.bundle.module.min.js";
+  const index = new Index({tokenize: "forward"});
+  load_poetry_index(index);
+
+  // Initialize the poem section counts
+  recount_visible_poems();
+
+  // Update page based on user input
+  listen_on_input(() => poetry_input_listen(index));
+</script>
+
+<details>
   <summary><h1 id="les-oeuvres-qui-minspirent">
   <?=$language['Works that inspire me'];?>
 </h1>
@@ -53,37 +70,47 @@
 <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems_inspiration.generated.html");?>
 </details>
 
-<details>
+
+<details id="my-works-det" open="true">
   <summary><h1 id="my-works">
   <?=$language['My works'];?>
 </h1>
 </summary>
 
-<?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2026.generated.html"); ?>
+<form id="searchForm">
+    <?=$language['Filter'];?>: <input type="text" id = "search_query" list="partial_search_results">
+</form>
 
-    <details>
-      <summary><h3 id="2025-20-poèmes">2025 (7 <?=$language['poem'];?>s)</h3>
+    <details class="poem-year-details" open="true">
+      <summary><h3 id="2026poems" class="poem-year-header">2026 (0 <?=$language['poem'];?>s)</h3>
+    </summary>
+
+    <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2026.generated.html"); ?>
+    </details>
+
+    <details class="poem-year-details">
+      <summary><h3 id="2025poems" class="poem-year-header">2025 (0 <?=$language['poem'];?>s)</h3>
     </summary>
 
     <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2025.generated.html"); ?>
     </details>
 
-    <details>
-      <summary><h3 id="2024-20-poèmes">2024 (22 <?=$language['poem'];?>s)</h3>
+    <details class="poem-year-details">
+      <summary><h3 id="2024poems" class="poem-year-header">2024 (0 <?=$language['poem'];?>s)</h3>
     </summary>
 
     <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2024.generated.html"); ?>
     </details>
 
-    <details>
-      <summary><h3 id="2023-20-poèmes">2023 (20 <?=$language['poem'];?>s)</h3>
+    <details class="poem-year-details">
+      <summary><h3 id="2023poems" class="poem-year-header">2023 (0 <?=$language['poem'];?>s)</h3>
     </summary>
 
     <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2023.generated.html"); ?>
     </details>
 
-    <details>
-        <summary><h3 id="2020---2022-3-poèmes">2020 - 2022 (3 <?=$language['poem'];?>s)</h3>
+    <details class="poem-year-details">
+        <summary><h3 id="2022poems" class="poem-year-header">2020 - 2022 (0 <?=$language['poem'];?>s)</h3>
     </summary>
 
     <?php include($_SERVER['DOCUMENT_ROOT']."/poems/poems2022.generated.html"); ?>

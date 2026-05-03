@@ -137,12 +137,28 @@ class="active" aria-current="page">Poésie</a></li>
 <p>Je dirais que mon style d&rsquo;écriture tombe quelque part sur le spectre entre <em>dérivée</em>, et <em>cringe</em>.  Bien sur que je reste ouvert à tout genre de retour.</p>
 <p>Cliquez sur le poème pour être redirigé vers une page dédiée (pour faciliter le partage et la référence) et un enregistrement audio si j'en ai fait un.</p>
 
+<script type="text/javascript" src="../../js/search.js"></script>
+<script type="text/javascript" src="../../js/poetry.js"></script>
+
+<script type="module">
+  // Build the search index from poems.json data
+  import {Index} from "../../js/flexsearch.bundle.module.min.js";
+  const index = new Index({tokenize: "forward"});
+  load_poetry_index(index);
+
+  // Initialize the poem section counts
+  recount_visible_poems();
+
+  // Update page based on user input
+  listen_on_input(() => poetry_input_listen(index));
+</script>
+
 <p><details>
   <summary><h1 id="les-oeuvres-qui-minspirent">
   Les oeuvres qui m'inspirent</h1>
 </summary>
 
-<p><em>On First Looking into Chapman&rsquo;s Homer</em> &ndash; John Keats    </p>
+<p class="poem-title"><em>On First Looking into Chapman&rsquo;s Homer</em> &ndash; John Keats    </p>
     <blockquote>
     <p>Much have I travell&rsquo;d in the realms of gold,<br>
 And many goodly states and kingdoms seen;<br>
@@ -159,7 +175,7 @@ He star&rsquo;d at the Pacific—and all his men<br>
 Look&rsquo;d at each other with a wild surmise—<br>
 Silent, upon a peak in Darien.</p>    </blockquote>
 
-<p><em>Kubla Khan</em> &ndash; Samuel Taylor Coleridge    <em><br /><p>&nbsp;&nbsp;&nbsp;&nbsp;Or, a vision in a dream.  A Fragment.</em></p></p>
+<p class="poem-title"><em>Kubla Khan</em> &ndash; Samuel Taylor Coleridge    <em><br /><p>&nbsp;&nbsp;&nbsp;&nbsp;Or, a vision in a dream.  A Fragment.</em></p></p>
     <blockquote>
     <p>In Xanadu did Kubla Khan<br>
 A stately pleasure-dome decree:<br>
@@ -216,7 +232,7 @@ And close your eyes with holy dread<br>
 For he on honey-dew hath fed,<br>
 And drunk the milk of Paradise.</p>    </blockquote>
 
-<p><em>Compliment</em> &ndash; John Updike    </p>
+<p class="poem-title"><em>Compliment</em> &ndash; John Updike    </p>
     <blockquote>
     <p>We were both of two minds about adultery<br>
 and wasted our couple of stolen hours<br>
@@ -246,7 +262,7 @@ and all the web of her sensation bent<br>
 to hold the pulsing bulk of this new captive,<br>
 she breathed the single smiling word &ldquo;Terrific.&rdquo;</p>    </blockquote>
 
-<p><em>People at Night</em> &ndash; Rainer Maria Rilke    </p>
+<p class="poem-title"><em>People at Night</em> &ndash; Rainer Maria Rilke    </p>
     <blockquote>
     <p>Nights were not made for the crowds, and they sever<br>
 You from your neighbor, so you shall never<br>
@@ -268,13 +284,21 @@ That struggle in the buzzing room;<br>
 And they say always, &ldquo;I&rdquo; and &ldquo;I&rdquo;;<br>
 And mean—they know not whom.</p>    </blockquote></details>
 
-<details>
+<details id="my-works-det" open="true">
   <summary><h1 id="my-works">
   Mes oeuvres</h1>
 </summary>
 
-<a href="steel.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>On landing</em> &ndash; Mars 2026</p>
+<form id="searchForm">
+    Filtre: <input type="text" id = "search_query" list="partial_search_results">
+</form>
+
+    <details class="poem-year-details" open="true">
+      <summary><h3 id="2026poems" class="poem-year-header">2026 (0 poèmes)</h3>
+    </summary>
+
+    <a href="steel.html" style="text-decoration:none"><div class="main-poem-page" id="steel">
+    <p class="poem-title"><em>On landing</em> &ndash; Mars 2026</p>
     <blockquote>
     <div class="poem"><p><span class="line">A cold steel hull with a vespertine sheen</span><br>
 <span class="line">is enticed by high dreams and, payload full,</span><br>
@@ -302,13 +326,14 @@ And mean—they know not whom.</p>    </blockquote></details>
 <span class="line">forgets the branch he called his home</span><br>
 <span class="line">and sucks in vapour of cottonmouth breeze.</p></div>    </blockquote>
     </div>
-</a>
-    <details>
-      <summary><h3 id="2025-20-poèmes">2025 (7 poèmes)</h3>
+</a>    </details>
+
+    <details class="poem-year-details">
+      <summary><h3 id="2025poems" class="poem-year-header">2025 (0 poèmes)</h3>
     </summary>
 
-    <a href="the_whittling_lands.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>The Whittling Lands</em> &ndash; Octobre 2025</p>
+    <a href="the_whittling_lands.html" style="text-decoration:none"><div class="main-poem-page" id="whittling">
+    <p class="poem-title"><em>The Whittling Lands</em> &ndash; Octobre 2025</p>
     <blockquote>
     <div class="poem"><p><span class="line">Those who walk in the Whittling Lands,</span><br>
 <span class="line">traipsing through the Whittling Fields,</span><br>
@@ -340,8 +365,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="A_poem_for_louise_on_her_30th_birthday.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>A poem for Louise on her 30th birthday</em> &ndash; Juillet 2025</p>
+<a href="A_poem_for_louise_on_her_30th_birthday.html" style="text-decoration:none"><div class="main-poem-page" id="birthday">
+    <p class="poem-title"><em>A poem for Louise on her 30th birthday</em> &ndash; Juillet 2025</p>
     <blockquote>
     <div class="poem"><p><span class="line">A tale of tu- of sun dried -lips,</span><br>
 <span class="line">of vines and tied-up fingertips</span><br>
@@ -366,8 +391,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="gun_smoke.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Gun smoke</em> &ndash; Juin 2025</p>
+<a href="gun_smoke.html" style="text-decoration:none"><div class="main-poem-page" id="smoke">
+    <p class="poem-title"><em>Gun smoke</em> &ndash; Juin 2025</p>
     <blockquote>
     <div class="poem"><p><span class="line">Between the felt of the heart</span><br>
 <span class="line">and its velvet-roped veins</span><br>
@@ -401,8 +426,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="what_about.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>What about</em> &ndash; Avril 2025</p>
+<a href="what_about.html" style="text-decoration:none"><div class="main-poem-page" id="about">
+    <p class="poem-title"><em>What about</em> &ndash; Avril 2025</p>
     <blockquote>
     <div class="poem"><p><span class="line">Talk to me as you walk around love.</span><br>
 <span class="line">Sweet love.  Garlicky</span><br>
@@ -428,8 +453,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="smoking.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Smoking</em> &ndash; Mars 2025</p>
+<a href="smoking.html" style="text-decoration:none"><div class="main-poem-page" id="smoking">
+    <p class="poem-title"><em>Smoking</em> &ndash; Mars 2025</p>
     <blockquote>
     <div class="poem"><p><span class="line">An ashtray overfilled.</span><br>
 <span class="line">A dozen impressed, burnt-up cigarettes</span><br>
@@ -454,8 +479,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="untitled_mar2025.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Untitled</em> &ndash; Mars 2025</p>
+<a href="untitled_mar2025.html" style="text-decoration:none"><div class="main-poem-page" id="untitled_1">
+    <p class="poem-title"><em>Untitled</em> &ndash; Mars 2025</p>
     <blockquote>
     <div class="poem"><p><span class="line">Under sunlight setting</span><br>
 <span class="line">moth-like hid a feisty</span><br>
@@ -480,8 +505,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="the_bengal_chemical_metro_stop.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>The Bengal Chemical metro stop</em> &ndash; Janvier 2025</p>
+<a href="the_bengal_chemical_metro_stop.html" style="text-decoration:none"><div class="main-poem-page" id="chemical">
+    <p class="poem-title"><em>The Bengal Chemical metro stop</em> &ndash; Janvier 2025</p>
     <blockquote>
     <div class="poem"><p><span class="line">A fine and eager Kolkata crowd lined up</span><br>
 <span class="line">at the Bengal Chemical metro stop.</span><br>
@@ -501,12 +526,12 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>    </details>
 
-    <details>
-      <summary><h3 id="2024-20-poèmes">2024 (22 poèmes)</h3>
+    <details class="poem-year-details">
+      <summary><h3 id="2024poems" class="poem-year-header">2024 (0 poèmes)</h3>
     </summary>
 
-    <a href="the_arctic_plain_by_night.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>The arctic plain by night</em> &ndash; Decembre 2024</p>
+    <a href="the_arctic_plain_by_night.html" style="text-decoration:none"><div class="main-poem-page" id="arctic">
+    <p class="poem-title"><em>The arctic plain by night</em> &ndash; Decembre 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">Frozen was this place.</span><br>
 <span class="line">Upon it placed a placid slate</span><br>
@@ -546,8 +571,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="home_sketch_2.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Home sketch #2</em> &ndash; Decembre 2024</p>
+<a href="home_sketch_2.html" style="text-decoration:none"><div class="main-poem-page" id="sketch">
+    <p class="poem-title"><em>Home sketch #2</em> &ndash; Decembre 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">How words could be?</span><br>
 <span class="line">How they could steep.</span><br>
@@ -564,8 +589,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="home_sketch_1.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Home sketch #1</em> &ndash; Decembre 2024</p>
+<a href="home_sketch_1.html" style="text-decoration:none"><div class="main-poem-page" id="sketch_3">
+    <p class="poem-title"><em>Home sketch #1</em> &ndash; Decembre 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">To travel alone and old is to</span><br>
 <span class="line">sleep upright on the subway,</span><br>
@@ -586,8 +611,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="untitled_nov2024.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Untitled duet</em> &ndash; Novembre 2024</p>
+<a href="untitled_nov2024.html" style="text-decoration:none"><div class="main-poem-page" id="untitled">
+    <p class="poem-title"><em>Untitled duet</em> &ndash; Novembre 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">Up above the sky she climbed</span><br>
 <span class="line">until she hung suspended,</span><br>
@@ -635,8 +660,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="soda_pop.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Soda pop</em> &ndash; Octobre 2024</p>
+<a href="soda_pop.html" style="text-decoration:none"><div class="main-poem-page" id="soda">
+    <p class="poem-title"><em>Soda pop</em> &ndash; Octobre 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">I heard it all at the countertop:</span><br>
 <span class="line">a rubbery mix,</span><br>
@@ -661,8 +686,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="the_gull.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>The gull</em> &ndash; Septembre 2024</p>
+<a href="the_gull.html" style="text-decoration:none"><div class="main-poem-page" id="gull">
+    <p class="poem-title"><em>The gull</em> &ndash; Septembre 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">A lone lost seagull drapes his tattered wings.</span><br>
 <span class="line">That knackered bird he flaps and flaps again.</span><br>
@@ -686,8 +711,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="the_lake.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>The lake</em> &ndash; Septembre 2024</p>
+<a href="the_lake.html" style="text-decoration:none"><div class="main-poem-page" id="lake">
+    <p class="poem-title"><em>The lake</em> &ndash; Septembre 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">Dusk called you on a quest for your reflection.</span><br>
 <span class="line">Comment dire le fait de "se remettre en question"?</span><br>
@@ -706,8 +731,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="ode_to_the_gr10.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Ode (with love) to the gr10</em> &ndash; Aout 2024</p>
+<a href="ode_to_the_gr10.html" style="text-decoration:none"><div class="main-poem-page" id="gr10">
+    <p class="poem-title"><em>Ode (with love) to the gr10</em> &ndash; Aout 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">All 'round the mountains, the walkers wake.</span><br>
 <span class="line">Beneath the drizzle, their coffees bake.</span><br>
@@ -731,8 +756,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="da_isy.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Da isy</em> &ndash; Juillet 2024</p>
+<a href="da_isy.html" style="text-decoration:none"><div class="main-poem-page" id="daisy">
+    <p class="poem-title"><em>Da isy</em> &ndash; Juillet 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">Sunlight stained your bedroom walls.</span><br>
 <span class="line">You and I hid baking in the sheets.</span><br>
@@ -761,8 +786,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="as_if.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>As if.</em> &ndash; Juillet 2024</p>
+<a href="as_if.html" style="text-decoration:none"><div class="main-poem-page" id="asif">
+    <p class="poem-title"><em>As if.</em> &ndash; Juillet 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">She’s a mystery.</span><br>
 <span class="line">As if I wanted to cling on to her drapes</span><br>
@@ -802,8 +827,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="untitled_jun2024.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Untitled</em> &ndash; Juin 2024</p>
+<a href="untitled_jun2024.html" style="text-decoration:none"><div class="main-poem-page" id="untitled_jun24">
+    <p class="poem-title"><em>Untitled</em> &ndash; Juin 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">Morning growls</span><br>
 <span class="line">While the di-named lioness</span><br>
@@ -815,8 +840,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="free_to_float.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Free to float</em> &ndash; Mai 2024</p>
+<a href="free_to_float.html" style="text-decoration:none"><div class="main-poem-page" id="float">
+    <p class="poem-title"><em>Free to float</em> &ndash; Mai 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">If he could float from tree to tree,</span><br>
 <span class="line">on which clichés he’d perch?</span><br>
@@ -830,8 +855,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="while_in_decline.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>While in decline</em> &ndash; Mai 2024</p>
+<a href="while_in_decline.html" style="text-decoration:none"><div class="main-poem-page" id="decline">
+    <p class="poem-title"><em>While in decline</em> &ndash; Mai 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">The sun still shines while in decline</span><br>
 <span class="line">And bees slave all their lives</span><br>
@@ -845,8 +870,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="untitled_triad.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Untitled triad</em> &ndash; Mai 2024</p>
+<a href="untitled_triad.html" style="text-decoration:none"><div class="main-poem-page" id="triad">
+    <p class="poem-title"><em>Untitled triad</em> &ndash; Mai 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">Break my bones</span><br>
 <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if you want to</span><br>
@@ -870,8 +895,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="moroccan_mist.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Moroccan mist</em> &ndash; Mai 2024</p>
+<a href="moroccan_mist.html" style="text-decoration:none"><div class="main-poem-page" id="moroccan">
+    <p class="poem-title"><em>Moroccan mist</em> &ndash; Mai 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">Moroccan mist evaporates away</span><br>
 <span class="line">From all the dusty hash that filled our lungs</span><br>
@@ -890,8 +915,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="watch.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Watch</em> &ndash; Mai 2024</p>
+<a href="watch.html" style="text-decoration:none"><div class="main-poem-page" id="watch">
+    <p class="poem-title"><em>Watch</em> &ndash; Mai 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">Watch through the window</span><br>
 <span class="line">the mug that wobbles unprompted</span><br>
@@ -905,8 +930,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="untitled_apr2024.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Untitled</em> &ndash; Avril 2024</p>
+<a href="untitled_apr2024.html" style="text-decoration:none"><div class="main-poem-page" id="untitled_apr24">
+    <p class="poem-title"><em>Untitled</em> &ndash; Avril 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">Puddles stain the pavement</span><br>
 <span class="line">under sun’s afternoon</span><br>
@@ -920,8 +945,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="the_doghouse.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>The doghouse</em> &ndash; Avril 2024</p>
+<a href="the_doghouse.html" style="text-decoration:none"><div class="main-poem-page" id="doghouse">
+    <p class="poem-title"><em>The doghouse</em> &ndash; Avril 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">Awakened in a troubling grime,</span><br>
 <span class="line">the morning crawls out of the doghouse</span><br>
@@ -941,8 +966,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="un_mardi_soir.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Un mardi soir</em> &ndash; Mars 2024</p>
+<a href="un_mardi_soir.html" style="text-decoration:none"><div class="main-poem-page" id="mardi">
+    <p class="poem-title"><em>Un mardi soir</em> &ndash; Mars 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">Du temps perdu</span><br>
 <span class="line">sous la pluie</span><br>
@@ -954,8 +979,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="the_tower.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>The tower</em> &ndash; Février 2024</p>
+<a href="the_tower.html" style="text-decoration:none"><div class="main-poem-page" id="tower">
+    <p class="poem-title"><em>The tower</em> &ndash; Février 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">His eyes and Hers align to keep</span><br>
 <span class="line">panoptic, periodic rhyme at sea</span><br>
@@ -989,8 +1014,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="in_the_dark.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>In the dark</em> &ndash; Janvier 2024</p>
+<a href="in_the_dark.html" style="text-decoration:none"><div class="main-poem-page" id="dark">
+    <p class="poem-title"><em>In the dark</em> &ndash; Janvier 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">Pinned to dusk and strung like wire</span><br>
 <span class="line">Tower the branches' fractal spires</span><br>
@@ -1010,8 +1035,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="a_cool_dry_place.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>A cool, dry place</em> &ndash; Janvier 2024</p>
+<a href="a_cool_dry_place.html" style="text-decoration:none"><div class="main-poem-page" id="place">
+    <p class="poem-title"><em>A cool, dry place</em> &ndash; Janvier 2024</p>
     <blockquote>
     <div class="poem"><p><span class="line">Sitting pristine in her sleeve</span><br>
 <span class="line">plastic shrink wrapped unscratched</span><br>
@@ -1043,12 +1068,12 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>    </details>
 
-    <details>
-      <summary><h3 id="2023-20-poèmes">2023 (20 poèmes)</h3>
+    <details class="poem-year-details">
+      <summary><h3 id="2023poems" class="poem-year-header">2023 (0 poèmes)</h3>
     </summary>
 
-    <a href="monorhyme_sketch_3.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Monorhyme sketch #3</em> &ndash; Decembre 2023</p>
+    <a href="monorhyme_sketch_3.html" style="text-decoration:none"><div class="main-poem-page" id="monorhyme3">
+    <p class="poem-title"><em>Monorhyme sketch #3</em> &ndash; Decembre 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">Goldilocks was feeling bold,</span><br>
 <span class="line">For each bear was poured a bowl.</span><br>
@@ -1057,8 +1082,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="monorhyme_sketch_2.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Monorhyme sketch #2</em> &ndash; Novembre 2023</p>
+<a href="monorhyme_sketch_2.html" style="text-decoration:none"><div class="main-poem-page" id="monorhyme2">
+    <p class="poem-title"><em>Monorhyme sketch #2</em> &ndash; Novembre 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">Play back the track slow with all ears clear</span><br>
 <span class="line">Sycophants’ll scatter off or cower with fear</span><br>
@@ -1067,8 +1092,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="monorhyme_sketch_1.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Monorhyme sketch #1</em> &ndash; Novembre 2023</p>
+<a href="monorhyme_sketch_1.html" style="text-decoration:none"><div class="main-poem-page" id="monorhyme1">
+    <p class="poem-title"><em>Monorhyme sketch #1</em> &ndash; Novembre 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">Alcohol is entropy, and entropy is time</span><br>
 <span class="line">Hungover before I transitively unwind.</span><br>
@@ -1077,8 +1102,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="ode_to_sami.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Ode to Sami</em> &ndash; Novembre 2023</p>
+<a href="ode_to_sami.html" style="text-decoration:none"><div class="main-poem-page" id="sami">
+    <p class="poem-title"><em>Ode to Sami</em> &ndash; Novembre 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">Our man’s evaporated — gone.</span><br>
 <span class="line">After the party rises dawn</span><br>
@@ -1098,8 +1123,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="chicory_root.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Chicory root</em> &ndash; Octobre 2023</p>
+<a href="chicory_root.html" style="text-decoration:none"><div class="main-poem-page" id="chicory">
+    <p class="poem-title"><em>Chicory root</em> &ndash; Octobre 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">An afternoon with chicory root</span><br>
 <span class="line">My heart respires a holler and hoot</span><br>
@@ -1108,8 +1133,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="untitled_couples.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Untitled couples</em> &ndash; Octobre 2023</p>
+<a href="untitled_couples.html" style="text-decoration:none"><div class="main-poem-page" id="couples">
+    <p class="poem-title"><em>Untitled couples</em> &ndash; Octobre 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">Bound up inside, a voice he wimpers on,</span><br>
 <span class="line">“Bring back the soft of touch that long has gone…”</span><br>
@@ -1131,8 +1156,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="limp.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Limp</em> &ndash; Octobre 2023</p>
+<a href="limp.html" style="text-decoration:none"><div class="main-poem-page" id="limp">
+    <p class="poem-title"><em>Limp</em> &ndash; Octobre 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">As I ran by I saw you lying</span><br>
 <span class="line">limp along the sidewalk</span><br>
@@ -1156,8 +1181,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="a_ravens_lust.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>A raven&rsquo;s lust</em> &ndash; Octobre 2023</p>
+<a href="a_ravens_lust.html" style="text-decoration:none"><div class="main-poem-page" id="raven">
+    <p class="poem-title"><em>A raven&rsquo;s lust</em> &ndash; Octobre 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">A pressing matter of morning walks,</span><br>
 <span class="line">A pressure on the heart.</span><br>
@@ -1171,8 +1196,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="september_slump.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>September slump</em> &ndash; Septembre 2023</p>
+<a href="september_slump.html" style="text-decoration:none"><div class="main-poem-page" id="september">
+    <p class="poem-title"><em>September slump</em> &ndash; Septembre 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">Obsessively revising</span><br>
 <span class="line">Self-consuming second guessing</span><br>
@@ -1192,8 +1217,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="hm_apparently_pompeii_isnt_in_greece.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Hm, apparently Pompeii isn't in Greece</em> &ndash; Septembre 2023</p>
+<a href="hm_apparently_pompeii_isnt_in_greece.html" style="text-decoration:none"><div class="main-poem-page" id="apparently">
+    <p class="poem-title"><em>Hm, apparently Pompeii isn't in Greece</em> &ndash; Septembre 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">It’s New Year’s Eve on Mount Vesuvius</span><br>
 <span class="line">Eruption warnings are dubious</span><br>
@@ -1215,8 +1240,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="untitled_aug2023.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Untitled</em> &ndash; Aout 2023</p>
+<a href="untitled_aug2023.html" style="text-decoration:none"><div class="main-poem-page" id="cripples">
+    <p class="poem-title"><em>Untitled</em> &ndash; Aout 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">A giant in the shoes of a man</span><br>
 <span class="line">A god wrapped in a mortal’s pelt</span><br>
@@ -1249,8 +1274,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="crossing_your_path.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Crossing your path</em> &ndash; Juillet 2023</p>
+<a href="crossing_your_path.html" style="text-decoration:none"><div class="main-poem-page" id="crossing">
+    <p class="poem-title"><em>Crossing your path</em> &ndash; Juillet 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">I’d like to cross your path from time to time</span><br>
 <span class="line">To say ‘Hello’ and then ‘Goodbye’</span><br>
@@ -1275,8 +1300,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="untitled_pt_2.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Untitled pt. 2</em> &ndash; Juillet 2023</p>
+<a href="untitled_pt_2.html" style="text-decoration:none"><div class="main-poem-page" id="untitledpt2">
+    <p class="poem-title"><em>Untitled pt. 2</em> &ndash; Juillet 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">and the end it was so brief half an hour in the park and we didnt even break open the pulco and sparkling water</span><br>
 </p></div>
@@ -1288,8 +1313,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="untitled_jul2023.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Untitled</em> &ndash; Juillet 2023</p>
+<a href="untitled_jul2023.html" style="text-decoration:none"><div class="main-poem-page" id="sharptremor">
+    <p class="poem-title"><em>Untitled</em> &ndash; Juillet 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">If ever a lonely night</span><br>
 <span class="line">Should you wake in a sharp tremor</span><br>
@@ -1311,8 +1336,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="whalebone_branches.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Whalebone branches</em> &ndash; Juin 2023</p>
+<a href="whalebone_branches.html" style="text-decoration:none"><div class="main-poem-page" id="whalebone">
+    <p class="poem-title"><em>Whalebone branches</em> &ndash; Juin 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">Whalebone branches</span><br>
 <span class="line">they bellow and spill</span><br>
@@ -1345,8 +1370,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="untitled_may2023.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Untitled</em> &ndash; Mai 2023</p>
+<a href="untitled_may2023.html" style="text-decoration:none"><div class="main-poem-page" id="lapins">
+    <p class="poem-title"><em>Untitled</em> &ndash; Mai 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">Accro à la banalité</span><br>
 <span class="line">A la recherche d’une bière</span><br>
@@ -1359,8 +1384,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="those_oozing_stacks_grow.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Those oozing stacks grow</em> &ndash; Avril 2023</p>
+<a href="those_oozing_stacks_grow.html" style="text-decoration:none"><div class="main-poem-page" id="oozing">
+    <p class="poem-title"><em>Those oozing stacks grow</em> &ndash; Avril 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">I want to tell of carcasses stacked tall</span><br>
 <span class="line">Of honey dried out at crusty summer’s fall</span><br>
@@ -1402,8 +1427,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="bruges_pluie_blues.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Bruges pluie blues</em> &ndash; Mars 2023</p>
+<a href="bruges_pluie_blues.html" style="text-decoration:none"><div class="main-poem-page" id="bruges">
+    <p class="poem-title"><em>Bruges pluie blues</em> &ndash; Mars 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">Il plu dans cette vielle ville</span><br>
 <span class="line">Pendant ces vacances débiles</span><br>
@@ -1412,8 +1437,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="untitled_night.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Untitled night</em> &ndash; Février 2023</p>
+<a href="untitled_night.html" style="text-decoration:none"><div class="main-poem-page" id="untitled_night">
+    <p class="poem-title"><em>Untitled night</em> &ndash; Février 2023</p>
     <blockquote>
     <div class="poem"><p><span class="line">Her animal lay wild,</span><br>
 <span class="line">hunched, and prowling in its cage</span><br>
@@ -1443,12 +1468,12 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>    </details>
 
-    <details>
-        <summary><h3 id="2020---2022-3-poèmes">2020 - 2022 (3 poèmes)</h3>
+    <details class="poem-year-details">
+        <summary><h3 id="2022poems" class="poem-year-header">2020 - 2022 (0 poèmes)</h3>
     </summary>
 
-    <a href="kansas_sky.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Kansas sky</em> &ndash; Juillet 2022</p>
+    <a href="kansas_sky.html" style="text-decoration:none"><div class="main-poem-page" id="kansas_4">
+    <p class="poem-title"><em>Kansas sky</em> &ndash; Juillet 2022</p>
     <blockquote>
     <div class="poem"><p><span class="line">This morning I watched a cloud fall to earth.</span><br>
 <span class="line">Once suspended in the Kansas sky</span><br>
@@ -1460,8 +1485,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="like_jackals_lips_slippery.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Like jackals, lips slippery</em> &ndash; Mai 2022</p>
+<a href="like_jackals_lips_slippery.html" style="text-decoration:none"><div class="main-poem-page" id="slippery_1">
+    <p class="poem-title"><em>Like jackals, lips slippery</em> &ndash; Mai 2022</p>
     <blockquote>
     <div class="poem"><p><span class="line">Jackal toes and bloody lips</span><br>
 <span class="line">On the wall trickles and drips</span><br>
@@ -1480,8 +1505,8 @@ And mean—they know not whom.</p>    </blockquote></details>
     </div>
 </a>
 
-<a href="fierce_creature.html" style="text-decoration:none"><div class="main-poem-page">
-    <p><em>Fierce creature</em> &ndash; Janvier 2020</p>
+<a href="fierce_creature.html" style="text-decoration:none"><div class="main-poem-page" id="fierce">
+    <p class="poem-title"><em>Fierce creature</em> &ndash; Janvier 2020</p>
     <blockquote>
     <div class="poem"><p><span class="line">Fierce creature.</span><br>
 <span class="line">Her warm-armed currents</span><br>
@@ -1492,6 +1517,7 @@ And mean—they know not whom.</p>    </blockquote></details>
 <span class="line">Filled to quench days spent apart.</p></div>    </blockquote>
     </div>
 </a>    </details>
+
 </details>
 
 </div>
@@ -1501,7 +1527,7 @@ And mean—they know not whom.</p>    </blockquote></details>
 </html>
 <footer class="footer layout__footer">
 <span style="color:grey"> 
-<p><span>© Le Site Web de Bryan Kaperick</span> – <nobr>Mis à jour  2026-04-28
+<p><span>© Le Site Web de Bryan Kaperick</span> – <nobr>Mis à jour  2026-05-03
 </nobr>
 <br>
 La photo de profile a été esquissée par <a href="https://www.instagram.com/j.andrews96/" class="citation_link">Jason Andrews</a>
