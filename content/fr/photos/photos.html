@@ -34,6 +34,22 @@
   }
 </script>
 
+<script type="text/javascript" src="../../js/search.js"></script>
+<script type="text/javascript" src="../../js/photos.js"></script>
+
+<script type="module">
+  // Build the search index from poems.json data
+  import {Index} from "../../js/flexsearch.bundle.module.min.js";
+  const index = new Index({tokenize: "forward"});
+  load_photos_index(index, "en");
+
+  // Initialize the poem section counts
+  // recount_visible_poems();
+
+  // Update page based on user input
+  listen_on_input(() => photos_input_listen(index));
+</script>
+
 </head>
 
 <body class="single-page">

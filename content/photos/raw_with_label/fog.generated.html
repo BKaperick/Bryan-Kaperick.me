@@ -1,8 +1,8 @@
 <figure class="single-image">
     <img src=<?="/photos/raw/" . $p->fog->name . "";?> alt="<?=$p->the_commute->$lang;?> ~ <?=$p->fog->year;?>">
-    <figcaption>
-    <a class="prev_link" href="<?="./flandres.php";?>"><?=$language['Previous']?></a>
-<?=$p->the_commute->$lang;?> ~ <?=$p->fog->year;?>
-    <a class="next_link" href="<?="./sunny.php";?>"><?=$language['Next']?></a>
+    <figcaption class="photo-caption">
+        <a class="prev_link" href="<?="./flandres.php";?>"><?=$language['Previous']?></a>
+            <?=$p->the_commute->$lang;?> ~ <?=$p->fog->year;?>
+        <a class="next_link" href="<?="./sunny.php";?>"><?=$language['Next']?></a>
     </figcaption>
 </figure>

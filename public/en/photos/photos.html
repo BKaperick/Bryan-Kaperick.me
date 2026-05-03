@@ -121,6 +121,23 @@ class="active" aria-current="page">Photos</a></li>
     }
   }
 </script>
+
+<script type="text/javascript" src="../../js/search.js"></script>
+<script type="text/javascript" src="../../js/photos.js"></script>
+
+<script type="module">
+  // Build the search index from poems.json data
+  import {Index} from "../../js/flexsearch.bundle.module.min.js";
+  const index = new Index({tokenize: "forward"});
+  load_photos_index(index, "en");
+
+  // Initialize the poem section counts
+  // recount_visible_poems();
+
+  // Update page based on user input
+  listen_on_input(() => photos_input_listen(index));
+</script>
+
 </head>
 
 <body class="list-page front">
@@ -132,6 +149,11 @@ class="active" aria-current="page">Photos</a></li>
 
             <div class="content">
                 <p>Some photos of me and my friends, in reverse chronological order.  Click on the photos to see their full-resolution version.</p>
+                
+                <form id="searchForm">
+                    Filter: <input type="text" id = "search_query" list="partial_search_results">
+                </form>
+                
                 
     <details>
       <summary><h3>Leaderboard</h3>
@@ -222,14 +244,13 @@ class="active" aria-current="page">Photos</a></li>
 </details></div>
 
 
-
-<div class="album">
+<div class="album main-page-photo-block" id="the_commute">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="lille.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/lille.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -238,7 +259,7 @@ class="active" aria-current="page">Photos</a></li>
 <div class="photocolumn"> <span style="color:grey"><a href="flandres.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/flandres.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -249,7 +270,7 @@ class="active" aria-current="page">Photos</a></li>
 <div class="photocolumn"> <span style="color:grey"><a href="fog.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/fog.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -258,28 +279,25 @@ class="active" aria-current="page">Photos</a></li>
 <div class="photocolumn"> <span style="color:grey"><a href="sunny.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/sunny.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-The daily commute ~ 2026    </figcaption>
+        <figcaption class="photo-caption">
+            The daily commute ~ 2026        </figcaption>
     </figure>
 </div>
 
-
-
-<div class="album">
+<div class="album main-page-photo-block" id="BridgesOfRotterdam">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="portql.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/portql.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -288,7 +306,7 @@ The daily commute ~ 2026    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="rotterdam_geometric_bridge.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/rotterdam_geometric_bridge.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -299,7 +317,7 @@ The daily commute ~ 2026    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="rotterdam_red_bridge_1.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/rotterdam_red_bridge_1.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -308,28 +326,25 @@ The daily commute ~ 2026    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="rotterdam_moon_bridge.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/rotterdam_moon_bridge.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-Bridges and other worlds of Rotterdam ~ 2025    </figcaption>
+        <figcaption class="photo-caption">
+            Bridges and other worlds of Rotterdam ~ 2025        </figcaption>
     </figure>
 </div>
 
-
-
-<div class="album">
+<div class="album main-page-photo-block" id="FetedesRemparts">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="medieval_rain.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/medieval_rain.jpg.webp" alt="Wet">
-    <figcaption>
+    <figcaption class="photo-caption">
 Wet    </figcaption>
 </figure>
 
@@ -338,7 +353,7 @@ Wet    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="medieval_dry.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/medieval_dry.jpg.webp" alt="Dry">
-    <figcaption>
+    <figcaption class="photo-caption">
 Dry    </figcaption>
 </figure>
 
@@ -347,28 +362,25 @@ Dry    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="bbq_cropped.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/bbq_cropped.jpg.webp" alt="BBQ time">
-    <figcaption>
+    <figcaption class="photo-caption">
 BBQ time    </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-The Ramparts Festival in Dinan ~ 2025    </figcaption>
+        <figcaption class="photo-caption">
+            The Ramparts Festival in Dinan ~ 2025        </figcaption>
     </figure>
 </div>
 
-
-
-<div class="album">
+<div class="album main-page-photo-block" id="Bretagne2025">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="mont_stmichel.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/mont_stmichel.jpg.webp" alt="Le Mont-Saint-Michel">
-    <figcaption>
+    <figcaption class="photo-caption">
 Le Mont-Saint-Michel    </figcaption>
 </figure>
 
@@ -377,7 +389,7 @@ Le Mont-Saint-Michel    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="bretagne_rocky_beach.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/bretagne_rocky_beach.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -386,7 +398,7 @@ Le Mont-Saint-Michel    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="bretagne_waves.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/bretagne_waves.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -397,7 +409,7 @@ Le Mont-Saint-Michel    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="bretagne_cliffs1.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/bretagne_cliffs1.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -406,7 +418,7 @@ Le Mont-Saint-Michel    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="sunset.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/sunset.jpg.webp" alt="La Point de la Varde">
-    <figcaption>
+    <figcaption class="photo-caption">
 La Point de la Varde    </figcaption>
 </figure>
 
@@ -415,7 +427,7 @@ La Point de la Varde    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="clay_beach.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/clay_beach.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -426,7 +438,7 @@ La Point de la Varde    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="bryan_pointe_de_varda.JPG.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/bryan_pointe_de_varda.JPG.webp" alt="La Point de la Varde">
-    <figcaption>
+    <figcaption class="photo-caption">
 La Point de la Varde    </figcaption>
 </figure>
 
@@ -435,7 +447,7 @@ La Point de la Varde    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="100_0865.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/100_0865.jpg.webp" alt="La Point de la Varde">
-    <figcaption>
+    <figcaption class="photo-caption">
 La Point de la Varde    </figcaption>
 </figure>
 
@@ -444,28 +456,25 @@ La Point de la Varde    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="100_0908.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/100_0908.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-Hike on the coast of the Mont-Saint-Michel Bay ~ 2025    </figcaption>
+        <figcaption class="photo-caption">
+            Hike on the coast of the Mont-Saint-Michel Bay ~ 2025        </figcaption>
     </figure>
 </div>
 
-
-
-<div class="album">
+<div class="album main-page-photo-block" id="Marseille_Nice">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="chantal_myriam_bryan_calanques.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/chantal_myriam_bryan_calanques.jpg.webp" alt="Aux Calanques">
-    <figcaption>
+    <figcaption class="photo-caption">
 Aux Calanques    </figcaption>
 </figure>
 
@@ -474,7 +483,7 @@ Aux Calanques    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="calanques_plage.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/calanques_plage.jpg.webp" alt="Aux Calanques">
-    <figcaption>
+    <figcaption class="photo-caption">
 Aux Calanques    </figcaption>
 </figure>
 
@@ -483,7 +492,7 @@ Aux Calanques    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="calanques_mountain.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/calanques_mountain.jpg.webp" alt="Aux Calanques">
-    <figcaption>
+    <figcaption class="photo-caption">
 Aux Calanques    </figcaption>
 </figure>
 
@@ -492,7 +501,7 @@ Aux Calanques    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="bananagrams.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/bananagrams.jpg.webp" alt="Bananagrams, gg">
-    <figcaption>
+    <figcaption class="photo-caption">
 Bananagrams, gg    </figcaption>
 </figure>
 
@@ -503,7 +512,7 @@ Bananagrams, gg    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="marseille_graff_3.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/marseille_graff_3.jpg.webp" alt="Roger, GG, Mimi, and lil' Migi">
-    <figcaption>
+    <figcaption class="photo-caption">
 Roger, GG, Mimi, and lil' Migi    </figcaption>
 </figure>
 
@@ -512,7 +521,7 @@ Roger, GG, Mimi, and lil' Migi    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="marseille_graff.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/marseille_graff.jpg.webp" alt="GG + Mimi <3">
-    <figcaption>
+    <figcaption class="photo-caption">
 GG + Mimi <3    </figcaption>
 </figure>
 
@@ -521,7 +530,7 @@ GG + Mimi <3    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="graff_1.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/graff_1.jpg.webp" alt="GG and Mimi?">
-    <figcaption>
+    <figcaption class="photo-caption">
 GG and Mimi?    </figcaption>
 </figure>
 
@@ -532,7 +541,7 @@ GG and Mimi?    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="clemence_kraken.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/clemence_kraken.jpg.webp" alt="With Clémence at Le Kraken">
-    <figcaption>
+    <figcaption class="photo-caption">
 With Clémence at Le Kraken    </figcaption>
 </figure>
 
@@ -541,7 +550,7 @@ With Clémence at Le Kraken    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="nice_alley.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/nice_alley.jpg.webp" alt="Alley in old town of Nice">
-    <figcaption>
+    <figcaption class="photo-caption">
 Alley in old town of Nice    </figcaption>
 </figure>
 
@@ -550,48 +559,45 @@ Alley in old town of Nice    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="nice_beach.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/nice_beach.jpg.webp" alt="Mi on a Nice beach">
-    <figcaption>
+    <figcaption class="photo-caption">
 Mi on a Nice beach    </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-A short trip to Marseilles and Nice ~ 2025    </figcaption>
+        <figcaption class="photo-caption">
+            A short trip to Marseilles and Nice ~ 2025        </figcaption>
     </figure>
 </div>
 
-
-<a href="deule_boat.html">
-<figure class="image">
+<a id="deule" href="deule_boat.html">
+<figure class="image main-page-photo-block" id="deule">
     <img src="../../photos/lowres/deule_boat.jpg.webp" alt="Boating on La Deule for Sunny's birthday ~ 2025">
-    <figcaption>
-Boating on La Deule for Sunny's birthday ~ 2025    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Boating on La Deule for Sunny's birthday ~ 2025    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="tyler_30_salam.jpeg.html">
-<figure class="image">
+<a id="tyler" href="tyler_30_salam.jpeg.html">
+<figure class="image main-page-photo-block" id="tyler">
     <img src="../../photos/lowres/tyler_30_salam.jpeg.webp" alt="Tyler's 30th Birthday at La Mousse Touch' ~ 2025">
-    <figcaption>
-Tyler's 30th Birthday at La Mousse Touch' ~ 2025    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Tyler's 30th Birthday at La Mousse Touch' ~ 2025    </figcaption>
 </figure>
 
 </a>
 
 
-
-<div class="album">
+<div class="album main-page-photo-block" id="LyonClimbingMay2025">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="lyon_climbing_descend.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/lyon_climbing_descend.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -600,7 +606,7 @@ Tyler's 30th Birthday at La Mousse Touch' ~ 2025    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="lyon_climbing_devers.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/lyon_climbing_devers.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -609,7 +615,7 @@ Tyler's 30th Birthday at La Mousse Touch' ~ 2025    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="lyon_climbing_1.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/lyon_climbing_1.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -620,7 +626,7 @@ Tyler's 30th Birthday at La Mousse Touch' ~ 2025    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="lyon_climbing_2.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/lyon_climbing_2.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -629,7 +635,7 @@ Tyler's 30th Birthday at La Mousse Touch' ~ 2025    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="lyon_bbq.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/lyon_bbq.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -638,28 +644,25 @@ Tyler's 30th Birthday at La Mousse Touch' ~ 2025    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="la_courbiere_site.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/la_courbiere_site.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-Weekend in Lyon climbing at 'Le gouffre d'enfer' ~ 2025    </figcaption>
+        <figcaption class="photo-caption">
+            Weekend in Lyon climbing at 'Le gouffre d'enfer' ~ 2025        </figcaption>
     </figure>
 </div>
 
-
-
-<div class="album">
+<div class="album main-page-photo-block" id="DescendingLaLesse">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="kayak_others.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/kayak_others.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -668,7 +671,7 @@ Weekend in Lyon climbing at 'Le gouffre d'enfer' ~ 2025    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="kayak_castle.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/kayak_castle.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -677,28 +680,25 @@ Weekend in Lyon climbing at 'Le gouffre d'enfer' ~ 2025    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="kayak_la_lesse.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/kayak_la_lesse.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-Kayaking on La Lesse river in the Ardennes ~ 2025    </figcaption>
+        <figcaption class="photo-caption">
+            Kayaking on La Lesse river in the Ardennes ~ 2025        </figcaption>
     </figure>
 </div>
 
-
-
-<div class="album">
+<div class="album main-page-photo-block" id="rishik_bbq">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="rishik_bbq.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/rishik_bbq.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -707,78 +707,75 @@ Kayaking on La Lesse river in the Ardennes ~ 2025    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="rishik_bbq_2.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/rishik_bbq_2.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-BBQ for Rishik's birthday ~ 2025    </figcaption>
+        <figcaption class="photo-caption">
+            BBQ for Rishik's birthday ~ 2025        </figcaption>
     </figure>
 </div>
 
-
-<a href="quentin_bday_2025_2.jpeg.html">
-<figure class="image">
+<a id="quentin_15" href="quentin_bday_2025_2.jpeg.html">
+<figure class="image main-page-photo-block" id="quentin_15">
     <img src="../../photos/lowres/quentin_bday_2025_2.jpeg.webp" alt="Quentin's birthday ~ 2025">
-    <figcaption>
-Quentin's birthday ~ 2025    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Quentin's birthday ~ 2025    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="marche.jpeg.html">
-<figure class="image">
+<a id="marche" href="marche.jpeg.html">
+<figure class="image main-page-photo-block" id="marche">
     <img src="../../photos/lowres/marche.jpeg.webp" alt="Wazemmes Market ~ 2025">
-    <figcaption>
-Wazemmes Market ~ 2025    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Wazemmes Market ~ 2025    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="tilburg.jpeg.html">
-<figure class="image">
+<a id="tilburg" href="tilburg.jpeg.html">
+<figure class="image main-page-photo-block" id="tilburg">
     <img src="../../photos/lowres/tilburg.jpeg.webp" alt="Daytrip to Tilburg with Michael ~ 2025">
-    <figcaption>
-Daytrip to Tilburg with Michael ~ 2025    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Daytrip to Tilburg with Michael ~ 2025    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="djurdjura.jpeg.html">
-<figure class="image">
+<a id="djurdjura" href="djurdjura.jpeg.html">
+<figure class="image main-page-photo-block" id="djurdjura">
     <img src="../../photos/lowres/djurdjura.jpeg.webp" alt="A Thursday night at Djurdjura ~ 2025">
-    <figcaption>
-A Thursday night at Djurdjura ~ 2025    </figcaption>
+    <figcaption class="photo-caption">subdir
+        A Thursday night at Djurdjura ~ 2025    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="bryan_colin_paris_2025.html">
-<figure class="image">
+<a id="bryan_19" href="bryan_colin_paris_2025.html">
+<figure class="image main-page-photo-block" id="bryan_19">
     <img src="../../photos/lowres/bryan_colin_paris_2025.jpg.webp" alt="Colin came back to Paris ~ 2025">
-    <figcaption>
-Colin came back to Paris ~ 2025    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Colin came back to Paris ~ 2025    </figcaption>
 </figure>
 
 </a>
 
 
-
-<div class="album">
+<div class="album main-page-photo-block" id="SE_Asia_Alex_Hippo">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="hanoi_street.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/hanoi_street.jpg.webp" alt="Hanoi">
-    <figcaption>
+    <figcaption class="photo-caption">
 Hanoi    </figcaption>
 </figure>
 
@@ -787,7 +784,7 @@ Hanoi    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="bryan_tights.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/bryan_tights.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -796,7 +793,7 @@ Hanoi    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="cropped_bryan_salon.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/cropped_bryan_salon.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -805,7 +802,7 @@ Hanoi    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="bryan_hippo_eating.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/bryan_hippo_eating.jpg.webp" alt="Siem Reap">
-    <figcaption>
+    <figcaption class="photo-caption">
 Siem Reap    </figcaption>
 </figure>
 
@@ -816,7 +813,7 @@ Siem Reap    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="bryan_bus_coding.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/bryan_bus_coding.jpg.webp" alt="Remote work">
-    <figcaption>
+    <figcaption class="photo-caption">
 Remote work    </figcaption>
 </figure>
 
@@ -825,7 +822,7 @@ Remote work    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="cropped_bryan_bookstreet.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/cropped_bryan_bookstreet.jpg.webp" alt="Ho Chi Minh">
-    <figcaption>
+    <figcaption class="photo-caption">
 Ho Chi Minh    </figcaption>
 </figure>
 
@@ -834,7 +831,7 @@ Ho Chi Minh    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="hippo_bryan_alex_bbq.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/hippo_bryan_alex_bbq.jpg.webp" alt="Hoi An">
-    <figcaption>
+    <figcaption class="photo-caption">
 Hoi An    </figcaption>
 </figure>
 
@@ -843,7 +840,7 @@ Hoi An    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="bryan_alex_garagist.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/bryan_alex_garagist.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -854,7 +851,7 @@ Hoi An    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="bryan_moto.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/bryan_moto.jpg.webp" alt="Hải Vân Pass">
-    <figcaption>
+    <figcaption class="photo-caption">
 Hải Vân Pass    </figcaption>
 </figure>
 
@@ -863,7 +860,7 @@ Hải Vân Pass    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="bryan_hippo_alex_caves.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/bryan_hippo_alex_caves.jpg.webp" alt="Tien Son cave">
-    <figcaption>
+    <figcaption class="photo-caption">
 Tien Son cave    </figcaption>
 </figure>
 
@@ -872,7 +869,7 @@ Tien Son cave    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="bryan_cave.HEIC.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/bryan_cave.HEIC.webp" alt="Tien Son cave">
-    <figcaption>
+    <figcaption class="photo-caption">
 Tien Son cave    </figcaption>
 </figure>
 
@@ -881,28 +878,25 @@ Tien Son cave    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="hanoi_rooftops.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/hanoi_rooftops.jpg.webp" alt="Hanoi">
-    <figcaption>
+    <figcaption class="photo-caption">
 Hanoi    </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-Trip in Cambodia and Vietnam with Alex and Hippo ~ 2025    </figcaption>
+        <figcaption class="photo-caption">
+            Trip in Cambodia and Vietnam with Alex and Hippo ~ 2025        </figcaption>
     </figure>
 </div>
 
-
-
-<div class="album">
+<div class="album main-page-photo-block" id="Kristmas_in_Kohima">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="failed_chicken_selfie.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/failed_chicken_selfie.jpg.webp" alt="Chickens at the guest house">
-    <figcaption>
+    <figcaption class="photo-caption">
 Chickens at the guest house    </figcaption>
 </figure>
 
@@ -911,7 +905,7 @@ Chickens at the guest house    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="random_kohimians.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/random_kohimians.jpg.webp" alt="Unknown Kohimians">
-    <figcaption>
+    <figcaption class="photo-caption">
 Unknown Kohimians    </figcaption>
 </figure>
 
@@ -920,7 +914,7 @@ Unknown Kohimians    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="streetfood_avi.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/streetfood_avi.jpg.webp" alt="Eating some street food">
-    <figcaption>
+    <figcaption class="photo-caption">
 Eating some street food    </figcaption>
 </figure>
 
@@ -929,7 +923,7 @@ Eating some street food    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="cathedral_showing.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/cathedral_showing.jpg.webp" alt="In front of the local Catholic Cathedral">
-    <figcaption>
+    <figcaption class="photo-caption">
 In front of the local Catholic Cathedral    </figcaption>
 </figure>
 
@@ -940,7 +934,7 @@ In front of the local Catholic Cathedral    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="retying_the_rice.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/retying_the_rice.jpg.webp" alt="Aviraj and Tridip reseal the rice bag in the taxi trunk">
-    <figcaption>
+    <figcaption class="photo-caption">
 Aviraj and Tridip reseal the rice bag in the taxi trunk    </figcaption>
 </figure>
 
@@ -949,7 +943,7 @@ Aviraj and Tridip reseal the rice bag in the taxi trunk    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="mexican_standoff.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/mexican_standoff.jpg.webp" alt="In Kisama Heritage Village">
-    <figcaption>
+    <figcaption class="photo-caption">
 In Kisama Heritage Village    </figcaption>
 </figure>
 
@@ -958,7 +952,7 @@ In Kisama Heritage Village    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="aviraj_bryan_tridip_christmas.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/aviraj_bryan_tridip_christmas.jpg.webp" alt="At Faith Harvest Church after Christmas mass">
-    <figcaption>
+    <figcaption class="photo-caption">
 At Faith Harvest Church after Christmas mass    </figcaption>
 </figure>
 
@@ -967,7 +961,7 @@ At Faith Harvest Church after Christmas mass    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="scooty_kohima.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/scooty_kohima.jpg.webp" alt="Learned to ride a scooty">
-    <figcaption>
+    <figcaption class="photo-caption">
 Learned to ride a scooty    </figcaption>
 </figure>
 
@@ -978,7 +972,7 @@ Learned to ride a scooty    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="random_kohima_girl.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/random_kohima_girl.jpg.webp" alt="She wanted a "Christmas couple" photo">
-    <figcaption>
+    <figcaption class="photo-caption">
 She wanted a "Christmas couple" photo    </figcaption>
 </figure>
 
@@ -987,7 +981,7 @@ She wanted a "Christmas couple" photo    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="kohima_night_1.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/kohima_night_1.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -996,7 +990,7 @@ She wanted a "Christmas couple" photo    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="kohima_night_2.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/kohima_night_2.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1005,28 +999,25 @@ She wanted a "Christmas couple" photo    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="kohima_day.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/kohima_day.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-Kristmas in Kohima with Aviraj and Tridip ~ 2024    </figcaption>
+        <figcaption class="photo-caption">
+            Kristmas in Kohima with Aviraj and Tridip ~ 2024        </figcaption>
     </figure>
 </div>
 
-
-
-<div class="album">
+<div class="album main-page-photo-block" id="Jaifu">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="peak_from_trailhead.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/peak_from_trailhead.jpg.webp" alt="View from the trailhead">
-    <figcaption>
+    <figcaption class="photo-caption">
 View from the trailhead    </figcaption>
 </figure>
 
@@ -1035,7 +1026,7 @@ View from the trailhead    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="frosted_ground.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/frosted_ground.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1044,7 +1035,7 @@ View from the trailhead    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="summetselfi.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/summetselfi.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1053,7 +1044,7 @@ View from the trailhead    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="summet_view_1.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/summet_view_1.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1064,7 +1055,7 @@ View from the trailhead    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="summet_view_2.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/summet_view_2.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1073,7 +1064,7 @@ View from the trailhead    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="japfu_summet.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/japfu_summet.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1082,7 +1073,7 @@ View from the trailhead    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="rhododendron_trees.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/rhododendron_trees.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1091,28 +1082,25 @@ View from the trailhead    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="burned_fields.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/burned_fields.jpg.webp" alt="Jhum cultivation (slash-and-burn agriculture)">
-    <figcaption>
+    <figcaption class="photo-caption">
 Jhum cultivation (slash-and-burn agriculture)    </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-Day-hike to Japfu Peak starting from Kigwema ~ 2024    </figcaption>
+        <figcaption class="photo-caption">
+            Day-hike to Japfu Peak starting from Kigwema ~ 2024        </figcaption>
     </figure>
 </div>
 
-
-
-<div class="album">
+<div class="album main-page-photo-block" id="Iiindia">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="taj_mahal.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/taj_mahal.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1121,7 +1109,7 @@ Day-hike to Japfu Peak starting from Kigwema ~ 2024    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="bryan_cecile_qutub_minar.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/bryan_cecile_qutub_minar.jpg.webp" alt="At Qutub Minar in Delhi">
-    <figcaption>
+    <figcaption class="photo-caption">
 At Qutub Minar in Delhi    </figcaption>
 </figure>
 
@@ -1130,7 +1118,7 @@ At Qutub Minar in Delhi    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="qutub_minar_dazed.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/qutub_minar_dazed.jpg.webp" alt="Qutub Minar tower">
-    <figcaption>
+    <figcaption class="photo-caption">
 Qutub Minar tower    </figcaption>
 </figure>
 
@@ -1139,7 +1127,7 @@ Qutub Minar tower    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="qutub_minar_rishik.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/qutub_minar_rishik.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1148,7 +1136,7 @@ Qutub Minar tower    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="dehli_ferris_wheel.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/dehli_ferris_wheel.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1157,7 +1145,7 @@ Qutub Minar tower    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="north_dehli.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/north_dehli.jpg.webp" alt="Busy street in Delhi">
-    <figcaption>
+    <figcaption class="photo-caption">
 Busy street in Delhi    </figcaption>
 </figure>
 
@@ -1168,7 +1156,7 @@ Busy street in Delhi    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="fefe_falls.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/fefe_falls.jpg.webp" alt="Fefe falls">
-    <figcaption>
+    <figcaption class="photo-caption">
 Fefe falls    </figcaption>
 </figure>
 
@@ -1177,7 +1165,7 @@ Fefe falls    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="more_waterfalls.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/more_waterfalls.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1186,7 +1174,7 @@ Fefe falls    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="cave_climbing.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/cave_climbing.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1195,7 +1183,7 @@ Fefe falls    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="good_lighting_cave.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/good_lighting_cave.jpg.webp" alt="Krem Chympe cave">
-    <figcaption>
+    <figcaption class="photo-caption">
 Krem Chympe cave    </figcaption>
 </figure>
 
@@ -1204,7 +1192,7 @@ Krem Chympe cave    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="root_bridge.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/root_bridge.jpg.webp" alt="The Mawkyrnot Living Root Bridge">
-    <figcaption>
+    <figcaption class="photo-caption">
 The Mawkyrnot Living Root Bridge    </figcaption>
 </figure>
 
@@ -1213,7 +1201,7 @@ The Mawkyrnot Living Root Bridge    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="nagakitchen.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/nagakitchen.jpg.webp" alt="Pork thali, Naga-style">
-    <figcaption>
+    <figcaption class="photo-caption">
 Pork thali, Naga-style    </figcaption>
 </figure>
 
@@ -1224,7 +1212,7 @@ Pork thali, Naga-style    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="rishik_tyler_farmers.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/rishik_tyler_farmers.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1233,7 +1221,7 @@ Pork thali, Naga-style    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="pregnant_goats.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/pregnant_goats.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1242,7 +1230,7 @@ Pork thali, Naga-style    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="cleansing_ceremony.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/cleansing_ceremony.jpg.webp" alt="The Haldi (cleansing) ceremony">
-    <figcaption>
+    <figcaption class="photo-caption">
 The Haldi (cleansing) ceremony    </figcaption>
 </figure>
 
@@ -1251,7 +1239,7 @@ The Haldi (cleansing) ceremony    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="shadow_golfcourse.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/shadow_golfcourse.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1260,7 +1248,7 @@ The Haldi (cleansing) ceremony    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="blurry_golfcourse.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/blurry_golfcourse.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1269,7 +1257,7 @@ The Haldi (cleansing) ceremony    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="action_marriage_reception.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/action_marriage_reception.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1280,7 +1268,7 @@ The Haldi (cleansing) ceremony    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="brahmaputra_picnic.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/brahmaputra_picnic.jpg.webp" alt="Picnic at the Brahmaputra river">
-    <figcaption>
+    <figcaption class="photo-caption">
 Picnic at the Brahmaputra river    </figcaption>
 </figure>
 
@@ -1289,7 +1277,7 @@ Picnic at the Brahmaputra river    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="rishik_smoking.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/rishik_smoking.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1298,7 +1286,7 @@ Picnic at the Brahmaputra river    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="kids_room_solar_system.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/kids_room_solar_system.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1307,7 +1295,7 @@ Picnic at the Brahmaputra river    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="golden_hour_stadium.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/golden_hour_stadium.jpg.webp" alt="Jorhat stadium">
-    <figcaption>
+    <figcaption class="photo-caption">
 Jorhat stadium    </figcaption>
 </figure>
 
@@ -1316,28 +1304,25 @@ Jorhat stadium    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="learning_drive_manual.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/learning_drive_manual.jpg.webp" alt="Learning to drive stick">
-    <figcaption>
+    <figcaption class="photo-caption">
 Learning to drive stick    </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-Trip to India with Tyler, Rishik, Cécile and Quentin ~ 2024    </figcaption>
+        <figcaption class="photo-caption">
+            Trip to India with Tyler, Rishik, Cécile and Quentin ~ 2024        </figcaption>
     </figure>
 </div>
 
-
-
-<div class="album">
+<div class="album main-page-photo-block" id="Lyon">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="croix_rousse.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/croix_rousse.jpg.webp" alt="Sunrise in La Croix Rousse neighborhood">
-    <figcaption>
+    <figcaption class="photo-caption">
 Sunrise in La Croix Rousse neighborhood    </figcaption>
 </figure>
 
@@ -1346,7 +1331,7 @@ Sunrise in La Croix Rousse neighborhood    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="julie_biking.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/julie_biking.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1355,7 +1340,7 @@ Sunrise in La Croix Rousse neighborhood    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="lyon_julie_laurine_bryan.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/lyon_julie_laurine_bryan.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1364,7 +1349,7 @@ Sunrise in La Croix Rousse neighborhood    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="sixb_plus.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/sixb_plus.jpg.webp" alt="Me flashing a 6b+">
-    <figcaption>
+    <figcaption class="photo-caption">
 Me flashing a 6b+    </figcaption>
 </figure>
 
@@ -1375,7 +1360,7 @@ Me flashing a 6b+    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="julie_laurine_dalle.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/julie_laurine_dalle.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1384,7 +1369,7 @@ Me flashing a 6b+    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="bryan_laurine_devers.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/bryan_laurine_devers.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1393,28 +1378,25 @@ Me flashing a 6b+    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="view_julie_laurine_apt.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/view_julie_laurine_apt.jpg.webp" alt="View from their apartment">
-    <figcaption>
+    <figcaption class="photo-caption">
 View from their apartment    </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-Weekend in Lyon with Julie and Laurine ~ 2024    </figcaption>
+        <figcaption class="photo-caption">
+            Weekend in Lyon with Julie and Laurine ~ 2024        </figcaption>
     </figure>
 </div>
 
-
-
-<div class="album">
+<div class="album main-page-photo-block" id="PizzaParty">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="pizza_prep.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/pizza_prep.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1423,7 +1405,7 @@ Weekend in Lyon with Julie and Laurine ~ 2024    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="pizza_tyler_anastasia.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/pizza_tyler_anastasia.jpg.webp" alt="Tyler and Anastasia's">
-    <figcaption>
+    <figcaption class="photo-caption">
 Tyler and Anastasia's    </figcaption>
 </figure>
 
@@ -1432,7 +1414,7 @@ Tyler and Anastasia's    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="pizza_eating.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/pizza_eating.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1441,7 +1423,7 @@ Tyler and Anastasia's    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="pizza_rishik.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/pizza_rishik.jpg.webp" alt="Rishik's">
-    <figcaption>
+    <figcaption class="photo-caption">
 Rishik's    </figcaption>
 </figure>
 
@@ -1452,7 +1434,7 @@ Rishik's    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="pizza_bryan.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/pizza_bryan.jpg.webp" alt="Mine">
-    <figcaption>
+    <figcaption class="photo-caption">
 Mine    </figcaption>
 </figure>
 
@@ -1461,7 +1443,7 @@ Mine    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="piaaz_sunny.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/piaaz_sunny.jpg.webp" alt="Sunny's">
-    <figcaption>
+    <figcaption class="photo-caption">
 Sunny's    </figcaption>
 </figure>
 
@@ -1470,28 +1452,25 @@ Sunny's    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="pizza_cecile.jpeg.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/pizza_cecile.jpeg.webp" alt="Cécile's">
-    <figcaption>
+    <figcaption class="photo-caption">
 Cécile's    </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-Pizza Party at Sunny and Cécile's place ~ 2024    </figcaption>
+        <figcaption class="photo-caption">
+            Pizza Party at Sunny and Cécile's place ~ 2024        </figcaption>
     </figure>
 </div>
 
-
-
-<div class="album">
+<div class="album main-page-photo-block" id="Pacs_Party">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="rishik_bryan_cleaning.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/rishik_bryan_cleaning.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1500,7 +1479,7 @@ Pizza Party at Sunny and Cécile's place ~ 2024    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="cecile_sunny_pacs.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/cecile_sunny_pacs.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1509,28 +1488,25 @@ Pizza Party at Sunny and Cécile's place ~ 2024    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="quentin_bryan_pacs.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/quentin_bryan_pacs.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-Cécile's housewarming party ~ 2024    </figcaption>
+        <figcaption class="photo-caption">
+            Cécile's housewarming party ~ 2024        </figcaption>
     </figure>
 </div>
 
-
-
-<div class="album">
+<div class="album main-page-photo-block" id="GR10">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="GR10100_0185_greatlighting.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/GR10100_0185_greatlighting.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1539,7 +1515,7 @@ Cécile's housewarming party ~ 2024    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="GR10100_0391_ontop.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/GR10100_0391_ontop.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1550,7 +1526,7 @@ Cécile's housewarming party ~ 2024    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="GR10100_0318_majesticcow.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/GR10100_0318_majesticcow.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
@@ -1559,58 +1535,55 @@ Cécile's housewarming party ~ 2024    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="GR10100_0406_openroad.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/GR10100_0406_openroad.jpg.webp" alt="">
-    <figcaption>
+    <figcaption class="photo-caption">
     </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-Through-hike in the Pyrenees on the GR10 trail ~ 2024    </figcaption>
+        <figcaption class="photo-caption">
+            Through-hike in the Pyrenees on the GR10 trail ~ 2024        </figcaption>
     </figure>
 </div>
 
-
-<a href="labraderie.html">
-<figure class="image">
+<a id="labraderie" href="labraderie.html">
+<figure class="image main-page-photo-block" id="labraderie">
     <img src="../../photos/lowres/labraderie.jpg.webp" alt="A bunch of us at La Braderie in Lille ~ 2024">
-    <figcaption>
-A bunch of us at La Braderie in Lille ~ 2024    </figcaption>
+    <figcaption class="photo-caption">subdir
+        A bunch of us at La Braderie in Lille ~ 2024    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="IMG-20240820-WA0010.html">
-<figure class="image">
+<a id="IMGWA_20" href="IMG-20240820-WA0010.html">
+<figure class="image main-page-photo-block" id="IMGWA_20">
     <img src="../../photos/lowres/IMG-20240820-WA0010.jpg.webp" alt="Adrien and me at Cours Julien in Marseille ~ 2024">
-    <figcaption>
-Adrien and me at Cours Julien in Marseille ~ 2024    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Adrien and me at Cours Julien in Marseille ~ 2024    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="tyler_sunny_quentin_new_apt.html">
-<figure class="image">
+<a id="quentin" href="tyler_sunny_quentin_new_apt.html">
+<figure class="image main-page-photo-block" id="quentin">
     <img src="../../photos/lowres/tyler_sunny_quentin_new_apt.jpg.webp" alt="Tyler, Sunny, Me, and Quentin in a new apartment with a new camera  ~ 2024">
-    <figcaption>
-Tyler, Sunny, Me, and Quentin in a new apartment with a new camera  ~ 2024    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Tyler, Sunny, Me, and Quentin in a new apartment with a new camera  ~ 2024    </figcaption>
 </figure>
 
 </a>
 
 
-
-<div class="album">
+<div class="album main-page-photo-block" id="scarpeescaut">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="bryan-tyler-rishik-biking.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/bryan-tyler-rishik-biking.jpg.webp" alt="Day one">
-    <figcaption>
+    <figcaption class="photo-caption">
 Day one    </figcaption>
 </figure>
 
@@ -1619,68 +1592,65 @@ Day one    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="biketrip.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/biketrip.jpg.webp" alt="Day two">
-    <figcaption>
+    <figcaption class="photo-caption">
 Day two    </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-Me, Tyler, and Rishik biking in the Scarpe-Escaut Park ~ 2024    </figcaption>
+        <figcaption class="photo-caption">
+            Me, Tyler, and Rishik biking in the Scarpe-Escaut Park ~ 2024        </figcaption>
     </figure>
 </div>
 
-
-<a href="PXL_20240810_102847355.MP.html">
-<figure class="image">
+<a id="PXL" href="PXL_20240810_102847355.MP.html">
+<figure class="image main-page-photo-block" id="PXL">
     <img src="../../photos/lowres/PXL_20240810_102847355.MP.jpg.webp" alt="Me hiking in the Ardennes forest ~ 2024">
-    <figcaption>
-Me hiking in the Ardennes forest ~ 2024    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me hiking in the Ardennes forest ~ 2024    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="the-boyz.html">
-<figure class="image">
+<a id="boyz" href="the-boyz.html">
+<figure class="image main-page-photo-block" id="boyz">
     <img src="../../photos/lowres/the-boyz.jpg.webp" alt="Out with The Boys ~ 2024">
-    <figcaption>
-Out with The Boys ~ 2024    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Out with The Boys ~ 2024    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="avi-rishik-moi-amsterdam.html">
-<figure class="image">
+<a id="Amsterdam_2024_14" href="avi-rishik-moi-amsterdam.html">
+<figure class="image main-page-photo-block" id="Amsterdam_2024_14">
     <img src="../../photos/lowres/avi-rishik-moi-amsterdam.jpg.webp" alt="Aviraj, Rishik, and Me in Amsterdam ~ 2024">
-    <figcaption>
-Aviraj, Rishik, and Me in Amsterdam ~ 2024    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Aviraj, Rishik, and Me in Amsterdam ~ 2024    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="tylerbday2024.html">
-<figure class="image">
+<a id="tylerbday" href="tylerbday2024.html">
+<figure class="image main-page-photo-block" id="tylerbday">
     <img src="../../photos/lowres/tylerbday2024.jpg.webp" alt="Tyler&rsquo;s 29th birthday with Me, Tyler, Rishik, and Sunny ~ 2024">
-    <figcaption>
-Tyler&rsquo;s 29th birthday with Me, Tyler, Rishik, and Sunny ~ 2024    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Tyler&rsquo;s 29th birthday with Me, Tyler, Rishik, and Sunny ~ 2024    </figcaption>
 </figure>
 
 </a>
 
 
-
-<div class="album">
+<div class="album main-page-photo-block" id="Morocco_Spain">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="couscous.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/couscous.jpg.webp" alt="Eating Sami&rsquo;s mother&rsquo;s couscous with Alex, Me, Sami, and Tim">
-    <figcaption>
+    <figcaption class="photo-caption">
 Eating Sami&rsquo;s mother&rsquo;s couscous with Alex, Me, Sami, and Tim    </figcaption>
 </figure>
 
@@ -1689,7 +1659,7 @@ Eating Sami&rsquo;s mother&rsquo;s couscous with Alex, Me, Sami, and Tim    </fi
 <div class="photocolumn"> <span style="color:grey"><a href="asilah-beach.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/asilah-beach.jpg.webp" alt="On the beach near Asilah with Margaux, Me, Tim, Constance, Clemence, and Sami">
-    <figcaption>
+    <figcaption class="photo-caption">
 On the beach near Asilah with Margaux, Me, Tim, Constance, Clemence, and Sami    </figcaption>
 </figure>
 
@@ -1698,7 +1668,7 @@ On the beach near Asilah with Margaux, Me, Tim, Constance, Clemence, and Sami   
 <div class="photocolumn"> <span style="color:grey"><a href="maroc-hike-hole.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/maroc-hike-hole.jpg.webp" alt="Hiking near Tetouan with Sami, Tim, Me, and Flo">
-    <figcaption>
+    <figcaption class="photo-caption">
 Hiking near Tetouan with Sami, Tim, Me, and Flo    </figcaption>
 </figure>
 
@@ -1707,7 +1677,7 @@ Hiking near Tetouan with Sami, Tim, Me, and Flo    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="maroc-hike-cat.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/maroc-hike-cat.jpg.webp" alt="Climbing near Tetouan with Tim, Me, and a village cat">
-    <figcaption>
+    <figcaption class="photo-caption">
 Climbing near Tetouan with Tim, Me, and a village cat    </figcaption>
 </figure>
 
@@ -1718,7 +1688,7 @@ Climbing near Tetouan with Tim, Me, and a village cat    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="tangiers-coffee.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/tangiers-coffee.jpg.webp" alt="Me and Tim at a café in Tangiers">
-    <figcaption>
+    <figcaption class="photo-caption">
 Me and Tim at a café in Tangiers    </figcaption>
 </figure>
 
@@ -1727,7 +1697,7 @@ Me and Tim at a café in Tangiers    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="flo-tim-spain.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/flo-tim-spain.jpg.webp" alt="Flo, Tim, and Me in Algeciras">
-    <figcaption>
+    <figcaption class="photo-caption">
 Flo, Tim, and Me in Algeciras    </figcaption>
 </figure>
 
@@ -1736,7 +1706,7 @@ Flo, Tim, and Me in Algeciras    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="bryan-tim-stokes.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/bryan-tim-stokes.jpg.webp" alt="Me and Tim at a surf hostel near Zarautz">
-    <figcaption>
+    <figcaption class="photo-caption">
 Me and Tim at a surf hostel near Zarautz    </figcaption>
 </figure>
 
@@ -1745,48 +1715,45 @@ Me and Tim at a surf hostel near Zarautz    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="tim-bryan-horses.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/tim-bryan-horses.jpg.webp" alt="Me and Tim at a horse farm in Basque country">
-    <figcaption>
+    <figcaption class="photo-caption">
 Me and Tim at a horse farm in Basque country    </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-Trip to Morocco to visit Sami, and the return through Spain ~ 2024    </figcaption>
+        <figcaption class="photo-caption">
+            Trip to Morocco to visit Sami, and the return through Spain ~ 2024        </figcaption>
     </figure>
 </div>
 
-
-<a href="bryan_dance_coloc_party.html">
-<figure class="image">
+<a id="bryan" href="bryan_dance_coloc_party.html">
+<figure class="image main-page-photo-block" id="bryan">
     <img src="../../photos/lowres/bryan_dance_coloc_party.jpg.webp" alt="Me dancing ~ 2024">
-    <figcaption>
-Me dancing ~ 2024    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me dancing ~ 2024    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="julie_bryan_coloc_party.html">
-<figure class="image">
+<a id="julie" href="julie_bryan_coloc_party.html">
+<figure class="image main-page-photo-block" id="julie">
     <img src="../../photos/lowres/julie_bryan_coloc_party.jpg.webp" alt="Julie and I in a heated discussion ~ 2024">
-    <figcaption>
-Julie and I in a heated discussion ~ 2024    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Julie and I in a heated discussion ~ 2024    </figcaption>
 </figure>
 
 </a>
 
 
-
-<div class="album">
+<div class="album main-page-photo-block" id="Silas_Bday">
     <figure class="album">
 <div class="photorow">
 <div class="photocolumn"> <span style="color:grey"><a href="sila-bday-balcony.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/sila-bday-balcony.jpg.webp" alt="In Nempont-Saint-Firmin">
-    <figcaption>
+    <figcaption class="photo-caption">
 In Nempont-Saint-Firmin    </figcaption>
 </figure>
 
@@ -1795,445 +1762,443 @@ In Nempont-Saint-Firmin    </figcaption>
 <div class="photocolumn"> <span style="color:grey"><a href="sila-bday-beach.html">
 <figure class="albumimage">
     <img class="albumimage" src="../../photos/lowres/sila-bday-beach.jpg.webp" alt="Also in Berck">
-    <figcaption>
+    <figcaption class="photo-caption">
 Also in Berck    </figcaption>
 </figure>
 
 </a></span>
  </div>
 </div>
-
-    <figcaption>
-Sila&rsquo;s 30th birthday in Nempont-Saint-Firmin ~ 2024    </figcaption>
+        <figcaption class="photo-caption">
+            Sila&rsquo;s 30th birthday in Nempont-Saint-Firmin ~ 2024        </figcaption>
     </figure>
 </div>
 
-
-<a href="cassy-antoine-party.html">
-<figure class="image">
+<a id="Cassandra_2024_2" href="cassy-antoine-party.html">
+<figure class="image main-page-photo-block" id="Cassandra_2024_2">
     <img src="../../photos/lowres/cassy-antoine-party.jpg.webp" alt="House party with Cassandra, Antoine, and Me ~ 2024">
-    <figcaption>
-House party with Cassandra, Antoine, and Me ~ 2024    </figcaption>
+    <figcaption class="photo-caption">subdir
+        House party with Cassandra, Antoine, and Me ~ 2024    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="newyear2024.html">
-<figure class="image">
+<a id="newyear2024" href="newyear2024.html">
+<figure class="image main-page-photo-block" id="newyear2024">
     <img src="../../photos/lowres/newyear2024.jpg.webp" alt="New year&rsquo;s with Grazilla, Cécile, Tyler, Sunny, and Me ~ 2024">
-    <figcaption>
-New year&rsquo;s with Grazilla, Cécile, Tyler, Sunny, and Me ~ 2024    </figcaption>
+    <figcaption class="photo-caption">subdir
+        New year&rsquo;s with Grazilla, Cécile, Tyler, Sunny, and Me ~ 2024    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="roommates_sami.html">
-<figure class="image">
+<a id="Samis_2023_20" href="roommates_sami.html">
+<figure class="image main-page-photo-block" id="Samis_2023_20">
     <img src="../../photos/lowres/roommates_sami.jpg.webp" alt="Sami&rsquo;s farewell party with all the roommates ~ 2023">
-    <figcaption>
-Sami&rsquo;s farewell party with all the roommates ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Sami&rsquo;s farewell party with all the roommates ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="bryan-jason-citadelle.html">
-<figure class="image">
+<a id="Citadelle_2023_19" href="bryan-jason-citadelle.html">
+<figure class="image main-page-photo-block" id="Citadelle_2023_19">
     <img src="../../photos/lowres/bryan-jason-citadelle.jpg.webp" alt="Me and Jason at La Citadelle de Lille ~ 2023">
-    <figcaption>
-Me and Jason at La Citadelle de Lille ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me and Jason at La Citadelle de Lille ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="adam-bryan-jason-ghent.html">
-<figure class="image">
+<a id="Adam_2023_18" href="adam-bryan-jason-ghent.html">
+<figure class="image main-page-photo-block" id="Adam_2023_18">
     <img src="../../photos/lowres/adam-bryan-jason-ghent.jpg.webp" alt="Adam, Me, and Jason on the edge of a canal in Ghent ~ 2023">
-    <figcaption>
-Adam, Me, and Jason on the edge of a canal in Ghent ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Adam, Me, and Jason on the edge of a canal in Ghent ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="bryan-piscine.html">
-<figure class="image">
+<a id="Piscine_2023_17" href="bryan-piscine.html">
+<figure class="image main-page-photo-block" id="Piscine_2023_17">
     <img src="../../photos/lowres/bryan-piscine.jpg.webp" alt="Me at La Piscine ~ 2023">
-    <figcaption>
-Me at La Piscine ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me at La Piscine ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="bryan-julie-namur.html">
-<figure class="image">
+<a id="Centenaire_2023_16" href="bryan-julie-namur.html">
+<figure class="image main-page-photo-block" id="Centenaire_2023_16">
     <img src="../../photos/lowres/bryan-julie-namur.jpg.webp" alt="Julie and Me at on Le Centenaire at Beez ~ 2023">
-    <figcaption>
-Julie and Me at on Le Centenaire at Beez ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Julie and Me at on Le Centenaire at Beez ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="alex-nadir-me-sachin-julien-morzine.html">
-<figure class="image">
+<a id="Thoms_2023_15" href="alex-nadir-me-sachin-julien-morzine.html">
+<figure class="image main-page-photo-block" id="Thoms_2023_15">
     <img src="../../photos/lowres/alex-nadir-me-sachin-julien-morzine.jpg.webp" alt="Alex, Nadir, Me, Sachin, and Julien at Thom&rsquo;s wedding in Morzine ~ 2023">
-    <figcaption>
-Alex, Nadir, Me, Sachin, and Julien at Thom&rsquo;s wedding in Morzine ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Alex, Nadir, Me, Sachin, and Julien at Thom&rsquo;s wedding in Morzine ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="eatin-rishik-chicken.html">
-<figure class="image">
+<a id="rishiks_2023_14" href="eatin-rishik-chicken.html">
+<figure class="image main-page-photo-block" id="rishiks_2023_14">
     <img src="../../photos/lowres/eatin-rishik-chicken.jpg.webp" alt="Me eating Rishik&rsquo;s chicken for Indian Independence Day ~ 2023">
-    <figcaption>
-Me eating Rishik&rsquo;s chicken for Indian Independence Day ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me eating Rishik&rsquo;s chicken for Indian Independence Day ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="rishik-quentin-me-fete.html">
-<figure class="image">
+<a id="Quentin_2023_13" href="rishik-quentin-me-fete.html">
+<figure class="image main-page-photo-block" id="Quentin_2023_13">
     <img src="../../photos/lowres/rishik-quentin-me-fete.jpg.webp" alt="Rishik, Quentin, and Me after a long night ~ 2023">
-    <figcaption>
-Rishik, Quentin, and Me after a long night ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Rishik, Quentin, and Me after a long night ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="me-michael-st-charles.html">
-<figure class="image">
+<a id="Michael_2023_12" href="me-michael-st-charles.html">
+<figure class="image main-page-photo-block" id="Michael_2023_12">
     <img src="../../photos/lowres/me-michael-st-charles.jpg.webp" alt="Me and Michael on St. Charles Bridge in Prague ~ 2023">
-    <figcaption>
-Me and Michael on St. Charles Bridge in Prague ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me and Michael on St. Charles Bridge in Prague ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="sachin-me-edi-martijn.html">
-<figure class="image">
+<a id="thoms" href="sachin-me-edi-martijn.html">
+<figure class="image main-page-photo-block" id="thoms">
     <img src="../../photos/lowres/sachin-me-edi-martijn.jpg.webp" alt="Sachin, Me, Edi, and Martijn at Thom&rsquo;s bachelor party in Paris ~ 2023">
-    <figcaption>
-Sachin, Me, Edi, and Martijn at Thom&rsquo;s bachelor party in Paris ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Sachin, Me, Edi, and Martijn at Thom&rsquo;s bachelor party in Paris ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="me-silvio-tyler-colin-tok.html">
-<figure class="image">
+<a id="Silvio_2023_10" href="me-silvio-tyler-colin-tok.html">
+<figure class="image main-page-photo-block" id="Silvio_2023_10">
     <img src="../../photos/lowres/me-silvio-tyler-colin-tok.jpg.webp" alt="Me, Silvio, Tyler, and Colin at Tok-ici (With Pierre on the Bass) ~ 2023">
-    <figcaption>
-Me, Silvio, Tyler, and Colin at Tok-ici (With Pierre on the Bass) ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me, Silvio, Tyler, and Colin at Tok-ici (With Pierre on the Bass) ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="Silvio-rishik-me-colin-sarrazins.html">
-<figure class="image">
+<a id="Sarrazins_2023_9" href="Silvio-rishik-me-colin-sarrazins.html">
+<figure class="image main-page-photo-block" id="Sarrazins_2023_9">
     <img src="../../photos/lowres/Silvio-rishik-me-colin-sarrazins.jpg.webp" alt="Silvio, Rishik, Me, and Colin at Place des Sarrazins ~ 2023">
-    <figcaption>
-Silvio, Rishik, Me, and Colin at Place des Sarrazins ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Silvio, Rishik, Me, and Colin at Place des Sarrazins ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="adri-moi-flo-sami-banana.html">
-<figure class="image">
+<a id="Hypercourt_2023_8" href="adri-moi-flo-sami-banana.html">
+<figure class="image main-page-photo-block" id="Hypercourt_2023_8">
     <img src="../../photos/lowres/adri-moi-flo-sami-banana.jpg.webp" alt="Adri, Me, Flo, and Sami en route towards Hypercourt for Banana Boom ~ 2023">
-    <figcaption>
-Adri, Me, Flo, and Sami en route towards Hypercourt for Banana Boom ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Adri, Me, Flo, and Sami en route towards Hypercourt for Banana Boom ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="atomium.html">
-<figure class="image">
+<a id="Michael_2023_7" href="atomium.html">
+<figure class="image main-page-photo-block" id="Michael_2023_7">
     <img src="../../photos/lowres/atomium.jpg.webp" alt="Me, Michael, and Tyler at the Atomium in Brussels ~ 2023">
-    <figcaption>
-Me, Michael, and Tyler at the Atomium in Brussels ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me, Michael, and Tyler at the Atomium in Brussels ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="egouts.html">
-<figure class="image">
+<a id="Brussels_2023_6" href="egouts.html">
+<figure class="image main-page-photo-block" id="Brussels_2023_6">
     <img src="../../photos/lowres/egouts.jpg.webp" alt="Me in the Sewers of Brussels ~ 2023">
-    <figcaption>
-Me in the Sewers of Brussels ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me in the Sewers of Brussels ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="parents-lille.html">
-<figure class="image">
+<a id="courtyard_2023_5" href="parents-lille.html">
+<figure class="image main-page-photo-block" id="courtyard_2023_5">
     <img src="../../photos/lowres/parents-lille.jpg.webp" alt="Me, my parents, Laura, Aubrée, and Tyler in my courtyard ~ 2023">
-    <figcaption>
-Me, my parents, Laura, Aubrée, and Tyler in my courtyard ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me, my parents, Laura, Aubrée, and Tyler in my courtyard ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="aux-enfants-terribles.html">
-<figure class="image">
+<a id="terrible" href="aux-enfants-terribles.html">
+<figure class="image main-page-photo-block" id="terrible">
     <img src="../../photos/lowres/aux-enfants-terribles.jpg.webp" alt="Aubrée, Sunny, Me, and Tyler at <em>Aux Enfants Terribles</em> ~ 2023">
-    <figcaption>
-Aubrée, Sunny, Me, and Tyler at <em>Aux Enfants Terribles</em> ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Aubrée, Sunny, Me, and Tyler at <em>Aux Enfants Terribles</em> ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="colocs-court.html">
-<figure class="image">
+<a id="roommates_2023_3" href="colocs-court.html">
+<figure class="image main-page-photo-block" id="roommates_2023_3">
     <img src="../../photos/lowres/colocs-court.jpg.webp" alt="Me and my roommates in our courtyard ~ 2023">
-    <figcaption>
-Me and my roommates in our courtyard ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me and my roommates in our courtyard ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="flo-anniv.html">
-<figure class="image">
+<a id="restaurant_2023_2" href="flo-anniv.html">
+<figure class="image main-page-photo-block" id="restaurant_2023_2">
     <img src="../../photos/lowres/flo-anniv.jpg.webp" alt="Me, Flo, and Constance at a restaurant in Lille ~ 2023">
-    <figcaption>
-Me, Flo, and Constance at a restaurant in Lille ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me, Flo, and Constance at a restaurant in Lille ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="jason-alcohol.html">
-<figure class="image">
+<a id="Pittsburgh_2023_1" href="jason-alcohol.html">
+<figure class="image main-page-photo-block" id="Pittsburgh_2023_1">
     <img src="../../photos/lowres/jason-alcohol.jpg.webp" alt="Me, Jason, and some others in Pittsburgh one night ~ 2023">
-    <figcaption>
-Me, Jason, and some others in Pittsburgh one night ~ 2023    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me, Jason, and some others in Pittsburgh one night ~ 2023    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="picnic_anton.html">
-<figure class="image">
+<a id="including_2022_2" href="picnic_anton.html">
+<figure class="image main-page-photo-block" id="including_2022_2">
     <img src="../../photos/lowres/picnic_anton.jpg.webp" alt="A bunch of people including Anton et a picnic in Paris ~ 2022">
-    <figcaption>
-A bunch of people including Anton et a picnic in Paris ~ 2022    </figcaption>
+    <figcaption class="photo-caption">subdir
+        A bunch of people including Anton et a picnic in Paris ~ 2022    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="swap-hai-bryan-nice.html">
-<figure class="image">
+<a id="Swap_2022_1" href="swap-hai-bryan-nice.html">
+<figure class="image main-page-photo-block" id="Swap_2022_1">
     <img src="../../photos/lowres/swap-hai-bryan-nice.jpg.webp" alt="Swap, Hai and me in Nice ~ 2022">
-    <figcaption>
-Swap, Hai and me in Nice ~ 2022    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Swap, Hai and me in Nice ~ 2022    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="bryan-michael-tyler-anvers.html">
-<figure class="image">
+<a id="Michael_2021_8" href="bryan-michael-tyler-anvers.html">
+<figure class="image main-page-photo-block" id="Michael_2021_8">
     <img src="../../photos/lowres/bryan-michael-tyler-anvers.jpg.webp" alt="Me, Michael, and Tyler in Antwerp ~ 2021">
-    <figcaption>
-Me, Michael, and Tyler in Antwerp ~ 2021    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me, Michael, and Tyler in Antwerp ~ 2021    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="bryan-colin_cape-perpetua.html">
-<figure class="image">
+<a id="Perpetua_2021_7" href="bryan-colin_cape-perpetua.html">
+<figure class="image main-page-photo-block" id="Perpetua_2021_7">
     <img src="../../photos/lowres/bryan-colin_cape-perpetua.jpg.webp" alt="Me and Colin at Cape Perpetua, OR ~ 2021">
-    <figcaption>
-Me and Colin at Cape Perpetua, OR ~ 2021    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me and Colin at Cape Perpetua, OR ~ 2021    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="michael-tyler-bryan-dunkerque.html">
-<figure class="image">
+<a id="Dunkerque_2021_6" href="michael-tyler-bryan-dunkerque.html">
+<figure class="image main-page-photo-block" id="Dunkerque_2021_6">
     <img src="../../photos/lowres/michael-tyler-bryan-dunkerque.jpg.webp" alt="Michael, Tyler, and me in Dunkerque ~ 2021">
-    <figcaption>
-Michael, Tyler, and me in Dunkerque ~ 2021    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Michael, Tyler, and me in Dunkerque ~ 2021    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="michael-julie-bryan-tyler-dunkerque.html">
-<figure class="image">
+<a id="Dunkerque_2021_5" href="michael-julie-bryan-tyler-dunkerque.html">
+<figure class="image main-page-photo-block" id="Dunkerque_2021_5">
     <img src="../../photos/lowres/michael-julie-bryan-tyler-dunkerque.jpg.webp" alt="Michael, Julie, me, and Tyler in Dunkerque ~ 2021">
-    <figcaption>
-Michael, Julie, me, and Tyler in Dunkerque ~ 2021    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Michael, Julie, me, and Tyler in Dunkerque ~ 2021    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="julien-bryan-nadir-yanomi-skate-blabla.html">
-<figure class="image">
+<a id="Julien_2021_4" href="julien-bryan-nadir-yanomi-skate-blabla.html">
+<figure class="image main-page-photo-block" id="Julien_2021_4">
     <img src="../../photos/lowres/julien-bryan-nadir-yanomi-skate-blabla.jpg.webp" alt="Julien, Me, Nadir, and Yanomi at Blabla ~ 2021">
-    <figcaption>
-Julien, Me, Nadir, and Yanomi at Blabla ~ 2021    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Julien, Me, Nadir, and Yanomi at Blabla ~ 2021    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="bryan-blabla-skate.html">
-<figure class="image">
+<a id="skateboard_2021_3" href="bryan-blabla-skate.html">
+<figure class="image main-page-photo-block" id="skateboard_2021_3">
     <img src="../../photos/lowres/bryan-blabla-skate.jpg.webp" alt="Just me on a skateboard at Blabla ~ 2021">
-    <figcaption>
-Just me on a skateboard at Blabla ~ 2021    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Just me on a skateboard at Blabla ~ 2021    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="bryan-julie-etienne-cici-william-yanomi-grenoble.html">
-<figure class="image">
+<a id="Bastille_2021_2" href="bryan-julie-etienne-cici-william-yanomi-grenoble.html">
+<figure class="image main-page-photo-block" id="Bastille_2021_2">
     <img src="../../photos/lowres/bryan-julie-etienne-cici-william-yanomi-grenoble.jpg.webp" alt="Half of me, Julie, Etienne, Cici, William, and Yanomi at Fort de la Bastille, Grénoble ~ 2021">
-    <figcaption>
-Half of me, Julie, Etienne, Cici, William, and Yanomi at Fort de la Bastille, Grénoble ~ 2021    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Half of me, Julie, Etienne, Cici, William, and Yanomi at Fort de la Bastille, Grénoble ~ 2021    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="bryan-jeremy.png.html">
-<figure class="image">
+<a id="Jeremy_2021_1" href="bryan-jeremy.png.html">
+<figure class="image main-page-photo-block" id="Jeremy_2021_1">
     <img src="../../photos/lowres/bryan-jeremy.png.webp" alt="Me, Jeremy, and Mathieu on French TV ~ 2021">
-    <figcaption>
-Me, Jeremy, and Mathieu on French TV ~ 2021    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me, Jeremy, and Mathieu on French TV ~ 2021    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="michael-bryan-lecart.html">
-<figure class="image">
+<a id="lecart" href="michael-bryan-lecart.html">
+<figure class="image main-page-photo-block" id="lecart">
     <img src="../../photos/lowres/michael-bryan-lecart.jpg.webp" alt="Me and Michael at L&rsquo;Écart ~ 2020">
-    <figcaption>
-Me and Michael at L&rsquo;Écart ~ 2020    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me and Michael at L&rsquo;Écart ~ 2020    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="michael-bryan-julie.html">
-<figure class="image">
+<a id="Michael_2020_4" href="michael-bryan-julie.html">
+<figure class="image main-page-photo-block" id="Michael_2020_4">
     <img src="../../photos/lowres/michael-bryan-julie.jpg.webp" alt="Michael, me, and Julie in Wazemmes ~ 2020">
-    <figcaption>
-Michael, me, and Julie in Wazemmes ~ 2020    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Michael, me, and Julie in Wazemmes ~ 2020    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="alex-bryan-paris.html">
-<figure class="image">
+<a id="Viaduc_2020_3" href="alex-bryan-paris.html">
+<figure class="image main-page-photo-block" id="Viaduc_2020_3">
     <img src="../../photos/lowres/alex-bryan-paris.jpg.webp" alt="Alex and Bryan at Le Viaduc ~ 2020">
-    <figcaption>
-Alex and Bryan at Le Viaduc ~ 2020    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Alex and Bryan at Le Viaduc ~ 2020    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="Anton-william-bryan-la-seine.html">
-<figure class="image">
+<a id="William_2020_2" href="Anton-william-bryan-la-seine.html">
+<figure class="image main-page-photo-block" id="William_2020_2">
     <img src="../../photos/lowres/Anton-william-bryan-la-seine.jpg.webp" alt="Anton, William and me at Jardin Tino Rossi ~ 2020">
-    <figcaption>
-Anton, William and me at Jardin Tino Rossi ~ 2020    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Anton, William and me at Jardin Tino Rossi ~ 2020    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="bryan-julie-dune.html">
-<figure class="image">
+<a id="Julie_2020_1" href="bryan-julie-dune.html">
+<figure class="image main-page-photo-block" id="Julie_2020_1">
     <img src="../../photos/lowres/bryan-julie-dune.jpg.webp" alt="Me and Julie at Dune du Pilat ~ 2020">
-    <figcaption>
-Me and Julie at Dune du Pilat ~ 2020    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me and Julie at Dune du Pilat ~ 2020    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="a-bunch-of-people-chez-moi-ivry.html">
-<figure class="image">
+<a id="ivry" href="a-bunch-of-people-chez-moi-ivry.html">
+<figure class="image main-page-photo-block" id="ivry">
     <img src="../../photos/lowres/a-bunch-of-people-chez-moi-ivry.jpg.webp" alt="A bunch of people in Ivry-sur-Seine ~ 2019">
-    <figcaption>
-A bunch of people in Ivry-sur-Seine ~ 2019    </figcaption>
+    <figcaption class="photo-caption">subdir
+        A bunch of people in Ivry-sur-Seine ~ 2019    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="michael-bryan-lorenzo-edinburgh.html">
-<figure class="image">
+<a id="Edinburgh_2019_2" href="michael-bryan-lorenzo-edinburgh.html">
+<figure class="image main-page-photo-block" id="Edinburgh_2019_2">
     <img src="../../photos/lowres/michael-bryan-lorenzo-edinburgh.jpg.webp" alt="Michael, me, and Lorenzo in Edinburgh ~ 2019">
-    <figcaption>
-Michael, me, and Lorenzo in Edinburgh ~ 2019    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Michael, me, and Lorenzo in Edinburgh ~ 2019    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="chunglab.html">
-<figure class="image">
+<a id="Chung_2019_1" href="chunglab.html">
+<figure class="image main-page-photo-block" id="Chung_2019_1">
     <img src="../../photos/lowres/chunglab.jpg.webp" alt="Chung Lab ~ 2019">
-    <figcaption>
-Chung Lab ~ 2019    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Chung Lab ~ 2019    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="tyler-lorenzo-remy-bryan-blabla2018.html">
-<figure class="image">
+<a id="Lorenzo_2018_2" href="tyler-lorenzo-remy-bryan-blabla2018.html">
+<figure class="image main-page-photo-block" id="Lorenzo_2018_2">
     <img src="../../photos/lowres/tyler-lorenzo-remy-bryan-blabla2018.jpg.webp" alt="Tyler, me, Lorenzo, and Rémy ~ 2018">
-    <figcaption>
-Tyler, me, Lorenzo, and Rémy ~ 2018    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Tyler, me, Lorenzo, and Rémy ~ 2018    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="billpatbryan.html">
-<figure class="image">
+<a id="Patrick_2018_1" href="billpatbryan.html">
+<figure class="image main-page-photo-block" id="Patrick_2018_1">
     <img src="../../photos/lowres/billpatbryan.jpg.webp" alt="Me, Patrick, and Bill ~ 2018">
-    <figcaption>
-Me, Patrick, and Bill ~ 2018    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me, Patrick, and Bill ~ 2018    </figcaption>
 </figure>
 
 </a>
 
 
-<a href="me_and_bill_on_a_mountain_with_a_dog.html">
-<figure class="image">
+<a id="mountain_2017_1" href="me_and_bill_on_a_mountain_with_a_dog.html">
+<figure class="image main-page-photo-block" id="mountain_2017_1">
     <img src="../../photos/lowres/me_and_bill_on_a_mountain_with_a_dog.jpg.webp" alt="Me and Bill and a dog on a mountain ~ 2017">
-    <figcaption>
-Me and Bill and a dog on a mountain ~ 2017    </figcaption>
+    <figcaption class="photo-caption">subdir
+        Me and Bill and a dog on a mountain ~ 2017    </figcaption>
 </figure>
 
 </a>
