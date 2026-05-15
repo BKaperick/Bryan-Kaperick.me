@@ -52,15 +52,17 @@ def get_album_block(album, photo_blocks):
 
 def get_photo_captioned_figure(key, subdir):
     """
+    Photo in its dedicated page, not within an album.
     Figure with caption.  If `album_key` is given AND `use_photo_caption` is True,
     then we use the description from the album instead
     """
     caption = f"<?=$p->{key}->$lang;?> ~ <?=$p->{key}->year;?>"
     file_suffix = ".webp" if subdir == "lowres" else ""
+    image_class = "image" if subdir == "lowres" else "single-image"
 
     return "\n".join(
         [
-            f'<figure class="image main-page-photo-block" id="{key}">',
+            f'<figure class="{image_class} main-page-photo-block" id="{key}">',
             f'<img src=<?="/photos/{subdir}/" . $p->{key}->name . "{file_suffix}";?> alt="{caption}">',
             '<figcaption class="photo-caption">',
             f"    {caption}",
@@ -92,7 +94,7 @@ def get_photo_captioned_figure_with_previous_next(
 
     return "\n".join(
         [
-            '<figure class="image">'
+            '<figure class="single-image">'
             f'<img src=<?="/photos/{subdir}/" . $p->{key}->name;?> alt="{caption}">'
             '<figcaption class="photo-caption">'
             f"    {prev_link}"
@@ -123,6 +125,7 @@ def get_photo_captioned_figure_in_album(key):
 
 
 def get_photo_block_in_album(key, file_name):
+    """A Photo in its dedicated page, within the context of an album."""
     photo_block = get_photo_captioned_figure_in_album(key)
     return f"""<span style="color:grey">
     <a href="<?="/" . $lang . "/photos/{file_name}.php";?>">
@@ -263,8 +266,6 @@ with open("photos.json", "r") as fw:
             )
         else:
             block = get_photo_captioned_figure(key, "raw")
-        block = block.replace('class="image"', 'class="single-image"')
-        block = block.replace('class="image ', 'class="single-image ')
 
         html_path = "./raw_with_label/" + file_name + ".generated.html"
         with open(html_path, "w") as f:
