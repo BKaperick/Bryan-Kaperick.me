@@ -4,7 +4,7 @@ import sys
 from math import sqrt, floor
 
 sys.path.append(os.path.abspath("../../"))
-from helper import *
+from helper import order_photos
 from create_leaderboard import *
 
 photo_blocks = []
@@ -59,7 +59,7 @@ def get_photo_captioned_figure(key, subdir):
 
     return f"""<figure class="image main-page-photo-block" id="{key}">
     <img src=<?="/photos/{subdir}/" . $p->{key}->name . "{file_suffix}";?> alt="<?=$p->{key}->$lang;?>{caption_year}">
-    <figcaption class="photo-caption">subdir
+    <figcaption class="photo-caption">
         <?=$p->{key}->$lang;?>{caption_year}
     </figcaption>
 </figure>
@@ -107,20 +107,22 @@ def get_photo_block(key, file_name):
 
 
 def get_photo_captioned_figure_in_album(key):
-    return """<figure class="albumimage">
-    <img class="albumimage" src=<?="/photos/lowres/" . $p->{0}->name . ".webp";?> alt="<?=$p->{0}->$lang;?>">
-    <figcaption class="photo-caption">
-<?=$p->{0}->$lang;?>
-    </figcaption>
-</figure>
+    return f"""    <figure class="albumimage">
+        <img class="albumimage" src=<?="/photos/lowres/" . $p->{key}->name . ".webp";?> alt="<?=$p->{key}->$lang;?>">
+        <figcaption class="photo-caption">
+<?=$p->{key}->$lang;?>
+        </figcaption>
+    </figure>
 """.format(key)
 
 
 def get_photo_block_in_album(key, file_name):
-    return """<span style="color:grey"><a href="<?="/" . $lang . "/photos/{0}.php";?>">
-{1}
+    photo_block = get_photo_captioned_figure_in_album(key)
+    return f"""<span style="color:grey">
+    <a href="<?="/" . $lang . "/photos/{file_name}.php";?>">
+{photo_block}
 </a></span>
-""".format(file_name, get_photo_captioned_figure_in_album(key))
+"""
 
 
 def generate_leaderboard():
@@ -192,22 +194,22 @@ def create_album_block(
 
 with open("photos.json", "r") as fw:
     photos = json.load(fw)
-    album_photos = []
-    for key, photo in photos.items():
-        if "is_album" in photo and photo["is_album"]:
-            album_photos += photo["photos"]
+    album_photos = [
+        photo
+        for album_photo in photos.values()
+        for photo in album_photo.get("photos", [])
+        if album_photo.get("is_album")
+    ]
 
     photo_key_to_album_key = {}
     photo_key_to_previous = {}
     photo_key_to_next = {}
-    for key, photo in photos.items():
-        # ignore albums for now
-        if key == "is_album":
-            continue
 
+    for key, photo in photos.items():
         file_name = photo["name"].replace(".jpg", "")
 
-        if "is_album" in photo and photo["is_album"] == True:
+        # The element is an album
+        if photo.get("is_album"):
             block = create_album_block(
                 key,
                 photo,
@@ -228,10 +230,6 @@ with open("photos.json", "r") as fw:
 
     # Get single-image pages (stored in raw_with_label)
     for key, photo in photos.items():
-        # ignore albums for now
-        if key == "is_album":
-            continue
-
         file_name = photo["name"].replace(".jpg", "")
 
         # The idea is that if the photo is (1) contained in an album and (2) doesn't have its own description,
