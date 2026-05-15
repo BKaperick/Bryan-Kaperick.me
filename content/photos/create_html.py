@@ -27,27 +27,17 @@ def get_grid(photo_count):
 
 
 def get_album_block(album, photo_blocks):
-    pre = (
-        f'<div class="album main-page-photo-block" id="{album}">\n'
-        + '    <figure class="album">\n'
-    )
 
     # images = [x[0] for x in sorted(photo_blocks, key=order_photos)]
     images = [x[0] for x in photo_blocks]
     images_elem = get_grid(len(images)).format(*images)
     caption = f"<?=$p->{album}->$lang;?> ~ <?=$p->{album}->year;?>"
 
-    post = "\n".join(
-        [
-            '        <figcaption class="photo-caption">',
-            f"            {caption}",
-            "        </figcaption>",
-            "    </figure>",
-            "</div>",
-        ]
-    )
+    figure = get_figure("album", album, images_elem, caption)
 
-    return pre + images_elem + post
+    return "\n".join(
+        [f'<div class="album main-page-photo-block" id="{album}">', figure, "</div>"]
+    )
 
 
 def get_photo_captioned_figure(key, subdir):
@@ -59,11 +49,20 @@ def get_photo_captioned_figure(key, subdir):
     caption = f"<?=$p->{key}->$lang;?> ~ <?=$p->{key}->year;?>"
     file_suffix = ".webp" if subdir == "lowres" else ""
     image_class = "image" if subdir == "lowres" else "single-image"
+    image = f'<img src=<?="/photos/{subdir}/". $p->{key}->name . "{file_suffix}";?> alt="{caption}">'
+    return get_figure(
+        f"{image_class} main-page-photo-block",
+        key,
+        image,
+        caption,
+    )
 
+
+def get_figure(classes, id, content, caption):
     return "\n".join(
         [
-            f'<figure class="{image_class} main-page-photo-block" id="{key}">',
-            f'<img src=<?="/photos/{subdir}/" . $p->{key}->name . "{file_suffix}";?> alt="{caption}">',
+            f'<figure class="{classes}" id="{id}">',
+            content,
             '<figcaption class="photo-caption">',
             f"    {caption}",
             "</figcaption>",
@@ -92,18 +91,10 @@ def get_photo_captioned_figure_with_previous_next(
         else ""
     )
 
-    return "\n".join(
-        [
-            '<figure class="single-image">'
-            f'<img src=<?="/photos/{subdir}/" . $p->{key}->name;?> alt="{caption}">'
-            '<figcaption class="photo-caption">'
-            f"    {prev_link}"
-            f"        {caption}"
-            f"    {next_link}"
-            "</figcaption>"
-            "</figure>"
-        ]
-    )
+    image = f'<img src=<?="/photos/{subdir}/" . $p->{key}->name;?> alt="{caption}">'
+    full_caption = f"{prev_link}\n{caption}\n{next_link}"
+
+    return get_figure("single-image", None, image, full_caption)
 
 
 def get_photo_block(key, file_name):
@@ -115,13 +106,8 @@ def get_photo_block(key, file_name):
 
 def get_photo_captioned_figure_in_album(key):
     caption = f"<?=$p->{key}->$lang;?>"
-    return f"""    <figure class="albumimage">
-        <img class="albumimage" src=<?="/photos/lowres/" . $p->{key}->name . ".webp";?> alt="{caption}">
-        <figcaption class="photo-caption">
-{caption}
-        </figcaption>
-    </figure>
-""".format(key)
+    image = '<img class="albumimage" src=<?="/photos/lowres/" . $p->{key}->name . ".webp";?> alt="{caption}">'
+    return get_figure("albumimage", None, image, caption)
 
 
 def get_photo_block_in_album(key, file_name):
@@ -274,10 +260,10 @@ with open("photos.json", "r") as fw:
             php_path = "../{0}/photos/{1}.generated.php".format(language, file_name)
             with open(php_path, "w") as f:
                 f.write(
-                    """<?php 
+                    f"""<?php 
 include($_SERVER['DOCUMENT_ROOT']."/photos/minimal_photo_header.php");
-include($_SERVER['DOCUMENT_ROOT']."/{0}/minimal_header.html");
-include($_SERVER['DOCUMENT_ROOT']."/photos/{1}");
+include($_SERVER['DOCUMENT_ROOT']."/{language}/minimal_header.html");
+include($_SERVER['DOCUMENT_ROOT']."/photos/{html_path}");
 ?> 
-""".format(language, html_path)
+"""
                 )
