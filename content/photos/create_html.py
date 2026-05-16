@@ -31,17 +31,6 @@ def get_filled_grid(photos: list[str]) -> str:
     return get_empty_grid(len(photos)).format(*photos)
 
 
-def get_album_block(album, photo_blocks) -> str:
-    images_elem = get_filled_grid(photo_blocks)
-    caption = f"<?=$p->{album}->$lang;?> ~ <?=$p->{album}->year;?>"
-
-    figure = get_figure("album", album, images_elem, caption)
-
-    return "\n".join(
-        [f'<div class="album main-page-photo-block" id="{album}">', figure, "</div>"]
-    )
-
-
 def get_photo_captioned_figure(key, subdir) -> str:
     """
     Photo in its dedicated page, not within an album.
@@ -50,10 +39,12 @@ def get_photo_captioned_figure(key, subdir) -> str:
     """
     caption = f"<?=$p->{key}->$lang;?> ~ <?=$p->{key}->year;?>"
     file_suffix = ".webp" if subdir == "lowres" else ""
-    image_class = "image" if subdir == "lowres" else "single-image"
+    image_class = (
+        "image main-page-photo-block" if subdir == "lowres" else "single-image"
+    )
     image = f'<img src=<?="/photos/{subdir}/". $p->{key}->name . "{file_suffix}";?> alt="{caption}">'
     return get_figure(
-        f"{image_class} main-page-photo-block",
+        image_class,
         key,
         image,
         caption,
@@ -208,26 +199,31 @@ def fill_album_prev_next_links(
 
 
 def get_main_page_album_block(
-    key: str,
+    album_key: str,
     photo,
 ) -> str:
-    album_blocks: list[str] = []
-    for i, subkey in enumerate(photo["photos"]):
+    """Get album block for main page."""
+    photo_blocks: list[str] = []
+    for subkey in photo["photos"]:
         sub_file_name = photos[subkey]["name"].replace(".jpg", "")
         sub_block = get_photo_block_in_album(subkey, sub_file_name)
-        album_blocks.append(sub_block)
-    return get_album_block(key, album_blocks)
+        photo_blocks.append(sub_block)
+
+    images_elem = get_filled_grid(photo_blocks)
+    caption = f"<?=$p->{album_key}->$lang;?> ~ <?=$p->{album_key}->year;?>"
+
+    figure = get_figure("album", album_key, images_elem, caption)
+
+    return "\n".join(
+        [
+            f'<div class="album main-page-photo-block" id="{album_key}">',
+            figure,
+            "</div>",
+        ]
+    )
 
 
-with open("photos.json", "r") as fw:
-    photos = json.load(fw)
-    album_photos = [
-        photo
-        for album_photo in photos.values()
-        for photo in album_photo.get("photos", [])
-        if album_photo.get("is_album")
-    ]
-
+def write_dedicated_photo_pages(photos) -> None:
     photo_key_to_album_key: dict[str, str] = {}
     photo_key_to_previous: dict[str, str | None] = {}
     photo_key_to_next: dict[str, str | None] = {}
@@ -242,25 +238,8 @@ with open("photos.json", "r") as fw:
                 photo_key_to_next,
             )
 
-    # Get single-image pages (stored in raw_with_label)
     for key, photo in photos.items():
         file_name = photo["name"].replace(".jpg", "")
-
-        # MAIN PAGE
-
-        # The element is an album
-        if photo.get("is_album"):
-            main_block = get_main_page_album_block(
-                key,
-                photo,
-            )
-            photo_blocks.append((main_block, photo))
-
-        # Photo is not contained in any album, so just print it on main photos page
-        elif key not in album_photos:
-            main_block = get_main_page_photo_block(key, file_name)
-            photo_blocks.append((main_block, photo))
-
         # DEDICATED PAGES
 
         # The idea is that if the photo is (1) contained in an album and (2) doesn't have its own description,
@@ -291,8 +270,44 @@ include($_SERVER['DOCUMENT_ROOT']."/photos/{html_path}");
 """
                 )
 
+
+def write_main_page_photo_page(photos):
+    """Generate and write the main page html blocks.  There are two cases:
+    1. The photo is contained within an album, so it is printed in a grid along with the other photos from the album
+    2. The photo is not within an album, so we print it by itself on the main page."""
+    album_photos = [
+        photo
+        for album_photo in photos.values()
+        for photo in album_photo.get("photos", [])
+        if album_photo.get("is_album")
+    ]
+    # Get single-image pages (stored in raw_with_label)
+    for key, photo in photos.items():
+        file_name = photo["name"].replace(".jpg", "")
+
+        # MAIN PAGE
+
+        # The element is an album
+        if photo.get("is_album"):
+            main_block = get_main_page_album_block(
+                key,
+                photo,
+            )
+            photo_blocks.append((main_block, photo))
+
+        # Photo is not contained in any album, so just print it on main photos page
+        elif key not in album_photos:
+            main_block = get_main_page_photo_block(key, file_name)
+            photo_blocks.append((main_block, photo))
+
     with open("photos.generated.html", "w") as f:
         f.write(generate_leaderboard())
         f.write("\n\n\n")
         f.write("\n\n".join([x[0] for x in sorted(photo_blocks, key=order_photos)]))
         f.write("\n")
+
+
+with open("photos.json", "r") as fw:
+    photos = json.load(fw)
+    write_dedicated_photo_pages(photos)
+    write_main_page_photo_page(photos)
