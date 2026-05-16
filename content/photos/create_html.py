@@ -2,15 +2,17 @@ import json
 import os
 import sys
 from math import sqrt, floor
+from typing import Any
 
 sys.path.append(os.path.abspath("../../"))
 from helper import order_photos
-from create_leaderboard import *
+from create_leaderboard import get_leaderboard, get_leaderboard_winner
 
 photo_blocks = []
 
 
-def get_grid(photo_count):
+def get_grid(photo_count) -> str:
+    """Define the grid for displaying an album on the main photos page."""
     rows = floor(sqrt(photo_count))
     columns = photo_count // rows
     rows_with_extra = photo_count % rows
@@ -26,9 +28,7 @@ def get_grid(photo_count):
     return elem
 
 
-def get_album_block(album, photo_blocks):
-
-    # images = [x[0] for x in sorted(photo_blocks, key=order_photos)]
+def get_album_block(album, photo_blocks) -> str:
     images = [x[0] for x in photo_blocks]
     images_elem = get_grid(len(images)).format(*images)
     caption = f"<?=$p->{album}->$lang;?> ~ <?=$p->{album}->year;?>"
@@ -40,7 +40,7 @@ def get_album_block(album, photo_blocks):
     )
 
 
-def get_photo_captioned_figure(key, subdir):
+def get_photo_captioned_figure(key, subdir) -> str:
     """
     Photo in its dedicated page, not within an album.
     Figure with caption.  If `album_key` is given AND `use_photo_caption` is True,
@@ -58,10 +58,11 @@ def get_photo_captioned_figure(key, subdir):
     )
 
 
-def get_figure(classes, id, content, caption):
+def get_figure(classes, id, content, caption) -> str:
+    id_part = f'id="{id}"' if id else ""
     return "\n".join(
         [
-            f'<figure class="{classes}" id="{id}">',
+            f'<figure class="{classes}" {id_part}>',
             content,
             '<figcaption class="photo-caption">',
             f"    {caption}",
@@ -72,12 +73,13 @@ def get_figure(classes, id, content, caption):
 
 
 def get_photo_captioned_figure_with_previous_next(
-    key, subdir, use_photo_caption=True, album_key=None, prev_file=None, next_file=None
+    key, use_photo_caption=True, album_key=None, prev_file=None, next_file=None
 ):
     """
     Figure with caption.  If `album_key` is given AND `use_photo_caption` is True,
     then we use the description from the album instead
     """
+    subdir = "raw"
     caption_key = key if use_photo_caption else album_key
     caption = f"<?=$p->{caption_key}->$lang;?> ~ <?=$p->{key}->year;?>"
     prev_link = (
@@ -97,27 +99,29 @@ def get_photo_captioned_figure_with_previous_next(
     return get_figure("single-image", None, image, full_caption)
 
 
-def get_photo_block(key, file_name):
-    return f"""<a id="{key}" href="<?="/" . $lang . "/photos/{file_name}.php";?>">
-{get_photo_captioned_figure(key, "lowres")}
-</a>
-"""
-
-
-def get_photo_captioned_figure_in_album(key):
-    caption = f"<?=$p->{key}->$lang;?>"
-    image = '<img class="albumimage" src=<?="/photos/lowres/" . $p->{key}->name . ".webp";?> alt="{caption}">'
-    return get_figure("albumimage", None, image, caption)
+def get_main_page_photo_block(key, file_name):
+    """A photo on the main photo page, not contained within an album."""
+    return "\n".join(
+        [
+            f'<a id="{key}" href="<?="/" . $lang . "/photos/{file_name}.php";?>">',
+            get_photo_captioned_figure(key, "lowres"),
+            "</a>",
+        ]
+    )
 
 
 def get_photo_block_in_album(key, file_name):
     """A Photo in its dedicated page, within the context of an album."""
-    photo_block = get_photo_captioned_figure_in_album(key)
-    return f"""<span style="color:grey">
-    <a href="<?="/" . $lang . "/photos/{file_name}.php";?>">
-{photo_block}
-</a></span>
-"""
+    caption = f"<?=$p->{key}->$lang;?>"
+    image = f'<img class="albumimage" src=<?="/photos/lowres/" . $p->{key}->name . ".webp";?> alt="{caption}">'
+    return "\n".join(
+        [
+            '<span style="color:grey">',
+            f'<a href="<?="/" . $lang . "/photos/{file_name}.php";?>">',
+            get_figure("albumimage", None, image, caption),
+            "</a></span>",
+        ]
+    )
 
 
 def generate_leaderboard():
@@ -167,10 +171,14 @@ def generate_leaderboard():
     return "\n".join(data)
 
 
-def create_album_block(
-    key, photo, photo_key_to_album_key, photo_key_to_previous, photo_key_to_next
-):
-    album_blocks = []
+def get_main_page_album_block(
+    key: str,
+    photo,
+    photo_key_to_album_key: dict[str, str],
+    photo_key_to_previous: dict[str, str | None],
+    photo_key_to_next: dict[str, str | None],
+) -> str:
+    album_blocks: list[tuple[Any, str]] = []
     for i, subkey in enumerate(photo["photos"]):
         photo_key_to_album_key[subkey] = key
 
@@ -196,16 +204,16 @@ with open("photos.json", "r") as fw:
         if album_photo.get("is_album")
     ]
 
-    photo_key_to_album_key = {}
-    photo_key_to_previous = {}
-    photo_key_to_next = {}
+    photo_key_to_album_key: dict[str, str] = {}
+    photo_key_to_previous: dict[str, str | None] = {}
+    photo_key_to_next: dict[str, str | None] = {}
 
     for key, photo in photos.items():
         file_name = photo["name"].replace(".jpg", "")
 
         # The element is an album
         if photo.get("is_album"):
-            block = create_album_block(
+            block = get_main_page_album_block(
                 key,
                 photo,
                 photo_key_to_album_key,
@@ -216,7 +224,7 @@ with open("photos.json", "r") as fw:
 
         # Photo is not contained in any album, so just print it on main photos page
         elif key not in album_photos:
-            block = get_photo_block(key, file_name)
+            block = get_main_page_photo_block(key, file_name)
             photo_blocks.append((block, photo))
 
     # This gets piped to `./content/photos/photos.generated.html`
@@ -244,7 +252,6 @@ with open("photos.json", "r") as fw:
             )
             block = get_photo_captioned_figure_with_previous_next(
                 key,
-                "raw",
                 photo["en"] or photo["fr"],
                 photo_key_to_album_key[key],
                 prev_file_name,
