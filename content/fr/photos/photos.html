@@ -54,19 +54,26 @@
 
 <body class="single-page">
 
-<main class="main layout__main">
-<article class="single-view">
-<header>
-<h1 class="title ">Photos</h1>
-</header>
-<div class="content">
-<p>Des photos de moi et mes amis, en ordre chronologique inverse.  Cliquez sur les photos pour afficher leur version en pleine résolution.</p>
+  <main class="main layout__main">
+    <article class="single-view">
+      <header>
+        <h1 class="title ">Photos</h1>
+          </header>
+            <div class="content">
+              <p>Des photos de moi et mes amis, en ordre chronologique inverse.  Cliquez sur les photos pour afficher leur version en pleine résolution.</p>
+
+                
+                <form id="searchForm">
+                    <?=$language['Filter'];?>: <input type="text" id = "search_query" list="partial_search_results">
+                </form>
+                
+
 <?php
 include($_SERVER['DOCUMENT_ROOT']."/photos/photos.generated.html");
 ?>
 
 
-</article>
-</main>
+    </article>
+  </main>
 </body>
 </html>
