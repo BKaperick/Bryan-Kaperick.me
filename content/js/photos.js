@@ -19,7 +19,7 @@ function load_photos_index(index, language) {
   .then(response => response.json())
   .then(data => 
   {
-        console.log(language);
+      key_to_album_key = get_photo_keys_to_album_keys(data);
       for (let [key, value] of Object.entries(data))
       {
         var data = value["year"];
@@ -27,8 +27,23 @@ function load_photos_index(index, language) {
           data += " " + value["people"].join(" ");
         if (language in value)
           data += " " + value[language];
-      console.log(data);
-      index.add(key, data);
+        if (key in key_to_album_key)
+          key_to_index = key_to_album_key[key];
+        else
+          key_to_index = key;
+        index.append(key_to_index, data);
       };
   });
+}
+
+function get_photo_keys_to_album_keys(photos, key) {
+  key_to_album_key = {}
+  for (let [key, value] of Object.entries(photos)) {
+    if ("photos" in value) {
+      for (let sub_key of Object.values(value["photos"])) {
+        key_to_album_key[sub_key] = key;
+      }
+    }
+  }
+  return key_to_album_key;
 }
