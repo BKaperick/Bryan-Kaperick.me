@@ -3,7 +3,7 @@
 <title>Photos – Le Site Web de Bryan Kaperick</title>
 <meta name="description" content="Des photos de moi et mes amis, en ordre chronologique inverse.   Julie et Moi sur Le Centenaire à Beez ~ 2023   Alex, Nadir, Moi, Sachin, et Julien àu mariage de Thom à …">
 <meta name="created" content="2021-10-24T01:37:04+0200">
-<meta name="modified" content="2023-09-27T23:51:28+0200">
+<meta name="modified" content="2026-05-17T23:51:28+0200">
 
 
 <meta property="og:title" content="Photos">
@@ -19,7 +19,7 @@
     "@type": "WebPage",
     "headline": "Photos",
     "datePublished": "2021-10-24T01:37:04+02:00",
-    "dateModified": "2023-09-27T23:51:28+02:00",
+    "dateModified": "2026-05-17T23:51:28+02:00",
     "url" : "https://bryan-kaperick.me/fr/photos/photos.html",
     "description": "Des photos de moi et mes amis, en ordre chronologique inverse.…",
     "mainEntityOfPage": {
@@ -41,10 +41,7 @@
   // Build the search index from poems.json data
   import {Index} from "../../js/flexsearch.bundle.module.min.js";
   const index = new Index({tokenize: "forward"});
-  load_photos_index(index, "en");
-
-  // Initialize the poem section counts
-  // recount_visible_poems();
+  load_photos_index(index, "fr");
 
   // Update page based on user input
   listen_on_input(() => photos_input_listen(index));
@@ -54,13 +51,14 @@
 
 <body class="single-page">
 
-  <main class="main layout__main">
-    <article class="single-view">
-      <header>
-        <h1 class="title ">Photos</h1>
-          </header>
+    <main class="main layout__main">
+        <article class="single-view">
+            <header>
+              <h1 class="title ">Photos</h1>
+            </header>
+
             <div class="content">
-              <p>Des photos de moi et mes amis, en ordre chronologique inverse.  Cliquez sur les photos pour afficher leur version en pleine résolution.</p>
+                <p>Des photos de moi et mes amis, en ordre chronologique inverse.  Cliquez sur les photos pour afficher leur version en pleine résolution.</p>
 
                 
                 <form id="searchForm">
@@ -68,12 +66,11 @@
                 </form>
                 
 
-<?php
-include($_SERVER['DOCUMENT_ROOT']."/photos/photos.generated.html");
-?>
+                <?php
+                include($_SERVER['DOCUMENT_ROOT']."/photos/photos.generated.html");
+                ?>
 
-
-    </article>
-  </main>
+        </article>
+    </main>
 </body>
 </html>
