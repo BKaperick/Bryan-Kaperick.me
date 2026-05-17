@@ -31,6 +31,7 @@ function load_photos_index(index, language) {
           key_to_index = key_to_album_key[key];
         else
           key_to_index = key;
+        console.log(key_to_index, " => ", data)
         index.append(key_to_index, data);
       };
   });

@@ -92,7 +92,7 @@ class="active" aria-current="page">Photos</a></li>
 <title>Pictures – Bryan Kaperick&#39;s Website</title>
 <meta name="description" content="Some photos of me and my friends, in reverse chronological order.   Julie and Me at on Le Centenaire at Beez ~ 2023   Alex, Nadir, Me, Sachin, and Julien at Thom&amp;amp;rsquo;s …">
 <meta name="created" content="2021-10-24T01:37:04+0200">
-<meta name="modified" content="2023-09-27T23:51:28+0200">
+<meta name="modified" content="2026-05-17T23:51:28+0200">
 
 <meta property="og:title" content="Pictures">
 <meta property="og:url" content="https://bryan-kaperick.me/en/photos/photos.html">
@@ -107,7 +107,7 @@ class="active" aria-current="page">Photos</a></li>
     "@type": "WebPage",
     "headline": "Pictures",
     "datePublished": "2021-10-24T01:37:04+02:00",
-    "dateModified": "2023-09-27T23:51:28+02:00",
+    "dateModified": "2026-05-17T23:51:28+02:00",
     "url" : "https://bryan-kaperick.me/en/photos/photos.html",
     "description": "Some photos of me and my friends, in reverse chronological order.…",
     "mainEntityOfPage": {
@@ -130,9 +130,6 @@ class="active" aria-current="page">Photos</a></li>
   import {Index} from "../../js/flexsearch.bundle.module.min.js";
   const index = new Index({tokenize: "forward"});
   load_photos_index(index, "en");
-
-  // Initialize the poem section counts
-  // recount_visible_poems();
 
   // Update page based on user input
   listen_on_input(() => photos_input_listen(index));
