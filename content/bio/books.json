@@ -1,4 +1,29 @@
 {
+    "deutsch": {
+        "title": "The Fabric of Reality",
+        "authors": [
+            {
+                "name": "David Deutsch",
+                "countries": [
+                    "UK"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "en"
+        },
+        "personal": {
+            "start_month": 3,
+            "start_year": 2026,
+            "finish_month": 4,
+            "finish_year": 2026,
+            "recommended_by": ["Podcast with author", "interest in subject matter"],
+            "rating": 4,
+            "status": "abandoned",
+            "review": "Rather outdated in its driving explanation with its focus on casting so many different phenomena as 'virtual reality'.  Some interesting, and some overly-pedantic arguments.  The highlight was the opening chapter on the many-worlds interpretation, and the dialogue about induction."
+        }
+    },
     "legerete": {
         "title": "L'Insoutenable Légèrté de l'etre",
         "authors": [

@@ -1,5 +1,29 @@
 [
     {
+        "title": "In Zeeland",
+        "link": "https://www.bryan-kaperick.me/en/photos/zeeland",
+        "desc": "In Zeeland",
+        "date": "20260501",
+        "category": "photos",
+        "is_album": false
+    },
+    {
+        "title": "Rishik's birthday dinner",
+        "link": "https://www.bryan-kaperick.me/en/photos/rishik_bday",
+        "desc": "Rishik's birthday dinner",
+        "date": "20260401",
+        "category": "photos",
+        "is_album": false
+    },
+    {
+        "title": "",
+        "link": "https://www.bryan-kaperick.me/en/photos/efteling_coaster_2",
+        "desc": "",
+        "date": "20260401",
+        "category": "photos",
+        "is_album": true
+    },
+    {
         "title": "On landing",
         "link": "https://www.bryan-kaperick.me/en/poetry/steel",
         "desc": "A cold steel hull with a vespertine sheen...",
@@ -10,7 +34,23 @@
         "title": "The daily commute",
         "link": "https://www.bryan-kaperick.me/en/photos/lille",
         "desc": "The daily commute",
-        "date": "20260328",
+        "date": "20260302",
+        "category": "photos",
+        "is_album": true
+    },
+    {
+        "title": "A week in the Alps at Lanslevillard.",
+        "link": "https://www.bryan-kaperick.me/en/photos/PXL_20260311_134410809",
+        "desc": "A week in the Alps at Lanslevillard.",
+        "date": "20260301",
+        "category": "photos",
+        "is_album": true
+    },
+    {
+        "title": "In Barcelona with my parents and Louise",
+        "link": "https://www.bryan-kaperick.me/en/photos/flamenco_dinner",
+        "desc": "In Barcelona with my parents and Louise",
+        "date": "20260201",
         "category": "photos",
         "is_album": true
     },

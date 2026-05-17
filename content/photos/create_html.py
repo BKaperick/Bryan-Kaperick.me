@@ -168,7 +168,7 @@ def generate_leaderboard():
 
     # historical table filling
     history_table = one_table_header.format("Previous Winners")
-    for year in range(2017, 2026)[::-1]:
+    for year in range(2017, 2027)[::-1]:
         winner, winner_metric = get_leaderboard_winner(year, metric="inv_weight")
         block = two_row_block.format(year, winner)
         history_table += block
