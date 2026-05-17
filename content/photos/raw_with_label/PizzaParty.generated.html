@@ -1,6 +1,6 @@
-<figure class="single-image">
-    <img src=<?="/photos/raw/" . $p->PizzaParty->name . "";?> alt="<?=$p->PizzaParty->$lang;?> ~ <?=$p->PizzaParty->year;?>">
-    <figcaption>
-<?=$p->PizzaParty->$lang;?> ~ <?=$p->PizzaParty->year;?>
-    </figcaption>
+<figure class="single-image" id="PizzaParty">
+<img src=<?="/photos/raw/". $p->PizzaParty->name . "";?> alt="<?=$p->PizzaParty->$lang;?> ~ <?=$p->PizzaParty->year;?>">
+<figcaption class="photo-caption">
+    <?=$p->PizzaParty->$lang;?> ~ <?=$p->PizzaParty->year;?>
+</figcaption>
 </figure>

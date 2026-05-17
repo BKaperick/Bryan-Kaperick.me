@@ -3,7 +3,7 @@
 <title>Pictures – Bryan Kaperick&#39;s Website</title>
 <meta name="description" content="Some photos of me and my friends, in reverse chronological order.   Julie and Me at on Le Centenaire at Beez ~ 2023   Alex, Nadir, Me, Sachin, and Julien at Thom&amp;amp;rsquo;s …">
 <meta name="created" content="2021-10-24T01:37:04+0200">
-<meta name="modified" content="2023-09-27T23:51:28+0200">
+<meta name="modified" content="2026-05-17T23:51:28+0200">
 
 <meta property="og:title" content="Pictures">
 <meta property="og:url" content="https://bryan-kaperick.me/en/photos/photos.html">
@@ -18,7 +18,7 @@
     "@type": "WebPage",
     "headline": "Pictures",
     "datePublished": "2021-10-24T01:37:04+02:00",
-    "dateModified": "2023-09-27T23:51:28+02:00",
+    "dateModified": "2026-05-17T23:51:28+02:00",
     "url" : "https://bryan-kaperick.me/en/photos/photos.html",
     "description": "Some photos of me and my friends, in reverse chronological order.…",
     "mainEntityOfPage": {
@@ -32,6 +32,20 @@
     }
   }
 </script>
+
+<script type="text/javascript" src="../../js/search.js"></script>
+<script type="text/javascript" src="../../js/photos.js"></script>
+
+<script type="module">
+  // Build the search index from poems.json data
+  import {Index} from "../../js/flexsearch.bundle.module.min.js";
+  const index = new Index({tokenize: "forward"});
+  load_photos_index(index, "en");
+
+  // Update page based on user input
+  listen_on_input(() => photos_input_listen(index));
+</script>
+
 </head>
 
 <body class="list-page front">
@@ -43,6 +57,11 @@
 
             <div class="content">
                 <p>Some photos of me and my friends, in reverse chronological order.  Click on the photos to see their full-resolution version.</p>
+                
+                <form id="searchForm">
+                    <?=$language['Filter'];?>: <input type="text" id = "search_query" list="partial_search_results">
+                </form>
+                
                 <?php
                 include($_SERVER['DOCUMENT_ROOT']."/photos/photos.generated.html");
                 ?>
