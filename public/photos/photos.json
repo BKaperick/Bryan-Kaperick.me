@@ -2688,9 +2688,100 @@
         "people": [],
         "is_album": false
     },
+    "Barcelone2026": {
+        "name": "Barcelone2026",
+        "month": "Feb",
+        "year": 2026,
+        "order_in_year": 1,
+        "en": "In Barcelona with my parents and Louise",
+        "fr": "A Barcelone avec mes parents et Louise",
+        "is_album": true,
+        "photos": [
+            "dinnerheic",
+            "barcelone_11",
+            "barcelone",
+            "imgwa",
+            "cathedral_9",
+            "propaganda"
+        ]
+    },
+    "cathedral_9": {
+        "name": "cathedral_barcelone.jpg",
+        "month": "Feb",
+        "year": 2026,
+        "order_in_year": 9,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "barcelone": {
+        "name": "barcelone_museum_poster.jpg",
+        "month": "Feb",
+        "year": 2026,
+        "order_in_year": 10,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "barcelone_11": {
+        "name": "barcelone_jungle.jpg",
+        "month": "Feb",
+        "year": 2026,
+        "order_in_year": 11,
+        "en": "",
+        "fr": "",
+        "people": [
+            "louise"
+        ],
+        "is_album": false
+    },
+    "imgwa": {
+        "name": "IMG-20260221-WA0011.jpg",
+        "month": "Feb",
+        "year": 2026,
+        "order_in_year": 12,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "dad"
+        ],
+        "is_album": false
+    },
+    "propaganda": {
+        "name": "no_propaganda.jpg",
+        "month": "Feb",
+        "year": 2026,
+        "order_in_year": 13,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "dinnerheic": {
+        "name": "flamenco_dinner.heic",
+        "month": "Feb",
+        "year": 2026,
+        "order_in_year": 14,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "mom",
+            "dad",
+            "louise"
+        ],
+        "is_album": false
+    },
     "the_commute": {
         "name": "the_commute",
-        "day": 28,
+        "day": 2,
         "month": "Mar",
         "year": 2026,
         "order_in_year": 1,
@@ -2742,6 +2833,210 @@
         "en": "",
         "fr": "",
         "people": [],
+        "is_album": false
+    },
+    "lanslevillard2026": {
+        "name": "lanslevillard2026",
+        "month": "Mar",
+        "year": 2026,
+        "order_in_year": 15,
+        "en": "A week in the Alps at Lanslevillard.",
+        "fr": "Une semaine dans les Alpes \u00e0 Lanslevillard",
+        "is_album": true,
+        "photos": [
+            "pxl",
+            "pxl_20",
+            "pxl_21",
+            "signal",
+            "signal_17",
+            "signal_18"
+        ]
+    },
+    "signal": {
+        "name": "signal-2026-03-12-19-11-34-431.jpg",
+        "month": "Mar",
+        "year": 2026,
+        "order_in_year": 16,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "signal_17": {
+        "name": "signal-2026-03-15-15-36-11-835-1.jpg",
+        "month": "Mar",
+        "year": 2026,
+        "order_in_year": 17,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "thomas",
+            "sunny",
+            "c\u00e9lia",
+            "leah_laura",
+            "lucie",
+            "laura"
+        ],
+        "is_album": false
+    },
+    "signal_18": {
+        "name": "signal-2026-03-15-15-36-11-835.jpg",
+        "month": "Mar",
+        "year": 2026,
+        "order_in_year": 18,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "sunny"
+        ],
+        "is_album": false
+    },
+    "pxl": {
+        "name": "PXL_20260311_134410809.jpg",
+        "month": "Mar",
+        "year": 2026,
+        "order_in_year": 19,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "pxl_20": {
+        "name": "PXL_20260314_102547528.MP.jpg",
+        "month": "Mar",
+        "year": 2026,
+        "order_in_year": 20,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "pxl_21": {
+        "name": "PXL_20260313_110415396.jpg",
+        "month": "Mar",
+        "year": 2026,
+        "order_in_year": 21,
+        "en": "",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "Efteling2026": {
+        "name": "Efteling2026",
+        "month": "Apr",
+        "year": 2026,
+        "order_in_year": 22,
+        "en": "Efteling",
+        "fr": "Efteling",
+        "is_album": true,
+        "photos": [
+            "efteling",
+            "efteling_24",
+            "efteling_25",
+            "efteling_26"
+        ]
+    },
+    "efteling": {
+        "name": "efteling_coaster_2.jpg",
+        "month": "Apr",
+        "year": 2026,
+        "order_in_year": 23,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "louise",
+            "chris",
+            "PJ"
+        ],
+        "is_album": false
+    },
+    "efteling_24": {
+        "name": "efteling_1.jpg",
+        "month": "Apr",
+        "year": 2026,
+        "order_in_year": 24,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "louise",
+            "chris",
+            "marie",
+            "marion",
+            "PJ"
+        ],
+        "is_album": false
+    },
+    "efteling_25": {
+        "name": "efteling_entrance.jpg",
+        "month": "Apr",
+        "year": 2026,
+        "order_in_year": 25,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "louise",
+            "chris",
+            "marie",
+            "marion",
+            "PJ"
+        ],
+        "is_album": false
+    },
+    "efteling_26": {
+        "name": "efteling_python.jpg",
+        "month": "Apr",
+        "year": 2026,
+        "order_in_year": 26,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan",
+            "louise",
+            "chris",
+            "marie"
+        ],
+        "is_album": false
+    },
+    "rishik_6": {
+        "name": "rishik_bday.jpg",
+        "month": "Apr",
+        "year": 2026,
+        "order_in_year": 6,
+        "en": "Rishik's birthday dinner",
+        "fr": "Le diner d'anniversaire de Rishik",
+        "people": [
+            "bryan",
+            "constance_rishik",
+            "cecile",
+            "tyler",
+            "martin",
+            "moneer",
+            "pourbali",
+            "anastasia",
+            "rishik",
+            "sunny",
+            "louise"
+        ],
+        "is_album": false
+    },
+    "zeeland": {
+        "name": "zeeland.jpg",
+        "month": "May",
+        "year": 2026,
+        "order_in_year": 27,
+        "en": "In Zeeland",
+        "fr": "La Zelande",
+        "people": [
+            "bryan",
+            "louise"
+        ],
         "is_album": false
     }
 }

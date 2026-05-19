@@ -1,5 +1,29 @@
 [
     {
+        "title": "La Zelande",
+        "link": "https://www.bryan-kaperick.me/fr/photos/zeeland",
+        "desc": "La Zelande",
+        "date": "20260501",
+        "category": "photos",
+        "is_album": false
+    },
+    {
+        "title": "Le diner d'anniversaire de Rishik",
+        "link": "https://www.bryan-kaperick.me/fr/photos/rishik_bday",
+        "desc": "Le diner d'anniversaire de Rishik",
+        "date": "20260401",
+        "category": "photos",
+        "is_album": false
+    },
+    {
+        "title": "Efteling",
+        "link": "https://www.bryan-kaperick.me/fr/photos/efteling_coaster_2",
+        "desc": "Efteling",
+        "date": "20260401",
+        "category": "photos",
+        "is_album": true
+    },
+    {
         "title": "On landing",
         "link": "https://www.bryan-kaperick.me/fr/poetry/steel",
         "desc": "A cold steel hull with a vespertine sheen...",
@@ -10,7 +34,23 @@
         "title": "Le trajet quotidien",
         "link": "https://www.bryan-kaperick.me/fr/photos/lille",
         "desc": "Le trajet quotidien",
-        "date": "20260328",
+        "date": "20260302",
+        "category": "photos",
+        "is_album": true
+    },
+    {
+        "title": "Une semaine dans les Alpes \u00e0 Lanslevillard",
+        "link": "https://www.bryan-kaperick.me/fr/photos/PXL_20260311_134410809",
+        "desc": "Une semaine dans les Alpes \u00e0 Lanslevillard",
+        "date": "20260301",
+        "category": "photos",
+        "is_album": true
+    },
+    {
+        "title": "A Barcelone avec mes parents et Louise",
+        "link": "https://www.bryan-kaperick.me/fr/photos/flamenco_dinner",
+        "desc": "A Barcelone avec mes parents et Louise",
+        "date": "20260201",
         "category": "photos",
         "is_album": true
     },

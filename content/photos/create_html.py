@@ -76,12 +76,12 @@ def get_photo_captioned_figure_with_previous_next(
     caption_key = key if use_photo_caption else album_key
     caption = f"<?=$p->{caption_key}->$lang;?> ~ <?=$p->{key}->year;?>"
     prev_link = (
-        f"""<a class="prev_link" href="<?="./{prev_file}.php";?>"><?=$language['Previous']?></a>"""
+        f"""<a class="prev_link" href="<?="./{prev_file}.generated.php";?>"><?=$language['Previous']?></a>"""
         if prev_file
         else ""
     )
     next_link = (
-        f"""<a class="next_link" href="<?="./{next_file}.php";?>"><?=$language['Next']?></a>"""
+        f"""<a class="next_link" href="<?="./{next_file}.generated.php";?>"><?=$language['Next']?></a>"""
         if next_file
         else ""
     )
@@ -114,7 +114,7 @@ def get_main_page_photo_block(key, file_name):
     """A photo on the main photo page, not contained within an album."""
     return "\n".join(
         [
-            f'<a id="{key}" href="<?="/" . $lang . "/photos/{file_name}.php";?>">',
+            f'<a id="{key}" href="<?="/" . $lang . "/photos/{file_name}.generated.php";?>">',
             get_photo_captioned_figure(key, "lowres"),
             "</a>",
         ]
@@ -128,7 +128,7 @@ def get_photo_block_in_album(key, file_name):
     return "\n".join(
         [
             '<span style="color:grey">',
-            f'<a href="<?="/" . $lang . "/photos/{file_name}.php";?>">',
+            f'<a href="<?="/" . $lang . "/photos/{file_name}.generated.php";?>">',
             get_figure("albumimage", None, image, caption),
             "</a></span>",
         ]
@@ -168,7 +168,7 @@ def generate_leaderboard():
 
     # historical table filling
     history_table = one_table_header.format("Previous Winners")
-    for year in range(2017, 2026)[::-1]:
+    for year in range(2017, 2027)[::-1]:
         winner, winner_metric = get_leaderboard_winner(year, metric="inv_weight")
         block = two_row_block.format(year, winner)
         history_table += block
