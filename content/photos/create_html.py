@@ -2,6 +2,7 @@ import json
 import os
 import sys
 from math import sqrt, floor
+from datetime import datetime
 
 sys.path.append(os.path.abspath("../../"))
 from create_leaderboard import get_leaderboard, get_leaderboard_winner
@@ -168,11 +169,14 @@ def generate_leaderboard():
 
     # historical table filling
     history_table = one_table_header.format("Previous Winners")
-    for year in range(2017, 2027)[::-1]:
+    current_year = datetime.now().year
+    for year in range(current_year - 9, current_year + 1)[::-1]:
         winner, winner_metric = get_leaderboard_winner(year, metric="inv_weight")
+        year = str(year) + "*" if year == current_year else year
         block = two_row_block.format(year, winner)
         history_table += block
-    history_table += "</table>"
+    history_table += "</table>\n"
+    history_table += "* year in progress"
 
     # Assemble the data
     data = [header]
