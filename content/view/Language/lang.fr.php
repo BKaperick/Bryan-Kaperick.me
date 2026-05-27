@@ -47,6 +47,7 @@ $language = array(
     'Released'=>'Date Sortie',
     'Watched'=>'Date Regardée',
     ''=>'',
-    'Filter'=>'Filtre'
+    'Filter'=>'Filtre',
+    'Thanks to'=>'Merci à'
 );
 ?>
