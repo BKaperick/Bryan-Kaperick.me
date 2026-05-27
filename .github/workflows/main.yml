@@ -17,6 +17,7 @@ jobs:
         php-version: '8.4'
       env:
         debug: true
+        verbose: true
 
     - name: Install wget, git, and friends
       run: |
