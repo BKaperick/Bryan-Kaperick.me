@@ -12,16 +12,10 @@ jobs:
       UV_CACHE_DIR: /tmp/.uv-cache 
 
     steps:
-    - uses: shivammathur/setup-php@2.37.0
-      with:
-        php-version: '8.0'
-      env:
-        debug: true
-        verbose: true
 
     - name: Install wget, git, and friends
       run: |
-        sudo apt-get install -qq -o=Dpkg::Use-Pty=0 wget git imagemagick
+        sudo apt-get install -qq -o=Dpkg::Use-Pty=0 wget git imagemagick php
 
     - name: Clone repo
       run: |
