@@ -15,7 +15,9 @@ jobs:
 
     - name: Install wget, git, and friends
       run: |
-        yes | apt update && apt install sudo && apt-get install -qq -o=Dpkg::Use-Pty=0 wget git imagemagick
+        yes | apt update 
+        yes | apt install sudo 
+        yes | apt-get install -qq -o=Dpkg::Use-Pty=0 wget git imagemagick
     
     - name: Install wget, git, and friends
       run: |
