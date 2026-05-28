@@ -155,7 +155,7 @@ def generate_leaderboard():
     </summary>
     <div class="clearfix">"""
 
-    footer = """</details></div>"""
+    footer = """</div><div style="font-size: 80%; transform: rotate(90deg);">*year in progress</div></details>"""
 
     # all-time table filling
     alltime_table = one_table_header.format("All-time Leaderboard")
@@ -176,14 +176,16 @@ def generate_leaderboard():
         block = two_row_block.format(year, winner)
         history_table += block
     history_table += "</table>\n"
-    history_table += "* year in progress"
 
     # Assemble the data
-    data = [header]
-    data.append(alltime_table)
-    data.append(history_table)
-    data.append(footer)
-    return "\n".join(data)
+    return "\n".join(
+        [
+            header,
+            alltime_table,
+            history_table,
+            footer,
+        ]
+    )
 
 
 def fill_album_prev_next_links(
