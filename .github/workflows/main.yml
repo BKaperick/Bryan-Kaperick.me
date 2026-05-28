@@ -15,11 +15,11 @@ jobs:
 
     - name: Install wget, git, and friends
       run: |
-        sudo apt-get install -qq -o=Dpkg::Use-Pty=0 wget git imagemagick
+        apt update && apt install sudo && apt-get install -qq -o=Dpkg::Use-Pty=0 wget git imagemagick
     
     - name: Install wget, git, and friends
       run: |
-        sudo apt-get install php
+        sudo apt-get install php8.5-cli
 
     - name: Clone repo
       run: |
