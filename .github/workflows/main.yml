@@ -12,7 +12,7 @@ jobs:
       UV_CACHE_DIR: /tmp/.uv-cache 
 
     steps:
-    - uses: shivammathur/setup-php@v2
+    - uses: shivammathur/setup-php@v2.37.0
       with:
         php-version: '8.0'
       env:
