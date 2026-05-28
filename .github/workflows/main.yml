@@ -18,10 +18,7 @@ jobs:
         yes | apt update 
         yes | apt install sudo 
         yes | apt-get install -qq -o=Dpkg::Use-Pty=0 wget git imagemagick
-    
-    - name: Install wget, git, and friends
-      run: |
-        sudo apt-get install php8.5-cli
+        yes | sudo apt-get install php8.5-cli
 
     - name: Clone repo
       run: |
