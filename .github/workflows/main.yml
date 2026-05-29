@@ -19,6 +19,7 @@ jobs:
         yes | apt install sudo 
         yes | apt-get install -qq -o=Dpkg::Use-Pty=0 wget git imagemagick
         yes | sudo apt-get install php8.5-cli
+        yes | sudo apt-get install zstd
 
     - name: Clone repo
       run: |
@@ -35,16 +36,8 @@ jobs:
       uses: astral-sh/setup-uv@v6
       with:
         version: "0.8.11"  
-
-    - name: Restore uv cache
-      uses: actions/cache@v4
-      with:
-        path: /tmp/.uv-cache
-        key: uv-${{ runner.os }}-${{ hashFiles('./Bryan-Kaperick.me/uv.lock') }}
-        restore-keys: |
-          uv-${{ runner.os }}-${{ hashFiles('./Bryan-Kaperick.me/uv.lock') }}
-          uv-${{ runner.os }}
-
+        enable-cache: true
+    
     - name: Allow uv to use the system Python by default
       run: echo "UV_SYSTEM_PYTHON=1" >> $GITHUB_ENV
       shell: bash
@@ -74,6 +67,3 @@ jobs:
           git add .
           git commit -m "[skip actions] built" --allow-empty
           git push origin ${{ github.head_ref || github.ref_name }}
-
-    - name: Minimize uv cache
-      run: uv cache prune --ci
