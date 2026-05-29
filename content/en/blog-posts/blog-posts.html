@@ -40,53 +40,12 @@
 <main class="main layout__main">
 <article class="single-view">
 <header>
+Blogging on assorted topics.  Small reflections to share.  A kind of writing exercise.
 <h1 class="title ">Blog</h1>
 </header>
 <div class="content">
-Hi, this is just an experimental section. I don&rsquo;t have any expertise or unique perspective on these topics. It&rsquo;s just a way to (1) practice writing as a form of organizing my thoughts, and (2) the hope that putting them in public and associated with my name incentivises me to produce something more complete, honest, and of higher quality.
 
-<details id="my-works-det" open="true">
-  <summary><h1 id="my-works">
-  <?=$language['My works'];?>
-</h1>
-</summary>
-
-    <details class="post-year-details" open="true">
-      <summary><h3 id="2026posts" class="post-year-header">2026 (0 <?=$language['post'];?>s)</h3>
-    </summary>
-
-    <?php include($_SERVER['DOCUMENT_ROOT']."/blog/posts2026.generated.html"); ?>
-    </details>
-
-    <details class="post-year-details">
-      <summary><h3 id="2025posts" class="post-year-header">2025 (0 <?=$language['post'];?>s)</h3>
-    </summary>
-
-    <?php include($_SERVER['DOCUMENT_ROOT']."/blog/posts2025.generated.html"); ?>
-    </details>
-
-    <details class="post-year-details">
-      <summary><h3 id="2024posts" class="post-year-header">2024 (0 <?=$language['post'];?>s)</h3>
-    </summary>
-
-    <?php include($_SERVER['DOCUMENT_ROOT']."/blog/posts2024.generated.html"); ?>
-    </details>
-
-    <details class="post-year-details">
-      <summary><h3 id="2023posts" class="post-year-header">2023 (0 <?=$language['post'];?>s)</h3>
-    </summary>
-
-    <?php include($_SERVER['DOCUMENT_ROOT']."/blog/posts2023.generated.html"); ?>
-    </details>
-
-    <details class="post-year-details">
-        <summary><h3 id="2022posts" class="post-year-header">2020 - 2022 (0 <?=$language['post'];?>s)</h3>
-    </summary>
-
-    <?php include($_SERVER['DOCUMENT_ROOT']."/blog/posts2022.generated.html"); ?>
-    </details>
-
-</details>
+<?php include($_SERVER['DOCUMENT_ROOT']."/blog/posts2026.generated.html"); ?>
 
 </div>
 </article>

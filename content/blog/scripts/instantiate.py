@@ -1,6 +1,7 @@
 import json
 import os
 import datetime
+from format_post import format_italics
 
 
 count = 1
@@ -19,7 +20,7 @@ with open("posts.json", "r+") as fw:
         name_guess = " ".join(name_words)
         name_guess = name_guess[0].capitalize() + name_guess[1:]
         d = {
-            "title": title,
+            "title": format_italics(title),
             "body": body,
             "author": "Bryan Kaperick",
             "time": str(datetime.datetime.now()),

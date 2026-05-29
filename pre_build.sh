@@ -6,6 +6,12 @@ python3 ./scripts/instantiate.py
 python3 ./scripts/format_poem.py all-poems
 python3 ./scripts/create_html.py
 
+cd ../blog
+echo "starting blog post ingestion"
+python3 ./scripts/instantiate.py
+python3 ./scripts/format_post.py all-posts
+python3 ./scripts/create_html.py
+
 cd ../now
 echo "starting now ingestion"
 if [[ "$1" == "draft" ]]; then
