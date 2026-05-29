@@ -14,32 +14,13 @@ post_blocks = []
 def get_block(key, is_dedicated_page: bool, with_audio: bool) -> str:
     # class is used adjust font size separately from the main posts page
     div_class = "dedicated-post-page" if is_dedicated_page else "main-post-page"
-    audio = (
-        f"""<audio controls src="<?=$p->{key}->audiopath;?>"></audio>\n"""
-        if with_audio
-        else ""
-    )
     return f"""<div class="{div_class}" id="{key}">
     <p class="post-title"><em><?=$p->{key}->title;?></em> &ndash; <?=$language[$p->{key}->month];?> <?=$p->{key}->year;?></p>
     <blockquote>
     <?=$p->{key}->body;?>
     </blockquote>
-    {audio}</div>"""
+    </div>"""
 
-
-def get_insp_block(key, subtitle=False) -> str:
-    return """<p class="post-title"><em><?=$p->{0}->title;?></em> &ndash; <?=$p->{0}->author;?>
-    {1}</p>
-    <blockquote>
-    <?=$p->{0}->body;?>
-    </blockquote>""".format(
-        key,
-        "<em><br /><p>&nbsp;&nbsp;&nbsp;&nbsp;<?=$p->{0}->subtitle;?></em></p>".format(
-            key
-        )
-        if subtitle
-        else "",
-    )
 
 
 def wrap_block_in_link(main_page_block, post, link, _):
@@ -55,17 +36,9 @@ with open("posts.json", "r") as fr:
         if post["author"] == "Bryan Kaperick":
             block_path = post["rawpath"].replace(".txt", ".php").replace("./raw/", "")
 
-            # Currently, the only difference is that the dedicated page includes the audio.
             main_page_block = get_block(key, False, False)
-            dedicated_page_block = get_block(key, True, "audiopath" in post.keys())
-        else:
-            block_path = None
-            main_page_block = get_insp_block(key, "subtitle" in post.keys())
-        post_blocks.append((main_page_block, post, block_path, dedicated_page_block))
+        post_blocks.append((main_page_block, post, block_path, main_page_block))
 
-with open("posts_inspiration.generated.html", "w") as f_insp:
-    posts_insp = [p for p in post_blocks if p[1]["author"] != "Bryan Kaperick"]
-    f_insp.write("\n\n".join([x[0] for x in posts_insp]))
 
 min_single_year = 2022
 
