@@ -10,13 +10,17 @@ with open("posts.json", "r+") as fw:
     for file in os.listdir("./new/"):
         if file == "__empty__.txt":
             continue
+        with open("./new/" + file, "r") as f:
+            title = f.readline().strip()
+            text = "".join(f.readlines()).strip()
         print(file)
         name_words = file.replace(".txt", "").split("_")
         longest_word = max(name_words, key=len)
         name_guess = " ".join(name_words)
         name_guess = name_guess[0].capitalize() + name_guess[1:]
         d = {
-            "title": open(file, "r").readline(),
+            "title": title,
+            "text": text,
             "author": "Bryan Kaperick",
             "time": str(datetime.datetime.now()),
             "day": str(datetime.datetime.now().day),
