@@ -41,54 +41,11 @@
 <article class="single-view">
 <header>
 <h1 class="title ">Blog</h1>
+Un blog sur des sujets variés.  De petites réflexions à partager.  Une sorte d'exercice d'écriture.
 </header>
 <div class="content">
-Salut, ici il n&rsquo;y a pas grand chose pour l&rsquo;instant. Vu que ma langue maternelle est anglais, je vais plutôt écrire des bulletins en anglais.
-Bien que pour toutes les autres pages du site web, les versions francophone et anglophone sont identique, ici je vais pas traduire des bulletins entres les deux langages. Ca veut dire qu&rsquo;il y aura des bulletins en anglais et aussi des bulletins en français (mais surtout en anglais, j&rsquo;imagine).
 
-
-<details id="my-works-det" open="true">
-  <summary><h1 id="my-works">
-  <?=$language['My works'];?>
-</h1>
-</summary>
-
-    <details class="post-year-details" open="true">
-      <summary><h3 id="2026posts" class="post-year-header">2026 (0 <?=$language['post'];?>s)</h3>
-    </summary>
-
-    <?php include($_SERVER['DOCUMENT_ROOT']."/blog/posts2026.generated.html"); ?>
-    </details>
-
-    <details class="post-year-details">
-      <summary><h3 id="2025posts" class="post-year-header">2025 (0 <?=$language['post'];?>s)</h3>
-    </summary>
-
-    <?php include($_SERVER['DOCUMENT_ROOT']."/blog/posts2025.generated.html"); ?>
-    </details>
-
-    <details class="post-year-details">
-      <summary><h3 id="2024posts" class="post-year-header">2024 (0 <?=$language['post'];?>s)</h3>
-    </summary>
-
-    <?php include($_SERVER['DOCUMENT_ROOT']."/blog/posts2024.generated.html"); ?>
-    </details>
-
-    <details class="post-year-details">
-      <summary><h3 id="2023posts" class="post-year-header">2023 (0 <?=$language['post'];?>s)</h3>
-    </summary>
-
-    <?php include($_SERVER['DOCUMENT_ROOT']."/blog/posts2023.generated.html"); ?>
-    </details>
-
-    <details class="post-year-details">
-        <summary><h3 id="2022posts" class="post-year-header">2020 - 2022 (0 <?=$language['post'];?>s)</h3>
-    </summary>
-
-    <?php include($_SERVER['DOCUMENT_ROOT']."/blog/posts2022.generated.html"); ?>
-    </details>
-
-</details>
+<?php include($_SERVER['DOCUMENT_ROOT']."/blog/posts2026.generated.html"); ?>
 
 </div>
 </article>
