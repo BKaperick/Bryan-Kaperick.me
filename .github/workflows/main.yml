@@ -63,7 +63,6 @@ jobs:
         ./pre_build.sh "${{ github.event.pull_request.body }}"
 
     - name: Build static site
-      continue-on-error: true
       run: |
         cd Bryan-Kaperick.me
         ./build.sh 3
