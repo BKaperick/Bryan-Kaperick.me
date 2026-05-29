@@ -12,7 +12,7 @@ with open("posts.json", "r+") as fw:
             continue
         with open("./new/" + file, "r") as f:
             title = f.readline().strip()
-            text = "".join(f.readlines()).strip()
+            body = "".join(f.readlines()).strip()
         print(file)
         name_words = file.replace(".txt", "").split("_")
         longest_word = max(name_words, key=len)
@@ -20,7 +20,7 @@ with open("posts.json", "r+") as fw:
         name_guess = name_guess[0].capitalize() + name_guess[1:]
         d = {
             "title": title,
-            "text": text,
+            "body": body,
             "author": "Bryan Kaperick",
             "time": str(datetime.datetime.now()),
             "day": str(datetime.datetime.now().day),

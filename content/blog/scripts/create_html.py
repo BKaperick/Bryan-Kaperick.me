@@ -98,9 +98,9 @@ for main_page_block, post, php_path, dedicated_page_block in post_blocks:
             with open(lang_php_path, "w") as f:
                 f.write(
                     """<?php 
-include($_SERVER['DOCUMENT_ROOT']."/posts/minimal_post_header.php");
+include($_SERVER['DOCUMENT_ROOT']."/blog/minimal_post_header.php");
 include($_SERVER['DOCUMENT_ROOT']."/{0}/minimal_header.html");
-include($_SERVER['DOCUMENT_ROOT']."/posts/{1}");
+include($_SERVER['DOCUMENT_ROOT']."/blog/{1}");
 ?> 
 """.format(language, html_path)
                 )
