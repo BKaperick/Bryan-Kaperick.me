@@ -118,7 +118,7 @@ $language_toggle = array(
 </a></li>
 <li><a href="/<?=$lang?>/blog-post/blog-post.php"
 <?=
-(str_contains($_SERVER['SCRIPT_FILENAME'], "blog-post")) 
+(str_contains($_SERVER['SCRIPT_FILENAME'], "blog-posts")) 
 ? "class=\"active\" aria-current=\"page\"" 
 : "" ?>><?=$language['Blog Posts'];
 ?>
