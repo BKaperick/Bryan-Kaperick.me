@@ -52,7 +52,7 @@ def get_photo_captioned_figure(key, subdir) -> str:
     )
 
 
-def get_figure(classes, id, content, caption) -> str:
+def get_figure(classes, id, content: str, caption) -> str:
     id_part = f'id="{id}"' if id else ""
     return "\n".join(
         [

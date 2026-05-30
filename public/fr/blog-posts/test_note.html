@@ -1,0 +1,34 @@
+<link rel="shortcut icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="apple-touch-icon" href="../../static/favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="main-post-page" id="test">
+    <p class="post-title"> 29 Mai 2026</p>
+    <blockquote>
+    <em>A note on plastic surgery in <i>V.</i></em>
+    <br>
+    <div class="post"><p></p></div>
+<div class="post"><p>In Thomas Pynchon's <i>V.</i>, Schoenmaker is a seedy New York plastic surgeon.  He preys on women's insecurities to up-sell them on more treatment, and seizes every opportunity to sleep with vulnerable patients.  Esther, one of the main characters of the novel, is seduced by the doctor when she goes in for a nose job.</p></div>
+<div class="post"><p>Where it gets interesting is in the pillow talk between the doctor and patient, in which he tries to convince Esther to get ever-more tweaks.  He analyzes her body, citing all the imperfections that he could fix.  For her.  He doesn't view additional plastic surgery as a superficial need, but rather as the portal through which underlying inner beauty can be expressed.  The manifestation of her character through her skin.</p></div>
+<div class="post"><p>This flips the notion of plastic surgery being rooted in women's vanity.  It does so in two ways, one in the words he speaks, and one in the intention behind those words.  He is guiding her to change her body for his preferences, under the guise bringing out the so-called <i>perfect</i> Esther within.  This Esther he describes is the projection of his desire onto her.  He believes that more surgery could rectify the incoherence between his idealization of her.  That is, the masculine kind of idealization of a woman's character that is actually rooted primarily in sexual desire for her body and her submission to conform to his desires.</p></div>
+<div class="post"><p></p></div>    </blockquote>
+    </div> 
