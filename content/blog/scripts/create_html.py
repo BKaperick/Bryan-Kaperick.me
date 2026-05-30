@@ -15,7 +15,7 @@ def get_block(key, is_dedicated_page: bool) -> str:
     # class is used adjust font size separately from the main posts page
     div_class = "dedicated-post-page" if is_dedicated_page else "main-post-page"
     return f"""<div class="{div_class}" id="{key}">
-    <p class="post-title"> <?=$language[$p->{key}->day];?> <?=$language[$p->{key}->month];?> <?=$p->{key}->year;?></p>
+    <p class="post-title"> <?=$p->{key}->day;?> <?=$language[$p->{key}->month];?> <?=$p->{key}->year;?></p>
     <blockquote>
     <em><?=$p->{key}->title;?></em>
     <br>
