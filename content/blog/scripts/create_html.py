@@ -11,16 +11,17 @@ current_year = datetime.now().year
 post_blocks = []
 
 
-def get_block(key, is_dedicated_page: bool, with_audio: bool) -> str:
+def get_block(key, is_dedicated_page: bool) -> str:
     # class is used adjust font size separately from the main posts page
     div_class = "dedicated-post-page" if is_dedicated_page else "main-post-page"
     return f"""<div class="{div_class}" id="{key}">
-    <p class="post-title"><em><?=$p->{key}->title;?></em> &ndash; <?=$language[$p->{key}->month];?> <?=$p->{key}->year;?></p>
+    <p class="post-title"> <?=$language[$p->{key}->day];?> <?=$language[$p->{key}->month];?> <?=$p->{key}->year;?></p>
     <blockquote>
+    <em><?=$p->{key}->title;?></em>
+    <br>
     <?=$p->{key}->body;?>
     </blockquote>
     </div>"""
-
 
 
 def wrap_block_in_link(main_page_block, post, link, _):
@@ -32,13 +33,15 @@ def wrap_block_in_link(main_page_block, post, link, _):
 with open("posts.json", "r") as fr:
     posts = json.load(fr)
     for key, post in posts.items():
-        dedicated_page_block = None
-        if post["author"] == "Bryan Kaperick":
-            block_path = post["rawpath"].replace(".txt", ".php").replace("./raw/", "")
+        block_path = post["rawpath"].replace(".txt", ".php").replace("./raw/", "")
 
-            main_page_block = get_block(key, False, False)
+        # Currently, the only difference is that the dedicated page includes the audio.
+        main_page_block = get_block(key, False)
         post_blocks.append((main_page_block, post, block_path, main_page_block))
 
+with open("posts_inspiration.generated.html", "w") as f_insp:
+    posts_insp = [p for p in post_blocks if p[1]["author"] != "Bryan Kaperick"]
+    f_insp.write("\n\n".join([x[0] for x in posts_insp]))
 
 min_single_year = 2022
 
