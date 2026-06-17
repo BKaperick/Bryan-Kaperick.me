@@ -3044,10 +3044,12 @@
         "month": "Jun",
         "year": 2026,
         "order_in_year": 28,
-        "en": "",
-        "fr": "",
+        "en": "In space!",
+        "fr": "Dans l'espace !",
         "people": [
-            "bryan"
+            "bryan",
+	    "colin",
+	    "louise"
         ],
         "is_album": false
     }
