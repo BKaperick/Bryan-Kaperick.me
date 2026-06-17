@@ -3038,5 +3038,19 @@
             "louise"
         ],
         "is_album": false
+    },
+    "imgwa_28": {
+        "name": "IMG-20260615-WA0007.jpg",
+        "month": "Jun",
+        "year": 2026,
+        "order_in_year": 28,
+        "en": "In space!",
+        "fr": "Dans l'espace !",
+        "people": [
+            "bryan",
+            "colin",
+            "louise"
+        ],
+        "is_album": false
     }
 }
