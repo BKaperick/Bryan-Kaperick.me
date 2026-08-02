@@ -3106,8 +3106,7 @@
         "order_in_year": 32,
         "en": "",
         "fr": "",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     },
     "badlands": {
@@ -3117,8 +3116,7 @@
         "order_in_year": 33,
         "en": "",
         "fr": "",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     },
     "atlas": {
@@ -3141,8 +3139,7 @@
         "order_in_year": 35,
         "en": "",
         "fr": "",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     },
     "pete": {
@@ -3166,8 +3163,7 @@
         "order_in_year": 37,
         "en": "",
         "fr": "",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     }
 }
