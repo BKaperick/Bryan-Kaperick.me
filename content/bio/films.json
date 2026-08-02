@@ -162,6 +162,60 @@
         }
     },
     {
+        "title": "Bugonia, 2025 - \u2605\u2605\u2605",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "Bugonia, 2025 - \u2605\u2605\u2605"
+        },
+        "links": [
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://letterboxd.com/bkapers/film/bugonia/"
+            }
+        ],
+        "link": "https://letterboxd.com/bkapers/film/bugonia/",
+        "id": "letterboxd-watch-1429059986",
+        "guidislink": false,
+        "published": "Mon, 3 Aug 2026 03:19:16 +1200",
+        "published_parsed": [
+            2026,
+            8,
+            2,
+            15,
+            19,
+            16,
+            6,
+            214,
+            0
+        ],
+        "letterboxd_watcheddate": "2026-06-13",
+        "letterboxd_rewatch": "No",
+        "letterboxd_filmtitle": "Bugonia",
+        "letterboxd_filmyear": "2025",
+        "letterboxd_memberrating": "3.0",
+        "letterboxd_memberlike": "No",
+        "tmdb_movieid": "701387",
+        "summary": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/6/2/5/4/0/0/625400-bugonia-0-600-0-900-crop.jpg?v=4c6649150e\" /></p> <p>Watched on Saturday June 13, 2026.</p>",
+        "summary_detail": {
+            "type": "text/html",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/6/2/5/4/0/0/625400-bugonia-0-600-0-900-crop.jpg?v=4c6649150e\" /></p> <p>Watched on Saturday June 13, 2026.</p>"
+        },
+        "authors": [
+            {
+                "name": "bkapers"
+            }
+        ],
+        "author": "bkapers",
+        "author_detail": {
+            "name": "bkapers"
+        }
+    },
+    {
         "title": "The Dawn Wall, 2017 - \u2605\u2605\u00bd",
         "title_detail": {
             "type": "text/plain",
