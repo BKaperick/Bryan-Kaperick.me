@@ -48,6 +48,7 @@ $language = array(
     'Watched'=>'Watched',
     ''=>'',
     'Filter'=>'Filter',
-    'Thanks to'=>'Thanks to'
+    'Thanks to'=>'Thanks to',
+    'post'=>'post'
 );
 ?>
