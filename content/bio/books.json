@@ -1,4 +1,54 @@
 {
+    "karamazov": {
+        "title": "The Brothers Karamazov",
+        "authors": [
+            {
+                "name": "Fyodor Dostoevsky",
+                "countries": [
+                    "RU"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "ru",
+            "translator": "Pevear and Volokhonsky"
+        },
+        "personal": {
+            "start_month": 5,
+            "start_year": 2026,
+            "finish_month": 8,
+            "finish_year": 2026,
+            "recommended_by": ["Other books by same author", "General critical consensus"],
+            "rating": 10,
+            "status": "completed"
+        }
+    },
+    "volume_two": {
+        "title": "On the Calculation of Volume (Book II)",
+        "authors": [
+            {
+                "name": "Solvej Balle",
+                "countries": [
+                    "DN"
+                ]
+            }
+        ],
+        "language": {
+            "read": "en",
+            "written": "dn",
+            "translator": "Barbara J. Haveland'"
+        },
+        "personal": {
+            "start_month": 12,
+            "start_year": 2025,
+            "finish_month": 6,
+            "finish_year": 2026,
+            "recommended_by": ["Short book to read aloud"],
+            "rating": 4,
+            "status": "completed"
+        }
+    },
     "deutsch": {
         "title": "The Fabric of Reality",
         "authors": [

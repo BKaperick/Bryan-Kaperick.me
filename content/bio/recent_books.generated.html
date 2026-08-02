@@ -8,6 +8,22 @@
   </tr>
 
     <tr>
+        <td class="left"><?=$p->karamazov->title;?></td>
+        <td class="left">Fyodor Dostoevsky</td>
+        <td>Aug <?=$p->karamazov->personal->finish_year;?></td>
+        <td class="left" style="width: 150px;">██████████ <?=$p->karamazov->personal->rating;?></td>
+    </tr>
+    
+
+    <tr>
+        <td class="left"><?=$p->volume_two->title;?></td>
+        <td class="left">Solvej Balle</td>
+        <td>Jun <?=$p->volume_two->personal->finish_year;?></td>
+        <td class="left" style="width: 150px;">████ <?=$p->volume_two->personal->rating;?></td>
+    </tr>
+    
+
+    <tr>
         <td class="left"><?=$p->deutsch->title;?></td>
         <td class="left">David Deutsch</td>
         <td>Apr <?=$p->deutsch->personal->finish_year;?></td>
@@ -68,30 +84,6 @@
         <td class="left">Annie Ernaux</td>
         <td>Aug <?=$p->honte->personal->finish_year;?></td>
         <td class="left" style="width: 150px;">█ <?=$p->honte->personal->rating;?></td>
-    </tr>
-    
-
-    <tr>
-        <td class="left"><?=$p->left->title;?></td>
-        <td class="left">Ursala K. Le Guin</td>
-        <td>Jul <?=$p->left->personal->finish_year;?></td>
-        <td class="left" style="width: 150px;">███████ <?=$p->left->personal->rating;?></td>
-    </tr>
-    
-
-    <tr>
-        <td class="left"><?=$p->pnin->title;?></td>
-        <td class="left">Vladimir Nabokov</td>
-        <td>Jul <?=$p->pnin->personal->finish_year;?></td>
-        <td class="left" style="width: 150px;">████████ <?=$p->pnin->personal->rating;?></td>
-    </tr>
-    
-
-    <tr>
-        <td class="left"><?=$p->zeno->title;?></td>
-        <td class="left">Italo Svevo</td>
-        <td>Jun <?=$p->zeno->personal->finish_year;?></td>
-        <td class="left" style="width: 150px;">███████ <?=$p->zeno->personal->rating;?></td>
     </tr>
     
 </table>
