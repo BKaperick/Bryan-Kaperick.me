@@ -3058,18 +3058,18 @@
         "month": "Aug",
         "year": 2026,
         "order_in_year": 29,
-        "en": "",
-        "fr": "",
+        "en": "More photos from our US trip",
+        "fr": "Plus de photos de notre voyage aux Etats-Unis",
         "is_album": true,
         "photos": [
-            "boat",
             "picnic",
             "mississippi",
-            "badlands",
             "atlas",
-            "cliff",
+            "badlands",
+            "nomansland",
             "pete",
-            "nomansland"
+            "cliff",
+            "boat"
         ]
     },
     "boat": {
@@ -3092,7 +3092,10 @@
         "en": "",
         "fr": "",
         "people": [
-            "bryan"
+            "bryan",
+            "jason",
+            "louise",
+            "bareth"
         ],
         "is_album": false
     },
@@ -3104,7 +3107,6 @@
         "en": "",
         "fr": "",
         "people": [
-            "bryan"
         ],
         "is_album": false
     },
@@ -3116,7 +3118,6 @@
         "en": "",
         "fr": "",
         "people": [
-            "bryan"
         ],
         "is_album": false
     },
@@ -3128,7 +3129,8 @@
         "en": "",
         "fr": "",
         "people": [
-            "bryan"
+            "bryan",
+            "louise"
         ],
         "is_album": false
     },
@@ -3140,7 +3142,6 @@
         "en": "",
         "fr": "",
         "people": [
-            "bryan"
         ],
         "is_album": false
     },
@@ -3152,7 +3153,9 @@
         "en": "",
         "fr": "",
         "people": [
-            "bryan"
+            "bryan",
+            "cj",
+            "pete"
         ],
         "is_album": false
     },
@@ -3164,7 +3167,6 @@
         "en": "",
         "fr": "",
         "people": [
-            "bryan"
         ],
         "is_album": false
     }
