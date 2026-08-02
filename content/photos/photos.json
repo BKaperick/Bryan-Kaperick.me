@@ -3052,5 +3052,120 @@
             "louise"
         ],
         "is_album": false
+    },
+    "USA2026": {
+        "name": "USA2026",
+        "month": "Aug",
+        "year": 2026,
+        "order_in_year": 29,
+        "en": "",
+        "fr": "",
+        "is_album": true,
+        "photos": [
+            "boat",
+            "picnic",
+            "mississippi",
+            "badlands",
+            "atlas",
+            "cliff",
+            "pete",
+            "nomansland"
+        ]
+    },
+    "boat": {
+        "name": "boat_wind.jpg",
+        "month": "Aug",
+        "year": 2026,
+        "order_in_year": 30,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "picnic": {
+        "name": "jason_st_louis_picnic.jpg",
+        "month": "Aug",
+        "year": 2026,
+        "order_in_year": 31,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "mississippi": {
+        "name": "mounds_mississippi.jpg",
+        "month": "Aug",
+        "year": 2026,
+        "order_in_year": 32,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "badlands": {
+        "name": "badlands_camping.jpg",
+        "month": "Aug",
+        "year": 2026,
+        "order_in_year": 33,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "atlas": {
+        "name": "atlas.jpg",
+        "month": "Aug",
+        "year": 2026,
+        "order_in_year": 34,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "cliff": {
+        "name": "boat_cliff.jpg",
+        "month": "Aug",
+        "year": 2026,
+        "order_in_year": 35,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "pete": {
+        "name": "cj_pete.jpg",
+        "month": "Aug",
+        "year": 2026,
+        "order_in_year": 36,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
+    },
+    "nomansland": {
+        "name": "nomansland.jpg",
+        "month": "Aug",
+        "year": 2026,
+        "order_in_year": 37,
+        "en": "",
+        "fr": "",
+        "people": [
+            "bryan"
+        ],
+        "is_album": false
     }
 }
