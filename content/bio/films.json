@@ -1,5 +1,59 @@
 [
     {
+        "title": "The Last Viking, 2025 - \u2605\u00bd",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "The Last Viking, 2025 - \u2605\u00bd"
+        },
+        "links": [
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://letterboxd.com/bkapers/film/the-last-viking-2025/"
+            }
+        ],
+        "link": "https://letterboxd.com/bkapers/film/the-last-viking-2025/",
+        "id": "letterboxd-watch-1433615145",
+        "guidislink": false,
+        "published": "Wed, 5 Aug 2026 09:22:26 +1200",
+        "published_parsed": [
+            2026,
+            8,
+            4,
+            21,
+            22,
+            26,
+            1,
+            216,
+            0
+        ],
+        "letterboxd_watcheddate": "2026-08-04",
+        "letterboxd_rewatch": "No",
+        "letterboxd_filmtitle": "The Last Viking",
+        "letterboxd_filmyear": "2025",
+        "letterboxd_memberrating": "1.5",
+        "letterboxd_memberlike": "No",
+        "tmdb_movieid": "1295400",
+        "summary": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/1/1/7/8/0/1/7/1178017-the-last-viking-2025-0-600-0-900-crop.jpg?v=bd8b41b72b\" /></p> <p>Watched on Tuesday August 4, 2026.</p>",
+        "summary_detail": {
+            "type": "text/html",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/1/1/7/8/0/1/7/1178017-the-last-viking-2025-0-600-0-900-crop.jpg?v=bd8b41b72b\" /></p> <p>Watched on Tuesday August 4, 2026.</p>"
+        },
+        "authors": [
+            {
+                "name": "bkapers"
+            }
+        ],
+        "author": "bkapers",
+        "author_detail": {
+            "name": "bkapers"
+        }
+    },
+    {
         "title": "Com\u00e9die-Fran\u00e7aise, 2026 - \u2605\u2605\u00bd",
         "title_detail": {
             "type": "text/plain",
