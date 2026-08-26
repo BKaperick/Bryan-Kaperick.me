@@ -38,3 +38,4 @@ A typical local workflow would be the following:
 - [x] ~Dark mode~
 - [ ] Dedicated photo album pages
 - [ ] Optimizing main photo page to load faster
+- [ ] blog
