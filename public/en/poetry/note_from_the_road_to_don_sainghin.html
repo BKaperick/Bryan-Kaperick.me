@@ -1,0 +1,59 @@
+<link rel="shortcut icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+<link rel="apple-touch-icon" href="../../static/favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+
+</span>
+<button id="toggle" class="top"><img src="../../static/dark-mode.webp" class="invertible"></button>
+
+<script>
+const root = document.documentElement;
+const toggle = document.getElementById("toggle");
+const darkMode = localStorage.getItem("dark-mode") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+if (darkMode) {
+  root.classList.add("dark-theme");
+}
+toggle.addEventListener("click", () => {
+  root.classList.toggle("dark-theme");
+  if (root.classList.contains("dark-theme")) {
+    localStorage.setItem("dark-mode", true);
+  } else {
+    localStorage.removeItem("dark-mode");
+  }
+});
+</script>
+<div class="dedicated-poem-page" id="sainghin">
+    <p class="poem-title"><em>Note from the road to Don-Sainghin</em> &ndash; August 2026</p>
+    <blockquote>
+    <div class="poem"><p><span class="line">I used to know a Don.</span><br>
+<span class="line">Old guy, always was, 'til he died.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">Stopped aching and creaking.</span><br>
+<span class="line">Then he might as well've been young again.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">That's a way to say it. The absence felt.</span><br>
+<span class="line">As if youth were a state of non-being more than anything else.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">Don sure knew a lot about non-being.</span><br>
+<span class="line">In New Zealand as Kathy and Dad and all the others floated back home.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">We were all born into that thin soup, floating,</span><br>
+<span class="line">steaming up, then gradually weighed down. Impressed back into the earth.</span><br>
+<span class="line">The knob turning on the wood clamp.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">On trees you can see it. The weight of all the seasons. Growing taller, and denser too.</span><br>
+<span class="line">Branches start to sulk with it.</span><br>
+<span class="line">The wind doesn't catch so much after awhile.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">If there's one thing about Don, it's that he loved chopping down trees. More than anyone I know.</span><br>
+<span class="line">Out by his cabin way off in the Tacoma woods. Right up 'til the end.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">I never saw him out there. Though I bet Sebastian did. Before he cut himself down.</span><br>
+<span class="line">We heard the fall. Felt the knob turn.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">And I hope too that Dad held that axe.</span><br>
+<span class="line">How it must've felt to bear the weight of it in hand.  To tear through pulpy flesh.</span><br>
+</p></div>
+<div class="poem"><p><span class="line">Rest in peace, Don.</span><br>
+<span class="line">You dense old leaf of a man.</p></div>    </blockquote>
+    </div> 
