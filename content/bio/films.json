@@ -65,60 +65,6 @@
             {
                 "rel": "alternate",
                 "type": "text/html",
-                "href": "https://letterboxd.com/bkapers/film/obsession-2025/1/"
-            }
-        ],
-        "link": "https://letterboxd.com/bkapers/film/obsession-2025/1/",
-        "id": "letterboxd-watch-1538115325",
-        "guidislink": false,
-        "published": "Thu, 15 Oct 2026 07:56:14 +1300",
-        "published_parsed": [
-            2026,
-            10,
-            14,
-            18,
-            56,
-            14,
-            2,
-            287,
-            0
-        ],
-        "letterboxd_watcheddate": "2026-10-14",
-        "letterboxd_rewatch": "Yes",
-        "letterboxd_filmtitle": "Obsession",
-        "letterboxd_filmyear": "2025",
-        "letterboxd_memberrating": "3.5",
-        "letterboxd_memberlike": "No",
-        "tmdb_movieid": "1339713",
-        "summary": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/1/2/3/4/4/7/2/1234472-obsession-2025-2-0-600-0-900-crop.jpg?v=cff6fc00b6\" /></p> <p>Watched on Wednesday October 14, 2026.</p>",
-        "summary_detail": {
-            "type": "text/html",
-            "language": "en-US",
-            "base": "https://letterboxd.com/bkapers/rss/",
-            "value": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/1/2/3/4/4/7/2/1234472-obsession-2025-2-0-600-0-900-crop.jpg?v=cff6fc00b6\" /></p> <p>Watched on Wednesday October 14, 2026.</p>"
-        },
-        "authors": [
-            {
-                "name": "bkapers"
-            }
-        ],
-        "author": "bkapers",
-        "author_detail": {
-            "name": "bkapers"
-        }
-    },
-    {
-        "title": "Obsession, 2025 - \u2605\u2605\u2605\u00bd",
-        "title_detail": {
-            "type": "text/plain",
-            "language": "en-US",
-            "base": "https://letterboxd.com/bkapers/rss/",
-            "value": "Obsession, 2025 - \u2605\u2605\u2605\u00bd"
-        },
-        "links": [
-            {
-                "rel": "alternate",
-                "type": "text/html",
                 "href": "https://letterboxd.com/bkapers/film/obsession-2025/"
             }
         ],
