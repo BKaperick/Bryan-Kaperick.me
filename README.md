@@ -19,8 +19,7 @@ The site has various automated widgets that are handled by a collection of bash 
 We build the code via Github Actions and deploy the changes onto the head of the master branch.  Netlify.app deploys the head of master.
 
 `./.github/workflows/main.yml` 
-1. Checks out the virtual environment (`uv`)
-2. Ingests any new data (`pre_build.sh`)
+1. Checks out the virtual environment and ingests any new data (`uv` and `pre_build.sh`)
 2. Builds the website (`build.sh`)
 3. Pushes the changes onto master branch.
 
