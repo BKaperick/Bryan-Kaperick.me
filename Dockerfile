@@ -9,3 +9,7 @@ COPY --from=ghcr.io/astral-sh/uv:0.8.11 /uv /uvx /usr/local/bin/
 
 ARG PYTHON_VERSION=3.13
 RUN uv python install ${PYTHON_VERSION}
+
+WORKDIR /app
+COPY pyproject.toml uv.lock ./
+RUN uv sync --all-extras --frozen --no-install-project

@@ -1,6 +1,6 @@
 on:
   push:
-    paths: ["Dockerfile"]
+    paths: ["Dockerfile", "uv.lock", "pyproject.toml"]
 
 jobs:
   image:
