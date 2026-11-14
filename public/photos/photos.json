@@ -3165,5 +3165,60 @@
         "fr": "",
         "people": [],
         "is_album": false
+    },
+    "m": {
+        "name": "m",
+        "month": "Nov",
+        "year": 2026,
+        "order_in_year": 38,
+        "en": "",
+        "fr": "",
+        "is_album": true,
+        "photos": [
+            "misty",
+            "musty",
+            "vibes",
+            "mystical"
+        ]
+    },
+    "misty": {
+        "name": "misty_vibes_in_lille.jpg",
+        "month": "Nov",
+        "year": 2026,
+        "order_in_year": 39,
+        "en": "Misty vibes",
+        "fr": "Misty vibes",
+        "people": [],
+        "is_album": false
+    },
+    "musty": {
+        "name": "musty_vibes_lille.jpg",
+        "month": "Nov",
+        "year": 2026,
+        "order_in_year": 40,
+        "en": "Musty finds",
+        "fr": "Musty finds",
+        "people": [],
+        "is_album": false
+    },
+    "vibes": {
+        "name": "Mist_vibes_in_Douai.jpg",
+        "month": "Nov",
+        "year": 2026,
+        "order_in_year": 41,
+        "en": "MYST-y vibes",
+        "fr": "",
+        "people": [],
+        "is_album": false
+    },
+    "mystical": {
+        "name": "mystical_vibes_in_lille.jpg",
+        "month": "Nov",
+        "year": 2026,
+        "order_in_year": 42,
+        "en": "Minstrel sites",
+        "fr": "Minstrel sites",
+        "people": [],
+        "is_album": false
     }
 }
