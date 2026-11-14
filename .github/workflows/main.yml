@@ -4,55 +4,27 @@ on:
     branches:
     - master 
 jobs:
-
   build:
-    runs-on: ubuntu-latest    
-    container: ubuntu
-    env:
-      UV_CACHE_DIR: /tmp/.uv-cache 
-
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/bkaperick/website-image:1 
     steps:
+      - name: Clone repo
+        run: git clone -b ${{ github.head_ref || github.ref_name }} --depth=1 \
+            https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
 
-    - name: Install wget, git, and friends
-      run: |
-        yes | apt update 
-        yes | apt install sudo zstd php8.5-cli
-        yes | apt-get install -qq -o=Dpkg::Use-Pty=0 wget git imagemagick
+      - name: Prebuild
+        run: |
+          cd Bryan-Kaperick.me
+          ./pre_build.sh "${{ github.event.pull_request.body }}"
 
-    - name: Clone repo
-      run: |
-        git clone -b ${{ github.head_ref || github.ref_name }} --depth=1 https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
-        sleep 3s
-        cd Bryan-Kaperick.me
-        
-    - name: "Set up Python"
-      uses: actions/setup-python@v4
-      with:
-        python-version-file: "./Bryan-Kaperick.me/.python-version"
+      - name: Build static site
+        run: |
+          cd Bryan-Kaperick.me
+          ./build.sh 3
 
-    - name: Install uv
-      uses: astral-sh/setup-uv@v6
-      with:
-        version: "0.8.11"  
-        enable-cache: true
-    
-    - name: Allow uv to use the system Python by default
-      run: echo "UV_SYSTEM_PYTHON=1" >> $GITHUB_ENV
-      shell: bash
-
-    - name: Run prebuild step (project installation and data ingestion)
-      shell: bash
-      run: |
-        cd Bryan-Kaperick.me
-        ./pre_build.sh "${{ github.event.pull_request.body }}"
-
-    - name: Build static site
-      run: |
-        cd Bryan-Kaperick.me
-        ./build.sh 3
-
-    - name: Push changes
-      run: |
+      - name: Push changes
+        run: |
           cd Bryan-Kaperick.me
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
