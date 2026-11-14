@@ -3188,8 +3188,7 @@
         "order_in_year": 39,
         "en": "Misty vibes",
         "fr": "Misty vibes",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     },
     "musty": {
@@ -3199,8 +3198,7 @@
         "order_in_year": 40,
         "en": "Musty finds",
         "fr": "Musty finds",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     },
     "vibes": {
@@ -3210,8 +3208,7 @@
         "order_in_year": 41,
         "en": "MYST-y vibes",
         "fr": "",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     },
     "mystical": {
@@ -3221,8 +3218,7 @@
         "order_in_year": 42,
         "en": "Minstrel sites",
         "fr": "Minstrel sites",
-        "people": [
-        ],
+        "people": [],
         "is_album": false
     }
 }
