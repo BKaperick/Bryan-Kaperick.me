@@ -20,12 +20,10 @@ jobs:
 
       - name: Prebuild
         run: |
-          cd Bryan-Kaperick.me
           ./pre_build.sh "${{ github.event.pull_request.body }}"
 
       - name: Build static site
         run: |
-          cd Bryan-Kaperick.me
           ./build.sh 3
 
       - name: Push changes
