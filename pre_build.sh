@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "activating the virtual environment"
+uv sync --all-extras
+source .venv/bin/activate
+
 cd ./content/poems
 echo "starting poetry ingestion"
 python3 ./scripts/instantiate.py
