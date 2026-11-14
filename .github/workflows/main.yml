@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Clone repo
         run: |
-          git clone --depth=1 --filter=blob:none --sparse -b ${{ github.head_ref || github.ref_name }} https://https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
+          git clone --depth=1 --filter=blob:none --sparse -b ${{ github.head_ref || github.ref_name }} https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
           cd Bryan-Kaperick.me
           git sparse-checkout set --no-cone '/*' '!public'
           git clone -b ${{ github.head_ref || github.ref_name }} --depth=1 https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
