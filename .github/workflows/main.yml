@@ -10,7 +10,10 @@ jobs:
       image: ghcr.io/bkaperick/website-image:1 
     steps:
       - name: Clone repo
-        run: git clone -b ${{ github.head_ref || github.ref_name }} --depth=1 https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
+        run: |
+          git clone --depth=1 --filter=blob:none --sparse -c http.extraheader="AUTHORIZATION: bearer ${{ secrets.access_token }}" -b ${{ github.head_ref || github.ref_name }} https://github.com/BKaperick/Bryan-Kaperick.me.git
+          cd Bryan-Kaperick.me
+          git sparse-checkout set --no-cone '/*' '!public'
       - name: Prebuild
         run: |
           cd Bryan-Kaperick.me
