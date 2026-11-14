@@ -1,0 +1,33 @@
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/bkaperick/website-image:1 
+    steps:
+      - name: Clone repo
+        run: git clone -b ${{ github.head_ref || github.ref_name }} --depth=1 \
+            https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
+
+      - name: Prebuild
+        run: |
+          cd Bryan-Kaperick.me
+          ./pre_build.sh "${{ github.event.pull_request.body }}"
+
+      - name: Build static site
+        run: |
+          cd Bryan-Kaperick.me
+          ./build.sh 3
+
+      - name: Push changes
+        run: |
+          cd Bryan-Kaperick.me
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "[skip actions] built" --allow-empty
+          git push origin ${{ github.head_ref || github.ref_name }}
