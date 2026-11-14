@@ -174,4 +174,5 @@ def create_photo_content_list(items):
                 items["fr"].append(create_photo_json(link_name, photo, "fr"))
 
 
-create_combined_content_list()
+if __name__ == "__main__":
+    create_combined_content_list()
