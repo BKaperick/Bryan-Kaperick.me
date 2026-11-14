@@ -9,11 +9,15 @@ jobs:
     container:
       image: ghcr.io/bkaperick/website-image:1 
     steps:
-      - name: Clone repo
-        run: |
-          git clone --depth=1 --filter=blob:none --sparse -b ${{ github.head_ref || github.ref_name }} https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
-          cd Bryan-Kaperick.me
-          git sparse-checkout set --no-cone '/*' '!public'
+      - name: Git checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          sparse-checkout: |
+            /*
+            !public
+          sparse-checkout-cone-mode: false
+
       - name: Prebuild
         run: |
           cd Bryan-Kaperick.me
