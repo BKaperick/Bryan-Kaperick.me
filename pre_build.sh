@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "activating the virtual environment"
+uv sync --all-extras
 source .venv/bin/activate
 
 cd ./content/poems

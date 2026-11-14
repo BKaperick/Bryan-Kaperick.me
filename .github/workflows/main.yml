@@ -16,10 +16,8 @@ jobs:
     - name: Install wget, git, and friends
       run: |
         yes | apt update 
-        yes | apt install sudo 
+        yes | apt install sudo zstd php8.5-cli
         yes | apt-get install -qq -o=Dpkg::Use-Pty=0 wget git imagemagick
-        yes | sudo apt-get install php8.5-cli
-        yes | sudo apt-get install zstd
 
     - name: Clone repo
       run: |
@@ -41,17 +39,11 @@ jobs:
     - name: Allow uv to use the system Python by default
       run: echo "UV_SYSTEM_PYTHON=1" >> $GITHUB_ENV
       shell: bash
-        
-    - name: Install the project
-      run: |
-        cd Bryan-Kaperick.me
-        uv sync --all-extras
 
-    - name: Ingest new data
+    - name: Run prebuild step (project installation and data ingestion)
       shell: bash
       run: |
         cd Bryan-Kaperick.me
-        source .venv/bin/activate
         ./pre_build.sh "${{ github.event.pull_request.body }}"
 
     - name: Build static site
