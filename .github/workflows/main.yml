@@ -10,9 +10,7 @@ jobs:
       image: ghcr.io/bkaperick/website-image:1 
     steps:
       - name: Clone repo
-        run: git clone -b ${{ github.head_ref || github.ref_name }} --depth=1 \
-            https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
-
+        run: git clone -b ${{ github.head_ref || github.ref_name }} --depth=1 https://${{ secrets.access_token }}@github.com/BKaperick/Bryan-Kaperick.me.git
       - name: Prebuild
         run: |
           cd Bryan-Kaperick.me
