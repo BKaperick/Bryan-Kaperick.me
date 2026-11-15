@@ -54,6 +54,114 @@
         }
     },
     {
+        "title": "The Fall, 2006 - \u2605\u2605\u00bd",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "The Fall, 2006 - \u2605\u2605\u00bd"
+        },
+        "links": [
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://letterboxd.com/bkapers/film/the-fall/"
+            }
+        ],
+        "link": "https://letterboxd.com/bkapers/film/the-fall/",
+        "id": "letterboxd-watch-1586436737",
+        "guidislink": false,
+        "published": "Sun, 15 Nov 2026 06:56:02 +1300",
+        "published_parsed": [
+            2026,
+            11,
+            14,
+            17,
+            56,
+            2,
+            5,
+            318,
+            0
+        ],
+        "letterboxd_watcheddate": "2026-10-25",
+        "letterboxd_rewatch": "No",
+        "letterboxd_filmtitle": "The Fall",
+        "letterboxd_filmyear": "2006",
+        "letterboxd_memberrating": "2.5",
+        "letterboxd_memberlike": "No",
+        "tmdb_movieid": "14784",
+        "summary": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/4/2/8/2/2/42822-the-fall-0-600-0-900-crop.jpg?v=21978da70d\" /></p> <p>Watched on Sunday October 25, 2026.</p>",
+        "summary_detail": {
+            "type": "text/html",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/4/2/8/2/2/42822-the-fall-0-600-0-900-crop.jpg?v=21978da70d\" /></p> <p>Watched on Sunday October 25, 2026.</p>"
+        },
+        "authors": [
+            {
+                "name": "bkapers"
+            }
+        ],
+        "author": "bkapers",
+        "author_detail": {
+            "name": "bkapers"
+        }
+    },
+    {
+        "title": "Sentimental Value, 2025 - \u2605\u2605\u2605",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "Sentimental Value, 2025 - \u2605\u2605\u2605"
+        },
+        "links": [
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://letterboxd.com/bkapers/film/sentimental-value-2025/"
+            }
+        ],
+        "link": "https://letterboxd.com/bkapers/film/sentimental-value-2025/",
+        "id": "letterboxd-watch-1586435647",
+        "guidislink": false,
+        "published": "Sun, 15 Nov 2026 06:55:13 +1300",
+        "published_parsed": [
+            2026,
+            11,
+            14,
+            17,
+            55,
+            13,
+            5,
+            318,
+            0
+        ],
+        "letterboxd_watcheddate": "2026-10-11",
+        "letterboxd_rewatch": "No",
+        "letterboxd_filmtitle": "Sentimental Value",
+        "letterboxd_filmyear": "2025",
+        "letterboxd_memberrating": "3.0",
+        "letterboxd_memberlike": "No",
+        "tmdb_movieid": "1124566",
+        "summary": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/1/0/1/3/3/5/7/1013357-sentimental-value-2025-0-600-0-900-crop.jpg?v=e89e64a309\" /></p> <p>Watched on Sunday October 11, 2026.</p>",
+        "summary_detail": {
+            "type": "text/html",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/1/0/1/3/3/5/7/1013357-sentimental-value-2025-0-600-0-900-crop.jpg?v=e89e64a309\" /></p> <p>Watched on Sunday October 11, 2026.</p>"
+        },
+        "authors": [
+            {
+                "name": "bkapers"
+            }
+        ],
+        "author": "bkapers",
+        "author_detail": {
+            "name": "bkapers"
+        }
+    },
+    {
         "title": "Obsession, 2025 - \u2605\u2605\u2605\u00bd",
         "title_detail": {
             "type": "text/plain",
