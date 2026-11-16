@@ -1,9 +1,9 @@
 [
     {
-        "title": "Plus de photos de notre voyage aux Etats-Unis",
-        "link": "https://www.bryan-kaperick.me/fr/photos/jason_st_louis_picnic",
-        "desc": "Plus de photos de notre voyage aux Etats-Unis",
-        "date": "20260801",
+        "title": "",
+        "link": "https://www.bryan-kaperick.me/fr/photos/misty_vibes_in_lille",
+        "desc": "",
+        "date": "20261101",
         "category": "photos",
         "is_album": true
     },
@@ -11,8 +11,16 @@
         "title": "Note from the road to Don-Sainghin",
         "link": "https://www.bryan-kaperick.me/fr/poetry/note_from_the_road_to_don_sainghin",
         "desc": "I used to know a Don...",
-        "date": "20260801",
+        "date": "20260827",
         "category": "poetry"
+    },
+    {
+        "title": "Plus de photos de notre voyage aux Etats-Unis",
+        "link": "https://www.bryan-kaperick.me/fr/photos/jason_st_louis_picnic",
+        "desc": "Plus de photos de notre voyage aux Etats-Unis",
+        "date": "20260801",
+        "category": "photos",
+        "is_album": true
     },
     {
         "title": "Dans l'espace !",
