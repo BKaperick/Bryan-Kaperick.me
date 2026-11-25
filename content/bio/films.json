@@ -1,5 +1,59 @@
 [
     {
+        "title": "Aftersun, 2022 - \u2605\u2605\u2605\u2605\u00bd",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "Aftersun, 2022 - \u2605\u2605\u2605\u2605\u00bd"
+        },
+        "links": [
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://letterboxd.com/bkapers/film/aftersun/"
+            }
+        ],
+        "link": "https://letterboxd.com/bkapers/film/aftersun/",
+        "id": "letterboxd-watch-1601233274",
+        "guidislink": false,
+        "published": "Wed, 25 Nov 2026 08:06:44 +1300",
+        "published_parsed": [
+            2026,
+            11,
+            24,
+            19,
+            6,
+            44,
+            1,
+            328,
+            0
+        ],
+        "letterboxd_watcheddate": "2026-11-23",
+        "letterboxd_rewatch": "No",
+        "letterboxd_filmtitle": "Aftersun",
+        "letterboxd_filmyear": "2022",
+        "letterboxd_memberrating": "4.5",
+        "letterboxd_memberlike": "No",
+        "tmdb_movieid": "965150",
+        "summary": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/8/6/8/5/5/8/868558-aftersun-0-600-0-900-crop.jpg?v=5ce2118fca\" /></p> <p>Watched on Monday November 23, 2026.</p>",
+        "summary_detail": {
+            "type": "text/html",
+            "language": "en-US",
+            "base": "https://letterboxd.com/bkapers/rss/",
+            "value": "<p><img src=\"https://a.ltrbxd.com/resized/film-poster/8/6/8/5/5/8/868558-aftersun-0-600-0-900-crop.jpg?v=5ce2118fca\" /></p> <p>Watched on Monday November 23, 2026.</p>"
+        },
+        "authors": [
+            {
+                "name": "bkapers"
+            }
+        ],
+        "author": "bkapers",
+        "author_detail": {
+            "name": "bkapers"
+        }
+    },
+    {
         "title": "The Menu, 2022 - \u2605",
         "title_detail": {
             "type": "text/plain",
